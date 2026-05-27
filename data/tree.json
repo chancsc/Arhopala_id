@@ -1,0 +1,70 @@
+{
+  "start": "q1",
+  "nodes": {
+    "q1": {
+      "type": "question",
+      "id": "q1",
+      "question": "Does the butterfly have a tail on the hindwing?",
+      "hint": "Examine the posterior margin of the hindwing for filiform or stub-like projections.",
+      "choices": [
+        { "label": "Yes — has tail(s)", "next": "q2" },
+        { "label": "No tail", "next": "q3" }
+      ]
+    },
+    "q2": {
+      "type": "question",
+      "id": "q2",
+      "question": "What is the tail type?",
+      "hint": "Compare the length and thickness of the tail projection relative to the wing width.",
+      "choices": [
+        { "label": "Long, filiform (hair-like)", "next": "r_centaurus" },
+        { "label": "Short, stub-like", "next": "r_aedias" }
+      ]
+    },
+    "q3": {
+      "type": "question",
+      "id": "q3",
+      "question": "What is the dominant upperside forewing colour?",
+      "hint": "View the dorsal surface under natural light. Angle of view affects iridescence.",
+      "choices": [
+        { "label": "Blue or purple iridescence", "next": "r_aurea" },
+        { "label": "Green or bronze iridescence", "next": "r_eumolphus" },
+        { "label": "Brown or tawny (no iridescence)", "next": "q4" }
+      ]
+    },
+    "q4": {
+      "type": "question",
+      "id": "q4",
+      "question": "Is there a submarginal spot row on the hindwing underside?",
+      "hint": "Examine the ventral (underside) surface of the hindwing near the margin.",
+      "choices": [
+        { "label": "Yes — distinct spot row visible", "next": "r_centaurus" },
+        { "label": "No — underside plain or streaked", "next": "r_aedias" }
+      ]
+    },
+    "r_centaurus": {
+      "type": "result",
+      "id": "r_centaurus",
+      "taxon_id": 84048,
+      "note": "Look for 3 metallic bands on the hindwing underside. The long filiform tail is diagnostic in tailed forms."
+    },
+    "r_aedias": {
+      "type": "result",
+      "id": "r_aedias",
+      "taxon_id": 84050,
+      "note": "Small stub tail; underside with pale streaking. Compare with A. centaurus which has more prominent banding."
+    },
+    "r_aurea": {
+      "type": "result",
+      "id": "r_aurea",
+      "taxon_id": 84052,
+      "note": "Brilliant blue-purple upperside with no tail. One of the more commonly sighted tailless oak blues."
+    },
+    "r_eumolphus": {
+      "type": "result",
+      "id": "r_eumolphus",
+      "taxon_id": 84054,
+      "note": "Distinctive green iridescence on upperside. No tail. The underside shows characteristic dark streaking."
+    }
+  }
+}
