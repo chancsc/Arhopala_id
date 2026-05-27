@@ -1,70 +1,268 @@
 {
-  "start": "q1",
+  "start": "q_tail",
   "nodes": {
-    "q1": {
+
+    "q_tail": {
       "type": "question",
-      "id": "q1",
-      "question": "Does the butterfly have a tail on the hindwing?",
-      "hint": "Examine the posterior margin of the hindwing for filiform or stub-like projections.",
+      "id": "q_tail",
+      "question": "Does the hindwing have a tail (at vein 2)?",
+      "hint": "Check the posterior margin of the hindwing for a filiform or stub-like projection at vein 2.",
       "choices": [
-        { "label": "Yes — has tail(s)", "next": "q2" },
-        { "label": "No tail", "next": "q3" }
+        { "label": "Yes — hindwing is tailed", "next": "q_fw_cell_silver" },
+        { "label": "No — hindwing is tailless", "next": "q_upperside_green" }
       ]
     },
-    "q2": {
+
+    "q_fw_cell_silver": {
       "type": "question",
-      "id": "q2",
-      "question": "What is the tail type?",
-      "hint": "Compare the length and thickness of the tail projection relative to the wing width.",
+      "id": "q_fw_cell_silver",
+      "question": "Are the cell spots on the forewing underside outlined in greenish silver?",
+      "hint": "Examine the underside forewing cell. Look for a metallic greenish-silver outline around the cell spots — this is distinctive and not a trick of the light.",
       "choices": [
-        { "label": "Long, filiform (hair-like)", "next": "r_centaurus" },
-        { "label": "Short, stub-like", "next": "r_aedias" }
+        { "label": "Yes — greenish silver outlines on FW cell spots", "next": "g_centaurus" },
+        { "label": "No — no silver outlines", "next": "q_spot_arrangement_tailed" }
       ]
     },
-    "q3": {
+
+    "q_spot_arrangement_tailed": {
       "type": "question",
-      "id": "q3",
-      "question": "What is the dominant upperside forewing colour?",
-      "hint": "View the dorsal surface under natural light. Angle of view affects iridescence.",
+      "id": "q_spot_arrangement_tailed",
+      "question": "How are the hindwing underside postdiscal spots in spaces 5, 6, and 7 arranged?",
+      "hint": "Compare the alignment of the three spots. 'In echelon' means they overlap and their centres fall on a roughly straight line. 'Widely out of line' means spot 6 is displaced so its inner edge aligns with or falls inside the inner edge of spot 7 — it often overlaps the end-cell bar.",
       "choices": [
-        { "label": "Blue or purple iridescence", "next": "r_aurea" },
-        { "label": "Green or bronze iridescence", "next": "r_eumolphus" },
-        { "label": "Brown or tawny (no iridescence)", "next": "q4" }
+        { "label": "In echelon — overlapping, centres roughly in a straight line", "next": "q_echelon_extra_spots" },
+        { "label": "Widely out of line — spot 6 strongly displaced inward", "next": "q_outline_extra_spots" }
       ]
     },
-    "q4": {
+
+    "q_echelon_extra_spots": {
       "type": "question",
-      "id": "q4",
-      "question": "Is there a submarginal spot row on the hindwing underside?",
-      "hint": "Examine the ventral (underside) surface of the hindwing near the margin.",
+      "id": "q_echelon_extra_spots",
+      "question": "Are there extra subcostal spots on the forewing underside?",
+      "hint": "Look for a spot above the central cell spot (in space 11) or a spot at the base of space 10 on the forewing underside.",
       "choices": [
-        { "label": "Yes — distinct spot row visible", "next": "r_centaurus" },
-        { "label": "No — underside plain or streaked", "next": "r_aedias" }
+        { "label": "Yes — extra spot(s) present in space 11 or at base of space 10", "next": "g_agesias" },
+        { "label": "No — no extra subcostal spots", "next": "g_amphimuta_aedias" }
       ]
     },
-    "r_centaurus": {
-      "type": "result",
-      "id": "r_centaurus",
-      "taxon_id": 84048,
-      "note": "Look for 3 metallic bands on the hindwing underside. The long filiform tail is diagnostic in tailed forms."
+
+    "q_outline_extra_spots": {
+      "type": "question",
+      "id": "q_outline_extra_spots",
+      "question": "Are there extra subcostal spots on the forewing underside?",
+      "hint": "Look for a spot above the central cell spot (in space 11) or a spot at the base of space 10 on the forewing underside.",
+      "choices": [
+        { "label": "Yes — extra spot(s) present in space 11 or at base of space 10", "next": "g_alitaeus" },
+        { "label": "No — no extra subcostal spots", "next": "q_outline_dark_area" }
+      ]
     },
-    "r_aedias": {
-      "type": "result",
-      "id": "r_aedias",
-      "taxon_id": 84050,
-      "note": "Small stub tail; underside with pale streaking. Compare with A. centaurus which has more prominent banding."
+
+    "q_outline_dark_area": {
+      "type": "question",
+      "id": "q_outline_dark_area",
+      "question": "Is there a distinct dark area under the forewing cell (space 1b) defined by a pale line?",
+      "hint": "Examine the forewing underside near the cell base. The camdeo group has a characteristic darkened patch in space 1b with a clearly defined pale bordering line.",
+      "choices": [
+        { "label": "Yes — distinct dark patch in space 1b with pale border", "next": "g_camdeo" },
+        { "label": "No — no such marking", "next": "g_cleander_agelastus" }
+      ]
     },
-    "r_aurea": {
-      "type": "result",
-      "id": "r_aurea",
-      "taxon_id": 84052,
-      "note": "Brilliant blue-purple upperside with no tail. One of the more commonly sighted tailless oak blues."
+
+    "q_upperside_green": {
+      "type": "question",
+      "id": "q_upperside_green",
+      "question": "Is the male upperside shining green?",
+      "hint": "View the dorsal (upper) surface under natural light. Most Arhopala males are shining blue or purple. Only a few groups have shining green males. For females, answer 'No'.",
+      "choices": [
+        { "label": "Yes — shining green upperside (male)", "next": "q_green_wing_shape" },
+        { "label": "No — blue, purple, brown, or female", "next": "q_camdeo_tailless" }
+      ]
     },
-    "r_eumolphus": {
-      "type": "result",
-      "id": "r_eumolphus",
-      "taxon_id": 84054,
-      "note": "Distinctive green iridescence on upperside. No tail. The underside shows characteristic dark streaking."
+
+    "q_green_wing_shape": {
+      "type": "question",
+      "id": "q_green_wing_shape",
+      "question": "What is the forewing apex and termen shape?",
+      "hint": "The aurea group has a more acute (pointed) forewing apex with a straighter termen. The eumolphus group has a more rounded forewing.",
+      "choices": [
+        { "label": "More pointed apex and straighter termen", "next": "g_aurea" },
+        { "label": "More rounded forewing", "next": "g_eumolphus" }
+      ]
+    },
+
+    "q_camdeo_tailless": {
+      "type": "question",
+      "id": "q_camdeo_tailless",
+      "question": "Is there a distinct dark area under the forewing cell (space 1b) defined by a pale line?",
+      "hint": "Examine the forewing underside near the cell base. This pale-bordered dark patch in space 1b is the hallmark of the camdeo group.",
+      "choices": [
+        { "label": "Yes — distinct dark patch in space 1b with pale border", "next": "g_camdeo" },
+        { "label": "No — no such marking", "next": "q_hair_tuft" }
+      ]
+    },
+
+    "q_hair_tuft": {
+      "type": "question",
+      "id": "q_hair_tuft",
+      "question": "Does the male have a recumbent hair tuft on the hindwing upperside, or an opaque/differently-textured discal patch on the forewing upperside?",
+      "hint": "These are male-only features. The hair tuft lies flat against the hindwing surface. The forewing discal patch appears opaque or differently textured compared to the surrounding shining blue.",
+      "choices": [
+        { "label": "Yes — hair tuft or opaque discal patch visible (male)", "next": "g_epimuta" },
+        { "label": "No — no such features (or female)", "next": "q_tailless_extra_spots" }
+      ]
+    },
+
+    "q_tailless_extra_spots": {
+      "type": "question",
+      "id": "q_tailless_extra_spots",
+      "question": "Are there extra subcostal spots on the forewing underside?",
+      "hint": "Look for a spot above the central cell spot (in space 11) or a spot at the base of space 10 on the forewing underside.",
+      "choices": [
+        { "label": "Yes — extra spot(s) in space 11 or at base of space 10", "next": "g_anthelus_ijanensis" },
+        { "label": "No — no extra subcostal spots", "next": "q_spot_arrangement_tailless" }
+      ]
+    },
+
+    "q_spot_arrangement_tailless": {
+      "type": "question",
+      "id": "q_spot_arrangement_tailless",
+      "question": "How are the hindwing underside postdiscal spots in spaces 5, 6, and 7 arranged?",
+      "hint": "Compare the alignment of the three spots. 'In echelon' means their centres form a roughly straight line. 'Widely out of line' means spot 6 is displaced so its inner edge aligns with or falls inside the inner edge of spot 7.",
+      "choices": [
+        { "label": "In echelon — overlapping, centres roughly in a straight line", "next": "g_amphimuta_aedias" },
+        { "label": "Widely out of line — spot 6 strongly displaced inward", "next": "g_agelastus" }
+      ]
+    },
+
+    "g_centaurus": {
+      "type": "group",
+      "id": "g_centaurus",
+      "group_name": "centaurus group",
+      "description": "The Common Oakblue group. Diagnostic: cell spots on the forewing underside are outlined in distinctive metallic greenish silver. Typically tailed.",
+      "key_features": [
+        "Forewing cell spots outlined in greenish silver (underside)",
+        "Tailed at vein 2",
+        "Often three metallic bands visible on hindwing underside"
+      ]
+    },
+
+    "g_amphimuta_aedias": {
+      "type": "group",
+      "id": "g_amphimuta_aedias",
+      "group_name": "amphimuta / aedias group",
+      "description": "Hindwing postdiscal spots in spaces 5–7 in echelon (centres roughly in line). No extra subcostal spots on the forewing underside. No greenish-silver cell outlines. More rounded forewing (amphimuta), or slightly more acute (aedias).",
+      "key_features": [
+        "HW spots 5–7 in echelon",
+        "No extra subcostal spots",
+        "No greenish-silver FW cell outlines",
+        "Tailed or tailless depending on species"
+      ]
+    },
+
+    "g_agesias": {
+      "type": "group",
+      "id": "g_agesias",
+      "group_name": "agesias group",
+      "description": "Hindwing postdiscal spots in spaces 5–7 in echelon with extra subcostal spots present on the forewing underside (in space 11 or at base of space 10).",
+      "key_features": [
+        "HW spots 5–7 in echelon",
+        "Extra subcostal spot in FW space 11 or at base of space 10"
+      ]
+    },
+
+    "g_cleander_agelastus": {
+      "type": "group",
+      "id": "g_cleander_agelastus",
+      "group_name": "cleander / agelastus group",
+      "description": "Hindwing postdiscal spots in spaces 5–7 widely out of line. No extra subcostal spots on the forewing underside. No distinct dark area under the forewing cell. Tailed.",
+      "key_features": [
+        "HW spots 5–7 widely out of line",
+        "No extra subcostal spots",
+        "No dark area under FW cell (space 1b)",
+        "Tailed"
+      ]
+    },
+
+    "g_alitaeus": {
+      "type": "group",
+      "id": "g_alitaeus",
+      "group_name": "alitaeus group",
+      "description": "Hindwing postdiscal spots in spaces 5–7 widely out of line AND extra subcostal spots present on the forewing underside. Tailed.",
+      "key_features": [
+        "HW spots 5–7 widely out of line",
+        "Extra subcostal spot in FW space 11 or at base of space 10",
+        "Tailed"
+      ]
+    },
+
+    "g_camdeo": {
+      "type": "group",
+      "id": "g_camdeo",
+      "group_name": "camdeo group",
+      "description": "Hallmark feature: a distinct dark area under the forewing cell in space 1b, defined by a pale bordering line on the forewing underside.",
+      "key_features": [
+        "Distinct dark patch in FW underside space 1b with pale border",
+        "Can be tailed or tailless"
+      ]
+    },
+
+    "g_epimuta": {
+      "type": "group",
+      "id": "g_epimuta",
+      "group_name": "epimuta group",
+      "description": "Males have either a recumbent hair tuft on the hindwing upperside or an opaque/differently-textured discal patch on the forewing upperside. Tailless.",
+      "key_features": [
+        "Male: recumbent hair tuft on HW upperside, or opaque discal patch on FW upperside",
+        "Tailless"
+      ]
+    },
+
+    "g_eumolphus": {
+      "type": "group",
+      "id": "g_eumolphus",
+      "group_name": "eumolphus group",
+      "description": "Males are shining green on the upperside (not blue or purple). Forewing more rounded. Tailless.",
+      "key_features": [
+        "Male upperside: shining green",
+        "Forewing apex rounded",
+        "Tailless"
+      ]
+    },
+
+    "g_aurea": {
+      "type": "group",
+      "id": "g_aurea",
+      "group_name": "aurea group",
+      "description": "Males are shining green on the upperside. Forewing apex more acute (pointed) with a straighter termen than the eumolphus group. Tailless.",
+      "key_features": [
+        "Male upperside: shining green",
+        "Forewing apex more pointed; termen straighter",
+        "Tailless"
+      ]
+    },
+
+    "g_anthelus_ijanensis": {
+      "type": "group",
+      "id": "g_anthelus_ijanensis",
+      "group_name": "anthelus / ijanensis group",
+      "description": "Tailless with extra subcostal spots on the forewing underside (in space 11 or at base of space 10). May include anthelus, ijanensis, and related groups — further separation requires species-level keys.",
+      "key_features": [
+        "Tailless",
+        "Extra subcostal spot in FW space 11 or at base of space 10"
+      ]
+    },
+
+    "g_agelastus": {
+      "type": "group",
+      "id": "g_agelastus",
+      "group_name": "agelastus group",
+      "description": "Hindwing postdiscal spots in spaces 5–7 widely out of line. No extra subcostal spots. Tailless (in this pathway).",
+      "key_features": [
+        "HW spots 5–7 widely out of line",
+        "No extra subcostal spots",
+        "Tailless"
+      ]
     }
+
   }
 }

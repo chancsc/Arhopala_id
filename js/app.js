@@ -57,6 +57,8 @@ function render() {
     bodyHTML = renderQuestion(node);
   } else if (node.type === 'result') {
     bodyHTML = renderResult(node);
+  } else if (node.type === 'group') {
+    bodyHTML = renderGroup(node);
   } else {
     bodyHTML = renderErrorCard(`Unknown node type: "${node.type}"`);
   }
@@ -130,6 +132,30 @@ function renderResult(node) {
         <a class="btn-inat" href="${escapeAttr(inatUrl)}" target="_blank" rel="noopener noreferrer">
           ${iconExternal()} View on iNaturalist
         </a>
+        <button class="btn-restart">
+          ${iconRestart()} Start Over
+        </button>
+      </div>
+    </div>
+  `;
+}
+
+function renderGroup(node) {
+  const featuresHTML = node.key_features && node.key_features.length
+    ? `<ul class="key-features">${node.key_features.map(f => `<li>${escapeHtml(f)}</li>`).join('')}</ul>`
+    : '';
+
+  return `
+    <div class="card card--group">
+      ${buildBackButton()}
+      <span class="result-badge result-badge--group">Group Identified</span>
+      <h2 class="species-common">${escapeHtml(node.group_name)}</h2>
+      <p class="group-description">${escapeHtml(node.description)}</p>
+      ${featuresHTML}
+      <div class="species-pending">
+        ${iconPending()} Species-level keys for this group will be added in the next update.
+      </div>
+      <div class="action-row">
         <button class="btn-restart">
           ${iconRestart()} Start Over
         </button>
@@ -268,6 +294,13 @@ function iconRestart() {
   return `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
     <path d="M2 8a6 6 0 106-6H5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
     <path d="M2 4v4h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>`;
+}
+
+function iconPending() {
+  return `<svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true" style="vertical-align:-2px">
+    <circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M8 5v3.5l2 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
   </svg>`;
 }
 

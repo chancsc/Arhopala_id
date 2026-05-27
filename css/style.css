@@ -338,6 +338,55 @@ body {
 
 .btn-restart:hover { border-color: var(--primary); color: var(--primary); }
 
+/* ===== Group node ===== */
+.result-badge--group { background: var(--accent); }
+
+.group-description {
+  font-size: 0.92rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+  line-height: 1.55;
+}
+
+.key-features {
+  list-style: none;
+  margin: 0 0 1.1rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.key-features li {
+  font-size: 0.85rem;
+  padding: 0.35rem 0.6rem 0.35rem 1.5rem;
+  background: #f0f5ef;
+  border-radius: 5px;
+  position: relative;
+  color: var(--text);
+}
+
+.key-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0.5rem;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.species-pending {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  background: #fdf8ef;
+  border: 1.5px dashed #e0c87a;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
 /* ===== Error card ===== */
 .card--error .error-icon { font-size: 2rem; margin-bottom: 0.5rem; }
 .card--error h2 { margin-bottom: 0.5rem; }
