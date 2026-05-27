@@ -128,10 +128,10 @@
     "q_tailed_anthelus": {
       "type": "question",
       "id": "q_tailed_anthelus",
-      "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with at least 3 spots in FW space 11 AND a subbasal spot in HW space 8?",
-      "hint": "The anthelus group has a distinctive combination: partial dislocation of the FW postdiscal band at vein 4, multiple (≥3) spots in FW space 11, and a subbasal spot in HW space 8.",
+      "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
+      "hint": "The anthelus group (2 spp.) is defined by partial dislocation of the FW postdiscal band at vein 4, a spot at the base of FW space 10, and the absence of a spot at the base of HW space 6. A. anthelus grahami additionally has ≥3 spots in FW space 11 and 2 subbasal spots in HW space 8; A. achelous achelous has no spots in FW space 11 and only 1 HW space 8 spot.",
       "choices": [
-        { "label": "Yes — FW band partially dislocated at vein 4; ≥3 spots in FW space 11; subbasal spot in HW space 8", "next": "g_anthelus" },
+        { "label": "Yes — FW band partially dislocated at vein 4; spot at base of FW space 10; no spot at base of HW space 6", "next": "g_anthelus" },
         { "label": "No", "next": "q_tailed_macular" }
       ]
     },
@@ -323,12 +323,13 @@
       "type": "group",
       "id": "g_anthelus",
       "group_name": "anthelus group",
-      "description": "Characterised by the forewing postdiscal band being only partially dislocated at vein 4. Extra spots are prominent: at least three in FW space 11 and a subbasal spot in HW space 8.",
+      "description": "Forewing postdiscal band only partially dislocated at vein 4. Spot present at base of FW space 10; NO spot at base of HW space 6. Two Malayan species: A. anthelus grahami (large, 28 mm; extra spots in FW space 11 and HW space 8) and A. achelous achelous (smaller, 22 mm; no extra spots).",
       "key_features": [
         "FW postdiscal band partially dislocated at vein 4",
-        "At least 3 spots in FW space 11",
-        "Subbasal spot in HW space 8"
-      ]
+        "Spot at base of FW space 10",
+        "No spot at base of HW space 6"
+      ],
+      "next": "q_anthelus_s1"
     },
 
     "g_camdeo_general": {
@@ -696,13 +697,14 @@
       "type": "group",
       "id": "g_aurea",
       "group_name": "aurea group",
-      "description": "Males have a hindwing cell considerably longer than half the wing length. Male forewings are acute with a straight or concave termen. Males are shining green.",
+      "description": "Males have a HW cell considerably longer than half the wing length, a rather acute FW apex, and a straight or slightly concave termen. Males are shining green above; females are blue or purple-blue. All members possess a short stumpy HW tail (just under 2.0 mm). Five species (4 Peninsular, 1 Bornean).",
       "key_features": [
         "Male: HW cell considerably longer than half wing length",
-        "Male: FW apex acute; termen straight or concave",
-        "Male upperside: shining green",
-        "Tailed"
-      ]
+        "Male: FW apex acute; termen straight or slightly concave",
+        "Male upperside: shining green; female blue or purple-blue",
+        "Short stumpy HW tail (~2 mm)"
+      ],
+      "next": "q_aurea_s1"
     },
 
     "g_ganesa": {
@@ -1495,6 +1497,124 @@
       "name": "Arhopala metamuta metamuta",
       "common_name": "",
       "note": "Striking upperside: male has a brilliant greenish-blue HW that contrasts strongly with the dark, shining violet-blue FW. FW postdiscal spots 2 and 3 are in line (perimuta subgroup)."
+    },
+
+    "q_anthelus_s1": {
+      "type": "question",
+      "id": "q_anthelus_s1",
+      "question": "Does the forewing underside have at least 3 spots in space 11, AND does the hindwing underside have 2 subbasal spots in space 8?",
+      "hint": "A. anthelus grahami (anthelus subgroup) has EXTRA spots — ≥3 in FW space 11 and 2 subbasal spots in HW space 8; spots on FW and upper HW half are deep purple-brown; FW 28 mm. A. achelous achelous (achelous subgroup) has NO spots in FW space 11 and only a single spot at the base of HW space 8; FW 22 mm.",
+      "choices": [
+        { "label": "Yes — ≥3 spots in FW space 11; 2 subbasal spots in HW space 8; spots deep purple-brown", "next": "r_anthelus_grahami" },
+        { "label": "No — 0 spots in FW space 11; single spot at base of HW space 8", "next": "r_achelous_achelous" }
+      ]
+    },
+
+    "r_anthelus_grahami": {
+      "type": "result",
+      "id": "r_anthelus_grahami",
+      "taxon_id": null,
+      "name": "Arhopala anthelus grahami",
+      "common_name": "",
+      "note": "One of the most beautiful in the genus. FW 28 mm. Underside: ≥3 spots in FW space 11; 2 spots at base of HW space 8; spots on FW and upper HW half deep purple-brown. Male: brilliant shining blue, narrow black border. Female: violet-blue with fairly broad black borders. Anthelus subgroup."
+    },
+
+    "r_achelous_achelous": {
+      "type": "result",
+      "id": "r_achelous_achelous",
+      "taxon_id": null,
+      "name": "Arhopala achelous achelous",
+      "common_name": "",
+      "note": "Smaller than A. anthelus grahami. FW 22 mm. Underside: NO spots in FW space 11; single spot at base of HW space 8 (lacks the extra spots of A. anthelus). Male: shining dark blue, narrow 0.5 mm black border. Subspecies A. achelous malu (Kedawi) lacks most of the purple tinge on the underside. Achelous subgroup."
+    },
+
+    "q_aurea_s1": {
+      "type": "question",
+      "id": "q_aurea_s1",
+      "question": "Is the underside glazed with a distinct purple wash?",
+      "hint": "A. trogon and A. stinga both have an underside glazed with a purple wash. A. aurea, A. caeca, and A. borneensis are hair-brown underneath (no purple glaze). This is the primary split within the aurea group.",
+      "choices": [
+        { "label": "Yes — underside glazed with a purple wash", "next": "q_aurea_purple" },
+        { "label": "No — underside hair-brown (no purple glaze)", "next": "q_aurea_brown" }
+      ]
+    },
+
+    "q_aurea_purple": {
+      "type": "question",
+      "id": "q_aurea_purple",
+      "question": "Is the forewing black border significantly wide at the tornus — 2.5–3.0 mm?",
+      "hint": "A. stinga has an unusually wide FW border of 2.5–3.0 mm at the tornus (the widest in the group), decreasing to a thread near the apex; the male has no basal blue suffusion. A. trogon has a thread-like border throughout; male is brilliant brassy green with a strong blue suffusion at the wing bases; HW green usually reaches the termen in spaces 3, 4, or 5.",
+      "choices": [
+        { "label": "Yes — FW border 2.5–3.0 mm at tornus; male green without blue base suffusion", "next": "r_stinga" },
+        { "label": "No — FW border thread throughout; male brilliant brassy green with strong blue base suffusion", "next": "r_trogon" }
+      ]
+    },
+
+    "q_aurea_brown": {
+      "type": "question",
+      "id": "q_aurea_brown",
+      "question": "Are the underside markings incomplete — lacking basal/central cell spots on the forewing and various basal/discal spots on the hindwing, with a narrow postdiscal band?",
+      "hint": "A. caeca has distinctively incomplete underside markings (FW lacks basal and central cell spots; HW lacks various basal and discal spots; narrow postdiscal band) and the male green turns to violet-blue at the tornus of both wings. A. aurea and A. borneensis have complete markings.",
+      "choices": [
+        { "label": "Yes — incomplete markings; male green turns to violet-blue at tornus of both wings", "next": "r_caeca" },
+        { "label": "No — complete underside markings", "next": "q_aurea_brown2" }
+      ]
+    },
+
+    "q_aurea_brown2": {
+      "type": "question",
+      "id": "q_aurea_brown2",
+      "question": "Is the forewing black border a thread throughout (even at the tornus), AND does the hindwing green narrowly reach the termen in spaces 5 and 6?",
+      "hint": "A. borneensis (Bornean): FW border thread throughout, widening almost imperceptibly toward tornus; HW green reaches termen narrowly in spaces 5 and 6; male brassy green with strong blue base suffusion. A. aurea: FW border 0.75–1.5 mm at tornus, decreasing to a thread above vein 3 or 4; HW green does NOT reach the termen; male green with only weak blue base suffusion; female blue to purple-blue.",
+      "choices": [
+        { "label": "Yes — FW border thread throughout; HW green reaches termen in spaces 5–6; strong blue base (Bornean)", "next": "r_borneensis" },
+        { "label": "No — FW border 0.75–1.5 mm at tornus, decreasing to thread; HW green not reaching termen; weak blue base", "next": "r_aurea" }
+      ]
+    },
+
+    "r_aurea": {
+      "type": "result",
+      "id": "r_aurea",
+      "taxon_id": null,
+      "name": "Arhopala aurea",
+      "common_name": "",
+      "note": "Underside hair-brown with complete markings. Male: shining green with weak blue suffusion at wing bases; FW border 0.75–1.5 mm at tornus, decreasing to a thread above vein 3 or 4; HW green does not reach the termen. Female: blue to purple-blue with a relatively narrow HW border. Short stumpy HW tail (~2 mm)."
+    },
+
+    "r_trogon": {
+      "type": "result",
+      "id": "r_trogon",
+      "taxon_id": null,
+      "name": "Arhopala trogon",
+      "common_name": "",
+      "note": "Underside glazed with a purple wash. Male: brilliant brassy green with a strong blue suffusion at the wing bases; FW border a thread throughout; HW green usually reaches the termen in spaces 3, 4, or 5. Short stumpy HW tail (~2 mm)."
+    },
+
+    "r_stinga": {
+      "type": "result",
+      "id": "r_stinga",
+      "taxon_id": null,
+      "name": "Arhopala stinga",
+      "common_name": "",
+      "note": "Underside glazed with a purple wash (exactly as in A. trogon). Male: green WITHOUT any basal blue suffusion (no blue at wing bases); FW border distinctively wide — 2.5–3.0 mm at tornus, decreasing to a thread near the apex (widest border in the group). Short stumpy HW tail (~2 mm)."
+    },
+
+    "r_caeca": {
+      "type": "result",
+      "id": "r_caeca",
+      "taxon_id": null,
+      "name": "Arhopala caeca",
+      "common_name": "",
+      "note": "Underside hair-brown with INCOMPLETE markings: FW lacks basal and central cell spots; HW lacks various basal and discal spots; postdiscal band narrow. Male: brilliant green turning to violet-blue at the tornus of both wings (diagnostic — unique in the group); FW border a thread. Short stumpy HW tail (~2 mm)."
+    },
+
+    "r_borneensis": {
+      "type": "result",
+      "id": "r_borneensis",
+      "taxon_id": null,
+      "name": "Arhopala borneensis",
+      "common_name": "",
+      "note": "Bornean taxon. Underside hair-brown with complete markings (as A. aurea). Male: brassy green with strong blue suffusion at base; FW border thread throughout, widening almost imperceptibly toward tornus; HW green reaches termen narrowly in spaces 5 and 6 (unlike A. aurea where green does not reach termen). Short stumpy HW tail (~2 mm)."
     },
 
     "g_needs_more_info": {
