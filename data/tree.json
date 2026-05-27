@@ -291,6 +291,17 @@
       "hint": "The agesilaus group can be confused with the amphimuta group. Its defining feature is HW spot 6 placed equidistant from spot 5 and the end-cell bar — not closer to one or the other. Tailless.",
       "choices": [
         { "label": "Yes — HW spot 6 equidistant between spot 5 and end-cell bar", "next": "g_agesilaus" },
+        { "label": "No", "next": "q_tailless_agelastus_check" }
+      ]
+    },
+
+    "q_tailless_agelastus_check": {
+      "type": "question",
+      "id": "q_tailless_agelastus_check",
+      "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
+      "hint": "The agelastus group has a continuous (non-dislocated) FW postdiscal band, often with a spot at the base of FW space 3. Most species lack a costal spot in FW space 10, though one species (epimete suedas) is an exception.",
+      "choices": [
+        { "label": "Yes — FW postdiscal band continuous; often a spot at base of FW space 3", "next": "g_agelastus" },
         { "label": "No", "next": "g_needs_more_info" }
       ]
     },
@@ -370,13 +381,14 @@
       "type": "group",
       "id": "g_agesias",
       "group_name": "agesias group",
-      "description": "Tailless species with prominent, rounded spots. They feature a central spot in FW space 11. Forewing vein 9 is notably short.",
+      "description": "Tailless, with slightly dentate (toothed) HW margins. Both sexes similar: shining, powdery blue with broad black borders (~1.5 mm at tornus, expanding to mid-costa). Prominent rounded spots on the underside; at least one subcostal spot in FW space 11. FW vein 9 notably short. Three Malaysian species.",
       "key_features": [
-        "Tailless",
-        "Prominent, rounded spots",
-        "Central spot in FW space 11",
+        "Tailless (HW margins slightly dentate)",
+        "Sexes alike: shining powdery blue; broad black borders",
+        "At least one subcostal spot above FW cell in space 11",
         "FW vein 9 notably short"
-      ]
+      ],
+      "next": "q_agesias_s1"
     },
 
     "g_ijanensis": {
@@ -580,12 +592,14 @@
       "type": "group",
       "id": "g_agelastus",
       "group_name": "agelastus group",
-      "description": "Forewing underside postdiscal band is continuous and often features a spot at the base of FW space 3. There is no costal spot in FW space 10.",
+      "description": "FW underside postdiscal band is continuous; often a spot at base of FW space 3. Most species lack a costal spot in FW space 10 (exception: epimete suedas). HW postdiscal band only partially dislocated at vein 2. Most species are tailless; males typically have broad black borders. Seven Malaysian species in four subgroups.",
       "key_features": [
-        "FW postdiscal band continuous and unbroken",
-        "Often: spot at base of FW space 3",
-        "No costal spot in FW space 10"
-      ]
+        "FW postdiscal band continuous; often spot at base of FW space 3",
+        "HW postdiscal band partially dislocated at vein 2",
+        "Most species tailless (barami penanga is the exception)",
+        "Males: broad black borders, often similar to females"
+      ],
+      "next": "q_agelastus_s1"
     },
 
     "g_corinda": {
@@ -706,6 +720,184 @@
       "name": "Arhopala aedias",
       "common_name": "Large Metallic Oakblue",
       "note": "Underside ground colour hair brown; spots narrowly outlined in pale buff lines. Male upperside: lustrous violet blue with black border reduced to a thread. Female upperside: purple blue with typical broad black borders. Two size forms occur: large (FW 25–29 mm) and small (FW 20–22 mm; small form has more rounded, darker spots beneath). Two subspecies: A. aedias agnis (forest at low to moderate elevations, standard) and A. aedias meritatas (Langkawi Islands — paler and brighter blue upperside in both sexes)."
+    },
+
+    "q_agelastus_s1": {
+      "type": "question",
+      "id": "q_agelastus_s1",
+      "question": "Is there a costal spot in forewing space 10?",
+      "hint": "A costal spot in FW space 10 is unique to Arhopala epimete suedas within this group. All other agelastus group species lack it.",
+      "choices": [
+        { "label": "Yes — costal spot present in FW space 10", "next": "r_epimete_suedas" },
+        { "label": "No — FW space 10 lacks a costal spot", "next": "q_agelastus_s2" }
+      ]
+    },
+
+    "q_agelastus_s2": {
+      "type": "question",
+      "id": "q_agelastus_s2",
+      "question": "Does the hindwing have a tail?",
+      "hint": "Within the agelastus group, only Arhopala barami penanga is tailed. All other species are tailless.",
+      "choices": [
+        { "label": "Yes — hindwing is tailed", "next": "r_barami_penanga" },
+        { "label": "No — tailless", "next": "q_agelastus_s3" }
+      ]
+    },
+
+    "q_agelastus_s3": {
+      "type": "question",
+      "id": "q_agelastus_s3",
+      "question": "Are the underside markings small and macular (dot-like), and are tornal green scales absent from the hindwing?",
+      "hint": "Arhopala cardoni has characteristically small, macular (isolated dot-like) markings on the underside. The hindwing also lacks the metallic tornal green scales seen in some other species. The HW is evenly rounded.",
+      "choices": [
+        { "label": "Yes — small macular markings; no tornal green scales; HW evenly rounded", "next": "r_cardoni" },
+        { "label": "No — markings larger or not macular", "next": "q_agelastus_s4" }
+      ]
+    },
+
+    "q_agelastus_s4": {
+      "type": "question",
+      "id": "q_agelastus_s4",
+      "question": "Are the inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened, and is HW postdiscal spot 6 outwardly concave or sinuous?",
+      "hint": "Arhopala alaconia media (alesia subgroup) is distinguished by strikingly enlarged and darkened inner submarginal spots in these specific spaces, combined with an outwardly concave or sinuous HW postdiscal spot 6.",
+      "choices": [
+        { "label": "Yes — inner submarginal spots enlarged and darkened; HW spot 6 outwardly concave or sinuous", "next": "r_alaconia_media" },
+        { "label": "No", "next": "q_agelastus_s5" }
+      ]
+    },
+
+    "q_agelastus_s5": {
+      "type": "question",
+      "id": "q_agelastus_s5",
+      "question": "Is the male upperside notably darker violet with narrower black borders than typical for the group?",
+      "hint": "Arhopala labuana has a distinctly darker, deeper violet upperside and narrower black borders compared to A. agelastus and A. wildeyana, which are both violet blue.",
+      "choices": [
+        { "label": "Yes — much darker violet; borders notably narrower", "next": "r_labuana" },
+        { "label": "No — violet blue", "next": "q_agelastus_s6" }
+      ]
+    },
+
+    "q_agelastus_s6": {
+      "type": "question",
+      "id": "q_agelastus_s6",
+      "question": "How broad is the male forewing black border?",
+      "hint": "Wildeyana has broader borders (2.0 mm at tornus to 5.0 mm at costa) than agelastus (1.0 mm at tornus to 4.0 mm at apex). Females: wildeyana is brighter/purer blue; agelastus female is brighter blue with broader borders; in agelastus, the underside HW space 3 spot is nearly in line with spots 2 and 4.",
+      "choices": [
+        { "label": "Broad: 2.0 mm at tornus to 5.0 mm at costa", "next": "r_wildeyana" },
+        { "label": "Standard: 1.0 mm at tornus to 4.0 mm at apex", "next": "r_agelastus_agelastus" }
+      ]
+    },
+
+    "r_epimete_suedas": {
+      "type": "result",
+      "id": "r_epimete_suedas",
+      "taxon_id": null,
+      "name": "Arhopala epimete suedas",
+      "common_name": "",
+      "note": "Unique in the agelastus group: costal spot present in FW space 10. FW underside: lower portion of postdiscal band significantly wider than upper part. HW lacks tornal green scales. Both sexes alike: blue with broad FW borders (2.0 mm at tornus to 6.0 mm at costa). Blue on HW confined to the cell. Tailless."
+    },
+
+    "r_barami_penanga": {
+      "type": "result",
+      "id": "r_barami_penanga",
+      "taxon_id": null,
+      "name": "Arhopala barami penanga",
+      "common_name": "",
+      "note": "The only tailed species in the agelastus group. Male upperside: blue with a broad FW border expanding from 2.5 mm at the tornus to 8.0 mm at the costa. Female: paler blue."
+    },
+
+    "r_cardoni": {
+      "type": "result",
+      "id": "r_cardoni",
+      "taxon_id": null,
+      "name": "Arhopala cardoni",
+      "common_name": "",
+      "note": "Monotypic subgroup. Underside markings small and macular (dot-like). HW tailless and evenly rounded; no tornal green scales. Male: bright blue with violet tinge; FW border 2.0 mm at tornus expanding to 5.0 mm at apex. Female: purer blue with slightly wider black borders than the male."
+    },
+
+    "r_alaconia_media": {
+      "type": "result",
+      "id": "r_alaconia_media",
+      "taxon_id": null,
+      "name": "Arhopala alaconia media",
+      "common_name": "",
+      "note": "Alesia subgroup. Underside: inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened; HW postdiscal spot 6 outwardly concave or sinuous. Normally tailless (slightly toothed), but a rare tailed form (f. kempi) exists. Both sexes alike: violet blue with FW border 3.0 mm at tornus expanding to mid-costa."
+    },
+
+    "r_labuana": {
+      "type": "result",
+      "id": "r_labuana",
+      "taxon_id": null,
+      "name": "Arhopala labuana",
+      "common_name": "",
+      "note": "Male upperside: much darker violet than A. agelastus, with narrower black borders. Female: dark blue. Tailless."
+    },
+
+    "r_wildeyana": {
+      "type": "result",
+      "id": "r_wildeyana",
+      "taxon_id": null,
+      "name": "Arhopala wildeyana wildeyana",
+      "common_name": "",
+      "note": "Male upperside: violet blue with broader borders than A. labuana or A. agelastus — 2.0 mm at tornus to 5.0 mm at costa. Female: brighter and purer blue. Tailless."
+    },
+
+    "r_agelastus_agelastus": {
+      "type": "result",
+      "id": "r_agelastus_agelastus",
+      "taxon_id": null,
+      "name": "Arhopala agelastus agelastus",
+      "common_name": "",
+      "note": "Underside: HW postdiscal spot in space 3 is almost in line with spots in spaces 2 and 4 (distinguishes female from allied species). Male: violet blue with FW border 1.0 mm at tornus to 4.0 mm at apex. Female: brighter blue with broader borders. Tailless."
+    },
+
+    "q_agesias_s1": {
+      "type": "question",
+      "id": "q_agesias_s1",
+      "question": "How many spots are in forewing space 11, and what is the underside ground colour?",
+      "hint": "Arhopala kinabala is distinguished by having TWO spots in FW space 11, a dark brown ground colour, and blackish-brown markings. A. agesias and A. similis have a single spot in space 11 and a hair-brown ground colour.",
+      "choices": [
+        { "label": "Two spots in FW space 11; ground colour dark brown; markings blackish-brown", "next": "r_kinabala" },
+        { "label": "Single spot in FW space 11; ground colour hair brown", "next": "q_agesias_s2" }
+      ]
+    },
+
+    "q_agesias_s2": {
+      "type": "question",
+      "id": "q_agesias_s2",
+      "question": "Is the postdiscal band completely absent from the forewing underside?",
+      "hint": "Arhopala similis is superficially identical to A. agesias but uniquely lacks the postdiscal band entirely on the FW underside. A. agesias has the normal rounded-spot postdiscal band present.",
+      "choices": [
+        { "label": "Yes — postdiscal band completely absent from FW underside", "next": "r_similis" },
+        { "label": "No — postdiscal band present (rounded spots)", "next": "r_agesias" }
+      ]
+    },
+
+    "r_kinabala": {
+      "type": "result",
+      "id": "r_kinabala",
+      "taxon_id": null,
+      "name": "Arhopala kinabala",
+      "common_name": "",
+      "note": "Underside ground colour dark brown with large, blackish-brown markings. FW space 11 has two spots; FW space 3 spot is elongate and touches the end-cell bar. HW postdiscal spot 6 is oval, significantly enlarged, and overlaps the end-cell bar. Rare; seldom found below 450 m elevation."
+    },
+
+    "r_similis": {
+      "type": "result",
+      "id": "r_similis",
+      "taxon_id": null,
+      "name": "Arhopala similis",
+      "common_name": "",
+      "note": "Superficially identical to A. agesias but uniquely lacks the postdiscal band on the FW underside. Status as a separate species (vs. dimorph of A. agesias) has been questioned, though female genitalia differ slightly."
+    },
+
+    "r_agesias": {
+      "type": "result",
+      "id": "r_agesias",
+      "taxon_id": null,
+      "name": "Arhopala agesias",
+      "common_name": "",
+      "note": "The most common species in the group. Underside: hair-brown ground colour with all markings as rounded spots; single central spot in FW space 11."
     },
 
     "g_needs_more_info": {
