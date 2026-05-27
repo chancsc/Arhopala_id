@@ -2228,24 +2228,22 @@
     "q_eumolphus_s1": {
       "type": "question",
       "id": "q_eumolphus_s1",
-      "question": "What is the male upperside colour?",
-      "hint": "The eumolphus group is divided by male colour: blue/violet/purple (4 spp.) vs. shining green or brassy green (3 spp.).",
+      "question": "How long is the hindwing tail?",
+      "hint": "Measure the tail at vein 2. overdijkinki has a distinctly longer tail (~5 mm) compared with all other species in the group (~3 mm).",
       "choices": [
-        { "label": "Blue, violet, or purple", "next": "q_eumolphus_blue" },
-        { "label": "Shining green or brassy green", "next": "q_eumolphus_green" }
+        { "label": "Tail ~5 mm (markedly long)", "next": "r_overdijkinki_unda" },
+        { "label": "Tail ~3 mm", "next": "q_eumolphus_blue" }
       ]
     },
 
     "q_eumolphus_blue": {
       "type": "question",
       "id": "q_eumolphus_blue",
-      "question": "Which combination of tail length and forewing border best describes the specimen?",
-      "hint": "Check HW tail length carefully. overdijkinki has a markedly longer tail (5 mm) and greatly expanding FW border. Among the 3-mm tail species: bazalus is deep purple; acta is light violet-blue with a very narrow border and rounded FW; tameanga is dark violet-blue with an acute FW apex (largely Bornean).",
+      "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
+      "hint": "This character is visible on the underside and does not require seeing the upperside. In A. bazalus the overall underside is purplish-brown (not the usual hair-brown) and the FW apex is visibly powdered with pale violet scales.",
       "choices": [
-        { "label": "HW tail ~5 mm; FW border expands greatly toward costa (2.5 → 7.0 mm)", "next": "r_overdijkinki_unda" },
-        { "label": "Deep purple; underside purplish-brown with dark markings; tail ~3 mm", "next": "r_bazalus_zalinda" },
-        { "label": "Light violet-blue; very narrow border; rounded FW; underside faint; tail ~3 mm", "next": "r_acta" },
-        { "label": "Dark violet-blue; acute FW apex; nearly straight termen; tail ~3 mm (mainly Borneo)", "next": "r_tameanga" }
+        { "label": "Yes — purplish-brown underside; FW apex with pale violet powder", "next": "r_bazalus_zalinda" },
+        { "label": "No — hair-brown underside; no violet powder at apex", "next": "q_eumolphus_green" }
       ]
     },
 
@@ -2288,12 +2286,34 @@
     "q_eumolphus_green": {
       "type": "question",
       "id": "q_eumolphus_green",
-      "question": "How wide are the black borders on the male upperside?",
-      "hint": "horsfieldi has very broad borders reaching the cell. eumolphus maxwelli has narrow borders (2 mm at tornus, 1 mm at apex) and a rounded FW. hellenore has borders reduced to a thread above vein 4 with an acute FW and straight or concave termen.",
+      "question": "What is the forewing apex shape?",
+      "hint": "This can be assessed from either side. A rounded apex has a smooth, evenly curved termen. An acute apex comes to a more pointed tip, often with a straight or slightly concave termen below it.",
       "choices": [
-        { "label": "Very broad borders reaching the cell on all wings", "next": "r_horsfieldi_basiviridis" },
-        { "label": "Brassy green; narrow borders; rounded FW (2 mm → 1 mm apex)", "next": "r_eumolphus_maxwelli" },
-        { "label": "Border a thread above vein 4; FW apex acute; termen straight or concave", "next": "r_hellenore_siroes" }
+        { "label": "FW apex rounded; termen evenly curved", "next": "q_eumolphus_rounded" },
+        { "label": "FW apex acute; termen straight or slightly concave", "next": "q_eumolphus_acute" }
+      ]
+    },
+
+    "q_eumolphus_rounded": {
+      "type": "question",
+      "id": "q_eumolphus_rounded",
+      "question": "How distinct are the underside markings?",
+      "hint": "Three species share a rounded FW and ~3 mm tail. They differ in underside contrast: acta has very faint markings; horsfieldi has unusually dark, broad markings; eumolphus maxwelli is intermediate (standard contrast). If the upperside is visible: acta = blue/violet; horsfieldi = green with very broad borders reaching the cell; eumolphus = brassy green with narrow borders.",
+      "choices": [
+        { "label": "Underside markings very faint or obscure", "next": "r_acta" },
+        { "label": "Underside markings very dark and broad", "next": "r_horsfieldi_basiviridis" },
+        { "label": "Underside markings standard contrast", "next": "r_eumolphus_maxwelli" }
+      ]
+    },
+
+    "q_eumolphus_acute": {
+      "type": "question",
+      "id": "q_eumolphus_acute",
+      "question": "Where was this specimen found?",
+      "hint": "Both acute-apex species are similar; geography is the most reliable separator when the upperside is not visible. tameanga is a Bornean endemic; hellenore occurs on the Peninsula. If the upperside is visible: hellenore has a thread-width border above vein 4; tameanga has a broader border.",
+      "choices": [
+        { "label": "Borneo (Sabah / Sarawak / Brunei)", "next": "r_tameanga" },
+        { "label": "Malay Peninsula (or unknown locality)", "next": "r_hellenore_siroes" }
       ]
     },
 
