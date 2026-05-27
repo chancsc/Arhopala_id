@@ -531,32 +531,77 @@
       "type": "group",
       "id": "g_alitaeus",
       "group_name": "alitaeus group",
-      "description": "Defined by having a central spot in FW space 11 on the underside. Also has a distinctive male aedeagus that is right-angled before the apex (requires dissection to confirm).",
+      "description": "Defined by having a central spot in FW space 11 on the underside and HW postdiscal spot 6 outwardly straight or convex. Tailed species (tail 3.5–4.0 mm, except A. denta ~2.5 mm). Nine Malaysian species.",
       "key_features": [
-        "Central spot in FW space 11",
+        "Central spot in FW underside space 11",
+        "HW postdiscal spot 6 outwardly straight or convex",
+        "Tailed (3.5–4.0 mm; A. denta only ~2.5 mm)",
         "Male aedeagus right-angled before apex (dissection required)"
-      ]
+      ],
+      "next": "q_alitaeus_s1"
     },
 
     "g_agrata_ace": {
       "type": "group",
       "id": "g_agrata_ace",
       "group_name": "agrata group — ace subgroup",
-      "description": "Recognizable by the hindwing underside central cell spot, which is band-like and stretches entirely across the cell.",
+      "description": "Recognizable by the hindwing underside central cell spot, which is band-like and stretches entirely across the cell. Two Malaysian species, separated by the FW postdiscal band dislocation and the shape of HW postdiscal spot 6.",
       "key_features": [
-        "HW underside cell spot band-like, stretching entirely across the cell"
+        "HW underside central cell spot band-like, stretching entirely across the cell"
+      ],
+      "next": "q_agrata_ace_s1"
+    },
+
+    "q_agrata_ace_s1": {
+      "type": "question",
+      "id": "q_agrata_ace_s1",
+      "question": "Is the forewing postdiscal band clearly dislocated at vein 4, and is hindwing postdiscal spot 6 outwardly concave?",
+      "hint": "Arhopala ace ace has the FW band distinctly dislocated at vein 4 with HW spot 6 outwardly concave; all markings are relatively wide and the male is deep cobalt blue with a thread-like border. Arhopala azinis azinis has the FW band sinuous or only slightly dislocated at vein 4, HW spot 6 outwardly straight or convex, and the male has broad borders; it is strictly montane.",
+      "choices": [
+        { "label": "Yes — FW band clearly dislocated at vein 4; HW spot 6 outwardly concave", "next": "r_ace_ace" },
+        { "label": "No — FW band sinuous or only slightly dislocated; HW spot 6 straight or convex", "next": "r_azinis_azinis" }
       ]
+    },
+
+    "r_ace_ace": {
+      "type": "result",
+      "id": "r_ace_ace",
+      "taxon_id": null,
+      "name": "Arhopala ace ace",
+      "common_name": "",
+      "note": "Underside: all markings relatively wide; FW postdiscal band dislocated at vein 4; HW postdiscal spot 6 outwardly concave. Male: deep cobalt blue with black border reduced to a thread. Female: purple."
+    },
+
+    "r_azinis_azinis": {
+      "type": "result",
+      "id": "r_azinis_azinis",
+      "taxon_id": null,
+      "name": "Arhopala azinis azinis",
+      "common_name": "",
+      "note": "Underside: FW postdiscal band sinuous or only slightly dislocated at vein 4; HW postdiscal spot 6 outwardly straight or convex. Male: dark blue with broad black borders (2.0 mm at FW mid-termen, 3.0 mm on HW). Female: purple. Strictly montane habitat."
     },
 
     "g_agrata_agrata": {
       "type": "group",
       "id": "g_agrata_agrata",
       "group_name": "agrata group — agrata subgroup",
-      "description": "The forewing underside lacks a postdiscal spot in space 9 and never has a costal spot in space 10.",
+      "description": "Identified by specific absences on the forewing underside: the postdiscal spot in space 9 is absent or very obscure, and there is never a costal spot in space 10. One Malaysian species.",
       "key_features": [
-        "FW underside: no postdiscal spot in space 9",
-        "FW underside: no costal spot in space 10"
-      ]
+        "FW underside: postdiscal spot in space 9 absent or very obscure",
+        "FW underside: no costal spot in space 10",
+        "HW postdiscal spot 6 considerably wider than spot 7",
+        "All underside markings tend to be rather faint"
+      ],
+      "next": "r_agrata_agrata"
+    },
+
+    "r_agrata_agrata": {
+      "type": "result",
+      "id": "r_agrata_agrata",
+      "taxon_id": null,
+      "name": "Arhopala agrata agrata",
+      "common_name": "de Nicéville's Dull Oakblue",
+      "note": "Underside markings faint. FW: postdiscal spot in space 9 absent or very obscure; no costal spot in space 10. HW: postdiscal spot 6 considerably wider than spot 7. Male: dark purplish blue with black border reduced to a thread. Female: bright blue to purple-blue; HW blue reaches the termen between vein endings."
     },
 
     "g_cleander": {
@@ -929,6 +974,175 @@
       "name": "Arhopala agesias",
       "common_name": "",
       "note": "The most common species in the group. Underside: hair-brown ground colour with all markings as rounded spots; single central spot in FW space 11."
+    },
+
+    "q_alitaeus_s1": {
+      "type": "question",
+      "id": "q_alitaeus_s1",
+      "question": "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?",
+      "hint": "Look for a small isolated spot right at the base of FW space 10, distinct from the regular postdiscal row. Species with this spot: pseudomuta, sintanga, alitaeus, denta. Species without: elopura, arianaga, ariana, aida, havilandi.",
+      "choices": [
+        { "label": "Yes — spot present at extreme base of FW space 10", "next": "q_alitaeus_s1_tail" },
+        { "label": "No — no spot at extreme base of FW space 10", "next": "q_alitaeus_s2_color" }
+      ]
+    },
+
+    "q_alitaeus_s1_tail": {
+      "type": "question",
+      "id": "q_alitaeus_s1_tail",
+      "question": "Is the hindwing tail notably short, approximately 2.5 mm (rather than the typical 3.5–4.0 mm for the group)?",
+      "hint": "A. denta is the only alitaeus-group member with a distinctly shortened tail (~2.5 mm). All others have tails of 3.5–4.0 mm.",
+      "choices": [
+        { "label": "Yes — tail short, ~2.5 mm", "next": "r_denta" },
+        { "label": "No — tail of normal length, 3.5–4.0 mm", "next": "q_alitaeus_s1_color" }
+      ]
+    },
+
+    "q_alitaeus_s1_color": {
+      "type": "question",
+      "id": "q_alitaeus_s1_color",
+      "question": "Is the underside pale slatey purple with contrasting reddish-brown markings?",
+      "hint": "A. sintanga has a distinctly pale slatey-purple ground colour with markings that strongly contrast in reddish-brown. A. pseudomuta and A. alitaeus are hair-brown underneath.",
+      "choices": [
+        { "label": "Yes — pale slatey purple with contrasting reddish-brown markings", "next": "r_sintanga" },
+        { "label": "No — hair-brown ground colour", "next": "q_alitaeus_s1_marks" }
+      ]
+    },
+
+    "q_alitaeus_s1_marks": {
+      "type": "question",
+      "id": "q_alitaeus_s1_marks",
+      "question": "Are the underside markings notably annular (ring-like) and is the FW postdiscal spot in space 1b often dislocated outward relative to the spot in space 2?",
+      "hint": "A. alitaeus has more annular (ring-like) markings than allied species, and the space 1b spot is often shifted outward; male has regular black borders at least 1.0 mm wide. A. pseudomuta has markings that are hardly darker than the hair-brown ground colour; HW space 6 is slightly oblique and does not overlap the end-cell bar.",
+      "choices": [
+        { "label": "Yes — annular markings; FW space 1b spot often dislocated outward; borders ≥1.0 mm", "next": "r_alitaeus" },
+        { "label": "No — markings barely darker than ground colour; HW space 6 slightly oblique", "next": "r_pseudomuta" }
+      ]
+    },
+
+    "q_alitaeus_s2_color": {
+      "type": "question",
+      "id": "q_alitaeus_s2_color",
+      "question": "Is the underside pale slatey purple with contrasting reddish-brown markings?",
+      "hint": "A. havilandi has a pale slatey-purple ground colour with strongly contrasting reddish-brown markings and a thread-like black border on the male upperside. If the underside is hair-brown or dark brownish, choose No.",
+      "choices": [
+        { "label": "Yes — pale slatey purple with contrasting reddish-brown markings", "next": "r_havilandi" },
+        { "label": "No — hair-brown or dark brownish underside", "next": "q_alitaeus_s2_glaze" }
+      ]
+    },
+
+    "q_alitaeus_s2_glaze": {
+      "type": "question",
+      "id": "q_alitaeus_s2_glaze",
+      "question": "Is the underside dark brownish (not hair-brown) with a distinct slatey or purplish glaze?",
+      "hint": "A. ariana is dark brown with a faint purplish wash; A. aida is brown with a slatey to purplish glaze and a slightly produced FW apex. A. elopura and A. arianaga are hair-brown with markings barely darker than the ground colour.",
+      "choices": [
+        { "label": "Yes — dark brownish with a slatey or purplish glaze", "next": "q_alitaeus_s2_term" },
+        { "label": "No — hair-brown, markings barely darker than ground colour", "next": "q_alitaeus_s2_sp6" }
+      ]
+    },
+
+    "q_alitaeus_s2_term": {
+      "type": "question",
+      "id": "q_alitaeus_s2_term",
+      "question": "Is the forewing termen notably straight and the apex slightly produced (pointed)?",
+      "hint": "A. aida has a distinctly straight FW termen with a slightly produced apex, and the male black border expands from ~1.25 mm at the tornus to ~2.0 mm at the apex. A. ariana has a more normal wing shape; FW postdiscal spot 4 is shifted distad out of line with adjacent spots.",
+      "choices": [
+        { "label": "Yes — FW termen straight; apex slightly produced; border widens toward apex", "next": "r_aida" },
+        { "label": "No — FW shape normal; postdiscal spot 4 shifted distad; border 1.0–1.5 mm", "next": "r_ariana" }
+      ]
+    },
+
+    "q_alitaeus_s2_sp6": {
+      "type": "question",
+      "id": "q_alitaeus_s2_sp6",
+      "question": "Is the hindwing postdiscal space 6 partly fuscous (darkened)?",
+      "hint": "A. elopura has HW space 6 partly fuscous (dark). In A. arianaga, HW space 6 is entirely blue; underside markings are slightly darker than the ground colour with a faint pinkish glaze, and the male border is reduced to a thread.",
+      "choices": [
+        { "label": "Yes — HW space 6 partly fuscous; male upperside purer blue, border ~0.5 mm", "next": "r_elopura" },
+        { "label": "No — HW space 6 entirely blue; faint pinkish glaze; male border thread-like", "next": "r_arianaga" }
+      ]
+    },
+
+    "r_pseudomuta": {
+      "type": "result",
+      "id": "r_pseudomuta",
+      "taxon_id": null,
+      "name": "Arhopala pseudomuta",
+      "common_name": "Raffles's Oakblue",
+      "note": "Underside hair-brown; markings hardly darker than ground colour. FW: basal spot present in space 10. HW: postdiscal space 6 slightly oblique, does not overlap end-cell bar. Male: violet-blue with black border ~1.0 mm. Tail ~3.5–4.0 mm."
+    },
+
+    "r_elopura": {
+      "type": "result",
+      "id": "r_elopura",
+      "taxon_id": null,
+      "name": "Arhopala elopura",
+      "common_name": "",
+      "note": "Underside hair-brown; markings barely darker than ground colour — contrast less than in A. pseudomuta. FW: no basal spot in space 10. HW: postdiscal space 6 partly fuscous. Male: purer blue with black border ~0.5 mm. Tail ~3.5–4.0 mm."
+    },
+
+    "r_arianaga": {
+      "type": "result",
+      "id": "r_arianaga",
+      "taxon_id": null,
+      "name": "Arhopala arianaga",
+      "common_name": "",
+      "note": "Underside markings slightly darker than ground colour with a very faint pinkish glaze. FW: no basal spot in space 10. HW: postdiscal space 6 entirely blue. Male: black border reduced to a thread. Tail ~3.5–4.0 mm."
+    },
+
+    "r_ariana": {
+      "type": "result",
+      "id": "r_ariana",
+      "taxon_id": null,
+      "name": "Arhopala ariana",
+      "common_name": "",
+      "note": "Underside dark brown with a faint purplish wash. FW: no basal spot in space 10; postdiscal spot in space 4 shifted distad out of line. Male: border 1.0–1.5 mm, slightly wider at apex. Tail ~3.5–4.0 mm."
+    },
+
+    "r_aida": {
+      "type": "result",
+      "id": "r_aida",
+      "taxon_id": null,
+      "name": "Arhopala aida",
+      "common_name": "",
+      "note": "Underside brown with a slatey to purplish glaze. FW: no basal spot in space 10; termen straight, apex slightly produced. Male: border expands from ~1.25 mm at tornus to ~2.0 mm at apex. Tail ~3.5–4.0 mm."
+    },
+
+    "r_havilandi": {
+      "type": "result",
+      "id": "r_havilandi",
+      "taxon_id": null,
+      "name": "Arhopala havilandi",
+      "common_name": "",
+      "note": "Underside pale slatey purple with contrasting reddish-brown markings. FW: no basal spot in space 10. Male: violet-blue, black border reduced to a thread. Tail ~3.5–4.0 mm."
+    },
+
+    "r_sintanga": {
+      "type": "result",
+      "id": "r_sintanga",
+      "taxon_id": null,
+      "name": "Arhopala sintanga",
+      "common_name": "",
+      "note": "Underside pale slatey purple with contrasting reddish-brown markings. FW: basal spot present in space 10. Male: dark violet, black border reduced to a thread. Tail ~3.5–4.0 mm."
+    },
+
+    "r_alitaeus": {
+      "type": "result",
+      "id": "r_alitaeus",
+      "taxon_id": null,
+      "name": "Arhopala alitaeus",
+      "common_name": "",
+      "note": "Underside markings notably annular (ring-like); FW postdiscal spot in space 1b often dislocated outward from spot in space 2. FW: basal spot present in space 10. Male: regular black borders ≥1.0 mm wide. Tail ~3.5–4.0 mm."
+    },
+
+    "r_denta": {
+      "type": "result",
+      "id": "r_denta",
+      "taxon_id": null,
+      "name": "Arhopala denta",
+      "common_name": "",
+      "note": "Distinctive SHORT tail — only ~2.5 mm (others in the group have 3.5–4.0 mm). FW: basal spot present in space 10. Underside hair-brown with at most a slight pinkish glaze. Male: brilliant blue, black border reduced to a thread."
     },
 
     "g_needs_more_info": {
