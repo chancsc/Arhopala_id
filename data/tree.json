@@ -415,12 +415,13 @@
       "type": "group",
       "id": "g_epimuta",
       "group_name": "epimuta group",
-      "description": "Males are instantly recognizable by a discal patch on the forewing upperside that is differently coloured and more opaque than the surrounding blue. On the underside, HW postdiscal spot 6 is placed midway between spot 5 and the end-cell bar.",
+      "description": "Males are instantly recognizable by a discal patch on the forewing upperside that is differently coloured and more opaque than the surrounding blue (dense fuscous scales underlying the blue). On the underside, HW postdiscal spot 6 is placed midway between spot 5 and the end-cell bar. Two species are tailed; one is tailless.",
       "key_features": [
         "Male: opaque or differently-coloured discal patch on FW upperside",
         "HW postdiscal spot 6 midway between spot 5 and end-cell bar",
-        "Tailless"
-      ]
+        "Two tailed spp. (atosia, lurida); one tailless sp. (epimuta)"
+      ],
+      "next": "q_epimuta_s1"
     },
 
     "g_agesilaus": {
@@ -653,7 +654,8 @@
         "FW postdiscal spot 4 out of line with the other spots",
         "HW postdiscal spot 6 placed directly below spot 7",
         "Some males: shining green upperside"
-      ]
+      ],
+      "next": "q_eumolphus_s1"
     },
 
     "g_vihara": {
@@ -738,12 +740,14 @@
       "type": "group",
       "id": "g_fulla",
       "group_name": "fulla group",
-      "description": "Tailless species lacking an end-cell bar on the forewing underside. Underside markings are usually obscure or very faint.",
+      "description": "Tailless species lacking an end-cell bar on the forewing underside. Underside markings are usually obscure or very faint. Monotypic in Malaysia.",
       "key_features": [
         "Tailless",
         "FW underside: no end-cell bar",
-        "Underside markings usually obscure"
-      ]
+        "Underside markings usually obscure",
+        "Only one Malaysian species: Arhopala fulla intaca"
+      ],
+      "next": "r_fulla_intaca"
     },
 
     "g_abseus": {
@@ -2170,6 +2174,163 @@
       "name": "Arhopala democritus lycaenaria",
       "common_name": "",
       "note": "Standard Malay Peninsula subspecies. Underside: hair-brown ground colour; all markings outlined by dull yellowish-white striae (less contrast than democritus ssp.). Short HW tail 1.5–2.0 mm. Macular underside markings; FW spot 4 shifted distad; HW spot 6 outwardly concave; HW band widely dislocated at vein 2."
+    },
+
+    "q_epimuta_s1": {
+      "type": "question",
+      "id": "q_epimuta_s1",
+      "question": "Does the hindwing have a short tail (~2.5 mm)?",
+      "hint": "Two species in this group (atosia, lurida) have a short hindwing tail; epimuta is tailless.",
+      "choices": [
+        { "label": "Yes — short tail present (~2.5 mm)", "next": "q_epimuta_s2" },
+        { "label": "No tail — hindwing untailed", "next": "r_epimuta_epiala" }
+      ]
+    },
+
+    "q_epimuta_s2": {
+      "type": "question",
+      "id": "q_epimuta_s2",
+      "question": "How large and where is the male discal patch on the forewing upperside?",
+      "hint": "Both tailed species have the discal patch, but differ in its size and extent. Check whether it extends into the cell and space 1b, or is confined to spaces 2–3.",
+      "choices": [
+        { "label": "Large and circular; extends widely into cell and space 1b", "next": "r_atosia_malayana" },
+        { "label": "Smaller; almost confined to bases of spaces 2 and 3", "next": "r_lurida" }
+      ]
+    },
+
+    "r_atosia_malayana": {
+      "type": "result",
+      "id": "r_atosia_malayana",
+      "taxon_id": null,
+      "name": "Arhopala atosia malayana",
+      "common_name": "Tailed Disc Oakblue",
+      "note": "HW tail ~2.5 mm. Male FW upperside: thread-width black border; discal patch large and circular, extending widely into the cell and space 1b. Underside markings contrast feebly with the ground colour."
+    },
+
+    "r_lurida": {
+      "type": "result",
+      "id": "r_lurida",
+      "taxon_id": null,
+      "name": "Arhopala lurida",
+      "common_name": "",
+      "note": "HW tail ~2.5 mm. Male FW upperside: border slightly expanding toward apex; discal patch smaller than in A. atosia, almost entirely confined to bases of spaces 2 and 3. Underside markings darker and more clearly defined than A. atosia."
+    },
+
+    "r_epimuta_epiala": {
+      "type": "result",
+      "id": "r_epimuta_epiala",
+      "taxon_id": null,
+      "name": "Arhopala epimuta epiala",
+      "common_name": "",
+      "note": "Tailless. Male FW upperside: large circular discal patch similar to A. atosia, but distinguished by the complete absence of a hindwing tail."
+    },
+
+    "q_eumolphus_s1": {
+      "type": "question",
+      "id": "q_eumolphus_s1",
+      "question": "What is the male upperside colour?",
+      "hint": "The eumolphus group is divided by male colour: blue/violet/purple (4 spp.) vs. shining green or brassy green (3 spp.).",
+      "choices": [
+        { "label": "Blue, violet, or purple", "next": "q_eumolphus_blue" },
+        { "label": "Shining green or brassy green", "next": "q_eumolphus_green" }
+      ]
+    },
+
+    "q_eumolphus_blue": {
+      "type": "question",
+      "id": "q_eumolphus_blue",
+      "question": "Which combination of tail length and forewing border best describes the specimen?",
+      "hint": "Check HW tail length carefully. overdijkinki has a markedly longer tail (5 mm) and greatly expanding FW border. Among the 3-mm tail species: bazalus is deep purple; acta is light violet-blue with a very narrow border and rounded FW; tameanga is dark violet-blue with an acute FW apex (largely Bornean).",
+      "choices": [
+        { "label": "HW tail ~5 mm; FW border expands greatly toward costa (2.5 → 7.0 mm)", "next": "r_overdijkinki_unda" },
+        { "label": "Deep purple; underside purplish-brown with dark markings; tail ~3 mm", "next": "r_bazalus_zalinda" },
+        { "label": "Light violet-blue; very narrow border; rounded FW; underside faint; tail ~3 mm", "next": "r_acta" },
+        { "label": "Dark violet-blue; acute FW apex; nearly straight termen; tail ~3 mm (mainly Borneo)", "next": "r_tameanga" }
+      ]
+    },
+
+    "r_overdijkinki_unda": {
+      "type": "result",
+      "id": "r_overdijkinki_unda",
+      "taxon_id": null,
+      "name": "Arhopala overdijkinki unda",
+      "common_name": "",
+      "note": "HW tail 5.0 mm (longest in group). Male: rich violet; FW black border 2.5 mm at tornus, expanding strongly to 7.0 mm at costa. Female: shining blue with evenly curved FW border."
+    },
+
+    "r_bazalus_zalinda": {
+      "type": "result",
+      "id": "r_bazalus_zalinda",
+      "taxon_id": null,
+      "name": "Arhopala bazalus zalinda",
+      "common_name": "",
+      "note": "HW tail ~3 mm. Male: deep purple; FW black border 1.0 mm at apex decreasing to 1.5 mm at tornus. Underside purplish-brown with very dark markings; FW apex powdered with pale violet scales. Female: usually purple-blue."
+    },
+
+    "r_acta": {
+      "type": "result",
+      "id": "r_acta",
+      "taxon_id": null,
+      "name": "Arhopala acta",
+      "common_name": "",
+      "note": "HW tail 3.0 mm. Male: light violet-blue with a regular, very narrow border. FW rounded. Underside markings faint. Female not described."
+    },
+
+    "r_tameanga": {
+      "type": "result",
+      "id": "r_tameanga",
+      "taxon_id": null,
+      "name": "Arhopala tameanga",
+      "common_name": "",
+      "note": "HW tail 3.0 mm. Male: dark violet-blue; FW apex acute, termen nearly straight. Female: purple-blue with HW border ≥2.0 mm wide. Underside markings clearly defined. Bornean endemic."
+    },
+
+    "q_eumolphus_green": {
+      "type": "question",
+      "id": "q_eumolphus_green",
+      "question": "How wide are the black borders on the male upperside?",
+      "hint": "horsfieldi has very broad borders reaching the cell. eumolphus maxwelli has narrow borders (2 mm at tornus, 1 mm at apex) and a rounded FW. hellenore has borders reduced to a thread above vein 4 with an acute FW and straight or concave termen.",
+      "choices": [
+        { "label": "Very broad borders reaching the cell on all wings", "next": "r_horsfieldi_basiviridis" },
+        { "label": "Brassy green; narrow borders; rounded FW (2 mm → 1 mm apex)", "next": "r_eumolphus_maxwelli" },
+        { "label": "Border a thread above vein 4; FW apex acute; termen straight or concave", "next": "r_hellenore_siroes" }
+      ]
+    },
+
+    "r_horsfieldi_basiviridis": {
+      "type": "result",
+      "id": "r_horsfieldi_basiviridis",
+      "taxon_id": null,
+      "name": "Arhopala horsfieldi basiviridis",
+      "common_name": "",
+      "note": "Male: green with very broad black borders reaching the cell on all wings. Underside generally darker than relatives, with broad markings. Female: more purple, with slightly broader borders than A. eumolphus."
+    },
+
+    "r_eumolphus_maxwelli": {
+      "type": "result",
+      "id": "r_eumolphus_maxwelli",
+      "taxon_id": null,
+      "name": "Arhopala eumolphus maxwelli",
+      "common_name": "Green Oakblue",
+      "note": "Male: brassy green; FW rounded; black border 2.0 mm at tornus decreasing to 1.0 mm at apex. Female: purple-blue; black border usually reaches apex of FW cell."
+    },
+
+    "r_hellenore_siroes": {
+      "type": "result",
+      "id": "r_hellenore_siroes",
+      "taxon_id": null,
+      "name": "Arhopala hellenore siroes",
+      "common_name": "",
+      "note": "Male: similar to A. eumolphus but border reduced to a thread above vein 4; FW apex more acute; termen straight or slightly concave. Female: purple-blue with narrower borders than A. eumolphus, not reaching apex of FW cell."
+    },
+
+    "r_fulla_intaca": {
+      "type": "result",
+      "id": "r_fulla_intaca",
+      "taxon_id": null,
+      "name": "Arhopala fulla intaca",
+      "common_name": "",
+      "note": "Tailless. FW ~18 mm. Instantly recognizable by the near-total absence of underside markings: no end-cell bar on FW, postdiscal spots replaced by an obscure fascia, only a few basal spots near HW base. Male: shining violet-blue with thread-width border. Female: deeper violet with broader borders. Wide distribution: Myanmar to Sundaland, Philippines, Moluccas, New Guinea."
     },
 
     "g_needs_more_info": {
