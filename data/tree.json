@@ -1186,7 +1186,7 @@
       "hint": "A. norda has a small but distinctive white patch on the HW cilia just above the tornal lobe, and also has less rounded (more angular) postdiscal spots compared to A. major.",
       "choices": [
         { "label": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded", "next": "r_norda" },
-        { "label": "No — no white patch on HW cilia", "next": "q_amph_s4" }
+        { "label": "No — no white patch on HW cilia", "next": "q_amph_geo" }
       ]
     },
 
@@ -1216,9 +1216,9 @@
       "type": "question",
       "id": "q_amph_s5",
       "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
-      "hint": "Thread-like border species: A. moolaiana yajuna (shining violet-blue; female blue reaches HW termen) and A. alica (dark dull purple; Bornean endemic). Regular 0.5 mm border species: A. amphimuta, A. sceva, A. zylda, A. baluensis, A. dajagaka.",
+      "hint": "Peninsula thread-border species: A. moolaiana yajuna (shining violet-blue; female blue reaches HW termen). Bornean thread-border species (A. alica) have already been separated by the geography filter. Regular 0.5 mm border Peninsula species: A. amphimuta, A. sceva, A. zylda.",
       "choices": [
-        { "label": "Yes — border thread-like", "next": "q_amph_thread" },
+        { "label": "Yes — border thread-like", "next": "r_moolaiana_yajuna" },
         { "label": "No — border regular ~0.5 mm", "next": "q_amph_s6" }
       ]
     },
@@ -1238,7 +1238,7 @@
       "type": "question",
       "id": "q_amph_s6",
       "question": "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?",
-      "hint": "A. sceva indra has the HW postdiscal series clearly dislocated at vein 2 and is a smaller species; male is dark violet-blue. In the remaining species (amphimuta, zylda, baluensis, dajagaka), the HW postdiscal band is not strongly dislocated at vein 2.",
+      "hint": "A. sceva indra has the HW postdiscal series clearly dislocated at vein 2 and is a smaller species; male is dark violet-blue. In the remaining Peninsula species (amphimuta, zylda), the HW band is not strongly dislocated at vein 2.",
       "choices": [
         { "label": "Yes — HW postdiscal series dislocated at vein 2; smaller species; male dark violet-blue", "next": "r_sceva_indra" },
         { "label": "No — HW band not strongly dislocated at vein 2", "next": "q_amph_s7" }
@@ -1249,10 +1249,10 @@
       "type": "question",
       "id": "q_amph_s7",
       "question": "Is the male a warm violet-purple (with a reddish hue rather than blue), and is the FW postdiscal spot in space 3 an oblique oval?",
-      "hint": "A. amphimuta amphimuta is violet-purple (warmer/redder than violet-blue) with the FW spot 3 usually an oblique oval, and the FW band slightly dislocated at vein 4. A. zylda, A. baluensis, and A. dajagaka are more violet-blue.",
+      "hint": "A. amphimuta amphimuta is violet-purple (warmer/redder than violet-blue) with the FW spot 3 usually an oblique oval, and the FW band slightly dislocated at vein 4. FW length 20–23 mm. A. zylda elioti is violet-blue, smaller (FW 16–17 mm), with female exceptionally narrow borders. Both are Peninsula species.",
       "choices": [
         { "label": "Yes — warm violet-purple; FW spot 3 oblique oval; FW band slightly dislocated at vein 4", "next": "r_amphimuta_amphimuta" },
-        { "label": "No — violet-blue (not warm purple)", "next": "q_amph_s8" }
+        { "label": "No — violet-blue (not warm purple); smaller (FW 16–17 mm); female exceptionally narrow-bordered", "next": "r_zylda_elioti" }
       ]
     },
 
@@ -1275,6 +1275,39 @@
       "choices": [
         { "label": "Yes — female with thick black borders and darker venation", "next": "r_dajagaka" },
         { "label": "No — HW cilia lacks white spot in space 1a; female without thick borders", "next": "r_baluensis" }
+      ]
+    },
+
+    "q_amph_geo": {
+      "type": "question",
+      "id": "q_amph_geo",
+      "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
+      "hint": "Three amphimuta subgroup members are Bornean endemics: A. alica (thread-like border), A. baluensis (lacks white spot in HW cilia space 1a), and A. dajagaka (female has thick borders and darker venation). The remaining 6 species at this point are Malay Peninsula species.",
+      "choices": [
+        { "label": "Yes — Bornean specimen", "next": "q_amph_bor3" },
+        { "label": "No — Malay Peninsula specimen", "next": "q_amph_s4" }
+      ]
+    },
+
+    "q_amph_bor3": {
+      "type": "question",
+      "id": "q_amph_bor3",
+      "question": "Is the male's black border reduced to a thread (very narrow)?",
+      "hint": "A. alica has a thread-like border and is dark dull purple — the dullest and darkest of the three Bornean species. A. baluensis and A. dajagaka both have a regular ~0.5 mm border and are dark purple-blue.",
+      "choices": [
+        { "label": "Yes — border thread-like; male dark dull purple", "next": "r_alica" },
+        { "label": "No — border regular ~0.5 mm; male dark purple-blue", "next": "q_amph_bor2" }
+      ]
+    },
+
+    "q_amph_bor2": {
+      "type": "question",
+      "id": "q_amph_bor2",
+      "question": "Is the specimen large (FW approximately 21–25 mm), or does the female have thick black borders with darker venation?",
+      "hint": "Size is the most accessible separator: A. dajagaka is distinctly larger (FW 21–25 mm); A. baluensis is smaller (FW 18–20 mm). Confirm with female characters: A. dajagaka female has thick black borders and noticeably darker venation. A. baluensis female has narrower-than-typical borders; HW cilia in space 1a lacks a white spot (rarely obscurely present). Note: both have male valva unilobate; genitalia dissection gives certain identification.",
+      "choices": [
+        { "label": "Larger (FW 21–25 mm); female with thick black borders and darker venation", "next": "r_dajagaka" },
+        { "label": "Smaller (FW 18–20 mm); female with narrower borders; HW cilia space 1a lacks white spot", "next": "r_baluensis" }
       ]
     },
 
@@ -1355,8 +1388,8 @@
       "id": "r_amphimuta_amphimuta",
       "taxon_id": null,
       "name": "Arhopala amphimuta amphimuta",
-      "common_name": "",
-      "note": "Male: violet-purple (warmer/redder hue than violet-blue) with a regular ~0.5 mm black border. FW underside: postdiscal band slightly dislocated at vein 4; spot in space 3 usually an oblique oval. HW cilia often prolonged into a short tooth at vein 2."
+      "common_name": "Common Oakblue",
+      "note": "Male: dark bluish-purple with a regular 0.5–1.0 mm black border; FW 20–23 mm. HW cilia often prolonged into a very short tooth at vein 2 (may be inconspicuous in worn specimens). FW underside: postdiscal band slightly dislocated at vein 4; spot in space 3 usually an oblique oval. Female: lighter purple with typical broad black borders. HW postdiscal band only partially dislocated at vein 2 (as in A. zylda)."
     },
 
     "r_zylda_elioti": {
@@ -1365,7 +1398,7 @@
       "taxon_id": null,
       "name": "Arhopala zylda elioti",
       "common_name": "",
-      "note": "Male: violet-blue with a regular ~0.5 mm black border. Female: exceptionally narrow borders (diagnostic — narrower than in allied species). Malay Peninsula."
+      "note": "Male: shining blue with a slight violet tinge; border 1.0 mm; FW 16–17 mm. HW evenly rounded — no trace of a tooth at vein 2 (A. amphimuta has a short tooth). Female: paler blue with exceptionally narrow black borders (the narrowest in the amphimuta subgroup). HW postdiscal band only partially dislocated at vein 2 (as in A. amphimuta). Malay Peninsula."
     },
 
     "r_dajagaka": {
@@ -1374,7 +1407,7 @@
       "taxon_id": null,
       "name": "Arhopala dajagaka",
       "common_name": "",
-      "note": "Bornean endemic. Male: dark bluish-purple with a ~0.5 mm border. Female: distinctively thick black borders and darker venation on the upperside."
+      "note": "Bornean endemic. Larger Bornean species (FW 21–25 mm). Male: dark bluish-purple with a thin black border. Female: THICK black borders and noticeably darker venation across the wings (diagnostic). Male valva unilobate; certain identification may require genitalia dissection."
     },
 
     "r_baluensis": {
@@ -1383,28 +1416,28 @@
       "taxon_id": null,
       "name": "Arhopala baluensis",
       "common_name": "",
-      "note": "Bornean endemic. HW cilia lacks the white spot in space 1a (present in some allied species). Male: dark purple-blue with a ~0.5 mm border."
+      "note": "Bornean endemic. Smaller Bornean species (FW 18–20 mm). Male: dark purple-blue with a regular 0.5 mm border. Female: purple-blue with narrower-than-typical black borders. HW cilia in space 1a lacks a white spot (may be rarely present but obscure). Male valva unilobate; certain identification may require genitalia dissection."
     },
 
     "q_muta_s1": {
       "type": "question",
       "id": "q_muta_s1",
-      "question": "Is the species very small and duller bluish-purple on the male upperside?",
-      "hint": "A. tropaea is noticeably smaller than A. muta and A. moorei, with a duller bluish-purple male upperside. A. muta and A. moorei are larger and brighter blue.",
+      "question": "Is the species noticeably small and duller bluish-purple on the male upperside?",
+      "hint": "A. tropaea is distinctly smaller (FW ~12–14 mm) than A. moorei busa (FW 16–18 mm) and A. muta maranda (FW 17–19 mm), with a duller, less saturated bluish-purple male upperside. A. muta and A. moorei are larger, brighter blue.",
       "choices": [
-        { "label": "Yes — very small; male duller bluish-purple", "next": "r_tropaea" },
-        { "label": "No — larger; male bright blue", "next": "q_muta_s2" }
+        { "label": "Yes — noticeably small; male duller bluish-purple", "next": "r_tropaea" },
+        { "label": "No — larger (FW 16–19 mm); male bright blue", "next": "q_muta_s2" }
       ]
     },
 
     "q_muta_s2": {
       "type": "question",
       "id": "q_muta_s2",
-      "question": "On the male upperside, are both the forewing and hindwing the same shade of blue?",
-      "hint": "A. moorei busa: both wings the same shade of blue in the male. A. muta maranda: FW is bright blue but the HW is a slightly paler, more glistening blue.",
+      "question": "On the male upperside, are both the forewing and hindwing exactly the same shade of blue in all lights?",
+      "hint": "A. moorei busa: both wings the same shade of blue (bluish-purple) in all lights; female is duller and more purple than A. muta's female; FW 16–18 mm. A. muta maranda: FW is a rather dark, bright blue; HW is slightly paler and more glistening, so the two wings are NOT the same shade in all lights; FW border expands from 1.0–1.5 mm at tornus to 1.5–2.0 mm at apex; FW 17–19 mm.",
       "choices": [
-        { "label": "Yes — both wings same shade of blue in male", "next": "r_moorei_busa" },
-        { "label": "No — FW brighter blue; HW slightly paler, more glistening", "next": "r_muta_maranda" }
+        { "label": "Yes — both wings same shade of blue in all lights; female more purple (FW 16–18 mm)", "next": "r_moorei_busa" },
+        { "label": "No — FW dark bright blue; HW slightly paler and more glistening; border expands toward apex (FW 17–19 mm)", "next": "r_muta_maranda" }
       ]
     },
 
@@ -1414,7 +1447,7 @@
       "taxon_id": null,
       "name": "Arhopala tropaea",
       "common_name": "",
-      "note": "Very small species. Male: duller bluish-purple upperside. Underside: postdiscal spots quadrate/banded; FW space 2 spot stepped toward termen (muta subgroup)."
+      "note": "Very small species. Male: duller bluish-purple upperside (noticeably less bright than A. muta or A. moorei). Underside: postdiscal spots quadrate/banded; FW space 2 spot stepped toward termen (muta subgroup)."
     },
 
     "r_moorei_busa": {
@@ -1423,7 +1456,7 @@
       "taxon_id": null,
       "name": "Arhopala moorei busa",
       "common_name": "",
-      "note": "Similar to A. muta maranda. Male: both wings the same shade of blue on the upperside (in A. muta the FW is brighter than the HW). Underside: spots quadrate; FW space 2 spot stepped toward termen."
+      "note": "Male: both wings the same shade of bluish-purple in all lights (FW 16–18 mm). Female: duller and more purple than A. muta's female. Underside: basal spot present in FW cell; spots quadrate; FW space 2 spot stepped toward termen. Tailless."
     },
 
     "r_muta_maranda": {
@@ -1432,7 +1465,7 @@
       "taxon_id": null,
       "name": "Arhopala muta maranda",
       "common_name": "",
-      "note": "Male: bright blue FW; HW slightly paler, more glistening blue. Underside: postdiscal spots quadrate/banded; FW postdiscal spot in space 2 stepped outward toward the termen."
+      "note": "Male: FW rather dark bright blue; HW slightly paler and more glistening — the two wings are NOT the same shade in all lights (FW 17–19 mm). FW black border expands from 1.0–1.5 mm at tornus to 1.5–2.0 mm at apex. Female: shining blue with only a slight purple tint. Underside: basal spot present in FW cell; HW postdiscal band dislocated — inner edge of spot in space 2 in line with, or only slightly outside, the outer edge of spot 1b. Tailless."
     },
 
     "q_perimuta_s1": {
