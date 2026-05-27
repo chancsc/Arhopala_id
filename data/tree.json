@@ -85,7 +85,7 @@
       "question": "How does the forewing postdiscal spot 4 relate to spots 5 and 6, and what is the hindwing cell length?",
       "hint": "Eumolphus: FW spot 4 is moved out of line with the others; HW spot 6 is placed directly below spot 7. Aurea: HW cell is considerably longer than half the wing length; FW apex is acute with a straight or concave termen.",
       "choices": [
-        { "label": "FW spot 4 out of line; HW spot 6 directly below spot 7", "next": "g_eumolphus" },
+        { "label": "FW spot 4 out of line; HW spot 6 directly below spot 7", "next": "q_tailed_spot4_outofline" },
         { "label": "HW cell considerably longer than half wing; FW apex acute with straight or concave termen", "next": "g_aurea" }
       ]
     },
@@ -199,7 +199,7 @@
       "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
       "hint": "This question separates the remaining tailed groups by the arrangement of key spots. Examine spot 4 on the FW postdiscal band and the position of spot 6 on the HW underside.",
       "choices": [
-        { "label": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7", "next": "g_eumolphus" },
+        { "label": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7", "next": "q_tailed_spot4_outofline" },
         { "label": "FW spot 4 in continuation with spots 5 and 6; HW spot 6 rounded and more or less separated", "next": "g_vihara" },
         { "label": "HW spot 6 is outwardly sinuous; costal spot present in FW space 10", "next": "g_rama" },
         { "label": "FW postdiscal band is continuous and unbroken; no costal spot in FW space 10; often a spot at base of FW space 3", "next": "g_agelastus" },
@@ -249,17 +249,6 @@
       "hint": "This spot sits right at the base of space 6, closer to the wing base than the normal postdiscal spot row. It distinguishes the hypomuta group from the similar amphimuta group in most Malayan specimens. Note: the spot is usually absent in Bornean and Sumatran material.",
       "choices": [
         { "label": "Yes — small spot at extreme base of HW space 6", "next": "g_hypomuta" },
-        { "label": "No", "next": "q_tailless_oenea" }
-      ]
-    },
-
-    "q_tailless_oenea": {
-      "type": "question",
-      "id": "q_tailless_oenea",
-      "question": "Is the forewing apex acute with a straight termen, and do the hindwing underside postdiscal spots form narrow, regular, rectangular shapes?",
-      "hint": "The oenea group is characterized by a pointed FW apex with a straight termen edge, and distinctively narrow, rectangular (not rounded) postdiscal spots on the HW underside.",
-      "choices": [
-        { "label": "Yes — FW apex acute and termen straight; HW postdiscal spots narrow and rectangular", "next": "g_oenea" },
         { "label": "No", "next": "q_tailless_agesias" }
       ]
     },
@@ -650,6 +639,17 @@
         "Male genitalia often required for certain ID"
       ],
       "next": "q_alea_s1"
+    },
+
+    "q_tailed_spot4_outofline": {
+      "type": "question",
+      "id": "q_tailed_spot4_outofline",
+      "question": "What is the forewing apex shape?",
+      "hint": "Both the eumolphus group and the oenea group have FW spot 4 out of line with spots 5–6 and HW spot 6 below spot 7. They are separated by FW shape: eumolphus has a rounded forewing apex; oenea has an acute apex with a straight termen between veins 2 and 4. Also, oenea underside spots are narrow and rectangular throughout, while eumolphus spots are not.",
+      "choices": [
+        { "label": "FW apex rounded; termen evenly curved", "next": "g_eumolphus" },
+        { "label": "FW apex acute; termen straight between veins 2–4; underside spots narrow and rectangular", "next": "g_oenea" }
+      ]
     },
 
     "g_eumolphus": {
