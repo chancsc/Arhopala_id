@@ -172,11 +172,12 @@
     "q_cleander_sub": {
       "type": "question",
       "id": "q_cleander_sub",
-      "question": "How prominent is the tornal lobe?",
-      "hint": "The alea subgroup consists of smaller species within the cleander group, with a less conspicuous tornal lobe.",
+      "question": "Which cleander group subgroup does the specimen belong to?",
+      "hint": "Agaba subgroup: HW postdiscal spot 5 contiguous or amalgamated with end-cell bar; HW band only PARTIALLY dislocated at vein 2 (unlike others). Cleander subgroup: large (FW > 21 mm); tornal lobe conspicuously projecting; HW band completely dislocated at v2. Alea subgroup: smaller (FW < 21 mm); tornal lobe less conspicuous.",
       "choices": [
-        { "label": "Smaller species; tornal lobe less conspicuous", "next": "g_cleander_alea" },
-        { "label": "Larger species; tornal lobe conspicuously projecting", "next": "g_cleander" }
+        { "label": "HW spot 5 contiguous/merged with end-cell bar; HW band partially dislocated at vein 2 (agaba subgroup)", "next": "r_agaba" },
+        { "label": "Larger (FW > 21 mm); tornal lobe conspicuously projecting (cleander subgroup)", "next": "g_cleander" },
+        { "label": "Smaller (FW < 21 mm); tornal lobe less conspicuous (alea subgroup)", "next": "g_cleander_alea" }
       ]
     },
 
@@ -529,11 +530,14 @@
       "type": "group",
       "id": "g_democritus",
       "group_name": "democritus group",
-      "description": "Underside markings are macular — composed of separated lines and dots rather than solid continuous bands. The hindwing postdiscal band is widely dislocated at vein 2.",
+      "description": "Underside markings macular — separated lines and dots. Short HW tail 1.5–2.0 mm. Costal spot in mid-FW space 11; FW spot 4 shifted distad; HW spot 6 outwardly concave; HW band widely dislocated at vein 2. Two Malayan subspecies of A. democritus separated by underside colour.",
       "key_features": [
-        "Macular underside markings (separated dots and lines, not solid bands)",
-        "HW postdiscal band widely dislocated at vein 2"
-      ]
+        "Macular underside (separated dots and lines)",
+        "Short HW tail 1.5–2.0 mm",
+        "Costal spot in mid-FW space 11; FW spot 4 shifted distad",
+        "HW spot 6 outwardly concave; HW band widely dislocated at vein 2"
+      ],
+      "next": "q_democritus_s1"
     },
 
     "g_alitaeus": {
@@ -616,25 +620,27 @@
     "g_cleander": {
       "type": "group",
       "id": "g_cleander",
-      "group_name": "cleander group",
-      "description": "Relatively large butterflies with a conspicuously projecting tornal lobe on the hindwing. The postdiscal band is dislocated at vein 2, with spots 6 and 7 placed vertically.",
+      "group_name": "cleander subgroup",
+      "description": "Large species (FW > 21 mm) with a conspicuously projecting HW tornal lobe. HW postdiscal band completely dislocated at vein 2. Four species separated by FW band dislocation at vein 4 and by HW spot 6 position relative to spots 5 and the end-cell bar.",
       "key_features": [
-        "Relatively large species",
-        "Conspicuously projecting HW tornal lobe",
-        "Postdiscal band dislocated at vein 2; spots 6 and 7 placed vertically"
-      ]
+        "FW > 21 mm; conspicuously projecting HW tornal lobe",
+        "HW postdiscal band completely dislocated at vein 2",
+        "HW spots 6 and 7 placed one below the other"
+      ],
+      "next": "q_cleander_s1"
     },
 
     "g_cleander_alea": {
       "type": "group",
       "id": "g_cleander_alea",
-      "group_name": "cleander group — alea subgroup",
-      "description": "Smaller species within the cleander group with a less conspicuous tornal lobe.",
+      "group_name": "alea subgroup",
+      "description": "Smaller species (FW < 21 mm) within the cleander group with a less conspicuous HW tornal lobe. Nine species with diverse underside colours from slatey purple to slatey pink; genitalia often needed for certain identification.",
       "key_features": [
-        "Smaller than typical cleander",
-        "Less conspicuous HW tornal lobe",
-        "Postdiscal band dislocated at vein 2"
-      ]
+        "FW < 21 mm; HW tornal lobe less conspicuous",
+        "HW postdiscal band completely dislocated at vein 2",
+        "Male genitalia often required for certain ID"
+      ],
+      "next": "q_alea_s1"
     },
 
     "g_eumolphus": {
@@ -691,11 +697,14 @@
       "type": "group",
       "id": "g_corinda",
       "group_name": "corinda group",
-      "description": "Features a long filamentous tail approximately 3.5 mm in length. On the forewing underside, the basal half of space 1b is completely darkened.",
+      "description": "Monotypic. Filamentous HW tail ~3.5 mm. FW: pointed apex, straight termen. FW underside: basal half of space 1b completely darkened (large purple-brown patch); spot 4 shifted distad; no costal spot in FW space 10. HW underside: spot 6 outwardly convex; band partially dislocated at vein 2. Male deep violet/dark purple, very narrow border.",
       "key_features": [
-        "Very long filamentous tail (~3.5 mm)",
-        "FW underside: basal half of space 1b completely darkened"
-      ]
+        "Filamentous HW tail ~3.5 mm",
+        "FW underside: large purple-brown patch in basal half of space 1b",
+        "FW spot 4 shifted distad; no costal spot in space 10",
+        "HW spot 6 outwardly convex; band partially dislocated at vein 2"
+      ],
+      "next": "r_corinda_acestes"
     },
 
     "g_aurea": {
@@ -1876,6 +1885,291 @@
       "name": "Arhopala amantes",
       "common_name": "",
       "note": "Keyed here due to similar silvery FW cell markings, but technically outside the centaurus group. FW ~27 mm. Male: shining blue, very broad borders — 3.0 mm at tornus expanding to 5.0 mm at apex. Female: lighter blue. Underside: FW spot 4 shifted distad; lacks costal spot in FW space 10. Range: South Myanmar."
+    },
+
+    "r_agaba": {
+      "type": "result",
+      "id": "r_agaba",
+      "taxon_id": null,
+      "name": "Arhopala agaba",
+      "common_name": "",
+      "note": "Agaba subgroup — unique in the cleander group. HW underside: postdiscal spot 5 contiguous or amalgamated with the end-cell bar. HW postdiscal band only PARTIALLY dislocated at vein 2 (all other cleander group members have it completely dislocated). Large prominent HW tornal lobe."
+    },
+
+    "q_cleander_s1": {
+      "type": "question",
+      "id": "q_cleander_s1",
+      "question": "Is the forewing postdiscal band NOT dislocated at vein 4 — straight through or only slightly sinuous?",
+      "hint": "A. cleander aphadantas: FW band not dislocated at vein 4 (straight or only sinuous); male violet-blue with broad black borders. All other cleander subgroup members have the FW band partially dislocated at vein 4.",
+      "choices": [
+        { "label": "Yes — FW band not dislocated at vein 4 (straight/sinuous); male violet-blue, broad borders", "next": "r_cleander_aphadantas" },
+        { "label": "No — FW band partially dislocated at vein 4", "next": "q_cleander_s2" }
+      ]
+    },
+
+    "q_cleander_s2": {
+      "type": "question",
+      "id": "q_cleander_s2",
+      "question": "Is the forewing postdiscal spot in space 9 as wide as or wider than the spot in space 6?",
+      "hint": "A. zambra zambra: FW spot 9 ≥ width of spot 6; male typically deep blue. In A. athada and A. silhetensis, FW spot 9 is narrower than spot 6 and shifted basad.",
+      "choices": [
+        { "label": "Yes — FW spot 9 as wide as or wider than spot 6; male deep blue", "next": "r_zambra_zambra" },
+        { "label": "No — FW spot 9 narrower than spot 6, shifted basad", "next": "q_cleander_s3" }
+      ]
+    },
+
+    "q_cleander_s3": {
+      "type": "question",
+      "id": "q_cleander_s3",
+      "question": "Does hindwing postdiscal spot 6 completely fill the gap between spot 5 and the end-cell bar (no gap visible between spot 6 and the bar)?",
+      "hint": "A. athada athada: HW spot 6 fills the gap between spot 5 and the end-cell bar (spot 6 is large, touching or almost touching the bar). A. silhetensis adorea: gap between HW spot 6 and the end-cell bar is WIDER than spot 6 itself.",
+      "choices": [
+        { "label": "Yes — HW spot 6 fills the gap; spot 6 touches or nearly touches the end-cell bar", "next": "r_athada_athada" },
+        { "label": "No — gap between HW spot 6 and end-cell bar is wider than spot 6", "next": "r_silhetensis_adorea" }
+      ]
+    },
+
+    "r_cleander_aphadantas": {
+      "type": "result",
+      "id": "r_cleander_aphadantas",
+      "taxon_id": null,
+      "name": "Arhopala cleander aphadantas",
+      "common_name": "",
+      "note": "FW postdiscal band NOT dislocated at vein 4 (straight or only sinuous). Male: violet-blue with broad black borders. Large species (FW > 21 mm); conspicuously projecting HW tornal lobe. HW band completely dislocated at vein 2."
+    },
+
+    "r_zambra_zambra": {
+      "type": "result",
+      "id": "r_zambra_zambra",
+      "taxon_id": null,
+      "name": "Arhopala zambra zambra",
+      "common_name": "",
+      "note": "FW postdiscal band partially dislocated at vein 4. FW postdiscal spot 9 as wide as or wider than spot 6. Male: typically deep blue. Large species (FW > 21 mm); conspicuously projecting HW tornal lobe."
+    },
+
+    "r_athada_athada": {
+      "type": "result",
+      "id": "r_athada_athada",
+      "taxon_id": null,
+      "name": "Arhopala athada athada",
+      "common_name": "",
+      "note": "FW postdiscal spot 9 narrower than spot 6, shifted basad. HW postdiscal spot 6 fills the gap between spot 5 and the end-cell bar. Large species (FW > 21 mm); conspicuously projecting HW tornal lobe."
+    },
+
+    "r_silhetensis_adorea": {
+      "type": "result",
+      "id": "r_silhetensis_adorea",
+      "taxon_id": null,
+      "name": "Arhopala silhetensis adorea",
+      "common_name": "",
+      "note": "Similar to A. athada. FW postdiscal spot 9 narrower than spot 6, shifted basad. HW postdiscal spot 6 does NOT fill the gap — the gap between HW spot 6 and the end-cell bar is wider than spot 6 itself. Large species (FW > 21 mm)."
+    },
+
+    "q_alea_s1": {
+      "type": "question",
+      "id": "q_alea_s1",
+      "question": "Is the underside pale slatey purple with conspicuous dark markings outlined by nearly-white striae?",
+      "hint": "A. aurelia is immediately distinctive for its pale slatey-purple ground colour with dark markings strongly outlined by nearly-white striae. No other alea subgroup member has this combination.",
+      "choices": [
+        { "label": "Yes — pale slatey purple underside; dark markings outlined by nearly-white striae", "next": "r_aurelia" },
+        { "label": "No", "next": "q_alea_s2" }
+      ]
+    },
+
+    "q_alea_s2": {
+      "type": "question",
+      "id": "q_alea_s2",
+      "question": "Does the underside have a slatey pink glaze with striae that are whiter than in other species?",
+      "hint": "A. evansi has a slatey pink glaze on the underside and the striae are noticeably whiter than other alea subgroup members. If the underside is predominantly brown (not pink-glazed), choose No.",
+      "choices": [
+        { "label": "Yes — slatey pink glaze; striae noticeably white", "next": "r_evansi" },
+        { "label": "No — no slatey pink glaze", "next": "q_alea_s3" }
+      ]
+    },
+
+    "q_alea_s3": {
+      "type": "question",
+      "id": "q_alea_s3",
+      "question": "Are the wings notably rounded and elongate in shape?",
+      "hint": "A. aroa aroa has distinctively rounded, elongate wings — a recognizable shape character. It also has narrow postdiscal bands that are well clear of the submarginal lunules. All other alea subgroup members have more typical Arhopala wing shapes.",
+      "choices": [
+        { "label": "Yes — wings notably rounded and elongate; narrow bands well clear of submarginal lunules", "next": "r_aroa_aroa" },
+        { "label": "No — typical wing shape", "next": "q_alea_s4" }
+      ]
+    },
+
+    "q_alea_s4": {
+      "type": "question",
+      "id": "q_alea_s4",
+      "question": "Is the postdiscal band placed very close to the inner submarginal lunules?",
+      "hint": "A. phanda phanda is distinguished by having the postdiscal band unusually close to the inner submarginal lunules on the underside. In all other remaining alea subgroup members, the band is further from the lunules.",
+      "choices": [
+        { "label": "Yes — postdiscal band very close to inner submarginal lunules", "next": "r_phanda_phanda" },
+        { "label": "No — postdiscal band not especially close to submarginal lunules", "next": "q_alea_s5" }
+      ]
+    },
+
+    "q_alea_s5": {
+      "type": "question",
+      "id": "q_alea_s5",
+      "question": "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?",
+      "hint": "A. selta selta: HW spot 6 widely overlaps the end-cell bar; male violet-blue with border expanding toward apex. A. phaenops sandakani is similar to A. selta but HW spot 6 usually does NOT overlap the end-cell bar.",
+      "choices": [
+        { "label": "Yes — HW spot 6 widely overlaps the end-cell bar; male violet-blue, border expanding toward apex", "next": "r_selta_selta" },
+        { "label": "No — HW spot 6 does not widely overlap the end-cell bar", "next": "q_alea_s6" }
+      ]
+    },
+
+    "q_alea_s6": {
+      "type": "question",
+      "id": "q_alea_s6",
+      "question": "Is the male border noticeably expanding toward the apex (similar to A. selta)?",
+      "hint": "A. phaenops sandakani is very similar to A. selta in border pattern (border expanding toward apex) but differs in that HW spot 6 does not overlap the end-cell bar. The remaining species (sublustris, milleri, normani) have narrow or thread-like borders that do NOT expand toward the apex.",
+      "choices": [
+        { "label": "Yes — border expanding toward apex; HW spot 6 not overlapping end-cell bar", "next": "r_phaenops_sandakani" },
+        { "label": "No — border narrow or thread-like throughout, not expanding toward apex", "next": "q_alea_s7" }
+      ]
+    },
+
+    "q_alea_s7": {
+      "type": "question",
+      "id": "q_alea_s7",
+      "question": "Is the male a bright, glistening blue (not matt or indigo)?",
+      "hint": "A. sublustris ridleyi and A. normani are both bright-ish blue with very narrow borders. A. milleri is larger, with a more matt indigo-blue colour and a thread-like border. If the specimen is noticeably large and the blue is matt/flat (not glistening), choose No.",
+      "choices": [
+        { "label": "Yes — bright glistening blue (not matt); borders under 0.5 mm", "next": "q_alea_glist" },
+        { "label": "No — matt indigo blue; larger; thread-like border", "next": "r_milleri" }
+      ]
+    },
+
+    "q_alea_glist": {
+      "type": "question",
+      "id": "q_alea_glist",
+      "question": "Is the male less shining and more violet (rather than purely bright blue)?",
+      "hint": "A. normani is superficially similar to A. sublustris ridleyi but the male is less shining and has a more violet tone. A. sublustris ridleyi has a bright glistening blue with borders under 0.5 mm.",
+      "choices": [
+        { "label": "Yes — less shining; more violet than blue", "next": "r_normani" },
+        { "label": "No — bright glistening blue, borders under 0.5 mm", "next": "r_sublustris_ridleyi" }
+      ]
+    },
+
+    "r_aurelia": {
+      "type": "result",
+      "id": "r_aurelia",
+      "taxon_id": null,
+      "name": "Arhopala aurelia",
+      "common_name": "",
+      "note": "Alea subgroup. Distinctive underside: pale slatey purple with conspicuous dark markings outlined by nearly-white striae. Smaller species (FW < 21 mm); less conspicuous HW tornal lobe."
+    },
+
+    "r_evansi": {
+      "type": "result",
+      "id": "r_evansi",
+      "taxon_id": null,
+      "name": "Arhopala evansi",
+      "common_name": "",
+      "note": "Alea subgroup. Distinctive underside: slatey pink glaze with striae that are whiter than in other alea subgroup members. Smaller species (FW < 21 mm)."
+    },
+
+    "r_aroa_aroa": {
+      "type": "result",
+      "id": "r_aroa_aroa",
+      "taxon_id": null,
+      "name": "Arhopala aroa aroa",
+      "common_name": "",
+      "note": "Alea subgroup. Recognizable by its rounded, elongate wings (distinctive wing shape). Narrow postdiscal bands that are well clear of the submarginal lunules. Smaller species (FW < 21 mm)."
+    },
+
+    "r_phanda_phanda": {
+      "type": "result",
+      "id": "r_phanda_phanda",
+      "taxon_id": null,
+      "name": "Arhopala phanda phanda",
+      "common_name": "",
+      "note": "Alea subgroup. Underside postdiscal band placed very close to the inner submarginal lunules (diagnostic). Smaller species (FW < 21 mm)."
+    },
+
+    "r_selta_selta": {
+      "type": "result",
+      "id": "r_selta_selta",
+      "taxon_id": null,
+      "name": "Arhopala selta selta",
+      "common_name": "",
+      "note": "Alea subgroup. HW postdiscal spot 6 widely overlaps the end-cell bar (diagnostic vs phaenops). Male: violet-blue with border expanding toward the apex. Smaller species (FW < 21 mm)."
+    },
+
+    "r_phaenops_sandakani": {
+      "type": "result",
+      "id": "r_phaenops_sandakani",
+      "taxon_id": null,
+      "name": "Arhopala phaenops sandakani",
+      "common_name": "",
+      "note": "Alea subgroup. Similar to A. selta selta (border expanding toward apex) but HW postdiscal spot 6 usually does NOT overlap the end-cell bar. Smaller species (FW < 21 mm)."
+    },
+
+    "r_milleri": {
+      "type": "result",
+      "id": "r_milleri",
+      "taxon_id": null,
+      "name": "Arhopala milleri",
+      "common_name": "",
+      "note": "Alea subgroup. Larger than A. sublustris (but still FW < 21 mm). Male: more matt indigo blue (not bright glistening) with a thread-like border. Genitalia often needed for certain identification."
+    },
+
+    "r_normani": {
+      "type": "result",
+      "id": "r_normani",
+      "taxon_id": null,
+      "name": "Arhopala normani",
+      "common_name": "",
+      "note": "Alea subgroup. Superficially similar to A. sublustris ridleyi but male is less shining and more violet. Borders narrow. Genitalia often needed for certain identification."
+    },
+
+    "r_sublustris_ridleyi": {
+      "type": "result",
+      "id": "r_sublustris_ridleyi",
+      "taxon_id": null,
+      "name": "Arhopala sublustris ridleyi",
+      "common_name": "",
+      "note": "Alea subgroup. Male: bright glistening blue with borders under 0.5 mm. Brighter and more glistening than A. normani. Smaller species (FW < 21 mm)."
+    },
+
+    "r_corinda_acestes": {
+      "type": "result",
+      "id": "r_corinda_acestes",
+      "taxon_id": null,
+      "name": "Arhopala corinda acestes",
+      "common_name": "",
+      "note": "Monotypic group. Filamentous HW tail ~3.5 mm. FW: pointed apex, straight termen. Underside: large purple-brown patch under FW cell (basal half of space 1b completely darkened); FW spot 4 shifted distad; no costal spot in FW space 10; ground colour sometimes glazed with purple wash. HW spot 6 outwardly convex; band partially dislocated at vein 2. Male: deep violet or dark purple, very narrow border. Female: purple-blue. Subspecies: acestes (Malay Peninsula and Singapore), corestes (related)."
+    },
+
+    "q_democritus_s1": {
+      "type": "question",
+      "id": "q_democritus_s1",
+      "question": "Is the underside ground colour a dark chocolate brown with markings outlined by prominent silvery-white striae and dots?",
+      "hint": "A. democritus democritus (Kedawi and Fraser's Hill): darker chocolate-brown ground colour; markings outlined by prominent silvery-white striae and dots; male and female both lighter and more silvery blue above. A. democritus lycaenaria (standard Peninsula subspecies): hair-brown ground colour; markings outlined by dull yellowish-white striae (less contrast).",
+      "choices": [
+        { "label": "Yes — dark chocolate brown; prominent silvery-white striae; male/female more silvery blue (Kedawi/Fraser's Hill)", "next": "r_democritus_democritus" },
+        { "label": "No — hair brown; dull yellowish-white striae (standard Peninsula subspecies)", "next": "r_democritus_lycaenaria" }
+      ]
+    },
+
+    "r_democritus_democritus": {
+      "type": "result",
+      "id": "r_democritus_democritus",
+      "taxon_id": null,
+      "name": "Arhopala democritus democritus",
+      "common_name": "",
+      "note": "Underside: dark chocolate-brown ground colour; markings outlined by prominent silvery-white striae and dots (more contrast than lycaenaria). Upperside: both male and female lighter and more silvery blue. Distribution: Kedawi; also recorded at Fraser's Hill."
+    },
+
+    "r_democritus_lycaenaria": {
+      "type": "result",
+      "id": "r_democritus_lycaenaria",
+      "taxon_id": null,
+      "name": "Arhopala democritus lycaenaria",
+      "common_name": "",
+      "note": "Standard Malay Peninsula subspecies. Underside: hair-brown ground colour; all markings outlined by dull yellowish-white striae (less contrast than democritus ssp.). Short HW tail 1.5–2.0 mm. Macular underside markings; FW spot 4 shifted distad; HW spot 6 outwardly concave; HW band widely dislocated at vein 2."
     },
 
     "g_needs_more_info": {
