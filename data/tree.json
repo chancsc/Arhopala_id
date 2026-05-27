@@ -198,11 +198,12 @@
     "q_amphimuta_sub": {
       "type": "question",
       "id": "q_amphimuta_sub",
-      "question": "Within the amphimuta group, what is the shape of the postdiscal spots and the position of the FW space 2 spot?",
-      "hint": "Two subgroups are distinguished by spot shape and the position of spot 2 on the forewing underside.",
+      "question": "Within the echelon-spot group, what is the shape of the postdiscal spots and how are they arranged on the forewing?",
+      "hint": "Three groups share the echelon arrangement of HW spots 5–7. Spot shape and FW spot alignment help separate them. Detailed features for the aedias group will be added when the species-level key is provided.",
       "choices": [
-        { "label": "Spots more quadrate; FW space 2 spot is stepped outward toward the termen (muta subgroup)", "next": "g_amphimuta_muta" },
-        { "label": "Postdiscal spots in FW spaces 2 and 3 are in line with each other (perimuta subgroup)", "next": "g_amphimuta_perimuta" }
+        { "label": "Spots more quadrate; FW space 2 spot is stepped outward toward the termen (amphimuta — muta subgroup)", "next": "g_amphimuta_muta" },
+        { "label": "Postdiscal spots in FW spaces 2 and 3 are in line (amphimuta — perimuta subgroup)", "next": "g_amphimuta_perimuta" },
+        { "label": "Spots rounded; does not fit muta or perimuta pattern (aedias group — further details pending)", "next": "g_aedias" }
       ]
     },
 
@@ -634,6 +635,17 @@
         "Short white-tipped tail at HW vein 3",
         "Spot at base of HW space 1a",
         "FW vein 9 very short"
+      ]
+    },
+
+    "g_aedias": {
+      "type": "group",
+      "id": "g_aedias",
+      "group_name": "aedias group",
+      "description": "Like the amphimuta group, the aedias group has hindwing postdiscal spots in spaces 5, 6, and 7 in echelon (centres roughly in a straight line). Detailed distinguishing features and species-level key will be added in the next update.",
+      "key_features": [
+        "HW postdiscal spots 5, 6, 7 in echelon (centres in straight line)",
+        "Distinguishing features from amphimuta: further details pending"
       ]
     },
 
