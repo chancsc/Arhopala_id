@@ -1292,10 +1292,10 @@
     "q_amph_bor3": {
       "type": "question",
       "id": "q_amph_bor3",
-      "question": "Is the male's black border reduced to a thread (very narrow)?",
-      "hint": "A. alica has a thread-like border and is dark dull purple — the dullest and darkest of the three Bornean species. A. baluensis and A. dajagaka both have a regular ~0.5 mm border and are dark purple-blue.",
+      "question": "Is the male's black border reduced to a thread (very narrow), and is the male a dark, dull purple?",
+      "hint": "A. alica: thread-like border; male dark dull purple (distinctly duller than A. moolaiana's shining violet-blue); FW ~17 mm; female purple with broad black borders. A. baluensis and A. dajagaka both have a regular ~0.5 mm border and are dark purple-blue.",
       "choices": [
-        { "label": "Yes — border thread-like; male dark dull purple", "next": "r_alica" },
+        { "label": "Yes — border thread-like; male dark dull purple; FW ~17 mm; female purple, broad borders", "next": "r_alica" },
         { "label": "No — border regular ~0.5 mm; male dark purple-blue", "next": "q_amph_bor2" }
       ]
     },
@@ -1362,7 +1362,7 @@
       "taxon_id": null,
       "name": "Arhopala moolaiana yajuna",
       "common_name": "",
-      "note": "Male: shining violet-blue with a thread-like black border. Female: blue colour extends to the HW termen (diagnostic). HW cilia often prolonged into a short tooth at vein 2."
+      "note": "Male: bright shining violet-blue with a thread-like black border; FW 18–22 mm. Female: blue colour reaches the HW termen or very nearly so — black border is extremely narrow or absent at the termen (diagnostic; unique in the amphimuta group). Underside markings very similar to A. norda. HW postdiscal band only partially dislocated at vein 2. Range: Malay Peninsula and south Myanmar."
     },
 
     "r_alica": {
@@ -1371,7 +1371,7 @@
       "taxon_id": null,
       "name": "Arhopala alica",
       "common_name": "",
-      "note": "Bornean endemic. Male: dark, dull purple with a thread-like black border. Distinguished from A. moolaiana by its darker, duller coloration and Bornean range."
+      "note": "Bornean endemic. Male: dark, dull purple with a thread-like black border; FW ~17 mm. Female: purple with broad black borders (contrasts sharply with A. moolaiana female). HW postdiscal band only partially dislocated at vein 2. Distinguished from A. moolaiana by: darker/duller male colour, smaller size, broader female borders, and Bornean range."
     },
 
     "r_sceva_indra": {
