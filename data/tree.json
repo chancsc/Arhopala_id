@@ -245,10 +245,10 @@
     "q_tailless_hypomuta": {
       "type": "question",
       "id": "q_tailless_hypomuta",
-      "question": "Is there a white spot in the cilia of hindwing space 1a?",
-      "hint": "The hypomuta group has a distinctive white spot in the cilia (fringe) of HW space 1a. Also usually has a spot at the extreme base of HW space 6 on the underside.",
+      "question": "Is there a small spot at the extreme base of hindwing space 6 on the underside?",
+      "hint": "This spot sits right at the base of space 6, closer to the wing base than the normal postdiscal spot row. It distinguishes the hypomuta group from the similar amphimuta group in most Malayan specimens. Note: the spot is usually absent in Bornean and Sumatran material.",
       "choices": [
-        { "label": "Yes — white spot in HW space 1a cilia", "next": "g_hypomuta" },
+        { "label": "Yes — small spot at extreme base of HW space 6", "next": "g_hypomuta" },
         { "label": "No", "next": "q_tailless_oenea" }
       ]
     },
@@ -403,12 +403,15 @@
       "type": "group",
       "id": "g_ijanensis",
       "group_name": "ijanensis group",
-      "description": "Tailed species where the male upperside forewing border uniquely runs along the costa all the way to the base of the wing. A spot is present at the base of hindwing space 6.",
+      "description": "Tailed species with an unusually long hindwing cell (~half wing length or longer). Underside: spot in subcostal mid-space 11 above the central cell spot; no spot at base of FW space 10; spot always at base of HW space 6. The male FW border runs along the costa to the wing base.",
       "key_features": [
         "Tailed",
-        "Male: FW costa border runs to wing base (unique to this group)",
-        "Spot at base of HW space 6"
-      ]
+        "HW cell ~half wing length or longer",
+        "FW underside: subcostal spot in space 11; no spot at base of space 10",
+        "Spot at base of HW space 6",
+        "Male: FW costal border runs to wing base"
+      ],
+      "next": "r_ijanensis"
     },
 
     "g_epimuta": {
@@ -507,24 +510,27 @@
       "type": "group",
       "id": "g_hypomuta",
       "group_name": "hypomuta group",
-      "description": "Tailless species with a white spot in the cilia of hindwing space 1a. Usually possesses a spot at the extreme base of HW space 6 on the underside.",
+      "description": "Tailless species, often confused with the amphimuta group. Most Malayan individuals are distinguished by a small spot at the extreme base of HW space 6 on the underside (this spot is usually absent in Sumatran and Bornean specimens). Monotypic in the Malay Peninsula.",
       "key_features": [
-        "White spot in HW space 1a cilia",
-        "Usually: spot at extreme base of HW space 6",
-        "Tailless"
-      ]
+        "Tailless",
+        "Usually: small spot at extreme base of HW space 6 (Malayan ssp.)",
+        "FW ~19 mm"
+      ],
+      "next": "r_hypomuta_hypomuta"
     },
 
     "g_inornata": {
       "type": "group",
       "id": "g_inornata",
       "group_name": "inornata group",
-      "description": "Tailless with a very rounded hindwing tornus. The underside lacks tornal green scales.",
+      "description": "Tailless with a very rounded hindwing tornus. On the underside: no tornal green scales; HW postdiscal spot 6 placed immediately below spot 7. Monotypic.",
       "key_features": [
-        "Very rounded HW tornus",
+        "Tailless; very rounded HW tornus",
         "No tornal green scales on underside",
-        "Tailless"
-      ]
+        "HW spot 6 placed immediately below spot 7",
+        "FW ~21 mm"
+      ],
+      "next": "r_inornata_inornata"
     },
 
     "g_democritus": {
@@ -727,13 +733,13 @@
       "type": "group",
       "id": "g_ganesa",
       "group_name": "ganesa group",
-      "description": "Small species with spots above the cell on the forewing underside and a spot at the base of FW space 3. All have short tails.",
+      "description": "Small tailed species. Underside FW has a characteristic spot at the base of space 11, positioned between the basal and central cell spots, plus a spot at the base of space 3. Five species in the Peninsula, keyed primarily by tornal green scales and HW space 6/7 spot arrangement.",
       "key_features": [
-        "Small species",
-        "Spots above the FW cell on the underside",
-        "Spot at base of FW space 3",
-        "Short tails (all species)"
-      ]
+        "Small; short HW tail",
+        "FW underside: spot at base of space 11 (between basal and central cell spots)",
+        "FW underside: spot at base of space 3"
+      ],
+      "next": "q_ganesa_s1"
     },
 
     "g_fulla": {
@@ -2351,6 +2357,122 @@
       "name": "Arhopala fulla intaca",
       "common_name": "",
       "note": "Tailless. FW ~18 mm. Instantly recognizable by the near-total absence of underside markings: no end-cell bar on FW, postdiscal spots replaced by an obscure fascia, only a few basal spots near HW base. Male: shining violet-blue with thread-width border. Female: deeper violet with broader borders. Wide distribution: Myanmar to Sundaland, Philippines, Moluccas, New Guinea."
+    },
+
+    "q_ganesa_s1": {
+      "type": "question",
+      "id": "q_ganesa_s1",
+      "question": "Are tornal green scales present on the hindwing underside?",
+      "hint": "Check the tornal area (lower hind angle) of the hindwing underside for metallic green scales. Two ganesa species lack them (paraganesa, ammonides); three have them (ammon, ariel, elizabethae).",
+      "choices": [
+        { "label": "No tornal green scales", "next": "q_ganesa_no_green" },
+        { "label": "Tornal green scales present", "next": "q_ganesa_with_green" }
+      ]
+    },
+
+    "q_ganesa_no_green": {
+      "type": "question",
+      "id": "q_ganesa_no_green",
+      "question": "Is there a roughly quadrate whitish area on the hindwing underside extending from mid-cell to the costa?",
+      "hint": "In paraganesa this whitish mid-cell patch is distinctive and quite obvious. ammonides lacks it; instead the gap between the outer and central spots in HW space 7 is completely whitened. paraganesa is also wholly montane on the Peninsula.",
+      "choices": [
+        { "label": "Yes — roughly quadrate whitish area from mid-cell to costa", "next": "r_paraganesa_mendava" },
+        { "label": "No — gap between HW space 7 spots whitened, but no mid-cell white patch", "next": "r_ammonides_chunsu" }
+      ]
+    },
+
+    "q_ganesa_with_green": {
+      "type": "question",
+      "id": "q_ganesa_with_green",
+      "question": "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?",
+      "hint": "In ammon the space 6 spot is unusually elongated, reaching the base of the space. In ariel and elizabethae the spot 6 is normal (not reaching the base).",
+      "choices": [
+        { "label": "Yes — HW spot 6 extended/continued to base of space", "next": "r_ammon_ammon" },
+        { "label": "No — HW spot 6 normal, not reaching base of space", "next": "q_ganesa_ariel_eliz" }
+      ]
+    },
+
+    "q_ganesa_ariel_eliz": {
+      "type": "question",
+      "id": "q_ganesa_ariel_eliz",
+      "question": "What is the male upperside appearance? (If visible)",
+      "hint": "⚠ Underside characters alone are insufficient to separate these two species reliably — both have tornal green scales, normal spot 6, and spots 7 joined at their upper ends. Upperside required for confident identification: ariel is bluish-purple and hardly shining with a border expanding from 1.5 mm at the tornus to 4.0 mm at the apex; elizabethae is shining deep blue with borders slightly wider throughout.",
+      "choices": [
+        { "label": "Bluish-purple, hardly shining; FW border expanding to ~4 mm at apex", "next": "r_ariel" },
+        { "label": "Shining deep blue; borders slightly wider than ariel", "next": "r_elizabethae" }
+      ]
+    },
+
+    "r_paraganesa_mendava": {
+      "type": "result",
+      "id": "r_paraganesa_mendava",
+      "taxon_id": null,
+      "name": "Arhopala paraganesa mendava",
+      "common_name": "",
+      "note": "Montane species on the Malay Peninsula. Underside HW: roughly quadrate whitish area from mid-cell to costa; no tornal green scales. Upperside: bright pale blue with broad borders; male HW mostly fuscous; female with obscure whitish patch at FW end-cell."
+    },
+
+    "r_ammonides_chunsu": {
+      "type": "result",
+      "id": "r_ammonides_chunsu",
+      "taxon_id": null,
+      "name": "Arhopala ammonides chunsu",
+      "common_name": "",
+      "note": "No tornal green scales. Underside HW: gap between outer and central spots in space 7 completely whitened (no quadrate mid-cell white patch). Upperside: powdery blue with very broad borders on all wings; female with dark bar at FW end-cell."
+    },
+
+    "r_ammon_ammon": {
+      "type": "result",
+      "id": "r_ammon_ammon",
+      "taxon_id": null,
+      "name": "Arhopala ammon ammon",
+      "common_name": "",
+      "note": "Tornal green scales present. Underside HW: spot 6 extended to base of space; outer and central spots in space 7 separate, gap whitened. Upperside male: dark blue, narrow borders (1.5 mm at FW apex). Female: narrow borders (2.0 mm at FW tornus and HW)."
+    },
+
+    "r_ariel": {
+      "type": "result",
+      "id": "r_ariel",
+      "taxon_id": null,
+      "name": "Arhopala ariel",
+      "common_name": "",
+      "note": "Tornal green scales present. Underside HW: spot 6 normal; outer and central spots in space 7 joined at upper ends. ⚠ Upperside required to separate from elizabethae: male bluish-purple, hardly shining; FW border 1.5 mm at tornus expanding to 4.0 mm at apex. Female: bluer shade with broader borders."
+    },
+
+    "r_elizabethae": {
+      "type": "result",
+      "id": "r_elizabethae",
+      "taxon_id": null,
+      "name": "Arhopala elizabethae",
+      "common_name": "",
+      "note": "Tornal green scales present. Underside HW: spot 6 normal; outer and central spots in space 7 joined at upper ends. ⚠ Upperside required to separate from ariel: male shining deep blue with borders slightly wider than A. ariel; female similar to male (not bluer with broader borders as in ariel female)."
+    },
+
+    "r_hypomuta_hypomuta": {
+      "type": "result",
+      "id": "r_hypomuta_hypomuta",
+      "taxon_id": null,
+      "name": "Arhopala hypomuta hypomuta",
+      "common_name": "",
+      "note": "Tailless. FW ~19 mm. Key character: small spot at the extreme base of HW space 6 on the underside (usually present in Malayan specimens; often absent in Bornean/Sumatran material). Similar to amphimuta group but separated by this basal spot. Male: deep shining violet-blue with very narrow borders. Female: more purple-blue with broader borders."
+    },
+
+    "r_ijanensis": {
+      "type": "result",
+      "id": "r_ijanensis",
+      "taxon_id": null,
+      "name": "Arhopala ijanensis",
+      "common_name": "",
+      "note": "Tailed. FW ~23 mm. HW cell about half wing length or longer. Underside: markings rather variegated; whitish streak from base of dorsum to apex on HW. Male: pale blue; FW costal border runs narrowly along costa to wing base (unique). Female: same but costal border much broader. More common in Kedah than elsewhere in the Peninsula."
+    },
+
+    "r_inornata_inornata": {
+      "type": "result",
+      "id": "r_inornata_inornata",
+      "taxon_id": null,
+      "name": "Arhopala inornata inornata",
+      "common_name": "",
+      "note": "Tailless. FW ~21 mm. Very rounded HW tornus. Underside: no tornal green scales; HW postdiscal spot 6 placed immediately below spot 7. Male: bright violet-blue with border reduced to a thread. Female: bluer than male with exceptionally narrow borders (0.5 mm on HW)."
     },
 
     "g_needs_more_info": {
