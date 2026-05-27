@@ -630,12 +630,48 @@
       "type": "group",
       "id": "g_abseus",
       "group_name": "abseus group",
-      "description": "Features a short white-tipped tail at vein 3 of the hindwing (not the usual vein 2), and a spot at the base of hindwing space 1a. Forewing vein 9 is very short.",
+      "description": "Features a short white-tipped tail at vein 3 of the hindwing (not the usual vein 2), and a spot at the base of hindwing space 1a. Forewing vein 9 is very short, arising well beyond the end of vein 10. Two species in Malaysia.",
       "key_features": [
         "Short white-tipped tail at HW vein 3",
         "Spot at base of HW space 1a",
-        "FW vein 9 very short"
+        "FW vein 9 very short (arises well beyond end of vein 10)"
+      ],
+      "next": "q_abseus_species"
+    },
+
+    "q_abseus_species": {
+      "type": "question",
+      "id": "q_abseus_species",
+      "question": "What is the underside ground colour and are the markings darkened?",
+      "hint": "The key distinction is the intensity of the underside markings and the presence or absence of a costal spot in forewing space 12.",
+      "choices": [
+        {
+          "label": "Markings much darkened (blackish brown); costal spot present in FW space 12",
+          "next": "r_abseus_abseus"
+        },
+        {
+          "label": "Ground colour hair brown; markings not prominently darkened; no spot in FW space 12",
+          "next": "r_anella"
+        }
       ]
+    },
+
+    "r_abseus_abseus": {
+      "type": "result",
+      "id": "r_abseus_abseus",
+      "taxon_id": null,
+      "name": "Arhopala abseus",
+      "common_name": "Aberrant Bushblue",
+      "note": "Underside markings much darkened — most spots blackish brown. Forewing underside: costal spot in space 12; two spots each in spaces 9, 10, and 11. Hindwing: spot in middle of space 7 outlined in whitish. Male upperside: deep lustrous violet blue; FW black border expands from 2.0 mm at tornus to 4.0 mm at apex. Female: shining blue with wider borders."
+    },
+
+    "r_anella": {
+      "type": "result",
+      "id": "r_anella",
+      "taxon_id": null,
+      "name": "Arhopala anella",
+      "common_name": "",
+      "note": "Underside ground colour hair brown; markings not prominently darkened. Forewing underside lacks a spot in space 12. Male upperside: blue restricted to basal halves of FW spaces 1b, 2, and 3 and the lower half of the cell; HW blue confined almost entirely to the cell. Female: relatively narrow black borders."
     },
 
     "g_aedias": {

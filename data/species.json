@@ -1,50 +1,23 @@
 {
+  "_note": "Run scripts/fetch_species.py to populate this file with real iNaturalist data including taxon IDs and photos.",
   "generated": "2026-05-27",
   "place": "Malaysia",
   "place_id": 6870,
   "species": [
     {
-      "id": 84048,
-      "name": "Arhopala centaurus",
-      "common_name": "Centaurus Oak Blue",
-      "inat_url": "https://www.inaturalist.org/taxa/84048",
-      "taxon_photos": [
-        {
-          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/placeholder/medium.jpg",
-          "attribution": "Placeholder — run scripts/fetch_species.py to populate real photos"
-        }
-      ],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": 84050,
-      "name": "Arhopala aedias",
-      "common_name": "Aedias Oak Blue",
-      "inat_url": "https://www.inaturalist.org/taxa/84050",
-      "taxon_photos": [
-        {
-          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/placeholder/medium.jpg",
-          "attribution": "Placeholder — run scripts/fetch_species.py to populate real photos"
-        }
-      ],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": 84052,
-      "name": "Arhopala aurea",
-      "common_name": "Aurea Oak Blue",
-      "inat_url": "https://www.inaturalist.org/taxa/84052",
+      "id": null,
+      "name": "Arhopala abseus",
+      "common_name": "Aberrant Bushblue",
+      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+abseus",
       "taxon_photos": [],
       "observation_count": 0,
       "wikipedia_url": ""
     },
     {
-      "id": 84054,
-      "name": "Arhopala eumolphus",
-      "common_name": "Green Oak Blue",
-      "inat_url": "https://www.inaturalist.org/taxa/84054",
+      "id": null,
+      "name": "Arhopala anella",
+      "common_name": "",
+      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+anella",
       "taxon_photos": [],
       "observation_count": 0,
       "wikipedia_url": ""

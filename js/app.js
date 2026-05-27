@@ -87,6 +87,13 @@ function render() {
       if (btn) handleChoice(btn.dataset.label, btn.dataset.next);
     });
   }
+
+  const speciesIdBtn = appEl.querySelector('.btn-species-id');
+  if (speciesIdBtn) {
+    speciesIdBtn.addEventListener('click', () => {
+      handleChoice('Identify to species', speciesIdBtn.dataset.next);
+    });
+  }
 }
 
 function renderQuestion(node) {
@@ -109,11 +116,16 @@ function renderQuestion(node) {
 }
 
 function renderResult(node) {
-  const species = state.species.get(node.taxon_id);
+  const species = node.taxon_id ? state.species.get(node.taxon_id) : null;
 
-  const commonName = species ? (species.common_name || species.name) : 'Unknown Species';
-  const sciName = species ? species.name : '';
-  const inatUrl = species ? species.inat_url : `https://www.inaturalist.org/search?q=${encodeURIComponent(sciName || 'Arhopala')}`;
+  // Prefer live species data; fall back to fields embedded in the result node
+  const commonName = (species && species.common_name) || node.common_name
+    || (species && species.name) || node.name || 'Unknown Species';
+  const sciName = (species && species.name) || node.name || '';
+  const inatUrl = (species && species.inat_url)
+    || (node.taxon_id ? `https://www.inaturalist.org/taxa/${node.taxon_id}` : null)
+    || `https://www.inaturalist.org/search?q=${encodeURIComponent(sciName || 'Arhopala')}`;
+
   const noteHTML = node.note
     ? `<div class="id-note">${escapeHtml(node.note)}</div>`
     : '';
@@ -145,6 +157,14 @@ function renderGroup(node) {
     ? `<ul class="key-features">${node.key_features.map(f => `<li>${escapeHtml(f)}</li>`).join('')}</ul>`
     : '';
 
+  const continueOrPending = node.next
+    ? `<button class="btn-species-id" data-next="${escapeAttr(node.next)}">
+         Identify to species ${iconArrowRight()}
+       </button>`
+    : `<div class="species-pending">
+         ${iconPending()} Species-level keys for this group will be added in the next update.
+       </div>`;
+
   return `
     <div class="card card--group">
       ${buildBackButton()}
@@ -152,9 +172,7 @@ function renderGroup(node) {
       <h2 class="species-common">${escapeHtml(node.group_name)}</h2>
       <p class="group-description">${escapeHtml(node.description)}</p>
       ${featuresHTML}
-      <div class="species-pending">
-        ${iconPending()} Species-level keys for this group will be added in the next update.
-      </div>
+      ${continueOrPending}
       <div class="action-row">
         <button class="btn-restart">
           ${iconRestart()} Start Over
@@ -294,6 +312,12 @@ function iconRestart() {
   return `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
     <path d="M2 8a6 6 0 106-6H5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
     <path d="M2 4v4h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>`;
+}
+
+function iconArrowRight() {
+  return `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" style="vertical-align:-2px">
+    <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
   </svg>`;
 }
 
