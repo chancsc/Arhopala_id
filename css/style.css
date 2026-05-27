@@ -234,6 +234,39 @@ body {
   color: var(--text);
 }
 
+/* ===== Reference plates ===== */
+.ref-plates { margin-bottom: 1.1rem; }
+
+.ref-plates-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.ref-plate {
+  margin: 0;
+}
+
+.ref-plate img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  background: var(--border);
+}
+
+.ref-plate + .ref-plate { margin-top: 0.5rem; }
+
+.ref-plate figcaption {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: 0.25rem;
+  font-style: italic;
+}
+
 /* ===== Photo gallery ===== */
 .photo-gallery {
   display: grid;

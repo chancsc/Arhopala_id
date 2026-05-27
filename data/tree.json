@@ -419,10 +419,53 @@
       "type": "group",
       "id": "g_agesilaus",
       "group_name": "agesilaus group",
-      "description": "Tailless species that can be confused with the amphimuta group. Defined by HW postdiscal spot 6 placed equidistantly between spot 5 and the end-cell bar.",
+      "description": "Tailless species that can be confused with the amphimuta group. Defined by HW postdiscal spot 6 placed equidistantly between spot 5 and the end-cell bar. HW postdiscal band only partially dislocated at vein 2. Two Malaysian species.",
       "key_features": [
         "Tailless",
-        "HW postdiscal spot 6 equidistant between spot 5 and end-cell bar"
+        "HW postdiscal spot 6 equidistant between spot 5 and end-cell bar",
+        "HW postdiscal band only partially dislocated at vein 2"
+      ],
+      "next": "q_agesilaus_s1"
+    },
+
+    "q_agesilaus_s1": {
+      "type": "question",
+      "id": "q_agesilaus_s1",
+      "question": "Is a basal cell spot present on the forewing underside?",
+      "hint": "Arhopala agesilaus gesa has a basal cell spot on the FW underside (typical for the genus). Arhopala avatha uniquely lacks this basal cell spot — its absence is diagnostic.",
+      "choices": [
+        { "label": "Yes — basal cell spot present on FW underside", "next": "r_agesilaus_gesa" },
+        { "label": "No — basal cell spot absent (unique within this group)", "next": "r_avatha" }
+      ]
+    },
+
+    "r_agesilaus_gesa": {
+      "type": "result",
+      "id": "r_agesilaus_gesa",
+      "taxon_id": null,
+      "name": "Arhopala agesilaus gesa",
+      "common_name": "",
+      "note": "FW underside has a basal cell spot. Male: rich violet blue; FW black border 2.0 mm at tornus expanding to 4.0 mm at apex. Female: bluer shade than male. Superficially resembles a small Arhopala major.",
+      "reference_images": [
+        {
+          "url": "https://raw.githubusercontent.com/plastingia/books/refs/heads/master/cp5/plate_088.jpg",
+          "caption": "Plate 88"
+        }
+      ]
+    },
+
+    "r_avatha": {
+      "type": "result",
+      "id": "r_avatha",
+      "taxon_id": null,
+      "name": "Arhopala avatha",
+      "common_name": "",
+      "note": "Uniquely lacks the basal cell spot on FW underside. Male: very dark bluish violet; FW black border 1.0 mm at tornus increasing to 2.0 mm at apex (narrow borders). Female: purple. Similar to Arhopala antimuta but distinguished by wider borders in the male.",
+      "reference_images": [
+        {
+          "url": "https://raw.githubusercontent.com/plastingia/books/refs/heads/master/cp5/plate_089.jpg",
+          "caption": "Plate 89"
+        }
       ]
     },
 

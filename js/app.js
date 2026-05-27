@@ -130,6 +130,7 @@ function renderResult(node) {
     ? `<div class="id-note">${escapeHtml(node.note)}</div>`
     : '';
 
+  const refPlatesHTML = buildReferencePlates(node);
   const galleryHTML = buildPhotoGallery(species);
 
   return `
@@ -139,6 +140,7 @@ function renderResult(node) {
       <h2 class="species-common">${escapeHtml(commonName)}</h2>
       ${sciName ? `<p class="species-name">${escapeHtml(sciName)}</p>` : ''}
       ${noteHTML}
+      ${refPlatesHTML}
       ${galleryHTML}
       <div class="action-row">
         <a class="btn-inat" href="${escapeAttr(inatUrl)}" target="_blank" rel="noopener noreferrer">
@@ -178,6 +180,24 @@ function renderGroup(node) {
           ${iconRestart()} Start Over
         </button>
       </div>
+    </div>
+  `;
+}
+
+function buildReferencePlates(node) {
+  if (!node.reference_images || node.reference_images.length === 0) return '';
+
+  const items = node.reference_images.map(img => `
+    <figure class="ref-plate">
+      <img src="${escapeAttr(img.url)}" alt="${escapeAttr(img.caption || node.name || 'Reference plate')}" loading="lazy">
+      ${img.caption ? `<figcaption>${escapeHtml(img.caption)}</figcaption>` : ''}
+    </figure>
+  `).join('');
+
+  return `
+    <div class="ref-plates">
+      <p class="ref-plates-label">Reference plate</p>
+      ${items}
     </div>
   `;
 }
