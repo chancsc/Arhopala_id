@@ -1,303 +1,470 @@
 {
   "start": "q_tail",
   "nodes": {
-
     "q_tail": {
       "type": "question",
       "id": "q_tail",
       "question": "Does the hindwing have a tail?",
       "hint": "Check the posterior margin of the hindwing for a projection. Most Arhopala tails are at vein 2.",
       "choices": [
-        { "label": "Yes — hindwing is tailed", "next": "q_tailed_vein3" },
-        { "label": "No — hindwing is tailless", "next": "q_tailless_fulla" }
+        {
+          "label": "Yes — hindwing is tailed",
+          "next": "q_tailed_vein3"
+        },
+        {
+          "label": "No — hindwing is tailless",
+          "next": "q_tailless_fulla"
+        }
       ]
     },
-
     "q_tailed_vein3": {
       "type": "question",
       "id": "q_tailed_vein3",
       "question": "Is the tail short, white-tipped, and located at vein 3?",
       "hint": "In the vast majority of Arhopala the tail (when present) is at vein 2. Only 3 species in the entire genus have a tail at vein 3 — all in the abseus group: A. abseus abseus (small, deep violet-blue male), A. anella (larger, very wide fuscous borders), and A. alesia sacharja (Langkawi; also NE India to Vietnam). The vein 3 tail is one vein closer to the forewing than usual, and is distinctively short and white-tipped. Also check for a spot at the base of hindwing space 1a.",
       "choices": [
-        { "label": "Yes — short white-tipped tail at vein 3 (only 3 spp. in entire genus)", "next": "g_abseus" },
-        { "label": "No — tail at the usual vein 2, or no tail at all", "next": "q_tailed_long_tail" }
+        {
+          "label": "Yes — short white-tipped tail at vein 3 (only 3 spp. in entire genus)",
+          "next": "g_abseus"
+        },
+        {
+          "label": "No — tail at the usual vein 2, or no tail at all",
+          "next": "q_tailed_long_tail"
+        }
       ]
     },
-
     "q_tailed_long_tail": {
       "type": "question",
       "id": "q_tailed_long_tail",
       "question": "Is the tail notably long and filamentous — roughly 3.5 mm or more?",
       "hint": "Two groups have unusually long tails: the corinda group (~3.5 mm) and the aedias group (~6.0 mm). Both are distinctly longer than typical Arhopala tails. If uncertain, answer 'No' and proceed.",
       "choices": [
-        { "label": "Yes — tail is notably long (roughly 3.5–6 mm or more)", "next": "q_tailed_long_dark" },
-        { "label": "No — tail is short and typical", "next": "q_tailed_ganesa" }
+        {
+          "label": "Yes — tail is notably long (roughly 3.5–6 mm or more)",
+          "next": "q_tailed_long_dark"
+        },
+        {
+          "label": "No — tail is short and typical",
+          "next": "q_tailed_ganesa"
+        }
       ]
     },
-
     "q_tailed_long_dark": {
       "type": "question",
       "id": "q_tailed_long_dark",
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
       "hint": "This is the key difference between the two long-tailed groups. The corinda group has the basal half of FW underside space 1b completely darkened. The aedias group has a long tail (~6.0 mm) but lacks this darkening — the FW underside is normally marked.",
       "choices": [
-        { "label": "Yes — basal half of FW underside space 1b completely darkened (~3.5 mm tail)", "next": "g_corinda" },
-        { "label": "No — FW underside normally marked, no darkening (~6.0 mm tail)", "next": "g_aedias" }
+        {
+          "label": "Yes — basal half of FW underside space 1b completely darkened (~3.5 mm tail)",
+          "next": "g_corinda"
+        },
+        {
+          "label": "No — FW underside normally marked, no darkening (~6.0 mm tail)",
+          "next": "g_aedias"
+        }
       ]
     },
-
     "q_tailed_ganesa": {
       "type": "question",
       "id": "q_tailed_ganesa",
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
       "hint": "The ganesa group is characteristically small, with spots visible above the FW cell on the underside, plus a spot at the base of FW space 3. All ganesa have short tails.",
       "choices": [
-        { "label": "Yes — small; spots above FW cell; spot at base of FW space 3", "next": "g_ganesa" },
-        { "label": "No", "next": "q_tailed_cell_silver" }
+        {
+          "label": "Yes — small; spots above FW cell; spot at base of FW space 3",
+          "next": "g_ganesa"
+        },
+        {
+          "label": "No",
+          "next": "q_tailed_cell_silver"
+        }
       ]
     },
-
     "q_tailed_cell_silver": {
       "type": "question",
       "id": "q_tailed_cell_silver",
       "question": "Are the cell spots on the forewing underside outlined in greenish silver?",
       "hint": "Examine the underside forewing cell. The centaurus group has a distinctive metallic greenish-silver outline around the cell spots — this is not iridescence but a true outline.",
       "choices": [
-        { "label": "Yes — greenish silver outlines on FW cell spots", "next": "g_centaurus" },
-        { "label": "No — no silver outlines", "next": "q_tailed_male_green" }
+        {
+          "label": "Yes — greenish silver outlines on FW cell spots",
+          "next": "g_centaurus"
+        },
+        {
+          "label": "No — no silver outlines",
+          "next": "q_tailed_male_green"
+        }
       ]
     },
-
     "q_tailed_male_green": {
       "type": "question",
       "id": "q_tailed_male_green",
       "question": "Is the male upperside shining green?",
-      "hint": "Most Arhopala males are shining blue or purple. The eumolphus and aurea groups are among the few with shining green males. Answer 'No' for females or blue/purple males.",
+      "hint": "In some Arhopala the male upperside is a distinctive shining green or brassy green (eumolphus and related groups). If the upperside is not visible or sex cannot be confirmed, choose 'Cannot determine' — the green-male groups can still be reached via underside spot arrangement (FW spot 4 out of line).",
       "choices": [
-        { "label": "Yes — shining green upperside (male)", "next": "q_tailed_green_type" },
-        { "label": "No — blue, purple, brown, or female", "next": "q_tailed_dark_area" }
+        {
+          "label": "Yes — shining green upperside (male)",
+          "next": "q_tailed_green_type"
+        },
+        {
+          "label": "No — blue, purple, brown, or female",
+          "next": "q_tailed_dark_area"
+        },
+        {
+          "label": "Cannot determine — upperside not visible or sex uncertain",
+          "next": "q_tailed_dark_area"
+        }
       ]
     },
-
     "q_tailed_green_type": {
       "type": "question",
       "id": "q_tailed_green_type",
       "question": "How does the forewing postdiscal spot 4 relate to spots 5 and 6, and what is the hindwing cell length?",
       "hint": "Eumolphus: FW spot 4 is moved out of line with the others; HW spot 6 is placed directly below spot 7. Aurea: HW cell is considerably longer than half the wing length; FW apex is acute with a straight or concave termen.",
       "choices": [
-        { "label": "FW spot 4 out of line; HW spot 6 directly below spot 7", "next": "q_tailed_spot4_outofline" },
-        { "label": "HW cell considerably longer than half wing; FW apex acute with straight or concave termen", "next": "g_aurea" }
+        {
+          "label": "FW spot 4 out of line; HW spot 6 directly below spot 7",
+          "next": "q_tailed_spot4_outofline"
+        },
+        {
+          "label": "HW cell considerably longer than half wing; FW apex acute with straight or concave termen",
+          "next": "g_aurea"
+        }
       ]
     },
-
     "q_tailed_dark_area": {
       "type": "question",
       "id": "q_tailed_dark_area",
       "question": "Is there a distinct dark area under the forewing cell (space 1b), bounded outwardly by a pale line?",
       "hint": "The camdeo group has a characteristic darkened patch in FW underside space 1b with a clearly defined pale line running across it. This feature is diagnostic for the entire camdeo group.",
       "choices": [
-        { "label": "Yes — distinct dark patch in FW space 1b with pale bordering line", "next": "q_camdeo_sub" },
-        { "label": "No — no such marking", "next": "q_tailed_ijanensis" }
+        {
+          "label": "Yes — distinct dark patch in FW space 1b with pale bordering line",
+          "next": "q_camdeo_sub"
+        },
+        {
+          "label": "No — no such marking",
+          "next": "q_tailed_ijanensis"
+        }
       ]
     },
-
     "q_camdeo_sub": {
       "type": "question",
       "id": "q_camdeo_sub",
       "question": "Within the camdeo group, what additional features are present?",
       "hint": "The three camdeo subgroups each have a distinct secondary feature on top of the dark FW space 1b patch.",
       "choices": [
-        { "label": "Crimson-brown underside with markings outlined in white striae; spot at base of HW space 6", "next": "g_camdeo_myrzala" },
-        { "label": "Spot present mid-space 8 on the hindwing underside", "next": "g_camdeo_bazaloides" },
-        { "label": "Small spot at the extreme base of forewing space 3", "next": "g_camdeo_camdeo" },
-        { "label": "None of the above — camdeo features only", "next": "g_camdeo_general" }
+        {
+          "label": "Crimson-brown underside with markings outlined in white striae; spot at base of HW space 6",
+          "next": "g_camdeo_myrzala"
+        },
+        {
+          "label": "Spot present mid-space 8 on the hindwing underside",
+          "next": "g_camdeo_bazaloides"
+        },
+        {
+          "label": "Small spot at the extreme base of forewing space 3",
+          "next": "g_camdeo_camdeo"
+        },
+        {
+          "label": "None of the above — camdeo features only",
+          "next": "g_camdeo_general"
+        }
       ]
     },
-
     "q_tailed_ijanensis": {
       "type": "question",
       "id": "q_tailed_ijanensis",
       "question": "In the male, does the forewing upperside black border run along the costa all the way to the wing base?",
-      "hint": "This is unique to the ijanensis group: the male's FW costa border extends to the base. Also check for a spot at the base of hindwing space 6.",
+      "hint": "The ijanensis group male has a unique FW black border running along the costa all the way to the wing base. If the male upperside is not visible, you can also check underside characters diagnostic for this group: a whitish streak from the base of the dorsum to the apex on the HW underside, and a HW cell approximately half the wing length or longer. If those features match, choose 'Yes'. Otherwise choose 'Cannot determine' to continue.",
       "choices": [
-        { "label": "Yes — male FW border extends to base of costa; spot at base of HW space 6", "next": "g_ijanensis" },
-        { "label": "No", "next": "q_tailed_anthelus" }
+        {
+          "label": "Yes — male FW border extends to base of costa; spot at base of HW space 6",
+          "next": "g_ijanensis"
+        },
+        {
+          "label": "No",
+          "next": "q_tailed_anthelus"
+        },
+        {
+          "label": "Cannot determine — upperside not visible (check HW underside streak instead)",
+          "next": "q_tailed_anthelus"
+        }
       ]
     },
-
     "q_tailed_anthelus": {
       "type": "question",
       "id": "q_tailed_anthelus",
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "hint": "The anthelus group (2 spp.) is defined by partial dislocation of the FW postdiscal band at vein 4, a spot at the base of FW space 10, and the absence of a spot at the base of HW space 6. A. anthelus grahami additionally has ≥3 spots in FW space 11 and 2 subbasal spots in HW space 8; A. achelous achelous has no spots in FW space 11 and only 1 HW space 8 spot.",
       "choices": [
-        { "label": "Yes — FW band partially dislocated at vein 4; spot at base of FW space 10; no spot at base of HW space 6", "next": "g_anthelus" },
-        { "label": "No", "next": "q_tailed_macular" }
+        {
+          "label": "Yes — FW band partially dislocated at vein 4; spot at base of FW space 10; no spot at base of HW space 6",
+          "next": "g_anthelus"
+        },
+        {
+          "label": "No",
+          "next": "q_tailed_macular"
+        }
       ]
     },
-
     "q_tailed_macular": {
       "type": "question",
       "id": "q_tailed_macular",
       "question": "Are the underside markings macular — composed of separated lines and dots rather than continuous solid bands?",
       "hint": "The democritus group has markings that are broken up into isolated dots and short lines, not forming a continuous postdiscal band. The HW postdiscal band is also widely dislocated at vein 2.",
       "choices": [
-        { "label": "Yes — macular markings (dots/lines); HW postdiscal band widely dislocated at vein 2", "next": "g_democritus" },
-        { "label": "No — markings form more continuous bands", "next": "q_tailed_alitaeus" }
+        {
+          "label": "Yes — macular markings (dots/lines); HW postdiscal band widely dislocated at vein 2",
+          "next": "g_democritus"
+        },
+        {
+          "label": "No — markings form more continuous bands",
+          "next": "q_tailed_alitaeus"
+        }
       ]
     },
-
     "q_tailed_alitaeus": {
       "type": "question",
       "id": "q_tailed_alitaeus",
       "question": "Is there a central spot in forewing underside space 11?",
       "hint": "The alitaeus group is defined by having a central spot in FW space 11 (above the cell). Note: the anthelus group has ≥3 spots in space 11 but was already checked. The alitaeus group also has a distinctive right-angled male aedeagus (requires dissection).",
       "choices": [
-        { "label": "Yes — central spot in FW space 11", "next": "g_alitaeus" },
-        { "label": "No", "next": "q_tailed_cleander" }
+        {
+          "label": "Yes — central spot in FW space 11",
+          "next": "g_alitaeus"
+        },
+        {
+          "label": "No",
+          "next": "q_tailed_cleander"
+        }
       ]
     },
-
     "q_tailed_cleander": {
       "type": "question",
       "id": "q_tailed_cleander",
       "question": "Is this a relatively large species with a conspicuously projecting tornal lobe on the hindwing, and postdiscal spots 6 and 7 placed vertically?",
       "hint": "The cleander group is distinguished by its large size and the prominent projecting tornal lobe (bulge at the anal angle of the hindwing). The postdiscal band is dislocated at vein 2, with spots 6 and 7 stacked vertically.",
       "choices": [
-        { "label": "Yes — large; conspicuous projecting HW tornal lobe; spots 6 and 7 vertical", "next": "q_cleander_sub" },
-        { "label": "No — or tornal lobe less conspicuous", "next": "q_tailed_agrata" }
+        {
+          "label": "Yes — large; conspicuous projecting HW tornal lobe; spots 6 and 7 vertical",
+          "next": "q_cleander_sub"
+        },
+        {
+          "label": "No — or tornal lobe less conspicuous",
+          "next": "q_tailed_agrata"
+        }
       ]
     },
-
     "q_cleander_sub": {
       "type": "question",
       "id": "q_cleander_sub",
       "question": "Which cleander group subgroup does the specimen belong to?",
       "hint": "Agaba subgroup: HW postdiscal spot 5 contiguous or amalgamated with end-cell bar; HW band only PARTIALLY dislocated at vein 2 (unlike others). Cleander subgroup: large (FW > 21 mm); tornal lobe conspicuously projecting; HW band completely dislocated at v2. Alea subgroup: smaller (FW < 21 mm); tornal lobe less conspicuous.",
       "choices": [
-        { "label": "HW spot 5 contiguous/merged with end-cell bar; HW band partially dislocated at vein 2 (agaba subgroup)", "next": "r_agaba" },
-        { "label": "Larger (FW > 21 mm); tornal lobe conspicuously projecting (cleander subgroup)", "next": "g_cleander" },
-        { "label": "Smaller (FW < 21 mm); tornal lobe less conspicuous (alea subgroup)", "next": "g_cleander_alea" }
+        {
+          "label": "HW spot 5 contiguous/merged with end-cell bar; HW band partially dislocated at vein 2 (agaba subgroup)",
+          "next": "r_agaba"
+        },
+        {
+          "label": "Larger (FW > 21 mm); tornal lobe conspicuously projecting (cleander subgroup)",
+          "next": "g_cleander"
+        },
+        {
+          "label": "Smaller (FW < 21 mm); tornal lobe less conspicuous (alea subgroup)",
+          "next": "g_cleander_alea"
+        }
       ]
     },
-
     "q_tailed_agrata": {
       "type": "question",
       "id": "q_tailed_agrata",
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
       "hint": "The agrata group has two subgroups: ace (with a band-like cell spot across the whole HW cell) and agrata (lacking a FW postdiscal spot in space 9 and lacking a costal spot in space 10).",
       "choices": [
-        { "label": "HW central cell spot is band-like, stretching entirely across the cell (ace subgroup)", "next": "g_agrata_ace" },
-        { "label": "FW lacks postdiscal spot in space 9; no costal spot in FW space 10 (agrata subgroup)", "next": "g_agrata_agrata" },
-        { "label": "Neither of these", "next": "q_tailed_spot_arrangement" }
+        {
+          "label": "HW central cell spot is band-like, stretching entirely across the cell (ace subgroup)",
+          "next": "g_agrata_ace"
+        },
+        {
+          "label": "FW lacks postdiscal spot in space 9; no costal spot in FW space 10 (agrata subgroup)",
+          "next": "g_agrata_agrata"
+        },
+        {
+          "label": "Neither of these",
+          "next": "q_tailed_spot_arrangement"
+        }
       ]
     },
-
     "q_tailed_spot_arrangement": {
       "type": "question",
       "id": "q_tailed_spot_arrangement",
       "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
       "hint": "This question separates the remaining tailed groups by the arrangement of key spots. Examine spot 4 on the FW postdiscal band and the position of spot 6 on the HW underside.",
       "choices": [
-        { "label": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7", "next": "q_tailed_spot4_outofline" },
-        { "label": "FW spot 4 in continuation with spots 5 and 6; HW spot 6 rounded and more or less separated", "next": "g_vihara" },
-        { "label": "HW spot 6 is outwardly sinuous; costal spot present in FW space 10", "next": "g_rama" },
-        { "label": "FW postdiscal band is continuous and unbroken; no costal spot in FW space 10; often a spot at base of FW space 3", "next": "g_agelastus" },
-        { "label": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)", "next": "q_amphimuta_sub" }
+        {
+          "label": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7",
+          "next": "q_tailed_spot4_outofline"
+        },
+        {
+          "label": "FW spot 4 in continuation with spots 5 and 6; HW spot 6 rounded and more or less separated",
+          "next": "g_vihara"
+        },
+        {
+          "label": "HW spot 6 is outwardly sinuous; costal spot present in FW space 10",
+          "next": "g_rama"
+        },
+        {
+          "label": "FW postdiscal band is continuous and unbroken; no costal spot in FW space 10; often a spot at base of FW space 3",
+          "next": "g_agelastus"
+        },
+        {
+          "label": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)",
+          "next": "q_amphimuta_sub"
+        }
       ]
     },
-
     "q_amphimuta_sub": {
       "type": "question",
       "id": "q_amphimuta_sub",
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
       "hint": "Four subgroups. Muta: spots more quadrate/banded, FW space 2 stepped toward termen. Perimuta: FW spots 2 and 3 in line. Kurzi: tailless, rounded HW tornus, HW band widely dislocated at vein 2. Amphimuta (largest, 12 spp.): spots rounded, cilia often prolonged into a short tooth at vein 2.",
       "choices": [
-        { "label": "Spots more quadrate/banded; FW space 2 spot stepped outward toward termen (muta subgroup)", "next": "g_amphimuta_muta" },
-        { "label": "FW postdiscal spots in spaces 2 and 3 are in line (perimuta subgroup)", "next": "g_amphimuta_perimuta" },
-        { "label": "Tailless; rounded HW tornus; HW postdiscal band widely dislocated at vein 2 (kurzi subgroup)", "next": "r_kurzi" },
-        { "label": "Spots rounded; cilia often prolonged into a short tooth at vein 2 (amphimuta subgroup)", "next": "q_amph_s1" }
+        {
+          "label": "Spots more quadrate/banded; FW space 2 spot stepped outward toward termen (muta subgroup)",
+          "next": "g_amphimuta_muta"
+        },
+        {
+          "label": "FW postdiscal spots in spaces 2 and 3 are in line (perimuta subgroup)",
+          "next": "g_amphimuta_perimuta"
+        },
+        {
+          "label": "Tailless; rounded HW tornus; HW postdiscal band widely dislocated at vein 2 (kurzi subgroup)",
+          "next": "r_kurzi"
+        },
+        {
+          "label": "Spots rounded; cilia often prolonged into a short tooth at vein 2 (amphimuta subgroup)",
+          "next": "q_amph_s1"
+        }
       ]
     },
-
     "q_tailless_fulla": {
       "type": "question",
       "id": "q_tailless_fulla",
       "question": "Does the forewing underside completely lack an end-cell bar, and are the markings generally obscure or faint?",
       "hint": "The fulla group is unusual in lacking the end-cell bar on the FW underside. The overall underside markings are usually indistinct or obscure.",
       "choices": [
-        { "label": "Yes — no end-cell bar on FW underside; markings obscure", "next": "g_fulla" },
-        { "label": "No — end-cell bar present or markings clear", "next": "q_tailless_inornata" }
+        {
+          "label": "Yes — no end-cell bar on FW underside; markings obscure",
+          "next": "g_fulla"
+        },
+        {
+          "label": "No — end-cell bar present or markings clear",
+          "next": "q_tailless_inornata"
+        }
       ]
     },
-
     "q_tailless_inornata": {
       "type": "question",
       "id": "q_tailless_inornata",
       "question": "Does the hindwing have a very rounded tornus, and are tornal green scales absent?",
       "hint": "The inornata group has a distinctively rounded hindwing tornus (anal angle). Unlike many other tailless Arhopala, it lacks metallic green or brassy tornal scales.",
       "choices": [
-        { "label": "Yes — very rounded HW tornus; no tornal green scales", "next": "g_inornata" },
-        { "label": "No", "next": "q_tailless_hypomuta" }
+        {
+          "label": "Yes — very rounded HW tornus; no tornal green scales",
+          "next": "g_inornata"
+        },
+        {
+          "label": "No",
+          "next": "q_tailless_hypomuta"
+        }
       ]
     },
-
     "q_tailless_hypomuta": {
       "type": "question",
       "id": "q_tailless_hypomuta",
       "question": "Is there a small spot at the extreme base of hindwing space 6 on the underside?",
       "hint": "This spot sits right at the base of space 6, closer to the wing base than the normal postdiscal spot row. It distinguishes the hypomuta group from the similar amphimuta group in most Malayan specimens. Note: the spot is usually absent in Bornean and Sumatran material.",
       "choices": [
-        { "label": "Yes — small spot at extreme base of HW space 6", "next": "g_hypomuta" },
-        { "label": "No", "next": "q_tailless_agesias" }
+        {
+          "label": "Yes — small spot at extreme base of HW space 6",
+          "next": "g_hypomuta"
+        },
+        {
+          "label": "No",
+          "next": "q_tailless_agesias"
+        }
       ]
     },
-
     "q_tailless_agesias": {
       "type": "question",
       "id": "q_tailless_agesias",
       "question": "Are the underside spots prominent and rounded, with a central spot in FW space 11 and a notably short forewing vein 9?",
       "hint": "The agesias group has large, rounded, prominent spots (not narrow bands). Key features: central spot in FW space 11 (above the cell), and FW vein 9 is noticeably shorter than usual.",
       "choices": [
-        { "label": "Yes — prominent rounded spots; central FW spot in space 11; FW vein 9 notably short", "next": "g_agesias" },
-        { "label": "No", "next": "q_tailless_epimuta" }
+        {
+          "label": "Yes — prominent rounded spots; central FW spot in space 11; FW vein 9 notably short",
+          "next": "g_agesias"
+        },
+        {
+          "label": "No",
+          "next": "q_tailless_epimuta"
+        }
       ]
     },
-
     "q_tailless_epimuta": {
       "type": "question",
       "id": "q_tailless_epimuta",
       "question": "Does the male have a distinctly differently-coloured or more opaque discal patch on the forewing upperside?",
       "hint": "In the epimuta group, males have a discal patch on the FW upperside that is noticeably more opaque or differently textured than the surrounding shining blue. You can also check the underside: HW postdiscal spot 6 is placed midway between spot 5 and the end-cell bar (distinctive for this group). If the upperside is not visible, choose 'Cannot determine'.",
       "choices": [
-        { "label": "Yes — male FW upperside has opaque or differently-coloured discal patch", "next": "g_epimuta" },
-        { "label": "No", "next": "q_tailless_agesilaus" },
-        { "label": "Cannot determine — upperside not visible", "next": "g_epimuta" }
+        {
+          "label": "Yes — male FW upperside has opaque or differently-coloured discal patch",
+          "next": "g_epimuta"
+        },
+        {
+          "label": "No",
+          "next": "q_tailless_agesilaus"
+        },
+        {
+          "label": "Cannot determine — upperside not visible",
+          "next": "g_epimuta"
+        }
       ]
     },
-
     "q_tailless_agesilaus": {
       "type": "question",
       "id": "q_tailless_agesilaus",
       "question": "On the hindwing underside, is postdiscal spot 6 placed equidistantly between spot 5 and the end-cell bar?",
       "hint": "The agesilaus group can be confused with the amphimuta group. Its defining feature is HW spot 6 placed equidistant from spot 5 and the end-cell bar — not closer to one or the other. Tailless.",
       "choices": [
-        { "label": "Yes — HW spot 6 equidistant between spot 5 and end-cell bar", "next": "g_agesilaus" },
-        { "label": "No", "next": "q_tailless_agelastus_check" }
+        {
+          "label": "Yes — HW spot 6 equidistant between spot 5 and end-cell bar",
+          "next": "g_agesilaus"
+        },
+        {
+          "label": "No",
+          "next": "q_tailless_agelastus_check"
+        }
       ]
     },
-
     "q_tailless_agelastus_check": {
       "type": "question",
       "id": "q_tailless_agelastus_check",
       "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
       "hint": "The agelastus group has a continuous (non-dislocated) FW postdiscal band, often with a spot at the base of FW space 3. Most species lack a costal spot in FW space 10, though one species (epimete suedas) is an exception.",
       "choices": [
-        { "label": "Yes — FW postdiscal band continuous; often a spot at base of FW space 3", "next": "g_agelastus" },
-        { "label": "No", "next": "g_needs_more_info" }
+        {
+          "label": "Yes — FW postdiscal band continuous; often a spot at base of FW space 3",
+          "next": "g_agelastus"
+        },
+        {
+          "label": "No",
+          "next": "g_needs_more_info"
+        }
       ]
     },
-
     "g_centaurus": {
       "type": "group",
       "id": "g_centaurus",
@@ -310,7 +477,6 @@
       ],
       "next": "q_centaurus_amantes"
     },
-
     "g_anthelus": {
       "type": "group",
       "id": "g_anthelus",
@@ -323,7 +489,6 @@
       ],
       "next": "q_anthelus_s1"
     },
-
     "g_camdeo_general": {
       "type": "group",
       "id": "g_camdeo_general",
@@ -334,7 +499,6 @@
         "HW postdiscal spots 7, 6, 5 in echelon"
       ]
     },
-
     "g_camdeo_camdeo": {
       "type": "group",
       "id": "g_camdeo_camdeo",
@@ -347,7 +511,6 @@
       ],
       "next": "q_camdeo_c1"
     },
-
     "g_camdeo_myrzala": {
       "type": "group",
       "id": "g_camdeo_myrzala",
@@ -360,7 +523,6 @@
       ],
       "next": "q_camdeo_m1"
     },
-
     "g_camdeo_bazaloides": {
       "type": "group",
       "id": "g_camdeo_bazaloides",
@@ -374,7 +536,6 @@
       ],
       "next": "r_bazaloides_bazaloides"
     },
-
     "g_agesias": {
       "type": "group",
       "id": "g_agesias",
@@ -388,7 +549,6 @@
       ],
       "next": "q_agesias_s1"
     },
-
     "g_ijanensis": {
       "type": "group",
       "id": "g_ijanensis",
@@ -403,7 +563,6 @@
       ],
       "next": "r_ijanensis"
     },
-
     "g_epimuta": {
       "type": "group",
       "id": "g_epimuta",
@@ -416,7 +575,6 @@
       ],
       "next": "q_epimuta_s1"
     },
-
     "g_agesilaus": {
       "type": "group",
       "id": "g_agesilaus",
@@ -429,18 +587,22 @@
       ],
       "next": "q_agesilaus_s1"
     },
-
     "q_agesilaus_s1": {
       "type": "question",
       "id": "q_agesilaus_s1",
       "question": "Is a basal cell spot present on the forewing underside?",
       "hint": "Arhopala agesilaus gesa has a basal cell spot on the FW underside (typical for the genus). Arhopala avatha uniquely lacks this basal cell spot — its absence is diagnostic.",
       "choices": [
-        { "label": "Yes — basal cell spot present on FW underside", "next": "r_agesilaus_gesa" },
-        { "label": "No — basal cell spot absent (unique within this group)", "next": "r_avatha" }
+        {
+          "label": "Yes — basal cell spot present on FW underside",
+          "next": "r_agesilaus_gesa"
+        },
+        {
+          "label": "No — basal cell spot absent (unique within this group)",
+          "next": "r_avatha"
+        }
       ]
     },
-
     "r_agesilaus_gesa": {
       "type": "result",
       "id": "r_agesilaus_gesa",
@@ -449,7 +611,6 @@
       "common_name": "",
       "note": "FW underside has a basal cell spot. Male: rich violet blue; FW black border 2.0 mm at tornus expanding to 4.0 mm at apex. Female: bluer shade than male. Superficially resembles a small Arhopala major."
     },
-
     "r_avatha": {
       "type": "result",
       "id": "r_avatha",
@@ -458,7 +619,6 @@
       "common_name": "",
       "note": "Uniquely lacks the basal cell spot on FW underside. Male: very dark bluish violet; FW black border 1.0 mm at tornus increasing to 2.0 mm at apex (narrow borders). Female: purple. Similar to Arhopala antimuta but distinguished by wider borders in the male."
     },
-
     "g_oenea": {
       "type": "group",
       "id": "g_oenea",
@@ -472,7 +632,6 @@
       ],
       "next": "r_allata_pandora"
     },
-
     "g_amphimuta_muta": {
       "type": "group",
       "id": "g_amphimuta_muta",
@@ -485,7 +644,6 @@
       ],
       "next": "q_muta_s1"
     },
-
     "g_amphimuta_perimuta": {
       "type": "group",
       "id": "g_amphimuta_perimuta",
@@ -497,7 +655,6 @@
       ],
       "next": "q_perimuta_s1"
     },
-
     "g_hypomuta": {
       "type": "group",
       "id": "g_hypomuta",
@@ -510,7 +667,6 @@
       ],
       "next": "r_hypomuta_hypomuta"
     },
-
     "g_inornata": {
       "type": "group",
       "id": "g_inornata",
@@ -524,7 +680,6 @@
       ],
       "next": "r_inornata_inornata"
     },
-
     "g_democritus": {
       "type": "group",
       "id": "g_democritus",
@@ -538,7 +693,6 @@
       ],
       "next": "q_democritus_s1"
     },
-
     "g_alitaeus": {
       "type": "group",
       "id": "g_alitaeus",
@@ -552,7 +706,6 @@
       ],
       "next": "q_alitaeus_s1"
     },
-
     "g_agrata_ace": {
       "type": "group",
       "id": "g_agrata_ace",
@@ -563,18 +716,22 @@
       ],
       "next": "q_agrata_ace_s1"
     },
-
     "q_agrata_ace_s1": {
       "type": "question",
       "id": "q_agrata_ace_s1",
       "question": "Is the forewing postdiscal band clearly dislocated at vein 4, and is hindwing postdiscal spot 6 outwardly concave?",
       "hint": "Arhopala ace ace has the FW band distinctly dislocated at vein 4 with HW spot 6 outwardly concave; all markings are relatively wide and the male is deep cobalt blue with a thread-like border. Arhopala azinis azinis has the FW band sinuous or only slightly dislocated at vein 4, HW spot 6 outwardly straight or convex, and the male has broad borders; it is strictly montane.",
       "choices": [
-        { "label": "Yes — FW band clearly dislocated at vein 4; HW spot 6 outwardly concave", "next": "r_ace_ace" },
-        { "label": "No — FW band sinuous or only slightly dislocated; HW spot 6 straight or convex", "next": "r_azinis_azinis" }
+        {
+          "label": "Yes — FW band clearly dislocated at vein 4; HW spot 6 outwardly concave",
+          "next": "r_ace_ace"
+        },
+        {
+          "label": "No — FW band sinuous or only slightly dislocated; HW spot 6 straight or convex",
+          "next": "r_azinis_azinis"
+        }
       ]
     },
-
     "r_ace_ace": {
       "type": "result",
       "id": "r_ace_ace",
@@ -583,7 +740,6 @@
       "common_name": "",
       "note": "Underside: all markings relatively wide; FW postdiscal band dislocated at vein 4; HW postdiscal spot 6 outwardly concave. Male: deep cobalt blue with black border reduced to a thread. Female: purple."
     },
-
     "r_azinis_azinis": {
       "type": "result",
       "id": "r_azinis_azinis",
@@ -592,7 +748,6 @@
       "common_name": "",
       "note": "Underside: FW postdiscal band sinuous or only slightly dislocated at vein 4; HW postdiscal spot 6 outwardly straight or convex. Male: dark blue with broad black borders (2.0 mm at FW mid-termen, 3.0 mm on HW). Female: purple. Strictly montane habitat."
     },
-
     "g_agrata_agrata": {
       "type": "group",
       "id": "g_agrata_agrata",
@@ -606,7 +761,6 @@
       ],
       "next": "r_agrata_agrata"
     },
-
     "r_agrata_agrata": {
       "type": "result",
       "id": "r_agrata_agrata",
@@ -615,7 +769,6 @@
       "common_name": "de Nicéville's Dull Oakblue",
       "note": "Underside markings faint. FW: postdiscal spot in space 9 absent or very obscure; no costal spot in space 10. HW: postdiscal spot 6 considerably wider than spot 7. Male: dark purplish blue with black border reduced to a thread. Female: bright blue to purple-blue; HW blue reaches the termen between vein endings."
     },
-
     "g_cleander": {
       "type": "group",
       "id": "g_cleander",
@@ -628,7 +781,6 @@
       ],
       "next": "q_cleander_s1"
     },
-
     "g_cleander_alea": {
       "type": "group",
       "id": "g_cleander_alea",
@@ -641,18 +793,22 @@
       ],
       "next": "q_alea_s1"
     },
-
     "q_tailed_spot4_outofline": {
       "type": "question",
       "id": "q_tailed_spot4_outofline",
       "question": "What is the forewing apex shape?",
       "hint": "Both the eumolphus group and the oenea group have FW spot 4 out of line with spots 5–6 and HW spot 6 below spot 7. They are separated by FW shape: eumolphus has a rounded forewing apex; oenea has an acute apex with a straight termen between veins 2 and 4. Also, oenea underside spots are narrow and rectangular throughout, while eumolphus spots are not.",
       "choices": [
-        { "label": "FW apex rounded; termen evenly curved", "next": "g_eumolphus" },
-        { "label": "FW apex acute; termen straight between veins 2–4; underside spots narrow and rectangular", "next": "g_oenea" }
+        {
+          "label": "FW apex rounded; termen evenly curved",
+          "next": "g_eumolphus"
+        },
+        {
+          "label": "FW apex acute; termen straight between veins 2–4; underside spots narrow and rectangular",
+          "next": "g_oenea"
+        }
       ]
     },
-
     "g_eumolphus": {
       "type": "group",
       "id": "g_eumolphus",
@@ -666,7 +822,6 @@
       ],
       "next": "q_eumolphus_s1"
     },
-
     "g_vihara": {
       "type": "group",
       "id": "g_vihara",
@@ -681,7 +836,6 @@
       ],
       "next": "r_vihara"
     },
-
     "g_rama": {
       "type": "group",
       "id": "g_rama",
@@ -694,7 +848,6 @@
       ],
       "next": "q_rama_s1"
     },
-
     "g_agelastus": {
       "type": "group",
       "id": "g_agelastus",
@@ -708,7 +861,6 @@
       ],
       "next": "q_agelastus_s1"
     },
-
     "g_corinda": {
       "type": "group",
       "id": "g_corinda",
@@ -722,7 +874,6 @@
       ],
       "next": "r_corinda_acestes"
     },
-
     "g_aurea": {
       "type": "group",
       "id": "g_aurea",
@@ -736,7 +887,6 @@
       ],
       "next": "q_aurea_s1"
     },
-
     "g_ganesa": {
       "type": "group",
       "id": "g_ganesa",
@@ -749,7 +899,6 @@
       ],
       "next": "q_ganesa_s1"
     },
-
     "g_fulla": {
       "type": "group",
       "id": "g_fulla",
@@ -763,7 +912,6 @@
       ],
       "next": "r_fulla_intaca"
     },
-
     "g_abseus": {
       "type": "group",
       "id": "g_abseus",
@@ -776,19 +924,26 @@
       ],
       "next": "q_abseus_species"
     },
-
     "q_abseus_species": {
       "type": "question",
       "id": "q_abseus_species",
       "question": "What is the underside ground colour and are the markings darkened?",
       "hint": "Three species share the vein 3 white-tipped tail. abseus has strongly darkened (blackish-brown) underside markings and a costal spot in FW space 12. anella is larger with hair-brown underside and no spot in FW space 12. alesia sacharja (recorded in Langkawi; also NE India to Vietnam) is a late Malayan record — detailed underside characters for separation from anella are not fully documented; use distribution as a supplementary guide.",
       "choices": [
-        { "label": "Markings much darkened (blackish brown); costal spot present in FW space 12", "next": "r_abseus_abseus" },
-        { "label": "Underside hair brown; no spot in FW space 12; male with very wide fuscous borders on upperside", "next": "r_anella" },
-        { "label": "Langkawi (or NE India / Myanmar / Thailand / Vietnam range)", "next": "r_alesia_sacharja" }
+        {
+          "label": "Markings much darkened (blackish brown); costal spot present in FW space 12",
+          "next": "r_abseus_abseus"
+        },
+        {
+          "label": "Underside hair brown; no spot in FW space 12; male with very wide fuscous borders on upperside",
+          "next": "r_anella"
+        },
+        {
+          "label": "Langkawi (or NE India / Myanmar / Thailand / Vietnam range)",
+          "next": "r_alesia_sacharja"
+        }
       ]
     },
-
     "r_abseus_abseus": {
       "type": "result",
       "id": "r_abseus_abseus",
@@ -797,7 +952,6 @@
       "common_name": "Aberrant Bushblue",
       "note": "Underside markings much darkened — most spots blackish brown. Forewing underside: costal spot in space 12; two spots each in spaces 9, 10, and 11. Hindwing: spot in middle of space 7 outlined in whitish. Male upperside: deep lustrous violet blue; FW black border expands from 2.0 mm at tornus to 4.0 mm at apex. Female: shining blue with wider borders."
     },
-
     "r_anella": {
       "type": "result",
       "id": "r_anella",
@@ -806,7 +960,6 @@
       "common_name": "",
       "note": "Considerably larger than A. abseus. Underside ground colour hair brown; markings not prominently darkened; no spot in FW space 12. Male upperside: blue restricted to basal halves of FW spaces 1b, 2, and 3 and the lower half of the cell; HW blue confined almost entirely to the cell; very wide fuscous borders. Female: relatively narrow black borders."
     },
-
     "r_alesia_sacharja": {
       "type": "result",
       "id": "r_alesia_sacharja",
@@ -815,7 +968,6 @@
       "common_name": "",
       "note": "Short white-tipped tail at vein 3 (abseus group). First recorded in Malaysia from Langkawi in 1994. Also distributed across NE India, Myanmar, Thailand, Laos, and Vietnam. ⚠ Detailed underside characters to separate from A. anella are not fully documented in Malayan material — distribution is currently the most reliable field indicator for this subspecies."
     },
-
     "g_aedias": {
       "type": "group",
       "id": "g_aedias",
@@ -829,7 +981,6 @@
       ],
       "next": "r_aedias"
     },
-
     "r_aedias": {
       "type": "result",
       "id": "r_aedias",
@@ -838,73 +989,106 @@
       "common_name": "Large Metallic Oakblue",
       "note": "Underside ground colour hair brown; spots narrowly outlined in pale buff lines. Male upperside: lustrous violet blue with black border reduced to a thread. Female upperside: purple blue with typical broad black borders. Two size forms occur: large (FW 25–29 mm) and small (FW 20–22 mm; small form has more rounded, darker spots beneath). Two subspecies: A. aedias agnis (forest at low to moderate elevations, standard) and A. aedias meritatas (Langkawi Islands — paler and brighter blue upperside in both sexes)."
     },
-
     "q_agelastus_s1": {
       "type": "question",
       "id": "q_agelastus_s1",
       "question": "Is there a costal spot in forewing space 10?",
       "hint": "A costal spot in FW space 10 is unique to Arhopala epimete suedas within this group. All other agelastus group species lack it.",
       "choices": [
-        { "label": "Yes — costal spot present in FW space 10", "next": "r_epimete_suedas" },
-        { "label": "No — FW space 10 lacks a costal spot", "next": "q_agelastus_s2" }
+        {
+          "label": "Yes — costal spot present in FW space 10",
+          "next": "r_epimete_suedas"
+        },
+        {
+          "label": "No — FW space 10 lacks a costal spot",
+          "next": "q_agelastus_s2"
+        }
       ]
     },
-
     "q_agelastus_s2": {
       "type": "question",
       "id": "q_agelastus_s2",
       "question": "Does the hindwing have a tail?",
       "hint": "Within the agelastus group, only Arhopala barami penanga is tailed. All other species are tailless.",
       "choices": [
-        { "label": "Yes — hindwing is tailed", "next": "r_barami_penanga" },
-        { "label": "No — tailless", "next": "q_agelastus_s3" }
+        {
+          "label": "Yes — hindwing is tailed",
+          "next": "r_barami_penanga"
+        },
+        {
+          "label": "No — tailless",
+          "next": "q_agelastus_s3"
+        }
       ]
     },
-
     "q_agelastus_s3": {
       "type": "question",
       "id": "q_agelastus_s3",
       "question": "Are the underside markings small and macular (dot-like), and are tornal green scales absent from the hindwing?",
       "hint": "Arhopala cardoni has characteristically small, macular (isolated dot-like) markings on the underside. The hindwing also lacks the metallic tornal green scales seen in some other species. The HW is evenly rounded.",
       "choices": [
-        { "label": "Yes — small macular markings; no tornal green scales; HW evenly rounded", "next": "r_cardoni" },
-        { "label": "No — markings larger or not macular", "next": "q_agelastus_s4" }
+        {
+          "label": "Yes — small macular markings; no tornal green scales; HW evenly rounded",
+          "next": "r_cardoni"
+        },
+        {
+          "label": "No — markings larger or not macular",
+          "next": "q_agelastus_s4"
+        }
       ]
     },
-
     "q_agelastus_s4": {
       "type": "question",
       "id": "q_agelastus_s4",
       "question": "Are the inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened, and is HW postdiscal spot 6 outwardly concave or sinuous?",
       "hint": "Arhopala alaconia media (alesia subgroup) is distinguished by strikingly enlarged and darkened inner submarginal spots in these specific spaces, combined with an outwardly concave or sinuous HW postdiscal spot 6.",
       "choices": [
-        { "label": "Yes — inner submarginal spots enlarged and darkened; HW spot 6 outwardly concave or sinuous", "next": "r_alaconia_media" },
-        { "label": "No", "next": "q_agelastus_s5" }
+        {
+          "label": "Yes — inner submarginal spots enlarged and darkened; HW spot 6 outwardly concave or sinuous",
+          "next": "r_alaconia_media"
+        },
+        {
+          "label": "No",
+          "next": "q_agelastus_s5"
+        }
       ]
     },
-
     "q_agelastus_s5": {
       "type": "question",
       "id": "q_agelastus_s5",
       "question": "Is the male upperside notably darker violet with narrower black borders than typical for the group?",
-      "hint": "Arhopala labuana has a distinctly darker, deeper violet upperside and narrower black borders compared to A. agelastus and A. wildeyana, which are both violet blue.",
+      "hint": "A. labuana is a Bornean endemic with a notably darker violet male and narrower black borders than other members of this group. If the male upperside is not visible, choose 'Cannot determine' to continue — but note that if the specimen is from Borneo, A. labuana should be considered.",
       "choices": [
-        { "label": "Yes — much darker violet; borders notably narrower", "next": "r_labuana" },
-        { "label": "No — violet blue", "next": "q_agelastus_s6" }
+        {
+          "label": "Yes — much darker violet; borders notably narrower",
+          "next": "r_labuana"
+        },
+        {
+          "label": "No — violet blue",
+          "next": "q_agelastus_s6"
+        },
+        {
+          "label": "Cannot determine — upperside not visible",
+          "next": "q_agelastus_s6"
+        }
       ]
     },
-
     "q_agelastus_s6": {
       "type": "question",
       "id": "q_agelastus_s6",
       "question": "How broad is the male forewing black border?",
       "hint": "Wildeyana has broader borders (2.0 mm at tornus to 5.0 mm at costa) than agelastus (1.0 mm at tornus to 4.0 mm at apex). Females: wildeyana is brighter/purer blue; agelastus female is brighter blue with broader borders; in agelastus, the underside HW space 3 spot is nearly in line with spots 2 and 4.",
       "choices": [
-        { "label": "Broad: 2.0 mm at tornus to 5.0 mm at costa", "next": "r_wildeyana" },
-        { "label": "Standard: 1.0 mm at tornus to 4.0 mm at apex", "next": "r_agelastus_agelastus" }
+        {
+          "label": "Broad: 2.0 mm at tornus to 5.0 mm at costa",
+          "next": "r_wildeyana"
+        },
+        {
+          "label": "Standard: 1.0 mm at tornus to 4.0 mm at apex",
+          "next": "r_agelastus_agelastus"
+        }
       ]
     },
-
     "r_epimete_suedas": {
       "type": "result",
       "id": "r_epimete_suedas",
@@ -913,7 +1097,6 @@
       "common_name": "",
       "note": "Unique in the agelastus group: costal spot present in FW space 10. FW underside: lower portion of postdiscal band significantly wider than upper part. HW lacks tornal green scales. Both sexes alike: blue with broad FW borders (2.0 mm at tornus to 6.0 mm at costa). Blue on HW confined to the cell. Tailless."
     },
-
     "r_barami_penanga": {
       "type": "result",
       "id": "r_barami_penanga",
@@ -922,7 +1105,6 @@
       "common_name": "",
       "note": "The only tailed species in the agelastus group. Male upperside: blue with a broad FW border expanding from 2.5 mm at the tornus to 8.0 mm at the costa. Female: paler blue."
     },
-
     "r_cardoni": {
       "type": "result",
       "id": "r_cardoni",
@@ -931,7 +1113,6 @@
       "common_name": "",
       "note": "Monotypic subgroup. Underside markings small and macular (dot-like). HW tailless and evenly rounded; no tornal green scales. Male: bright blue with violet tinge; FW border 2.0 mm at tornus expanding to 5.0 mm at apex. Female: purer blue with slightly wider black borders than the male."
     },
-
     "r_alaconia_media": {
       "type": "result",
       "id": "r_alaconia_media",
@@ -940,7 +1121,6 @@
       "common_name": "",
       "note": "Alesia subgroup. Underside: inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened; HW postdiscal spot 6 outwardly concave or sinuous. Normally tailless (slightly toothed), but a rare tailed form (f. kempi) exists. Both sexes alike: violet blue with FW border 3.0 mm at tornus expanding to mid-costa."
     },
-
     "r_labuana": {
       "type": "result",
       "id": "r_labuana",
@@ -949,7 +1129,6 @@
       "common_name": "",
       "note": "Male upperside: much darker violet than A. agelastus, with narrower black borders. Female: dark blue. Tailless."
     },
-
     "r_wildeyana": {
       "type": "result",
       "id": "r_wildeyana",
@@ -958,7 +1137,6 @@
       "common_name": "",
       "note": "Male upperside: violet blue with broader borders than A. labuana or A. agelastus — 2.0 mm at tornus to 5.0 mm at costa. Female: brighter and purer blue. Tailless."
     },
-
     "r_agelastus_agelastus": {
       "type": "result",
       "id": "r_agelastus_agelastus",
@@ -967,29 +1145,38 @@
       "common_name": "",
       "note": "Underside: HW postdiscal spot in space 3 is almost in line with spots in spaces 2 and 4 (distinguishes female from allied species). Male: violet blue with FW border 1.0 mm at tornus to 4.0 mm at apex. Female: brighter blue with broader borders. Tailless."
     },
-
     "q_agesias_s1": {
       "type": "question",
       "id": "q_agesias_s1",
       "question": "How many spots are in forewing space 11, and what is the underside ground colour?",
       "hint": "Arhopala kinabala is distinguished by having TWO spots in FW space 11, a dark brown ground colour, and blackish-brown markings. A. agesias and A. similis have a single spot in space 11 and a hair-brown ground colour.",
       "choices": [
-        { "label": "Two spots in FW space 11; ground colour dark brown; markings blackish-brown", "next": "r_kinabala" },
-        { "label": "Single spot in FW space 11; ground colour hair brown", "next": "q_agesias_s2" }
+        {
+          "label": "Two spots in FW space 11; ground colour dark brown; markings blackish-brown",
+          "next": "r_kinabala"
+        },
+        {
+          "label": "Single spot in FW space 11; ground colour hair brown",
+          "next": "q_agesias_s2"
+        }
       ]
     },
-
     "q_agesias_s2": {
       "type": "question",
       "id": "q_agesias_s2",
       "question": "Is the postdiscal band completely absent from the forewing underside?",
       "hint": "Arhopala similis is superficially identical to A. agesias but uniquely lacks the postdiscal band entirely on the FW underside. A. agesias has the normal rounded-spot postdiscal band present.",
       "choices": [
-        { "label": "Yes — postdiscal band completely absent from FW underside", "next": "r_similis" },
-        { "label": "No — postdiscal band present (rounded spots)", "next": "r_agesias" }
+        {
+          "label": "Yes — postdiscal band completely absent from FW underside",
+          "next": "r_similis"
+        },
+        {
+          "label": "No — postdiscal band present (rounded spots)",
+          "next": "r_agesias"
+        }
       ]
     },
-
     "r_kinabala": {
       "type": "result",
       "id": "r_kinabala",
@@ -998,7 +1185,6 @@
       "common_name": "",
       "note": "Underside ground colour dark brown with large, blackish-brown markings. FW space 11 has two spots; FW space 3 spot is elongate and touches the end-cell bar. HW postdiscal spot 6 is oval, significantly enlarged, and overlaps the end-cell bar. Rare; seldom found below 450 m elevation."
     },
-
     "r_similis": {
       "type": "result",
       "id": "r_similis",
@@ -1007,7 +1193,6 @@
       "common_name": "",
       "note": "Superficially identical to A. agesias but uniquely lacks the postdiscal band on the FW underside. Status as a separate species (vs. dimorph of A. agesias) has been questioned, though female genitalia differ slightly."
     },
-
     "r_agesias": {
       "type": "result",
       "id": "r_agesias",
@@ -1016,95 +1201,134 @@
       "common_name": "",
       "note": "The most common species in the group. Underside: hair-brown ground colour with all markings as rounded spots; single central spot in FW space 11."
     },
-
     "q_alitaeus_s1": {
       "type": "question",
       "id": "q_alitaeus_s1",
       "question": "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?",
       "hint": "Look for a small isolated spot right at the base of FW space 10, distinct from the regular postdiscal row. Species with this spot: pseudomuta, sintanga, alitaeus, denta. Species without: elopura, arianaga, ariana, aida, havilandi.",
       "choices": [
-        { "label": "Yes — spot present at extreme base of FW space 10", "next": "q_alitaeus_s1_tail" },
-        { "label": "No — no spot at extreme base of FW space 10", "next": "q_alitaeus_s2_color" }
+        {
+          "label": "Yes — spot present at extreme base of FW space 10",
+          "next": "q_alitaeus_s1_tail"
+        },
+        {
+          "label": "No — no spot at extreme base of FW space 10",
+          "next": "q_alitaeus_s2_color"
+        }
       ]
     },
-
     "q_alitaeus_s1_tail": {
       "type": "question",
       "id": "q_alitaeus_s1_tail",
       "question": "Is the hindwing tail notably short, approximately 2.5 mm (rather than the typical 3.5–4.0 mm for the group)?",
       "hint": "A. denta is the only alitaeus-group member with a distinctly shortened tail (~2.5 mm). All others have tails of 3.5–4.0 mm.",
       "choices": [
-        { "label": "Yes — tail short, ~2.5 mm", "next": "r_denta" },
-        { "label": "No — tail of normal length, 3.5–4.0 mm", "next": "q_alitaeus_s1_color" }
+        {
+          "label": "Yes — tail short, ~2.5 mm",
+          "next": "r_denta"
+        },
+        {
+          "label": "No — tail of normal length, 3.5–4.0 mm",
+          "next": "q_alitaeus_s1_color"
+        }
       ]
     },
-
     "q_alitaeus_s1_color": {
       "type": "question",
       "id": "q_alitaeus_s1_color",
       "question": "Is the underside pale slatey purple with contrasting reddish-brown markings?",
       "hint": "A. sintanga has a distinctly pale slatey-purple ground colour with markings that strongly contrast in reddish-brown. A. pseudomuta and A. alitaeus are hair-brown underneath.",
       "choices": [
-        { "label": "Yes — pale slatey purple with contrasting reddish-brown markings", "next": "r_sintanga" },
-        { "label": "No — hair-brown ground colour", "next": "q_alitaeus_s1_marks" }
+        {
+          "label": "Yes — pale slatey purple with contrasting reddish-brown markings",
+          "next": "r_sintanga"
+        },
+        {
+          "label": "No — hair-brown ground colour",
+          "next": "q_alitaeus_s1_marks"
+        }
       ]
     },
-
     "q_alitaeus_s1_marks": {
       "type": "question",
       "id": "q_alitaeus_s1_marks",
       "question": "Are the underside markings notably annular (ring-like) and is the FW postdiscal spot in space 1b often dislocated outward relative to the spot in space 2?",
       "hint": "A. alitaeus has more annular (ring-like) markings than allied species, and the space 1b spot is often shifted outward; male has regular black borders at least 1.0 mm wide. A. pseudomuta has markings that are hardly darker than the hair-brown ground colour; HW space 6 is slightly oblique and does not overlap the end-cell bar.",
       "choices": [
-        { "label": "Yes — annular markings; FW space 1b spot often dislocated outward; borders ≥1.0 mm", "next": "r_alitaeus" },
-        { "label": "No — markings barely darker than ground colour; HW space 6 slightly oblique", "next": "r_pseudomuta" }
+        {
+          "label": "Yes — annular markings; FW space 1b spot often dislocated outward; borders ≥1.0 mm",
+          "next": "r_alitaeus"
+        },
+        {
+          "label": "No — markings barely darker than ground colour; HW space 6 slightly oblique",
+          "next": "r_pseudomuta"
+        }
       ]
     },
-
     "q_alitaeus_s2_color": {
       "type": "question",
       "id": "q_alitaeus_s2_color",
       "question": "Is the underside pale slatey purple with contrasting reddish-brown markings?",
       "hint": "A. havilandi has a pale slatey-purple ground colour with strongly contrasting reddish-brown markings and a thread-like black border on the male upperside. If the underside is hair-brown or dark brownish, choose No.",
       "choices": [
-        { "label": "Yes — pale slatey purple with contrasting reddish-brown markings", "next": "r_havilandi" },
-        { "label": "No — hair-brown or dark brownish underside", "next": "q_alitaeus_s2_glaze" }
+        {
+          "label": "Yes — pale slatey purple with contrasting reddish-brown markings",
+          "next": "r_havilandi"
+        },
+        {
+          "label": "No — hair-brown or dark brownish underside",
+          "next": "q_alitaeus_s2_glaze"
+        }
       ]
     },
-
     "q_alitaeus_s2_glaze": {
       "type": "question",
       "id": "q_alitaeus_s2_glaze",
       "question": "Is the underside dark brownish (not hair-brown) with a distinct slatey or purplish glaze?",
       "hint": "A. ariana is dark brown with a faint purplish wash; A. aida is brown with a slatey to purplish glaze and a slightly produced FW apex. A. elopura and A. arianaga are hair-brown with markings barely darker than the ground colour.",
       "choices": [
-        { "label": "Yes — dark brownish with a slatey or purplish glaze", "next": "q_alitaeus_s2_term" },
-        { "label": "No — hair-brown, markings barely darker than ground colour", "next": "q_alitaeus_s2_sp6" }
+        {
+          "label": "Yes — dark brownish with a slatey or purplish glaze",
+          "next": "q_alitaeus_s2_term"
+        },
+        {
+          "label": "No — hair-brown, markings barely darker than ground colour",
+          "next": "q_alitaeus_s2_sp6"
+        }
       ]
     },
-
     "q_alitaeus_s2_term": {
       "type": "question",
       "id": "q_alitaeus_s2_term",
       "question": "Is the forewing termen notably straight and the apex slightly produced (pointed)?",
       "hint": "A. aida has a distinctly straight FW termen with a slightly produced apex, and the male black border expands from ~1.25 mm at the tornus to ~2.0 mm at the apex. A. ariana has a more normal wing shape; FW postdiscal spot 4 is shifted distad out of line with adjacent spots.",
       "choices": [
-        { "label": "Yes — FW termen straight; apex slightly produced; border widens toward apex", "next": "r_aida" },
-        { "label": "No — FW shape normal; postdiscal spot 4 shifted distad; border 1.0–1.5 mm", "next": "r_ariana" }
+        {
+          "label": "Yes — FW termen straight; apex slightly produced; border widens toward apex",
+          "next": "r_aida"
+        },
+        {
+          "label": "No — FW shape normal; postdiscal spot 4 shifted distad; border 1.0–1.5 mm",
+          "next": "r_ariana"
+        }
       ]
     },
-
     "q_alitaeus_s2_sp6": {
       "type": "question",
       "id": "q_alitaeus_s2_sp6",
       "question": "Is the hindwing postdiscal space 6 partly fuscous (darkened)?",
       "hint": "A. elopura has HW space 6 partly fuscous (dark). In A. arianaga, HW space 6 is entirely blue; underside markings are slightly darker than the ground colour with a faint pinkish glaze, and the male border is reduced to a thread.",
       "choices": [
-        { "label": "Yes — HW space 6 partly fuscous; male upperside purer blue, border ~0.5 mm", "next": "r_elopura" },
-        { "label": "No — HW space 6 entirely blue; faint pinkish glaze; male border thread-like", "next": "r_arianaga" }
+        {
+          "label": "Yes — HW space 6 partly fuscous; male upperside purer blue, border ~0.5 mm",
+          "next": "r_elopura"
+        },
+        {
+          "label": "No — HW space 6 entirely blue; faint pinkish glaze; male border thread-like",
+          "next": "r_arianaga"
+        }
       ]
     },
-
     "r_pseudomuta": {
       "type": "result",
       "id": "r_pseudomuta",
@@ -1113,7 +1337,6 @@
       "common_name": "Raffles's Oakblue",
       "note": "Underside hair-brown; markings hardly darker than ground colour. FW: basal spot present in space 10. HW: postdiscal space 6 slightly oblique, does not overlap end-cell bar. Male: violet-blue with black border ~1.0 mm. Tail ~3.5–4.0 mm."
     },
-
     "r_elopura": {
       "type": "result",
       "id": "r_elopura",
@@ -1122,7 +1345,6 @@
       "common_name": "",
       "note": "Underside hair-brown; markings barely darker than ground colour — contrast less than in A. pseudomuta. FW: no basal spot in space 10. HW: postdiscal space 6 partly fuscous. Male: purer blue with black border ~0.5 mm. Tail ~3.5–4.0 mm."
     },
-
     "r_arianaga": {
       "type": "result",
       "id": "r_arianaga",
@@ -1131,7 +1353,6 @@
       "common_name": "",
       "note": "Underside markings slightly darker than ground colour with a very faint pinkish glaze. FW: no basal spot in space 10. HW: postdiscal space 6 entirely blue. Male: black border reduced to a thread. Tail ~3.5–4.0 mm."
     },
-
     "r_ariana": {
       "type": "result",
       "id": "r_ariana",
@@ -1140,7 +1361,6 @@
       "common_name": "",
       "note": "Underside dark brown with a faint purplish wash. FW: no basal spot in space 10; postdiscal spot in space 4 shifted distad out of line. Male: border 1.0–1.5 mm, slightly wider at apex. Tail ~3.5–4.0 mm."
     },
-
     "r_aida": {
       "type": "result",
       "id": "r_aida",
@@ -1149,7 +1369,6 @@
       "common_name": "",
       "note": "Underside brown with a slatey to purplish glaze. FW: no basal spot in space 10; termen straight, apex slightly produced. Male: border expands from ~1.25 mm at tornus to ~2.0 mm at apex. Tail ~3.5–4.0 mm."
     },
-
     "r_havilandi": {
       "type": "result",
       "id": "r_havilandi",
@@ -1158,7 +1377,6 @@
       "common_name": "",
       "note": "Underside pale slatey purple with contrasting reddish-brown markings. FW: no basal spot in space 10. Male: violet-blue, black border reduced to a thread. Tail ~3.5–4.0 mm."
     },
-
     "r_sintanga": {
       "type": "result",
       "id": "r_sintanga",
@@ -1167,7 +1385,6 @@
       "common_name": "",
       "note": "Underside pale slatey purple with contrasting reddish-brown markings. FW: basal spot present in space 10. Male: dark violet, black border reduced to a thread. Tail ~3.5–4.0 mm."
     },
-
     "r_alitaeus": {
       "type": "result",
       "id": "r_alitaeus",
@@ -1176,7 +1393,6 @@
       "common_name": "",
       "note": "Underside markings notably annular (ring-like); FW postdiscal spot in space 1b often dislocated outward from spot in space 2. FW: basal spot present in space 10. Male: regular black borders ≥1.0 mm wide. Tail ~3.5–4.0 mm."
     },
-
     "r_denta": {
       "type": "result",
       "id": "r_denta",
@@ -1185,7 +1401,6 @@
       "common_name": "",
       "note": "Distinctive SHORT tail — only ~2.5 mm (others in the group have 3.5–4.0 mm). FW: basal spot present in space 10. Underside hair-brown with at most a slight pinkish glaze. Male: brilliant blue, black border reduced to a thread."
     },
-
     "r_kurzi": {
       "type": "result",
       "id": "r_kurzi",
@@ -1194,161 +1409,238 @@
       "common_name": "",
       "note": "Tailless; HW tornus very rounded. FW 18–22 mm. Male: rather dull purple-blue with a thread-like black border. Female: purple; HW border unusually variable — purple sometimes reaches termen between veins 2 and 5, other specimens almost confined to cell. Underside FW: markings variable; lower postdiscal band sometimes obsolete; when fully developed, spot in space 1b shifted inward, placed midway between end-cell bar and postdiscal spot in space 2. Underside HW: postdiscal band WIDELY dislocated at vein 2 (diagnostic for subgroup). Forest species, low to moderate elevations."
     },
-
     "q_amph_s1": {
       "type": "question",
       "id": "q_amph_s1",
       "question": "Does the hindwing have a short tail (tooth-like projection) at vein 2?",
       "hint": "A. delta is the ONLY tailed member of the amphimuta subgroup. All other amphimuta subgroup species are tailless.",
       "choices": [
-        { "label": "Yes — tailed at vein 2", "next": "r_delta" },
-        { "label": "No — tailless", "next": "q_amph_s2" }
+        {
+          "label": "Yes — tailed at vein 2",
+          "next": "r_delta"
+        },
+        {
+          "label": "No — tailless",
+          "next": "q_amph_s2"
+        }
       ]
     },
-
     "q_amph_s2": {
       "type": "question",
       "id": "q_amph_s2",
       "question": "On the forewing underside, is the basal cell spot absent?",
       "hint": "A. avathina avathina is recognized by the absence of the basal cell spot on the FW underside; additionally, the HW postdiscal band is completely dislocated at vein 2. All other amphimuta subgroup members have a basal cell spot.",
       "choices": [
-        { "label": "Yes — no basal cell spot on FW underside (HW band also completely dislocated at vein 2)", "next": "r_avathina_avathina" },
-        { "label": "No — basal cell spot present on FW underside", "next": "q_amph_s3" }
+        {
+          "label": "Yes — no basal cell spot on FW underside (HW band also completely dislocated at vein 2)",
+          "next": "r_avathina_avathina"
+        },
+        {
+          "label": "No — basal cell spot present on FW underside",
+          "next": "q_amph_s3"
+        }
       ]
     },
-
     "q_amph_s3": {
       "type": "question",
       "id": "q_amph_s3",
       "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
       "hint": "A. norda has a small but distinctive white patch on the HW cilia just above the tornal lobe, and also has less rounded (more angular) postdiscal spots compared to A. major.",
       "choices": [
-        { "label": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded", "next": "r_norda" },
-        { "label": "No — no white patch on HW cilia", "next": "q_amph_geo" }
+        {
+          "label": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded",
+          "next": "r_norda"
+        },
+        {
+          "label": "No — no white patch on HW cilia",
+          "next": "q_amph_geo"
+        }
       ]
     },
-
     "q_amph_s4": {
       "type": "question",
       "id": "q_amph_s4",
       "question": "Is the male's black border broad, 1.5 mm or wider?",
       "hint": "A. major has a border expanding from 2.0 mm at tornus to 3.0 mm at apex (blue upperside). A. stubbsi has a broad ~2.0 mm border but is dull bluish purple. All others have narrow borders (0.5 mm or thread-like).",
       "choices": [
-        { "label": "Yes — border ≥1.5 mm wide", "next": "q_amph_broad" },
-        { "label": "No — border narrow (0.5 mm or thread-like)", "next": "q_amph_s5" }
+        {
+          "label": "Yes — border ≥1.5 mm wide",
+          "next": "q_amph_broad"
+        },
+        {
+          "label": "No — border narrow (0.5 mm or thread-like)",
+          "next": "q_amph_s5"
+        }
       ]
     },
-
     "q_amph_broad": {
       "type": "question",
       "id": "q_amph_broad",
       "question": "Is the male distinctly blue above, with the border widening from ~2.0 mm at the tornus to ~3.0 mm at the apex?",
       "hint": "A. major major is bluer than A. amphimuta; its border expands toward the apex. A. stubbsi is dull bluish purple with a broad but even ~2.0 mm border.",
       "choices": [
-        { "label": "Yes — distinctly blue; border expands 2.0→3.0 mm from tornus to apex", "next": "r_major_major" },
-        { "label": "No — dull bluish purple; border broad but even (~2.0 mm)", "next": "r_stubbsi" }
+        {
+          "label": "Yes — distinctly blue; border expands 2.0→3.0 mm from tornus to apex",
+          "next": "r_major_major"
+        },
+        {
+          "label": "No — dull bluish purple; border broad but even (~2.0 mm)",
+          "next": "r_stubbsi"
+        }
       ]
     },
-
     "q_amph_s5": {
       "type": "question",
       "id": "q_amph_s5",
       "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
       "hint": "Peninsula thread-border species: A. moolaiana yajuna (shining violet-blue; female blue reaches HW termen). Bornean thread-border species (A. alica) have already been separated by the geography filter. Regular 0.5 mm border Peninsula species: A. amphimuta, A. sceva, A. zylda.",
       "choices": [
-        { "label": "Yes — border thread-like", "next": "r_moolaiana_yajuna" },
-        { "label": "No — border regular ~0.5 mm", "next": "q_amph_s6" }
+        {
+          "label": "Yes — border thread-like",
+          "next": "r_moolaiana_yajuna"
+        },
+        {
+          "label": "No — border regular ~0.5 mm",
+          "next": "q_amph_s6"
+        }
       ]
     },
-
     "q_amph_thread": {
       "type": "question",
       "id": "q_amph_thread",
       "question": "Is the male upperside a shining violet-blue, and does the female's blue colour extend to the hindwing termen?",
       "hint": "A. moolaiana yajuna: shining violet-blue male; female blue reaches HW termen. A. alica: dark, dull purple male; Bornean endemic — found only in Borneo, not the Malay Peninsula.",
       "choices": [
-        { "label": "Yes — shining violet-blue; female blue reaches HW termen (Peninsula)", "next": "r_moolaiana_yajuna" },
-        { "label": "No — dark dull purple; female blue does not reach HW termen (Bornean)", "next": "r_alica" }
+        {
+          "label": "Yes — shining violet-blue; female blue reaches HW termen (Peninsula)",
+          "next": "r_moolaiana_yajuna"
+        },
+        {
+          "label": "No — dark dull purple; female blue does not reach HW termen (Bornean)",
+          "next": "r_alica"
+        },
+        {
+          "label": "Cannot determine — upperside not visible",
+          "next": "r_amph_thread_unclear"
+        }
       ]
     },
-
     "q_amph_s6": {
       "type": "question",
       "id": "q_amph_s6",
       "question": "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?",
       "hint": "A. sceva indra has the HW postdiscal series clearly dislocated at vein 2 and is a smaller species; male is dark violet-blue. In the remaining Peninsula species (amphimuta, zylda), the HW band is not strongly dislocated at vein 2.",
       "choices": [
-        { "label": "Yes — HW postdiscal series dislocated at vein 2; smaller species; male dark violet-blue", "next": "r_sceva_indra" },
-        { "label": "No — HW band not strongly dislocated at vein 2", "next": "q_amph_s7" }
+        {
+          "label": "Yes — HW postdiscal series dislocated at vein 2; smaller species; male dark violet-blue",
+          "next": "r_sceva_indra"
+        },
+        {
+          "label": "No — HW band not strongly dislocated at vein 2",
+          "next": "q_amph_s7"
+        }
       ]
     },
-
     "q_amph_s7": {
       "type": "question",
       "id": "q_amph_s7",
       "question": "Is the male a warm violet-purple (with a reddish hue rather than blue), and is the FW postdiscal spot in space 3 an oblique oval?",
       "hint": "A. amphimuta amphimuta is violet-purple (warmer/redder than violet-blue) with the FW spot 3 usually an oblique oval, and the FW band slightly dislocated at vein 4. FW length 20–23 mm. A. zylda elioti is violet-blue, smaller (FW 16–17 mm), with female exceptionally narrow borders. Both are Peninsula species.",
       "choices": [
-        { "label": "Yes — warm violet-purple; FW spot 3 oblique oval; FW band slightly dislocated at vein 4", "next": "r_amphimuta_amphimuta" },
-        { "label": "No — violet-blue (not warm purple); smaller (FW 16–17 mm); female exceptionally narrow-bordered", "next": "r_zylda_elioti" }
+        {
+          "label": "Yes — warm violet-purple; FW spot 3 oblique oval; FW band slightly dislocated at vein 4",
+          "next": "r_amphimuta_amphimuta"
+        },
+        {
+          "label": "No — violet-blue (not warm purple); smaller (FW 16–17 mm); female exceptionally narrow-bordered",
+          "next": "r_zylda_elioti"
+        }
       ]
     },
-
     "q_amph_s8": {
       "type": "question",
       "id": "q_amph_s8",
       "question": "Does the female have exceptionally narrow borders (narrower than typical 0.5 mm)?",
       "hint": "A. zylda elioti: female has exceptionally narrow borders (a diagnostic feature). A. baluensis and A. dajagaka are Bornean endemics. If the specimen is from the Malay Peninsula, it is most likely A. zylda.",
       "choices": [
-        { "label": "Yes — female exceptionally narrow-bordered (Peninsula species)", "next": "r_zylda_elioti" },
-        { "label": "No — female with normal borders (Bornean endemic)", "next": "q_amph_borneo" }
+        {
+          "label": "Yes — female exceptionally narrow-bordered (Peninsula species)",
+          "next": "r_zylda_elioti"
+        },
+        {
+          "label": "No — female with normal borders (Bornean endemic)",
+          "next": "q_amph_borneo"
+        }
       ]
     },
-
     "q_amph_borneo": {
       "type": "question",
       "id": "q_amph_borneo",
       "question": "Does the female have unusually thick black borders and distinctly darker venation on the upperside?",
       "hint": "A. dajagaka: female has thick black borders and darker venation. A. baluensis: HW cilia lacks the white spot in space 1a that is present in some allied species.",
       "choices": [
-        { "label": "Yes — female with thick black borders and darker venation", "next": "r_dajagaka" },
-        { "label": "No — HW cilia lacks white spot in space 1a; female without thick borders", "next": "r_baluensis" }
+        {
+          "label": "Yes — female with thick black borders and darker venation",
+          "next": "r_dajagaka"
+        },
+        {
+          "label": "No — HW cilia lacks white spot in space 1a; female without thick borders",
+          "next": "r_baluensis"
+        },
+        {
+          "label": "Cannot determine — female upperside not visible",
+          "next": "r_amph_borneo_unclear"
+        }
       ]
     },
-
     "q_amph_geo": {
       "type": "question",
       "id": "q_amph_geo",
       "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
       "hint": "Three amphimuta subgroup members are Bornean endemics: A. alica (thread-like border), A. baluensis (lacks white spot in HW cilia space 1a), and A. dajagaka (female has thick borders and darker venation). The remaining 6 species at this point are Malay Peninsula species.",
       "choices": [
-        { "label": "Yes — Bornean specimen", "next": "q_amph_bor3" },
-        { "label": "No — Malay Peninsula specimen", "next": "q_amph_s4" }
+        {
+          "label": "Yes — Bornean specimen",
+          "next": "q_amph_bor3"
+        },
+        {
+          "label": "No — Malay Peninsula specimen",
+          "next": "q_amph_s4"
+        }
       ]
     },
-
     "q_amph_bor3": {
       "type": "question",
       "id": "q_amph_bor3",
       "question": "Is the male's black border reduced to a thread (very narrow), and is the male a dark, dull purple?",
       "hint": "A. alica: thread-like border; male dark dull purple (distinctly duller than A. moolaiana's shining violet-blue); FW ~17 mm; female purple with broad black borders. A. baluensis and A. dajagaka both have a regular ~0.5 mm border and are dark purple-blue.",
       "choices": [
-        { "label": "Yes — border thread-like; male dark dull purple; FW ~17 mm; female purple, broad borders", "next": "r_alica" },
-        { "label": "No — border regular ~0.5 mm; male dark purple-blue", "next": "q_amph_bor2" }
+        {
+          "label": "Yes — border thread-like; male dark dull purple; FW ~17 mm; female purple, broad borders",
+          "next": "r_alica"
+        },
+        {
+          "label": "No — border regular ~0.5 mm; male dark purple-blue",
+          "next": "q_amph_bor2"
+        }
       ]
     },
-
     "q_amph_bor2": {
       "type": "question",
       "id": "q_amph_bor2",
       "question": "Is the specimen large (FW approximately 21–25 mm), or does the female have thick black borders with darker venation?",
       "hint": "Size is the most accessible separator: A. dajagaka is distinctly larger (FW 21–25 mm); A. baluensis is smaller (FW 18–20 mm). Confirm with female characters: A. dajagaka female has thick black borders and noticeably darker venation. A. baluensis female has narrower-than-typical borders; HW cilia in space 1a lacks a white spot (rarely obscurely present). Note: both have male valva unilobate; genitalia dissection gives certain identification.",
       "choices": [
-        { "label": "Larger (FW 21–25 mm); female with thick black borders and darker venation", "next": "r_dajagaka" },
-        { "label": "Smaller (FW 18–20 mm); female with narrower borders; HW cilia space 1a lacks white spot", "next": "r_baluensis" }
+        {
+          "label": "Larger (FW 21–25 mm); female with thick black borders and darker venation",
+          "next": "r_dajagaka"
+        },
+        {
+          "label": "Smaller (FW 18–20 mm); female with narrower borders; HW cilia space 1a lacks white spot",
+          "next": "r_baluensis"
+        }
       ]
     },
-
     "r_delta": {
       "type": "result",
       "id": "r_delta",
@@ -1357,7 +1649,6 @@
       "common_name": "",
       "note": "The ONLY tailed member of the amphimuta subgroup — short tooth-like tail at vein 2. Male: deep violet with a narrow, regular black border. Part of the amphimuta subgroup (HW spots 5–7 in echelon; spots rounded)."
     },
-
     "r_avathina_avathina": {
       "type": "result",
       "id": "r_avathina_avathina",
@@ -1366,7 +1657,6 @@
       "common_name": "",
       "note": "Distinctive: FW underside lacks a basal cell spot (absent, not obscure). HW postdiscal band completely dislocated at vein 2. Otherwise similar to other amphimuta subgroup members."
     },
-
     "r_norda": {
       "type": "result",
       "id": "r_norda",
@@ -1375,7 +1665,6 @@
       "common_name": "",
       "note": "Distinguished from A. major by the small white patch on the HW cilia just above the tornal lobe, and by less rounded (more angular) postdiscal spots on the underside."
     },
-
     "r_major_major": {
       "type": "result",
       "id": "r_major_major",
@@ -1384,7 +1673,6 @@
       "common_name": "",
       "note": "Both sexes bluer than A. amphimuta above. Male: FW black border expands from 2.0 mm at tornus to 3.0 mm at apex. Underside similar to A. amphimuta. HW cilia often prolonged into a short tooth at vein 2."
     },
-
     "r_stubbsi": {
       "type": "result",
       "id": "r_stubbsi",
@@ -1393,7 +1681,6 @@
       "common_name": "",
       "note": "Male: rather dull bluish-purple with a broad, even ~2.0 mm black border — the widest border in the amphimuta subgroup. HW cilia often prolonged at vein 2."
     },
-
     "r_moolaiana_yajuna": {
       "type": "result",
       "id": "r_moolaiana_yajuna",
@@ -1402,7 +1689,6 @@
       "common_name": "",
       "note": "Male: bright shining violet-blue with a thread-like black border; FW 18–22 mm. Female: blue colour reaches the HW termen or very nearly so — black border is extremely narrow or absent at the termen (diagnostic; unique in the amphimuta group). Underside markings very similar to A. norda. HW postdiscal band only partially dislocated at vein 2. Range: Malay Peninsula and south Myanmar."
     },
-
     "r_alica": {
       "type": "result",
       "id": "r_alica",
@@ -1411,7 +1697,6 @@
       "common_name": "",
       "note": "Bornean endemic. Male: dark, dull purple with a thread-like black border; FW ~17 mm. Female: purple with broad black borders (contrasts sharply with A. moolaiana female). HW postdiscal band only partially dislocated at vein 2. Distinguished from A. moolaiana by: darker/duller male colour, smaller size, broader female borders, and Bornean range."
     },
-
     "r_sceva_indra": {
       "type": "result",
       "id": "r_sceva_indra",
@@ -1420,7 +1705,6 @@
       "common_name": "",
       "note": "A smaller species. HW underside postdiscal series is dislocated at vein 2 (distinctive within the amphimuta subgroup). Male: dark violet-blue."
     },
-
     "r_amphimuta_amphimuta": {
       "type": "result",
       "id": "r_amphimuta_amphimuta",
@@ -1429,7 +1713,6 @@
       "common_name": "Common Oakblue",
       "note": "Male: dark bluish-purple with a regular 0.5–1.0 mm black border; FW 20–23 mm. HW cilia often prolonged into a very short tooth at vein 2 (may be inconspicuous in worn specimens). FW underside: postdiscal band slightly dislocated at vein 4; spot in space 3 usually an oblique oval. Female: lighter purple with typical broad black borders. HW postdiscal band only partially dislocated at vein 2 (as in A. zylda)."
     },
-
     "r_zylda_elioti": {
       "type": "result",
       "id": "r_zylda_elioti",
@@ -1438,7 +1721,6 @@
       "common_name": "",
       "note": "Male: shining blue with a slight violet tinge; border 1.0 mm; FW 16–17 mm. HW evenly rounded — no trace of a tooth at vein 2 (A. amphimuta has a short tooth). Female: paler blue with exceptionally narrow black borders (the narrowest in the amphimuta subgroup). HW postdiscal band only partially dislocated at vein 2 (as in A. amphimuta). Malay Peninsula."
     },
-
     "r_dajagaka": {
       "type": "result",
       "id": "r_dajagaka",
@@ -1447,7 +1729,6 @@
       "common_name": "",
       "note": "Bornean endemic. Larger Bornean species (FW 21–25 mm). Male: dark bluish-purple with a thin black border. Female: THICK black borders and noticeably darker venation across the wings (diagnostic). Male valva unilobate; certain identification may require genitalia dissection."
     },
-
     "r_baluensis": {
       "type": "result",
       "id": "r_baluensis",
@@ -1456,29 +1737,46 @@
       "common_name": "",
       "note": "Bornean endemic. Smaller Bornean species (FW 18–20 mm). Male: dark purple-blue with a regular 0.5 mm border. Female: purple-blue with narrower-than-typical black borders. HW cilia in space 1a lacks a white spot (may be rarely present but obscure). Male valva unilobate; certain identification may require genitalia dissection."
     },
-
     "q_muta_s1": {
       "type": "question",
       "id": "q_muta_s1",
       "question": "Is the species noticeably small and duller bluish-purple on the male upperside?",
       "hint": "A. tropaea is distinctly smaller (FW ~12–14 mm) than A. moorei busa (FW 16–18 mm) and A. muta maranda (FW 17–19 mm), with a duller, less saturated bluish-purple male upperside. A. muta and A. moorei are larger, brighter blue.",
       "choices": [
-        { "label": "Yes — noticeably small; male duller bluish-purple", "next": "r_tropaea" },
-        { "label": "No — larger (FW 16–19 mm); male bright blue", "next": "q_muta_s2" }
+        {
+          "label": "Yes — noticeably small; male duller bluish-purple",
+          "next": "r_tropaea"
+        },
+        {
+          "label": "No — larger (FW 16–19 mm); male bright blue",
+          "next": "q_muta_s2"
+        },
+        {
+          "label": "Cannot determine — upperside not visible",
+          "next": "r_muta_all_unclear"
+        }
       ]
     },
-
     "q_muta_s2": {
       "type": "question",
       "id": "q_muta_s2",
       "question": "On the male upperside, are both the forewing and hindwing exactly the same shade of blue in all lights?",
       "hint": "A. moorei busa: both wings the same shade of blue (bluish-purple) in all lights; female is duller and more purple than A. muta's female; FW 16–18 mm. A. muta maranda: FW is a rather dark, bright blue; HW is slightly paler and more glistening, so the two wings are NOT the same shade in all lights; FW border expands from 1.0–1.5 mm at tornus to 1.5–2.0 mm at apex; FW 17–19 mm.",
       "choices": [
-        { "label": "Yes — both wings same shade of blue in all lights; female more purple (FW 16–18 mm)", "next": "r_moorei_busa" },
-        { "label": "No — FW dark bright blue; HW slightly paler and more glistening; border expands toward apex (FW 17–19 mm)", "next": "r_muta_maranda" }
+        {
+          "label": "Yes — both wings same shade of blue in all lights; female more purple (FW 16–18 mm)",
+          "next": "r_moorei_busa"
+        },
+        {
+          "label": "No — FW dark bright blue; HW slightly paler and more glistening; border expands toward apex (FW 17–19 mm)",
+          "next": "r_muta_maranda"
+        },
+        {
+          "label": "Cannot determine — upperside not visible",
+          "next": "r_muta_s2_unclear"
+        }
       ]
     },
-
     "r_tropaea": {
       "type": "result",
       "id": "r_tropaea",
@@ -1487,7 +1785,6 @@
       "common_name": "",
       "note": "Very small species. Male: duller bluish-purple upperside (noticeably less bright than A. muta or A. moorei). Underside: postdiscal spots quadrate/banded; FW space 2 spot stepped toward termen (muta subgroup)."
     },
-
     "r_moorei_busa": {
       "type": "result",
       "id": "r_moorei_busa",
@@ -1496,7 +1793,6 @@
       "common_name": "",
       "note": "Male: both wings the same shade of bluish-purple in all lights (FW 16–18 mm). Female: duller and more purple than A. muta's female. Underside: basal spot present in FW cell; spots quadrate; FW space 2 spot stepped toward termen. Tailless."
     },
-
     "r_muta_maranda": {
       "type": "result",
       "id": "r_muta_maranda",
@@ -1505,18 +1801,22 @@
       "common_name": "",
       "note": "Male: FW rather dark bright blue; HW slightly paler and more glistening — the two wings are NOT the same shade in all lights (FW 17–19 mm). FW black border expands from 1.0–1.5 mm at tornus to 1.5–2.0 mm at apex. Female: shining blue with only a slight purple tint. Underside: basal spot present in FW cell; HW postdiscal band dislocated — inner edge of spot in space 2 in line with, or only slightly outside, the outer edge of spot 1b. Tailless."
     },
-
     "q_perimuta_s1": {
       "type": "question",
       "id": "q_perimuta_s1",
       "question": "Is there a yellowish discal area on the hindwing underside with obscure markings and no tornal green scales?",
       "hint": "A. perimuta regina is easily recognized by the yellowish (not white or grey) discal area on the HW underside, with markings that are obscure or almost absent, and the complete absence of the tornal green scales found in many Arhopala. A. metamuta metamuta has a striking contrast — brilliant greenish-blue HW vs. dark violet-blue FW on the male upperside.",
       "choices": [
-        { "label": "Yes — yellowish HW discal area; markings obscure; no tornal green scales", "next": "r_perimuta_regina" },
-        { "label": "No — HW underside normal; male HW brilliant greenish-blue contrasting with dark violet-blue FW", "next": "r_metamuta_metamuta" }
+        {
+          "label": "Yes — yellowish HW discal area; markings obscure; no tornal green scales",
+          "next": "r_perimuta_regina"
+        },
+        {
+          "label": "No — HW underside normal; male HW brilliant greenish-blue contrasting with dark violet-blue FW",
+          "next": "r_metamuta_metamuta"
+        }
       ]
     },
-
     "r_perimuta_regina": {
       "type": "result",
       "id": "r_perimuta_regina",
@@ -1525,7 +1825,6 @@
       "common_name": "",
       "note": "Easily recognized: HW underside has a yellowish discal area with obscure or almost absent markings; tornal green scales completely absent. FW postdiscal spots 2 and 3 are in line (perimuta subgroup)."
     },
-
     "r_metamuta_metamuta": {
       "type": "result",
       "id": "r_metamuta_metamuta",
@@ -1534,18 +1833,22 @@
       "common_name": "",
       "note": "Striking upperside: male has a brilliant greenish-blue HW that contrasts strongly with the dark, shining violet-blue FW. FW postdiscal spots 2 and 3 are in line (perimuta subgroup)."
     },
-
     "q_anthelus_s1": {
       "type": "question",
       "id": "q_anthelus_s1",
       "question": "Does the forewing underside have at least 3 spots in space 11, AND does the hindwing underside have 2 subbasal spots in space 8?",
       "hint": "A. anthelus grahami (anthelus subgroup) has EXTRA spots — ≥3 in FW space 11 and 2 subbasal spots in HW space 8; spots on FW and upper HW half are deep purple-brown; FW 28 mm. A. achelous achelous (achelous subgroup) has NO spots in FW space 11 and only a single spot at the base of HW space 8; FW 22 mm.",
       "choices": [
-        { "label": "Yes — ≥3 spots in FW space 11; 2 subbasal spots in HW space 8; spots deep purple-brown", "next": "r_anthelus_grahami" },
-        { "label": "No — 0 spots in FW space 11; single spot at base of HW space 8", "next": "r_achelous_achelous" }
+        {
+          "label": "Yes — ≥3 spots in FW space 11; 2 subbasal spots in HW space 8; spots deep purple-brown",
+          "next": "r_anthelus_grahami"
+        },
+        {
+          "label": "No — 0 spots in FW space 11; single spot at base of HW space 8",
+          "next": "r_achelous_achelous"
+        }
       ]
     },
-
     "r_anthelus_grahami": {
       "type": "result",
       "id": "r_anthelus_grahami",
@@ -1554,7 +1857,6 @@
       "common_name": "",
       "note": "One of the most beautiful in the genus. FW 28 mm. Underside: ≥3 spots in FW space 11; 2 spots at base of HW space 8; spots on FW and upper HW half deep purple-brown. Male: brilliant shining blue, narrow black border. Female: violet-blue with fairly broad black borders. Anthelus subgroup."
     },
-
     "r_achelous_achelous": {
       "type": "result",
       "id": "r_achelous_achelous",
@@ -1563,51 +1865,70 @@
       "common_name": "",
       "note": "Smaller than A. anthelus grahami. FW 22 mm. Underside: NO spots in FW space 11; single spot at base of HW space 8 (lacks the extra spots of A. anthelus). Male: shining dark blue, narrow 0.5 mm black border. Subspecies A. achelous malu (Kedawi) lacks most of the purple tinge on the underside. Achelous subgroup."
     },
-
     "q_aurea_s1": {
       "type": "question",
       "id": "q_aurea_s1",
       "question": "Is the underside glazed with a distinct purple wash?",
       "hint": "A. trogon and A. stinga both have an underside glazed with a purple wash. A. aurea, A. caeca, and A. borneensis are hair-brown underneath (no purple glaze). This is the primary split within the aurea group.",
       "choices": [
-        { "label": "Yes — underside glazed with a purple wash", "next": "q_aurea_purple" },
-        { "label": "No — underside hair-brown (no purple glaze)", "next": "q_aurea_brown" }
+        {
+          "label": "Yes — underside glazed with a purple wash",
+          "next": "q_aurea_purple"
+        },
+        {
+          "label": "No — underside hair-brown (no purple glaze)",
+          "next": "q_aurea_brown"
+        }
       ]
     },
-
     "q_aurea_purple": {
       "type": "question",
       "id": "q_aurea_purple",
       "question": "Is the forewing black border significantly wide at the tornus — 2.5–3.0 mm?",
       "hint": "A. stinga has an unusually wide FW border of 2.5–3.0 mm at the tornus (the widest in the group), decreasing to a thread near the apex; the male has no basal blue suffusion. A. trogon has a thread-like border throughout; male is brilliant brassy green with a strong blue suffusion at the wing bases; HW green usually reaches the termen in spaces 3, 4, or 5.",
       "choices": [
-        { "label": "Yes — FW border 2.5–3.0 mm at tornus; male green without blue base suffusion", "next": "r_stinga" },
-        { "label": "No — FW border thread throughout; male brilliant brassy green with strong blue base suffusion", "next": "r_trogon" }
+        {
+          "label": "Yes — FW border 2.5–3.0 mm at tornus; male green without blue base suffusion",
+          "next": "r_stinga"
+        },
+        {
+          "label": "No — FW border thread throughout; male brilliant brassy green with strong blue base suffusion",
+          "next": "r_trogon"
+        }
       ]
     },
-
     "q_aurea_brown": {
       "type": "question",
       "id": "q_aurea_brown",
       "question": "Are the underside markings incomplete — lacking basal/central cell spots on the forewing and various basal/discal spots on the hindwing, with a narrow postdiscal band?",
       "hint": "A. caeca has distinctively incomplete underside markings (FW lacks basal and central cell spots; HW lacks various basal and discal spots; narrow postdiscal band) and the male green turns to violet-blue at the tornus of both wings. A. aurea and A. borneensis have complete markings.",
       "choices": [
-        { "label": "Yes — incomplete markings; male green turns to violet-blue at tornus of both wings", "next": "r_caeca" },
-        { "label": "No — complete underside markings", "next": "q_aurea_brown2" }
+        {
+          "label": "Yes — incomplete markings; male green turns to violet-blue at tornus of both wings",
+          "next": "r_caeca"
+        },
+        {
+          "label": "No — complete underside markings",
+          "next": "q_aurea_brown2"
+        }
       ]
     },
-
     "q_aurea_brown2": {
       "type": "question",
       "id": "q_aurea_brown2",
       "question": "Is the forewing black border a thread throughout (even at the tornus), AND does the hindwing green narrowly reach the termen in spaces 5 and 6?",
       "hint": "A. borneensis (Bornean): FW border thread throughout, widening almost imperceptibly toward tornus; HW green reaches termen narrowly in spaces 5 and 6; male brassy green with strong blue base suffusion. A. aurea: FW border 0.75–1.5 mm at tornus, decreasing to a thread above vein 3 or 4; HW green does NOT reach the termen; male green with only weak blue base suffusion; female blue to purple-blue.",
       "choices": [
-        { "label": "Yes — FW border thread throughout; HW green reaches termen in spaces 5–6; strong blue base (Bornean)", "next": "r_borneensis" },
-        { "label": "No — FW border 0.75–1.5 mm at tornus, decreasing to thread; HW green not reaching termen; weak blue base", "next": "r_aurea" }
+        {
+          "label": "Yes — FW border thread throughout; HW green reaches termen in spaces 5–6; strong blue base (Bornean)",
+          "next": "r_borneensis"
+        },
+        {
+          "label": "No — FW border 0.75–1.5 mm at tornus, decreasing to thread; HW green not reaching termen; weak blue base",
+          "next": "r_aurea"
+        }
       ]
     },
-
     "r_aurea": {
       "type": "result",
       "id": "r_aurea",
@@ -1616,7 +1937,6 @@
       "common_name": "",
       "note": "Underside hair-brown with complete markings. Male: shining green with weak blue suffusion at wing bases; FW border 0.75–1.5 mm at tornus, decreasing to a thread above vein 3 or 4; HW green does not reach the termen. Female: blue to purple-blue with a relatively narrow HW border. Short stumpy HW tail (~2 mm)."
     },
-
     "r_trogon": {
       "type": "result",
       "id": "r_trogon",
@@ -1625,7 +1945,6 @@
       "common_name": "",
       "note": "Underside glazed with a purple wash. Male: brilliant brassy green with a strong blue suffusion at the wing bases; FW border a thread throughout; HW green usually reaches the termen in spaces 3, 4, or 5. Short stumpy HW tail (~2 mm)."
     },
-
     "r_stinga": {
       "type": "result",
       "id": "r_stinga",
@@ -1634,7 +1953,6 @@
       "common_name": "",
       "note": "Underside glazed with a purple wash (exactly as in A. trogon). Male: green WITHOUT any basal blue suffusion (no blue at wing bases); FW border distinctively wide — 2.5–3.0 mm at tornus, decreasing to a thread near the apex (widest border in the group). Short stumpy HW tail (~2 mm)."
     },
-
     "r_caeca": {
       "type": "result",
       "id": "r_caeca",
@@ -1643,7 +1961,6 @@
       "common_name": "",
       "note": "Underside hair-brown with INCOMPLETE markings: FW lacks basal and central cell spots; HW lacks various basal and discal spots; postdiscal band narrow. Male: brilliant green turning to violet-blue at the tornus of both wings (diagnostic — unique in the group); FW border a thread. Short stumpy HW tail (~2 mm)."
     },
-
     "r_borneensis": {
       "type": "result",
       "id": "r_borneensis",
@@ -1652,95 +1969,142 @@
       "common_name": "",
       "note": "Bornean taxon. Underside hair-brown with complete markings (as A. aurea). Male: brassy green with strong blue suffusion at base; FW border thread throughout, widening almost imperceptibly toward tornus; HW green reaches termen narrowly in spaces 5 and 6 (unlike A. aurea where green does not reach termen). Short stumpy HW tail (~2 mm)."
     },
-
     "q_camdeo_c1": {
       "type": "question",
       "id": "q_camdeo_c1",
       "question": "Is there a central spot in forewing underside space 11?",
       "hint": "A. anarte is one of the largest and most beautiful species in the genus, easily recognized by a central spot in FW space 11. Male: shining pale silvery blue overlaid with violet toward the margins. No other camdeo subgroup member has this spot.",
       "choices": [
-        { "label": "Yes — central spot in FW space 11; male shining pale silvery blue with violet margins", "next": "r_anarte" },
-        { "label": "No — no spot in FW space 11", "next": "q_camdeo_c2" }
+        {
+          "label": "Yes — central spot in FW space 11; male shining pale silvery blue with violet margins",
+          "next": "r_anarte"
+        },
+        {
+          "label": "No — no spot in FW space 11",
+          "next": "q_camdeo_c2"
+        }
       ]
     },
-
     "q_camdeo_c2": {
       "type": "question",
       "id": "q_camdeo_c2",
       "question": "Is the underside ground colour extensively whitened?",
       "hint": "A. dispar pendleburyi is immediately distinctive for its extensively whitened underside ground colour. Male: pale blue with a thread-like border; FW cell-end also whitened. All other camdeo subgroup members have a normal brown/dark underside.",
       "choices": [
-        { "label": "Yes — underside extensively whitened; male pale blue, thread border, whitened FW cell-end", "next": "r_dispar_pendleburyi" },
-        { "label": "No — underside ground colour normal (not whitened)", "next": "q_camdeo_c3" }
+        {
+          "label": "Yes — underside extensively whitened; male pale blue, thread border, whitened FW cell-end",
+          "next": "r_dispar_pendleburyi"
+        },
+        {
+          "label": "No — underside ground colour normal (not whitened)",
+          "next": "q_camdeo_c3"
+        }
       ]
     },
-
     "q_camdeo_c3": {
       "type": "question",
       "id": "q_camdeo_c3",
       "question": "Is the forewing postdiscal band incomplete, ending at or before vein 7 (lower part absent)?",
       "hint": "A. belphoebe cowani and A. johoreana johoreana both have an incomplete FW postdiscal band. All other camdeo subgroup members have a complete (or nearly complete) band.",
       "choices": [
-        { "label": "Yes — FW postdiscal band incomplete, ending at vein 7", "next": "q_camdeo_incomplete" },
-        { "label": "No — FW postdiscal band complete (or only partially dislocated at vein 4)", "next": "q_camdeo_c4" }
+        {
+          "label": "Yes — FW postdiscal band incomplete, ending at vein 7",
+          "next": "q_camdeo_incomplete"
+        },
+        {
+          "label": "No — FW postdiscal band complete (or only partially dislocated at vein 4)",
+          "next": "q_camdeo_c4"
+        }
       ]
     },
-
     "q_camdeo_incomplete": {
       "type": "question",
       "id": "q_camdeo_incomplete",
       "question": "Is the specimen tailless, with broad dark borders and a pale violet-blue upperside (both sexes alike)?",
       "hint": "A. belphoebe cowani is tailless; both sexes have broad dark borders and pale violet-blue upperside. A. johoreana johoreana has a short tail and is a much darker violet-blue.",
       "choices": [
-        { "label": "Yes — tailless; broad dark borders; pale violet-blue; both sexes alike", "next": "r_belphoebe_cowani" },
-        { "label": "No — short tail present; much darker violet-blue", "next": "r_johoreana_johoreana" }
+        {
+          "label": "Yes — tailless; broad dark borders; pale violet-blue; both sexes alike",
+          "next": "r_belphoebe_cowani"
+        },
+        {
+          "label": "No — short tail present; much darker violet-blue",
+          "next": "r_johoreana_johoreana"
+        },
+        {
+          "label": "Cannot determine — upperside not visible",
+          "next": "r_camdeo_incomplete_unclear"
+        }
       ]
     },
-
     "q_camdeo_c4": {
       "type": "question",
       "id": "q_camdeo_c4",
       "question": "Is the hindwing tail very short (≤2 mm) AND are the underside spots indistinct?",
       "hint": "A. hellada ozana and A. varro selama both have a very short HW tail and relatively indistinct underside spots. A. hellada: FW spot 4 shifted distad; clear violet-blue male. A. varro: small species; very short tail ~1.5 mm; even pale metallic silvery blue male.",
       "choices": [
-        { "label": "Yes — HW tail very short (≤2 mm); underside spots indistinct", "next": "q_camdeo_short_tail" },
-        { "label": "No — tail of normal length or absent; underside spots distinct", "next": "q_camdeo_c5" }
+        {
+          "label": "Yes — HW tail very short (≤2 mm); underside spots indistinct",
+          "next": "q_camdeo_short_tail"
+        },
+        {
+          "label": "No — tail of normal length or absent; underside spots distinct",
+          "next": "q_camdeo_c5"
+        }
       ]
     },
-
     "q_camdeo_short_tail": {
       "type": "question",
       "id": "q_camdeo_short_tail",
       "question": "Is the forewing postdiscal spot in space 4 shifted distad (outward, out of line with spots 5 and 6)?",
       "hint": "A. hellada ozana: FW spot 4 shifted distad (out of line); very short HW tail; male clear violet-blue with thread-like border. A. varro selama: FW spot 4 not shifted; small species; male an even pale metallic silvery blue; HW tail very short (~1.5 mm).",
       "choices": [
-        { "label": "Yes — FW spot 4 shifted distad; male clear violet-blue, thread border", "next": "r_hellada_ozana" },
-        { "label": "No — FW spot 4 in normal position; small species; male even pale metallic silvery blue", "next": "r_varro_selama" }
+        {
+          "label": "Yes — FW spot 4 shifted distad; male clear violet-blue, thread border",
+          "next": "r_hellada_ozana"
+        },
+        {
+          "label": "No — FW spot 4 in normal position; small species; male even pale metallic silvery blue",
+          "next": "r_varro_selama"
+        }
       ]
     },
-
     "q_camdeo_c5": {
       "type": "question",
       "id": "q_camdeo_c5",
       "question": "Is the male a deep, dull bluish-purple with a forewing border expanding to 1.5 mm at the apex?",
-      "hint": "A. semperi russelli is a large and very rare species; male is deep dull bluish-purple with FW border expanding to 1.5 mm at the apex; female is purple with a notably whitish end-cell. The remaining two species (opalina, camdana) are clear violet-blue with narrow borders.",
+      "hint": "A. semperi russelli has a distinctive deep, dull bluish-purple male (not clear violet) and a FW border that expands from thread-width to 1.5 mm at the apex, with a large cell on the underside. If the male upperside is not visible, choose 'Cannot determine' — HW spot 6 (next question) can still separate the remaining candidates, but A. semperi russelli may be missed.",
       "choices": [
-        { "label": "Yes — deep dull bluish-purple; border expands to 1.5 mm at apex; large rare species", "next": "r_semperi_russelli" },
-        { "label": "No — clear violet-blue with narrow borders", "next": "q_camdeo_c6" }
+        {
+          "label": "Yes — deep dull bluish-purple; border expands to 1.5 mm at apex; large rare species",
+          "next": "r_semperi_russelli"
+        },
+        {
+          "label": "No — clear violet-blue with narrow borders",
+          "next": "q_camdeo_c6"
+        },
+        {
+          "label": "Cannot determine — upperside not visible (note: may miss semperi russelli)",
+          "next": "q_camdeo_c6"
+        }
       ]
     },
-
     "q_camdeo_c6": {
       "type": "question",
       "id": "q_camdeo_c6",
       "question": "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?",
       "hint": "A. camdana camdana: HW postdiscal spot 6 is noticeably smaller than spot 7; male clear violet-blue. A. opalina azata: HW spot 6 is NOT smaller than spot 7; male pale greyish-blue with a violet tinge and very narrow borders; FW band complete, partially dislocated at vein 4.",
       "choices": [
-        { "label": "Yes — HW spot 6 smaller than spot 7; male clear violet-blue", "next": "r_camdana_camdana" },
-        { "label": "No — HW spot 6 not smaller than spot 7; male pale greyish-blue with violet tinge", "next": "r_opalina_azata" }
+        {
+          "label": "Yes — HW spot 6 smaller than spot 7; male clear violet-blue",
+          "next": "r_camdana_camdana"
+        },
+        {
+          "label": "No — HW spot 6 not smaller than spot 7; male pale greyish-blue with violet tinge",
+          "next": "r_opalina_azata"
+        }
       ]
     },
-
     "r_anarte": {
       "type": "result",
       "id": "r_anarte",
@@ -1749,7 +2113,6 @@
       "common_name": "",
       "note": "One of the most beautiful and largest in the genus. Immediately recognized by the central spot in FW underside space 11 (no other camdeo subgroup member has this). Male: shining pale silvery blue overlaid with violet toward the margins. Camdeo subgroup."
     },
-
     "r_dispar_pendleburyi": {
       "type": "result",
       "id": "r_dispar_pendleburyi",
@@ -1758,7 +2121,6 @@
       "common_name": "",
       "note": "Distinctive for its extensively whitened underside ground colour (diagnostic). Male: pale blue with a thread-like border; FW cell-end also whitened. Camdeo subgroup."
     },
-
     "r_belphoebe_cowani": {
       "type": "result",
       "id": "r_belphoebe_cowani",
@@ -1767,7 +2129,6 @@
       "common_name": "",
       "note": "Tailless. FW postdiscal band incomplete, ending at vein 7. Both sexes alike: broad dark borders and pale violet-blue upperside. Camdeo subgroup."
     },
-
     "r_johoreana_johoreana": {
       "type": "result",
       "id": "r_johoreana_johoreana",
@@ -1776,7 +2137,6 @@
       "common_name": "",
       "note": "Similar to A. belphoebe cowani (incomplete FW postdiscal band) but possesses a short tail and is much darker violet-blue. Camdeo subgroup."
     },
-
     "r_hellada_ozana": {
       "type": "result",
       "id": "r_hellada_ozana",
@@ -1785,7 +2145,6 @@
       "common_name": "",
       "note": "Very short HW tail; underside spots indistinct. FW postdiscal spot in space 4 shifted distad (out of line with spots 5 and 6). Male: clear violet-blue with thread-like border. Camdeo subgroup."
     },
-
     "r_varro_selama": {
       "type": "result",
       "id": "r_varro_selama",
@@ -1794,7 +2153,6 @@
       "common_name": "",
       "note": "Small species. Very short HW tail (~1.5 mm). Male: even, pale metallic silvery blue upperside. FW spot 4 in normal position (not shifted). Camdeo subgroup."
     },
-
     "r_semperi_russelli": {
       "type": "result",
       "id": "r_semperi_russelli",
@@ -1803,7 +2161,6 @@
       "common_name": "",
       "note": "Large and very rare. Male: deep, dull bluish-purple; FW border expands to 1.5 mm at the apex. Female: purple, notably whitish at the end-cell. Camdeo subgroup."
     },
-
     "r_camdana_camdana": {
       "type": "result",
       "id": "r_camdana_camdana",
@@ -1812,7 +2169,6 @@
       "common_name": "",
       "note": "Closely related to A. opalina. Male: clear violet-blue. HW underside: postdiscal spot 6 is smaller than spot 7 (diagnostic vs A. opalina). Camdeo subgroup."
     },
-
     "r_opalina_azata": {
       "type": "result",
       "id": "r_opalina_azata",
@@ -1821,18 +2177,22 @@
       "common_name": "",
       "note": "FW postdiscal band complete, only partially dislocated at vein 4. Male: pale greyish-blue with a violet tinge and very narrow borders. Female: slightly deeper blue. HW spot 6 not smaller than spot 7 (unlike A. camdana). Camdeo subgroup."
     },
-
     "q_camdeo_m1": {
       "type": "question",
       "id": "q_camdeo_m1",
       "question": "Is the specimen tailed?",
       "hint": "A. myrzala lammas is tailed; male shining royal blue with narrow black borders. A. myrzalina is tailless; male has a broad FW border expanding from 1.5 mm at the tornus to 4.0 mm at the costa. Both have the distinctive crimson-brown underside with white striae and a HW space 6 basal spot.",
       "choices": [
-        { "label": "Yes — tailed; male shining royal blue, narrow borders", "next": "r_myrzala_lammas" },
-        { "label": "No — tailless; male broad FW border (1.5 mm at tornus → 4.0 mm at costa)", "next": "r_myrzalina" }
+        {
+          "label": "Yes — tailed; male shining royal blue, narrow borders",
+          "next": "r_myrzala_lammas"
+        },
+        {
+          "label": "No — tailless; male broad FW border (1.5 mm at tornus → 4.0 mm at costa)",
+          "next": "r_myrzalina"
+        }
       ]
     },
-
     "r_myrzala_lammas": {
       "type": "result",
       "id": "r_myrzala_lammas",
@@ -1841,7 +2201,6 @@
       "common_name": "",
       "note": "Tailed. Underside: crimson-brown with markings outlined by white striae; spot at base of HW space 6. Male: shining royal blue with narrow black borders. Myrzala subgroup."
     },
-
     "r_myrzalina": {
       "type": "result",
       "id": "r_myrzalina",
@@ -1850,7 +2209,6 @@
       "common_name": "",
       "note": "Tailless. Underside: crimson-brown with markings outlined by white striae; spot at base of HW space 6. Male: broad FW border expanding from 1.5 mm at tornus to 4.0 mm at costa. Myrzala subgroup."
     },
-
     "r_bazaloides_bazaloides": {
       "type": "result",
       "id": "r_bazaloides_bazaloides",
@@ -1859,29 +2217,38 @@
       "common_name": "",
       "note": "Underside: purple-brown with markings outlined by white striae; extra spot in mid-space 8 on HW underside (diagnostic for subgroup); NO spot at base of HW space 6 (unlike myrzala subgroup). Male: dark violet-blue with regular 2.0 mm black borders. Bazaloides subgroup."
     },
-
     "q_centaurus_amantes": {
       "type": "question",
       "id": "q_centaurus_amantes",
       "question": "Does the male have very broad black borders (3.0 mm at tornus expanding to 5.0 mm at apex), AND is the FW postdiscal spot in space 4 shifted distad (out of line)?",
       "hint": "A. amantes (South Myanmar) is keyed here due to similar silvery FW markings but is NOT in the centaurus group. It has the broadest borders in this section and the space 4 FW spot clearly shifted outward; it also lacks a costal spot in FW space 10. A. centaurus and A. araxes both have thread-like or narrow borders (≤1 mm).",
       "choices": [
-        { "label": "Yes — borders 3.0–5.0 mm widening toward apex; FW spot 4 shifted distad; no FW space 10 costal spot (South Myanmar)", "next": "r_amantes" },
-        { "label": "No — borders thread-like or ≤1 mm", "next": "q_centaurus_s1" }
+        {
+          "label": "Yes — borders 3.0–5.0 mm widening toward apex; FW spot 4 shifted distad; no FW space 10 costal spot (South Myanmar)",
+          "next": "r_amantes"
+        },
+        {
+          "label": "No — borders thread-like or ≤1 mm",
+          "next": "q_centaurus_s1"
+        }
       ]
     },
-
     "q_centaurus_s1": {
       "type": "question",
       "id": "q_centaurus_s1",
       "question": "Does the hindwing have a distinct tornal lobe?",
       "hint": "A. araxes has a distinct tornal lobe on the HW; male shining blue with violet toward apices; FW border increases from a thread at tornus to 1.0 mm at apex; FW ~27 mm; Sumatra to Sulawesi. A. centaurus nakula has a rounded HW tornus with a vestigial (very small or absent) tornal lobe; male purplish blue, thread border; FW 28–29 mm.",
       "choices": [
-        { "label": "Yes — distinct HW tornal lobe; male shining blue with violet toward apices; FW ~27 mm (Sumatra–Sulawesi)", "next": "r_araxes" },
-        { "label": "No — HW tornus rounded, tornal lobe vestigial or absent; male purplish blue; FW 28–29 mm", "next": "r_centaurus_nakula" }
+        {
+          "label": "Yes — distinct HW tornal lobe; male shining blue with violet toward apices; FW ~27 mm (Sumatra–Sulawesi)",
+          "next": "r_araxes"
+        },
+        {
+          "label": "No — HW tornus rounded, tornal lobe vestigial or absent; male purplish blue; FW 28–29 mm",
+          "next": "r_centaurus_nakula"
+        }
       ]
     },
-
     "r_centaurus_nakula": {
       "type": "result",
       "id": "r_centaurus_nakula",
@@ -1890,7 +2257,6 @@
       "common_name": "Centaur Oakblue",
       "note": "FW 28–29 mm. HW tornus rounded; tornal lobe vestigial or absent. Male: purplish blue, FW border reduced to a thread. Female: paler and more purple than male; FW border more intensely darkened over distal half of cell; moderately broad black borders. Underside: FW cell spots outlined in greenish silver."
     },
-
     "r_araxes": {
       "type": "result",
       "id": "r_araxes",
@@ -1899,7 +2265,6 @@
       "common_name": "",
       "note": "FW ~27 mm. HW with a distinct tornal lobe (unlike A. centaurus). Male: shining blue with violet tinge toward apices; FW border a thread at tornus, increasing to 1.0 mm at apex. Female: blue. Range: Sumatra to Sulawesi region. Underside: FW cell spots outlined in greenish silver."
     },
-
     "r_amantes": {
       "type": "result",
       "id": "r_amantes",
@@ -1908,7 +2273,6 @@
       "common_name": "",
       "note": "Keyed here due to similar silvery FW cell markings, but technically outside the centaurus group. FW ~27 mm. Male: shining blue, very broad borders — 3.0 mm at tornus expanding to 5.0 mm at apex. Female: lighter blue. Underside: FW spot 4 shifted distad; lacks costal spot in FW space 10. Range: South Myanmar."
     },
-
     "r_agaba": {
       "type": "result",
       "id": "r_agaba",
@@ -1917,40 +2281,54 @@
       "common_name": "",
       "note": "Agaba subgroup — unique in the cleander group. HW underside: postdiscal spot 5 contiguous or amalgamated with the end-cell bar. HW postdiscal band only PARTIALLY dislocated at vein 2 (all other cleander group members have it completely dislocated). Large prominent HW tornal lobe."
     },
-
     "q_cleander_s1": {
       "type": "question",
       "id": "q_cleander_s1",
       "question": "Is the forewing postdiscal band NOT dislocated at vein 4 — straight through or only slightly sinuous?",
       "hint": "A. cleander aphadantas: FW band not dislocated at vein 4 (straight or only sinuous); male violet-blue with broad black borders. All other cleander subgroup members have the FW band partially dislocated at vein 4.",
       "choices": [
-        { "label": "Yes — FW band not dislocated at vein 4 (straight/sinuous); male violet-blue, broad borders", "next": "r_cleander_aphadantas" },
-        { "label": "No — FW band partially dislocated at vein 4", "next": "q_cleander_s2" }
+        {
+          "label": "Yes — FW band not dislocated at vein 4 (straight/sinuous); male violet-blue, broad borders",
+          "next": "r_cleander_aphadantas"
+        },
+        {
+          "label": "No — FW band partially dislocated at vein 4",
+          "next": "q_cleander_s2"
+        }
       ]
     },
-
     "q_cleander_s2": {
       "type": "question",
       "id": "q_cleander_s2",
       "question": "Is the forewing postdiscal spot in space 9 as wide as or wider than the spot in space 6?",
       "hint": "A. zambra zambra: FW spot 9 ≥ width of spot 6; male typically deep blue. In A. athada and A. silhetensis, FW spot 9 is narrower than spot 6 and shifted basad.",
       "choices": [
-        { "label": "Yes — FW spot 9 as wide as or wider than spot 6; male deep blue", "next": "r_zambra_zambra" },
-        { "label": "No — FW spot 9 narrower than spot 6, shifted basad", "next": "q_cleander_s3" }
+        {
+          "label": "Yes — FW spot 9 as wide as or wider than spot 6; male deep blue",
+          "next": "r_zambra_zambra"
+        },
+        {
+          "label": "No — FW spot 9 narrower than spot 6, shifted basad",
+          "next": "q_cleander_s3"
+        }
       ]
     },
-
     "q_cleander_s3": {
       "type": "question",
       "id": "q_cleander_s3",
       "question": "Does hindwing postdiscal spot 6 completely fill the gap between spot 5 and the end-cell bar (no gap visible between spot 6 and the bar)?",
       "hint": "A. athada athada: HW spot 6 fills the gap between spot 5 and the end-cell bar (spot 6 is large, touching or almost touching the bar). A. silhetensis adorea: gap between HW spot 6 and the end-cell bar is WIDER than spot 6 itself.",
       "choices": [
-        { "label": "Yes — HW spot 6 fills the gap; spot 6 touches or nearly touches the end-cell bar", "next": "r_athada_athada" },
-        { "label": "No — gap between HW spot 6 and end-cell bar is wider than spot 6", "next": "r_silhetensis_adorea" }
+        {
+          "label": "Yes — HW spot 6 fills the gap; spot 6 touches or nearly touches the end-cell bar",
+          "next": "r_athada_athada"
+        },
+        {
+          "label": "No — gap between HW spot 6 and end-cell bar is wider than spot 6",
+          "next": "r_silhetensis_adorea"
+        }
       ]
     },
-
     "r_cleander_aphadantas": {
       "type": "result",
       "id": "r_cleander_aphadantas",
@@ -1959,7 +2337,6 @@
       "common_name": "",
       "note": "FW postdiscal band NOT dislocated at vein 4 (straight or only sinuous). Male: violet-blue with broad black borders. Large species (FW > 21 mm); conspicuously projecting HW tornal lobe. HW band completely dislocated at vein 2."
     },
-
     "r_zambra_zambra": {
       "type": "result",
       "id": "r_zambra_zambra",
@@ -1968,7 +2345,6 @@
       "common_name": "",
       "note": "FW postdiscal band partially dislocated at vein 4. FW postdiscal spot 9 as wide as or wider than spot 6. Male: typically deep blue. Large species (FW > 21 mm); conspicuously projecting HW tornal lobe."
     },
-
     "r_athada_athada": {
       "type": "result",
       "id": "r_athada_athada",
@@ -1977,7 +2353,6 @@
       "common_name": "",
       "note": "FW postdiscal spot 9 narrower than spot 6, shifted basad. HW postdiscal spot 6 fills the gap between spot 5 and the end-cell bar. Large species (FW > 21 mm); conspicuously projecting HW tornal lobe."
     },
-
     "r_silhetensis_adorea": {
       "type": "result",
       "id": "r_silhetensis_adorea",
@@ -1986,95 +2361,142 @@
       "common_name": "",
       "note": "Similar to A. athada. FW postdiscal spot 9 narrower than spot 6, shifted basad. HW postdiscal spot 6 does NOT fill the gap — the gap between HW spot 6 and the end-cell bar is wider than spot 6 itself. Large species (FW > 21 mm)."
     },
-
     "q_alea_s1": {
       "type": "question",
       "id": "q_alea_s1",
       "question": "Is the underside pale slatey purple with conspicuous dark markings outlined by nearly-white striae?",
       "hint": "A. aurelia is immediately distinctive for its pale slatey-purple ground colour with dark markings strongly outlined by nearly-white striae. No other alea subgroup member has this combination.",
       "choices": [
-        { "label": "Yes — pale slatey purple underside; dark markings outlined by nearly-white striae", "next": "r_aurelia" },
-        { "label": "No", "next": "q_alea_s2" }
+        {
+          "label": "Yes — pale slatey purple underside; dark markings outlined by nearly-white striae",
+          "next": "r_aurelia"
+        },
+        {
+          "label": "No",
+          "next": "q_alea_s2"
+        }
       ]
     },
-
     "q_alea_s2": {
       "type": "question",
       "id": "q_alea_s2",
       "question": "Does the underside have a slatey pink glaze with striae that are whiter than in other species?",
       "hint": "A. evansi has a slatey pink glaze on the underside and the striae are noticeably whiter than other alea subgroup members. If the underside is predominantly brown (not pink-glazed), choose No.",
       "choices": [
-        { "label": "Yes — slatey pink glaze; striae noticeably white", "next": "r_evansi" },
-        { "label": "No — no slatey pink glaze", "next": "q_alea_s3" }
+        {
+          "label": "Yes — slatey pink glaze; striae noticeably white",
+          "next": "r_evansi"
+        },
+        {
+          "label": "No — no slatey pink glaze",
+          "next": "q_alea_s3"
+        }
       ]
     },
-
     "q_alea_s3": {
       "type": "question",
       "id": "q_alea_s3",
       "question": "Are the wings notably rounded and elongate in shape?",
       "hint": "A. aroa aroa has distinctively rounded, elongate wings — a recognizable shape character. It also has narrow postdiscal bands that are well clear of the submarginal lunules. All other alea subgroup members have more typical Arhopala wing shapes.",
       "choices": [
-        { "label": "Yes — wings notably rounded and elongate; narrow bands well clear of submarginal lunules", "next": "r_aroa_aroa" },
-        { "label": "No — typical wing shape", "next": "q_alea_s4" }
+        {
+          "label": "Yes — wings notably rounded and elongate; narrow bands well clear of submarginal lunules",
+          "next": "r_aroa_aroa"
+        },
+        {
+          "label": "No — typical wing shape",
+          "next": "q_alea_s4"
+        }
       ]
     },
-
     "q_alea_s4": {
       "type": "question",
       "id": "q_alea_s4",
       "question": "Is the postdiscal band placed very close to the inner submarginal lunules?",
       "hint": "A. phanda phanda is distinguished by having the postdiscal band unusually close to the inner submarginal lunules on the underside. In all other remaining alea subgroup members, the band is further from the lunules.",
       "choices": [
-        { "label": "Yes — postdiscal band very close to inner submarginal lunules", "next": "r_phanda_phanda" },
-        { "label": "No — postdiscal band not especially close to submarginal lunules", "next": "q_alea_s5" }
+        {
+          "label": "Yes — postdiscal band very close to inner submarginal lunules",
+          "next": "r_phanda_phanda"
+        },
+        {
+          "label": "No — postdiscal band not especially close to submarginal lunules",
+          "next": "q_alea_s5"
+        }
       ]
     },
-
     "q_alea_s5": {
       "type": "question",
       "id": "q_alea_s5",
       "question": "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?",
       "hint": "A. selta selta: HW spot 6 widely overlaps the end-cell bar; male violet-blue with border expanding toward apex. A. phaenops sandakani is similar to A. selta but HW spot 6 usually does NOT overlap the end-cell bar.",
       "choices": [
-        { "label": "Yes — HW spot 6 widely overlaps the end-cell bar; male violet-blue, border expanding toward apex", "next": "r_selta_selta" },
-        { "label": "No — HW spot 6 does not widely overlap the end-cell bar", "next": "q_alea_s6" }
+        {
+          "label": "Yes — HW spot 6 widely overlaps the end-cell bar; male violet-blue, border expanding toward apex",
+          "next": "r_selta_selta"
+        },
+        {
+          "label": "No — HW spot 6 does not widely overlap the end-cell bar",
+          "next": "q_alea_s6"
+        }
       ]
     },
-
     "q_alea_s6": {
       "type": "question",
       "id": "q_alea_s6",
       "question": "Is the male border noticeably expanding toward the apex (similar to A. selta)?",
       "hint": "A. phaenops sandakani is very similar to A. selta in border pattern (border expanding toward apex) but differs in that HW spot 6 does not overlap the end-cell bar. The remaining species (sublustris, milleri, normani) have narrow or thread-like borders that do NOT expand toward the apex.",
       "choices": [
-        { "label": "Yes — border expanding toward apex; HW spot 6 not overlapping end-cell bar", "next": "r_phaenops_sandakani" },
-        { "label": "No — border narrow or thread-like throughout, not expanding toward apex", "next": "q_alea_s7" }
+        {
+          "label": "Yes — border expanding toward apex; HW spot 6 not overlapping end-cell bar",
+          "next": "r_phaenops_sandakani"
+        },
+        {
+          "label": "No — border narrow or thread-like throughout, not expanding toward apex",
+          "next": "q_alea_s7"
+        },
+        {
+          "label": "Cannot determine — upperside not visible",
+          "next": "r_alea_s6_unclear"
+        }
       ]
     },
-
     "q_alea_s7": {
       "type": "question",
       "id": "q_alea_s7",
       "question": "Is the male a bright, glistening blue (not matt or indigo)?",
       "hint": "A. sublustris ridleyi and A. normani are both bright-ish blue with very narrow borders. A. milleri is larger, with a more matt indigo-blue colour and a thread-like border. If the specimen is noticeably large and the blue is matt/flat (not glistening), choose No.",
       "choices": [
-        { "label": "Yes — bright glistening blue (not matt); borders under 0.5 mm", "next": "q_alea_glist" },
-        { "label": "No — matt indigo blue; larger; thread-like border", "next": "r_milleri" }
+        {
+          "label": "Yes — bright glistening blue (not matt); borders under 0.5 mm",
+          "next": "q_alea_glist"
+        },
+        {
+          "label": "No — matt indigo blue; larger; thread-like border",
+          "next": "r_milleri"
+        }
       ]
     },
-
     "q_alea_glist": {
       "type": "question",
       "id": "q_alea_glist",
       "question": "Is the male less shining and more violet (rather than purely bright blue)?",
       "hint": "A. normani is superficially similar to A. sublustris ridleyi but the male is less shining and has a more violet tone. A. sublustris ridleyi has a bright glistening blue with borders under 0.5 mm.",
       "choices": [
-        { "label": "Yes — less shining; more violet than blue", "next": "r_normani" },
-        { "label": "No — bright glistening blue, borders under 0.5 mm", "next": "r_sublustris_ridleyi" }
+        {
+          "label": "Yes — less shining; more violet than blue",
+          "next": "r_normani"
+        },
+        {
+          "label": "No — bright glistening blue, borders under 0.5 mm",
+          "next": "r_sublustris_ridleyi"
+        },
+        {
+          "label": "Cannot determine — upperside not visible",
+          "next": "r_alea_glist_unclear"
+        }
       ]
     },
-
     "r_aurelia": {
       "type": "result",
       "id": "r_aurelia",
@@ -2083,7 +2505,6 @@
       "common_name": "",
       "note": "Alea subgroup. Distinctive underside: pale slatey purple with conspicuous dark markings outlined by nearly-white striae. Smaller species (FW < 21 mm); less conspicuous HW tornal lobe."
     },
-
     "r_evansi": {
       "type": "result",
       "id": "r_evansi",
@@ -2092,7 +2513,6 @@
       "common_name": "",
       "note": "Alea subgroup. Distinctive underside: slatey pink glaze with striae that are whiter than in other alea subgroup members. Smaller species (FW < 21 mm)."
     },
-
     "r_aroa_aroa": {
       "type": "result",
       "id": "r_aroa_aroa",
@@ -2101,7 +2521,6 @@
       "common_name": "",
       "note": "Alea subgroup. Recognizable by its rounded, elongate wings (distinctive wing shape). Narrow postdiscal bands that are well clear of the submarginal lunules. Smaller species (FW < 21 mm)."
     },
-
     "r_phanda_phanda": {
       "type": "result",
       "id": "r_phanda_phanda",
@@ -2110,7 +2529,6 @@
       "common_name": "",
       "note": "Alea subgroup. Underside postdiscal band placed very close to the inner submarginal lunules (diagnostic). Smaller species (FW < 21 mm)."
     },
-
     "r_selta_selta": {
       "type": "result",
       "id": "r_selta_selta",
@@ -2119,7 +2537,6 @@
       "common_name": "",
       "note": "Alea subgroup. HW postdiscal spot 6 widely overlaps the end-cell bar (diagnostic vs phaenops). Male: violet-blue with border expanding toward the apex. Smaller species (FW < 21 mm)."
     },
-
     "r_phaenops_sandakani": {
       "type": "result",
       "id": "r_phaenops_sandakani",
@@ -2128,7 +2545,6 @@
       "common_name": "",
       "note": "Alea subgroup. Similar to A. selta selta (border expanding toward apex) but HW postdiscal spot 6 usually does NOT overlap the end-cell bar. Smaller species (FW < 21 mm)."
     },
-
     "r_milleri": {
       "type": "result",
       "id": "r_milleri",
@@ -2137,7 +2553,6 @@
       "common_name": "",
       "note": "Alea subgroup. Larger than A. sublustris (but still FW < 21 mm). Male: more matt indigo blue (not bright glistening) with a thread-like border. Genitalia often needed for certain identification."
     },
-
     "r_normani": {
       "type": "result",
       "id": "r_normani",
@@ -2146,7 +2561,6 @@
       "common_name": "",
       "note": "Alea subgroup. Superficially similar to A. sublustris ridleyi but male is less shining and more violet. Borders narrow. Genitalia often needed for certain identification."
     },
-
     "r_sublustris_ridleyi": {
       "type": "result",
       "id": "r_sublustris_ridleyi",
@@ -2155,7 +2569,6 @@
       "common_name": "",
       "note": "Alea subgroup. Male: bright glistening blue with borders under 0.5 mm. Brighter and more glistening than A. normani. Smaller species (FW < 21 mm)."
     },
-
     "r_corinda_acestes": {
       "type": "result",
       "id": "r_corinda_acestes",
@@ -2164,18 +2577,22 @@
       "common_name": "",
       "note": "Monotypic group. Filamentous HW tail ~3.5 mm. FW: pointed apex, straight termen. Underside: large purple-brown patch under FW cell (basal half of space 1b completely darkened); FW spot 4 shifted distad; no costal spot in FW space 10; ground colour sometimes glazed with purple wash. HW spot 6 outwardly convex; band partially dislocated at vein 2. Male: deep violet or dark purple, very narrow border. Female: purple-blue. Subspecies: acestes (Malay Peninsula and Singapore), corestes (related)."
     },
-
     "q_democritus_s1": {
       "type": "question",
       "id": "q_democritus_s1",
       "question": "Is the underside ground colour a dark chocolate brown with markings outlined by prominent silvery-white striae and dots?",
       "hint": "A. democritus democritus (Kedawi and Fraser's Hill): darker chocolate-brown ground colour; markings outlined by prominent silvery-white striae and dots; male and female both lighter and more silvery blue above. A. democritus lycaenaria (standard Peninsula subspecies): hair-brown ground colour; markings outlined by dull yellowish-white striae (less contrast).",
       "choices": [
-        { "label": "Yes — dark chocolate brown; prominent silvery-white striae; male/female more silvery blue (Kedawi/Fraser's Hill)", "next": "r_democritus_democritus" },
-        { "label": "No — hair brown; dull yellowish-white striae (standard Peninsula subspecies)", "next": "r_democritus_lycaenaria" }
+        {
+          "label": "Yes — dark chocolate brown; prominent silvery-white striae; male/female more silvery blue (Kedawi/Fraser's Hill)",
+          "next": "r_democritus_democritus"
+        },
+        {
+          "label": "No — hair brown; dull yellowish-white striae (standard Peninsula subspecies)",
+          "next": "r_democritus_lycaenaria"
+        }
       ]
     },
-
     "r_democritus_democritus": {
       "type": "result",
       "id": "r_democritus_democritus",
@@ -2184,7 +2601,6 @@
       "common_name": "",
       "note": "Underside: dark chocolate-brown ground colour; markings outlined by prominent silvery-white striae and dots (more contrast than lycaenaria). Upperside: both male and female lighter and more silvery blue. Distribution: Kedawi; also recorded at Fraser's Hill."
     },
-
     "r_democritus_lycaenaria": {
       "type": "result",
       "id": "r_democritus_lycaenaria",
@@ -2193,30 +2609,42 @@
       "common_name": "",
       "note": "Standard Malay Peninsula subspecies. Underside: hair-brown ground colour; all markings outlined by dull yellowish-white striae (less contrast than democritus ssp.). Short HW tail 1.5–2.0 mm. Macular underside markings; FW spot 4 shifted distad; HW spot 6 outwardly concave; HW band widely dislocated at vein 2."
     },
-
     "q_epimuta_s1": {
       "type": "question",
       "id": "q_epimuta_s1",
       "question": "Does the hindwing have a short tail (~2.5 mm)?",
       "hint": "Two species in this group (atosia, lurida) have a short hindwing tail; epimuta is tailless.",
       "choices": [
-        { "label": "Yes — short tail present (~2.5 mm)", "next": "q_epimuta_s2" },
-        { "label": "No tail — hindwing untailed", "next": "r_epimuta_epiala" }
+        {
+          "label": "Yes — short tail present (~2.5 mm)",
+          "next": "q_epimuta_s2"
+        },
+        {
+          "label": "No tail — hindwing untailed",
+          "next": "r_epimuta_epiala"
+        }
       ]
     },
-
     "q_epimuta_s2": {
       "type": "question",
       "id": "q_epimuta_s2",
       "question": "How large and where is the male discal patch on the forewing upperside?",
       "hint": "Both tailed species have the discal patch, but differ in its size and extent. Check whether it extends into the cell and space 1b, or is confined to spaces 2–3. If the upperside is not visible, choose 'Cannot determine'.",
       "choices": [
-        { "label": "Large and circular; extends widely into cell and space 1b", "next": "r_atosia_malayana" },
-        { "label": "Smaller; almost confined to bases of spaces 2 and 3", "next": "r_lurida" },
-        { "label": "Cannot determine — upperside not visible", "next": "r_epimuta_tailed_unclear" }
+        {
+          "label": "Large and circular; extends widely into cell and space 1b",
+          "next": "r_atosia_malayana"
+        },
+        {
+          "label": "Smaller; almost confined to bases of spaces 2 and 3",
+          "next": "r_lurida"
+        },
+        {
+          "label": "Cannot determine — upperside not visible",
+          "next": "r_epimuta_tailed_unclear"
+        }
       ]
     },
-
     "r_atosia_malayana": {
       "type": "result",
       "id": "r_atosia_malayana",
@@ -2225,7 +2653,6 @@
       "common_name": "Tailed Disc Oakblue",
       "note": "HW tail ~2.5 mm. Male FW upperside: thread-width black border; discal patch large and circular, extending widely into the cell and space 1b. Underside markings contrast feebly with the ground colour."
     },
-
     "r_lurida": {
       "type": "result",
       "id": "r_lurida",
@@ -2234,7 +2661,6 @@
       "common_name": "",
       "note": "HW tail ~2.5 mm. Male FW upperside: border slightly expanding toward apex; discal patch smaller than in A. atosia, almost entirely confined to bases of spaces 2 and 3. Underside markings darker and more clearly defined than A. atosia."
     },
-
     "r_epimuta_tailed_unclear": {
       "type": "result",
       "id": "r_epimuta_tailed_unclear",
@@ -2243,7 +2669,6 @@
       "common_name": "Cannot determine to species",
       "note": "⚠ Cannot distinguish to species without male FW upperside. Both candidates have HW tail ~2.5 mm and an opaque discal patch on the FW upperside.\n\nA. atosia malayana: patch LARGE and circular, extending widely into cell and space 1b; FW border a thread. Underside markings contrast feebly.\n\nA. lurida: patch SMALLER, almost confined to bases of spaces 2–3; FW border slightly expanding toward apex. Underside markings darker and more clearly defined.\n\nInspect the upperside to confirm species."
     },
-
     "r_epimuta_epiala": {
       "type": "result",
       "id": "r_epimuta_epiala",
@@ -2252,29 +2677,38 @@
       "common_name": "",
       "note": "Tailless. Male FW upperside: large circular discal patch similar to A. atosia, but distinguished by the complete absence of a hindwing tail."
     },
-
     "q_eumolphus_s1": {
       "type": "question",
       "id": "q_eumolphus_s1",
       "question": "How long is the hindwing tail?",
       "hint": "Measure the tail at vein 2. overdijkinki has a distinctly longer tail (~5 mm) compared with all other species in the group (~3 mm).",
       "choices": [
-        { "label": "Tail ~5 mm (markedly long)", "next": "r_overdijkinki_unda" },
-        { "label": "Tail ~3 mm", "next": "q_eumolphus_blue" }
+        {
+          "label": "Tail ~5 mm (markedly long)",
+          "next": "r_overdijkinki_unda"
+        },
+        {
+          "label": "Tail ~3 mm",
+          "next": "q_eumolphus_blue"
+        }
       ]
     },
-
     "q_eumolphus_blue": {
       "type": "question",
       "id": "q_eumolphus_blue",
       "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
       "hint": "This character is visible on the underside and does not require seeing the upperside. In A. bazalus the overall underside is purplish-brown (not the usual hair-brown) and the FW apex is visibly powdered with pale violet scales.",
       "choices": [
-        { "label": "Yes — purplish-brown underside; FW apex with pale violet powder", "next": "r_bazalus_zalinda" },
-        { "label": "No — hair-brown underside; no violet powder at apex", "next": "q_eumolphus_green" }
+        {
+          "label": "Yes — purplish-brown underside; FW apex with pale violet powder",
+          "next": "r_bazalus_zalinda"
+        },
+        {
+          "label": "No — hair-brown underside; no violet powder at apex",
+          "next": "q_eumolphus_green"
+        }
       ]
     },
-
     "r_overdijkinki_unda": {
       "type": "result",
       "id": "r_overdijkinki_unda",
@@ -2283,7 +2717,6 @@
       "common_name": "",
       "note": "HW tail 5.0 mm (longest in group). Male: rich violet; FW black border 2.5 mm at tornus, expanding strongly to 7.0 mm at costa. Female: shining blue with evenly curved FW border."
     },
-
     "r_bazalus_zalinda": {
       "type": "result",
       "id": "r_bazalus_zalinda",
@@ -2292,7 +2725,6 @@
       "common_name": "",
       "note": "HW tail ~3 mm. Male: deep purple; FW black border 1.0 mm at apex decreasing to 1.5 mm at tornus. Underside purplish-brown with very dark markings; FW apex powdered with pale violet scales. Female: usually purple-blue."
     },
-
     "r_acta": {
       "type": "result",
       "id": "r_acta",
@@ -2301,7 +2733,6 @@
       "common_name": "",
       "note": "HW tail 3.0 mm. Male: light violet-blue with a regular, very narrow border. FW rounded. Underside markings faint. Female not described."
     },
-
     "r_tameanga": {
       "type": "result",
       "id": "r_tameanga",
@@ -2310,41 +2741,58 @@
       "common_name": "",
       "note": "HW tail 3.0 mm. Male: dark violet-blue; FW apex acute, termen nearly straight. Female: purple-blue with HW border ≥2.0 mm wide. Underside markings clearly defined. Bornean endemic."
     },
-
     "q_eumolphus_green": {
       "type": "question",
       "id": "q_eumolphus_green",
       "question": "What is the forewing apex shape?",
       "hint": "This can be assessed from either side. A rounded apex has a smooth, evenly curved termen. An acute apex comes to a more pointed tip, often with a straight or slightly concave termen below it.",
       "choices": [
-        { "label": "FW apex rounded; termen evenly curved", "next": "q_eumolphus_rounded" },
-        { "label": "FW apex acute; termen straight or slightly concave", "next": "q_eumolphus_acute" }
+        {
+          "label": "FW apex rounded; termen evenly curved",
+          "next": "q_eumolphus_rounded"
+        },
+        {
+          "label": "FW apex acute; termen straight or slightly concave",
+          "next": "q_eumolphus_acute"
+        }
       ]
     },
-
     "q_eumolphus_rounded": {
       "type": "question",
       "id": "q_eumolphus_rounded",
       "question": "How distinct are the underside markings?",
       "hint": "Three species share a rounded FW and ~3 mm tail. They differ in underside contrast: acta has very faint markings; horsfieldi has unusually dark, broad markings; eumolphus maxwelli is intermediate (standard contrast). If the upperside is visible: acta = blue/violet; horsfieldi = green with very broad borders reaching the cell; eumolphus = brassy green with narrow borders.",
       "choices": [
-        { "label": "Underside markings very faint or obscure", "next": "r_acta" },
-        { "label": "Underside markings very dark and broad", "next": "r_horsfieldi_basiviridis" },
-        { "label": "Underside markings standard contrast", "next": "r_eumolphus_maxwelli" }
+        {
+          "label": "Underside markings very faint or obscure",
+          "next": "r_acta"
+        },
+        {
+          "label": "Underside markings very dark and broad",
+          "next": "r_horsfieldi_basiviridis"
+        },
+        {
+          "label": "Underside markings standard contrast",
+          "next": "r_eumolphus_maxwelli"
+        }
       ]
     },
-
     "q_eumolphus_acute": {
       "type": "question",
       "id": "q_eumolphus_acute",
       "question": "Where was this specimen found?",
       "hint": "Both acute-apex species are similar; geography is the most reliable separator when the upperside is not visible. tameanga is a Bornean endemic; hellenore occurs on the Peninsula. If the upperside is visible: hellenore has a thread-width border above vein 4; tameanga has a broader border.",
       "choices": [
-        { "label": "Borneo (Sabah / Sarawak / Brunei)", "next": "r_tameanga" },
-        { "label": "Malay Peninsula (or unknown locality)", "next": "r_hellenore_siroes" }
+        {
+          "label": "Borneo (Sabah / Sarawak / Brunei)",
+          "next": "r_tameanga"
+        },
+        {
+          "label": "Malay Peninsula (or unknown locality)",
+          "next": "r_hellenore_siroes"
+        }
       ]
     },
-
     "r_horsfieldi_basiviridis": {
       "type": "result",
       "id": "r_horsfieldi_basiviridis",
@@ -2353,7 +2801,6 @@
       "common_name": "",
       "note": "Male: green with very broad black borders reaching the cell on all wings. Underside generally darker than relatives, with broad markings. Female: more purple, with slightly broader borders than A. eumolphus."
     },
-
     "r_eumolphus_maxwelli": {
       "type": "result",
       "id": "r_eumolphus_maxwelli",
@@ -2362,7 +2809,6 @@
       "common_name": "Green Oakblue",
       "note": "Male: brassy green; FW rounded; black border 2.0 mm at tornus decreasing to 1.0 mm at apex. Female: purple-blue; black border usually reaches apex of FW cell."
     },
-
     "r_hellenore_siroes": {
       "type": "result",
       "id": "r_hellenore_siroes",
@@ -2371,7 +2817,6 @@
       "common_name": "",
       "note": "Male: similar to A. eumolphus but border reduced to a thread above vein 4; FW apex more acute; termen straight or slightly concave. Female: purple-blue with narrower borders than A. eumolphus, not reaching apex of FW cell."
     },
-
     "r_fulla_intaca": {
       "type": "result",
       "id": "r_fulla_intaca",
@@ -2380,52 +2825,74 @@
       "common_name": "",
       "note": "Tailless. FW ~18 mm. Instantly recognizable by the near-total absence of underside markings: no end-cell bar on FW, postdiscal spots replaced by an obscure fascia, only a few basal spots near HW base. Male: shining violet-blue with thread-width border. Female: deeper violet with broader borders. Wide distribution: Myanmar to Sundaland, Philippines, Moluccas, New Guinea."
     },
-
     "q_ganesa_s1": {
       "type": "question",
       "id": "q_ganesa_s1",
       "question": "Are tornal green scales present on the hindwing underside?",
       "hint": "Check the tornal area (lower hind angle) of the hindwing underside for metallic green scales. Two ganesa species lack them (paraganesa, ammonides); three have them (ammon, ariel, elizabethae).",
       "choices": [
-        { "label": "No tornal green scales", "next": "q_ganesa_no_green" },
-        { "label": "Tornal green scales present", "next": "q_ganesa_with_green" }
+        {
+          "label": "No tornal green scales",
+          "next": "q_ganesa_no_green"
+        },
+        {
+          "label": "Tornal green scales present",
+          "next": "q_ganesa_with_green"
+        }
       ]
     },
-
     "q_ganesa_no_green": {
       "type": "question",
       "id": "q_ganesa_no_green",
       "question": "Is there a roughly quadrate whitish area on the hindwing underside extending from mid-cell to the costa?",
       "hint": "In paraganesa this whitish mid-cell patch is distinctive and quite obvious. ammonides lacks it; instead the gap between the outer and central spots in HW space 7 is completely whitened. paraganesa is also wholly montane on the Peninsula.",
       "choices": [
-        { "label": "Yes — roughly quadrate whitish area from mid-cell to costa", "next": "r_paraganesa_mendava" },
-        { "label": "No — gap between HW space 7 spots whitened, but no mid-cell white patch", "next": "r_ammonides_chunsu" }
+        {
+          "label": "Yes — roughly quadrate whitish area from mid-cell to costa",
+          "next": "r_paraganesa_mendava"
+        },
+        {
+          "label": "No — gap between HW space 7 spots whitened, but no mid-cell white patch",
+          "next": "r_ammonides_chunsu"
+        }
       ]
     },
-
     "q_ganesa_with_green": {
       "type": "question",
       "id": "q_ganesa_with_green",
       "question": "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?",
       "hint": "In ammon the space 6 spot is unusually elongated, reaching the base of the space. In ariel and elizabethae the spot 6 is normal (not reaching the base).",
       "choices": [
-        { "label": "Yes — HW spot 6 extended/continued to base of space", "next": "r_ammon_ammon" },
-        { "label": "No — HW spot 6 normal, not reaching base of space", "next": "q_ganesa_ariel_eliz" }
+        {
+          "label": "Yes — HW spot 6 extended/continued to base of space",
+          "next": "r_ammon_ammon"
+        },
+        {
+          "label": "No — HW spot 6 normal, not reaching base of space",
+          "next": "q_ganesa_ariel_eliz"
+        }
       ]
     },
-
     "q_ganesa_ariel_eliz": {
       "type": "question",
       "id": "q_ganesa_ariel_eliz",
       "question": "What is the male upperside appearance?",
       "hint": "⚠ Underside characters alone are insufficient to separate these two species — both have tornal green scales, normal spot 6, and spots 7 joined at their upper ends. Upperside required: ariel is bluish-purple and hardly shining with a border expanding from 1.5 mm at the tornus to 4.0 mm at the apex; elizabethae is shining deep blue with borders slightly wider throughout. If the upperside is not visible, choose 'Cannot determine'.",
       "choices": [
-        { "label": "Bluish-purple, hardly shining; FW border expanding to ~4 mm at apex", "next": "r_ariel" },
-        { "label": "Shining deep blue; borders slightly wider than ariel", "next": "r_elizabethae" },
-        { "label": "Cannot determine — upperside not visible", "next": "r_ariel_or_elizabethae" }
+        {
+          "label": "Bluish-purple, hardly shining; FW border expanding to ~4 mm at apex",
+          "next": "r_ariel"
+        },
+        {
+          "label": "Shining deep blue; borders slightly wider than ariel",
+          "next": "r_elizabethae"
+        },
+        {
+          "label": "Cannot determine — upperside not visible",
+          "next": "r_ariel_or_elizabethae"
+        }
       ]
     },
-
     "r_paraganesa_mendava": {
       "type": "result",
       "id": "r_paraganesa_mendava",
@@ -2434,7 +2901,6 @@
       "common_name": "",
       "note": "Montane species on the Malay Peninsula. Underside HW: roughly quadrate whitish area from mid-cell to costa; no tornal green scales. Upperside: bright pale blue with broad borders; male HW mostly fuscous; female with obscure whitish patch at FW end-cell."
     },
-
     "r_ammonides_chunsu": {
       "type": "result",
       "id": "r_ammonides_chunsu",
@@ -2443,7 +2909,6 @@
       "common_name": "",
       "note": "No tornal green scales. Underside HW: gap between outer and central spots in space 7 completely whitened (no quadrate mid-cell white patch). Upperside: powdery blue with very broad borders on all wings; female with dark bar at FW end-cell."
     },
-
     "r_ammon_ammon": {
       "type": "result",
       "id": "r_ammon_ammon",
@@ -2452,7 +2917,6 @@
       "common_name": "",
       "note": "Tornal green scales present. Underside HW: spot 6 extended to base of space; outer and central spots in space 7 separate, gap whitened. Upperside male: dark blue, narrow borders (1.5 mm at FW apex). Female: narrow borders (2.0 mm at FW tornus and HW)."
     },
-
     "r_ariel": {
       "type": "result",
       "id": "r_ariel",
@@ -2461,7 +2925,6 @@
       "common_name": "",
       "note": "Tornal green scales present. Underside HW: spot 6 normal; outer and central spots in space 7 joined at upper ends. ⚠ Upperside required to separate from elizabethae: male bluish-purple, hardly shining; FW border 1.5 mm at tornus expanding to 4.0 mm at apex. Female: bluer shade with broader borders."
     },
-
     "r_elizabethae": {
       "type": "result",
       "id": "r_elizabethae",
@@ -2470,7 +2933,6 @@
       "common_name": "",
       "note": "Tornal green scales present. Underside HW: spot 6 normal; outer and central spots in space 7 joined at upper ends. ⚠ Upperside required to separate from ariel: male shining deep blue with borders slightly wider than A. ariel; female similar to male (not bluer with broader borders as in ariel female)."
     },
-
     "r_ariel_or_elizabethae": {
       "type": "result",
       "id": "r_ariel_or_elizabethae",
@@ -2479,7 +2941,6 @@
       "common_name": "Cannot determine to species",
       "note": "⚠ Cannot distinguish to species without male FW upperside. Both candidates share: tornal green scales, HW spot 6 normal, outer and central spots in space 7 joined at upper ends.\n\nA. ariel: male BLUISH-PURPLE, hardly shining; FW border 1.5 mm at tornus expanding to 4.0 mm at apex. Female bluer with broader borders than male.\n\nA. elizabethae: male SHINING DEEP BLUE; borders slightly wider than ariel throughout. Female similar to male.\n\nInspect the upperside to confirm species."
     },
-
     "r_hypomuta_hypomuta": {
       "type": "result",
       "id": "r_hypomuta_hypomuta",
@@ -2488,7 +2949,6 @@
       "common_name": "",
       "note": "Tailless. FW ~19 mm. Key character: small spot at the extreme base of HW space 6 on the underside (usually present in Malayan specimens; often absent in Bornean/Sumatran material). Similar to amphimuta group but separated by this basal spot. Male: deep shining violet-blue with very narrow borders. Female: more purple-blue with broader borders."
     },
-
     "r_ijanensis": {
       "type": "result",
       "id": "r_ijanensis",
@@ -2497,7 +2957,6 @@
       "common_name": "",
       "note": "Tailed. FW ~23 mm. HW cell about half wing length or longer. Underside: markings rather variegated; whitish streak from base of dorsum to apex on HW. Male: pale blue; FW costal border runs narrowly along costa to wing base (unique). Female: same but costal border much broader. More common in Kedah than elsewhere in the Peninsula."
     },
-
     "r_inornata_inornata": {
       "type": "result",
       "id": "r_inornata_inornata",
@@ -2506,7 +2965,6 @@
       "common_name": "",
       "note": "Tailless. FW ~21 mm. Very rounded HW tornus. Underside: no tornal green scales; HW postdiscal spot 6 placed immediately below spot 7. Male: bright violet-blue with border reduced to a thread. Female: bluer than male with exceptionally narrow borders (0.5 mm on HW)."
     },
-
     "r_allata_pandora": {
       "type": "result",
       "id": "r_allata_pandora",
@@ -2515,29 +2973,38 @@
       "common_name": "",
       "note": "Tailed at vein 2. FW ~22 mm. FW apex acute; termen straight between veins 2–4. Underside postdiscal band sinuous or only slightly dislocated at vein 4; HW postdiscal spots narrow, regular, rectangular. Male: dark purple; FW border 0.5 mm at tornus expanding to 1.5 mm at apex. Female: dark shining blue. Rare; recorded from NE India to Neomalaya and Philippines."
     },
-
     "q_rama_s1": {
       "type": "question",
       "id": "q_rama_s1",
       "question": "Does the butterfly have a hindwing tail?",
       "hint": "One of the three Malayan rama species (arvina) is tailless. The other two are tailed with different tail lengths.",
       "choices": [
-        { "label": "Tailless", "next": "r_arvina_adalitas" },
-        { "label": "Tailed", "next": "q_rama_s2" }
+        {
+          "label": "Tailless",
+          "next": "r_arvina_adalitas"
+        },
+        {
+          "label": "Tailed",
+          "next": "q_rama_s2"
+        }
       ]
     },
-
     "q_rama_s2": {
       "type": "question",
       "id": "q_rama_s2",
       "question": "How long is the hindwing tail, and are tornal green scales present?",
       "hint": "paralea has a longer tail (2.5 mm), pale purplish-brown underside, and no or vestigial tornal green scales; it is montane on the Peninsula. buddha has a very short tail (~1.0 mm), hair-brown underside, and distinct tornal green scales.",
       "choices": [
-        { "label": "Tail ~2.5 mm; underside pale purplish-brown; no/vestigial tornal green scales (montane)", "next": "r_paralea" },
-        { "label": "Tail ~1.0 mm (very short); underside hair-brown; tornal green scales present", "next": "r_buddha_cooperi" }
+        {
+          "label": "Tail ~2.5 mm; underside pale purplish-brown; no/vestigial tornal green scales (montane)",
+          "next": "r_paralea"
+        },
+        {
+          "label": "Tail ~1.0 mm (very short); underside hair-brown; tornal green scales present",
+          "next": "r_buddha_cooperi"
+        }
       ]
     },
-
     "r_paralea": {
       "type": "result",
       "id": "r_paralea",
@@ -2546,7 +3013,6 @@
       "common_name": "",
       "note": "Tail 2.5 mm. Underside ground colour pale purplish-brown; tornal green scales absent or vestigial. Male: violet-blue; FW border 2.0 mm at mid-costa, slightly increasing toward tornus and apex; HW border 2.5 mm. Montane on the Malay Peninsula."
     },
-
     "r_buddha_cooperi": {
       "type": "result",
       "id": "r_buddha_cooperi",
@@ -2555,7 +3021,6 @@
       "common_name": "",
       "note": "Tail very short ~1.0 mm. Underside ground colour hair-brown; tornal green scales present and distinct. Male: shining violet-blue; black borders 1.0 mm wide. Female: may resemble female A. aurea but differs in narrower HW border and thinner tail."
     },
-
     "r_arvina_adalitas": {
       "type": "result",
       "id": "r_arvina_adalitas",
@@ -2564,7 +3029,6 @@
       "common_name": "",
       "note": "Tailless. Underside ground colour hair-brown; tornal green scales present. Male: darker blue than A. buddha; black border reduced to a thread. Female: purple-blue."
     },
-
     "r_vihara": {
       "type": "result",
       "id": "r_vihara",
@@ -2573,7 +3037,6 @@
       "common_name": "",
       "note": "Tailed. FW 20–22 mm. FW underside spot 4 in line with spots 5–6 (distinguishes from eumolphus group where spot 4 is out of line); no costal spot in FW space 10. HW spot 6 rounded, more or less separated; HW band only partially dislocated at vein 2. Male: dark violet-blue; border slightly less than 1.0 mm. Female: bluer shade. Two ssp.: vihara on the peninsular mainland; hirava on Langkawi."
     },
-
     "g_needs_more_info": {
       "type": "group",
       "id": "g_needs_more_info",
@@ -2584,7 +3047,62 @@
         "Consider genitalia dissection for difficult cases",
         "Refer to specialised literature"
       ]
+    },
+    "r_amph_thread_unclear": {
+      "type": "result",
+      "id": "r_amph_thread_unclear",
+      "taxon_id": null,
+      "name": "Amphimuta group — moolaiana or alica (unresolved)",
+      "common_name": "Cannot determine to species",
+      "note": "⚠ Cannot distinguish to species without male/female upperside.\n\nA. moolaiana yajuna (Peninsula): male shining violet-blue; female blue extends to HW termen. FW 18–21 mm.\n\nA. alica (Borneo — Sabah/Sarawak): male dark dull purple; female blue does not reach HW termen. FW 19–22 mm.\n\nGeography is the most reliable guide: Peninsula → moolaiana; Borneo → alica. Inspect the upperside to confirm species."
+    },
+    "r_amph_borneo_unclear": {
+      "type": "result",
+      "id": "r_amph_borneo_unclear",
+      "taxon_id": null,
+      "name": "Amphimuta group — dajagaka or baluensis (unresolved)",
+      "common_name": "Cannot determine to species",
+      "note": "⚠ Cannot distinguish to species without female upperside (border thickness and venation).\n\nA. dajagaka (Borneo): FW 21–25 mm (larger); female with thick black borders and distinctly darker venation on upperside.\n\nA. baluensis (Borneo): FW 18–20 mm (smaller); female without thick borders or darker venation; no white spot in HW space 1a cilia.\n\nForewing size is the most accessible separator. Inspect female upperside to confirm species."
+    },
+    "r_muta_all_unclear": {
+      "type": "result",
+      "id": "r_muta_all_unclear",
+      "taxon_id": null,
+      "name": "Muta subgroup — tropaea / moorei / muta (unresolved)",
+      "common_name": "Cannot determine to species",
+      "note": "⚠ Cannot distinguish to species without male upperside colour and size.\n\nA. tropaea: notably small; male duller bluish-purple. Underside markings more quadrate.\n\nA. moorei busa: larger (FW 16–19 mm); male bright blue; FW and HW same shade of blue in all lights.\n\nA. muta maranda: larger (FW 16–19 mm); male bright blue; FW dark bright blue, HW slightly paler and more glistening; border slightly broader.\n\nInspect the male upperside to confirm species."
+    },
+    "r_muta_s2_unclear": {
+      "type": "result",
+      "id": "r_muta_s2_unclear",
+      "taxon_id": null,
+      "name": "Muta subgroup — moorei or muta maranda (unresolved)",
+      "common_name": "Cannot determine to species",
+      "note": "⚠ Cannot distinguish to species without male upperside.\n\nA. moorei busa: FW and HW exactly the same shade of bright blue in all lights; female more purple with broader borders.\n\nA. muta maranda: FW dark bright blue, HW slightly paler and more glistening; borders slightly broader than moorei.\n\nInspect the male upperside in multiple light angles to confirm species."
+    },
+    "r_camdeo_incomplete_unclear": {
+      "type": "result",
+      "id": "r_camdeo_incomplete_unclear",
+      "taxon_id": null,
+      "name": "Camdeo group — belphoebe or johoreana (unresolved)",
+      "common_name": "Cannot determine to species",
+      "note": "⚠ Cannot distinguish to species without upperside and tail inspection.\n\nA. belphoebe cowani: tailless; broad dark borders; pale violet-blue; both sexes alike.\n\nA. johoreana johoreana: short tail present; much darker violet-blue.\n\nCheck hindwing for tail presence/absence to confirm species."
+    },
+    "r_alea_s6_unclear": {
+      "type": "result",
+      "id": "r_alea_s6_unclear",
+      "taxon_id": null,
+      "name": "Alea subgroup — phaenops / normani / sublustris (unresolved)",
+      "common_name": "Cannot determine to species",
+      "note": "⚠ Cannot determine to species without male border pattern.\n\nA. phaenops sandakani: male border expands notably toward apex; HW spot 6 does not overlap end-cell bar.\n\nA. normani: male less shining, more violet than blue; borders narrow. ⚠ Requires genitalia dissection to confirm vs sublustris.\n\nA. sublustris ridleyi: bright glistening blue; borders under 0.5 mm. ⚠ Requires genitalia dissection to confirm vs normani.\n\nInspect the male upperside border width and sheen to narrow further."
+    },
+    "r_alea_glist_unclear": {
+      "type": "result",
+      "id": "r_alea_glist_unclear",
+      "taxon_id": null,
+      "name": "Alea subgroup — normani or sublustris (unresolved)",
+      "common_name": "Cannot determine to species",
+      "note": "⚠ Cannot distinguish to species without male upperside sheen and colour.\n\nA. normani: male less shining, more violet than bright blue.\n\nA. sublustris ridleyi (Ridley's Oakblue): male bright glistening blue; borders under 0.5 mm.\n\n⚠ Note: both species may also require male genitalia dissection for definitive identification. Inspect male upperside sheen to differentiate."
     }
-
   }
 }
