@@ -268,10 +268,11 @@
       "type": "question",
       "id": "q_tailless_epimuta",
       "question": "Does the male have a distinctly differently-coloured or more opaque discal patch on the forewing upperside?",
-      "hint": "In the epimuta group, males have a discal patch on the FW upperside that is noticeably more opaque or differently textured than the surrounding shining blue. On the underside, HW postdiscal spot 6 is placed midway between spot 5 and the end-cell bar.",
+      "hint": "In the epimuta group, males have a discal patch on the FW upperside that is noticeably more opaque or differently textured than the surrounding shining blue. You can also check the underside: HW postdiscal spot 6 is placed midway between spot 5 and the end-cell bar (distinctive for this group). If the upperside is not visible, choose 'Cannot determine'.",
       "choices": [
         { "label": "Yes — male FW upperside has opaque or differently-coloured discal patch", "next": "g_epimuta" },
-        { "label": "No", "next": "q_tailless_agesilaus" }
+        { "label": "No", "next": "q_tailless_agesilaus" },
+        { "label": "Cannot determine — upperside not visible", "next": "g_epimuta" }
       ]
     },
 
@@ -2208,10 +2209,11 @@
       "type": "question",
       "id": "q_epimuta_s2",
       "question": "How large and where is the male discal patch on the forewing upperside?",
-      "hint": "Both tailed species have the discal patch, but differ in its size and extent. Check whether it extends into the cell and space 1b, or is confined to spaces 2–3.",
+      "hint": "Both tailed species have the discal patch, but differ in its size and extent. Check whether it extends into the cell and space 1b, or is confined to spaces 2–3. If the upperside is not visible, choose 'Cannot determine'.",
       "choices": [
         { "label": "Large and circular; extends widely into cell and space 1b", "next": "r_atosia_malayana" },
-        { "label": "Smaller; almost confined to bases of spaces 2 and 3", "next": "r_lurida" }
+        { "label": "Smaller; almost confined to bases of spaces 2 and 3", "next": "r_lurida" },
+        { "label": "Cannot determine — upperside not visible", "next": "r_epimuta_tailed_unclear" }
       ]
     },
 
@@ -2231,6 +2233,15 @@
       "name": "Arhopala lurida",
       "common_name": "",
       "note": "HW tail ~2.5 mm. Male FW upperside: border slightly expanding toward apex; discal patch smaller than in A. atosia, almost entirely confined to bases of spaces 2 and 3. Underside markings darker and more clearly defined than A. atosia."
+    },
+
+    "r_epimuta_tailed_unclear": {
+      "type": "result",
+      "id": "r_epimuta_tailed_unclear",
+      "taxon_id": null,
+      "name": "Epimuta group — tailed species (unresolved)",
+      "common_name": "Cannot determine to species",
+      "note": "⚠ Cannot distinguish to species without male FW upperside. Both candidates have HW tail ~2.5 mm and an opaque discal patch on the FW upperside.\n\nA. atosia malayana: patch LARGE and circular, extending widely into cell and space 1b; FW border a thread. Underside markings contrast feebly.\n\nA. lurida: patch SMALLER, almost confined to bases of spaces 2–3; FW border slightly expanding toward apex. Underside markings darker and more clearly defined.\n\nInspect the upperside to confirm species."
     },
 
     "r_epimuta_epiala": {
@@ -2406,11 +2417,12 @@
     "q_ganesa_ariel_eliz": {
       "type": "question",
       "id": "q_ganesa_ariel_eliz",
-      "question": "What is the male upperside appearance? (If visible)",
-      "hint": "⚠ Underside characters alone are insufficient to separate these two species reliably — both have tornal green scales, normal spot 6, and spots 7 joined at their upper ends. Upperside required for confident identification: ariel is bluish-purple and hardly shining with a border expanding from 1.5 mm at the tornus to 4.0 mm at the apex; elizabethae is shining deep blue with borders slightly wider throughout.",
+      "question": "What is the male upperside appearance?",
+      "hint": "⚠ Underside characters alone are insufficient to separate these two species — both have tornal green scales, normal spot 6, and spots 7 joined at their upper ends. Upperside required: ariel is bluish-purple and hardly shining with a border expanding from 1.5 mm at the tornus to 4.0 mm at the apex; elizabethae is shining deep blue with borders slightly wider throughout. If the upperside is not visible, choose 'Cannot determine'.",
       "choices": [
         { "label": "Bluish-purple, hardly shining; FW border expanding to ~4 mm at apex", "next": "r_ariel" },
-        { "label": "Shining deep blue; borders slightly wider than ariel", "next": "r_elizabethae" }
+        { "label": "Shining deep blue; borders slightly wider than ariel", "next": "r_elizabethae" },
+        { "label": "Cannot determine — upperside not visible", "next": "r_ariel_or_elizabethae" }
       ]
     },
 
@@ -2457,6 +2469,15 @@
       "name": "Arhopala elizabethae",
       "common_name": "",
       "note": "Tornal green scales present. Underside HW: spot 6 normal; outer and central spots in space 7 joined at upper ends. ⚠ Upperside required to separate from ariel: male shining deep blue with borders slightly wider than A. ariel; female similar to male (not bluer with broader borders as in ariel female)."
+    },
+
+    "r_ariel_or_elizabethae": {
+      "type": "result",
+      "id": "r_ariel_or_elizabethae",
+      "taxon_id": null,
+      "name": "Ganesa group — ariel or elizabethae (unresolved)",
+      "common_name": "Cannot determine to species",
+      "note": "⚠ Cannot distinguish to species without male FW upperside. Both candidates share: tornal green scales, HW spot 6 normal, outer and central spots in space 7 joined at upper ends.\n\nA. ariel: male BLUISH-PURPLE, hardly shining; FW border 1.5 mm at tornus expanding to 4.0 mm at apex. Female bluer with broader borders than male.\n\nA. elizabethae: male SHINING DEEP BLUE; borders slightly wider than ariel throughout. Female similar to male.\n\nInspect the upperside to confirm species."
     },
 
     "r_hypomuta_hypomuta": {
