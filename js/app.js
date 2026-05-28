@@ -422,8 +422,15 @@ function buildPathDisplay(paths) {
   if (!paths || paths.length === 0) return '';
 
   // Prefer the canonical path (fewest "Cannot determine" choices).
-  // Skip-option permutations inflate the count but aren't useful to show.
-  const skipCount = p => p.filter(s => s.choice && s.choice.startsWith('Cannot determine')).length;
+  // Also penalise contradictory paths: starting "Yes — tailed" but later
+  // selecting a "Tailless" choice (e.g. reaching kurzi via the tailed branch).
+  const skipCount = p => {
+    let score = p.filter(s => s.choice && s.choice.startsWith('Cannot determine')).length;
+    const startsTailed = p.length > 0 && p[0].choice === 'Yes — hindwing is tailed';
+    const hasContradiction = p.some(s => s.choice && /^Tailless[;,\s]/.test(s.choice));
+    if (startsTailed && hasContradiction) score += 100;
+    return score;
+  };
   const sorted = [...paths].sort((a, b) => skipCount(a) - skipCount(b));
   const canonical = sorted[0];
   const skipVariants = paths.length - 1;

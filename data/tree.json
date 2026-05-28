@@ -461,6 +461,22 @@
         },
         {
           "label": "No",
+          "next": "q_tailless_echelon"
+        }
+      ]
+    },
+    "q_tailless_echelon": {
+      "type": "question",
+      "id": "q_tailless_echelon",
+      "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
+      "hint": "The amphimuta group (muta, perimuta, kurzi, and amphimuta subgroups) is defined by HW spots 5, 6, and 7 having their centres in a straight line — an 'echelon'. Most amphimuta-group species are tailless. If present, this character routes to a subgroup choice.",
+      "choices": [
+        {
+          "label": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)",
+          "next": "q_amphimuta_sub"
+        },
+        {
+          "label": "No — spots not in echelon",
           "next": "g_needs_more_info"
         }
       ]
