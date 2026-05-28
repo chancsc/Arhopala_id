@@ -15,6 +15,30 @@
     <span>Loading identification key…</span>
   </div>
 
+  <!-- Persistent menu overlay — lives outside #app so render() never wipes it -->
+  <div id="menu-overlay" class="menu-overlay" role="dialog" aria-modal="true" aria-label="Species Search">
+    <div class="menu-panel">
+      <div class="menu-header">
+        <button id="back-to-search" class="back-to-search" style="display:none" aria-label="Back to search results">
+          ← Results
+        </button>
+        <h2 class="menu-title">Species Search</h2>
+        <button id="menu-close" class="menu-close" aria-label="Close menu">✕</button>
+      </div>
+
+      <div id="search-pane">
+        <div class="search-box">
+          <input id="search-input" type="search" placeholder="Search by name…"
+                 autocomplete="off" spellcheck="false" aria-label="Search species">
+          <p id="search-count" class="search-count"></p>
+        </div>
+        <div id="search-results" class="search-results" role="list"></div>
+      </div>
+
+      <div id="species-detail" class="species-detail" style="display:none"></div>
+    </div>
+  </div>
+
   <div id="app" style="display:none;" role="main"></div>
 
   <noscript>

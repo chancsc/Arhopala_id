@@ -423,3 +423,203 @@ body {
   .btn-inat { flex: 1; }
   .btn-restart { flex: 0 0 auto; width: auto; padding: 0.6rem 1.25rem; }
 }
+
+/* ===== Header row with hamburger ===== */
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.header-titles { flex: 1; }
+
+.menu-btn {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.35rem;
+  color: var(--primary);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition);
+}
+
+.menu-btn:hover { background: var(--border); }
+
+/* ===== Menu overlay & panel ===== */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.22s ease;
+}
+
+.menu-overlay.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu-panel {
+  position: absolute;
+  top: 0; right: 0;
+  width: min(92vw, 420px);
+  height: 100%;
+  background: var(--card);
+  box-shadow: -4px 0 28px rgba(0, 0, 0, 0.18);
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  transition: transform 0.25s ease;
+  overflow: hidden;
+}
+
+.menu-overlay.open .menu-panel {
+  transform: translateX(0);
+}
+
+/* ===== Menu header bar ===== */
+.menu-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1rem 0.9rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+  background: var(--card);
+}
+
+.menu-title {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+  white-space: nowrap;
+}
+
+.menu-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: var(--text-muted);
+  padding: 0.25rem 0.35rem;
+  border-radius: 4px;
+  transition: color var(--transition), background var(--transition);
+}
+
+.menu-close:hover { color: var(--text); background: var(--border); }
+
+.back-to-search {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--primary);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.2rem 0;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.back-to-search:hover { text-decoration: underline; }
+
+/* ===== Search pane ===== */
+#search-pane {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.search-box {
+  padding: 0.7rem 1rem 0.55rem;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.55rem 0.85rem;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: var(--bg);
+  color: var(--text);
+  outline: none;
+  transition: border-color var(--transition);
+}
+
+.search-box input:focus { border-color: var(--primary); }
+
+.search-count {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 0.3rem;
+  padding-left: 0.1rem;
+}
+
+/* ===== Search results list ===== */
+.search-results {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.search-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #f0f0ee;
+  padding: 0.65rem 1.25rem;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.search-item:hover { background: #f5f9f4; }
+.search-item:active { background: var(--border); }
+
+.search-item-sci {
+  display: block;
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.search-item-common {
+  display: block;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  margin-top: 0.08rem;
+  font-style: normal;
+}
+
+.search-empty {
+  padding: 1.5rem 1.25rem;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+/* ===== Species detail inside menu ===== */
+.species-detail {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 1.25rem;
+}
+
+.species-detail .result-badge { margin-bottom: 0.6rem; }
+.species-detail .species-name { margin-bottom: 0.6rem; }
+.species-detail .id-note { font-size: 0.83rem; margin-bottom: 1rem; }
+.species-detail .photo-gallery { margin-bottom: 1rem; }
+.species-detail .btn-inat { margin-top: 0; }
