@@ -16,11 +16,11 @@
     "q_tailed_vein3": {
       "type": "question",
       "id": "q_tailed_vein3",
-      "question": "Is the tail short, white-tipped, and located at vein 3 (one vein forward from the usual vein 2)?",
-      "hint": "The abseus group has a distinctively short, white-tipped tail at vein 3, not the usual vein 2. Also check for a spot at the base of hindwing space 1a.",
+      "question": "Is the tail short, white-tipped, and located at vein 3?",
+      "hint": "In the vast majority of Arhopala the tail (when present) is at vein 2. Only 3 species in the entire genus have a tail at vein 3 — all in the abseus group: A. abseus abseus (small, deep violet-blue male), A. anella (larger, very wide fuscous borders), and A. alesia sacharja (Langkawi; also NE India to Vietnam). The vein 3 tail is one vein closer to the forewing than usual, and is distinctively short and white-tipped. Also check for a spot at the base of hindwing space 1a.",
       "choices": [
-        { "label": "Yes — white-tipped tail at vein 3, spot at base of HW space 1a", "next": "g_abseus" },
-        { "label": "No — tail at the usual position (vein 2)", "next": "q_tailed_long_tail" }
+        { "label": "Yes — short white-tipped tail at vein 3 (only 3 spp. in entire genus)", "next": "g_abseus" },
+        { "label": "No — tail at the usual vein 2, or no tail at all", "next": "q_tailed_long_tail" }
       ]
     },
 
@@ -780,16 +780,11 @@
       "type": "question",
       "id": "q_abseus_species",
       "question": "What is the underside ground colour and are the markings darkened?",
-      "hint": "The key distinction is the intensity of the underside markings and the presence or absence of a costal spot in forewing space 12.",
+      "hint": "Three species share the vein 3 white-tipped tail. abseus has strongly darkened (blackish-brown) underside markings and a costal spot in FW space 12. anella is larger with hair-brown underside and no spot in FW space 12. alesia sacharja (recorded in Langkawi; also NE India to Vietnam) is a late Malayan record — detailed underside characters for separation from anella are not fully documented; use distribution as a supplementary guide.",
       "choices": [
-        {
-          "label": "Markings much darkened (blackish brown); costal spot present in FW space 12",
-          "next": "r_abseus_abseus"
-        },
-        {
-          "label": "Ground colour hair brown; markings not prominently darkened; no spot in FW space 12",
-          "next": "r_anella"
-        }
+        { "label": "Markings much darkened (blackish brown); costal spot present in FW space 12", "next": "r_abseus_abseus" },
+        { "label": "Underside hair brown; no spot in FW space 12; male with very wide fuscous borders on upperside", "next": "r_anella" },
+        { "label": "Langkawi (or NE India / Myanmar / Thailand / Vietnam range)", "next": "r_alesia_sacharja" }
       ]
     },
 
@@ -808,7 +803,16 @@
       "taxon_id": null,
       "name": "Arhopala anella",
       "common_name": "",
-      "note": "Underside ground colour hair brown; markings not prominently darkened. Forewing underside lacks a spot in space 12. Male upperside: blue restricted to basal halves of FW spaces 1b, 2, and 3 and the lower half of the cell; HW blue confined almost entirely to the cell. Female: relatively narrow black borders."
+      "note": "Considerably larger than A. abseus. Underside ground colour hair brown; markings not prominently darkened; no spot in FW space 12. Male upperside: blue restricted to basal halves of FW spaces 1b, 2, and 3 and the lower half of the cell; HW blue confined almost entirely to the cell; very wide fuscous borders. Female: relatively narrow black borders."
+    },
+
+    "r_alesia_sacharja": {
+      "type": "result",
+      "id": "r_alesia_sacharja",
+      "taxon_id": null,
+      "name": "Arhopala alesia sacharja",
+      "common_name": "",
+      "note": "Short white-tipped tail at vein 3 (abseus group). First recorded in Malaysia from Langkawi in 1994. Also distributed across NE India, Myanmar, Thailand, Laos, and Vietnam. ⚠ Detailed underside characters to separate from A. anella are not fully documented in Malayan material — distribution is currently the most reliable field indicator for this subspecies."
     },
 
     "g_aedias": {
