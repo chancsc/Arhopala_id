@@ -16,23 +16,87 @@
   </div>
 
   <!-- Persistent menu overlay — lives outside #app so render() never wipes it -->
-  <div id="menu-overlay" class="menu-overlay" role="dialog" aria-modal="true" aria-label="Species Search">
+  <div id="menu-overlay" class="menu-overlay" role="dialog" aria-modal="true" aria-label="Menu">
     <div class="menu-panel">
+
       <div class="menu-header">
         <button id="back-to-search" class="back-to-search" style="display:none" aria-label="Back to search results">
           ← Results
         </button>
-        <h2 class="menu-title">Species Search</h2>
+        <h2 class="menu-title" id="menu-title">Species Search</h2>
         <button id="menu-close" class="menu-close" aria-label="Close menu">✕</button>
       </div>
 
-      <div id="search-pane">
+      <div class="menu-tabs" role="tablist">
+        <button class="menu-tab active" id="tab-search" role="tab" aria-selected="true" aria-controls="search-pane">Species</button>
+        <button class="menu-tab" id="tab-about" role="tab" aria-selected="false" aria-controls="about-pane">About</button>
+      </div>
+
+      <div id="search-pane" role="tabpanel" aria-labelledby="tab-search">
         <div class="search-box">
           <input id="search-input" type="search" placeholder="Search by name…"
                  autocomplete="off" spellcheck="false" aria-label="Search species">
           <p id="search-count" class="search-count"></p>
         </div>
         <div id="search-results" class="search-results" role="list"></div>
+      </div>
+
+      <div id="about-pane" class="about-pane" role="tabpanel" aria-labelledby="tab-about" style="display:none">
+        <div class="about-content">
+
+          <div class="about-hero">
+            <div class="about-hero-icon" aria-hidden="true">
+              <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+                <ellipse cx="14" cy="20" rx="11" ry="8" fill="#d4e2d0" opacity="0.9"/>
+                <ellipse cx="38" cy="20" rx="11" ry="8" fill="#d4e2d0" opacity="0.9"/>
+                <ellipse cx="15" cy="34" rx="8" ry="7" fill="#d4e2d0" opacity="0.65"/>
+                <ellipse cx="37" cy="34" rx="8" ry="7" fill="#d4e2d0" opacity="0.65"/>
+                <line x1="26" y1="13" x2="26" y2="42" stroke="#2d5a27" stroke-width="2" stroke-linecap="round"/>
+                <path d="M23 14 Q26 11 29 14" stroke="#2d5a27" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+              </svg>
+            </div>
+            <h3 class="about-app-name">Arhopala ID</h3>
+            <p class="about-tagline">Interactive identification key for Malaysian Oak Blue butterflies</p>
+          </div>
+
+          <section class="about-section">
+            <h4 class="about-section-title">What is this app?</h4>
+            <p>This tool walks you through a step-by-step morphological key to identify species in the genus <em>Arhopala</em> — the Oak Blues — recorded from Peninsular Malaysia and Borneo. Answer the questions about the butterfly in front of you; the key will narrow down to a species or group.</p>
+          </section>
+
+          <section class="about-section">
+            <h4 class="about-section-title">How to use it</h4>
+            <ol class="about-steps">
+              <li>Start from the first question card and select the best matching character.</li>
+              <li>Use the <strong>Back</strong> button to correct a previous choice.</li>
+              <li>If you cannot observe the required character, select <strong>Cannot determine</strong> — the key will route you to the best available result.</li>
+              <li>A result card may identify a single species or flag an unresolved pair requiring additional observation (e.g. upperside colour or genitalia).</li>
+              <li>Tap <strong>Start Over</strong> at any time to reset.</li>
+            </ol>
+          </section>
+
+          <section class="about-section">
+            <h4 class="about-section-title">Coverage</h4>
+            <p>The key covers the common and documented <em>Arhopala</em> species from Peninsular Malaysia and Borneo (Sabah &amp; Sarawak). Characters used are primarily from the underside wing pattern and morphology, supplemented by geography where species are allopatric.</p>
+            <p class="about-note">⚠ Some species pairs cannot be reliably distinguished without observing the male upperside or performing genitalia dissection; the key will flag these cases explicitly.</p>
+          </section>
+
+          <section class="about-section">
+            <h4 class="about-section-title">Species search</h4>
+            <p>Switch to the <strong>Species</strong> tab to browse or search all taxa covered by this key. Each species page shows identification characters, photos (from iNaturalist), and the complete decision path that leads to it.</p>
+          </section>
+
+          <section class="about-section">
+            <h4 class="about-section-title">Data &amp; sources</h4>
+            <p>The identification key is based on published morphological literature for Malaysian <em>Arhopala</em>. Species occurrence data and photographs are sourced from <a class="about-link" href="https://www.inaturalist.org/taxa/47224" target="_blank" rel="noopener noreferrer">iNaturalist</a> (CC-licensed).</p>
+          </section>
+
+          <section class="about-section">
+            <h4 class="about-section-title">Feedback</h4>
+            <p>Found an error or missing species? Please open an issue on <a class="about-link" href="https://github.com/chancsc/Arhopala_id" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
+          </section>
+
+        </div>
       </div>
 
       <div id="species-detail" class="species-detail" style="display:none"></div>

@@ -623,3 +623,230 @@ body {
 .species-detail .id-note { font-size: 0.83rem; margin-bottom: 1rem; }
 .species-detail .photo-gallery { margin-bottom: 1rem; }
 .species-detail .btn-inat { margin-top: 0; }
+
+/* ===== Menu tabs ===== */
+.menu-tabs {
+  display: flex;
+  border-bottom: 2px solid var(--border);
+  background: var(--card);
+  flex-shrink: 0;
+}
+
+.menu-tab {
+  flex: 1;
+  padding: 0.6rem 0.5rem;
+  background: none;
+  border: none;
+  border-bottom: 2.5px solid transparent;
+  margin-bottom: -2px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color var(--transition), border-color var(--transition);
+}
+
+.menu-tab:hover { color: var(--primary); }
+
+.menu-tab.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+  font-weight: 600;
+}
+
+/* ===== About pane ===== */
+.about-pane {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.about-content {
+  padding: 1.25rem 1.25rem 2rem;
+}
+
+.about-hero {
+  text-align: center;
+  padding: 1rem 0 1.25rem;
+}
+
+.about-hero-icon {
+  margin-bottom: 0.5rem;
+}
+
+.about-app-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.2rem;
+}
+
+.about-tagline {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.about-section {
+  margin-bottom: 1.2rem;
+}
+
+.about-section-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--primary);
+  margin-bottom: 0.4rem;
+}
+
+.about-section p {
+  font-size: 0.87rem;
+  line-height: 1.55;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+}
+
+.about-section p em { font-style: italic; }
+
+.about-note {
+  font-size: 0.8rem !important;
+  color: var(--text-muted) !important;
+  background: #fdf8ef;
+  border-left: 3px solid var(--accent);
+  padding: 0.4rem 0.6rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.about-steps {
+  padding-left: 1.3rem;
+  font-size: 0.87rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.about-steps li { margin-bottom: 0.35rem; }
+
+.about-link {
+  color: var(--primary);
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  text-underline-offset: 2px;
+}
+
+.about-link:hover { text-decoration-color: var(--primary); }
+
+/* ===== Decision path display ===== */
+.path-details {
+  margin: 0.6rem 0 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.path-summary {
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--primary);
+  background: #f0f6ee;
+  user-select: none;
+  list-style: none;
+}
+
+.path-summary::-webkit-details-marker { display: none; }
+
+.path-summary::before {
+  content: '▶ ';
+  font-size: 0.6rem;
+  vertical-align: 1px;
+}
+
+details[open] .path-summary::before { content: '▼ '; }
+
+.path-content {
+  padding: 0.65rem 0.75rem 0.5rem;
+  background: var(--card);
+}
+
+.path-steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step-cnt;
+}
+
+.path-step {
+  counter-increment: step-cnt;
+  margin-bottom: 0.55rem;
+  padding-left: 1.4rem;
+  position: relative;
+}
+
+.path-step::before {
+  content: counter(step-cnt);
+  position: absolute;
+  left: 0;
+  top: 0.05rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: var(--border);
+  width: 1.05rem;
+  height: 1.05rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.path-q {
+  display: block;
+  font-size: 0.77rem;
+  color: #555;
+  line-height: 1.35;
+}
+
+.path-a {
+  display: block;
+  font-size: 0.77rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin-top: 0.1rem;
+}
+
+.path-step--group {
+  margin-bottom: 0.4rem;
+  padding-left: 0;
+  counter-increment: none;
+}
+
+.path-step--group::before { display: none; }
+
+.path-group {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-style: italic;
+  color: var(--accent);
+  background: #fdf8ef;
+  border: 1px solid #f0d89a;
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+}
+
+.path-divider {
+  border: none;
+  border-top: 1px dashed var(--border);
+  margin: 0.6rem 0;
+}
+
+.path-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin-bottom: 0.3rem;
+}

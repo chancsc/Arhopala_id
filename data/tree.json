@@ -2020,20 +2020,16 @@
     "q_camdeo_incomplete": {
       "type": "question",
       "id": "q_camdeo_incomplete",
-      "question": "Is the specimen tailless, with broad dark borders and a pale violet-blue upperside (both sexes alike)?",
-      "hint": "A. belphoebe cowani is tailless; both sexes have broad dark borders and pale violet-blue upperside. A. johoreana johoreana has a short tail and is a much darker violet-blue.",
+      "question": "Is the hindwing tail completely absent (tailless)?",
+      "hint": "Tail presence alone separates these two species — no upperside needed. A. belphoebe cowani is completely tailless; both sexes have broad dark borders and pale violet-blue upperside. A. johoreana johoreana has a short hindwing tail and is much darker violet-blue.",
       "choices": [
         {
-          "label": "Yes — tailless; broad dark borders; pale violet-blue; both sexes alike",
+          "label": "Yes — tailless (no HW tail)",
           "next": "r_belphoebe_cowani"
         },
         {
-          "label": "No — short tail present; much darker violet-blue",
+          "label": "No — short HW tail present",
           "next": "r_johoreana_johoreana"
-        },
-        {
-          "label": "Cannot determine — upperside not visible",
-          "next": "r_camdeo_incomplete_unclear"
         }
       ]
     },
@@ -2628,19 +2624,19 @@
     "q_epimuta_s2": {
       "type": "question",
       "id": "q_epimuta_s2",
-      "question": "How large and where is the male discal patch on the forewing upperside?",
-      "hint": "Both tailed species have the discal patch, but differ in its size and extent. Check whether it extends into the cell and space 1b, or is confined to spaces 2–3. If the upperside is not visible, choose 'Cannot determine'.",
+      "question": "How do the underside markings contrast with the ground colour?",
+      "hint": "Both tailed Epimuta species share a similar underside pattern but differ in contrast. A. atosia malayana: markings blend into the ground colour (feebly contrasting). A. lurida: markings are distinctly darker and more sharply defined.",
       "choices": [
         {
-          "label": "Large and circular; extends widely into cell and space 1b",
+          "label": "Markings contrast feebly — pattern blends into ground colour",
           "next": "r_atosia_malayana"
         },
         {
-          "label": "Smaller; almost confined to bases of spaces 2 and 3",
+          "label": "Markings darker and more clearly defined",
           "next": "r_lurida"
         },
         {
-          "label": "Cannot determine — upperside not visible",
+          "label": "Cannot determine — underside also not visible",
           "next": "r_epimuta_tailed_unclear"
         }
       ]
@@ -2667,7 +2663,7 @@
       "taxon_id": null,
       "name": "Epimuta group — tailed species (unresolved)",
       "common_name": "Cannot determine to species",
-      "note": "⚠ Cannot distinguish to species without male FW upperside. Both candidates have HW tail ~2.5 mm and an opaque discal patch on the FW upperside.\n\nA. atosia malayana: patch LARGE and circular, extending widely into cell and space 1b; FW border a thread. Underside markings contrast feebly.\n\nA. lurida: patch SMALLER, almost confined to bases of spaces 2–3; FW border slightly expanding toward apex. Underside markings darker and more clearly defined.\n\nInspect the upperside to confirm species."
+      "note": "⚠ Neither underside nor upperside visible. Both candidates have HW tail ~2.5 mm.\n\nPrimary character (underside): A. atosia malayana — markings contrast feebly with ground colour. A. lurida — markings darker and more clearly defined.\n\nConfirmatory character (upperside, male): A. atosia — FW discal patch large and circular, extending widely into cell and space 1b; border a thread. A. lurida — patch smaller, almost confined to bases of spaces 2–3; border slightly expanding toward apex.\n\nCheck the underside contrast first; inspect upperside if still uncertain."
     },
     "r_epimuta_epiala": {
       "type": "result",

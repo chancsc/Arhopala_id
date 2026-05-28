@@ -44,10 +44,51 @@ async function init() {
   }
 }
 
+// DFS from tree root; builds Map<resultName, Array<path>> where each path is
+// an array of {question, choice} steps (group milestones are noted inline).
+function buildTreePaths(treeData) {
+  const nodes = treeData.nodes;
+  const pathsMap = new Map();
+
+  function dfs(nodeId, path, visited) {
+    if (visited.has(nodeId)) return;
+    const node = nodes[nodeId];
+    if (!node) return;
+
+    const vis2 = new Set(visited);
+    vis2.add(nodeId);
+
+    if (node.type === 'result') {
+      const name = node.name || '';
+      if (name) {
+        if (!pathsMap.has(name)) pathsMap.set(name, []);
+        pathsMap.get(name).push([...path]);
+      }
+      return;
+    }
+
+    if (node.type === 'question') {
+      for (const c of (node.choices || [])) {
+        if (c.next) dfs(c.next, [...path, { question: node.question, choice: c.label }], vis2);
+      }
+      return;
+    }
+
+    if (node.type === 'group') {
+      const step = { group: node.group_name };
+      if (node.next) dfs(node.next, [...path, step], vis2);
+    }
+  }
+
+  dfs(treeData.start, [], new Set());
+  return pathsMap;
+}
+
 // Build a flat sorted array of all result nodes enriched with species photo/url data
 function buildSpeciesIndex(treeData, speciesData) {
   const seen = new Set();
   const index = [];
+  const pathsMap = buildTreePaths(treeData);
 
   for (const node of Object.values(treeData.nodes)) {
     if (node.type !== 'result') continue;
@@ -68,7 +109,8 @@ function buildSpeciesIndex(treeData, speciesData) {
       note: node.note || '',
       taxon_photos: (spData && spData.taxon_photos) || [],
       inat_url: (spData && spData.inat_url)
-        || `https://www.inaturalist.org/search?q=${encodeURIComponent(sp2)}`
+        || `https://www.inaturalist.org/search?q=${encodeURIComponent(sp2)}`,
+      paths: pathsMap.get(name) || []
     });
   }
 
@@ -248,6 +290,10 @@ function initMenuListeners() {
     if (e.key === 'Escape' && overlay.classList.contains('open')) closeMenu();
   });
 
+  // Tab switching
+  document.getElementById('tab-search').addEventListener('click', () => switchMenuTab('search'));
+  document.getElementById('tab-about').addEventListener('click',  () => switchMenuTab('about'));
+
   // Live search
   let debounceTimer;
   input.addEventListener('input', e => {
@@ -263,20 +309,46 @@ function initMenuListeners() {
     if (sp) showSpeciesDetail(sp);
   });
 
-  // Back from detail to list
+  // Back from detail to search list
   backBtn.addEventListener('click', () => {
-    document.getElementById('search-pane').style.display = '';
+    switchMenuTab('search');
     document.getElementById('species-detail').style.display = 'none';
     backBtn.style.display = 'none';
   });
+}
+
+function switchMenuTab(tab) {
+  const searchPane  = document.getElementById('search-pane');
+  const aboutPane   = document.getElementById('about-pane');
+  const tabSearch   = document.getElementById('tab-search');
+  const tabAbout    = document.getElementById('tab-about');
+  const menuTitle   = document.getElementById('menu-title');
+
+  if (tab === 'search') {
+    searchPane.style.display = '';
+    aboutPane.style.display  = 'none';
+    tabSearch.classList.add('active');
+    tabSearch.setAttribute('aria-selected', 'true');
+    tabAbout.classList.remove('active');
+    tabAbout.setAttribute('aria-selected', 'false');
+    menuTitle.textContent = 'Species Search';
+  } else {
+    searchPane.style.display = 'none';
+    aboutPane.style.display  = '';
+    tabAbout.classList.add('active');
+    tabAbout.setAttribute('aria-selected', 'true');
+    tabSearch.classList.remove('active');
+    tabSearch.setAttribute('aria-selected', 'false');
+    menuTitle.textContent = 'About';
+  }
 }
 
 function openMenu() {
   const overlay = document.getElementById('menu-overlay');
   overlay.classList.add('open');
   document.body.style.overflow = 'hidden';
-  // Reset to search list view
-  document.getElementById('search-pane').style.display = '';
+  // Reset to search tab
+  switchMenuTab('search');
   document.getElementById('species-detail').style.display = 'none';
   document.getElementById('back-to-search').style.display = 'none';
   // Render full list and focus input
@@ -319,6 +391,7 @@ function renderSearchList(query) {
 
 function showSpeciesDetail(sp) {
   document.getElementById('search-pane').style.display = 'none';
+  document.getElementById('about-pane').style.display = 'none';
   document.getElementById('back-to-search').style.display = '';
 
   const detailEl = document.getElementById('species-detail');
@@ -330,17 +403,46 @@ function showSpeciesDetail(sp) {
     : '';
 
   const galleryHTML = buildPhotoGallery(sp);
+  const pathHTML = buildPathDisplay(sp.paths);
 
-  // Build a minimal species-like object for buildPhotoGallery compatibility
   detailEl.innerHTML = `
     <span class="result-badge">Species Info</span>
     <h2 class="species-common">${escapeHtml(sp.common_name || sp.name)}</h2>
     ${sp.common_name ? `<p class="species-name">${escapeHtml(sp.name)}</p>` : ''}
     ${noteHTML}
+    ${pathHTML}
     ${galleryHTML}
     <a class="btn-inat" href="${escapeAttr(sp.inat_url)}" target="_blank" rel="noopener noreferrer">
       ${iconExternal()} View on iNaturalist
     </a>
+  `;
+}
+
+function buildPathDisplay(paths) {
+  if (!paths || paths.length === 0) return '';
+
+  const pathsHTML = paths.map((path, i) => {
+    if (path.length === 0) return '';
+    const stepsHTML = path.map(step => {
+      if (step.group) {
+        return `<li class="path-step path-step--group"><span class="path-group">● ${escapeHtml(step.group)}</span></li>`;
+      }
+      return `
+        <li class="path-step">
+          <span class="path-q">${escapeHtml(step.question)}</span>
+          <span class="path-a">↳ ${escapeHtml(step.choice)}</span>
+        </li>`;
+    }).join('');
+    const label = paths.length > 1 ? `<div class="path-label">Path ${i + 1}</div>` : '';
+    return `${label}<ol class="path-steps">${stepsHTML}</ol>`;
+  }).join('<hr class="path-divider">');
+
+  const count = paths.length === 1 ? 'decision path' : `${paths.length} decision paths`;
+  return `
+    <details class="path-details">
+      <summary class="path-summary">Key path — ${count}</summary>
+      <div class="path-content">${pathsHTML}</div>
+    </details>
   `;
 }
 
