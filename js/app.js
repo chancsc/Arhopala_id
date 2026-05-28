@@ -421,27 +421,35 @@ function showSpeciesDetail(sp) {
 function buildPathDisplay(paths) {
   if (!paths || paths.length === 0) return '';
 
-  const pathsHTML = paths.map((path, i) => {
-    if (path.length === 0) return '';
-    const stepsHTML = path.map(step => {
-      if (step.group) {
-        return `<li class="path-step path-step--group"><span class="path-group">● ${escapeHtml(step.group)}</span></li>`;
-      }
-      return `
-        <li class="path-step">
-          <span class="path-q">${escapeHtml(step.question)}</span>
-          <span class="path-a">↳ ${escapeHtml(step.choice)}</span>
-        </li>`;
-    }).join('');
-    const label = paths.length > 1 ? `<div class="path-label">Path ${i + 1}</div>` : '';
-    return `${label}<ol class="path-steps">${stepsHTML}</ol>`;
-  }).join('<hr class="path-divider">');
+  // Prefer the canonical path (fewest "Cannot determine" choices).
+  // Skip-option permutations inflate the count but aren't useful to show.
+  const skipCount = p => p.filter(s => s.choice && s.choice.startsWith('Cannot determine')).length;
+  const sorted = [...paths].sort((a, b) => skipCount(a) - skipCount(b));
+  const canonical = sorted[0];
+  const skipVariants = paths.length - 1;
 
-  const count = paths.length === 1 ? 'decision path' : `${paths.length} decision paths`;
+  const stepsHTML = canonical.map(step => {
+    if (step.group) {
+      return `<li class="path-step path-step--group"><span class="path-group">● ${escapeHtml(step.group)}</span></li>`;
+    }
+    return `
+      <li class="path-step">
+        <span class="path-q">${escapeHtml(step.question)}</span>
+        <span class="path-a">↳ ${escapeHtml(step.choice)}</span>
+      </li>`;
+  }).join('');
+
+  const variantNote = skipVariants > 0
+    ? `<p class="path-variant-note">+ ${skipVariants} additional path${skipVariants > 1 ? 's' : ''} reachable via "Cannot determine" skip options</p>`
+    : '';
+
   return `
     <details class="path-details">
-      <summary class="path-summary">Key path — ${count}</summary>
-      <div class="path-content">${pathsHTML}</div>
+      <summary class="path-summary">Key path — ${canonical.length} step${canonical.length !== 1 ? 's' : ''}</summary>
+      <div class="path-content">
+        <ol class="path-steps">${stepsHTML}</ol>
+        ${variantNote}
+      </div>
     </details>
   `;
 }

@@ -850,3 +850,10 @@ details[open] .path-summary::before { content: '▼ '; }
   color: var(--text-muted);
   margin-bottom: 0.3rem;
 }
+
+.path-variant-note {
+  margin-top: 0.5rem;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
