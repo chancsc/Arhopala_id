@@ -137,7 +137,7 @@
       "type": "question",
       "id": "q_tailed_dark_area",
       "question": "Is there a distinct dark area under the forewing cell (space 1b), bounded outwardly by a pale line?",
-      "hint": "The camdeo group has a characteristic darkened patch in FW underside space 1b with a clearly defined pale line running across it. This feature is diagnostic for the entire camdeo group.",
+      "hint": "The camdeo group has a characteristic darkened patch in FW underside space 1b with a clearly defined pale line running across it. This feature is diagnostic for the entire camdeo group. Note: this patch is often partially or fully covered by the hindwing when the butterfly is at rest — try gently lifting the hindwing, or view the underside at a slight angle to expose FW space 1b.",
       "choices": [
         {
           "label": "Yes — distinct dark patch in FW space 1b with pale bordering line",
@@ -146,6 +146,10 @@
         {
           "label": "No — no such marking",
           "next": "q_tailed_ijanensis"
+        },
+        {
+          "label": "Cannot determine — FW space 1b obscured by hindwing",
+          "next": "q_camdeo_sub"
         }
       ]
     },
@@ -153,7 +157,7 @@
       "type": "question",
       "id": "q_camdeo_sub",
       "question": "Within the camdeo group, what additional features are present?",
-      "hint": "The three camdeo subgroups each have a distinct secondary feature on top of the dark FW space 1b patch.",
+      "hint": "The three camdeo subgroups each have a distinct secondary feature on top of the dark FW space 1b patch. If you arrived here because the FW space 1b area was obscured, check for the subgroup characters below — if none match and the butterfly looks unlike a camdeo species (no crimson-brown tones, no unusual spots), it is likely not a camdeo group member.",
       "choices": [
         {
           "label": "Crimson-brown underside with markings outlined in white striae; spot at base of HW space 6",
@@ -168,7 +172,7 @@
           "next": "g_camdeo_camdeo"
         },
         {
-          "label": "None of the above — camdeo features only",
+          "label": "None of the above — camdeo features only (or cannot confirm camdeo group)",
           "next": "g_camdeo_general"
         }
       ]
