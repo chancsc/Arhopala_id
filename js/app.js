@@ -384,7 +384,8 @@ function renderSearchList(query) {
   const matches = q
     ? state.speciesIndex.filter(s =>
         s.name.toLowerCase().includes(q) ||
-        (s.common_name && s.common_name.toLowerCase().includes(q)))
+        (s.common_name && s.common_name.toLowerCase().includes(q)) ||
+        (s.note && s.note.toLowerCase().includes(q)))
     : state.speciesIndex;
 
   countEl.textContent = q
