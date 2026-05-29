@@ -142,7 +142,14 @@ function scoreAll() {
       // 0 if the question is not on this species' canonical path (not applicable)
     }
     return { name, score, max };
-  }).sort((a, b) => b.score - a.score || a.name.localeCompare(b.name));
+  }).sort((a, b) => {
+    // Sort by match percentage (score/max) so species with fewer applicable
+    // questions aren't disadvantaged vs species with longer canonical paths.
+    // max=0 means no applicable questions were answered → treat as 0% (neutral).
+    const pctA = a.max > 0 ? a.score / a.max : 0;
+    const pctB = b.max > 0 ? b.score / b.max : 0;
+    return pctB - pctA || a.name.localeCompare(b.name);
+  });
 }
 
 // ── Question selection ───────────────────────────────────────────────────────
@@ -202,12 +209,11 @@ function renderCandidates() {
   }
 
   const top = cs.scores.slice(0, 8);
-  const maxPossible = top.length > 0 ? Math.max(top[0].max, 1) : 1;
   const medals = ['🥇', '🥈', '🥉'];
 
   listEl.innerHTML = top.map((s, i) => {
     const info = cs.speciesInfo.get(s.name) || {};
-    const barW = Math.round(Math.max(0, s.score) / maxPossible * 100);
+    const barW = s.max > 0 ? Math.round(Math.max(0, s.score) / s.max * 100) : 0;
     const isExpanded = cs.expandedName === s.name;
     return `
       <div class="cl-cand${isExpanded ? ' expanded' : ''}" data-name="${esc(s.name)}">
