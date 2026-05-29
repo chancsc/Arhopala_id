@@ -2389,7 +2389,7 @@
       "type": "question",
       "id": "q_centaurus_amantes",
       "question": "Does the male have very broad black borders (3.0 mm at tornus expanding to 5.0 mm at apex), AND is the FW postdiscal spot in space 4 shifted distad (out of line)?",
-      "hint": "A. amantes (South Myanmar) is keyed here due to similar silvery FW markings but is NOT in the centaurus group. It has the broadest borders in this section and the space 4 FW spot clearly shifted outward; it also lacks a costal spot in FW space 10. A. centaurus and A. araxes both have thread-like or narrow borders (≤1 mm).",
+      "hint": "A. amantes (South Myanmar) is keyed here due to similar silvery FW markings but is NOT in the centaurus group. It has the broadest borders in this section and the space 4 FW spot clearly shifted outward; it also lacks a costal spot in FW space 10. A. centaurus and A. araxes both have thread-like or narrow borders (≤1 mm). If the male upperside is not visible, choose Cannot determine — A. amantes is unlikely outside South Myanmar.",
       "choices": [
         {
           "label": "Yes — borders 3.0–5.0 mm widening toward apex; FW spot 4 shifted distad; no FW space 10 costal spot (South Myanmar)",
@@ -2397,6 +2397,10 @@
         },
         {
           "label": "No — borders thread-like or ≤1 mm",
+          "next": "q_centaurus_s1"
+        },
+        {
+          "label": "Cannot determine — upperside not visible",
           "next": "q_centaurus_s1"
         }
       ]
