@@ -156,8 +156,8 @@
     "q_camdeo_sub": {
       "type": "question",
       "id": "q_camdeo_sub",
-      "question": "Within the camdeo group, what additional features are present?",
-      "hint": "The three camdeo subgroups each have a distinct secondary feature on top of the dark FW space 1b patch. If you arrived here because the FW space 1b area was obscured, check for the subgroup characters below — if none match and the butterfly looks unlike a camdeo species (no crimson-brown tones, no unusual spots), it is likely not a camdeo group member.",
+      "question": "Does this butterfly show any camdeo group features, and if so which subgroup?",
+      "hint": "The camdeo group has three subgroups, each with a distinctive secondary character. This question also acts as a confirmation step: if you arrived here because FW space 1b was obscured in the photo, check whether any of the subgroup characters below are visible. If none of the camdeo characters apply at all, select the last option to continue down the non-camdeo route.",
       "choices": [
         {
           "label": "Crimson-brown underside with markings outlined in white striae; spot at base of HW space 6",
@@ -172,8 +172,12 @@
           "next": "g_camdeo_camdeo"
         },
         {
-          "label": "None of the above — camdeo features only (or cannot confirm camdeo group)",
+          "label": "Camdeo confirmed (dark FW space 1b visible) but no subgroup feature detected",
           "next": "g_camdeo_general"
+        },
+        {
+          "label": "None of the camdeo features present — does not appear to be a camdeo species",
+          "next": "q_tailed_ijanensis"
         }
       ]
     },
