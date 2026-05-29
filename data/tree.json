@@ -1549,7 +1549,7 @@
       "type": "question",
       "id": "q_amph_s4",
       "question": "Is the male's black border broad, 1.5 mm or wider?",
-      "hint": "A. major has a border expanding from 2.0 mm at tornus to 3.0 mm at apex (blue upperside). A. stubbsi has a broad ~2.0 mm border but is dull bluish purple. All others have narrow borders (0.5 mm or thread-like).",
+      "hint": "A. major has a border expanding from 2.0 mm at tornus to 3.0 mm at apex (blue upperside). A. stubbsi has a broad ~2.0 mm border but is dull bluish purple. All others have narrow borders (0.5 mm or thread-like). If the upperside is not visible, select Cannot determine — the key will continue using underside characters.",
       "choices": [
         {
           "label": "Yes — border ≥1.5 mm wide",
@@ -1558,6 +1558,10 @@
         {
           "label": "No — border narrow (0.5 mm or thread-like)",
           "next": "q_amph_s5"
+        },
+        {
+          "label": "Cannot determine — upperside not visible",
+          "next": "q_amph_s6"
         }
       ]
     },
@@ -1565,7 +1569,7 @@
       "type": "question",
       "id": "q_amph_broad",
       "question": "Is the male distinctly blue above, with the border widening from ~2.0 mm at the tornus to ~3.0 mm at the apex?",
-      "hint": "A. major major is bluer than A. amphimuta; its border expands toward the apex. A. stubbsi is dull bluish purple with a broad but even ~2.0 mm border.",
+      "hint": "A. major major is bluer than A. amphimuta; its border expands toward the apex. A. stubbsi is dull bluish purple with a broad but even ~2.0 mm border. If the upperside is not visible, select Cannot determine — A. major and A. stubbsi cannot be reliably separated from the underside alone.",
       "choices": [
         {
           "label": "Yes — distinctly blue; border expands 2.0→3.0 mm from tornus to apex",
@@ -1574,6 +1578,10 @@
         {
           "label": "No — dull bluish purple; border broad but even (~2.0 mm)",
           "next": "r_stubbsi"
+        },
+        {
+          "label": "Cannot determine — upperside not visible",
+          "next": "g_needs_more_info"
         }
       ]
     },
@@ -1581,7 +1589,7 @@
       "type": "question",
       "id": "q_amph_s5",
       "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
-      "hint": "Peninsula thread-border species: A. moolaiana yajuna (shining violet-blue; female blue reaches HW termen). Bornean thread-border species (A. alica) have already been separated by the geography filter. Regular 0.5 mm border Peninsula species: A. amphimuta, A. sceva, A. zylda.",
+      "hint": "Peninsula thread-border species: A. moolaiana yajuna (shining violet-blue; female blue reaches HW termen). Bornean thread-border species (A. alica) have already been separated by the geography filter. Regular 0.5 mm border Peninsula species: A. amphimuta, A. sceva, A. zylda. If the upperside is not visible, select Cannot determine — the key will continue using underside characters.",
       "choices": [
         {
           "label": "Yes — border thread-like",
@@ -1589,6 +1597,10 @@
         },
         {
           "label": "No — border regular ~0.5 mm",
+          "next": "q_amph_s6"
+        },
+        {
+          "label": "Cannot determine — upperside not visible",
           "next": "q_amph_s6"
         }
       ]
@@ -1701,7 +1713,7 @@
       "type": "question",
       "id": "q_amph_bor3",
       "question": "Is the male's black border reduced to a thread (very narrow), and is the male a dark, dull purple?",
-      "hint": "A. alica: thread-like border; male dark dull purple (distinctly duller than A. moolaiana's shining violet-blue); FW ~17 mm; female purple with broad black borders. A. baluensis and A. dajagaka both have a regular ~0.5 mm border and are dark purple-blue.",
+      "hint": "A. alica: thread-like border; male dark dull purple (distinctly duller than A. moolaiana's shining violet-blue); FW ~17 mm; female purple with broad black borders. A. baluensis and A. dajagaka both have a regular ~0.5 mm border and are dark purple-blue. If the upperside is not visible, select Cannot determine — the next question uses wing size instead.",
       "choices": [
         {
           "label": "Yes — border thread-like; male dark dull purple; FW ~17 mm; female purple, broad borders",
@@ -1709,6 +1721,10 @@
         },
         {
           "label": "No — border regular ~0.5 mm; male dark purple-blue",
+          "next": "q_amph_bor2"
+        },
+        {
+          "label": "Cannot determine — upperside not visible",
           "next": "q_amph_bor2"
         }
       ]
