@@ -1821,15 +1821,35 @@
       "type": "question",
       "id": "q_perimuta_s1",
       "question": "Is there a yellowish discal area on the hindwing underside with obscure markings and no tornal green scales?",
-      "hint": "A. perimuta regina is easily recognized by the yellowish (not white or grey) discal area on the HW underside, with markings that are obscure or almost absent, and the complete absence of the tornal green scales found in many Arhopala. A. metamuta metamuta has a striking contrast — brilliant greenish-blue HW vs. dark violet-blue FW on the male upperside.",
+      "hint": "A. perimuta regina is easily recognized by the yellowish (not white or grey) discal area on the HW underside, markings obscure or almost absent, and tornal green scales completely absent. If HW underside is normal, continue to the next question.",
       "choices": [
         {
           "label": "Yes — yellowish HW discal area; markings obscure; no tornal green scales",
           "next": "r_perimuta_regina"
         },
         {
-          "label": "No — HW underside normal; male HW brilliant greenish-blue contrasting with dark violet-blue FW",
+          "label": "No — HW underside normal",
+          "next": "q_perimuta_s2"
+        }
+      ]
+    },
+    "q_perimuta_s2": {
+      "type": "question",
+      "id": "q_perimuta_s2",
+      "question": "Is the male hindwing upperside a brilliant greenish-blue, contrasting strongly with the dark shining violet-blue forewing?",
+      "hint": "A. metamuta metamuta has a striking two-tone male: dark shining violet-blue FW (1.5 mm border) vs. brilliant greenish-blue HW — the most visually distinctive species in the perimuta subgroup. A. antimuta antimuta (the most abundant amphimuta-group species) lacks this contrast: male is uniformly deep violet-blue with the border reduced to a thread; HW underside spot 6 is placed below spot 7.",
+      "choices": [
+        {
+          "label": "Yes — HW brilliant greenish-blue, contrasting with dark shining violet-blue FW",
           "next": "r_metamuta_metamuta"
+        },
+        {
+          "label": "No — uniformly deep violet-blue; border thread-like",
+          "next": "r_antimuta_antimuta"
+        },
+        {
+          "label": "Cannot determine — upperside not visible",
+          "next": "r_antimuta_antimuta"
         }
       ]
     },
@@ -1847,7 +1867,15 @@
       "taxon_id": null,
       "name": "Arhopala metamuta metamuta",
       "common_name": "",
-      "note": "Striking upperside: male has a brilliant greenish-blue HW that contrasts strongly with the dark, shining violet-blue FW. FW postdiscal spots 2 and 3 are in line (perimuta subgroup)."
+      "note": "Striking upperside: male has a brilliant greenish-blue HW that contrasts strongly with the dark, shining violet-blue FW (1.5 mm border). FW postdiscal spots 2 and 3 are in line (perimuta subgroup)."
+    },
+    "r_antimuta_antimuta": {
+      "type": "result",
+      "id": "r_antimuta_antimuta",
+      "taxon_id": null,
+      "name": "Arhopala antimuta antimuta",
+      "common_name": "",
+      "note": "The most abundant species in the amphimuta group. Tailless. Male: deep violet-blue; black border reduced to a thread. HW underside: postdiscal spot 6 placed below spot 7 (not beside it). FW postdiscal spots 2 and 3 are in line (perimuta subgroup). Confirmatory: male upperside uniformly coloured — no contrasting wing colour as in A. metamuta."
     },
     "q_anthelus_s1": {
       "type": "question",

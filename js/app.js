@@ -103,6 +103,17 @@ function buildSpeciesIndex(treeData, speciesData) {
       if (s.name.split(' ').slice(0, 2).join(' ') === sp2) { spData = s; break; }
     }
 
+    // For tailless species, sort so tailless-branch paths come first.
+    // buildPathDisplay then picks the lowest-score path, which will be the tailless one.
+    let paths = pathsMap.get(name) || [];
+    if ((node.note || '').includes('Tailless')) {
+      paths = [...paths].sort((a, b) => {
+        const aOk = a.length > 0 && (a[0].choice || '').toLowerCase().includes('tailless');
+        const bOk = b.length > 0 && (b[0].choice || '').toLowerCase().includes('tailless');
+        return (bOk ? 1 : 0) - (aOk ? 1 : 0);
+      });
+    }
+
     index.push({
       name,
       common_name: node.common_name || (spData && spData.common_name) || '',
@@ -110,7 +121,7 @@ function buildSpeciesIndex(treeData, speciesData) {
       taxon_photos: (spData && spData.taxon_photos) || [],
       inat_url: (spData && spData.inat_url)
         || `https://www.inaturalist.org/search?q=${encodeURIComponent(sp2)}`,
-      paths: pathsMap.get(name) || []
+      paths
     });
   }
 
