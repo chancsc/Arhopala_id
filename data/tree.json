@@ -329,7 +329,7 @@
       "type": "question",
       "id": "q_amphimuta_sub",
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
-      "hint": "Four subgroups. Muta: spots more quadrate/banded, FW space 2 stepped toward termen. Perimuta: FW spots 2 and 3 in line. Kurzi: tailless, rounded HW tornus, HW band widely dislocated at vein 2. Amphimuta (largest, 12 spp.): spots rounded, cilia often prolonged into a short tooth at vein 2.",
+      "hint": "Four subgroups. Muta: spots more quadrate/banded, FW space 2 stepped toward termen. Perimuta: FW spots 2 and 3 in line (may be oblique). Kurzi: tailless, rounded HW tornus, HW band widely dislocated at vein 2. Amphimuta (largest, 12 spp.): spots rounded, cilia often prolonged into a short tooth at vein 2.\n\nIf FW spots 2–3 alignment is unclear, choose 'Cannot determine (spots 2–3)' — the perimuta species can still be separated by their own distinctive characters (yellowish HW area for perimuta; contrasting HW colour for metamuta; spot 6 below spot 7 + thread border for antimuta).",
       "choices": [
         {
           "label": "Spots more quadrate/banded; FW space 2 spot stepped outward toward termen (muta subgroup)",
@@ -346,6 +346,10 @@
         {
           "label": "Spots rounded; cilia often prolonged into a short tooth at vein 2 (amphimuta subgroup)",
           "next": "q_amph_s1"
+        },
+        {
+          "label": "Cannot determine — FW spots 2 and 3 alignment not visible (check perimuta species characters)",
+          "next": "g_amphimuta_perimuta"
         }
       ]
     },
