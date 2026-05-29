@@ -172,19 +172,26 @@ function getDisplayQuestions() {
     }
   }
 
-  // A question is "meaningfully answered" if the selected answer is not "Cannot determine"
+  // "Meaningfully answered": a real feature answer (not Cannot determine)
   const meaningfulAnswer = q => {
     const a = cs.answers.get(q);
     return a !== undefined && !a.startsWith('Cannot determine');
   };
+  // "Touched": any answer set, including Cannot determine — keeps question pinned near top
+  const touched = q => cs.answers.has(q);
 
-  // Keep questions that are meaningfully answered OR still discriminate (≥2 distinct answers)
+  // Keep touched questions AND questions that still discriminate (≥2 distinct answers)
   return [...diversity.entries()]
-    .filter(([q, choices]) => meaningfulAnswer(q) || choices.size >= 2)
+    .filter(([q, choices]) => touched(q) || choices.size >= 2)
     .map(([q]) => q)
     .sort((a, b) => {
-      const aA = meaningfulAnswer(a), bA = meaningfulAnswer(b);
-      if (aA !== bA) return aA ? -1 : 1;
+      // 1. Meaningfully answered first
+      const aM = meaningfulAnswer(a), bM = meaningfulAnswer(b);
+      if (aM !== bM) return aM ? -1 : 1;
+      // 2. "Cannot determine" answered next (before unanswered)
+      const aT = touched(a), bT = touched(b);
+      if (aT !== bT) return aT ? -1 : 1;
+      // 3. Unanswered: by coverage descending
       return (cs.questionCoverage.get(b) || 0) - (cs.questionCoverage.get(a) || 0);
     });
 }
