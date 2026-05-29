@@ -1096,7 +1096,7 @@
     "q_agelastus_s2": {
       "type": "question",
       "id": "q_agelastus_s2",
-      "question": "Does the hindwing have a tail?",
+      "question": "Within the agelastus group, does the hindwing have a tail?",
       "hint": "Within the agelastus group, only Arhopala barami penanga is tailed. All other species are tailless.",
       "choices": [
         {
@@ -1104,7 +1104,7 @@
           "next": "r_barami_penanga"
         },
         {
-          "label": "No — tailless",
+          "label": "No — hindwing is tailless",
           "next": "q_agelastus_s3"
         }
       ]
@@ -1332,7 +1332,7 @@
           "next": "r_sintanga"
         },
         {
-          "label": "No — hair-brown ground colour",
+          "label": "No — hair-brown or dark brownish underside",
           "next": "q_alitaeus_s1_marks"
         }
       ]
@@ -2088,7 +2088,7 @@
     "q_camdeo_c1": {
       "type": "question",
       "id": "q_camdeo_c1",
-      "question": "Is there a central spot in forewing underside space 11?",
+      "question": "Is there a central spot in forewing underside space 11? (camdeo group)",
       "hint": "A. anarte is one of the largest and most beautiful species in the genus, easily recognized by a central spot in FW space 11. Male: shining pale silvery blue overlaid with violet toward the margins. No other camdeo subgroup member has this spot.",
       "choices": [
         {
@@ -2856,7 +2856,7 @@
     "q_eumolphus_green": {
       "type": "question",
       "id": "q_eumolphus_green",
-      "question": "What is the forewing apex shape?",
+      "question": "Is the forewing termen evenly curved (rounded apex), or straight and slightly concave (acute apex)?",
       "hint": "This can be assessed from either side. A rounded apex has a smooth, evenly curved termen. An acute apex comes to a more pointed tip, often with a straight or slightly concave termen below it.",
       "choices": [
         {
