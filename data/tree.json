@@ -109,7 +109,7 @@
       "type": "question",
       "id": "q_long_tail_length",
       "question": "Is the hindwing tail approximately 6 mm or longer?",
-      "hint": "The aedias group has a distinctly long tail of approximately 6 mm — roughly 1.5× the length of a typical Arhopala tail. The corinda group has a shorter tail of approximately 3.5 mm, which is long for Arhopala but not extreme. If the tail is clearly very long (~6 mm), choose Yes. If it is moderately long (~3.5 mm), choose No.",
+      "hint": "The aedias group has a distinctly long tail of approximately 6 mm — roughly 1.5× the length of a typical Arhopala tail. The corinda group has a shorter tail of approximately 3.5 mm, which is long for Arhopala but not extreme. Corinda subspecies: acestes (Malay Peninsula and Singapore), corestes (Langkawi). If the tail is clearly very long (~6 mm), choose Yes. If it is moderately long (~3.5 mm), choose No.",
       "choices": [
         {
           "label": "Yes — tail distinctly long, approximately 6 mm (aedias group)",
@@ -2773,7 +2773,7 @@
       "taxon_id": null,
       "name": "Arhopala corinda acestes",
       "common_name": "",
-      "note": "Monotypic group. Filamentous HW tail ~3.5 mm. FW: pointed apex, straight termen. Underside: large purple-brown patch under FW cell (basal half of space 1b completely darkened); FW spot 4 shifted distad; no costal spot in FW space 10; ground colour sometimes glazed with purple wash. HW spot 6 outwardly convex; band partially dislocated at vein 2. Male: deep violet or dark purple, very narrow border. Female: purple-blue. Subspecies: acestes (Malay Peninsula and Singapore), corestes (related)."
+      "note": "Monotypic group. Filamentous HW tail ~3.5 mm. FW: pointed apex, straight termen. Underside: large purple-brown patch under FW cell (basal half of space 1b completely darkened); FW spot 4 shifted distad; no costal spot in FW space 10; ground colour sometimes glazed with purple wash. HW spot 6 outwardly convex; band partially dislocated at vein 2. Male: deep violet or dark purple, very narrow border. Female: purple-blue. Subspecies: acestes (Malay Peninsula and Singapore), corestes (Langkawi)."
     },
     "q_democritus_s1": {
       "type": "question",
