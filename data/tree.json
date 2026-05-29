@@ -493,7 +493,27 @@
         },
         {
           "label": "No",
+          "next": "q_tailless_camdeo"
+        }
+      ]
+    },
+    "q_tailless_camdeo": {
+      "type": "question",
+      "id": "q_tailless_camdeo",
+      "question": "Is there a distinct dark area under the forewing cell (space 1b), bounded outwardly by a pale line?",
+      "hint": "A small number of camdeo group species are tailless (A. belphoebe cowani, A. myrzalina). The camdeo group is identified by a darkened patch in FW underside space 1b. In field photos this area is often hidden under the hindwing — if so, select Cannot determine and check the camdeo subgroup characters instead.",
+      "choices": [
+        {
+          "label": "Yes — distinct dark patch in FW space 1b with pale bordering line",
+          "next": "q_camdeo_sub"
+        },
+        {
+          "label": "No — no such marking",
           "next": "q_tailless_echelon"
+        },
+        {
+          "label": "Cannot determine — FW space 1b obscured by hindwing",
+          "next": "q_camdeo_sub"
         }
       ]
     },
@@ -509,6 +529,26 @@
         },
         {
           "label": "No — spots not in echelon",
+          "next": "q_tailless_rama"
+        }
+      ]
+    },
+    "q_tailless_rama": {
+      "type": "question",
+      "id": "q_tailless_rama",
+      "question": "Is hindwing postdiscal spot 6 outwardly sinuous, and is there a costal spot present in forewing underside space 1?",
+      "hint": "Arhopala arvina adalitas is the only tailless species in the rama group. Its key underside characters are an S-shaped (outwardly sinuous) HW postdiscal spot 6 and a costal spot at the base of FW space 1. Underside ground colour is hair-brown; tornal green scales are present.",
+      "choices": [
+        {
+          "label": "Yes — HW spot 6 outwardly sinuous; costal spot in FW space 1",
+          "next": "r_arvina_adalitas"
+        },
+        {
+          "label": "No",
+          "next": "g_needs_more_info"
+        },
+        {
+          "label": "Cannot determine",
           "next": "g_needs_more_info"
         }
       ]
@@ -3052,8 +3092,8 @@
       "hint": "One of the three Malayan rama species (arvina) is tailless. The other two are tailed with different tail lengths.",
       "choices": [
         {
-          "label": "Tailless",
-          "next": "r_arvina_adalitas"
+          "label": "Tailless — re-check first question",
+          "next": "g_needs_more_info"
         },
         {
           "label": "Tailed",
