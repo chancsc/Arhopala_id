@@ -45,6 +45,26 @@
         },
         {
           "label": "No — tail is short and typical",
+          "next": "q_ijanensis_hw_streak"
+        }
+      ]
+    },
+    "q_ijanensis_hw_streak": {
+      "type": "question",
+      "id": "q_ijanensis_hw_streak",
+      "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
+      "hint": "Quick diagnostic for A. ijanensis. This species has a distinctive whitish streak on the HW underside running from the base of the dorsum all the way to the apex, with a notably long HW cell (~half wing length or longer). If this streak is visible, the identification is A. ijanensis. If the underside is not visible or the streak is absent, continue with the key.",
+      "choices": [
+        {
+          "label": "Yes — whitish streak present on HW underside from dorsal base to apex",
+          "next": "g_ijanensis"
+        },
+        {
+          "label": "No — no whitish streak",
+          "next": "q_tailed_epimuta"
+        },
+        {
+          "label": "Cannot determine — underside not visible",
           "next": "q_tailed_epimuta"
         }
       ]
@@ -205,7 +225,7 @@
       "type": "question",
       "id": "q_tailed_ijanensis",
       "question": "In the male, does the forewing upperside black border run along the costa all the way to the wing base?",
-      "hint": "The ijanensis group male has a unique FW black border running along the costa all the way to the wing base. If the male upperside is not visible, you can also check underside characters diagnostic for this group: a whitish streak from the base of the dorsum to the apex on the HW underside, and a HW cell approximately half the wing length or longer. If those features match, choose 'Yes'. Otherwise choose 'Cannot determine' to continue.",
+      "hint": "The ijanensis group male has a unique FW black border running along the costa all the way to the wing base. Note: if you arrived via the tailed path, you have already checked the HW underside whitish streak earlier — if you confirmed the streak was absent, choose 'No' here. If you arrived via the tailless entry and have not yet seen the streak question, choose 'Cannot determine' and the next step will check the HW underside streak.",
       "choices": [
         {
           "label": "Yes — male FW border extends to base of costa; spot at base of HW space 6",

@@ -208,7 +208,11 @@ function getDisplayQuestions() {
         const qb = cs.questionNumbers ? (cs.questionNumbers.get(b) || 9999) : 9999;
         return qa - qb;
       }
-      // Unanswered: by coverage descending
+      // Unanswered: underside/morphology questions before pure upperside questions,
+      // then by coverage descending within each tier.
+      const aUpper = /upperside/i.test(a);
+      const bUpper = /upperside/i.test(b);
+      if (aUpper !== bUpper) return aUpper ? 1 : -1;
       return (cs.questionCoverage.get(b) || 0) - (cs.questionCoverage.get(a) || 0);
     });
 }
