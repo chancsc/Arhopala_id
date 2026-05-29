@@ -436,9 +436,8 @@ function showSpeciesDetail(sp) {
 function buildPathDisplay(paths) {
   if (!paths || paths.length === 0) return '';
 
-  // Prefer the canonical path (fewest "Cannot determine" choices).
-  // Also penalise contradictory paths: starting "Yes — tailed" but later
-  // selecting a "Tailless" choice (e.g. reaching kurzi via the tailed branch).
+  // Canonical path: fewest "Cannot determine" choices.
+  // Contradiction penalty: starting "Yes — tailed" but later hitting a "Tailless" choice.
   const skipCount = p => {
     let score = p.filter(s => s.choice && s.choice.startsWith('Cannot determine')).length;
     const startsTailed = p.length > 0 && p[0].choice === 'Yes — hindwing is tailed';
@@ -446,34 +445,49 @@ function buildPathDisplay(paths) {
     if (startsTailed && hasContradiction) score += 100;
     return score;
   };
-  const sorted = [...paths].sort((a, b) => skipCount(a) - skipCount(b));
-  const canonical = sorted[0];
-  const skipVariants = paths.length - 1;
 
-  const stepsHTML = canonical.map(step => {
+  const renderSteps = path => path.map(step => {
     if (step.group) {
       return `<li class="path-step path-step--group"><span class="path-group">● ${escapeHtml(step.group)}</span></li>`;
     }
+    const isCd = step.choice && step.choice.startsWith('Cannot determine');
     return `
-      <li class="path-step">
+      <li class="path-step${isCd ? ' path-step--skip' : ''}">
         <span class="path-q">${escapeHtml(step.question)}</span>
         <span class="path-a">↳ ${escapeHtml(step.choice)}</span>
       </li>`;
   }).join('');
 
-  const variantNote = skipVariants > 0
-    ? `<p class="path-variant-note">+ ${skipVariants} additional path${skipVariants > 1 ? 's' : ''} reachable via "Cannot determine" skip options</p>`
-    : '';
+  const sorted = [...paths].sort((a, b) => skipCount(a) - skipCount(b));
+  const canonical = sorted[0];
 
-  return `
+  // Fallback path: most "Cannot determine" steps, no contradiction.
+  const validPaths = sorted.filter(p => skipCount(p) < 100);
+  const fallback = validPaths.length > 1 ? validPaths[validPaths.length - 1] : null;
+  const showFallback = fallback && JSON.stringify(fallback) !== JSON.stringify(canonical);
+
+  let html = `
     <details class="path-details">
-      <summary class="path-summary">Key path — ${canonical.length} step${canonical.length !== 1 ? 's' : ''}</summary>
+      <summary class="path-summary">Direct path — ${canonical.length} step${canonical.length !== 1 ? 's' : ''}</summary>
       <div class="path-content">
-        <ol class="path-steps">${stepsHTML}</ol>
-        ${variantNote}
+        <ol class="path-steps">${renderSteps(canonical)}</ol>
       </div>
     </details>
   `;
+
+  if (showFallback) {
+    html += `
+      <details class="path-details path-details--skip">
+        <summary class="path-summary">Via "Cannot determine" — ${fallback.length} step${fallback.length !== 1 ? 's' : ''}</summary>
+        <div class="path-content">
+          <p class="path-skip-note">Steps where a feature is unclear or not visible in the photo.</p>
+          <ol class="path-steps">${renderSteps(fallback)}</ol>
+        </div>
+      </details>
+    `;
+  }
+
+  return html;
 }
 
 // ===== Photo gallery =====

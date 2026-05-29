@@ -857,3 +857,20 @@ details[open] .path-summary::before { content: '▼ '; }
   color: var(--text-muted);
   font-style: italic;
 }
+
+.path-details--skip .path-summary {
+  background: #fdf8ef;
+  color: var(--accent);
+}
+
+.path-skip-note {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin: 0 0 0.5rem;
+}
+
+.path-step--skip .path-a {
+  color: #9e6c00;
+  font-style: italic;
+}
