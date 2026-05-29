@@ -1495,7 +1495,10 @@
       "taxon_id": null,
       "name": "Arhopala kurzi",
       "common_name": "",
-      "note": "Tailless; HW tornus very rounded. FW 18–22 mm. Male: rather dull purple-blue with a thread-like black border. Female: purple; HW border unusually variable — purple sometimes reaches termen between veins 2 and 5, other specimens almost confined to cell. Underside FW: markings variable; lower postdiscal band sometimes obsolete; when fully developed, spot in space 1b shifted inward, placed midway between end-cell bar and postdiscal spot in space 2. Underside HW: postdiscal band WIDELY dislocated at vein 2 (diagnostic for subgroup). Forest species, low to moderate elevations."
+      "note": "Tailless; HW tornus very rounded. FW 18–22 mm. Male: rather dull purple-blue with a thread-like black border. Female: purple; HW border unusually variable — purple sometimes reaches termen between veins 2 and 5, other specimens almost confined to cell. Underside FW: markings variable; lower postdiscal band sometimes obsolete; when fully developed, spot in space 1b shifted inward, placed midway between end-cell bar and postdiscal spot in space 2. Underside HW: postdiscal band WIDELY dislocated at vein 2 (diagnostic for subgroup). Forest species, low to moderate elevations.",
+      "features": {
+        "On the forewing underside, is the basal cell spot absent?": "No — basal cell spot present on FW underside"
+      }
     },
     "q_amph_s1": {
       "type": "question",

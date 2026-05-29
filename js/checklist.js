@@ -108,6 +108,19 @@ function initData(treeData, speciesData) {
         qCov.set(step.question, (qCov.get(step.question) || 0) + 1);
       }
     }
+    // Merge explicit features from result node (for species identified before
+    // certain morphologically-applicable questions are reached in the key path)
+    const resultNode = Object.values(treeData.nodes).find(
+      n => n.type === 'result' && n.name === name && n.features);
+    if (resultNode) {
+      for (const [q, c] of Object.entries(resultNode.features)) {
+        if (!features.has(q)) {
+          features.set(q, c);
+          qCov.set(q, (qCov.get(q) || 0) + 1);
+        }
+      }
+    }
+
     matrix.set(name, features);
 
     const sp2 = name.split(' ').slice(0, 2).join(' ');
