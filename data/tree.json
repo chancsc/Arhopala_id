@@ -89,7 +89,7 @@
       "type": "question",
       "id": "q_tailed_long_dark",
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
-      "hint": "This is the key difference between the two long-tailed groups. The corinda group has the basal half of FW underside space 1b completely darkened. The aedias group has a long tail (~6.0 mm) but lacks this darkening — the FW underside is normally marked.",
+      "hint": "This is the key difference between the two long-tailed groups. The corinda group has the basal half of FW underside space 1b completely darkened. The aedias group has a long tail (~6.0 mm) but lacks this darkening — the FW underside is normally marked. FW space 1b is often hidden under the hindwing in field shots — if not visible, select Cannot determine and the next question will use tail length instead.",
       "choices": [
         {
           "label": "Yes — basal half of FW underside space 1b completely darkened (~3.5 mm tail)",
@@ -98,6 +98,26 @@
         {
           "label": "No — FW underside normally marked, no darkening (~6.0 mm tail)",
           "next": "g_aedias"
+        },
+        {
+          "label": "Cannot determine — FW space 1b obscured by hindwing",
+          "next": "q_long_tail_length"
+        }
+      ]
+    },
+    "q_long_tail_length": {
+      "type": "question",
+      "id": "q_long_tail_length",
+      "question": "Is the hindwing tail approximately 6 mm or longer?",
+      "hint": "The aedias group has a distinctly long tail of approximately 6 mm — roughly 1.5× the length of a typical Arhopala tail. The corinda group has a shorter tail of approximately 3.5 mm, which is long for Arhopala but not extreme. If the tail is clearly very long (~6 mm), choose Yes. If it is moderately long (~3.5 mm), choose No.",
+      "choices": [
+        {
+          "label": "Yes — tail distinctly long, approximately 6 mm (aedias group)",
+          "next": "g_aedias"
+        },
+        {
+          "label": "No — tail moderately long, approximately 3.5 mm (corinda group)",
+          "next": "g_corinda"
         }
       ]
     },
