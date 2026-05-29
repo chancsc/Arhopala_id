@@ -158,7 +158,7 @@ function render() {
       <div class="header-row">
         <div class="header-titles">
           <h1>Arhopala Identifier</h1>
-          <p>Malaysian Oak Blue Butterflies</p>
+          <p>Malaysian Oak Blue Butterflies &nbsp;·&nbsp; <a href="checklist.html" class="header-alt-link">Feature scoring</a></p>
         </div>
         <button class="menu-btn" id="menu-btn" aria-label="Open species search">
           ${iconMenu()}

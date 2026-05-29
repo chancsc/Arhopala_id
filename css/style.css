@@ -73,6 +73,13 @@ body {
   margin-top: 0.15rem;
 }
 
+.header-alt-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.78rem;
+}
+.header-alt-link:hover { text-decoration: underline; }
+
 /* ===== Breadcrumb ===== */
 .breadcrumb-wrap {
   padding: 0.5rem 0 0.25rem;
