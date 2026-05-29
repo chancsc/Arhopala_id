@@ -283,8 +283,14 @@ function renderCandidateDetail(name) {
 function renderQuestions() {
   const el = document.getElementById('cl-questions');
   const qs = getDisplayQuestions();
-  const limit = cs.showAll ? qs.length : 15;
-  const visible = qs.slice(0, limit);
+
+  // Answered questions are always fully shown; the 15-question cap applies
+  // only to the unanswered tail so that answering a question never pushes
+  // another unanswered question off the visible list.
+  const answeredQs = qs.filter(q => cs.answers.has(q));
+  const unansweredQs = qs.filter(q => !cs.answers.has(q));
+  const unansweredLimit = cs.showAll ? unansweredQs.length : 15;
+  const visible = [...answeredQs, ...unansweredQs.slice(0, unansweredLimit)];
 
   el.innerHTML = visible.map((q, idx) => {
     const meta = cs.questionMeta.get(q) || { choices: [], hint: '' };
@@ -318,10 +324,10 @@ function renderQuestions() {
       </div>`;
   }).join('');
 
-  if (qs.length > 15) {
+  if (unansweredQs.length > 15) {
     el.insertAdjacentHTML('beforeend', `
       <button class="cl-more" id="cl-show-more">
-        ${cs.showAll ? '▲ Show fewer' : `▼ Show all ${qs.length} features`}
+        ${cs.showAll ? '▲ Show fewer' : `▼ Show all ${unansweredQs.length} features`}
       </button>`);
   }
 }
