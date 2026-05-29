@@ -190,9 +190,6 @@ function esc(s) {
     .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
-function truncate(s, max) {
-  return s.length > max ? s.slice(0, max - 1) + '…' : s;
-}
 
 function renderCandidates() {
   const listEl = document.getElementById('cl-candidates');
@@ -264,7 +261,7 @@ function renderQuestions() {
       return `<button class="cl-cbtn${sel === c ? ' sel' : ''}${isCD ? ' cd' : ''}"
               data-q="${esc(q)}" data-c="${esc(c)}"
               title="${esc(c)}">
-        ${esc(truncate(c, 52))}
+        ${esc(c)}
       </button>`;
     }).join('');
 
