@@ -53,7 +53,7 @@
       "type": "question",
       "id": "q_ijanensis_hw_streak",
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
-      "hint": "Quick diagnostic for A. ijanensis. This species has a distinctive whitish streak on the HW underside running from the base of the dorsum all the way to the apex, with a notably long HW cell (~half wing length or longer). If this streak is visible, the identification is A. ijanensis. If the underside is not visible or the streak is absent, continue with the key.",
+      "hint": "Quick diagnostic for A. ijanensis. This species has a distinctive whitish streak on the HW underside running from the base of the dorsum all the way to the apex, with a notably long HW cell (~half wing length or longer). If this streak is visible, the identification is A. ijanensis. If absent, continue with the key.",
       "choices": [
         {
           "label": "Yes — whitish streak present on HW underside from dorsal base to apex",
@@ -61,10 +61,6 @@
         },
         {
           "label": "No — no whitish streak",
-          "next": "q_tailed_epimuta"
-        },
-        {
-          "label": "Cannot determine — underside not visible",
           "next": "q_tailed_epimuta"
         }
       ]
@@ -253,10 +249,6 @@
         },
         {
           "label": "No — no whitish streak",
-          "next": "q_tailed_anthelus"
-        },
-        {
-          "label": "Cannot determine",
           "next": "q_tailed_anthelus"
         }
       ]
