@@ -74,14 +74,12 @@ function initData(treeData, speciesData) {
   // in multiple subtrees
   for (const node of Object.values(treeData.nodes)) {
     if (node.type === 'question') {
-      const nonSkip = node.choices
-        .map(c => c.label)
-        .filter(l => !l.startsWith('Cannot determine'));
+      const allChoices = node.choices.map(c => c.label);
       if (!qMeta.has(node.question)) {
-        qMeta.set(node.question, { choices: nonSkip, hint: node.hint || '' });
+        qMeta.set(node.question, { choices: allChoices, hint: node.hint || '' });
       } else {
         const existing = qMeta.get(node.question);
-        for (const l of nonSkip)
+        for (const l of allChoices)
           if (!existing.choices.includes(l)) existing.choices.push(l);
       }
     }
@@ -138,6 +136,7 @@ function scoreAll() {
   cs.scores = [...cs.featureMatrix.entries()].map(([name, features]) => {
     let score = 0, max = 0;
     for (const [q, ans] of cs.answers) {
+      if (ans.startsWith('Cannot determine')) continue; // treated as unanswered; no score effect
       max += 2;
       if (features.has(q)) score += features.get(q) === ans ? 2 : -1;
       // 0 if the question is not on this species' canonical path (not applicable)
@@ -166,12 +165,18 @@ function getDisplayQuestions() {
     }
   }
 
-  // Keep questions that are answered OR that still discriminate (≥2 distinct answers)
+  // A question is "meaningfully answered" if the selected answer is not "Cannot determine"
+  const meaningfulAnswer = q => {
+    const a = cs.answers.get(q);
+    return a !== undefined && !a.startsWith('Cannot determine');
+  };
+
+  // Keep questions that are meaningfully answered OR still discriminate (≥2 distinct answers)
   return [...diversity.entries()]
-    .filter(([q, choices]) => cs.answers.has(q) || choices.size >= 2)
+    .filter(([q, choices]) => meaningfulAnswer(q) || choices.size >= 2)
     .map(([q]) => q)
     .sort((a, b) => {
-      const aA = cs.answers.has(a), bA = cs.answers.has(b);
+      const aA = meaningfulAnswer(a), bA = meaningfulAnswer(b);
       if (aA !== bA) return aA ? -1 : 1;
       return (cs.questionCoverage.get(b) || 0) - (cs.questionCoverage.get(a) || 0);
     });
@@ -254,12 +259,14 @@ function renderQuestions() {
     const meta = cs.questionMeta.get(q) || { choices: [], hint: '' };
     const sel = cs.answers.get(q) || null;
 
-    const btns = meta.choices.map(c => `
-      <button class="cl-cbtn${sel === c ? ' sel' : ''}"
+    const btns = meta.choices.map(c => {
+      const isCD = c.startsWith('Cannot determine');
+      return `<button class="cl-cbtn${sel === c ? ' sel' : ''}${isCD ? ' cd' : ''}"
               data-q="${esc(q)}" data-c="${esc(c)}"
               title="${esc(c)}">
         ${esc(truncate(c, 52))}
-      </button>`).join('');
+      </button>`;
+    }).join('');
 
     const hintId = `hint-${idx}`;
     const hintHTML = meta.hint
@@ -295,8 +302,9 @@ function render() {
 
   // Update answered-count badge
   const badge = document.getElementById('cl-answered-count');
-  if (badge) badge.textContent = cs.answers.size > 0
-    ? `${cs.answers.size} feature${cs.answers.size !== 1 ? 's' : ''} marked`
+  const meaningful = [...cs.answers.values()].filter(v => !v.startsWith('Cannot determine')).length;
+  if (badge) badge.textContent = meaningful > 0
+    ? `${meaningful} feature${meaningful !== 1 ? 's' : ''} marked`
     : '';
 }
 
