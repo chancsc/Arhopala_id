@@ -198,13 +198,17 @@ function getDisplayQuestions() {
     .filter(([q, choices]) => touched(q) || choices.size >= 2)
     .map(([q]) => q)
     .sort((a, b) => {
-      // 1. Meaningfully answered first
-      const aM = meaningfulAnswer(a), bM = meaningfulAnswer(b);
-      if (aM !== bM) return aM ? -1 : 1;
-      // 2. "Cannot determine" answered next (before unanswered)
+      // Answered questions (any answer, incl. CD) are pinned as a stable block
+      // at the top, sorted by Q-number so their positions never shift.
       const aT = touched(a), bT = touched(b);
       if (aT !== bT) return aT ? -1 : 1;
-      // 3. Unanswered: by coverage descending
+      if (aT && bT) {
+        // Within answered block: stable Q-number order
+        const qa = cs.questionNumbers ? (cs.questionNumbers.get(a) || 9999) : 9999;
+        const qb = cs.questionNumbers ? (cs.questionNumbers.get(b) || 9999) : 9999;
+        return qa - qb;
+      }
+      // Unanswered: by coverage descending
       return (cs.questionCoverage.get(b) || 0) - (cs.questionCoverage.get(a) || 0);
     });
 }
