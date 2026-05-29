@@ -168,12 +168,18 @@ function scoreAll() {
 // ── Question selection ───────────────────────────────────────────────────────
 
 function getDisplayQuestions() {
-  // Use top 30 candidates to judge which questions still discriminate
+  // Build diversity pool: all species tied at the leading score percentage.
+  // A hard top-30 cut would exclude tied species alphabetically (e.g. ijanensis
+  // at rank 47 when 70+ species all match Q1/Q2/Q4 at 100%), causing diagnostic
+  // questions for those species to disappear from the list.
   let topNames;
   if (cs.answers.size === 0 || cs.scores.every(s => s.score === 0)) {
     topNames = [...cs.featureMatrix.keys()];
   } else {
-    topNames = cs.scores.slice(0, 30).map(s => s.name);
+    const topPct = cs.scores[0].max > 0 ? cs.scores[0].score / cs.scores[0].max : 0;
+    topNames = cs.scores
+      .filter(s => (s.max > 0 ? s.score / s.max : 0) >= topPct)
+      .map(s => s.name);
   }
 
   // Build diversity map: question → set of distinct answers among top candidates
