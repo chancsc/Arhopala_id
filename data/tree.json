@@ -417,7 +417,7 @@
       "type": "question",
       "id": "q_tailless_epimuta",
       "question": "Does the male have a distinctly differently-coloured or more opaque discal patch on the forewing upperside?",
-      "hint": "In the epimuta group, males have a discal patch on the FW upperside that is noticeably more opaque or differently textured than the surrounding shining blue. You can also check the underside: HW postdiscal spot 6 is placed midway between spot 5 and the end-cell bar (distinctive for this group). If the upperside is not visible, choose 'Cannot determine'.",
+      "hint": "In the epimuta group, males have a discal patch on the FW upperside that is noticeably more opaque or differently textured than the surrounding shining blue. Underside alternative: HW postdiscal spot 6 is placed midway between spot 5 and the end-cell bar — check this at the next step if the upperside is not visible.",
       "choices": [
         {
           "label": "Yes — male FW upperside has opaque or differently-coloured discal patch",
@@ -428,8 +428,8 @@
           "next": "q_tailless_agesilaus"
         },
         {
-          "label": "Cannot determine — upperside not visible",
-          "next": "g_epimuta"
+          "label": "Cannot determine — upperside not visible (continue to underside check)",
+          "next": "q_tailless_agesilaus"
         }
       ]
     },
