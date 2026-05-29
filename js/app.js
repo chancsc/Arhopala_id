@@ -335,6 +335,10 @@ function switchMenuTab(tab) {
   const tabAbout    = document.getElementById('tab-about');
   const menuTitle   = document.getElementById('menu-title');
 
+  // Always dismiss species detail when switching tabs
+  document.getElementById('species-detail').style.display = 'none';
+  document.getElementById('back-to-search').style.display = 'none';
+
   if (tab === 'search') {
     searchPane.style.display = '';
     aboutPane.style.display  = 'none';
