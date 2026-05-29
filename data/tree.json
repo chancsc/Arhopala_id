@@ -217,6 +217,26 @@
         },
         {
           "label": "Cannot determine — upperside not visible (check HW underside streak instead)",
+          "next": "q_ijanensis_streak"
+        }
+      ]
+    },
+    "q_ijanensis_streak": {
+      "type": "question",
+      "id": "q_ijanensis_streak",
+      "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
+      "hint": "A. ijanensis (ijanensis group) has a distinctive whitish streak on the HW underside from the base of the dorsum all the way to the apex. The HW cell is also notably long — approximately half the wing length or longer. A. anthelus and A. achelous lack this streak.",
+      "choices": [
+        {
+          "label": "Yes — whitish streak present on HW underside from dorsal base to apex",
+          "next": "g_ijanensis"
+        },
+        {
+          "label": "No — no whitish streak",
+          "next": "q_tailed_anthelus"
+        },
+        {
+          "label": "Cannot determine",
           "next": "q_tailed_anthelus"
         }
       ]
@@ -3103,7 +3123,10 @@
       "taxon_id": null,
       "name": "Arhopala ijanensis",
       "common_name": "",
-      "note": "Tailed. FW ~23 mm. HW cell about half wing length or longer. Underside: markings rather variegated; whitish streak from base of dorsum to apex on HW. Male: pale blue; FW costal border runs narrowly along costa to wing base (unique). Female: same but costal border much broader. More common in Kedah than elsewhere in the Peninsula."
+      "note": "Tailed. FW ~23 mm. HW cell about half wing length or longer. Underside: markings rather variegated; whitish streak from base of dorsum to apex on HW. Male: pale blue; FW costal border runs narrowly along costa to wing base (unique). Female: same but costal border much broader. More common in Kedah than elsewhere in the Peninsula.",
+      "features": {
+        "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?": "Yes — whitish streak present on HW underside from dorsal base to apex"
+      }
     },
     "r_inornata_inornata": {
       "type": "result",
