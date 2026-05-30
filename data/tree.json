@@ -57,7 +57,7 @@
       "type": "question",
       "id": "q_ijanensis_hw_streak",
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
-      "hint": "Quick diagnostic for A. ijanensis. This species has a distinctive whitish streak on the HW underside running from the base of the dorsum all the way to the apex, with a notably long HW cell (~half wing length or longer). If this streak is visible, the identification is A. ijanensis. If absent, continue with the key. If the HW underside is not visible at all, select 'Cannot determine' — the key will continue without this check.",
+      "hint": "Quick diagnostic for A. ijanensis. This species has a distinctive whitish streak on the HW underside running from the base of the dorsum all the way to the apex, with a notably long HW cell (~half wing length or longer). If this streak is visible, the identification is A. ijanensis. If absent, continue with the key.",
       "choices": [
         {
           "label": "Yes — whitish streak present on HW underside from dorsal base to apex",
@@ -66,17 +66,13 @@
         {
           "label": "No — no whitish streak",
           "next": "q_tailed_epimuta"
-        },
-        {
-          "label": "Cannot determine — HW underside not visible",
-          "next": "q_tailed_epimuta"
         }
       ]
     },
     "q_tailed_epimuta": {
       "type": "question",
       "id": "q_tailed_epimuta",
-      "question": "Does the male have a distinctly differently-coloured or more opaque discal patch on the forewing upperside?",
+      "question": "Does the male have a distinctly differently-coloured or more opaque discal patch on the forewing?",
       "hint": "The epimuta group (A. atosia, A. lurida) has a ~2.5 mm HW tail and a male FW discal patch noticeably more opaque or differently textured than the surrounding shining blue. If the upperside is not visible, use the underside as the guide: the epimuta group is unique in having underside markings that contrast very feebly with the ground colour — the pattern nearly blends in. If the underside markings blend into the ground colour, answer 'Yes'. If markings are clearly defined (moderate to strong contrast), answer 'No'. Choose 'Cannot determine' only if the entire butterfly — both upperside and underside — is too unclear to assess; this will continue down the broader key.",
       "choices": [
         {
@@ -269,7 +265,7 @@
       "type": "question",
       "id": "q_ijanensis_streak",
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
-      "hint": "A. ijanensis (ijanensis group) has a distinctive whitish streak on the HW underside from the base of the dorsum all the way to the apex. The HW cell is also notably long — approximately half the wing length or longer. A. anthelus and A. achelous lack this streak. If the HW underside is not visible, select 'Cannot determine' to continue.",
+      "hint": "A. ijanensis (ijanensis group) has a distinctive whitish streak on the HW underside from the base of the dorsum all the way to the apex. The HW cell is also notably long — approximately half the wing length or longer. A. anthelus and A. achelous lack this streak.",
       "choices": [
         {
           "label": "Yes — whitish streak present on HW underside from dorsal base to apex",
@@ -277,10 +273,6 @@
         },
         {
           "label": "No — no whitish streak",
-          "next": "q_tailed_anthelus"
-        },
-        {
-          "label": "Cannot determine — HW underside not visible",
           "next": "q_tailed_anthelus"
         }
       ]
@@ -512,7 +504,7 @@
     "q_tailless_epimuta": {
       "type": "question",
       "id": "q_tailless_epimuta",
-      "question": "Does the male have a distinctly differently-coloured or more opaque discal patch on the forewing upperside?",
+      "question": "Does the male have a distinctly differently-coloured or more opaque discal patch on the forewing?",
       "hint": "In the epimuta group, males have a discal patch on the FW upperside that is noticeably more opaque or differently textured than the surrounding shining blue. If the upperside is not visible, use the underside as the guide: the epimuta group is unique in having underside markings that contrast very feebly with the ground colour — the pattern nearly blends in. If the underside markings blend into the ground colour, answer 'Yes'. If markings are clearly defined (moderate to strong contrast), answer 'No'. Choose 'Cannot determine' only if the entire butterfly — both upperside and underside — is too unclear to assess; this will continue down the broader key.",
       "choices": [
         {
