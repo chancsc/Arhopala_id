@@ -181,6 +181,16 @@
     /* Detail placeholder (hidden — used for non-visible state) */
     #cl-detail { display: none; }
 
+    /* Hamburger button on dark topbar */
+    .cl-menu-btn {
+      color: rgba(255,255,255,0.88);
+      flex-shrink: 0;
+      font-size: 1.2rem;
+      line-height: 1;
+      padding: 0.2rem 0.3rem;
+    }
+    .cl-menu-btn:hover { background: rgba(255,255,255,0.15) !important; color: #fff; }
+
     @media (min-width: 640px) {
       .cl-qtext { font-size: 0.9rem; }
       .cl-cbtn { font-size: 0.8rem; }
@@ -196,7 +206,7 @@
 
   <div id="cl-app" style="display:none;">
     <div class="cl-topbar">
-      <a href="index.html" class="cl-back">← Key</a>
+      <button class="menu-btn cl-menu-btn" id="cl-menu-btn" aria-label="Open menu">&#9776;</button>
       <span class="cl-title">Feature Scoring</span>
       <span class="cl-answered" id="cl-answered-count"></span>
       <button id="cl-reset" class="cl-reset-btn">Reset</button>
@@ -229,5 +239,65 @@
   </noscript>
 
   <script src="js/checklist.js"></script>
+
+  <!-- Menu overlay for checklist page — nav only, no content panes -->
+  <div id="cl-menu-overlay" class="menu-overlay" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="menu-panel">
+
+      <div class="menu-header">
+        <button id="cl-back-placeholder" class="back-to-search" style="display:none" aria-label="Back to search results">
+          ← Results
+        </button>
+        <h2 class="menu-title">Arhopala ID</h2>
+        <button id="cl-menu-close" class="menu-close" aria-label="Close menu">✕</button>
+      </div>
+
+      <nav class="menu-nav" aria-label="Navigation">
+        <a href="index.html" class="menu-nav-item" id="cl-nav-idkey" aria-label="ID Key — step-by-step identification">
+          <span class="menu-nav-item-label">ID Key</span>
+          <span class="menu-nav-item-desc">Step-by-step identification</span>
+        </a>
+        <button class="menu-nav-item active" id="cl-nav-scoring" aria-label="Feature Scoring — score multiple features at once">
+          <span class="menu-nav-item-label">Feature Scoring</span>
+          <span class="menu-nav-item-desc">Score multiple features at once</span>
+        </button>
+        <a href="index.html" class="menu-nav-item" id="cl-nav-species" aria-label="Species Search — browse all covered taxa">
+          <span class="menu-nav-item-label">Species Search</span>
+          <span class="menu-nav-item-desc">Browse all covered taxa</span>
+        </a>
+        <a href="index.html" class="menu-nav-item" id="cl-nav-about" aria-label="About — how to use this app">
+          <span class="menu-nav-item-label">About</span>
+          <span class="menu-nav-item-desc">How to use this app</span>
+        </a>
+      </nav>
+
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const overlay  = document.getElementById('cl-menu-overlay');
+      const openBtn  = document.getElementById('cl-menu-btn');
+      const closeBtn = document.getElementById('cl-menu-close');
+      const scoringBtn = document.getElementById('cl-nav-scoring');
+
+      function openClMenu() {
+        overlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeClMenu() {
+        overlay.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
+      openBtn.addEventListener('click', openClMenu);
+      closeBtn.addEventListener('click', closeClMenu);
+      overlay.addEventListener('click', function (e) { if (e.target === overlay) closeClMenu(); });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && overlay.classList.contains('open')) closeClMenu();
+      });
+      scoringBtn.addEventListener('click', closeClMenu);
+    })();
+  </script>
 </body>
 </html>

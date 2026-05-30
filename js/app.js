@@ -325,9 +325,10 @@ function initMenuListeners() {
     if (e.key === 'Escape' && overlay.classList.contains('open')) closeMenu();
   });
 
-  // Tab switching
-  document.getElementById('tab-search').addEventListener('click', () => switchMenuTab('search'));
-  document.getElementById('tab-about').addEventListener('click',  () => switchMenuTab('about'));
+  // Nav item listeners
+  document.getElementById('nav-idkey').addEventListener('click', closeMenu);
+  document.getElementById('nav-species').addEventListener('click', () => switchMenuPane('search'));
+  document.getElementById('nav-about').addEventListener('click',  () => switchMenuPane('about'));
 
   // Live search
   let debounceTimer;
@@ -346,39 +347,32 @@ function initMenuListeners() {
 
   // Back from detail to search list
   backBtn.addEventListener('click', () => {
-    switchMenuTab('search');
+    switchMenuPane('search');
     document.getElementById('species-detail').style.display = 'none';
     backBtn.style.display = 'none';
   });
 }
 
-function switchMenuTab(tab) {
-  const searchPane  = document.getElementById('search-pane');
-  const aboutPane   = document.getElementById('about-pane');
-  const tabSearch   = document.getElementById('tab-search');
-  const tabAbout    = document.getElementById('tab-about');
-  const menuTitle   = document.getElementById('menu-title');
+function switchMenuPane(pane) {
+  const searchPane = document.getElementById('search-pane');
+  const aboutPane  = document.getElementById('about-pane');
+  const navSpecies = document.getElementById('nav-species');
+  const navAbout   = document.getElementById('nav-about');
 
-  // Always dismiss species detail when switching tabs
+  // Always dismiss species detail when switching panes
   document.getElementById('species-detail').style.display = 'none';
   document.getElementById('back-to-search').style.display = 'none';
 
-  if (tab === 'search') {
+  if (pane === 'search') {
     searchPane.style.display = '';
     aboutPane.style.display  = 'none';
-    tabSearch.classList.add('active');
-    tabSearch.setAttribute('aria-selected', 'true');
-    tabAbout.classList.remove('active');
-    tabAbout.setAttribute('aria-selected', 'false');
-    menuTitle.textContent = 'Species Search';
+    navSpecies.classList.add('active');
+    navAbout.classList.remove('active');
   } else {
     searchPane.style.display = 'none';
     aboutPane.style.display  = '';
-    tabAbout.classList.add('active');
-    tabAbout.setAttribute('aria-selected', 'true');
-    tabSearch.classList.remove('active');
-    tabSearch.setAttribute('aria-selected', 'false');
-    menuTitle.textContent = 'About';
+    navAbout.classList.add('active');
+    navSpecies.classList.remove('active');
   }
 }
 
@@ -386,8 +380,8 @@ function openMenu() {
   const overlay = document.getElementById('menu-overlay');
   overlay.classList.add('open');
   document.body.style.overflow = 'hidden';
-  // Reset to search tab
-  switchMenuTab('search');
+  // Default to species search pane
+  switchMenuPane('search');
   document.getElementById('species-detail').style.display = 'none';
   document.getElementById('back-to-search').style.display = 'none';
   // Render full list and focus input
