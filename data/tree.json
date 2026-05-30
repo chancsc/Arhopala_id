@@ -148,11 +148,11 @@
     "q_tailed_ganesa": {
       "type": "question",
       "id": "q_tailed_ganesa",
-      "question": "Is this a small species with spots above the forewing cell, a spot at the base of forewing space 3, and the gap between the outer and central spots in hindwing space 7 conspicuously whitened?",
-      "hint": "The ganesa group is characteristically small, with spots visible above the FW cell on the underside, a spot at the base of FW space 3, and short tails. The whitened gap between the outer and central spots in HW space 7 is diagnostic for the whole group and is often the most immediately obvious character in a photograph.",
+      "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
+      "hint": "The ganesa group is characteristically small, with spots visible above the FW cell on the underside, a spot at the base of FW space 3, and short tails. Note: three of the five Peninsular species (A. ammon, A. ammonides, A. elizabethae) also show a conspicuously whitened gap between the outer and central spots in HW space 7.",
       "choices": [
         {
-          "label": "Yes — small; spots above FW cell; spot at base of FW space 3; HW space 7 gap whitened",
+          "label": "Yes — small; spots above FW cell; spot at base of FW space 3",
           "next": "g_ganesa"
         },
         {
@@ -1033,14 +1033,13 @@
       "type": "group",
       "id": "g_ganesa",
       "group_name": "ganesa group",
-      "description": "Small tailed species. Underside FW has a characteristic spot at the base of space 11, positioned between the basal and central cell spots, plus a spot at the base of space 3. On the HW underside, the gap between the outer and central spots in space 7 is conspicuously whitened — a shared group character visible across all five Peninsular species. Keyed within the group by tornal green scales and HW spot 6 length.",
+      "description": "Small tailed species. Underside FW has a characteristic spot at the base of space 11, positioned between the basal and central cell spots, plus a spot at the base of space 3. Keyed within the group first by whether the gap between the outer and central spots in HW space 7 is conspicuously whitened — present in A. ammon, A. ammonides, and A. elizabethae; absent in A. ariel and A. paraganesa.",
       "key_features": [
         "Small; short HW tail",
         "FW underside: spot at base of space 11 (between basal and central cell spots)",
-        "FW underside: spot at base of space 3",
-        "HW underside: gap between outer and central spots in space 7 conspicuously whitened"
+        "FW underside: spot at base of space 3"
       ],
-      "next": "q_ganesa_s1"
+      "next": "q_ganesa_s7_gap"
     },
     "g_fulla": {
       "type": "group",
@@ -2983,15 +2982,31 @@
         "Is there a distinct dark area under the forewing cell (space 1b), bounded outwardly by a pale line?": "No — no such marking"
       }
     },
+    "q_ganesa_s7_gap": {
+      "type": "question",
+      "id": "q_ganesa_s7_gap",
+      "question": "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?",
+      "hint": "Three of the five Peninsular ganesa species (A. ammon, A. ammonides, A. elizabethae) have a conspicuously whitened gap between the outer and central spots in HW space 7. A. ariel and A. paraganesa lack this whitening.",
+      "choices": [
+        {
+          "label": "Yes — gap between HW space 7 spots conspicuously whitened",
+          "next": "q_ganesa_s1"
+        },
+        {
+          "label": "No — no whitened gap between HW space 7 spots",
+          "next": "q_ganesa_no_green"
+        }
+      ]
+    },
     "q_ganesa_s1": {
       "type": "question",
       "id": "q_ganesa_s1",
       "question": "Are tornal green scales present on the hindwing underside?",
-      "hint": "Check the tornal area (lower hind angle) of the hindwing underside for metallic green scales. Two ganesa species lack them (paraganesa, ammonides); three have them (ammon, ariel, elizabethae).",
+      "hint": "Among the three ganesa species with whitened HW space 7 gap, tornal green scales separate A. ammonides (no green scales) from A. ammon and A. elizabethae (both with green scales).",
       "choices": [
         {
           "label": "No tornal green scales",
-          "next": "q_ganesa_no_green"
+          "next": "r_ammonides_chunsu"
         },
         {
           "label": "Tornal green scales present",
@@ -3003,15 +3018,15 @@
       "type": "question",
       "id": "q_ganesa_no_green",
       "question": "Is there a roughly quadrate whitish area on the hindwing underside extending from mid-cell to the costa?",
-      "hint": "In paraganesa this whitish mid-cell patch is distinctive and quite obvious. ammonides lacks it; instead the gap between the outer and central spots in HW space 7 is completely whitened. paraganesa is also wholly montane on the Peninsula.",
+      "hint": "In A. paraganesa this whitish mid-cell patch is distinctive and quite obvious. A. ariel lacks it. paraganesa is also wholly montane on the Malay Peninsula.",
       "choices": [
         {
           "label": "Yes — roughly quadrate whitish area from mid-cell to costa",
           "next": "r_paraganesa_mendava"
         },
         {
-          "label": "No — gap between HW space 7 spots whitened, but no mid-cell white patch",
-          "next": "r_ammonides_chunsu"
+          "label": "No — no mid-cell whitish patch",
+          "next": "r_ariel"
         }
       ]
     },
@@ -3019,7 +3034,7 @@
       "type": "question",
       "id": "q_ganesa_with_green",
       "question": "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?",
-      "hint": "In A. ammon the space 6 spot is unusually elongated, reaching the base of the space. In ariel and elizabethae spot 6 is normal and does not reach the base.",
+      "hint": "In A. ammon the space 6 spot is unusually elongated, reaching the base of the space. In A. elizabethae spot 6 is normal and does not reach the base.",
       "choices": [
         {
           "label": "Yes — HW spot 6 extended to base of space",
@@ -3027,27 +3042,7 @@
         },
         {
           "label": "No — HW spot 6 normal, not reaching base",
-          "next": "q_ganesa_ariel_eliz"
-        }
-      ]
-    },
-    "q_ganesa_ariel_eliz": {
-      "type": "question",
-      "id": "q_ganesa_ariel_eliz",
-      "question": "What is the male upperside appearance?",
-      "hint": "⚠ Underside characters alone are insufficient to separate these two species — both have tornal green scales, normal spot 6, and spots 7 joined at their upper ends. Upperside required: ariel is bluish-purple and hardly shining with a border expanding from 1.5 mm at the tornus to 4.0 mm at the apex; elizabethae is shining deep blue with borders slightly wider throughout. If the upperside is not visible, choose 'Cannot determine'.",
-      "choices": [
-        {
-          "label": "Bluish-purple, hardly shining; FW border expanding to ~4 mm at apex",
-          "next": "r_ariel"
-        },
-        {
-          "label": "Shining deep blue; borders slightly wider than ariel",
           "next": "r_elizabethae"
-        },
-        {
-          "label": "Cannot determine — upperside not visible",
-          "next": "r_ariel_or_elizabethae"
         }
       ]
     },
@@ -3081,7 +3076,7 @@
       "taxon_id": null,
       "name": "Arhopala ariel",
       "common_name": "",
-      "note": "Tornal green scales present. Underside HW: spot 6 normal (not reaching base of space). ⚠ Upperside required to separate from elizabethae: male bluish-purple, hardly shining; FW border 1.5 mm at tornus expanding to 4.0 mm at apex. Female: bluer shade with broader borders."
+      "note": "No whitened gap between HW space 7 spots; no mid-cell whitish patch. Tornal green scales present; HW spot 6 normal. Upperside male: bluish-purple, hardly shining; FW border 1.5 mm at tornus expanding to 4.0 mm at apex. Female: bluer shade with broader borders."
     },
     "r_elizabethae": {
       "type": "result",
@@ -3089,7 +3084,7 @@
       "taxon_id": null,
       "name": "Arhopala elizabethae",
       "common_name": "",
-      "note": "Tornal green scales present. Underside HW: spot 6 normal (not reaching base of space). ⚠ Upperside required to separate from ariel: male shining deep blue with borders slightly wider than A. ariel; female similar to male (not bluer with broader borders as in ariel female)."
+      "note": "Gap between outer and central spots in HW space 7 conspicuously whitened. Tornal green scales present; HW spot 6 normal (not reaching base of space). Upperside male: shining deep blue with borders slightly wider than A. ariel; female similar to male."
     },
     "r_ariel_or_elizabethae": {
       "type": "result",
