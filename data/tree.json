@@ -149,7 +149,7 @@
       "type": "question",
       "id": "q_tailed_ganesa",
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
-      "hint": "The ganesa group is characteristically small, with spots visible above the FW cell on the underside, plus a spot at the base of FW space 3. All ganesa have short tails.",
+      "hint": "The ganesa group is characteristically small, with spots visible above the FW cell on the underside, plus a spot at the base of FW space 3. All ganesa have short tails. A useful supporting character: on the HW underside, the gap between the outer and central spots in space 7 is conspicuously whitened across all group members.",
       "choices": [
         {
           "label": "Yes — small; spots above FW cell; spot at base of FW space 3",
@@ -1033,11 +1033,12 @@
       "type": "group",
       "id": "g_ganesa",
       "group_name": "ganesa group",
-      "description": "Small tailed species. Underside FW has a characteristic spot at the base of space 11, positioned between the basal and central cell spots, plus a spot at the base of space 3. Five species in the Peninsula, keyed primarily by tornal green scales and HW space 6/7 spot arrangement.",
+      "description": "Small tailed species. Underside FW has a characteristic spot at the base of space 11, positioned between the basal and central cell spots, plus a spot at the base of space 3. On the HW underside, the gap between the outer and central spots in space 7 is conspicuously whitened — a shared group character visible across all five Peninsular species. Keyed within the group by tornal green scales and HW spot 6 length.",
       "key_features": [
         "Small; short HW tail",
         "FW underside: spot at base of space 11 (between basal and central cell spots)",
-        "FW underside: spot at base of space 3"
+        "FW underside: spot at base of space 3",
+        "HW underside: gap between outer and central spots in space 7 conspicuously whitened"
       ],
       "next": "q_ganesa_s1"
     },
@@ -3018,7 +3019,7 @@
       "type": "question",
       "id": "q_ganesa_with_green",
       "question": "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?",
-      "hint": "In A. ammon the space 6 spot is unusually elongated, reaching the base of the space. In ariel and elizabethae spot 6 is normal and does not reach the base. Note: a whitened gap between the outer and central spots in HW space 7 is shared across multiple ganesa group species and is not used here to separate them.",
+      "hint": "In A. ammon the space 6 spot is unusually elongated, reaching the base of the space. In ariel and elizabethae spot 6 is normal and does not reach the base.",
       "choices": [
         {
           "label": "Yes — HW spot 6 extended to base of space",
