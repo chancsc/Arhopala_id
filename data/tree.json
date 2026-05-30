@@ -57,7 +57,7 @@
       "type": "question",
       "id": "q_ijanensis_hw_streak",
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
-      "hint": "Quick diagnostic for A. ijanensis. This species has a distinctive whitish streak on the HW underside running from the base of the dorsum all the way to the apex, with a notably long HW cell (~half wing length or longer). If this streak is visible, the identification is A. ijanensis. If absent, continue with the key.",
+      "hint": "Quick diagnostic for A. ijanensis. This species has a distinctive whitish streak on the HW underside running from the base of the dorsum all the way to the apex, with a notably long HW cell (~half wing length or longer). If this streak is visible, the identification is A. ijanensis. If absent, continue with the key. If the HW underside is not visible at all, select 'Cannot determine' — the key will continue without this check.",
       "choices": [
         {
           "label": "Yes — whitish streak present on HW underside from dorsal base to apex",
@@ -65,6 +65,10 @@
         },
         {
           "label": "No — no whitish streak",
+          "next": "q_tailed_epimuta"
+        },
+        {
+          "label": "Cannot determine — HW underside not visible",
           "next": "q_tailed_epimuta"
         }
       ]
@@ -265,7 +269,7 @@
       "type": "question",
       "id": "q_ijanensis_streak",
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
-      "hint": "A. ijanensis (ijanensis group) has a distinctive whitish streak on the HW underside from the base of the dorsum all the way to the apex. The HW cell is also notably long — approximately half the wing length or longer. A. anthelus and A. achelous lack this streak.",
+      "hint": "A. ijanensis (ijanensis group) has a distinctive whitish streak on the HW underside from the base of the dorsum all the way to the apex. The HW cell is also notably long — approximately half the wing length or longer. A. anthelus and A. achelous lack this streak. If the HW underside is not visible, select 'Cannot determine' to continue.",
       "choices": [
         {
           "label": "Yes — whitish streak present on HW underside from dorsal base to apex",
@@ -273,6 +277,10 @@
         },
         {
           "label": "No — no whitish streak",
+          "next": "q_tailed_anthelus"
+        },
+        {
+          "label": "Cannot determine — HW underside not visible",
           "next": "q_tailed_anthelus"
         }
       ]
