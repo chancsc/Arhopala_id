@@ -940,16 +940,16 @@
     "q_tailed_spot4_outofline": {
       "type": "question",
       "id": "q_tailed_spot4_outofline",
-      "question": "What is the forewing apex shape?",
-      "hint": "Both the eumolphus group and the oenea group have FW spot 4 out of line with spots 5–6 and HW spot 6 below spot 7. They are separated by FW shape: eumolphus has a rounded forewing apex; oenea has an acute apex with a straight termen between veins 2 and 4. Also, oenea underside spots are narrow and rectangular throughout, while eumolphus spots are not.",
+      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
+      "hint": "This question separates the oenea group (A. allata pandora — monotypic on the Peninsula) from the eumolphus group. The oenea group has a COMBINATION of (1) underside postdiscal spots that are narrow, elongate, and rectangular throughout the band, and (2) an acute FW apex with termen nearly straight between veins 2 and 4. Important: the eumolphus group contains BOTH rounded-apex species (e.g. A. eumolphus, A. acta) AND acute-apex species (e.g. A. tameanga, A. hellenore) — so apex shape alone is not sufficient. If the underside spots are not uniformly narrow and rectangular, answer 'No' regardless of apex shape.",
       "choices": [
         {
-          "label": "FW apex rounded; termen evenly curved",
-          "next": "g_eumolphus"
+          "label": "Yes — underside spots uniformly narrow and rectangular; FW apex acute, termen nearly straight",
+          "next": "g_oenea"
         },
         {
-          "label": "FW apex acute; termen straight between veins 2–4; underside spots narrow and rectangular",
-          "next": "g_oenea"
+          "label": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)",
+          "next": "g_eumolphus"
         }
       ]
     },
