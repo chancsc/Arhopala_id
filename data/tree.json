@@ -1668,26 +1668,6 @@
         }
       ]
     },
-    "q_amph_thread": {
-      "type": "question",
-      "id": "q_amph_thread",
-      "question": "Is the male upperside a shining violet-blue, and does the female's blue colour extend to the hindwing termen?",
-      "hint": "A. moolaiana yajuna: shining violet-blue male; female blue reaches HW termen. A. alica: dark, dull purple male; Bornean endemic — found only in Borneo, not the Malay Peninsula.",
-      "choices": [
-        {
-          "label": "Yes — shining violet-blue; female blue reaches HW termen (Peninsula)",
-          "next": "r_moolaiana_yajuna"
-        },
-        {
-          "label": "No — dark dull purple; female blue does not reach HW termen (Bornean)",
-          "next": "r_alica"
-        },
-        {
-          "label": "Cannot determine — upperside not visible",
-          "next": "r_amph_thread_unclear"
-        }
-      ]
-    },
     "q_amph_s6": {
       "type": "question",
       "id": "q_amph_s6",
@@ -1717,42 +1697,6 @@
         {
           "label": "No — violet-blue (not warm purple); smaller (FW 16–17 mm); female exceptionally narrow-bordered",
           "next": "r_zylda_elioti"
-        }
-      ]
-    },
-    "q_amph_s8": {
-      "type": "question",
-      "id": "q_amph_s8",
-      "question": "Does the female have exceptionally narrow borders (narrower than typical 0.5 mm)?",
-      "hint": "A. zylda elioti: female has exceptionally narrow borders (a diagnostic feature). A. baluensis and A. dajagaka are Bornean endemics. If the specimen is from the Malay Peninsula, it is most likely A. zylda.",
-      "choices": [
-        {
-          "label": "Yes — female exceptionally narrow-bordered (Peninsula species)",
-          "next": "r_zylda_elioti"
-        },
-        {
-          "label": "No — female with normal borders (Bornean endemic)",
-          "next": "q_amph_borneo"
-        }
-      ]
-    },
-    "q_amph_borneo": {
-      "type": "question",
-      "id": "q_amph_borneo",
-      "question": "Does the female have unusually thick black borders and distinctly darker venation on the upperside?",
-      "hint": "A. dajagaka: female has thick black borders and darker venation. A. baluensis: HW cilia lacks the white spot in space 1a that is present in some allied species.",
-      "choices": [
-        {
-          "label": "Yes — female with thick black borders and darker venation",
-          "next": "r_dajagaka"
-        },
-        {
-          "label": "No — HW cilia lacks white spot in space 1a; female without thick borders",
-          "next": "r_baluensis"
-        },
-        {
-          "label": "Cannot determine — female upperside not visible",
-          "next": "r_amph_borneo_unclear"
         }
       ]
     },
@@ -2229,6 +2173,10 @@
         {
           "label": "No — short HW tail present",
           "next": "r_johoreana_johoreana"
+        },
+        {
+          "label": "Cannot determine — tail condition unclear",
+          "next": "r_camdeo_incomplete_unclear"
         }
       ]
     },
@@ -3267,22 +3215,6 @@
         "Consider genitalia dissection for difficult cases",
         "Refer to specialised literature"
       ]
-    },
-    "r_amph_thread_unclear": {
-      "type": "result",
-      "id": "r_amph_thread_unclear",
-      "taxon_id": null,
-      "name": "Amphimuta group — moolaiana or alica (unresolved)",
-      "common_name": "Cannot determine to species",
-      "note": "⚠ Cannot distinguish to species without male/female upperside.\n\nA. moolaiana yajuna (Peninsula): male shining violet-blue; female blue extends to HW termen. FW 18–21 mm.\n\nA. alica (Borneo — Sabah/Sarawak): male dark dull purple; female blue does not reach HW termen. FW 19–22 mm.\n\nGeography is the most reliable guide: Peninsula → moolaiana; Borneo → alica. Inspect the upperside to confirm species."
-    },
-    "r_amph_borneo_unclear": {
-      "type": "result",
-      "id": "r_amph_borneo_unclear",
-      "taxon_id": null,
-      "name": "Amphimuta group — dajagaka or baluensis (unresolved)",
-      "common_name": "Cannot determine to species",
-      "note": "⚠ Cannot distinguish to species without female upperside (border thickness and venation).\n\nA. dajagaka (Borneo): FW 21–25 mm (larger); female with thick black borders and distinctly darker venation on upperside.\n\nA. baluensis (Borneo): FW 18–20 mm (smaller); female without thick borders or darker venation; no white spot in HW space 1a cilia.\n\nForewing size is the most accessible separator. Inspect female upperside to confirm species."
     },
     "r_muta_all_unclear": {
       "type": "result",
