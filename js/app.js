@@ -37,6 +37,7 @@ async function init() {
 
     loadingEl.style.display = 'none';
     appEl.style.display = 'block';
+    document.getElementById('app-topbar').style.display = '';
     render();
     initMenuListeners();
   } catch (err) {
@@ -178,26 +179,12 @@ function render() {
   }
 
   appEl.innerHTML = `
-    <div class="app-header">
-      <div class="header-row">
-        <div class="header-titles">
-          <h1>Arhopala Identifier</h1>
-          <p>Malaysian Oak Blue Butterflies &nbsp;·&nbsp; <a href="checklist.html" class="header-alt-link">Feature scoring</a></p>
-        </div>
-        <button class="menu-btn" id="menu-btn" aria-label="Open species search">
-          ${iconMenu()}
-        </button>
-      </div>
-    </div>
     ${breadcrumbHTML}
     ${progressHTML}
     ${bodyHTML}
   `;
 
   // Attach event listeners after render
-  const menuBtn = appEl.querySelector('#menu-btn');
-  if (menuBtn) menuBtn.addEventListener('click', openMenu);
-
   const backBtn = appEl.querySelector('.back-btn');
   if (backBtn) backBtn.addEventListener('click', handleBack);
 
@@ -312,9 +299,10 @@ function renderGroup(node) {
 function initMenuListeners() {
   const overlay  = document.getElementById('menu-overlay');
   const closeBtn = document.getElementById('menu-close');
-  const backBtn  = document.getElementById('back-to-search');
-  const input    = document.getElementById('search-input');
-  const results  = document.getElementById('search-results');
+  const menuBtn  = document.getElementById('menu-btn');
+
+  // Open menu via topbar button
+  if (menuBtn) menuBtn.addEventListener('click', openMenu);
 
   // Close on backdrop click or close button
   closeBtn.addEventListener('click', closeMenu);
@@ -327,52 +315,19 @@ function initMenuListeners() {
 
   // Nav item listeners
   document.getElementById('nav-idkey').addEventListener('click', closeMenu);
-  document.getElementById('nav-species').addEventListener('click', () => switchMenuPane('search'));
-  document.getElementById('nav-about').addEventListener('click',  () => switchMenuPane('about'));
-
-  // Live search
-  let debounceTimer;
-  input.addEventListener('input', e => {
-    clearTimeout(debounceTimer);
-    debounceTimer = setTimeout(() => renderSearchList(e.target.value), 120);
-  });
-
-  // Tap a result → show detail
-  results.addEventListener('click', e => {
-    const btn = e.target.closest('.search-item');
-    if (!btn) return;
-    const sp = state.speciesIndex.find(s => s.name === btn.dataset.name);
-    if (sp) showSpeciesDetail(sp);
-  });
-
-  // Back from detail to search list
-  backBtn.addEventListener('click', () => {
-    switchMenuPane('search');
-    document.getElementById('species-detail').style.display = 'none';
-    backBtn.style.display = 'none';
-  });
+  document.getElementById('nav-about').addEventListener('click', () => switchMenuPane('about'));
 }
 
 function switchMenuPane(pane) {
-  const searchPane = document.getElementById('search-pane');
-  const aboutPane  = document.getElementById('about-pane');
-  const navSpecies = document.getElementById('nav-species');
-  const navAbout   = document.getElementById('nav-about');
+  const aboutPane = document.getElementById('about-pane');
+  const navAbout  = document.getElementById('nav-about');
 
-  // Always dismiss species detail when switching panes
-  document.getElementById('species-detail').style.display = 'none';
-  document.getElementById('back-to-search').style.display = 'none';
-
-  if (pane === 'search') {
-    searchPane.style.display = '';
-    aboutPane.style.display  = 'none';
-    navSpecies.classList.add('active');
-    navAbout.classList.remove('active');
-  } else {
-    searchPane.style.display = 'none';
-    aboutPane.style.display  = '';
+  if (pane === 'about') {
+    aboutPane.style.display = '';
     navAbout.classList.add('active');
-    navSpecies.classList.remove('active');
+  } else {
+    aboutPane.style.display = 'none';
+    navAbout.classList.remove('active');
   }
 }
 
@@ -380,13 +335,6 @@ function openMenu() {
   const overlay = document.getElementById('menu-overlay');
   overlay.classList.add('open');
   document.body.style.overflow = 'hidden';
-  // Default to species search pane
-  switchMenuPane('search');
-  document.getElementById('species-detail').style.display = 'none';
-  document.getElementById('back-to-search').style.display = 'none';
-  // Render full list and focus input
-  renderSearchList(document.getElementById('search-input').value);
-  setTimeout(() => document.getElementById('search-input').focus(), 150);
 }
 
 function closeMenu() {
@@ -683,4 +631,90 @@ function iconButterfly() {
   </svg>`;
 }
 
-document.addEventListener('DOMContentLoaded', init);
+// ===== Species page =====
+
+async function initSpeciesPage() {
+  const loadingEl = document.getElementById('loading');
+  const appEl = document.getElementById('species-app');
+  try {
+    const [treeRes, speciesRes] = await Promise.all([
+      fetch('data/tree.json'), fetch('data/species.json')
+    ]);
+    if (!treeRes.ok || !speciesRes.ok) throw new Error('Failed to load data');
+    const [treeData, speciesData] = await Promise.all([treeRes.json(), speciesRes.json()]);
+    state.speciesIndex = buildSpeciesIndex(treeData, speciesData);
+    state.questionNumbers = buildQuestionNumbers(treeData);
+    loadingEl.style.display = 'none';
+    appEl.style.display = '';
+
+    // Wire up search
+    const input = document.getElementById('search-input');
+    const results = document.getElementById('search-results');
+    const backBtn = document.getElementById('back-to-results');
+    let dt;
+    input.addEventListener('input', e => { clearTimeout(dt); dt = setTimeout(() => renderSearchList(e.target.value), 120); });
+    results.addEventListener('click', e => {
+      const btn = e.target.closest('.search-item');
+      if (!btn) return;
+      const sp = state.speciesIndex.find(s => s.name === btn.dataset.name);
+      if (sp) {
+        results.style.display = 'none';
+        document.getElementById('search-count').style.display = 'none';
+        input.style.display = 'none';
+        if (backBtn) backBtn.style.display = '';
+        showSpeciesDetailInline(sp);
+      }
+    });
+    if (backBtn) backBtn.addEventListener('click', () => {
+      document.getElementById('species-detail').style.display = 'none';
+      results.style.display = '';
+      document.getElementById('search-count').style.display = '';
+      input.style.display = '';
+      backBtn.style.display = 'none';
+    });
+
+    // Wire up menu
+    const overlay = document.getElementById('menu-overlay');
+    const closeBtn = document.getElementById('menu-close');
+    const menuBtn = document.getElementById('menu-btn');
+    if (menuBtn) menuBtn.addEventListener('click', () => { overlay.classList.add('open'); document.body.style.overflow = 'hidden'; });
+    if (closeBtn) closeBtn.addEventListener('click', () => { overlay.classList.remove('open'); document.body.style.overflow = ''; });
+    overlay.addEventListener('click', e => { if (e.target === overlay) { overlay.classList.remove('open'); document.body.style.overflow = ''; } });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && overlay.classList.contains('open')) { overlay.classList.remove('open'); document.body.style.overflow = ''; } });
+    const navSpecies = document.getElementById('nav-species');
+    if (navSpecies) navSpecies.addEventListener('click', () => { overlay.classList.remove('open'); document.body.style.overflow = ''; });
+    const navAbout = document.getElementById('nav-about');
+    if (navAbout) navAbout.addEventListener('click', () => {
+      const aboutPane = document.getElementById('about-pane');
+      if (aboutPane) { aboutPane.style.display = aboutPane.style.display === 'none' ? '' : 'none'; }
+    });
+
+    renderSearchList('');
+  } catch (err) {
+    loadingEl.style.display = 'none';
+    if (appEl) { appEl.style.display = ''; appEl.innerHTML = '<p style="padding:2rem">Could not load species data.</p>'; }
+  }
+}
+
+function showSpeciesDetailInline(sp) {
+  const detailEl = document.getElementById('species-detail');
+  detailEl.style.display = 'block';
+  detailEl.scrollTop = 0;
+  const noteHTML = sp.note ? `<div class="id-note">${escapeHtml(sp.note)}</div>` : '';
+  detailEl.innerHTML = `
+    <span class="result-badge">Species Info</span>
+    <h2 class="species-common">${escapeHtml(sp.common_name || sp.name)}</h2>
+    ${sp.common_name ? `<p class="species-name">${escapeHtml(sp.name)}</p>` : ''}
+    ${noteHTML}
+    ${buildPathDisplay(sp.paths)}
+    ${buildPhotoGallery(sp)}
+    <a class="btn-inat" href="${escapeAttr(sp.inat_url)}" target="_blank" rel="noopener noreferrer">
+      ${iconExternal()} View on iNaturalist
+    </a>
+  `;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (document.getElementById('species-app')) initSpeciesPage();
+  else init();
+});
