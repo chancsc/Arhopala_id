@@ -906,3 +906,53 @@ details[open] .path-summary::before { content: '▼ '; }
   color: #9e6c00;
   font-style: italic;
 }
+
+/* ===== App topbar (ID Key + Species Search pages) ===== */
+.app-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 1rem;
+  margin: -1rem -1rem 0;
+}
+.app-topbar-menu-btn {
+  color: rgba(255,255,255,0.88);
+  flex-shrink: 0;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 0.2rem 0.3rem;
+}
+.app-topbar-menu-btn:hover { background: rgba(255,255,255,0.15) !important; color: #fff; }
+.app-topbar-title {
+  font-size: 0.92rem;
+  font-weight: 600;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ===== Species page content area ===== */
+.sp-page {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 1rem 1rem 2rem;
+}
+.sp-back-btn {
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 0.4rem 0;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.sp-back-btn:hover { text-decoration: underline; }
