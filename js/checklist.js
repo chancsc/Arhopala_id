@@ -260,6 +260,7 @@ function renderCandidates() {
     const info = cs.speciesInfo.get(s.name) || {};
     const barW = s.max > 0 ? Math.round(Math.max(0, s.score) / s.max * 100) : 0;
     const isExpanded = cs.expandedName === s.name;
+    const inatHref = info.inat_url ? esc(info.inat_url) : '';
     return `
       <div class="cl-cand${isExpanded ? ' expanded' : ''}" data-name="${esc(s.name)}">
         <div class="cl-cand-row" role="button" tabindex="0" aria-expanded="${isExpanded}">
@@ -274,6 +275,7 @@ function renderCandidates() {
             </span>
             <span class="cl-score-num${s.score < 0 ? ' neg' : ''}">${s.score > 0 ? '+' : ''}${s.score}</span>
           </span>
+          ${inatHref ? `<a class="cl-inat-icon" href="${inatHref}" target="_blank" rel="noopener" title="View on iNaturalist" aria-label="View ${esc(s.name)} on iNaturalist">🔗</a>` : ''}
         </div>
         ${isExpanded ? renderCandidateDetail(s.name) : ''}
       </div>`;
@@ -384,6 +386,7 @@ function onQuestionClick(e) {
 }
 
 function onCandidateClick(e) {
+  if (e.target.closest('.cl-inat-icon')) return;
   const row = e.target.closest('.cl-cand-row');
   if (!row) return;
   const cand = row.closest('.cl-cand');

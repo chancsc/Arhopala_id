@@ -315,20 +315,6 @@ function initMenuListeners() {
 
   // Nav item listeners
   document.getElementById('nav-idkey').addEventListener('click', closeMenu);
-  document.getElementById('nav-about').addEventListener('click', () => switchMenuPane('about'));
-}
-
-function switchMenuPane(pane) {
-  const aboutPane = document.getElementById('about-pane');
-  const navAbout  = document.getElementById('nav-about');
-
-  if (pane === 'about') {
-    aboutPane.style.display = '';
-    navAbout.classList.add('active');
-  } else {
-    aboutPane.style.display = 'none';
-    navAbout.classList.remove('active');
-  }
 }
 
 function openMenu() {
@@ -373,7 +359,6 @@ function renderSearchList(query) {
 
 function showSpeciesDetail(sp) {
   document.getElementById('search-pane').style.display = 'none';
-  document.getElementById('about-pane').style.display = 'none';
   document.getElementById('back-to-search').style.display = '';
 
   const detailEl = document.getElementById('species-detail');
@@ -683,11 +668,6 @@ async function initSpeciesPage() {
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && overlay.classList.contains('open')) { overlay.classList.remove('open'); document.body.style.overflow = ''; } });
     const navSpecies = document.getElementById('nav-species');
     if (navSpecies) navSpecies.addEventListener('click', () => { overlay.classList.remove('open'); document.body.style.overflow = ''; });
-    const navAbout = document.getElementById('nav-about');
-    if (navAbout) navAbout.addEventListener('click', () => {
-      const aboutPane = document.getElementById('about-pane');
-      if (aboutPane) { aboutPane.style.display = aboutPane.style.display === 'none' ? '' : 'none'; }
-    });
 
     renderSearchList('');
   } catch (err) {

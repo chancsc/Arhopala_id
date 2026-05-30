@@ -169,6 +169,19 @@
       color: var(--accent); border-style: dashed;
     }
 
+    /* iNat link icon on candidate rows */
+    .cl-inat-icon {
+      flex-shrink: 0;
+      font-size: 0.85rem;
+      line-height: 1;
+      text-decoration: none;
+      opacity: 0.55;
+      padding: 0.15rem 0.1rem;
+      border-radius: 3px;
+      transition: opacity 0.15s;
+    }
+    .cl-inat-icon:hover { opacity: 1; }
+
     /* Show more / fewer */
     .cl-more {
       display: block; width: 100%; background: none; border: none;
@@ -265,7 +278,7 @@
           <span class="menu-nav-item-label">Species Search</span>
           <span class="menu-nav-item-desc">Browse all covered taxa</span>
         </a>
-        <a href="index.html" class="menu-nav-item" id="cl-nav-about" aria-label="About — how to use this app">
+        <a href="about.html" class="menu-nav-item" id="cl-nav-about" aria-label="About — how to use this app">
           <span class="menu-nav-item-label">About</span>
           <span class="menu-nav-item-desc">How to use this app</span>
         </a>
