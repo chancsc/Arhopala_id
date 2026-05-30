@@ -205,31 +205,11 @@
         }
       ]
     },
-    "q_tailed_ijanensis": {
-      "type": "question",
-      "id": "q_tailed_ijanensis",
-      "question": "In the male, does the forewing upperside black border run along the costa all the way to the wing base?",
-      "hint": "The ijanensis group male has a unique FW black border running along the costa all the way to the wing base. You are here because the HW underside streak was not visible in the previous step. If the male upperside is visible, use this question to confirm or rule out A. ijanensis. If the upperside is also not visible, choose 'Cannot determine' to proceed past this check.",
-      "choices": [
-        {
-          "label": "Yes — male FW border extends to base of costa; spot at base of HW space 6",
-          "next": "g_ijanensis"
-        },
-        {
-          "label": "No",
-          "next": "q_tailed_anthelus"
-        },
-        {
-          "label": "Cannot determine — upperside not visible (proceed past ijanensis check)",
-          "next": "q_tailed_anthelus"
-        }
-      ]
-    },
     "q_ijanensis_streak": {
       "type": "question",
       "id": "q_ijanensis_streak",
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
-      "hint": "A. ijanensis (ijanensis group) has a distinctive whitish streak on the HW underside from the base of the dorsum all the way to the apex. The HW cell is also notably long — approximately half the wing length or longer. A. anthelus and A. achelous lack this streak. If the hindwing underside is not visible at all, choose 'Cannot determine' to check the male forewing upperside border instead.",
+      "hint": "A. ijanensis (ijanensis group) has a distinctive whitish streak on the HW underside from the base of the dorsum all the way to the apex. The HW cell is also notably long — approximately half the wing length or longer. A. anthelus and A. achelous lack this streak.",
       "choices": [
         {
           "label": "Yes — whitish streak present on HW underside from dorsal base to apex",
@@ -238,10 +218,6 @@
         {
           "label": "No — no whitish streak",
           "next": "q_tailed_anthelus"
-        },
-        {
-          "label": "Cannot determine — HW underside not visible",
-          "next": "q_tailed_ijanensis"
         }
       ]
     },

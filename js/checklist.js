@@ -102,10 +102,14 @@ function initData(treeData, speciesData) {
     const canonical = pool.reduce((b, p) => (!b || p.length < b.length) ? p : b, null) || [];
 
     const features = new Map();
+    const covSeen = new Set();
     for (const step of canonical) {
       if (step.question && step.choice && !step.choice.startsWith('Cannot determine')) {
         features.set(step.question, step.choice);
-        qCov.set(step.question, (qCov.get(step.question) || 0) + 1);
+        if (!covSeen.has(step.question)) {
+          covSeen.add(step.question);
+          qCov.set(step.question, (qCov.get(step.question) || 0) + 1);
+        }
       }
     }
     // Merge explicit features from result node (for species identified before
