@@ -23,16 +23,30 @@
         <button id="back-to-search" class="back-to-search" style="display:none" aria-label="Back to search results">
           ← Results
         </button>
-        <h2 class="menu-title" id="menu-title">Species Search</h2>
+        <h2 class="menu-title">Arhopala ID</h2>
         <button id="menu-close" class="menu-close" aria-label="Close menu">✕</button>
       </div>
 
-      <div class="menu-tabs" role="tablist">
-        <button class="menu-tab active" id="tab-search" role="tab" aria-selected="true" aria-controls="search-pane">Species</button>
-        <button class="menu-tab" id="tab-about" role="tab" aria-selected="false" aria-controls="about-pane">About</button>
-      </div>
+      <nav class="menu-nav" aria-label="Navigation">
+        <button class="menu-nav-item active" id="nav-idkey" aria-label="ID Key — step-by-step identification">
+          <span class="menu-nav-item-label">ID Key</span>
+          <span class="menu-nav-item-desc">Step-by-step identification</span>
+        </button>
+        <a href="checklist.html" class="menu-nav-item" id="nav-scoring" aria-label="Feature Scoring — score multiple features at once">
+          <span class="menu-nav-item-label">Feature Scoring</span>
+          <span class="menu-nav-item-desc">Score multiple features at once</span>
+        </a>
+        <button class="menu-nav-item" id="nav-species" aria-label="Species Search — browse all covered taxa" aria-controls="search-pane">
+          <span class="menu-nav-item-label">Species Search</span>
+          <span class="menu-nav-item-desc">Browse all covered taxa</span>
+        </button>
+        <button class="menu-nav-item" id="nav-about" aria-label="About — how to use this app" aria-controls="about-pane">
+          <span class="menu-nav-item-label">About</span>
+          <span class="menu-nav-item-desc">How to use this app</span>
+        </button>
+      </nav>
 
-      <div id="search-pane" role="tabpanel" aria-labelledby="tab-search">
+      <div id="search-pane" role="region" aria-label="Species Search">
         <div class="search-box">
           <input id="search-input" type="search" placeholder="Search by name…"
                  autocomplete="off" spellcheck="false" aria-label="Search species">
@@ -41,7 +55,7 @@
         <div id="search-results" class="search-results" role="list"></div>
       </div>
 
-      <div id="about-pane" class="about-pane" role="tabpanel" aria-labelledby="tab-about" style="display:none">
+      <div id="about-pane" class="about-pane" role="region" aria-label="About" style="display:none">
         <div class="about-content">
 
           <div class="about-hero">
