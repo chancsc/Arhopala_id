@@ -37,7 +37,7 @@
       "type": "question",
       "id": "q_tailed_long_tail",
       "question": "Is the tail notably long and filamentous — roughly 3.5 mm or more?",
-      "hint": "Two groups have unusually long tails: the corinda group (~3.5 mm) and the aedias group (~6.0 mm). Both are distinctly longer than typical Arhopala tails. Note: A. eumolphus has a tail of only ~3 mm — though it can look relatively long, it does NOT fall in the 'notably long' category. If uncertain or if the tail is broken, choose 'Cannot determine' to continue.",
+      "hint": "Two groups have unusually long tails: the corinda group (~3.5 mm) and the aedias group (~6.0 mm). Also A. overdijkinki (eumolphus group) has a notably long tail (~5 mm). All are distinctly longer than the typical Arhopala tail of ~2–3 mm. If uncertain or if the tail is broken, choose 'Cannot determine' to continue.",
       "choices": [
         {
           "label": "Yes — tail is notably long (roughly 3.5–6 mm or more)",
@@ -96,8 +96,8 @@
           "next": "g_corinda"
         },
         {
-          "label": "No — FW underside normally marked, no darkening (~6.0 mm tail)",
-          "next": "g_aedias"
+          "label": "No — FW underside normally marked, no darkening",
+          "next": "q_long_tail_spot4"
         },
         {
           "label": "Cannot determine — FW space 1b obscured by hindwing",
@@ -109,15 +109,35 @@
       "type": "question",
       "id": "q_long_tail_length",
       "question": "What is the underside ground colour and overall appearance?",
-      "hint": "When FW space 1b is hidden, use these field characters to separate the two long-tailed groups. A. aedias (Large Metallic Oakblue): ground colour hair brown; spots narrowly outlined in pale buff lines; large species (FW 20–29 mm); rounded FW apex; tail ~6 mm. A. corinda: ground colour sometimes glazed with purple wash; large dark patch visible under FW cell when not obscured; FW apex distinctly pointed with straight termen; tail ~3.5 mm. Note also that the tail is sometimes broken in field specimens, making length unreliable. Corinda subspecies: acestes (Malay Peninsula and Singapore), corestes (Langkawi). Aedias subspecies: agnis (standard); meritatas (Langkawi — paler, brighter blue upperside).",
+      "hint": "When FW space 1b is hidden, use these field characters to separate the long-tailed species. A. aedias (Large Metallic Oakblue): ground colour hair brown; spots narrowly outlined in pale buff lines; large species (FW 20–29 mm); rounded FW apex; tail ~6 mm. A. corinda: ground colour sometimes glazed with purple wash; large dark patch visible under FW cell when not obscured; FW apex distinctly pointed with straight termen; tail ~3.5 mm. A. overdijkinki (eumolphus group): hair brown underside; FW postdiscal spot 4 displaced out of line below spots 5–6; tail ~5 mm. Corinda subspecies: acestes (Malay Peninsula and Singapore), corestes (Langkawi). Aedias subspecies: agnis (standard); meritatas (Langkawi).",
       "choices": [
         {
-          "label": "Hair brown underside; spots narrowly buff-outlined; large species (FW 20–29 mm); rounded FW apex — A. aedias",
+          "label": "Hair brown; FW spot 4 displaced out of line below spots 5–6; tail ~5 mm — A. overdijkinki",
+          "next": "r_overdijkinki_unda"
+        },
+        {
+          "label": "Hair brown underside; spots narrowly buff-outlined; FW spot 4 in line; large species (FW 20–29 mm); rounded FW apex; tail ~6 mm — A. aedias",
           "next": "g_aedias"
         },
         {
           "label": "Underside sometimes with purple wash; dark patch under FW cell; pointed FW apex, straight termen; smaller (tail ~3.5 mm) — A. corinda",
           "next": "g_corinda"
+        }
+      ]
+    },
+    "q_long_tail_spot4": {
+      "type": "question",
+      "id": "q_long_tail_spot4",
+      "question": "Is forewing postdiscal spot 4 noticeably displaced out of line — below the row formed by spots 5 and 6?",
+      "hint": "This separates A. overdijkinki (eumolphus group, tail ~5 mm) from A. aedias (tail ~6 mm). In the eumolphus group, FW postdiscal spot 4 sits visibly lower than spots 5 and 6, breaking the diagonal row. In A. aedias, spot 4 is in line with spots 5 and 6.",
+      "choices": [
+        {
+          "label": "Yes — FW spot 4 displaced out of line below spots 5–6 (eumolphus type; tail ~5 mm)",
+          "next": "r_overdijkinki_unda"
+        },
+        {
+          "label": "No — FW spot 4 in line with spots 5 and 6 (tail ~6 mm)",
+          "next": "g_aedias"
         }
       ]
     },
