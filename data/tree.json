@@ -37,7 +37,7 @@
       "type": "question",
       "id": "q_tailed_long_tail",
       "question": "Is the tail notably long and filamentous — roughly 3.5 mm or more?",
-      "hint": "Two groups have unusually long tails: the corinda group (~3.5 mm) and the aedias group (~6.0 mm). Both are distinctly longer than typical Arhopala tails. If uncertain, answer 'No' and proceed.",
+      "hint": "Two groups have unusually long tails: the corinda group (~3.5 mm) and the aedias group (~6.0 mm). Both are distinctly longer than typical Arhopala tails. Note: A. eumolphus has a tail of only ~3 mm — though it can look relatively long, it does NOT fall in the 'notably long' category. If uncertain or if the tail is broken, choose 'Cannot determine' to continue.",
       "choices": [
         {
           "label": "Yes — tail is notably long (roughly 3.5–6 mm or more)",
@@ -45,6 +45,10 @@
         },
         {
           "label": "No — tail is short and typical",
+          "next": "q_ijanensis_hw_streak"
+        },
+        {
+          "label": "Cannot determine — tail length unclear or broken",
           "next": "q_ijanensis_hw_streak"
         }
       ]
@@ -69,7 +73,7 @@
       "type": "question",
       "id": "q_tailed_epimuta",
       "question": "Does the male have a distinctly differently-coloured or more opaque discal patch on the forewing upperside?",
-      "hint": "The epimuta group (A. atosia, A. lurida) has a ~2.5 mm HW tail and a male FW discal patch that is noticeably more opaque or differently textured than the surrounding shining blue. If the upperside is not visible, check the underside first: the epimuta group is unique in having underside markings that contrast very feebly with the ground colour — the pattern nearly blends in. If you can see the underside markings at moderate to strong contrast (or if the HW underside has a whitish streak from dorsal base to apex), choose 'No'. Select 'Cannot determine' only if you cannot assess the upperside discal patch AND the underside markings also appear to blend faintly into the ground colour.",
+      "hint": "The epimuta group (A. atosia, A. lurida) has a ~2.5 mm HW tail and a male FW discal patch noticeably more opaque or differently textured than the surrounding shining blue. If the upperside is not visible, use the underside as the guide: the epimuta group is unique in having underside markings that contrast very feebly with the ground colour — the pattern nearly blends in. If the underside markings blend into the ground colour, answer 'Yes'. If markings are clearly defined (moderate to strong contrast), answer 'No'. Choose 'Cannot determine' only if the entire butterfly — both upperside and underside — is too unclear to assess; this will continue down the broader key.",
       "choices": [
         {
           "label": "Yes — male FW upperside has opaque or differently-coloured discal patch",
@@ -80,8 +84,8 @@
           "next": "q_tailed_ganesa"
         },
         {
-          "label": "Cannot determine — upperside not visible",
-          "next": "q_epimuta_s2"
+          "label": "Cannot determine — both upperside and underside too unclear to assess",
+          "next": "q_tailed_ganesa"
         }
       ]
     },
@@ -501,7 +505,7 @@
       "type": "question",
       "id": "q_tailless_epimuta",
       "question": "Does the male have a distinctly differently-coloured or more opaque discal patch on the forewing upperside?",
-      "hint": "In the epimuta group, males have a discal patch on the FW upperside that is noticeably more opaque or differently textured than the surrounding shining blue. If the upperside is not visible, check the underside first: the epimuta group is unique in having underside markings that contrast very feebly with the ground colour — the pattern nearly blends in. If you can see the underside markings at moderate to strong contrast, choose 'No'. Select 'Cannot determine' only if you cannot assess the upperside discal patch AND the underside markings also appear to blend faintly into the ground colour.",
+      "hint": "In the epimuta group, males have a discal patch on the FW upperside that is noticeably more opaque or differently textured than the surrounding shining blue. If the upperside is not visible, use the underside as the guide: the epimuta group is unique in having underside markings that contrast very feebly with the ground colour — the pattern nearly blends in. If the underside markings blend into the ground colour, answer 'Yes'. If markings are clearly defined (moderate to strong contrast), answer 'No'. Choose 'Cannot determine' only if the entire butterfly — both upperside and underside — is too unclear to assess; this will continue down the broader key.",
       "choices": [
         {
           "label": "Yes — male FW upperside has opaque or differently-coloured discal patch",
@@ -512,8 +516,8 @@
           "next": "q_tailless_agesilaus"
         },
         {
-          "label": "Cannot determine — upperside not visible",
-          "next": "g_epimuta"
+          "label": "Cannot determine — both upperside and underside too unclear to assess",
+          "next": "q_tailless_agesilaus"
         }
       ]
     },
