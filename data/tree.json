@@ -3017,15 +3017,35 @@
     "q_ganesa_with_green": {
       "type": "question",
       "id": "q_ganesa_with_green",
-      "question": "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?",
-      "hint": "In ammon the space 6 spot is unusually elongated, reaching the base of the space. In ariel and elizabethae the spot 6 is normal (not reaching the base).",
+      "question": "Are the outer and central spots in hindwing space 7 clearly separate, with the gap between them conspicuously whitened?",
+      "hint": "In A. ammon the outer and central spots in HW space 7 remain distinct and apart, with the space between them whitened — this is the most obvious underside feature separating ammon from ariel and elizabethae. In ariel and elizabethae these two spots are joined at their upper ends, leaving no whitened gap.",
       "choices": [
         {
-          "label": "Yes — HW spot 6 extended/continued to base of space",
+          "label": "Yes — spots in HW space 7 separate, gap between them conspicuously whitened",
           "next": "r_ammon_ammon"
         },
         {
-          "label": "No — HW spot 6 normal, not reaching base of space",
+          "label": "No — spots in HW space 7 joined at upper ends, no whitened gap",
+          "next": "q_ganesa_ariel_eliz"
+        },
+        {
+          "label": "Cannot determine — HW space 7 not clearly visible",
+          "next": "q_ganesa_spot6"
+        }
+      ]
+    },
+    "q_ganesa_spot6": {
+      "type": "question",
+      "id": "q_ganesa_spot6",
+      "question": "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?",
+      "hint": "In A. ammon the space 6 spot is unusually elongated, reaching the base of the space — a secondary character supporting identification when HW space 7 is unclear. In ariel and elizabethae spot 6 is normal and does not reach the base.",
+      "choices": [
+        {
+          "label": "Yes — HW spot 6 extended to base of space",
+          "next": "r_ammon_ammon"
+        },
+        {
+          "label": "No — HW spot 6 normal, not reaching base",
           "next": "q_ganesa_ariel_eliz"
         }
       ]
