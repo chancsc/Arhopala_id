@@ -200,8 +200,8 @@
     "q_camdeo_sub": {
       "type": "question",
       "id": "q_camdeo_sub",
-      "question": "Does this butterfly show any camdeo group features, and if so which subgroup?",
-      "hint": "The camdeo group has three subgroups, each with a distinctive secondary character. This question also acts as a confirmation step: if you arrived here because FW space 1b was obscured in the photo, check whether any of the subgroup characters below are visible. If none of the camdeo characters apply at all, select the last option to continue down the non-camdeo route.",
+      "question": "Does this butterfly show any of the following camdeo subgroup features?",
+      "hint": "The myrzala and bazaloides subgroups each have a distinctive hindwing underside character that is usually visible in photos. If neither applies — or if you are unsure whether this is a camdeo species at all — choose the last two options. FW spaces 1a, 1b, 2, and 3 are almost always hidden under the hindwing in perched photographs and are not used here.",
       "choices": [
         {
           "label": "Crimson-brown underside with markings outlined in white striae; spot at base of HW space 6",
@@ -212,11 +212,7 @@
           "next": "g_camdeo_bazaloides"
         },
         {
-          "label": "Small spot at the extreme base of forewing space 3",
-          "next": "g_camdeo_camdeo"
-        },
-        {
-          "label": "Camdeo confirmed (dark FW space 1b visible) but no subgroup feature detected",
+          "label": "Neither subgroup feature above visible — continuing within camdeo group",
           "next": "g_camdeo_general"
         },
         {
@@ -636,12 +632,14 @@
     "g_camdeo_general": {
       "type": "group",
       "id": "g_camdeo_general",
-      "group_name": "camdeo group (general)",
-      "description": "Defined by a dark area under the forewing cell bounded outwardly by a pale line across space 1b. HW postdiscal spots 7, 6, and 5 are arranged in echelon. No additional subgroup features detected.",
+      "group_name": "camdeo group",
+      "description": "Defined by a dark area under the forewing cell bounded outwardly by a pale line across space 1b, with HW postdiscal spots 7, 6, and 5 arranged in echelon. No myrzala or bazaloides subgroup character is visible. Most species here belong to the camdeo subgroup (9 species, the largest subgroup), which often features a small spot at the extreme base of FW space 3 — though this character is usually hidden under the hindwing. Continue below to key out the individual species.",
       "key_features": [
         "Dark area under FW cell (space 1b) bounded by pale line",
-        "HW postdiscal spots 7, 6, 5 in echelon"
-      ]
+        "HW postdiscal spots 7, 6, 5 in echelon",
+        "Small spot sometimes at extreme base of FW space 3 (camdeo subgroup; often obscured)"
+      ],
+      "next": "q_camdeo_c1"
     },
     "g_camdeo_camdeo": {
       "type": "group",
