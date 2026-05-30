@@ -73,7 +73,7 @@
       "type": "question",
       "id": "q_tailed_epimuta",
       "question": "Do the underside forewing markings blend into the ground colour with very low contrast — nearly invisible against the background?",
-      "hint": "The epimuta group (A. atosia, A. lurida) is unique among Arhopala in having underside markings that are remarkably faint — the lines and spots barely show against the ground colour. In non-epimuta species the underside markings form clearly-defined lines or spots with moderate to strong contrast. If the underside is not visible, choose 'Cannot determine' — the next step will check the male forewing upperside instead.",
+      "hint": "The epimuta group (A. atosia, A. lurida) is unique among Arhopala in having underside markings that are remarkably faint — the lines and spots barely show against the ground colour. In non-epimuta species the underside markings form clearly-defined lines or spots with moderate to strong contrast.",
       "choices": [
         {
           "label": "Yes — underside markings blend in, very low contrast",
@@ -81,30 +81,6 @@
         },
         {
           "label": "No — underside markings clearly defined with moderate to strong contrast",
-          "next": "q_tailed_ganesa"
-        },
-        {
-          "label": "Cannot determine — underside not visible",
-          "next": "q_tailed_epimuta_upper"
-        }
-      ]
-    },
-    "q_tailed_epimuta_upper": {
-      "type": "question",
-      "id": "q_tailed_epimuta_upper",
-      "question": "Does the male forewing upperside have a distinctly differently-coloured or more opaque discal patch?",
-      "hint": "The epimuta group (A. atosia, A. lurida) males have a forewing discal patch that is noticeably more opaque or differently textured than the surrounding shining blue upperside. If neither underside nor upperside is assessable, choose 'Cannot determine' to proceed past this check.",
-      "choices": [
-        {
-          "label": "Yes — male FW upperside has opaque or differently-coloured discal patch",
-          "next": "q_epimuta_s2"
-        },
-        {
-          "label": "No",
-          "next": "q_tailed_ganesa"
-        },
-        {
-          "label": "Cannot determine — upperside not visible",
           "next": "q_tailed_ganesa"
         }
       ]
@@ -481,7 +457,7 @@
       "type": "question",
       "id": "q_tailless_epimuta",
       "question": "Do the underside forewing markings blend into the ground colour with very low contrast — nearly invisible against the background?",
-      "hint": "The epimuta group is unique among Arhopala in having underside markings that are remarkably faint — the lines and spots barely show against the ground colour. In non-epimuta species the underside markings form clearly-defined lines or spots with moderate to strong contrast. If the underside is not visible, choose 'Cannot determine' — the next step will check the male forewing upperside instead.",
+      "hint": "The epimuta group is unique among Arhopala in having underside markings that are remarkably faint — the lines and spots barely show against the ground colour. In non-epimuta species the underside markings form clearly-defined lines or spots with moderate to strong contrast.",
       "choices": [
         {
           "label": "Yes — underside markings blend in, very low contrast",
@@ -489,30 +465,6 @@
         },
         {
           "label": "No — underside markings clearly defined with moderate to strong contrast",
-          "next": "q_tailless_agesilaus"
-        },
-        {
-          "label": "Cannot determine — underside not visible",
-          "next": "q_tailless_epimuta_upper"
-        }
-      ]
-    },
-    "q_tailless_epimuta_upper": {
-      "type": "question",
-      "id": "q_tailless_epimuta_upper",
-      "question": "Does the male forewing upperside have a distinctly differently-coloured or more opaque discal patch?",
-      "hint": "The epimuta group males have a forewing discal patch that is noticeably more opaque or differently textured than the surrounding shining blue upperside. If neither underside nor upperside is assessable, choose 'Cannot determine' to proceed past this check.",
-      "choices": [
-        {
-          "label": "Yes — male FW upperside has opaque or differently-coloured discal patch",
-          "next": "g_epimuta"
-        },
-        {
-          "label": "No",
-          "next": "q_tailless_agesilaus"
-        },
-        {
-          "label": "Cannot determine — upperside not visible",
           "next": "q_tailless_agesilaus"
         }
       ]
