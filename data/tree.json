@@ -3017,15 +3017,15 @@
     "q_ganesa_with_green": {
       "type": "question",
       "id": "q_ganesa_with_green",
-      "question": "Are the outer and central spots in hindwing space 7 clearly separate, with the gap between them conspicuously whitened?",
-      "hint": "In A. ammon the outer and central spots in HW space 7 remain distinct and apart, with the space between them conspicuously whitened. In ariel and elizabethae these two spots are joined at their upper ends, leaving no whitened gap. A secondary supporting character for ammon: the postdiscal spot in HW space 6 is unusually elongated, reaching all the way to the base of the space (normal in ariel and elizabethae).",
+      "question": "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?",
+      "hint": "In A. ammon the space 6 spot is unusually elongated, reaching the base of the space. In ariel and elizabethae spot 6 is normal and does not reach the base. Note: a whitened gap between the outer and central spots in HW space 7 is shared across multiple ganesa group species and is not used here to separate them.",
       "choices": [
         {
-          "label": "Yes — spots in HW space 7 separate, gap conspicuously whitened",
+          "label": "Yes — HW spot 6 extended to base of space",
           "next": "r_ammon_ammon"
         },
         {
-          "label": "No — spots in HW space 7 joined at upper ends, no whitened gap",
+          "label": "No — HW spot 6 normal, not reaching base",
           "next": "q_ganesa_ariel_eliz"
         }
       ]
@@ -3080,7 +3080,7 @@
       "taxon_id": null,
       "name": "Arhopala ariel",
       "common_name": "",
-      "note": "Tornal green scales present. Underside HW: spot 6 normal; outer and central spots in space 7 joined at upper ends. ⚠ Upperside required to separate from elizabethae: male bluish-purple, hardly shining; FW border 1.5 mm at tornus expanding to 4.0 mm at apex. Female: bluer shade with broader borders."
+      "note": "Tornal green scales present. Underside HW: spot 6 normal (not reaching base of space). ⚠ Upperside required to separate from elizabethae: male bluish-purple, hardly shining; FW border 1.5 mm at tornus expanding to 4.0 mm at apex. Female: bluer shade with broader borders."
     },
     "r_elizabethae": {
       "type": "result",
@@ -3088,7 +3088,7 @@
       "taxon_id": null,
       "name": "Arhopala elizabethae",
       "common_name": "",
-      "note": "Tornal green scales present. Underside HW: spot 6 normal; outer and central spots in space 7 joined at upper ends. ⚠ Upperside required to separate from ariel: male shining deep blue with borders slightly wider than A. ariel; female similar to male (not bluer with broader borders as in ariel female)."
+      "note": "Tornal green scales present. Underside HW: spot 6 normal (not reaching base of space). ⚠ Upperside required to separate from ariel: male shining deep blue with borders slightly wider than A. ariel; female similar to male (not bluer with broader borders as in ariel female)."
     },
     "r_ariel_or_elizabethae": {
       "type": "result",
@@ -3096,7 +3096,7 @@
       "taxon_id": null,
       "name": "Ganesa group — ariel or elizabethae (unresolved)",
       "common_name": "Cannot determine to species",
-      "note": "⚠ Cannot distinguish to species without male FW upperside. Both candidates share: tornal green scales, HW spot 6 normal, outer and central spots in space 7 joined at upper ends.\n\nA. ariel: male BLUISH-PURPLE, hardly shining; FW border 1.5 mm at tornus expanding to 4.0 mm at apex. Female bluer with broader borders than male.\n\nA. elizabethae: male SHINING DEEP BLUE; borders slightly wider than ariel throughout. Female similar to male.\n\nInspect the upperside to confirm species."
+      "note": "⚠ Cannot distinguish to species without male FW upperside. Both candidates share: tornal green scales, HW spot 6 normal (not reaching base of space).\n\nA. ariel: male BLUISH-PURPLE, hardly shining; FW border 1.5 mm at tornus expanding to 4.0 mm at apex. Female bluer with broader borders than male.\n\nA. elizabethae: male SHINING DEEP BLUE; borders slightly wider than ariel throughout. Female similar to male.\n\nInspect the upperside to confirm species."
     },
     "r_hypomuta_hypomuta": {
       "type": "result",
