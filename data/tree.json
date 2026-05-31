@@ -72,15 +72,15 @@
     "q_tailed_epimuta": {
       "type": "question",
       "id": "q_tailed_epimuta",
-      "question": "Do the underside forewing markings blend into the ground colour with very low contrast — nearly invisible against the background?",
-      "hint": "The epimuta group (A. atosia, A. lurida) is unique among Arhopala in having underside markings that are remarkably faint — the lines and spots barely show against the ground colour. In non-epimuta species the underside markings form clearly-defined lines or spots with moderate to strong contrast.",
+      "question": "On the hindwing underside, is postdiscal spot 6 placed roughly midway between spot 5 and the end-cell bar (not directly below spot 5)?",
+      "hint": "The epimuta group (A. atosia, A. lurida) is defined by HW postdiscal spot 6 sitting midway between spot 5 and the end-cell bar — neither close to spot 5 nor close to the bar. In most other Arhopala, spot 6 sits close to or directly below spot 5. Male epimuta group members also show an opaque or differently-coloured discal patch on the FW upperside (dense fuscous scales visible as a distinct patch).",
       "choices": [
         {
-          "label": "Yes — underside markings blend in, very low contrast",
+          "label": "Yes — HW spot 6 midway between spot 5 and the end-cell bar",
           "next": "q_epimuta_s2"
         },
         {
-          "label": "No — underside markings clearly defined with moderate to strong contrast",
+          "label": "No — HW spot 6 close to or directly below spot 5",
           "next": "q_tailed_ganesa"
         }
       ]
@@ -476,15 +476,15 @@
     "q_tailless_epimuta": {
       "type": "question",
       "id": "q_tailless_epimuta",
-      "question": "Do the underside forewing markings blend into the ground colour with very low contrast — nearly invisible against the background?",
-      "hint": "The epimuta group is unique among Arhopala in having underside markings that are remarkably faint — the lines and spots barely show against the ground colour. In non-epimuta species the underside markings form clearly-defined lines or spots with moderate to strong contrast.",
+      "question": "On the hindwing underside, is postdiscal spot 6 placed roughly midway between spot 5 and the end-cell bar (not directly below spot 5)?",
+      "hint": "The epimuta group (tailless representative: A. epimuta epiala) shares with the agesilaus group the character of HW spot 6 shifted away from spot 5 toward the end-cell bar. The epimuta group differs from the agesilaus group in that spot 6 sits midway; in agesilaus spot 6 is equidistant between spot 5 and the bar. Male epimuta group members also have an opaque discal patch on the FW upperside.",
       "choices": [
         {
-          "label": "Yes — underside markings blend in, very low contrast",
+          "label": "Yes — HW spot 6 midway between spot 5 and the end-cell bar (epimuta group)",
           "next": "g_epimuta"
         },
         {
-          "label": "No — underside markings clearly defined with moderate to strong contrast",
+          "label": "No — HW spot 6 close to spot 5 (or equidistant — agesilaus group)",
           "next": "q_tailless_agesilaus"
         }
       ]
