@@ -218,10 +218,14 @@ function renderQuestion(node) {
     .map(c => `<button class="choice-btn" data-label="${escapeAttr(c.label)}" data-next="${escapeAttr(c.next)}">${escapeHtml(c.label)}</button>`)
     .join('');
 
+  const qNum = state.questionNumbers && state.questionNumbers.has(node.question)
+    ? `<span class="path-qnum">Q${state.questionNumbers.get(node.question)}</span> `
+    : '';
+
   return `
     <div class="card">
       ${buildBackButton()}
-      <h2 class="question-text">${escapeHtml(node.question)}</h2>
+      <h2 class="question-text">${qNum}${escapeHtml(node.question)}</h2>
       ${hintHTML}
       <div class="choices">${choicesHTML}</div>
     </div>
