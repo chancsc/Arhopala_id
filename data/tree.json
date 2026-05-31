@@ -81,7 +81,7 @@
         },
         {
           "label": "No — spot 6 is in the postdiscal band, at roughly the same level as spot 5 (not pulled toward the cell)",
-          "next": "q_tailed_ganesa"
+          "next": "q_tailed_cell_silver"
         }
       ]
     },
@@ -153,7 +153,7 @@
         },
         {
           "label": "No",
-          "next": "q_tailed_cell_silver"
+          "next": "q_tailed_dark_area"
         }
       ]
     },
@@ -161,15 +161,15 @@
       "type": "question",
       "id": "q_tailed_cell_silver",
       "question": "Are the cell spots on the forewing underside outlined in greenish silver?",
-      "hint": "Examine the underside forewing cell. The centaurus group has a distinctive metallic greenish-silver outline around the cell spots — this is not iridescence but a true outline.",
+      "hint": "Examine the underside forewing cell. A. centaurus has distinctive greenish-silver lines edging the cell markings — not iridescence but a true metallic outline unique to this species in Peninsular Malaysia. If present, this is decisive: no further questions needed. Non-Peninsular relatives with similar markings (A. araxes, Sumatra–Sulawesi; A. amantes, S. Myanmar) are not recorded from the Malay Peninsula.",
       "choices": [
         {
           "label": "Yes — greenish silver outlines on FW cell spots",
-          "next": "g_centaurus"
+          "next": "r_centaurus_nakula"
         },
         {
           "label": "No — no silver outlines",
-          "next": "q_tailed_dark_area"
+          "next": "q_tailed_ganesa"
         }
       ]
     },
@@ -581,7 +581,7 @@
       "type": "group",
       "id": "g_centaurus",
       "group_name": "centaurus group",
-      "description": "Separated from all other groups by having the FW cell spots outlined in greenish silver on the underside. HW cell short — significantly less than half the wing length. Two Malayan species (centaurus nakula, araxes) plus A. amantes (South Myanmar) which is keyed here due to similar silvery markings but is technically outside the group.",
+      "description": "Separated from all other groups by having the FW cell spots outlined in greenish silver on the underside. HW cell short — significantly less than half the wing length. One Peninsular Malaysian species: A. centaurus, represented by two subspecies (nakula on the mainland; dixoni restricted to Tioman Island).",
       "key_features": [
         "FW cell spots outlined in greenish silver (underside)",
         "HW cell short: noticeably less than half wing length",
@@ -2356,7 +2356,7 @@
       "taxon_id": null,
       "name": "Arhopala centaurus nakula",
       "common_name": "Centaur Oakblue",
-      "note": "FW 28–29 mm. HW tornus rounded; tornal lobe vestigial or absent. Male: purplish blue, FW border reduced to a thread. Female: paler and more purple than male; FW border more intensely darkened over distal half of cell; moderately broad black borders. Underside: FW cell spots outlined in greenish silver."
+      "note": "Decisive character: FW cell spots outlined in distinctive greenish-silver lines on the underside — unique to this species in Peninsular Malaysia. One of the largest Arhopala in the region (FW 28–29 mm). HW tailed; tornus rounded; tornal lobe vestigial or absent.\n\nTwo Peninsular subspecies: A. c. nakula (mainland, Langkawi, Singapore) and A. c. dixoni (Tioman Island only). Male: purplish blue, FW border reduced to a thread. Female: paler and more purple; FW border more intensely darkened over distal half of cell; moderately broad black borders.\n\nConfirmatory: non-Peninsular relatives share the silvery FW markings but are not recorded here — A. araxes (Sumatra–Sulawesi; distinct HW tornal lobe) and A. amantes (S. Myanmar; very broad black borders 3.0–5.0 mm widening toward apex)."
     },
     "r_araxes": {
       "type": "result",
