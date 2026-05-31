@@ -1103,7 +1103,7 @@
       "common_name": "Large Metallic Oakblue",
       "note": "Underside ground colour hair brown; spots narrowly outlined in pale buff lines. Male upperside: lustrous violet blue with black border reduced to a thread. Female upperside: purple blue with typical broad black borders. Two size forms occur: large (FW 25–29 mm) and small (FW 20–22 mm; small form has more rounded, darker spots beneath). Two subspecies: A. aedias agnis (forest at low to moderate elevations, standard) and A. aedias meritatas (Langkawi Islands — paler and brighter blue upperside in both sexes).",
       "features": {
-        "What is the underside ground colour and overall appearance?": "Hair brown underside; spots narrowly buff-outlined; large species (FW 20–29 mm); rounded FW apex — A. aedias"
+        "What is the underside ground colour and overall appearance?": "Hair brown underside; spots narrowly buff-outlined; FW spot 4 in line; large species (FW 20–29 mm); rounded FW apex; tail ~6 mm — A. aedias"
       }
     },
     "q_agelastus_s1": {
@@ -2825,7 +2825,10 @@
       "taxon_id": null,
       "name": "Arhopala overdijkinki unda",
       "common_name": "",
-      "note": "HW tail 5.0 mm (longest in group). Male: rich violet; FW black border 2.5 mm at tornus, expanding strongly to 7.0 mm at costa. Female: shining blue with evenly curved FW border."
+      "note": "HW tail 5.0 mm (longest in group). Male: rich violet; FW black border 2.5 mm at tornus, expanding strongly to 7.0 mm at costa. Female: shining blue with evenly curved FW border.",
+      "features": {
+        "What is the underside ground colour and overall appearance?": "Hair brown; FW spot 4 displaced out of line below spots 5–6; tail ~5 mm — A. overdijkinki"
+      }
     },
     "r_bazalus_zalinda": {
       "type": "result",
