@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Visual reference guide — wing venation, space numbering, and identification terms for Arhopala Oak Blue butterflies.">
+  <meta name="theme-color" content="#2d5a27">
+  <title>Arhopala ID — Visual Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .guide-content {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 1rem 1rem 3rem;
+    }
+
+    .guide-intro {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin: 0.75rem 0 1.5rem;
+    }
+
+    /* Section */
+    .guide-section {
+      margin-bottom: 2rem;
+    }
+
+    .guide-section-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 0 0 0.5rem;
+      padding-bottom: 0.35rem;
+      border-bottom: 2px solid var(--primary);
+    }
+
+    .guide-section-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin: 0 0 0.85rem;
+    }
+
+    /* Image card */
+    .guide-img-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .guide-img-wrap {
+      background: #f8f6f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1.25rem;
+    }
+
+    .guide-img-wrap img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .guide-img-caption {
+      padding: 0.7rem 1rem 0.85rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .guide-img-caption strong {
+      display: block;
+      font-size: 0.84rem;
+      color: var(--text);
+      margin-bottom: 0.3rem;
+    }
+
+    .guide-img-caption p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    /* Term list */
+    .guide-terms {
+      margin: 0.85rem 0 0;
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: 0.3rem 0.75rem;
+      font-size: 0.8rem;
+    }
+
+    .guide-term-key {
+      font-weight: 600;
+      color: var(--primary);
+      white-space: nowrap;
+    }
+
+    .guide-term-val {
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    @media (min-width: 480px) {
+      .guide-img-wrap { padding: 1.5rem 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="app-topbar">
+    <button class="menu-btn app-topbar-menu-btn" id="menu-btn" aria-label="Open menu">&#9776;</button>
+    <span class="app-topbar-title">Visual Guide</span>
+  </div>
+
+  <div class="guide-content">
+
+    <p class="guide-intro">
+      Reference diagrams for terms used in the identification key.
+      Wing space numbers, morphological features, and structural landmarks
+      are illustrated here to help interpret the key questions.
+    </p>
+
+    <!-- ── Wing venation ── -->
+    <section class="guide-section">
+      <h2 class="guide-section-title">Wing spaces (venation)</h2>
+      <p class="guide-section-desc">
+        Each area between two adjacent veins on the wing is called a <strong>space</strong>
+        (also written as "cell" in some literature). Spaces are numbered from the inner
+        margin outward. The key questions refer to spots and markings by their space number —
+        for example, "postdiscal spot in space 6" means the spot in the sixth space of the hindwing.
+      </p>
+
+      <div class="guide-img-card">
+        <div class="guide-img-wrap">
+          <img src="img/venation-eumolphus.png"
+               alt="Wing venation diagram of Arhopala eumolphus showing numbered wing spaces on both forewing and hindwing"
+               loading="lazy">
+        </div>
+        <div class="guide-img-caption">
+          <strong>Wing spaces of <em>Arhopala eumolphus</em></strong>
+          <p>
+            <strong>Forewing (upper):</strong> spaces 1b, 2–9 along the inner margin and costa; spaces 10–12 toward the apex.<br>
+            <strong>Hindwing (lower):</strong> spaces 1a, 1b along the dorsum; spaces 2–8 extending to the costa. Space 2 bears the tail in tailed species.
+          </p>
+          <div class="guide-terms" role="table" aria-label="Wing space terminology">
+            <span class="guide-term-key" role="rowheader">Space 2 (HW)</span>
+            <span class="guide-term-val" role="cell">Location of the hindwing tail in tailed <em>Arhopala</em></span>
+            <span class="guide-term-key" role="rowheader">Space 6 (HW)</span>
+            <span class="guide-term-val" role="cell">Key diagnostic space — position of its postdiscal spot relative to spot 5 and the end-cell bar distinguishes the epimuta and agesilaus groups</span>
+            <span class="guide-term-key" role="rowheader">Space 7 (HW)</span>
+            <span class="guide-term-val" role="cell">Used in the ganesa group — whitened gap between spots in this space is diagnostic for <em>A. ammon</em>, <em>A. ammonides</em>, and <em>A. elizabethae</em></span>
+            <span class="guide-term-key" role="rowheader">Space 4 (FW)</span>
+            <span class="guide-term-val" role="cell">Position of the postdiscal spot here (in line or displaced) separates the eumolphus group from the vihara group</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Spot 6 & end-cell bar ── -->
+    <section class="guide-section">
+      <h2 class="guide-section-title">Postdiscal spot 6 &amp; end-cell bar (<em>A. atosia</em>)</h2>
+      <p class="guide-section-desc">
+        The end-cell bar is a bar-shaped marking at the end of the discal cell — more basally placed
+        than the postdiscal row. In the <strong>epimuta group</strong> (<em>A. atosia</em>, <em>A. lurida</em>,
+        <em>A. epimuta</em>), postdiscal spot 6 is pulled inward from the postdiscal row and sits roughly
+        midway between spot 5 and the end-cell bar. In other <em>Arhopala</em>, spot 6 remains in the
+        postdiscal band at roughly the same level as spot 5.
+      </p>
+
+      <div class="guide-img-card">
+        <div class="guide-img-wrap">
+          <img src="img/atosia-spot6-endcell.jpg"
+               alt="Arhopala atosia underside showing postdiscal spot 6 annotated in the upper hindwing and the end-cell bar annotated as a rectangular marking basally"
+               loading="lazy">
+        </div>
+        <div class="guide-img-caption">
+          <strong>HW postdiscal spot 6 and end-cell bar — <em>Arhopala atosia</em></strong>
+          <p>
+            Spot 6 (upper arrow) is shifted basally from the postdiscal row, sitting roughly midway
+            between the level of spot 5 and the end-cell bar (rectangular marking, lower arrow).
+            This inward displacement is the defining underside character of the epimuta group and
+            the basis of the Q9 question in the key.
+          </p>
+          <div class="guide-terms" role="table" aria-label="End-cell bar and spot 6 terminology">
+            <span class="guide-term-key" role="rowheader">End-cell bar</span>
+            <span class="guide-term-val" role="cell">Bar-shaped marking at the distal end of the discal cell; more basally placed than the postdiscal row</span>
+            <span class="guide-term-key" role="rowheader">Spot 6 — epimuta group</span>
+            <span class="guide-term-val" role="cell">Pulled basally from the postdiscal row — sits roughly midway between spot 5 and the end-cell bar</span>
+            <span class="guide-term-key" role="rowheader">Spot 6 — other groups</span>
+            <span class="guide-term-val" role="cell">Remains in the postdiscal band at roughly the same level as spot 5; not displaced toward the cell</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Hamburger menu overlay -->
+  <div id="menu-overlay" class="menu-overlay" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="menu-panel">
+      <div class="menu-header">
+        <h2 class="menu-title">Arhopala ID</h2>
+        <button id="menu-close" class="menu-close" aria-label="Close menu">✕</button>
+      </div>
+      <nav class="menu-nav" aria-label="Navigation">
+        <a href="index.html" class="menu-nav-item" aria-label="ID Key — step-by-step identification">
+          <span class="menu-nav-item-label">ID Key</span>
+          <span class="menu-nav-item-desc">Step-by-step identification</span>
+        </a>
+        <a href="checklist.html" class="menu-nav-item" aria-label="Feature Scoring — score multiple features at once">
+          <span class="menu-nav-item-label">Feature Scoring</span>
+          <span class="menu-nav-item-desc">Score multiple features at once</span>
+        </a>
+        <a href="species.html" class="menu-nav-item" aria-label="Species Search — browse all covered taxa">
+          <span class="menu-nav-item-label">Species Search</span>
+          <span class="menu-nav-item-desc">Browse all covered taxa</span>
+        </a>
+        <button class="menu-nav-item active" id="nav-guide" aria-label="Visual Guide — wing diagrams and terminology">
+          <span class="menu-nav-item-label">Visual Guide</span>
+          <span class="menu-nav-item-desc">Wing diagrams &amp; terminology</span>
+        </button>
+        <a href="about.html" class="menu-nav-item" aria-label="About — how to use this app">
+          <span class="menu-nav-item-label">About</span>
+          <span class="menu-nav-item-desc">How to use this app</span>
+        </button>
+      </nav>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const overlay  = document.getElementById('menu-overlay');
+      const openBtn  = document.getElementById('menu-btn');
+      const closeBtn = document.getElementById('menu-close');
+      const guideBtn = document.getElementById('nav-guide');
+      function open()  { overlay.classList.add('open');    document.body.style.overflow = 'hidden'; }
+      function close() { overlay.classList.remove('open'); document.body.style.overflow = ''; }
+      openBtn.addEventListener('click', open);
+      closeBtn.addEventListener('click', close);
+      if (guideBtn) guideBtn.addEventListener('click', close);
+      overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape' && overlay.classList.contains('open')) close(); });
+    })();
+  </script>
+
+</body>
+</html>

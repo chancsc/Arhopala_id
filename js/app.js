@@ -417,10 +417,13 @@ function buildPathDisplay(paths) {
   const sorted = [...paths].sort((a, b) => skipCount(a) - skipCount(b));
   const canonical = sorted[0];
 
-  // Fallback path: most "Cannot determine" steps, no contradiction.
+  // Fallback path: fewest extra "Cannot determine" steps beyond the canonical.
+  // Picking the minimum-extra-CD path (not maximum) shows the simplest bypass —
+  // e.g. for A. overdijkinki the 1-CD path via Q4 CD rather than a longer 2-CD detour.
   // Only shown if it genuinely uses more skips than the canonical (not just a different same-score path).
   const validPaths = sorted.filter(p => skipCount(p) < 100);
-  const fallback = validPaths.length > 1 ? validPaths[validPaths.length - 1] : null;
+  const canonicalSkips = skipCount(canonical);
+  const fallback = validPaths.find(p => skipCount(p) > canonicalSkips) || null;
   const showFallback = fallback &&
     JSON.stringify(fallback) !== JSON.stringify(canonical) &&
     skipCount(fallback) > skipCount(canonical);
