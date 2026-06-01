@@ -2030,16 +2030,16 @@
     "q_aurea_brown2": {
       "type": "question",
       "id": "q_aurea_brown2",
-      "question": "Is the forewing black border a thread throughout (even at the tornus), AND does the hindwing green narrowly reach the termen in spaces 5 and 6?",
-      "hint": "A. borneensis (Bornean): FW border thread throughout, widening almost imperceptibly toward tornus; HW green reaches termen narrowly in spaces 5 and 6; male brassy green with strong blue base suffusion. A. aurea: FW border 0.75–1.5 mm at tornus, decreasing to a thread above vein 3 or 4; HW green does NOT reach the termen; male green with only weak blue base suffusion; female blue to purple-blue.",
+      "question": "In which region was this butterfly observed?",
+      "hint": "A. aurea is recorded from Peninsular Malaysia and Singapore only — it is not found in Borneo. A. borneensis is a Bornean endemic (Sabah, Sarawak, Brunei, Kalimantan) and has not been recorded from the Malay Peninsula. These two species are allopatric, so locality alone is decisive here.",
       "choices": [
         {
-          "label": "Yes — FW border thread throughout; HW green reaches termen in spaces 5–6; strong blue base (Bornean)",
-          "next": "r_borneensis"
+          "label": "Peninsular Malaysia or Singapore",
+          "next": "r_aurea"
         },
         {
-          "label": "No — FW border 0.75–1.5 mm at tornus, decreasing to thread; HW green not reaching termen; weak blue base",
-          "next": "r_aurea"
+          "label": "Borneo (Sabah, Sarawak, Brunei, or Kalimantan)",
+          "next": "r_borneensis"
         }
       ]
     },
