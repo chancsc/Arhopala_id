@@ -80,7 +80,11 @@
           "next": "q_epimuta_alitaeus_split"
         },
         {
-          "label": "No — spot 6 not clearly midway",
+          "label": "No — spot 6 in the postdiscal row at roughly the same level as spot 5",
+          "next": "q_tailed_ganesa"
+        },
+        {
+          "label": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
           "next": "q_tailed_ganesa"
         }
       ]
@@ -921,7 +925,10 @@
       "taxon_id": null,
       "name": "Arhopala agrata agrata",
       "common_name": "de Nicéville's Dull Oakblue",
-      "note": "Underside markings faint. FW: postdiscal spot in space 9 absent or very obscure; no costal spot in space 10. HW: postdiscal spot 6 considerably wider than spot 7. Male: dark purplish blue with black border reduced to a thread. Female: bright blue to purple-blue; HW blue reaches the termen between vein endings."
+      "note": "Underside markings faint. FW: postdiscal spot in space 9 absent or very obscure; no costal spot in space 10. HW: postdiscal spot 6 considerably wider than spot 7. Male: dark purplish blue with black border reduced to a thread. Female: bright blue to purple-blue; HW blue reaches the termen between vein endings.",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "g_cleander": {
       "type": "group",

@@ -114,16 +114,17 @@ function initData(treeData, speciesData) {
     }
     // Merge explicit features from result node.
     // "Cannot determine" values neutralise that question for this species (remove from scoring).
-    // All other values add features not reached by the canonical path.
+    // All other values override or add features — explicit features take precedence over
+    // the canonical path answer (e.g. to correct a DFS-order artefact).
     const resultNode = Object.values(treeData.nodes).find(
       n => n.type === 'result' && n.name === name && n.features);
     if (resultNode) {
       for (const [q, c] of Object.entries(resultNode.features)) {
         if (c.startsWith('Cannot determine')) {
           features.delete(q);
-        } else if (!features.has(q)) {
+        } else {
+          if (!features.has(q)) qCov.set(q, (qCov.get(q) || 0) + 1);
           features.set(q, c);
-          qCov.set(q, (qCov.get(q) || 0) + 1);
         }
       }
     }
