@@ -73,14 +73,14 @@
       "type": "question",
       "id": "q_tailed_epimuta",
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "hint": "The epimuta group (A. atosia, A. lurida) is defined by HW postdiscal spot 6 sitting midway between spot 5 and the end-cell bar — neither close to spot 5 nor close to the bar. In most other Arhopala, spot 6 aligns with the postdiscal band at roughly the same level as spot 5 (not pulled toward the cell). Male epimuta group members also show an opaque or differently-coloured discal patch on the FW upperside (dense fuscous scales visible as a distinct patch).",
+      "hint": "The epimuta group (A. atosia, A. lurida) is defined by HW postdiscal spot 6 sitting midway between spot 5 and the end-cell bar — equidistant from both. Note: some species (e.g. A. pseudomuta, alitaeus group) have spot 6 slightly oblique or partially displaced without reaching midway — these answer No. Male epimuta group members also show an opaque or differently-coloured discal patch on the FW upperside (dense fuscous scales visible as a distinct patch).",
       "choices": [
         {
           "label": "Yes — postdiscal spot in space 6 is roughly midway between spot 5 and the end-cell bar",
           "next": "q_epimuta_s2"
         },
         {
-          "label": "No — spot 6 is in the postdiscal band, at roughly the same level as spot 5 (not pulled toward the cell)",
+          "label": "No — spot 6 not clearly midway (whether at the same level as spot 5 or only slightly displaced)",
           "next": "q_tailed_ganesa"
         }
       ]
