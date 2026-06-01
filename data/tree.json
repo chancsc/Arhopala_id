@@ -1378,15 +1378,15 @@
     "q_alitaeus_s1_color": {
       "type": "question",
       "id": "q_alitaeus_s1_color",
-      "question": "Is the underside pale slatey purple with contrasting reddish-brown markings?",
-      "hint": "A. sintanga has a distinctly pale slatey-purple ground colour with markings that strongly contrast in reddish-brown. A. pseudomuta and A. alitaeus are hair-brown underneath.",
+      "question": "Are the underside markings distinctly reddish-brown and strongly contrasting with the ground colour?",
+      "hint": "A. sintanga is identified by markings that are distinctly reddish-brown and strongly contrast with a pale slatey-purple ground colour.\nA. alitaeus mirabella (Malay Peninsula, Langkawi) has a strong purplish glaze, but its markings are purple-brown — NOT reddish-brown — and tend to be annular or macular.\nA. pseudomuta pseudomuta is hair-brown with faint markings; A. pseudomuta ariavana (Langkawi) may show a purple wash but markings remain faint and barely darker than the ground.\nAnswer Yes only if the markings are clearly reddish-brown and strongly contrasting.",
       "choices": [
         {
-          "label": "Yes — pale slatey purple with contrasting reddish-brown markings",
+          "label": "Yes — markings distinctly reddish-brown, strongly contrasting with pale slatey-purple ground",
           "next": "r_sintanga"
         },
         {
-          "label": "No — hair-brown or dark brownish underside",
+          "label": "No — markings purple-brown, faint, or not strongly reddish-brown",
           "next": "q_alitaeus_s1_marks"
         }
       ]
