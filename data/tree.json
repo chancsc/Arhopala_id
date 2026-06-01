@@ -485,11 +485,15 @@
       "type": "question",
       "id": "q_tailless_epimuta",
       "question": "On the hindwing underside, is postdiscal spot 6 displaced from the postdiscal row — shifted toward the end-cell bar rather than aligned with the level of spot 5?",
-      "hint": "Both the epimuta group and the agesilaus group share this character. To tell them apart: the epimuta group male has a distinctly opaque or differently-coloured discal patch on the FW upperside (dense fuscous scales underlying the blue, visible as a darker patch). The agesilaus group male has no such patch and the FW upperside is uniformly coloured; the HW postdiscal band is also only partially dislocated at vein 2 in agesilaus (completely dislocated in epimuta). If spot 6 is not displaced — still aligned with the rest of the postdiscal row at roughly the same level as spot 5 — answer No.",
+      "hint": "Three groups show HW spot 6 displaced toward the end-cell bar:\n• Epimuta group (A. atosia, A. lurida): spot 6 shifted toward cell, roughly midway between spot 5 and bar; male FW upperside has an opaque or differently-coloured discal patch.\n• A. antimuta (perimuta subgroup): spot 6 displaced well past midway — usually touching or overlapping the end-cell bar; centres of spots 5, 6 and 7 widely out of line. More extreme displacement than in the epimuta or agesilaus groups.\n• Agesilaus group: spot 6 shifted toward cell but not reaching the bar; no opaque FW discal patch; HW postdiscal band only partially dislocated at vein 2 (completely dislocated in epimuta).\nIf spot 6 is not displaced — still aligned with the rest of the postdiscal row at roughly the same level as spot 5 — answer No.",
       "choices": [
         {
           "label": "Yes — spot 6 shifted toward cell; male FW upperside has a distinctly opaque or differently-coloured discal patch (epimuta group)",
           "next": "g_epimuta"
+        },
+        {
+          "label": "Yes — spot 6 displaced well past midway; usually touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line (A. antimuta)",
+          "next": "g_amphimuta_perimuta"
         },
         {
           "label": "Yes — spot 6 shifted toward cell; no opaque male FW discal patch; HW postdiscal band only partially dislocated at vein 2 (agesilaus group)",
@@ -1941,10 +1945,7 @@
       "taxon_id": null,
       "name": "Arhopala antimuta antimuta",
       "common_name": "",
-      "note": "The most abundant species in the amphimuta group. Tailless. Male: deep violet-blue; black border reduced to a thread. HW underside: postdiscal spot 6 placed below spot 7 (not beside it). FW postdiscal spots 2 and 3 are in line (perimuta subgroup). Confirmatory: male upperside uniformly coloured — no contrasting wing colour as in A. metamuta.",
-      "features": {
-        "Is there a distinct dark area under the forewing cell (space 1b), bounded outwardly by a pale line?": "Cannot determine — FW space 1b obscured by hindwing"
-      }
+      "note": "The most abundant species in the amphimuta group. Tailless. Male: deep violet-blue; black border reduced to a thread. HW underside: postdiscal spot 6 displaced well past the postdiscal row — touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line. FW postdiscal spots 2 and 3 are in line (perimuta subgroup). Confirmatory: male upperside uniformly coloured — no contrasting wing colour as in A. metamuta."
     },
     "q_anthelus_s1": {
       "type": "question",
