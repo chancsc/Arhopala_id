@@ -485,10 +485,10 @@
       "type": "question",
       "id": "q_tailless_epimuta",
       "question": "On the hindwing underside, is postdiscal spot 6 displaced from the postdiscal row — shifted toward the end-cell bar rather than aligned with the level of spot 5?",
-      "hint": "Three groups show HW spot 6 displaced toward the end-cell bar:\n• Epimuta group (A. atosia, A. lurida): spot 6 shifted toward cell, roughly midway between spot 5 and bar; male FW upperside has an opaque or differently-coloured discal patch.\n• A. antimuta (perimuta subgroup): spot 6 displaced well past midway — usually touching or overlapping the end-cell bar; centres of spots 5, 6 and 7 widely out of line. More extreme displacement than in the epimuta or agesilaus groups.\n• Agesilaus group: spot 6 shifted toward cell but not reaching the bar; no opaque FW discal patch; HW postdiscal band only partially dislocated at vein 2 (completely dislocated in epimuta).\nIf spot 6 is not displaced — still aligned with the rest of the postdiscal row at roughly the same level as spot 5 — answer No.",
+      "hint": "Three groups show HW spot 6 displaced toward the end-cell bar:\n• Epimuta group (A. atosia, A. lurida): spot 6 approximately midway between spot 5 and the end-cell bar. Confirmatory (when upperside visible): male has an opaque or differently-coloured discal patch on the FW upperside.\n• A. antimuta (perimuta subgroup): spot 6 displaced well past midway — usually touching or overlapping the end-cell bar; centres of spots 5, 6 and 7 widely out of line. More extreme displacement than in the epimuta or agesilaus groups.\n• Agesilaus group: spot 6 shifted toward cell but not reaching the bar; HW postdiscal band only partially dislocated at vein 2 (completely dislocated in epimuta).\nIf spot 6 is not displaced — still aligned with the rest of the postdiscal row at roughly the same level as spot 5 — answer No.",
       "choices": [
         {
-          "label": "Yes — spot 6 shifted toward cell; male FW upperside has a distinctly opaque or differently-coloured discal patch (epimuta group)",
+          "label": "Yes — spot 6 approximately midway between spot 5 and the end-cell bar (epimuta group)",
           "next": "g_epimuta"
         },
         {
