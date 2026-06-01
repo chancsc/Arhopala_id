@@ -185,7 +185,7 @@
       "type": "question",
       "id": "q_tailed_dark_area",
       "question": "Is there a distinct dark area under the forewing cell (space 1b), bounded outwardly by a pale line?",
-      "hint": "The camdeo group has a characteristic darkened patch in FW underside space 1b with a clearly defined pale line running across it. This feature is diagnostic for the entire camdeo group. Note: in field photographs this area is often hidden under the hindwing. If FW space 1b is not visible in your photo, select Cannot determine — the next question will let you check the camdeo subgroup characters instead.",
+      "hint": "The camdeo group has a characteristic darkened patch in FW underside space 1b with a clearly defined pale line running across it. This feature is diagnostic for the entire camdeo group. Note: in field photographs this area is often hidden under the hindwing — if FW space 1b is not visible, select Cannot determine and continue; the key will proceed without this character.",
       "choices": [
         {
           "label": "Yes — distinct dark patch in FW space 1b with pale bordering line",
@@ -197,7 +197,7 @@
         },
         {
           "label": "Cannot determine — FW space 1b obscured by hindwing",
-          "next": "q_camdeo_sub"
+          "next": "q_ijanensis_streak"
         }
       ]
     },
@@ -537,7 +537,7 @@
       "type": "question",
       "id": "q_tailless_camdeo",
       "question": "Is there a distinct dark area under the forewing cell (space 1b), bounded outwardly by a pale line?",
-      "hint": "A small number of camdeo group species are tailless (A. belphoebe cowani, A. myrzalina). The camdeo group is identified by a darkened patch in FW underside space 1b. In field photos this area is often hidden under the hindwing — if so, select Cannot determine and check the camdeo subgroup characters instead.",
+      "hint": "A small number of camdeo group species are tailless (A. belphoebe cowani, A. myrzalina). The camdeo group is identified by a darkened patch in FW underside space 1b. In field photos this area is often hidden under the hindwing — if FW space 1b is not clearly visible, select Cannot determine; the key will continue without this character.",
       "choices": [
         {
           "label": "Yes — distinct dark patch in FW space 1b with pale bordering line",
@@ -549,7 +549,7 @@
         },
         {
           "label": "Cannot determine — FW space 1b obscured by hindwing",
-          "next": "q_camdeo_sub"
+          "next": "q_tailless_echelon"
         }
       ]
     },
