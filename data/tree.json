@@ -1379,7 +1379,7 @@
       "type": "question",
       "id": "q_alitaeus_s1_color",
       "question": "Are the underside markings distinctly reddish-brown and strongly contrasting with the ground colour?",
-      "hint": "A. sintanga is identified by markings that are distinctly reddish-brown and strongly contrast with a pale slatey-purple ground colour.\nA. alitaeus mirabella (Malay Peninsula, Langkawi) has a strong purplish glaze, but its markings are purple-brown — NOT reddish-brown — and tend to be annular or macular.\nA. pseudomuta pseudomuta is hair-brown with faint markings; A. pseudomuta ariavana (Langkawi) may show a purple wash but markings remain faint and barely darker than the ground.\nAnswer Yes only if the markings are clearly reddish-brown and strongly contrasting.",
+      "hint": "A. sintanga tani (Malay Peninsula) has a pale slatey-purple underside with markings that are distinctly reddish-brown and strongly contrasting. A. sintanga sintanga (Borneo) has a crimson ground colour — even more distinctive.\nA. alitaeus mirabella (Malay Peninsula, Langkawi) also has a purplish glaze, but its markings are purple-brown — NOT reddish-brown — and tend to be annular or macular.\nA. pseudomuta pseudomuta is hair-brown with faint markings; A. pseudomuta ariavana (Langkawi) may show a purple wash but markings remain faint.\nAnswer Yes only if the markings are clearly reddish-brown and strongly contrasting.",
       "choices": [
         {
           "label": "Yes — markings distinctly reddish-brown, strongly contrasting with pale slatey-purple ground",
@@ -1525,7 +1525,7 @@
       "taxon_id": null,
       "name": "Arhopala sintanga",
       "common_name": "",
-      "note": "Underside pale slatey purple with contrasting reddish-brown markings. FW: basal spot present in space 10. Male: dark violet, black border reduced to a thread. Tail ~3.5–4.0 mm."
+      "note": "⚠ Extremely rare — no confirmed iNaturalist records. Verify carefully before confirming this identification.\n\nTwo subspecies:\n• A. sintanga tani (Malay Peninsula): pale slatey purple underside with contrasting reddish-brown markings; deeper violet upperside. Distinguished from the similar A. havilandi kota by the spot at the extreme base of FW space 10 (havilandi lacks this spot).\n• A. sintanga sintanga (Borneo): nominate subspecies; underside ground colour crimson (highly distinctive); wider black borders on upperside.\n\nUnderside characters (both subspecies): spot at extreme base of FW space 10; central spot in FW space 11; FW postdiscal spot 4 shifted distad; HW spot 6 touches or overlaps the end-cell bar; spots 5, 6 and 7 widely out of line; HW postdiscal band completely dislocated at vein 2. Tail 3.5–4.0 mm."
     },
     "r_alitaeus": {
       "type": "result",
