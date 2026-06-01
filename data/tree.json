@@ -1394,15 +1394,15 @@
     "q_alitaeus_s1_marks": {
       "type": "question",
       "id": "q_alitaeus_s1_marks",
-      "question": "Are the underside markings notably annular (ring-like) and is the FW postdiscal spot in space 1b often dislocated outward relative to the spot in space 2?",
-      "hint": "A. alitaeus has more annular (ring-like) markings than allied species, and the space 1b spot is often shifted outward; male has regular black borders at least 1.0 mm wide. A. pseudomuta has markings that are hardly darker than the hair-brown ground colour; HW space 6 is slightly oblique and does not overlap the end-cell bar.",
+      "question": "Are the underside markings clearly visible and annular (ring-like), AND does HW postdiscal spot 6 overlap the end-cell bar?",
+      "hint": "A. alitaeus: markings purple-brown, annular/macular, clearly contrasting with the pale slatey-purple ground colour; HW postdiscal spot 6 is rounded and overlaps the end-cell bar; spots 5, 6 and 7 are widely out of line; HW postdiscal band completely dislocated at vein 2.\nA. pseudomuta: markings faint, hair-brown, barely darker than the ground colour; HW postdiscal spot 6 is slightly oblique and does NOT overlap the end-cell bar; spots 5, 6 and 7 also widely out of line; HW postdiscal band completely dislocated at vein 2.",
       "choices": [
         {
-          "label": "Yes — annular markings; FW space 1b spot often dislocated outward; borders ≥1.0 mm",
+          "label": "Yes — markings annular and clearly contrasting; HW spot 6 overlaps end-cell bar",
           "next": "r_alitaeus"
         },
         {
-          "label": "No — markings barely darker than ground colour; HW space 6 slightly oblique",
+          "label": "No — markings faint, barely darker than ground colour; HW spot 6 does not overlap end-cell bar",
           "next": "r_pseudomuta"
         }
       ]
