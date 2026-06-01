@@ -112,13 +112,16 @@ function initData(treeData, speciesData) {
         }
       }
     }
-    // Merge explicit features from result node (for species identified before
-    // certain morphologically-applicable questions are reached in the key path)
+    // Merge explicit features from result node.
+    // "Cannot determine" values neutralise that question for this species (remove from scoring).
+    // All other values add features not reached by the canonical path.
     const resultNode = Object.values(treeData.nodes).find(
       n => n.type === 'result' && n.name === name && n.features);
     if (resultNode) {
       for (const [q, c] of Object.entries(resultNode.features)) {
-        if (!features.has(q)) {
+        if (c.startsWith('Cannot determine')) {
+          features.delete(q);
+        } else if (!features.has(q)) {
           features.set(q, c);
           qCov.set(q, (qCov.get(q) || 0) + 1);
         }
