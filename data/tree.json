@@ -481,14 +481,18 @@
       "type": "question",
       "id": "q_tailless_epimuta",
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "hint": "The epimuta group (tailless representative: A. epimuta epiala) shares with the agesilaus group the character of HW spot 6 shifted away from spot 5 toward the end-cell bar. The epimuta group differs from the agesilaus group in that spot 6 sits midway; in agesilaus spot 6 is equidistant between spot 5 and the bar. Male epimuta group members also have an opaque discal patch on the FW upperside.",
+      "hint": "Three distinct positions of HW spot 6 are possible here:\n• Midway (equidistant from spot 5 and the bar) → epimuta group (A. atosia, A. lurida). Male epimuta group members also have an opaque discal patch on the FW upperside.\n• Displaced well past midway — spot 6 close to or touching/overlapping the end-cell bar, with the centres of spots 5, 6, and 7 widely out of line → A. antimuta (perimuta subgroup). This displacement is stronger than in the epimuta group.\n• Not displaced — spot 6 at roughly the same level as spot 5, in the normal postdiscal band → continue to agesilaus group check.",
       "choices": [
         {
-          "label": "Yes — postdiscal spot in space 6 is roughly midway between spot 5 and the end-cell bar",
+          "label": "Yes — spot 6 roughly midway between spot 5 and the end-cell bar",
           "next": "g_epimuta"
         },
         {
-          "label": "No — spot 6 is not clearly midway (in the postdiscal band, or equidistant → check agesilaus)",
+          "label": "Yes — spot 6 displaced well past midway; close to or touching/overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
+          "next": "g_amphimuta_perimuta"
+        },
+        {
+          "label": "No — spot 6 not displaced; at roughly the same level as spot 5 in the postdiscal band",
           "next": "q_tailless_agesilaus"
         }
       ]
@@ -1933,10 +1937,7 @@
       "taxon_id": null,
       "name": "Arhopala antimuta antimuta",
       "common_name": "",
-      "note": "The most abundant species in the amphimuta group. Tailless. Male: deep violet-blue; black border reduced to a thread. HW underside: postdiscal spot 6 placed below spot 7 (not beside it). FW postdiscal spots 2 and 3 are in line (perimuta subgroup). Confirmatory: male upperside uniformly coloured — no contrasting wing colour as in A. metamuta.",
-      "features": {
-        "Is there a distinct dark area under the forewing cell (space 1b), bounded outwardly by a pale line?": "Cannot determine — FW space 1b obscured by hindwing"
-      }
+      "note": "The most abundant species in the amphimuta group. Tailless. Male: deep violet-blue; black border reduced to a thread. HW underside: postdiscal spot 6 displaced well past the postdiscal row — touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line. FW postdiscal spots 2 and 3 are in line (perimuta subgroup). Confirmatory: male upperside uniformly coloured — no contrasting wing colour as in A. metamuta."
     },
     "q_anthelus_s1": {
       "type": "question",
