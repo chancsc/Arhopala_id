@@ -304,11 +304,11 @@
       "hint": "The alitaeus group is defined by having a central spot in FW space 11 (above the cell). Note: the anthelus group has ≥3 spots in space 11 but was already checked. The alitaeus group also has a distinctive right-angled male aedeagus (requires dissection).",
       "choices": [
         {
-          "label": "Yes — central spot in FW space 11",
+          "label": "Yes — central spot present in FW space 11",
           "next": "g_alitaeus"
         },
         {
-          "label": "No",
+          "label": "No — no central spot in FW space 11",
           "next": "q_tailed_cleander"
         }
       ]
