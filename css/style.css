@@ -956,3 +956,15 @@ details[open] .path-summary::before { content: '▼ '; }
   gap: 0.3rem;
 }
 .sp-back-btn:hover { text-decoration: underline; }
+
+/* ===== Species detail — wide view ===== */
+#species-app.species-view .sp-page { max-width: 680px; }
+
+#species-app.species-view .path-q { font-size: 0.9rem; }
+#species-app.species-view .path-a { font-size: 0.9rem; }
+#species-app.species-view .path-summary { font-size: 0.85rem; }
+#species-app.species-view .path-label { font-size: 0.78rem; }
+#species-app.species-view .path-group { font-size: 0.82rem; }
+#species-app.species-view .path-variant-note { font-size: 0.82rem; }
+#species-app.species-view .path-skip-note { font-size: 0.82rem; }
+#species-app.species-view .species-detail .id-note { font-size: 0.92rem; }
