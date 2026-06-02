@@ -193,44 +193,50 @@ All 8 species documented. Summary of spot 6 positions and key characters:
 
 **Proposed restructured Q92 tree:**
 
+**FW spots 2–3 in line vs echelon — NOT USABLE:** These spots are almost always hidden under the hindwing in perched field photographs. Cannot be used as a key character.
+
+**Confirmed:** A. antimuta, A. metamuta, and A. perimuta are all tailless.
+
+**Revised proposed restructuring — without FW spots 2–3:**
+
+Without FW spots 2–3, the first-level split after Q92 Yes must use HW characters. The most practical visible split is the **degree of spot 6 displacement combined with HW vein 2 band dislocation**:
+
 ```
 Q92: Is spot 6 displaced from the postdiscal row toward the end-cell bar?
   ├── Yes → Q_A
   └── No → q_tailless_agelastus_check (unchanged)
 
-Q_A: Are the forewing underside postdiscal spots in spaces 2 and 3
-     in line (even if oblique) — not staggered in echelon?
-  ├── Yes, in line → antimuta/metamuta/perimuta subgroup → Q_B
-  └── No, in echelon → epimuta/agesilaus group → Q_C
+Q_A: Is the HW postdiscal band only partially dislocated at vein 2
+     (band still connected/shifted, not fully separated)?
+  ├── Yes → agesilaus group → Q_B
+  └── No → Q_C
 
-Q_B: Are green tornal scales present on the hindwing underside?
-  ├── No → A. perimuta regina (central yellowish area; obscure markings)
-  └── Yes → Q_D
-
-Q_D: Is spot 6 inner edge in line with or inside the inner edge of
-     spot 7, and does spot 6 overlap the end-cell bar?
-  ├── Yes → A. antimuta antimuta
-  └── No (spot 6 nearer to spot 5) → A. metamuta metamuta
-
-Q_C: Is the hindwing postdiscal band only partially dislocated at
-     vein 2 (band connected but shifted)?
-  ├── Yes → agesilaus group → Q_E
-  └── No → epimuta group → Q_F
-
-Q_E: Is there a basal cell spot on the forewing underside?
+Q_B: Is there a basal cell spot on the forewing underside?
   ├── Yes → A. agesilaus gesa
   └── No → A. avatha
 
-Q_F: (Tailed/tailless already resolved by Q1)
-  [tailless path] → A. epimuta epiala
-  [tailed path] → Q_G
+Q_C: Are green tornal scales present on the HW underside?
+  ├── No → A. perimuta regina (central yellowish area; obscure markings)
+  └── Yes → Q_D
 
-Q_G: Are the underside markings darker and better defined?
+Q_D: Are spots 5, 6 and 7 widely out of line, with spot 6 inner edge
+     in line with or inside the inner edge of spot 7?
+  ├── Yes (spot 6 overlaps end-cell bar) → A. antimuta antimuta
+  └── No (spot 6 nearer to spot 5; spots more or less in line) → Q_E
+
+Q_E: Is spot 6 roughly midway between spot 5 and the end-cell bar?
+  ├── Yes (midway) → epimuta group → Q_F
+  └── No (nearer to spot 5 than midway) → A. metamuta metamuta
+
+Q_F: (tailed/tailless already split at Q1; both branches reach this point)
+  Is the underside markings darker and better defined than typical?
   ├── Yes → A. lurida
   └── No → A. atosia malayana
+  [tailless path has already eliminated atosia/lurida → A. epimuta epiala]
 ```
 
 **Open questions before implementation:**
-1. Confirm whether FW spots 2–3 "in line vs echelon" reliably separates the antimuta subgroup from epimuta/agesilaus.
-2. Confirm A. metamuta's spot 6 position — is it slightly displaced (less than midway) or essentially at the same level as spot 5?
-3. Confirm A. perimuta's spot 6 position (not specified in notebook source).
+1. Does the agesilaus group (partial vein 2 dislocation) reliably appear different from epimuta group (vein 2 status unknown) in field photos?
+2. Confirm A. metamuta's spot 6 — is it clearly less than midway, or ambiguous?
+3. Confirm A. perimuta's spot 6 position (not mentioned in notebook).
+4. Do A. epimuta/atosia/lurida have green tornal scales? (If yes, Q_C cannot separate them from antimuta/metamuta before epimuta check.)
