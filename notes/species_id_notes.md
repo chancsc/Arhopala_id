@@ -6,6 +6,33 @@ source text, which question/answer it affects, and what fix was applied.
 
 ---
 
+## A. silhetensis adorea
+
+**Question affected:** Q10 — `q_tailed_epimuta` (tailed branch)
+> "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?"
+
+**Notebook source:**
+- Belongs to cleander group, cleander subgroup. FW 23.0–26.0 mm.
+- Distribution: NE India and S Myanmar through Sundaland to Philippine Islands; throughout Peninsular Malaysia and Singapore.
+- Male upperside: blue; FW black border just under 1.0 mm.
+- Tornal lobe: HW features a conspicuously projecting tornal lobe.
+- HW postdiscal band: completely dislocated at vein 2.
+- Spot 6 positioning: interval between postdiscal spot in space 6 and the end-cell bar is wider than spot 6 itself; spot does not overlap the end-cell bar.
+- Spot alignment: spots 6 and 7 are oblique; inner edge of spot 7 is well inside outer edge of spot 6.
+- Spot shape: spot 6 is wider at the top than bottom; outer edge is sinuous and placed well inside the inner edge of spot 5.
+- Inter-spot gap: gap between spot 5 and end-cell bar is wider than either spot 5 or the end-cell bar.
+- FW postdiscal band: partially dislocated at vein 4.
+- FW costal spot in space 10: usually present.
+
+**Issue:**
+The canonical Q10 "No" answer label ("No — spot 6 in the postdiscal row at roughly the same level as spot 5") is misleading for silhetensis. Spot 6 IS displaced from the postdiscal row toward the end-cell bar (outer edge of spot 6 is well inside inner edge of spot 5 — i.e., spot 6 is shifted basally). However, the gap between spot 6 and the end-cell bar is wider than spot 6 itself, so spot 6 does NOT reach the bar and is NOT midway. The answer is correctly "No" (not midway), but the label wrongly implies spot 6 is at the same level as spot 5.
+
+**Fix applied:**
+- `r_silhetensis_adorea`: added `features` override → Q10 = "No — spot 6 displaced toward end-cell bar but gap between spot 6 and end-cell bar is wider than spot 6 itself; outer edge of spot 6 well inside inner edge of spot 5"
+- Note updated with full character set from notebook source.
+
+---
+
 ## A. fulla intaca
 
 **Question affected:** Q86 — `q_tailless_fulla`
