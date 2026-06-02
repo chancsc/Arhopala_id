@@ -235,8 +235,10 @@ Q_F: (tailed/tailless already split at Q1; both branches reach this point)
   [tailless path has already eliminated atosia/lurida → A. epimuta epiala]
 ```
 
-**Open questions before implementation:**
-1. Does the agesilaus group (partial vein 2 dislocation) reliably appear different from epimuta group (vein 2 status unknown) in field photos?
-2. Confirm A. metamuta's spot 6 — is it clearly less than midway, or ambiguous?
-3. Confirm A. perimuta's spot 6 position (not mentioned in notebook).
-4. Do A. epimuta/atosia/lurida have green tornal scales? (If yes, Q_C cannot separate them from antimuta/metamuta before epimuta check.)
+**Confirmed:**
+- A. metamuta spot 6: slight forward displacement — less than midway. Confirmed usable as "No" at Q_E (midway check).
+- A. perimuta: immediately distinguished by absence of green tornal scales + central yellowish area + obscure markings. Spot 6 position not needed — separated at Q_C.
+
+**Remaining open questions before implementation:**
+1. Does the agesilaus group (partial vein 2 dislocation) reliably appear different from the epimuta group in field photos? What is the vein 2 band status for the epimuta group?
+2. Do A. epimuta epiala, A. atosia, and A. lurida have green tornal scales? Critical: if they do NOT, they would be incorrectly routed to A. perimuta at Q_C (no green tornal check).
