@@ -6,6 +6,23 @@ source text, which question/answer it affects, and what fix was applied.
 
 ---
 
+## A. fulla intaca
+
+**Question affected:** Q86 — `q_tailless_fulla`
+
+**Notebook source:**
+- Tailless; rather small size.
+- Instantly recognisable by an obscure postdiscal fascia on both wings, which replaces the usual series of postdiscal spots.
+- Specifically lacks a bar at the end of the cell on the forewing, and sometimes lacks one on the hindwing as well.
+- Most other typical markings are absent, with the exception of a few obscure, small spots located in the basal area of the hindwing.
+
+**Fix applied:**
+- Q86 question rephrased: removed "end-cell bar" jargon; now leads with the most visible character (postdiscal spots replaced by faint obscure streak). Hint explains the rectangular mark at the end of the forewing cell in plain terms.
+- `g_fulla` description and key_features rewritten from notebook source.
+- `r_fulla_intaca` note updated: replaced "no end-cell bar on FW" with plain-language description.
+
+---
+
 ## A. agrata agrata
 
 **Question affected:** Q10 — `q_tailed_epimuta` (tailed branch)
