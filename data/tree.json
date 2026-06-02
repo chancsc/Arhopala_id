@@ -1268,7 +1268,10 @@
       "taxon_id": null,
       "name": "Arhopala wildeyana wildeyana",
       "common_name": "",
-      "note": "Male upperside: violet blue with broader borders than A. labuana or A. agelastus — 2.0 mm at tornus to 5.0 mm at costa. Female: brighter and purer blue. Tailless."
+      "note": "Male upperside: violet blue with broader borders than A. labuana or A. agelastus — 2.0 mm at tornus to 5.0 mm at costa. Female: brighter and purer blue. Tailless. HW postdiscal spot 6 is displaced inward from the postdiscal row, touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line (agelastus group character).",
+      "features": {
+        "On the hindwing underside, is postdiscal spot 6 displaced from the postdiscal row — shifted toward the end-cell bar rather than aligned with the level of spot 5?": "Yes — spot 6 displaced well past midway; usually touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line (A. antimuta)"
+      }
     },
     "r_agelastus_agelastus": {
       "type": "result",
