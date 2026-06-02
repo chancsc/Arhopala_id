@@ -242,5 +242,13 @@ Q_F: (tailed/tailless already split at Q1; both branches reach this point)
 **Confirmed:**
 - A. epimuta epiala, A. atosia malayana, A. lurida: all have green tornal scales. Q_C (green tornal check) correctly separates only A. perimuta.
 
-**Remaining open question before implementation:**
-1. What is the HW postdiscal band vein 2 dislocation status for A. epimuta, A. atosia, and A. lurida? The agesilaus group has PARTIAL dislocation — if the epimuta group has no dislocation or complete dislocation, Q_A is a valid split. If epimuta also has partial dislocation, a different character is needed to separate them from agesilaus.
+**Confirmed — all open questions resolved:**
+- A. epimuta epiala, A. atosia malayana, A. lurida: HW postdiscal band **fully dislocated** at vein 2 (two clearly separated portions). Agesilaus group has only PARTIAL dislocation. Q_A (vein 2 partial vs full) is confirmed as a valid split between the two "midway" groups.
+
+**Implementation status: COMPLETE.**
+Restructured Q92 implemented in `data/tree.json` as of 2026-06-02:
+- `q_tailless_epimuta`: collapsed to 2 choices (Yes → `q_tailless_epimuta_vein2`; No → `q_tailless_agelastus_check`)
+- `q_tailless_epimuta_vein2`: partial vs full vein 2 dislocation → agesilaus group vs continue
+- `q_tailless_epimuta_tornal`: green tornal scales → No = A. perimuta regina; Yes = continue
+- `q_tailless_epimuta_spot6_pos`: spots widely out of line / spot 6 overlaps bar → Yes = A. antimuta antimuta; No = continue
+- `q_tailless_epimuta_midway`: spot 6 midway → Yes = g_epimuta; No = A. metamuta metamuta

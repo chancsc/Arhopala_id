@@ -497,23 +497,79 @@
       "type": "question",
       "id": "q_tailless_epimuta",
       "question": "On the hindwing underside, is postdiscal spot 6 displaced from the postdiscal row — shifted toward the end-cell bar rather than aligned with the level of spot 5?",
-      "hint": "Three groups show HW spot 6 displaced toward the end-cell bar:\n• Epimuta group (A. atosia, A. lurida): spot 6 approximately midway between spot 5 and the end-cell bar. Confirmatory (when upperside visible): male has an opaque or differently-coloured discal patch on the FW upperside.\n• A. antimuta (perimuta subgroup): spot 6 displaced well past midway — usually touching or overlapping the end-cell bar; centres of spots 5, 6 and 7 widely out of line. More extreme displacement than in the epimuta or agesilaus groups.\n• Agesilaus group: spot 6 shifted toward cell but not reaching the bar; HW postdiscal band only partially dislocated at vein 2 (completely dislocated in epimuta).\nIf spot 6 is not displaced — still aligned with the rest of the postdiscal row at roughly the same level as spot 5 — answer No.",
+      "hint": "Several groups show HW spot 6 displaced from the postdiscal row toward the end-cell bar. If spot 6 is clearly pulled inward toward the discal cell — away from the level of spot 5 — answer Yes; follow-up questions will identify the group. If spot 6 remains broadly aligned with the postdiscal row at roughly the same level as spot 5, answer No.",
       "choices": [
         {
-          "label": "Yes — spot 6 approximately midway between spot 5 and the end-cell bar (epimuta group)",
-          "next": "g_epimuta"
-        },
-        {
-          "label": "Yes — spot 6 displaced well past midway; usually touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line (A. antimuta)",
-          "next": "g_amphimuta_perimuta"
-        },
-        {
-          "label": "Yes — spot 6 shifted toward cell; no opaque male FW discal patch; HW postdiscal band only partially dislocated at vein 2 (agesilaus group)",
-          "next": "g_agesilaus"
+          "label": "Yes — spot 6 displaced toward the end-cell bar",
+          "next": "q_tailless_epimuta_vein2"
         },
         {
           "label": "No — spot 6 is in the postdiscal band at roughly the same level as spot 5",
           "next": "q_tailless_agelastus_check"
+        }
+      ]
+    },
+    "q_tailless_epimuta_vein2": {
+      "type": "question",
+      "id": "q_tailless_epimuta_vein2",
+      "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
+      "hint": "In the agesilaus group (A. agesilaus gesa, A. avatha), the HW postdiscal band is only partially dislocated at vein 2 — it shifts inward but the two portions remain connected. In the epimuta group and in A. antimuta, A. metamuta, and A. perimuta, the band is fully dislocated at vein 2 — two clearly separate portions with a visible gap. Answer Yes if the band appears continuous or only slightly offset at vein 2; No if there is a clear gap.",
+      "choices": [
+        {
+          "label": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
+          "next": "g_agesilaus"
+        },
+        {
+          "label": "No — band fully dislocated at vein 2 (two separate portions)",
+          "next": "q_tailless_epimuta_tornal"
+        }
+      ]
+    },
+    "q_tailless_epimuta_tornal": {
+      "type": "question",
+      "id": "q_tailless_epimuta_tornal",
+      "question": "Are green tornal scales present on the HW underside?",
+      "hint": "Look at the tornal angle of the HW underside (the lower inner corner). A. perimuta regina is immediately separated by the complete absence of green tornal scales, combined with a central yellowish discal area and obscure or almost-absent markings. If green tornal scales are present, continue.",
+      "choices": [
+        {
+          "label": "No — green tornal scales absent; HW has yellowish discal area; markings obscure or almost absent",
+          "next": "r_perimuta_regina"
+        },
+        {
+          "label": "Yes — green tornal scales present",
+          "next": "q_tailless_epimuta_spot6_pos"
+        }
+      ]
+    },
+    "q_tailless_epimuta_spot6_pos": {
+      "type": "question",
+      "id": "q_tailless_epimuta_spot6_pos",
+      "question": "Are HW postdiscal spots 5, 6 and 7 widely out of line — with the inner edge of spot 6 in line with or inside the inner edge of spot 7, and spot 6 touching or overlapping the end-cell bar?",
+      "hint": "In A. antimuta antimuta, spot 6 is displaced well past the postdiscal row — its inner edge reaches or passes the inner edge of spot 7, and it typically touches or overlaps the end-cell bar; spots 5, 6 and 7 are widely out of line. In A. metamuta metamuta, spot 6 is only slightly displaced — nearer to spot 5 than to the end-cell bar; spots 5, 6 and 7 are broadly in line.",
+      "choices": [
+        {
+          "label": "Yes — spots 5, 6 and 7 widely out of line; inner edge of spot 6 in line with or inside inner edge of spot 7; spot 6 touches or overlaps end-cell bar",
+          "next": "r_antimuta_antimuta"
+        },
+        {
+          "label": "No — spots broadly in line; spot 6 only slightly displaced, nearer to spot 5",
+          "next": "q_tailless_epimuta_midway"
+        }
+      ]
+    },
+    "q_tailless_epimuta_midway": {
+      "type": "question",
+      "id": "q_tailless_epimuta_midway",
+      "question": "Is postdiscal spot 6 positioned roughly midway between spot 5 and the end-cell bar?",
+      "hint": "In the epimuta group (A. epimuta epiala, A. atosia malayana, A. lurida), spot 6 sits approximately equidistantly between spot 5 and the end-cell bar — clearly displaced from the postdiscal row but not reaching the bar. In A. metamuta metamuta, spot 6 is only mildly displaced and sits nearer to spot 5 than to the end-cell bar (less than midway).",
+      "choices": [
+        {
+          "label": "Yes — spot 6 roughly midway between spot 5 and end-cell bar",
+          "next": "g_epimuta"
+        },
+        {
+          "label": "No — spot 6 nearer to spot 5 than to end-cell bar (less than midway)",
+          "next": "r_metamuta_metamuta"
         }
       ]
     },
