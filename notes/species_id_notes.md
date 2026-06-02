@@ -113,3 +113,38 @@ Shared character (epimuta group): HW postdiscal spot 6 is positioned approximate
 **Notes for Q92 restructuring:**
 - A. epimuta epiala is tailless — in a restructured Q92, it arrives via the tailless branch (Q1=No), so it reaches Q92 already knowing it's tailless. The tailed/tailless split at Q1 already separates A. epimuta from A. atosia and A. lurida before Q92.
 - After collapsing Q92 Yes choices, the epimuta group follow-up only needs to split A. atosia vs A. lurida (both tailed, same spot 6 position). The distinguishing character is marking intensity: darker/better defined = A. lurida.
+
+---
+
+## Q92 Perimuta Subgroup — A. antimuta / A. metamuta / A. perimuta
+
+**Notebook source:**
+
+Shared subgroup character: FW underside postdiscal spots in spaces 2 and 3 are in line (may be oblique), not staggered in echelon.
+
+**1. Arhopala perimuta regina**
+- HW tornal scales: **No green tornal scales** — immediately diagnostic.
+- HW: Diagnostic central yellowish area; overall markings obscure.
+
+**2. Arhopala antimuta antimuta**
+- HW tornal scales: Green tornal scales present.
+- HW spot 6 position: Widely out of line with spots 5 and 7. Inner edge of spot 6 in line with or inside the inner edge of spot 7. Spot 6 typically overlaps the end-cell bar.
+- Postdiscal band: Usually completely dislocated at vein 2.
+
+**3. Arhopala metamuta metamuta**
+- HW tornal scales: Green tornal scales present.
+- HW spot 6 position: Spots 5, 6 and 7 more or less in line. Spot 6 positioned **nearer to spot 5 than to the end-cell bar**.
+- Ground colour: Uniform hair brown.
+
+**Key split logic:**
+1. Green tornal scales present? → No = A. perimuta regina (+ central yellowish area, obscure markings)
+2. If green tornal scales: Spot 6 inner edge in line with/inside inner edge of spot 7; overlaps end-cell bar; spots widely out of line? → Yes = A. antimuta; No = A. metamuta
+
+**Critical observation for Q92 restructuring:**
+- A. antimuta: spot 6 overlaps end-cell bar — fits the "displaced past midway, touching bar" description.
+- A. metamuta: spot 6 **nearer to spot 5 than to end-cell bar** — this is closer to "spot 6 at same level as spot 5" than to "touching bar." A. metamuta may belong structurally in a "slight displacement" category, distinct from both the epimuta-midway group and the antimuta-touching group.
+- A. perimuta: separated by absence of green tornal scales; spot 6 position is secondary.
+- All three share the FW spots 2–3 in-line character (not echelon) — usable as a group-entry diagnostic.
+
+**Current tree issue:**
+All three reach `g_amphimuta_perimuta` via Q92 choice 2 ("spot 6 displaced past midway, touching bar"), but A. metamuta does not match that description. The restructured Q92 will need to accommodate metamuta's intermediate spot 6 position.
