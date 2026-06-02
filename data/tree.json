@@ -2014,7 +2014,7 @@
       "type": "question",
       "id": "q_aurea_purple",
       "question": "Is the forewing black border significantly wide at the tornus — 2.5–3.0 mm?",
-      "hint": "A. stinga has an unusually wide FW border of 2.5–3.0 mm at the tornus (the widest in the group), decreasing to a thread near the apex; the male has no basal blue suffusion. A. trogon has a thread-like border throughout; male is brilliant brassy green with a strong blue suffusion at the wing bases; HW green usually reaches the termen in spaces 3, 4, or 5.",
+      "hint": "A. stinga has an unusually wide FW border of 2.5–3.0 mm at the tornus (the widest in the group), decreasing to a thread near the apex; the male has no basal blue suffusion. A. trogon has a thread-like border throughout; male is brilliant brassy green with a strong blue suffusion at the wing bases; HW green usually reaches the termen in spaces 3, 4, or 5.\n\nIf the upperside is not visible, select Cannot determine — both species share identical underside characters. Distribution can then help: A. stinga is restricted to Johor; A. trogon occurs throughout Peninsular Malaysia.",
       "choices": [
         {
           "label": "Yes — FW border 2.5–3.0 mm at tornus; male green without blue base suffusion",
@@ -2023,8 +2023,25 @@
         {
           "label": "No — FW border thread throughout; male brilliant brassy green with strong blue base suffusion",
           "next": "r_trogon"
+        },
+        {
+          "label": "Cannot determine — upperside not visible; FW border and male coloration cannot be assessed",
+          "next": "g_trogon_stinga_cd"
         }
       ]
+    },
+    "g_trogon_stinga_cd": {
+      "type": "group",
+      "id": "g_trogon_stinga_cd",
+      "group_name": "A. trogon or A. stinga (upperside not visible)",
+      "description": "Without the upperside these two species cannot be separated — both share a purple-washed underside with identical patterning. Use distribution as a guide: A. trogon occurs throughout Peninsular Malaysia; A. stinga is restricted to Johor. If the observation is not from Johor, A. trogon is the more likely identification.",
+      "key_features": [
+        "Underside glazed with a distinct purple wash",
+        "Short stout HW tail at vein 2 (just under 2 mm)",
+        "HW cell notably long — exceeds half the total wing length",
+        "Postdiscal spot 6 touches or overlaps the end-cell bar"
+      ],
+      "no_next_note": "To confirm to species, the upperside forewing border width or male upperside coloration must be assessed."
     },
     "q_aurea_brown": {
       "type": "question",

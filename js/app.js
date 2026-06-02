@@ -288,6 +288,8 @@ function renderGroup(node) {
     ? `<button class="btn-species-id" data-next="${escapeAttr(node.next)}">
          Identify to species ${iconArrowRight()}
        </button>`
+    : node.no_next_note
+    ? `<div class="species-pending">${iconPending()} ${escapeHtml(node.no_next_note)}</div>`
     : `<div class="species-pending">
          ${iconPending()} Species-level keys for this group will be added in the next update.
        </div>`;
