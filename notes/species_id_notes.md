@@ -148,3 +148,89 @@ Shared subgroup character: FW underside postdiscal spots in spaces 2 and 3 are i
 
 **Current tree issue:**
 All three reach `g_amphimuta_perimuta` via Q92 choice 2 ("spot 6 displaced past midway, touching bar"), but A. metamuta does not match that description. The restructured Q92 will need to accommodate metamuta's intermediate spot 6 position.
+
+---
+
+## Q92 Agesilaus Group — A. agesilaus / A. avatha
+
+**Notebook source:**
+
+Shared agesilaus group characters:
+- Both species are **tailless**.
+- HW underside: spot 6 positioned **roughly midway (equidistantly)** between spot 5 and the end-cell bar.
+- HW underside: postdiscal band **only partially dislocated at vein 2** (not fully separated).
+
+**1. Arhopala agesilaus gesa**
+- FW underside: **Basal cell spot present**.
+- General appearance: Resembles a small individual of A. major.
+
+**2. Arhopala avatha**
+- FW underside: **Basal cell spot absent**.
+- General appearance: Rather like A. antimuta.
+
+**Key split logic:**
+- FW underside basal cell spot present? → Yes = A. agesilaus gesa; No = A. avatha
+
+**Notes for Q92 restructuring:**
+- The agesilaus group's spot 6 position ("midway") is visually identical to the epimuta group's. The only discriminating character at the group level is the HW band dislocation at vein 2 (partial in agesilaus; not mentioned for epimuta). This must be the primary question separating the two "midway" groups after Q92 Yes.
+
+---
+
+## Q92 Restructuring — Full Analysis
+
+All 8 species documented. Summary of spot 6 positions and key characters:
+
+| Species | Tail | Spot 6 position | Key additional character |
+|---|---|---|---|
+| A. epimuta epiala | Tailless | Midway | Only tailless epimuta member |
+| A. atosia malayana | Tailed | Midway | Lighter markings |
+| A. lurida | Tailed | Midway | Darker, better defined markings |
+| A. agesilaus gesa | Tailless | Midway (equidistant) | HW band partially dislocated at vein 2; FW basal cell spot present |
+| A. avatha | Tailless | Midway (equidistant) | HW band partially dislocated at vein 2; FW basal cell spot absent |
+| A. antimuta antimuta | Tailless | Past midway; inner edge of spot 6 in line with/inside inner edge of spot 7; overlaps end-cell bar | Green tornal scales; HW band usually completely dislocated at vein 2 |
+| A. metamuta metamuta | Tailless | Nearer to spot 5 than to end-cell bar (less than midway?) | Green tornal scales; spots 5,6,7 more or less in line; uniform hair brown |
+| A. perimuta regina | Tailless | Not specified | No green tornal scales; central yellowish area; obscure markings |
+
+**Proposed restructured Q92 tree:**
+
+```
+Q92: Is spot 6 displaced from the postdiscal row toward the end-cell bar?
+  ├── Yes → Q_A
+  └── No → q_tailless_agelastus_check (unchanged)
+
+Q_A: Are the forewing underside postdiscal spots in spaces 2 and 3
+     in line (even if oblique) — not staggered in echelon?
+  ├── Yes, in line → antimuta/metamuta/perimuta subgroup → Q_B
+  └── No, in echelon → epimuta/agesilaus group → Q_C
+
+Q_B: Are green tornal scales present on the hindwing underside?
+  ├── No → A. perimuta regina (central yellowish area; obscure markings)
+  └── Yes → Q_D
+
+Q_D: Is spot 6 inner edge in line with or inside the inner edge of
+     spot 7, and does spot 6 overlap the end-cell bar?
+  ├── Yes → A. antimuta antimuta
+  └── No (spot 6 nearer to spot 5) → A. metamuta metamuta
+
+Q_C: Is the hindwing postdiscal band only partially dislocated at
+     vein 2 (band connected but shifted)?
+  ├── Yes → agesilaus group → Q_E
+  └── No → epimuta group → Q_F
+
+Q_E: Is there a basal cell spot on the forewing underside?
+  ├── Yes → A. agesilaus gesa
+  └── No → A. avatha
+
+Q_F: (Tailed/tailless already resolved by Q1)
+  [tailless path] → A. epimuta epiala
+  [tailed path] → Q_G
+
+Q_G: Are the underside markings darker and better defined?
+  ├── Yes → A. lurida
+  └── No → A. atosia malayana
+```
+
+**Open questions before implementation:**
+1. Confirm whether FW spots 2–3 "in line vs echelon" reliably separates the antimuta subgroup from epimuta/agesilaus.
+2. Confirm A. metamuta's spot 6 position — is it slightly displaced (less than midway) or essentially at the same level as spot 5?
+3. Confirm A. perimuta's spot 6 position (not specified in notebook source).
