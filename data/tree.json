@@ -2041,7 +2041,8 @@
         "HW cell notably long — exceeds half the total wing length",
         "Postdiscal spot 6 touches or overlaps the end-cell bar"
       ],
-      "no_next_note": "To confirm to species, the upperside forewing border width or male upperside coloration must be assessed."
+      "no_next_note": "To confirm to species, the upperside forewing border width or male upperside coloration must be assessed.",
+      "member_results": ["r_trogon", "r_stinga"]
     },
     "q_aurea_brown": {
       "type": "question",
