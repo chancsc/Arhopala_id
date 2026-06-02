@@ -432,15 +432,15 @@
     "q_tailless_fulla": {
       "type": "question",
       "id": "q_tailless_fulla",
-      "question": "Does the forewing underside completely lack an end-cell bar, and are the markings generally obscure or faint?",
-      "hint": "The fulla group is unusual in lacking the end-cell bar on the FW underside. The overall underside markings are usually indistinct or obscure.",
+      "question": "Are the underside markings almost entirely suppressed — the postdiscal spots replaced by a faint, obscure streak rather than a series of distinct separate spots, with most other typical markings absent?",
+      "hint": "A. fulla intaca is instantly recognisable by the near-total suppression of underside markings. In most Arhopala the underside shows a row of separate, distinct postdiscal spots and a small rectangular mark at the end of the forewing discal cell — in A. fulla both are absent or nearly so. The postdiscal spots on both wings are replaced by an obscure diffuse streak; the rectangular mark at the end of the forewing cell is completely absent (and may also be absent on the hindwing). Only a few faint spots remain near the base of the hindwing. If the underside shows normal, distinct postdiscal spots and a visible mark at the cell end, answer No.",
       "choices": [
         {
-          "label": "Yes — no end-cell bar on FW underside; markings obscure",
+          "label": "Yes — postdiscal spots replaced by a faint obscure streak; markings almost entirely absent",
           "next": "g_fulla"
         },
         {
-          "label": "No — end-cell bar present or markings clear",
+          "label": "No — postdiscal spots distinct; typical markings present",
           "next": "q_tailless_inornata"
         }
       ]
@@ -1104,11 +1104,13 @@
       "type": "group",
       "id": "g_fulla",
       "group_name": "fulla group",
-      "description": "Tailless species lacking an end-cell bar on the forewing underside. Underside markings are usually obscure or very faint. Monotypic in Malaysia.",
+      "description": "Tailless species instantly recognisable by the near-total suppression of underside markings. The usual postdiscal spots on both wings are replaced by a faint, obscure streak. The rectangular mark at the end of the forewing discal cell is absent (and may also be absent on the hindwing). Only a few obscure basal spots remain near the base of the hindwing. Monotypic in Malaysia.",
       "key_features": [
         "Tailless",
-        "FW underside: no end-cell bar",
-        "Underside markings usually obscure",
+        "Underside markings almost entirely absent",
+        "Postdiscal spots replaced by a faint obscure streak on both wings",
+        "No rectangular mark at the end of the forewing discal cell",
+        "Only a few faint basal spots remain near the HW base",
         "Only one Malaysian species: Arhopala fulla intaca"
       ],
       "next": "r_fulla_intaca"
