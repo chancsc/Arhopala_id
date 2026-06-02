@@ -79,7 +79,18 @@ function buildTreePaths(treeData) {
 
     if (node.type === 'group') {
       const step = { group: node.group_name };
-      if (node.next) dfs(node.next, [...path, step], vis2);
+      if (node.next) {
+        dfs(node.next, [...path, step], vis2);
+      } else if (node.member_results && node.member_results.length) {
+        // Terminal group — register this CD path for each listed result node
+        for (const resultId of node.member_results) {
+          const rNode = nodes[resultId];
+          if (rNode && rNode.name) {
+            if (!pathsMap.has(rNode.name)) pathsMap.set(rNode.name, []);
+            pathsMap.get(rNode.name).push([...path, step]);
+          }
+        }
+      }
     }
   }
 
