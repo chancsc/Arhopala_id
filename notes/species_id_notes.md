@@ -77,11 +77,39 @@ Q92 choice 2 currently carries the label "(A. antimuta)" which routes to `g_amph
 Collapse 3 Yes choices into 1 ("spot 6 displaced toward end-cell bar"), then add follow-up question(s) to split the 8 species into their current groups.
 
 **Species requiring underside info for redesign (8 species):**
-- A. atosia malayana
-- A. epimuta epiala
-- A. lurida
+- ~~A. atosia malayana~~ ✓ (see below)
+- ~~A. epimuta epiala~~ ✓ (see below)
+- ~~A. lurida~~ ✓ (see below)
 - A. antimuta antimuta
 - A. metamuta metamuta
 - A. perimuta regina
 - A. agesilaus gesa
 - A. avatha
+
+---
+
+## Q92 Epimuta Group — A. atosia / A. epimuta / A. lurida
+
+**Notebook source:**
+
+Shared character (epimuta group): HW postdiscal spot 6 is positioned approximately midway between spot 5 and the end-cell bar.
+
+**1. Arhopala epimuta epiala (Common Disc Oakblue)**
+- Tail: **Tailless** — the only tailless species in the epimuta group; unique among the three.
+- Markings: Lighter and less defined (similar to A. atosia).
+
+**2. Arhopala atosia malayana (Tailed Disc Oakblue)**
+- Tail: Tailed; filamentous tail at HW vein 2.
+- Markings: Lighter and less defined than A. lurida.
+
+**3. Arhopala lurida**
+- Tail: Tailed; filamentous tail at HW vein 2.
+- Markings: Darker and better defined than A. atosia.
+
+**Key split logic:**
+1. Tailed? → No = A. epimuta epiala (only tailless member)
+2. If tailed → Markings darker and better defined? → Yes = A. lurida; No = A. atosia malayana
+
+**Notes for Q92 restructuring:**
+- A. epimuta epiala is tailless — in a restructured Q92, it arrives via the tailless branch (Q1=No), so it reaches Q92 already knowing it's tailless. The tailed/tailless split at Q1 already separates A. epimuta from A. atosia and A. lurida before Q92.
+- After collapsing Q92 Yes choices, the epimuta group follow-up only needs to split A. atosia vs A. lurida (both tailed, same spot 6 position). The distinguishing character is marking intensity: darker/better defined = A. lurida.
