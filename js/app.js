@@ -139,6 +139,17 @@ function buildSpeciesIndex(treeData, speciesData) {
       });
     }
 
+    // Apply explicit features overrides to path display answers
+    if (node.features && Object.keys(node.features).length > 0) {
+      paths = paths.map(path =>
+        path.map(step =>
+          (step.question && node.features[step.question])
+            ? { ...step, choice: node.features[step.question] }
+            : step
+        )
+      );
+    }
+
     index.push({
       name,
       common_name: node.common_name || (spData && spData.common_name) || '',
