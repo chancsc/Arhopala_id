@@ -29,7 +29,7 @@
         },
         {
           "label": "No — tail at the usual vein 2 (typical position)",
-          "next": "q_tailed_long_dark"
+          "next": "q_tailed_long_tail"
         }
       ]
     },
@@ -37,7 +37,7 @@
       "type": "question",
       "id": "q_tailed_long_tail",
       "question": "Is the tail very long and thread-like — approximately 5 mm or longer?",
-      "hint": "Only two groups have very long tails clearly reaching 5 mm or more: A. overdijkinki (eumolphus group, ~5 mm) and A. aedias (aedias group, ~6 mm). The corinda group (~3.5 mm) was already separated by the previous question. All other tailed Arhopala have tails up to ~4 mm — answer No if the tail does not clearly exceed 5 mm.",
+      "hint": "Only two groups have very long tails clearly reaching 5 mm or more: A. overdijkinki (eumolphus group, ~5 mm) and A. aedias (aedias group, ~6 mm). All other tailed Arhopala have tails up to ~4 mm, including A. corinda (~3.5 mm) — answer No if the tail does not clearly exceed 5 mm.",
       "choices": [
         {
           "label": "Yes — tail very long, approximately 5 mm or longer (eumolphus or aedias group)",
@@ -45,7 +45,7 @@
         },
         {
           "label": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
-          "next": "q_ijanensis_hw_streak"
+          "next": "q_tailed_long_dark"
         },
         {
           "label": "Cannot determine — tail length unclear or broken",
@@ -113,19 +113,19 @@
       "type": "question",
       "id": "q_tailed_long_dark",
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
-      "hint": "The corinda group is immediately identified by the basal half of FW underside space 1b being completely darkened, bounded outwardly by a pale line. No other tailed Arhopala shares this character. FW space 1b is often hidden under the hindwing in field shots — if not visible, select Cannot determine; the next question will use tail length and overall appearance to identify the species.",
+      "hint": "The corinda group is immediately identified by the basal half of FW underside space 1b being completely darkened, bounded outwardly by a pale line. No other tailed Arhopala with a moderate tail (up to ~4 mm) shares this character. FW space 1b is often hidden under the hindwing in field shots — if not visible, select Cannot determine. Note: A. corinda also has a distinctly pointed FW apex and straight termen, which may help confirm the identification.",
       "choices": [
         {
           "label": "Yes — basal half of FW underside space 1b completely darkened (corinda group)",
           "next": "g_corinda"
         },
         {
-          "label": "No — FW underside normally marked, no darkening",
-          "next": "q_tailed_long_tail"
+          "label": "No — basal half of FW space 1b not completely darkened",
+          "next": "q_ijanensis_hw_streak"
         },
         {
           "label": "Cannot determine — FW space 1b obscured by hindwing",
-          "next": "q_tailed_long_tail"
+          "next": "q_ijanensis_hw_streak"
         }
       ]
     },
