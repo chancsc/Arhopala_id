@@ -683,6 +683,9 @@ async function initSpeciesPage() {
     });
     if (backBtn) backBtn.addEventListener('click', () => {
       document.getElementById('species-detail').style.display = 'none';
+      if (appEl) appEl.classList.remove('species-view');
+      const spPage = appEl && appEl.querySelector('.sp-page');
+      if (spPage) spPage.style.maxWidth = '';
       results.style.display = '';
       document.getElementById('search-count').style.display = '';
       input.style.display = '';
@@ -708,6 +711,10 @@ async function initSpeciesPage() {
 }
 
 function showSpeciesDetailInline(sp) {
+  const appEl = document.getElementById('species-app');
+  if (appEl) appEl.classList.add('species-view');
+  const spPage = appEl && appEl.querySelector('.sp-page');
+  if (spPage) spPage.style.maxWidth = 'none';
   const detailEl = document.getElementById('species-detail');
   detailEl.style.display = 'block';
   detailEl.scrollTop = 0;
