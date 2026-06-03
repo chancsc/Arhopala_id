@@ -605,18 +605,14 @@
       "type": "question",
       "id": "q_tailless_camdeo",
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
-      "hint": "A small number of camdeo group species are tailless (A. belphoebe cowani, A. myrzalina). The camdeo group is identified by a restricted dark patch in FW underside space 1b with a clearly defined pale bordering line. In field photos this area is often hidden under the hindwing — if FW space 1b is not clearly visible, select Cannot determine; the key will continue without this character.",
+      "hint": "A small number of camdeo group species are tailless (A. belphoebe cowani, A. myrzalina). The camdeo group is identified by a restricted dark patch in FW underside space 1b with a clearly defined pale bordering line. In field photos this area is often hidden under the hindwing — answer No if the patch is absent or if the area is not visible.",
       "choices": [
         {
           "label": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)",
           "next": "q_camdeo_sub"
         },
         {
-          "label": "No — no dark patch in FW space 1b",
-          "next": "q_tailless_echelon"
-        },
-        {
-          "label": "Cannot determine — FW space 1b obscured by hindwing",
+          "label": "No — no dark patch, or FW space 1b not visible",
           "next": "q_tailless_echelon"
         }
       ]
