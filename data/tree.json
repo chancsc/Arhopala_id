@@ -102,10 +102,6 @@
         {
           "label": "No — no central spot in FW space 11",
           "next": "q_epimuta_s2"
-        },
-        {
-          "label": "Cannot determine — FW space 11 not visible",
-          "next": "q_epimuta_or_alitaeus_tail"
         }
       ]
     },
@@ -3386,47 +3382,6 @@
       "covers_results": [
         "r_normani",
         "r_sublustris_ridleyi"
-      ]
-    },
-    "r_epimuta_alitaeus_unclear": {
-      "type": "result",
-      "id": "r_epimuta_alitaeus_unclear",
-      "taxon_id": null,
-      "name": "Epimuta / alitaeus group — FW space 11 and tail unclear",
-      "common_name": "Cannot determine to group",
-      "note": "⚠ FW space 11 not visible and tail length ambiguous. Two groups share HW spot 6 approximately midway between spot 5 and the end-cell bar:\n\nEpimuta group (tail ∼2.5 mm): A. atosia malayana — markings contrast feebly; A. lurida — markings distinctly darker.\n\nAlitaeus group (tail typically ∼3.5–4.0 mm; A. denta ∼2.5 mm): A. aida, A. alitaeus, A. ariana, A. arianaga, A. denta, A. elopura, A. havilandi, A. pseudomuta, A. sintanga. FW underside space 11 central spot is the key separator.\n\nTry to see FW space 11 to determine group membership.",
-      "covers_results": [
-        "r_atosia_malayana",
-        "r_lurida",
-        "r_aida",
-        "r_alitaeus",
-        "r_ariana",
-        "r_arianaga",
-        "r_denta",
-        "r_elopura",
-        "r_havilandi",
-        "r_pseudomuta",
-        "r_sintanga"
-      ]
-    },
-    "q_epimuta_or_alitaeus_tail": {
-      "type": "question",
-      "id": "q_epimuta_or_alitaeus_tail",
-      "question": "Approximately how long is the hindwing tail?",
-      "hint": "When FW space 11 is obscured, tail length gives a rough guide. Epimuta group (A. atosia, A. lurida): tail ∼2.5 mm. Alitaeus group: tail typically ∼3.5–4.0 mm (exception: A. denta ∼2.5 mm). A short tail does not definitively exclude the alitaeus group.",
-      "choices": [
-        {
-          "label": "Tail short — approximately 2.5 mm",
-          "next": "q_epimuta_s2"
-        },
-        {
-          "label": "Tail long — approximately 3.5–4.0 mm (likely alitaeus group)",
-          "next": "g_alitaeus"
-        },
-        {
-          "label": "Cannot determine — tail length also unclear",
-          "next": "r_epimuta_alitaeus_unclear"
-        }
       ]
     },
     "q_tailed_corinda_apex": {
