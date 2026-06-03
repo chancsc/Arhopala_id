@@ -97,8 +97,9 @@ ESCAPE_HATCHES = [
 # Node IDs that are intentionally unreachable (superseded dead code).
 # Listed here so the orphan check doesn't report them as unexpected.
 KNOWN_ORPHANS = {
-    'q_amph_s1',   # tail-presence question, replaced by explicit tailed/tailless
-                   # choices in q_amphimuta_sub
+    'q_amph_s1',        # tail-presence question, replaced by explicit tailed/tailless
+                        # choices in q_amphimuta_sub
+    'g_camdeo_camdeo',  # superseded by g_camdeo_general; identical next pointer
 }
 
 
@@ -223,6 +224,13 @@ def build_reachable_species(nodes: dict) -> dict:
         if ntype == 'result':
             name = node.get('name', '')
             result = frozenset([name]) if name else frozenset()
+            # Group-level "unresolved" results carry covers_results — a list of
+            # individual result node IDs that this result represents.  Follow them
+            # so the CD-coverage check recognises the species as reachable.
+            for rid in node.get('covers_results') or []:
+                covered = nodes.get(rid)
+                if covered and covered.get('name'):
+                    result = result | frozenset([covered['name']])
 
         elif ntype == 'question':
             for c in node.get('choices') or []:
