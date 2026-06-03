@@ -246,6 +246,20 @@ function esc(s) {
     .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+// Phrases in question text that link to Visual Guide sections
+const GUIDE_LINKS = new Map([
+  ['hindwing space 6', 'guide.html#hw-space6-basal-spot'],
+]);
+
+function linkifyQ(text) {
+  let html = esc(text);
+  for (const [phrase, url] of GUIDE_LINKS) {
+    html = html.replace(esc(phrase),
+      `<a href="${url}" class="guide-link" target="_blank" rel="noopener">${esc(phrase)}</a>`);
+  }
+  return html;
+}
+
 
 function renderCandidates() {
   const listEl = document.getElementById('cl-candidates');
@@ -341,7 +355,7 @@ function renderQuestions() {
       : '';
     return `
       <div class="cl-q${sel ? ' answered' : ''}">
-        <p class="cl-qtext">${qNum}${esc(q)}</p>
+        <p class="cl-qtext">${qNum}${linkifyQ(q)}</p>
         ${hintHTML}
         <div class="cl-choices">${btns}</div>
       </div>`;
