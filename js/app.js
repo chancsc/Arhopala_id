@@ -427,12 +427,16 @@ function buildPathDisplay(paths, note) {
   //   (b) starts tailless but result note says "Tailed."
   //   (c) starts tailed but result note says "Tailless."
   // Escape-hatch penalty +1 for paths that use the camdeo escape hatch
-  //   ("None of the camdeo features present"), so the direct "No" path is
-  //   preferred as canonical over the "Yes → escape" path for non-camdeo species.
-  const ESCAPE_HATCH = 'None of the camdeo features present';
+  //   ("None of the camdeo features present" / "HW spot 6 appears midway…"), so the
+  //   direct "No" path is preferred as canonical over the "Yes → escape" path.
+  const ESCAPE_HATCHES = [
+    'None of the camdeo features present',
+    'HW spot 6 appears midway between spot 5 and the end-cell bar',
+  ];
+  const isEscapeHatch = c => c && ESCAPE_HATCHES.some(eh => c.startsWith(eh));
   const skipCount = p => {
     let score = p.filter(s => s.choice && s.choice.startsWith('Cannot determine')).length;
-    score += p.filter(s => s.choice && s.choice.startsWith(ESCAPE_HATCH)).length;
+    score += p.filter(s => isEscapeHatch(s.choice)).length;
     const startsTailed   = p.length > 0 && p[0].choice === 'Yes — hindwing is tailed';
     const startsNotTailed = p.length > 0 && p[0].choice === 'No — hindwing is tailless';
     if (startsTailed   && p.some(s => s.choice && /tailless/i.test(s.choice))) score += 100;
@@ -440,7 +444,7 @@ function buildPathDisplay(paths, note) {
     if (startsTailed   && resultIsNotTailed) score += 100;
     return score;
   };
-  const hasEscapeHatch = p => p.some(s => s.choice && s.choice.startsWith(ESCAPE_HATCH));
+  const hasEscapeHatch = p => p.some(s => isEscapeHatch(s.choice));
 
   const renderSteps = path => path.map(step => {
     if (step.group) {
