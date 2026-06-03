@@ -426,8 +426,13 @@ function buildPathDisplay(paths, note) {
   //   (a) starts tailed but later has a "tailless" answer
   //   (b) starts tailless but result note says "Tailed."
   //   (c) starts tailed but result note says "Tailless."
+  // Escape-hatch penalty +1 for paths that use the camdeo escape hatch
+  //   ("None of the camdeo features present"), so the direct "No" path is
+  //   preferred as canonical over the "Yes → escape" path for non-camdeo species.
+  const ESCAPE_HATCH = 'None of the camdeo features present';
   const skipCount = p => {
     let score = p.filter(s => s.choice && s.choice.startsWith('Cannot determine')).length;
+    score += p.filter(s => s.choice && s.choice.startsWith(ESCAPE_HATCH)).length;
     const startsTailed   = p.length > 0 && p[0].choice === 'Yes — hindwing is tailed';
     const startsNotTailed = p.length > 0 && p[0].choice === 'No — hindwing is tailless';
     if (startsTailed   && p.some(s => s.choice && /tailless/i.test(s.choice))) score += 100;
@@ -435,6 +440,7 @@ function buildPathDisplay(paths, note) {
     if (startsTailed   && resultIsNotTailed) score += 100;
     return score;
   };
+  const hasEscapeHatch = p => p.some(s => s.choice && s.choice.startsWith(ESCAPE_HATCH));
 
   const renderSteps = path => path.map(step => {
     if (step.group) {
@@ -462,6 +468,7 @@ function buildPathDisplay(paths, note) {
   const canonicalSkips = skipCount(canonical);
   const fallback = validPaths.find(p => skipCount(p) > canonicalSkips) || null;
   const showFallback = fallback &&
+    !hasEscapeHatch(fallback) &&
     JSON.stringify(fallback) !== JSON.stringify(canonical) &&
     skipCount(fallback) > skipCount(canonical);
 
