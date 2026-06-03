@@ -213,18 +213,14 @@
       "type": "question",
       "id": "q_tailed_dark_area",
       "question": "Is there a distinct dark area under the forewing cell (space 1b), bounded outwardly by a pale line?",
-      "hint": "The camdeo group has a characteristic darkened patch in FW underside space 1b with a clearly defined pale line running across it. This feature is diagnostic for the entire camdeo group. Note: in field photographs this area is often hidden under the hindwing — if FW space 1b is not visible, select Cannot determine and continue; the key will proceed without this character.",
+      "hint": "The camdeo group has a characteristic darkened patch in FW underside space 1b with a clearly defined pale line running across it. This feature is diagnostic for the entire camdeo group. In field photographs this area is often hidden under the hindwing — answer No if the patch is absent or if the area is not visible.",
       "choices": [
         {
           "label": "Yes — distinct dark patch in FW space 1b with pale bordering line",
           "next": "q_camdeo_sub"
         },
         {
-          "label": "No — no dark patch in FW space 1b",
-          "next": "q_tailed_anthelus"
-        },
-        {
-          "label": "Cannot determine — FW space 1b obscured by hindwing",
+          "label": "No — no dark patch, or FW space 1b not visible",
           "next": "q_tailed_anthelus"
         }
       ]
