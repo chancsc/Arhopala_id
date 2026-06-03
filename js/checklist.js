@@ -245,7 +245,7 @@ function esc(s) {
 // Phrases in question text that link to Visual Guide sections
 const GUIDE_LINKS = new Map([
   ['hindwing space 6', 'guide.html#hw-space6-basal-spot'],
-  ['space 11', 'guide.html#fw-space-11'],
+  ['central spot in FW space 11', 'guide.html#fw-space-11'],
 ]);
 
 function linkifyQ(text) {
