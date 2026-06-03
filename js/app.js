@@ -150,17 +150,6 @@ function buildSpeciesIndex(treeData, speciesData) {
       });
     }
 
-    // Apply explicit features overrides to path display answers
-    if (node.features && Object.keys(node.features).length > 0) {
-      paths = paths.map(path =>
-        path.map(step =>
-          (step.question && node.features[step.question])
-            ? { ...step, choice: node.features[step.question] }
-            : step
-        )
-      );
-    }
-
     index.push({
       name,
       common_name: node.common_name || (spData && spData.common_name) || '',
@@ -168,7 +157,8 @@ function buildSpeciesIndex(treeData, speciesData) {
       taxon_photos: (spData && spData.taxon_photos) || [],
       inat_url: (spData && spData.inat_url)
         || `https://www.inaturalist.org/search?q=${encodeURIComponent(sp2)}`,
-      paths
+      paths,
+      resultFeatures: node.features || {}
     });
   }
 
@@ -398,7 +388,7 @@ function showSpeciesDetail(sp) {
     : '';
 
   const galleryHTML = buildPhotoGallery(sp);
-  const pathHTML = buildPathDisplay(sp.paths, sp.note);
+  const pathHTML = buildPathDisplay(sp.paths, sp.note, sp.resultFeatures);
 
   detailEl.innerHTML = `
     <span class="result-badge">Species Info</span>
@@ -413,8 +403,10 @@ function showSpeciesDetail(sp) {
   `;
 }
 
-function buildPathDisplay(paths, note) {
+function buildPathDisplay(paths, note, resultFeatures) {
   if (!paths || paths.length === 0) return '';
+
+  const rf = resultFeatures || {};
 
   // Detect species tail status from the result note for contradiction detection
   const noteLC = (note || '').toLowerCase();
@@ -444,9 +436,27 @@ function buildPathDisplay(paths, note) {
     if (startsTailed   && resultIsNotTailed) score += 100;
     return score;
   };
+  // Returns 0 if path has no answers that contradict result features, 1 if any contradict.
+  // Used as a tiebreaker so the consistent path wins over a DFS-order artefact.
+  const isInconsistent = p => {
+    for (const step of p) {
+      if (!step.question || !step.choice) continue;
+      if (step.choice.startsWith('Cannot determine')) continue;
+      const expected = rf[step.question];
+      if (expected && !expected.startsWith('Cannot determine') && step.choice !== expected) return 1;
+    }
+    return 0;
+  };
   const hasEscapeHatch = p => p.some(s => isEscapeHatch(s.choice));
 
-  const renderSteps = path => path.map(step => {
+  // Apply explicit features overrides to a single path's display answers.
+  const applyFeatures = path => Object.keys(rf).length === 0 ? path : path.map(step =>
+    (step.question && rf[step.question] && !rf[step.question].startsWith('Cannot determine'))
+      ? { ...step, choice: rf[step.question] }
+      : step
+  );
+
+  const renderSteps = path => applyFeatures(path).map(step => {
     if (step.group) {
       return `<li class="path-step path-step--group"><span class="path-group">● ${escapeHtml(step.group)}</span></li>`;
     }
@@ -461,7 +471,12 @@ function buildPathDisplay(paths, note) {
       </li>`;
   }).join('');
 
-  const sorted = [...paths].sort((a, b) => skipCount(a) - skipCount(b));
+  // Sort by (skipCount, inconsistency-with-result-features, path-length).
+  // Inconsistency tiebreaker ensures the biologically correct path wins over a
+  // DFS-order artefact when two choices route to the same next node.
+  const sorted = [...paths].sort((a, b) =>
+    skipCount(a) - skipCount(b) || isInconsistent(a) - isInconsistent(b) || a.length - b.length
+  );
   const canonical = sorted[0];
 
   // Fallback path: fewest extra "Cannot determine" steps beyond the canonical.
@@ -755,7 +770,7 @@ function showSpeciesDetailInline(sp) {
     <h2 class="species-common">${escapeHtml(sp.common_name || sp.name)}</h2>
     ${sp.common_name ? `<p class="species-name">${escapeHtml(sp.name)}</p>` : ''}
     ${noteHTML}
-    ${buildPathDisplay(sp.paths)}
+    ${buildPathDisplay(sp.paths, sp.note, sp.resultFeatures)}
     ${buildPhotoGallery(sp)}
     <a class="btn-inat" href="${escapeAttr(sp.inat_url)}" target="_blank" rel="noopener noreferrer">
       ${iconExternal()} View on iNaturalist

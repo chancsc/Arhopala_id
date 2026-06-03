@@ -121,11 +121,33 @@ function initData(treeData, speciesData) {
   // Build feature matrix: canonical = lowest-score path (same ranking as app.js direct path).
   // Score: +1 per CD step, +1 per escape-hatch step, +100 for tailed/tailless contradiction.
   // Paths scoring ≥100 (contradictions) are excluded; if all paths contradict, use lowest score.
+  // Pre-build result features map for consistent-canonical tiebreaking
+  const resultFeaturesMap = new Map();
+  for (const node of Object.values(treeData.nodes)) {
+    if (node.type === 'result' && node.name && node.features)
+      resultFeaturesMap.set(node.name, node.features);
+  }
+
   for (const [name, paths] of pathsMap) {
     const note = resultNotes.get(name) || '';
-    const scored = paths.map(p => [pathScore(p, note), p]).sort((a, b) => a[0] - b[0]);
+    const rf = resultFeaturesMap.get(name) || {};
+    // isInconsistent returns 1 if any definite path answer contradicts the result's
+    // explicit features — used as a tiebreaker to prefer biologically correct paths
+    // over DFS-order artefacts when two choices route to the same next node.
+    const isInconsistent = p => {
+      for (const step of p) {
+        if (!step.question || !step.choice) continue;
+        if (step.choice.startsWith('Cannot determine')) continue;
+        const expected = rf[step.question];
+        if (expected && !expected.startsWith('Cannot determine') && step.choice !== expected) return 1;
+      }
+      return 0;
+    };
+    const scored = paths
+      .map(p => [pathScore(p, note), isInconsistent(p), p.length, p])
+      .sort((a, b) => a[0] - b[0] || a[1] - b[1] || a[2] - b[2]);
     const best = scored.find(([s]) => s < 100) || scored[0];
-    const canonical = best ? best[1] : [];
+    const canonical = best ? best[3] : [];
 
     const features = new Map();
     const covSeen = new Set();
@@ -142,10 +164,8 @@ function initData(treeData, speciesData) {
     // "Cannot determine" values neutralise that question for this species (remove from scoring).
     // All other values override or add features — explicit features take precedence over
     // the canonical path answer (e.g. to correct a DFS-order artefact).
-    const resultNode = Object.values(treeData.nodes).find(
-      n => n.type === 'result' && n.name === name && n.features);
-    if (resultNode) {
-      for (const [q, c] of Object.entries(resultNode.features)) {
+    if (Object.keys(rf).length > 0) {
+      for (const [q, c] of Object.entries(rf)) {
         if (c.startsWith('Cannot determine')) {
           features.delete(q);
         } else {
