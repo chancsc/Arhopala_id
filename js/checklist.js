@@ -11,6 +11,7 @@ const cs = {
   scores: [],
   showAll: false,
   expandedName: null,     // species name currently expanded in detail panel
+  questionOrder: null,    // stable display order; null = not yet initialised
 };
 
 // ── Tree utilities (mirrors app.js) ─────────────────────────────────────────
@@ -202,40 +203,35 @@ function getDisplayQuestions() {
     }
   }
 
-  // "Meaningfully answered": a real feature answer (not Cannot determine)
-  const meaningfulAnswer = q => {
-    const a = cs.answers.get(q);
-    return a !== undefined && !a.startsWith('Cannot determine');
-  };
-  // "Touched": any answer set, including Cannot determine — keeps question pinned near top
   const touched = q => cs.answers.has(q);
 
-  // Keep touched questions AND questions that still discriminate (≥2 distinct answers)
-  return [...diversity.entries()]
+  // Candidate pool: touched questions + questions that still discriminate (≥2 distinct answers)
+  const allQ = [...diversity.entries()]
     .filter(([q, choices]) => touched(q) || choices.size >= 2)
-    .map(([q]) => q)
-    .sort((a, b) => {
-      // Answered questions (any answer, incl. CD) are pinned as a stable block
-      // at the top, sorted by Q-number so their positions never shift.
-      const aT = touched(a), bT = touched(b);
-      if (aT !== bT) return aT ? -1 : 1;
-      if (aT && bT) {
-        // Within answered block: stable Q-number order
-        const qa = cs.questionNumbers ? (cs.questionNumbers.get(a) || 9999) : 9999;
-        const qb = cs.questionNumbers ? (cs.questionNumbers.get(b) || 9999) : 9999;
-        return qa - qb;
-      }
-      // Unanswered: underside/morphology questions before pure upperside questions,
-      // then by filtered coverage descending within each tier.
-      // Filtered coverage (how many current top candidates have this question) is
-      // preferred over global coverage so that, e.g., after Q1=Yes (tailed), Q2
-      // ranks correctly among tailed-only questions rather than being displaced by
-      // questions that also appear on tailless canonical paths.
-      const aUpper = /upperside/i.test(a);
-      const bUpper = /upperside/i.test(b);
-      if (aUpper !== bUpper) return aUpper ? 1 : -1;
-      return (filteredCov.get(b) || 0) - (filteredCov.get(a) || 0);
-    });
+    .map(([q]) => q);
+  const allQSet = new Set(allQ);
+
+  // Sort helper for new questions: morphology before upperside, then by filtered coverage
+  const newQSort = (a, b) => {
+    const aUpper = /upperside/i.test(a);
+    const bUpper = /upperside/i.test(b);
+    if (aUpper !== bUpper) return aUpper ? 1 : -1;
+    return (filteredCov.get(b) || 0) - (filteredCov.get(a) || 0);
+  };
+
+  if (!cs.questionOrder) {
+    // First render: establish initial stable order
+    cs.questionOrder = allQ.slice().sort(newQSort);
+  } else {
+    // Keep existing order; remove un-touched questions that are no longer relevant
+    cs.questionOrder = cs.questionOrder.filter(q => touched(q) || allQSet.has(q));
+    // Append any newly relevant questions at the end
+    const existing = new Set(cs.questionOrder);
+    const newQs = allQ.filter(q => !existing.has(q)).sort(newQSort);
+    if (newQs.length) cs.questionOrder.push(...newQs);
+  }
+
+  return cs.questionOrder;
 }
 
 // ── Render ───────────────────────────────────────────────────────────────────
@@ -321,13 +317,15 @@ function renderQuestions() {
   const el = document.getElementById('cl-questions');
   const qs = getDisplayQuestions();
 
-  // Answered questions are always fully shown; the 15-question cap applies
-  // only to the unanswered tail so that answering a question never pushes
-  // another unanswered question off the visible list.
-  const answeredQs = qs.filter(q => cs.answers.has(q));
+  // Show questions in their stable order. Cap the unanswered tail at 15 so the
+  // initial list isn't overwhelming; answered questions are always shown regardless.
+  const unansweredSeen = [];
+  const visible = qs.filter(q => {
+    if (cs.answers.has(q)) return true;
+    unansweredSeen.push(q);
+    return cs.showAll || unansweredSeen.length <= 15;
+  });
   const unansweredQs = qs.filter(q => !cs.answers.has(q));
-  const unansweredLimit = cs.showAll ? unansweredQs.length : 15;
-  const visible = [...answeredQs, ...unansweredQs.slice(0, unansweredLimit)];
 
   el.innerHTML = visible.map((q, idx) => {
     const meta = cs.questionMeta.get(q) || { choices: [], hint: '' };
@@ -438,6 +436,7 @@ async function init() {
       cs.answers.clear();
       cs.showAll = false;
       cs.expandedName = null;
+      cs.questionOrder = null;
       render();
     });
   } catch (err) {
