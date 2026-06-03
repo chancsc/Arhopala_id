@@ -106,6 +106,81 @@
     @media (min-width: 480px) {
       .guide-img-wrap { padding: 1.5rem 2rem; }
     }
+
+    /* ── Start Here card ── */
+    .start-here {
+      background: #f0f5ee;
+      border: 1.5px solid var(--primary);
+      border-radius: var(--radius);
+      padding: 1rem 1.1rem 1.1rem;
+      margin-bottom: 2rem;
+    }
+    .start-here-title {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin: 0 0 0.5rem;
+    }
+    .start-here-lead {
+      font-size: 0.83rem;
+      color: var(--text);
+      line-height: 1.55;
+      margin: 0 0 0.9rem;
+    }
+    .start-here-sub {
+      font-size: 0.73rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin: 0.85rem 0 0.35rem;
+    }
+    .start-here-terms {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: 0.35rem 0.7rem;
+      font-size: 0.8rem;
+    }
+    .start-here-term {
+      font-weight: 600;
+      color: var(--primary);
+      white-space: nowrap;
+      align-self: start;
+    }
+    .start-here-def {
+      color: var(--text);
+      line-height: 1.45;
+    }
+    .start-here-def a {
+      color: var(--primary);
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      text-underline-offset: 2px;
+      white-space: nowrap;
+    }
+    .start-here-def a:hover { text-decoration-style: solid; }
+    .start-here-photo {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin: 0.85rem 0 0;
+      padding-top: 0.75rem;
+      border-top: 1px solid #c8ddc4;
+    }
+    .start-here-cta {
+      display: inline-block;
+      margin-top: 0.85rem;
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.38rem 0.85rem;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .start-here-cta:hover { background: #234820; }
   </style>
 </head>
 <body>
@@ -117,10 +192,66 @@
 
   <div class="guide-content">
 
+    <!-- ── Start Here ── -->
+    <div class="start-here" id="start-here">
+      <p class="start-here-title">Where to start</p>
+      <p class="start-here-lead">
+        Open <a href="checklist.html" style="color:var(--primary);font-weight:600;">Feature Scoring</a>
+        with your photo. Mark only the features you can clearly see — candidates are ranked in real time.
+        Leave anything unclear blank; unanswered questions do not penalise any candidate.
+      </p>
+
+      <p class="start-here-sub">Know these five terms before you score</p>
+      <div class="start-here-terms">
+
+        <span class="start-here-term">Wing spaces</span>
+        <span class="start-here-def">
+          Each area between two adjacent veins is a numbered <em>space</em>.
+          Spots are named by the space they sit in.
+          <a href="#wing-spaces">Wing space diagram ↓</a>
+        </span>
+
+        <span class="start-here-term">HW spots 5, 6, 7</span>
+        <span class="start-here-def">
+          The row of hindwing postdiscal spots counted outward from the tornal (inner) margin.
+          Their alignment — especially spot 6 — is the single most-used diagnostic character.
+          <a href="#hw-tail-spots-fw-spaces">HW spots diagram ↓</a>
+        </span>
+
+        <span class="start-here-term">End-cell bar</span>
+        <span class="start-here-def">
+          The bar that closes the hindwing discal cell at its outer end.
+          Where spot 6 sits relative to this bar (nearer to spot 5, or nearer to the bar) is asked repeatedly.
+          <a href="#spot6-end-cell-bar">Spot 6 &amp; end-cell bar ↓</a>
+        </span>
+
+        <span class="start-here-term">FW spot 4</span>
+        <span class="start-here-def">
+          Forewing postdiscal spot in space 4. In some groups it is shifted outward
+          (distad) relative to spots 3 and 5, breaking the straight postdiscal row.
+          <a href="#fw-spots">FW spots diagram ↓</a>
+        </span>
+
+        <span class="start-here-term">FW space 11</span>
+        <span class="start-here-def">
+          A narrow costal space near the forewing apex. Presence of a central spot there
+          is a useful character in several subgroups.
+          <a href="#fw-space-11">FW space 11 diagram ↓</a>
+        </span>
+
+      </div>
+
+      <p class="start-here-photo">
+        <strong>Photo tip:</strong> the forewing base is usually hidden under the hindwing in resting shots —
+        skip any feature that isn't clearly visible. A sharp underside photo with the hindwing fully in view is enough to score most questions.
+      </p>
+
+      <a class="start-here-cta" href="checklist.html">Open Feature Scoring →</a>
+    </div>
+
     <p class="guide-intro">
-      Reference diagrams for terms used in the identification key.
-      Wing space numbers, morphological features, and structural landmarks
-      are illustrated here to help interpret the key questions.
+      Reference diagrams for wing space numbering, morphological features, and structural landmarks
+      used in the scoring questions.
     </p>
 
     <!-- ── Wing venation ── -->
