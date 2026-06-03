@@ -398,7 +398,7 @@ function showSpeciesDetail(sp) {
     : '';
 
   const galleryHTML = buildPhotoGallery(sp);
-  const pathHTML = buildPathDisplay(sp.paths);
+  const pathHTML = buildPathDisplay(sp.paths, sp.note);
 
   detailEl.innerHTML = `
     <span class="result-badge">Species Info</span>
@@ -413,17 +413,26 @@ function showSpeciesDetail(sp) {
   `;
 }
 
-function buildPathDisplay(paths) {
+function buildPathDisplay(paths, note) {
   if (!paths || paths.length === 0) return '';
 
+  // Detect species tail status from the result note for contradiction detection
+  const noteLC = (note || '').toLowerCase();
+  const resultIsTailed = /^tailed/.test(noteLC);
+  const resultIsNotTailed = /^tailless/.test(noteLC);
+
   // Canonical path: fewest "Cannot determine" choices.
-  // Contradiction penalty: starting "Yes — tailed" but later hitting any tail-absence answer
-  // (covers: "Tailless", "No tail — ...", "No — tailless", "Yes — tailless (no HW tail)", etc.)
+  // Contradiction penalty +100 for paths that start on the wrong tailed/tailless branch:
+  //   (a) starts tailed but later has a "tailless" answer
+  //   (b) starts tailless but result note says "Tailed."
+  //   (c) starts tailed but result note says "Tailless."
   const skipCount = p => {
     let score = p.filter(s => s.choice && s.choice.startsWith('Cannot determine')).length;
-    const startsTailed = p.length > 0 && p[0].choice === 'Yes — hindwing is tailed';
-    const hasContradiction = startsTailed && p.some(s => s.choice && /tailless/i.test(s.choice));
-    if (hasContradiction) score += 100;
+    const startsTailed   = p.length > 0 && p[0].choice === 'Yes — hindwing is tailed';
+    const startsNotTailed = p.length > 0 && p[0].choice === 'No — hindwing is tailless';
+    if (startsTailed   && p.some(s => s.choice && /tailless/i.test(s.choice))) score += 100;
+    if (startsNotTailed && resultIsTailed)   score += 100;
+    if (startsTailed   && resultIsNotTailed) score += 100;
     return score;
   };
 
