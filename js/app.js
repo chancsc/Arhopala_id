@@ -479,13 +479,25 @@ function buildPathDisplay(paths, note, resultFeatures) {
   );
   const canonical = sorted[0];
 
-  // Fallback path: fewest extra "Cannot determine" steps beyond the canonical.
-  // Picking the minimum-extra-CD path (not maximum) shows the simplest bypass —
-  // e.g. for A. overdijkinki the 1-CD path via Q4 CD rather than a longer 2-CD detour.
-  // Only shown if it genuinely uses more skips than the canonical (not just a different same-score path).
+  // Fallback path: one more "Cannot determine" step than the canonical.
+  // Among candidates, prefer the path whose CD step occurs deepest in the sequence —
+  // this surfaces designed bypass routes (e.g. Q87-CD → Q88 for horsfieldi) over
+  // coincidental early bypasses (e.g. Q2-CD which just skips one early question).
+  // Depth tiebreaker: if equal depth, shorter path wins.
+  const cdDepth = p => {
+    const i = p.findIndex(s => s.choice && s.choice.startsWith('Cannot determine'));
+    return i === -1 ? 0 : i;
+  };
   const validPaths = sorted.filter(p => skipCount(p) < 100);
   const canonicalSkips = skipCount(canonical);
-  const fallback = validPaths.find(p => skipCount(p) > canonicalSkips && !hasEscapeHatch(p)) || null;
+  const fallbackPool = validPaths.filter(p => skipCount(p) > canonicalSkips && !hasEscapeHatch(p));
+  fallbackPool.sort((a, b) =>
+    skipCount(a) - skipCount(b) ||
+    isInconsistent(a) - isInconsistent(b) ||
+    cdDepth(b) - cdDepth(a) ||
+    a.length - b.length
+  );
+  const fallback = fallbackPool[0] || null;
   const showFallback = fallback &&
     JSON.stringify(fallback) !== JSON.stringify(canonical) &&
     skipCount(fallback) > skipCount(canonical);
