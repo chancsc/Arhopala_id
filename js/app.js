@@ -466,9 +466,8 @@ function buildPathDisplay(paths, note) {
   // Only shown if it genuinely uses more skips than the canonical (not just a different same-score path).
   const validPaths = sorted.filter(p => skipCount(p) < 100);
   const canonicalSkips = skipCount(canonical);
-  const fallback = validPaths.find(p => skipCount(p) > canonicalSkips) || null;
+  const fallback = validPaths.find(p => skipCount(p) > canonicalSkips && !hasEscapeHatch(p)) || null;
   const showFallback = fallback &&
-    !hasEscapeHatch(fallback) &&
     JSON.stringify(fallback) !== JSON.stringify(canonical) &&
     skipCount(fallback) > skipCount(canonical);
 
