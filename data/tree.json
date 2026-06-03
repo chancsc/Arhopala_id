@@ -228,23 +228,23 @@
     "q_camdeo_sub": {
       "type": "question",
       "id": "q_camdeo_sub",
-      "question": "Does this butterfly show any of the following camdeo subgroup features?",
-      "hint": "The myrzala and bazaloides subgroups each have a distinctive hindwing underside character that is usually visible in photos. If neither applies — or if you are unsure whether this is a camdeo species at all — choose the last two options. FW spaces 1a, 1b, 2, and 3 are almost always hidden under the hindwing in perched photographs and are not used here.",
+      "question": "What does the hindwing underside look like?",
+      "hint": "Check the overall ground colour and look for an extra spot in the middle of HW space 8. The position of HW postdiscal spot 6 relative to spot 5 and the end-cell bar is also diagnostic: in this group, spot 6 sits clearly nearer to spot 5. If spot 6 appears midway between spot 5 and the end-cell bar — typical of the epimuta and agesilaus groups — select the last option.",
       "choices": [
         {
-          "label": "Crimson-brown underside with markings outlined in white striae; spot at base of HW space 6",
+          "label": "Crimson-brown ground colour with markings outlined in white striae; spot at the base of HW space 6",
           "next": "g_camdeo_myrzala"
         },
         {
-          "label": "Spot present mid-space 8 on the hindwing underside",
+          "label": "Purple-brown ground colour with whitish striae; extra spot visible mid-space 8 adjoining the central spot in space 7",
           "next": "g_camdeo_bazaloides"
         },
         {
-          "label": "No myrzala or bazaloides features — likely camdeo subgroup",
+          "label": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8",
           "next": "g_camdeo_general"
         },
         {
-          "label": "None of the camdeo features present — does not appear to be a camdeo species",
+          "label": "HW spot 6 appears midway between spot 5 and the end-cell bar, or the underside does not match any of the above — may not be the right group",
           "next": "q_tailed_anthelus"
         }
       ]
