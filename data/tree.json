@@ -2247,15 +2247,15 @@
     "q_camdeo_c4": {
       "type": "question",
       "id": "q_camdeo_c4",
-      "question": "Is the hindwing tail very short (≤2 mm) AND are the underside spots indistinct?",
-      "hint": "A. hellada ozana and A. varro selama both have a very short HW tail and relatively indistinct underside spots. A. hellada: FW spot 4 shifted distad; clear violet-blue male. A. varro: small species; very short tail ~1.5 mm; even pale metallic silvery blue male.",
+      "question": "Is a very short hindwing tail (≤2 mm) present AND are the underside spots indistinct?",
+      "hint": "A. hellada ozana and A. varro selama both have a very short HW tail and relatively indistinct underside spots. A. hellada: FW spot 4 shifted distad; clear violet-blue male. A. varro: small species; very short tail ~1.5 mm; even pale metallic silvery blue male. If this butterfly is tailless, select No.",
       "choices": [
         {
           "label": "Yes — HW tail very short (≤2 mm); underside spots indistinct",
           "next": "q_camdeo_short_tail"
         },
         {
-          "label": "No — tail of normal length or absent; underside spots distinct",
+          "label": "No — tailless, or tail longer than 2 mm; underside spots distinct",
           "next": "q_camdeo_c5"
         }
       ]
