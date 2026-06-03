@@ -105,7 +105,7 @@
         },
         {
           "label": "Cannot determine — FW space 11 not visible",
-          "next": "q_epimuta_s2"
+          "next": "q_epimuta_or_alitaeus_tail"
         }
       ]
     },
@@ -125,7 +125,7 @@
         },
         {
           "label": "Cannot determine — FW space 1b obscured by hindwing",
-          "next": "q_ijanensis_hw_streak"
+          "next": "q_tailed_corinda_apex"
         }
       ]
     },
@@ -197,7 +197,7 @@
       "choices": [
         {
           "label": "Yes — greenish silver outlines on FW cell spots",
-          "next": "r_centaurus_nakula"
+          "next": "g_centaurus"
         },
         {
           "label": "No — no silver outlines",
@@ -517,7 +517,7 @@
       "choices": [
         {
           "label": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
-          "next": "q_tailless_agelastus_check"
+          "next": "q_tailless_agesilaus"
         },
         {
           "label": "No — band fully dislocated at vein 2 (two separate portions)",
@@ -1668,7 +1668,7 @@
         },
         {
           "label": "Cannot determine — upperside not visible",
-          "next": "q_amph_s6"
+          "next": "q_amph_s5"
         }
       ]
     },
@@ -1797,6 +1797,10 @@
         {
           "label": "Smaller (FW 18–20 mm); female with narrower borders; HW cilia space 1a lacks white spot",
           "next": "r_baluensis"
+        },
+        {
+          "label": "Very small (FW ~17 mm) — smaller than A. baluensis",
+          "next": "r_alica"
         }
       ]
     },
@@ -2104,7 +2108,10 @@
         "Postdiscal spot 6 touches or overlaps the end-cell bar"
       ],
       "no_next_note": "To confirm to species, the upperside forewing border width or male upperside coloration must be assessed.",
-      "member_results": ["r_trogon", "r_stinga"]
+      "member_results": [
+        "r_trogon",
+        "r_stinga"
+      ]
     },
     "q_aurea_brown": {
       "type": "question",
@@ -2464,6 +2471,10 @@
         },
         {
           "label": "No — HW tornus rounded, tornal lobe vestigial or absent; male purplish blue; FW 28–29 mm",
+          "next": "r_centaurus_nakula"
+        },
+        {
+          "label": "Cannot determine — HW tornal lobe not clearly visible",
           "next": "r_centaurus_nakula"
         }
       ]
@@ -2895,7 +2906,11 @@
       "taxon_id": null,
       "name": "Epimuta group — tailed species (unresolved)",
       "common_name": "Cannot determine to species",
-      "note": "⚠ Neither underside nor upperside visible. Both candidates have HW tail ~2.5 mm.\n\nPrimary character (underside): A. atosia malayana — markings contrast feebly with ground colour. A. lurida — markings darker and more clearly defined.\n\nConfirmatory character (upperside, male): A. atosia — FW discal patch large and circular, extending widely into cell and space 1b; border a thread. A. lurida — patch smaller, almost confined to bases of spaces 2–3; border slightly expanding toward apex.\n\nCheck the underside contrast first; inspect upperside if still uncertain."
+      "note": "⚠ Neither underside nor upperside visible. Both candidates have HW tail ~2.5 mm.\n\nPrimary character (underside): A. atosia malayana — markings contrast feebly with ground colour. A. lurida — markings darker and more clearly defined.\n\nConfirmatory character (upperside, male): A. atosia — FW discal patch large and circular, extending widely into cell and space 1b; border a thread. A. lurida — patch smaller, almost confined to bases of spaces 2–3; border slightly expanding toward apex.\n\nCheck the underside contrast first; inspect upperside if still uncertain.",
+      "covers_results": [
+        "r_atosia_malayana",
+        "r_lurida"
+      ]
     },
     "r_epimuta_epiala": {
       "type": "result",
@@ -3070,6 +3085,10 @@
         {
           "label": "No — no whitened gap between HW space 7 spots",
           "next": "q_ganesa_no_green"
+        },
+        {
+          "label": "Cannot determine — gap between HW space 7 spots not clearly visible",
+          "next": "r_ariel_or_elizabethae"
         }
       ]
     },
@@ -3167,7 +3186,11 @@
       "taxon_id": null,
       "name": "Ganesa group — ariel or elizabethae (unresolved)",
       "common_name": "Cannot determine to species",
-      "note": "⚠ Cannot distinguish to species without male FW upperside. Both candidates share: tornal green scales, HW spot 6 normal (not reaching base of space).\n\nA. ariel: male BLUISH-PURPLE, hardly shining; FW border 1.5 mm at tornus expanding to 4.0 mm at apex. Female bluer with broader borders than male.\n\nA. elizabethae: male SHINING DEEP BLUE; borders slightly wider than ariel throughout. Female similar to male.\n\nInspect the upperside to confirm species."
+      "note": "⚠ Cannot distinguish to species without male FW upperside. Both candidates share: tornal green scales, HW spot 6 normal (not reaching base of space).\n\nA. ariel: male BLUISH-PURPLE, hardly shining; FW border 1.5 mm at tornus expanding to 4.0 mm at apex. Female bluer with broader borders than male.\n\nA. elizabethae: male SHINING DEEP BLUE; borders slightly wider than ariel throughout. Female similar to male.\n\nInspect the upperside to confirm species.",
+      "covers_results": [
+        "r_ariel",
+        "r_elizabethae"
+      ]
     },
     "r_hypomuta_hypomuta": {
       "type": "result",
@@ -3285,7 +3308,13 @@
       "taxon_id": null,
       "name": "Muta subgroup — tropaea / moorei / muta (unresolved)",
       "common_name": "Cannot determine to species",
-      "note": "⚠ Cannot distinguish to species without male upperside colour and size.\n\nA. tropaea: notably small; male duller bluish-purple. Underside markings more quadrate.\n\nA. moorei busa: larger (FW 16–19 mm); male bright blue; FW and HW same shade of blue in all lights.\n\nA. muta maranda: larger (FW 16–19 mm); male bright blue; FW dark bright blue, HW slightly paler and more glistening; border slightly broader.\n\nInspect the male upperside to confirm species."
+      "note": "⚠ Cannot distinguish to species without male upperside colour and size.\n\nA. tropaea: notably small; male duller bluish-purple. Underside markings more quadrate.\n\nA. moorei busa: larger (FW 16–19 mm); male bright blue; FW and HW same shade of blue in all lights.\n\nA. muta maranda: larger (FW 16–19 mm); male bright blue; FW dark bright blue, HW slightly paler and more glistening; border slightly broader.\n\nInspect the male upperside to confirm species.",
+      "covers_results": [
+        "r_tropaea",
+        "r_moorei_busa",
+        "r_muta_maranda",
+        "r_muta_s2_unclear"
+      ]
     },
     "r_muta_s2_unclear": {
       "type": "result",
@@ -3293,7 +3322,11 @@
       "taxon_id": null,
       "name": "Muta subgroup — moorei or muta maranda (unresolved)",
       "common_name": "Cannot determine to species",
-      "note": "⚠ Cannot distinguish to species without male upperside.\n\nA. moorei busa: FW and HW exactly the same shade of bright blue in all lights; female more purple with broader borders.\n\nA. muta maranda: FW dark bright blue, HW slightly paler and more glistening; borders slightly broader than moorei.\n\nInspect the male upperside in multiple light angles to confirm species."
+      "note": "⚠ Cannot distinguish to species without male upperside.\n\nA. moorei busa: FW and HW exactly the same shade of bright blue in all lights; female more purple with broader borders.\n\nA. muta maranda: FW dark bright blue, HW slightly paler and more glistening; borders slightly broader than moorei.\n\nInspect the male upperside in multiple light angles to confirm species.",
+      "covers_results": [
+        "r_moorei_busa",
+        "r_muta_maranda"
+      ]
     },
     "r_camdeo_incomplete_unclear": {
       "type": "result",
@@ -3301,7 +3334,11 @@
       "taxon_id": null,
       "name": "Camdeo group — belphoebe or johoreana (unresolved)",
       "common_name": "Cannot determine to species",
-      "note": "⚠ Cannot distinguish to species without upperside and tail inspection.\n\nA. belphoebe cowani: tailless; broad dark borders; pale violet-blue; both sexes alike.\n\nA. johoreana johoreana: short tail present; much darker violet-blue.\n\nCheck hindwing for tail presence/absence to confirm species."
+      "note": "⚠ Cannot distinguish to species without upperside and tail inspection.\n\nA. belphoebe cowani: tailless; broad dark borders; pale violet-blue; both sexes alike.\n\nA. johoreana johoreana: short tail present; much darker violet-blue.\n\nCheck hindwing for tail presence/absence to confirm species.",
+      "covers_results": [
+        "r_belphoebe_cowani",
+        "r_johoreana_johoreana"
+      ]
     },
     "r_alea_s6_unclear": {
       "type": "result",
@@ -3309,7 +3346,14 @@
       "taxon_id": null,
       "name": "Alea subgroup — phaenops / normani / sublustris (unresolved)",
       "common_name": "Cannot determine to species",
-      "note": "⚠ Cannot determine to species without male border pattern.\n\nA. phaenops sandakani: male border expands notably toward apex; HW spot 6 does not overlap end-cell bar.\n\nA. normani: male less shining, more violet than blue; borders narrow. ⚠ Requires genitalia dissection to confirm vs sublustris.\n\nA. sublustris ridleyi: bright glistening blue; borders under 0.5 mm. ⚠ Requires genitalia dissection to confirm vs normani.\n\nInspect the male upperside border width and sheen to narrow further."
+      "note": "⚠ Cannot determine to species without male border pattern.\n\nA. phaenops sandakani: male border expands notably toward apex; HW spot 6 does not overlap end-cell bar.\n\nA. normani: male less shining, more violet than blue; borders narrow. ⚠ Requires genitalia dissection to confirm vs sublustris.\n\nA. sublustris ridleyi: bright glistening blue; borders under 0.5 mm. ⚠ Requires genitalia dissection to confirm vs normani.\n\nInspect the male upperside border width and sheen to narrow further.",
+      "covers_results": [
+        "r_normani",
+        "r_phaenops_sandakani",
+        "r_sublustris_ridleyi",
+        "r_milleri",
+        "r_alea_glist_unclear"
+      ]
     },
     "r_alea_glist_unclear": {
       "type": "result",
@@ -3317,7 +3361,72 @@
       "taxon_id": null,
       "name": "Alea subgroup — normani or sublustris (unresolved)",
       "common_name": "Cannot determine to species",
-      "note": "⚠ Cannot distinguish to species without male upperside sheen and colour.\n\nA. normani: male less shining, more violet than bright blue.\n\nA. sublustris ridleyi (Ridley's Oakblue): male bright glistening blue; borders under 0.5 mm.\n\n⚠ Note: both species may also require male genitalia dissection for definitive identification. Inspect male upperside sheen to differentiate."
+      "note": "⚠ Cannot distinguish to species without male upperside sheen and colour.\n\nA. normani: male less shining, more violet than bright blue.\n\nA. sublustris ridleyi (Ridley's Oakblue): male bright glistening blue; borders under 0.5 mm.\n\n⚠ Note: both species may also require male genitalia dissection for definitive identification. Inspect male upperside sheen to differentiate.",
+      "covers_results": [
+        "r_normani",
+        "r_sublustris_ridleyi"
+      ]
+    },
+    "r_epimuta_alitaeus_unclear": {
+      "type": "result",
+      "id": "r_epimuta_alitaeus_unclear",
+      "taxon_id": null,
+      "name": "Epimuta / alitaeus group — FW space 11 and tail unclear",
+      "common_name": "Cannot determine to group",
+      "note": "⚠ FW space 11 not visible and tail length ambiguous. Two groups share HW spot 6 approximately midway between spot 5 and the end-cell bar:\n\nEpimuta group (tail ∼2.5 mm): A. atosia malayana — markings contrast feebly; A. lurida — markings distinctly darker.\n\nAlitaeus group (tail typically ∼3.5–4.0 mm; A. denta ∼2.5 mm): A. aida, A. alitaeus, A. ariana, A. arianaga, A. denta, A. elopura, A. havilandi, A. pseudomuta, A. sintanga. FW underside space 11 central spot is the key separator.\n\nTry to see FW space 11 to determine group membership.",
+      "covers_results": [
+        "r_atosia_malayana",
+        "r_lurida",
+        "r_aida",
+        "r_alitaeus",
+        "r_ariana",
+        "r_arianaga",
+        "r_denta",
+        "r_elopura",
+        "r_havilandi",
+        "r_pseudomuta",
+        "r_sintanga"
+      ]
+    },
+    "q_epimuta_or_alitaeus_tail": {
+      "type": "question",
+      "id": "q_epimuta_or_alitaeus_tail",
+      "question": "Approximately how long is the hindwing tail?",
+      "hint": "When FW space 11 is obscured, tail length gives a rough guide. Epimuta group (A. atosia, A. lurida): tail ∼2.5 mm. Alitaeus group: tail typically ∼3.5–4.0 mm (exception: A. denta ∼2.5 mm). A short tail does not definitively exclude the alitaeus group.",
+      "choices": [
+        {
+          "label": "Tail short — approximately 2.5 mm",
+          "next": "q_epimuta_s2"
+        },
+        {
+          "label": "Tail long — approximately 3.5–4.0 mm (likely alitaeus group)",
+          "next": "g_alitaeus"
+        },
+        {
+          "label": "Cannot determine — tail length also unclear",
+          "next": "r_epimuta_alitaeus_unclear"
+        }
+      ]
+    },
+    "q_tailed_corinda_apex": {
+      "type": "question",
+      "id": "q_tailed_corinda_apex",
+      "question": "Does the forewing apex appear distinctly pointed and the termen straight (not rounded)?",
+      "hint": "A. corinda has a distinctly pointed FW apex and straight termen — unlike most other Arhopala whose FW apex is broadly rounded. This alternative character can help confirm corinda when FW space 1b is hidden. If the FW outline is not clear, choose Cannot determine and continue.",
+      "choices": [
+        {
+          "label": "Yes — FW apex distinctly pointed; termen straight",
+          "next": "g_corinda"
+        },
+        {
+          "label": "No — FW apex not distinctly pointed; termen rounded",
+          "next": "q_ijanensis_hw_streak"
+        },
+        {
+          "label": "Cannot determine — FW outline not visible",
+          "next": "q_ijanensis_hw_streak"
+        }
+      ]
     }
   }
 }
