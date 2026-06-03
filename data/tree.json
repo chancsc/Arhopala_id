@@ -416,8 +416,12 @@
           "next": "r_kurzi"
         },
         {
-          "label": "Spots rounded; cilia often prolonged into a short tooth at vein 2 (amphimuta subgroup)",
-          "next": "q_amph_s1"
+          "label": "Spots rounded; tailed — a distinct short tail or tooth-like projection present at vein 2 (A. delta)",
+          "next": "r_delta"
+        },
+        {
+          "label": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2",
+          "next": "q_amph_s2"
         },
         {
           "label": "Cannot determine — FW spots 2 and 3 alignment not visible (check perimuta species characters)",
@@ -1737,6 +1741,10 @@
         {
           "label": "No — violet-blue (not warm purple); smaller (FW 16–17 mm); female exceptionally narrow-bordered",
           "next": "r_zylda_elioti"
+        },
+        {
+          "label": "Distinctly blue (not violet or purple) with a broad border ≥2 mm — may be A. major or A. stubbsi",
+          "next": "q_amph_broad"
         }
       ]
     },
