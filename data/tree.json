@@ -1760,6 +1760,26 @@
         },
         {
           "label": "No — Malay Peninsula specimen",
+          "next": "q_amph_colour"
+        }
+      ]
+    },
+    "q_amph_colour": {
+      "type": "question",
+      "id": "q_amph_colour",
+      "question": "What is the male's overall upperside colour?",
+      "hint": "A. major is the brightest: cool, saturated blue with no violet tone. A. stubbsi is dull bluish-purple (blue still dominates). Both have the broad ≥1.5 mm border. All others have a violet component: A. amphimuta is warm violet-purple (reddish); A. zylda and A. sceva are violet-blue (cooler, but clearly violet); A. moolaiana is shining violet-blue. If the upperside is not visible, choose Cannot determine — the key continues using border width and underside characters.",
+      "choices": [
+        {
+          "label": "Distinctly blue or bluish-purple — cool tone, no warm reddish-violet hue (A. major / A. stubbsi)",
+          "next": "q_amph_s4"
+        },
+        {
+          "label": "Violet-blue or violet-purple — clear warm or violet tone (A. amphimuta / A. zylda / A. moolaiana / A. sceva)",
+          "next": "q_amph_s5"
+        },
+        {
+          "label": "Cannot determine — upperside not visible",
           "next": "q_amph_s4"
         }
       ]

@@ -230,9 +230,18 @@ function getDisplayQuestions() {
 
   const touched = q => cs.answers.has(q);
 
-  // Candidate pool: touched questions + questions that still discriminate (≥2 distinct answers)
+  // Also keep questions on the top candidate's canonical path so users can follow
+  // the complete key path even after a question stops discriminating (e.g. Q72
+  // q_amphimuta_sub: all top candidates share the same "tailless" choice once the
+  // pool narrows to the amphimuta subgroup, so choices.size drops to 1 and it would
+  // otherwise vanish before the user can answer it).
+  const top1Features = (cs.answers.size > 0 && cs.scores.length > 0)
+    ? (cs.featureMatrix.get(cs.scores[0].name) || new Map())
+    : new Map();
+
+  // Candidate pool: touched questions + discriminating questions + top-1 key-path questions
   const allQ = [...diversity.entries()]
-    .filter(([q, choices]) => touched(q) || choices.size >= 2)
+    .filter(([q, choices]) => touched(q) || choices.size >= 2 || top1Features.has(q))
     .map(([q]) => q);
   const allQSet = new Set(allQ);
 
