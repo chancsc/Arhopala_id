@@ -683,7 +683,19 @@ async function initSpeciesPage() {
     const results = document.getElementById('search-results');
     const backBtn = document.getElementById('back-to-results');
     let dt;
-    input.addEventListener('input', e => { clearTimeout(dt); dt = setTimeout(() => renderSearchList(e.target.value), 120); });
+    input.addEventListener('input', e => {
+      clearTimeout(dt);
+      dt = setTimeout(() => {
+        sessionStorage.setItem('sp-search', e.target.value);
+        renderSearchList(e.target.value);
+      }, 120);
+    });
+    // Restore previous search query from this session
+    const savedQuery = sessionStorage.getItem('sp-search') || '';
+    if (savedQuery) {
+      input.value = savedQuery;
+      renderSearchList(savedQuery);
+    }
     results.addEventListener('click', e => {
       const btn = e.target.closest('.search-item');
       if (!btn) return;
