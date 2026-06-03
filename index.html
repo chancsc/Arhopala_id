@@ -3,24 +3,253 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Interactive decision tree for identifying common Malaysian Arhopala (Oak Blue) butterfly species.">
+  <meta name="description" content="Identify Malaysian Arhopala (Oak Blue) butterflies from field photographs — Feature Scoring and visual reference guide.">
   <meta name="theme-color" content="#2d5a27">
   <title>Arhopala ID — Malaysian Oak Blue Butterflies</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .landing-content {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 1.25rem 1rem 3rem;
+    }
+
+    /* ── Hero ── */
+    .landing-hero {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      margin-bottom: 1.4rem;
+    }
+    .landing-hero-logo svg {
+      width: 52px;
+      height: 52px;
+      flex-shrink: 0;
+    }
+    .landing-hero-text h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 0 0 0.2rem;
+      line-height: 1.2;
+    }
+    .landing-tagline {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    /* ── Start Here card ── */
+    .start-here {
+      background: #f0f5ee;
+      border: 1.5px solid var(--primary);
+      border-radius: var(--radius);
+      padding: 1rem 1.1rem 1.1rem;
+      margin-bottom: 1.4rem;
+    }
+    .start-here-title {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin: 0 0 0.5rem;
+    }
+    .start-here-lead {
+      font-size: 0.83rem;
+      color: var(--text);
+      line-height: 1.55;
+      margin: 0 0 0.9rem;
+    }
+    .start-here-sub {
+      font-size: 0.73rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin: 0.85rem 0 0.35rem;
+    }
+    .start-here-terms {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: 0.35rem 0.7rem;
+      font-size: 0.8rem;
+    }
+    .start-here-term {
+      font-weight: 600;
+      color: var(--primary);
+      white-space: nowrap;
+      align-self: start;
+    }
+    .start-here-def {
+      color: var(--text);
+      line-height: 1.45;
+    }
+    .start-here-def a {
+      color: var(--primary);
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      text-underline-offset: 2px;
+      white-space: nowrap;
+    }
+    .start-here-def a:hover { text-decoration-style: solid; }
+    .start-here-photo {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin: 0.85rem 0 0;
+      padding-top: 0.75rem;
+      border-top: 1px solid #c8ddc4;
+    }
+    .start-here-cta {
+      display: inline-block;
+      margin-top: 0.85rem;
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 0.45rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .start-here-cta:hover { background: #234820; }
+
+    /* ── Quick links ── */
+    .landing-links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.65rem;
+    }
+    .landing-link-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 0.75rem 0.9rem;
+      text-decoration: none;
+      display: block;
+      transition: box-shadow var(--transition);
+    }
+    .landing-link-card:hover {
+      box-shadow: 0 3px 12px rgba(0,0,0,0.13);
+    }
+    .landing-link-label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text);
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+    .landing-link-desc {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      line-height: 1.35;
+    }
+  </style>
 </head>
 <body>
 
-  <div id="loading" role="status" aria-live="polite">
-    <div class="spinner" aria-hidden="true"></div>
-    <span>Loading identification key…</span>
-  </div>
-
-  <div id="app-topbar" class="app-topbar" style="display:none;">
+  <div class="app-topbar">
     <button class="menu-btn app-topbar-menu-btn" id="menu-btn" aria-label="Open menu">&#9776;</button>
-    <span class="app-topbar-title">ID Key</span>
+    <span class="app-topbar-title">Arhopala ID</span>
   </div>
 
-  <!-- Persistent menu overlay — lives outside #app so render() never wipes it -->
+  <div class="landing-content">
+
+    <!-- Hero -->
+    <div class="landing-hero">
+      <div class="landing-hero-logo" aria-hidden="true">
+        <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="28" cy="32" rx="9" ry="13" fill="#2d5a27" opacity="0.18"/>
+          <path d="M28 20 C18 10 4 14 6 26 C8 35 18 36 28 32" fill="#2d5a27" opacity="0.72"/>
+          <path d="M28 20 C38 10 52 14 50 26 C48 35 38 36 28 32" fill="#2d5a27" opacity="0.72"/>
+          <path d="M28 32 C22 36 18 44 22 48 C25 51 28 46 28 40" fill="#2d5a27" opacity="0.55"/>
+          <path d="M28 32 C34 36 38 44 34 48 C31 51 28 46 28 40" fill="#2d5a27" opacity="0.55"/>
+          <ellipse cx="28" cy="29" rx="2.2" ry="10" fill="#1a3818" opacity="0.6"/>
+          <path d="M28 19 Q25 12 22 8" stroke="#1a3818" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+          <path d="M28 19 Q31 12 34 8" stroke="#1a3818" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+          <path d="M23 23 Q20 21 18 23" stroke="#6b9e65" stroke-width="1.1" stroke-linecap="round" fill="none"/>
+          <path d="M33 23 Q36 21 38 23" stroke="#6b9e65" stroke-width="1.1" stroke-linecap="round" fill="none"/>
+        </svg>
+      </div>
+      <div class="landing-hero-text">
+        <h1>Arhopala ID</h1>
+        <p class="landing-tagline">Identify Malaysian Oak Blue butterflies from field photographs</p>
+      </div>
+    </div>
+
+    <!-- Where to Start card -->
+    <div class="start-here">
+      <p class="start-here-title">Where to start</p>
+      <p class="start-here-lead">
+        Open <strong>Feature Scoring</strong> with your photo. Mark only the features you can clearly see —
+        candidates are ranked in real time. Leave anything unclear blank; unanswered questions
+        do not penalise any candidate.
+      </p>
+
+      <p class="start-here-sub">Know these five terms before you score</p>
+      <div class="start-here-terms">
+
+        <span class="start-here-term">Wing spaces</span>
+        <span class="start-here-def">
+          Each area between two adjacent veins is a numbered <em>space</em>.
+          Spots are named by the space they sit in.
+          <a href="guide.html#wing-spaces">Wing space diagram →</a>
+        </span>
+
+        <span class="start-here-term">HW spots 5, 6, 7</span>
+        <span class="start-here-def">
+          The row of hindwing postdiscal spots counted outward from the tornal margin.
+          Their alignment — especially spot 6 — is the single most-used diagnostic character.
+          <a href="guide.html#hw-tail-spots-fw-spaces">HW spots diagram →</a>
+        </span>
+
+        <span class="start-here-term">End-cell bar</span>
+        <span class="start-here-def">
+          The bar that closes the hindwing discal cell at its outer end.
+          Where spot 6 sits relative to this bar is asked repeatedly.
+          <a href="guide.html#spot6-end-cell-bar">Spot 6 &amp; end-cell bar →</a>
+        </span>
+
+        <span class="start-here-term">FW spot 4</span>
+        <span class="start-here-def">
+          Forewing postdiscal spot in space 4. In some groups it is shifted outward,
+          breaking the straight postdiscal row.
+          <a href="guide.html#fw-spots">FW spots diagram →</a>
+        </span>
+
+        <span class="start-here-term">FW space 11</span>
+        <span class="start-here-def">
+          A narrow costal space near the forewing apex. Presence of a central spot there
+          is diagnostic in several subgroups.
+          <a href="guide.html#fw-space-11">FW space 11 diagram →</a>
+        </span>
+
+      </div>
+
+      <p class="start-here-photo">
+        <strong>Photo tip:</strong> the forewing base is usually hidden under the hindwing in resting shots —
+        skip any feature you cannot clearly see.
+      </p>
+
+      <a class="start-here-cta" href="checklist.html">Open Feature Scoring →</a>
+    </div>
+
+    <!-- Quick links -->
+    <div class="landing-links">
+      <a class="landing-link-card" href="guide.html">
+        <span class="landing-link-label">Visual Guide</span>
+        <span class="landing-link-desc">Wing diagrams &amp; anatomy terms</span>
+      </a>
+      <a class="landing-link-card" href="species.html">
+        <span class="landing-link-label">Species Search</span>
+        <span class="landing-link-desc">Browse all covered taxa</span>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Menu overlay -->
   <div id="menu-overlay" class="menu-overlay" role="dialog" aria-modal="true" aria-label="Menu">
     <div class="menu-panel">
 
@@ -30,9 +259,9 @@
       </div>
 
       <nav class="menu-nav" aria-label="Navigation">
-        <button class="menu-nav-item active" id="nav-idkey" aria-label="ID Key — step-by-step identification">
-          <span class="menu-nav-item-label">ID Key</span>
-          <span class="menu-nav-item-desc">Step-by-step identification</span>
+        <button class="menu-nav-item active" id="nav-home" aria-label="Home — where to start">
+          <span class="menu-nav-item-label">Home</span>
+          <span class="menu-nav-item-desc">Where to start</span>
         </button>
         <a href="checklist.html" class="menu-nav-item" id="nav-scoring" aria-label="Feature Scoring — score multiple features at once">
           <span class="menu-nav-item-label">Feature Scoring</span>
@@ -55,15 +284,23 @@
     </div>
   </div>
 
-  <div id="app" style="display:none;" role="main"></div>
+  <script>
+    (function () {
+      const overlay  = document.getElementById('menu-overlay');
+      const openBtn  = document.getElementById('menu-btn');
+      const closeBtn = document.getElementById('menu-close');
+      const homeBtn  = document.getElementById('nav-home');
 
-  <noscript>
-    <div style="padding:2rem;text-align:center;font-family:sans-serif;">
-      <p>This identification tool requires JavaScript to run.<br>
-      Please enable JavaScript in your browser and reload the page.</p>
-    </div>
-  </noscript>
+      function open()  { overlay.classList.add('open');    document.body.style.overflow = 'hidden'; }
+      function close() { overlay.classList.remove('open'); document.body.style.overflow = ''; }
 
-  <script src="js/app.js"></script>
+      openBtn.addEventListener('click', open);
+      closeBtn.addEventListener('click', close);
+      overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape' && overlay.classList.contains('open')) close(); });
+      homeBtn.addEventListener('click', close);
+    })();
+  </script>
+
 </body>
 </html>
