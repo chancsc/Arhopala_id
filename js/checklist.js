@@ -62,6 +62,29 @@ function buildTreePaths(td) {
   return map;
 }
 
+// ── Canonical-path scoring (mirrors app.js buildPathDisplay skipCount) ────────
+// Kept in sync so feature-matrix canonical always matches the ID-key direct path.
+
+const ESCAPE_HATCHES = [
+  'None of the camdeo features present',
+  'HW spot 6 appears midway between spot 5 and the end-cell bar',
+];
+const isEscapeHatch = c => c && ESCAPE_HATCHES.some(eh => c.startsWith(eh));
+
+function pathScore(p, note) {
+  const lc = (note || '').toLowerCase();
+  const resultIsTailed    = /^tailed/.test(lc);
+  const resultIsNotTailed = /^tailless/.test(lc);
+  let score = p.filter(s => s.choice && s.choice.startsWith('Cannot determine')).length;
+  score    += p.filter(s => isEscapeHatch(s.choice)).length;
+  const startsTailed    = p.length > 0 && p[0].choice === 'Yes — hindwing is tailed';
+  const startsNotTailed = p.length > 0 && p[0].choice === 'No — hindwing is tailless';
+  if (startsTailed    && p.some(s => s.choice && /tailless/i.test(s.choice))) score += 100;
+  if (startsNotTailed && resultIsTailed)    score += 100;
+  if (startsTailed    && resultIsNotTailed) score += 100;
+  return score;
+}
+
 // ── Data initialisation ──────────────────────────────────────────────────────
 
 function initData(treeData, speciesData) {
@@ -95,12 +118,14 @@ function initData(treeData, speciesData) {
   }
   const spInfo = new Map();
 
-  // Build feature matrix: canonical = shortest path with no Cannot-determine steps
+  // Build feature matrix: canonical = lowest-score path (same ranking as app.js direct path).
+  // Score: +1 per CD step, +1 per escape-hatch step, +100 for tailed/tailless contradiction.
+  // Paths scoring ≥100 (contradictions) are excluded; if all paths contradict, use lowest score.
   for (const [name, paths] of pathsMap) {
-    const noSkip = paths.filter(p =>
-      !p.some(s => s.choice && s.choice.startsWith('Cannot determine')));
-    const pool = noSkip.length > 0 ? noSkip : paths;
-    const canonical = pool.reduce((b, p) => (!b || p.length < b.length) ? p : b, null) || [];
+    const note = resultNotes.get(name) || '';
+    const scored = paths.map(p => [pathScore(p, note), p]).sort((a, b) => a[0] - b[0]);
+    const best = scored.find(([s]) => s < 100) || scored[0];
+    const canonical = best ? best[1] : [];
 
     const features = new Map();
     const covSeen = new Set();
