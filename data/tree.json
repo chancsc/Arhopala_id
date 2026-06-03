@@ -497,7 +497,7 @@
       "type": "question",
       "id": "q_tailless_epimuta",
       "question": "On the hindwing underside, is postdiscal spot 6 displaced from the postdiscal row — shifted toward the end-cell bar rather than aligned with the level of spot 5?",
-      "hint": "Several groups show HW spot 6 displaced from the postdiscal row toward the end-cell bar. If spot 6 is clearly pulled inward toward the discal cell — away from the level of spot 5 — answer Yes; follow-up questions will identify the group. If spot 6 remains broadly aligned with the postdiscal row at roughly the same level as spot 5, answer No.",
+      "hint": "Several groups show HW spot 6 displaced from the postdiscal row toward the end-cell bar — this includes the agelastus group (A. wildeyana, A. labuana, etc.), the agesilaus group (A. agesilaus, A. avatha), and the epimuta/antimuta/metamuta groups. If spot 6 is clearly pulled inward toward the discal cell — away from the level of spot 5 — answer Yes; follow-up questions will separate the groups using the HW vein-2 dislocation pattern and the FW postdiscal band character. If spot 6 remains broadly aligned with the postdiscal row at roughly the same level as spot 5, answer No.",
       "choices": [
         {
           "label": "Yes — spot 6 displaced toward the end-cell bar",
@@ -505,7 +505,7 @@
         },
         {
           "label": "No — spot 6 is in the postdiscal band at roughly the same level as spot 5",
-          "next": "q_tailless_agelastus_check"
+          "next": "q_tailless_camdeo"
         }
       ]
     },
@@ -513,11 +513,11 @@
       "type": "question",
       "id": "q_tailless_epimuta_vein2",
       "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
-      "hint": "In the agesilaus group (A. agesilaus gesa, A. avatha), the HW postdiscal band is only partially dislocated at vein 2 — it shifts inward but the two portions remain connected. In the epimuta group and in A. antimuta, A. metamuta, and A. perimuta, the band is fully dislocated at vein 2 — two clearly separate portions with a visible gap. Answer Yes if the band appears continuous or only slightly offset at vein 2; No if there is a clear gap.",
+      "hint": "Both the agesilaus group (A. agesilaus gesa, A. avatha) and the agelastus group (A. wildeyana, A. labuana, etc.) have the HW postdiscal band only partially dislocated at vein 2 — it shifts inward but the two portions remain connected. In the epimuta group and in A. antimuta, A. metamuta, and A. perimuta, the band is fully dislocated at vein 2 — two clearly separate portions with a visible gap. Answer Yes if the band appears continuous or only slightly offset at vein 2; a follow-up question about the FW postdiscal band will then separate agelastus from agesilaus. Answer No if there is a clear gap.",
       "choices": [
         {
           "label": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
-          "next": "g_agesilaus"
+          "next": "q_tailless_agelastus_check"
         },
         {
           "label": "No — band fully dislocated at vein 2 (two separate portions)",
@@ -593,15 +593,15 @@
       "type": "question",
       "id": "q_tailless_agelastus_check",
       "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
-      "hint": "The agelastus group has a continuous (non-dislocated) FW postdiscal band, often with a spot at the base of FW space 3. Most species lack a costal spot in FW space 10, though one species (epimete suedas) is an exception.",
+      "hint": "The agelastus group has a continuous (non-dislocated) FW postdiscal band, often with a small spot at the base of FW space 3; most species lack a costal spot in FW space 10 (exception: epimete suedas). The agesilaus group (A. agesilaus gesa, A. avatha) has a dislocated FW postdiscal band — spots shift at a vein, breaking the smooth row.",
       "choices": [
         {
-          "label": "Yes — FW postdiscal band continuous; often a spot at base of FW space 3",
+          "label": "Yes — FW postdiscal band continuous; often a spot at base of FW space 3 (agelastus group)",
           "next": "g_agelastus"
         },
         {
-          "label": "No",
-          "next": "q_tailless_camdeo"
+          "label": "No — FW postdiscal band dislocated or broken (agesilaus group)",
+          "next": "g_agesilaus"
         }
       ]
     },
@@ -1326,10 +1326,7 @@
       "taxon_id": null,
       "name": "Arhopala wildeyana wildeyana",
       "common_name": "",
-      "note": "Male upperside: violet blue with broader borders than A. labuana or A. agelastus — 2.0 mm at tornus to 5.0 mm at costa. Female: brighter and purer blue. Tailless. HW postdiscal spot 6 is displaced inward from the postdiscal row, touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line (agelastus group character).",
-      "features": {
-        "On the hindwing underside, is postdiscal spot 6 displaced from the postdiscal row — shifted toward the end-cell bar rather than aligned with the level of spot 5?": "Yes — spot 6 displaced toward the end-cell bar (touching or overlapping; spots 5, 6 and 7 widely out of line)"
-      }
+      "note": "Male upperside: violet blue with broader borders than A. labuana or A. agelastus — 2.0 mm at tornus to 5.0 mm at costa. Female: brighter and purer blue. Tailless. HW postdiscal spot 6 is displaced inward from the postdiscal row, touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line (agelastus group character)."
     },
     "r_agelastus_agelastus": {
       "type": "result",
