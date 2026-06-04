@@ -153,7 +153,7 @@
       "type": "question",
       "id": "q_long_tail_spot4",
       "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
-      "hint": "This separates A. overdijkinki (eumolphus group, tail ~5 mm) from A. aedias (aedias group, tail ~6 mm). In A. overdijkinki, HW postdiscal spot 6 sits directly below spot 7, breaking the diagonal row. In A. aedias, spots 5, 6, and 7 are arranged in echelon — roughly in a diagonal line — with spot 6 sitting closer to spot 5 than to spot 7.",
+      "hint": "This separates A. overdijkinki (eumolphus group, tail ~5 mm) from the echelon-spot species. In A. overdijkinki, HW postdiscal spot 6 sits directly below spot 7, breaking the diagonal row. In A. aedias (aedias group, tail ~6 mm) and A. opalina (camdeo group, tail 4–6 mm), spots 5, 6, and 7 are arranged in echelon — with spot 6 sitting closer to spot 5 than to spot 7. If echelon is confirmed, a follow-up question checks for the camdeo-group dark area under the FW cell.",
       "choices": [
         {
           "label": "Yes — HW spot 6 directly below spot 7 (not in echelon with spots 5 and 7)",
@@ -161,7 +161,7 @@
         },
         {
           "label": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
-          "next": "g_aedias"
+          "next": "q_long_tail_echelon_check"
         },
         {
           "label": "Cannot determine — HW spot arrangement unclear",
@@ -1189,7 +1189,8 @@
       "note": "Underside ground colour hair brown; spots narrowly outlined in pale buff lines. Male upperside: lustrous violet blue with black border reduced to a thread. Female upperside: purple blue with typical broad black borders. Two size forms occur: large (FW 25–29 mm) and small (FW 20–22 mm; small form has more rounded, darker spots beneath). Two subspecies: A. aedias agnis (forest at low to moderate elevations, standard) and A. aedias meritatas (Langkawi Islands — paler and brighter blue upperside in both sexes).",
       "features": {
         "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
-        "What is the underside ground colour and overall appearance?": "Hair brown; spots narrowly buff-outlined; HW spots 5–6–7 in echelon; large (FW 20–29 mm); rounded FW apex; tail ~6 mm — A. aedias"
+        "What is the underside ground colour and overall appearance?": "Hair brown; spots narrowly buff-outlined; HW spots 5–6–7 in echelon; large (FW 20–29 mm); rounded FW apex; tail ~6 mm — A. aedias",
+        "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?": "No — no dark patch, or FW space 1b not visible"
       }
     },
     "q_agelastus_s1": {
@@ -2331,7 +2332,7 @@
       "type": "question",
       "id": "q_camdeo_c6",
       "question": "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?",
-      "hint": "A. camdana camdana: HW postdiscal spot 6 is noticeably smaller than spot 7; male clear violet-blue. A. opalina azata: HW spot 6 is NOT smaller than spot 7; male pale greyish-blue with a violet tinge and very narrow borders; FW band complete, partially dislocated at vein 4.",
+      "hint": "A. camdana camdana: HW postdiscal spot 6 is noticeably smaller than spot 7; male clear violet-blue. A. opalina (both nominate and azata): HW spot 6 is as large as or larger than spot 7; male pale violet-blue with a greyish tinge and thread-like black border. If spot 6 is not smaller, a further question distinguishes the two subspecies by FW spot 4 alignment.",
       "choices": [
         {
           "label": "Yes — HW spot 6 smaller than spot 7; male clear violet-blue",
@@ -2339,7 +2340,7 @@
         },
         {
           "label": "No — HW spot 6 not smaller than spot 7; male pale greyish-blue with violet tinge",
-          "next": "r_opalina_azata"
+          "next": "q_camdeo_c7"
         }
       ]
     },
@@ -2413,7 +2414,12 @@
       "taxon_id": null,
       "name": "Arhopala opalina azata",
       "common_name": "",
-      "note": "FW postdiscal band complete, only partially dislocated at vein 4. Male: pale greyish-blue with a violet tinge and very narrow borders. Female: slightly deeper blue. HW spot 6 not smaller than spot 7 (unlike A. camdana). Camdeo subgroup."
+      "note": "Tailed. Long tail ~4–6 mm. FW postdiscal band complete, partially dislocated at vein 4 (spot 4 slightly shifted outward). Male: pale greyish-blue with a violet tinge, very narrow thread-like black border. Female: slightly deeper blue with broader borders. Underside: uniform grey-brown to hair brown; HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5; spot 6 as large as or larger than spot 7. Restricted dark patch in FW space 1b bounded by a pale line. HW cell approximately half the wing length or longer. FW 22–26 mm. Camdeo subgroup.",
+      "features": {
+        "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?": "No — HW spot 6 not smaller than spot 7; male pale greyish-blue with violet tinge",
+        "Is forewing underside postdiscal spot 4 arranged in line (or on an even curve) with the spots in spaces 5 and 6?": "No — FW postdiscal band partially dislocated at vein 4; spot 4 slightly shifted outward",
+        "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)"
+      }
     },
     "q_camdeo_m1": {
       "type": "question",
@@ -3423,6 +3429,51 @@
           "next": "q_ijanensis_hw_streak"
         }
       ]
+    },
+    "q_long_tail_echelon_check": {
+      "type": "question",
+      "id": "q_long_tail_echelon_check",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
+      "hint": "For long-tailed species (tail ≥5 mm) with HW spots 5, 6, and 7 in echelon: A. aedias has NO dark area under the forewing cell (characteristic of the aedias group). A. opalina has a restricted dark patch in FW underside space 1b bounded by a clearly defined pale bordering line — the same camdeo-group feature visible in shorter-tailed camdeo species.",
+      "choices": [
+        {
+          "label": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)",
+          "next": "q_camdeo_sub"
+        },
+        {
+          "label": "No — no dark patch, or FW space 1b not visible",
+          "next": "g_aedias"
+        }
+      ]
+    },
+    "q_camdeo_c7": {
+      "type": "question",
+      "id": "q_camdeo_c7",
+      "question": "Is forewing underside postdiscal spot 4 arranged in line (or on an even curve) with the spots in spaces 5 and 6?",
+      "hint": "In A. opalina (nominate), the forewing postdiscal spot in space 4 lies precisely in line with the spots in spaces 5 and 6, continuing the curve of the band without shifting. In A. opalina azata, the forewing postdiscal band is only partially dislocated at vein 4 — spot 4 is slightly shifted outward (distad) relative to the rest of the band. The male of both is pale violet-blue or pale greyish-blue with a thread-like black border; HW spot 6 is as large as or larger than spot 7 in both.",
+      "choices": [
+        {
+          "label": "Yes — FW spot 4 in line (or on even curve) with spots in spaces 5 and 6",
+          "next": "r_opalina"
+        },
+        {
+          "label": "No — FW postdiscal band partially dislocated at vein 4; spot 4 slightly shifted outward",
+          "next": "r_opalina_azata"
+        }
+      ]
+    },
+    "r_opalina": {
+      "type": "result",
+      "id": "r_opalina",
+      "taxon_id": null,
+      "name": "Arhopala opalina",
+      "common_name": "",
+      "note": "Tailed. Long tail approximately 4–6 mm. Male: pale violet blue with a greyish tinge and a thread-like black border. Female: darker blue with broader black borders. FW 22–26 mm. Underside: uniform grey-brown to hair brown; HW postdiscal spots 5, 6, and 7 in echelon; spot 6 nearer to spot 5 than to the end-cell bar; spot 6 as large as or larger than spot 7. Central spot in FW space 1b NOT unusually elongate; end-cell bar not enlarged outwards at lower end. FW postdiscal band continued into space 9; spot 4 in line or on even curve with spots 5 and 6. Restricted dark area under FW cell (space 1b) defined by a pale bordering line. Small spot frequently present at extreme base of FW space 3. HW cell approximately half the length of the wing or longer. Camdeo subgroup.",
+      "features": {
+        "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?": "No — HW spot 6 not smaller than spot 7; male pale greyish-blue with violet tinge",
+        "Is forewing underside postdiscal spot 4 arranged in line (or on an even curve) with the spots in spaces 5 and 6?": "Yes — FW spot 4 in line (or on even curve) with spots in spaces 5 and 6",
+        "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)"
+      }
     }
   }
 }
