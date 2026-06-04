@@ -1743,7 +1743,7 @@
       "type": "question",
       "id": "q_amph_s7",
       "question": "Is the male a warm violet-purple (with a reddish hue rather than blue), and is the FW postdiscal spot in space 3 an oblique oval?",
-      "hint": "A. amphimuta amphimuta is violet-purple (warmer/redder than violet-blue) with the FW spot 3 usually an oblique oval, and the FW band slightly dislocated at vein 4. FW length 20–23 mm. A. zylda elioti is violet-blue, smaller (FW 16–17 mm), with female exceptionally narrow borders. Both are Peninsula species.",
+      "hint": "A. amphimuta amphimuta is violet-purple (warmer/redder than violet-blue) with the FW spot 3 usually an oblique oval, and the FW band slightly dislocated at vein 4. FW length 20–23 mm. A. zylda elioti is violet-blue, smaller (FW 16–17 mm), with female exceptionally narrow borders. Both are Peninsula species. Note: FW space 3 is usually hidden under the hindwing — the warm vs blue upperside colour and FW size are the more reliable characters. If the upperside is not visible, use the 'Cannot determine' option.",
       "choices": [
         {
           "label": "Yes — warm violet-purple; FW spot 3 oblique oval; FW band slightly dislocated at vein 4",
@@ -1756,6 +1756,30 @@
         {
           "label": "Distinctly blue (not violet or purple) with a broad border ≥2 mm — may be A. major or A. stubbsi",
           "next": "q_amph_broad"
+        },
+        {
+          "label": "Cannot determine — upperside not visible",
+          "next": "q_amph_s7_cd"
+        }
+      ]
+    },
+    "q_amph_s7_cd": {
+      "type": "question",
+      "id": "q_amph_s7_cd",
+      "question": "What is the forewing length, and are the hindwing cilia prolonged into a short tooth at vein 2?",
+      "hint": "When the upperside is not visible, FW size and the HW cilia tooth are the best underside characters. A. amphimuta amphimuta is larger (FW 20–23 mm) and often has a short tooth-like prolongation of the cilia at vein 2 (may be inconspicuous in worn specimens). A. zylda elioti is smaller (FW 16–17 mm) with evenly rounded HW cilia and no tooth at vein 2.",
+      "choices": [
+        {
+          "label": "Larger (FW ~20–23 mm); HW cilia often form a short tooth at vein 2",
+          "next": "r_amphimuta_amphimuta"
+        },
+        {
+          "label": "Smaller (FW ~16–17 mm); HW cilia evenly rounded, no tooth at vein 2",
+          "next": "r_zylda_elioti"
+        },
+        {
+          "label": "Cannot determine — size unclear and cilia tooth not visible",
+          "next": "g_needs_more_info"
         }
       ]
     },
