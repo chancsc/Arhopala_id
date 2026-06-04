@@ -158,6 +158,10 @@ function renderQuestion(node) {
     ? `<p class="question-hint">${escapeHtml(node.hint)}</p>`
     : '';
 
+  const guideLinkHTML = node.guide_link
+    ? `<a href="${escapeAttr(node.guide_link)}" class="question-guide-link" target="_blank" rel="noopener">&#128247; Visual guide →</a>`
+    : '';
+
   const choicesHTML = node.choices
     .map(c => `<button class="choice-btn" data-label="${escapeAttr(c.label)}" data-next="${escapeAttr(c.next)}">${escapeHtml(c.label)}</button>`)
     .join('');
@@ -171,6 +175,7 @@ function renderQuestion(node) {
       ${buildBackButton()}
       <h2 class="question-text">${qNum}${escapeHtml(node.question)}</h2>
       ${hintHTML}
+      ${guideLinkHTML}
       <div class="choices">${choicesHTML}</div>
     </div>
   `;

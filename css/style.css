@@ -164,10 +164,20 @@ body {
   font-size: 0.82rem;
   color: var(--text-muted);
   font-style: italic;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.6rem;
   padding-left: 0.75rem;
   border-left: 3px solid var(--border);
 }
+
+.question-guide-link {
+  display: inline-block;
+  font-size: 0.78rem;
+  color: var(--primary);
+  text-decoration: none;
+  margin-bottom: 1.25rem;
+  padding-left: 0.75rem;
+}
+.question-guide-link:hover { text-decoration: underline; }
 
 .choices {
   display: flex;
