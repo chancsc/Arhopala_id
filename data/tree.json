@@ -216,7 +216,11 @@
           "next": "q_camdeo_sub"
         },
         {
-          "label": "No — no dark patch, or FW space 1b not visible",
+          "label": "No — no dark patch present in FW space 1b",
+          "next": "q_tailed_anthelus"
+        },
+        {
+          "label": "Cannot determine — FW space 1b obscured by hindwing",
           "next": "q_tailed_anthelus"
         }
       ]
@@ -612,7 +616,7 @@
           "next": "q_camdeo_sub"
         },
         {
-          "label": "No — no dark patch in FW space 1b",
+          "label": "No — no dark patch present in FW space 1b",
           "next": "q_tailless_echelon"
         },
         {
@@ -1190,7 +1194,7 @@
       "features": {
         "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
         "What is the underside ground colour and overall appearance?": "Hair brown; spots narrowly buff-outlined; HW spots 5–6–7 in echelon; large (FW 20–29 mm); rounded FW apex; tail ~6 mm — A. aedias",
-        "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?": "No — no dark patch, or FW space 1b not visible"
+        "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?": "No — no dark patch present in FW space 1b"
       }
     },
     "q_agelastus_s1": {
@@ -3441,7 +3445,11 @@
           "next": "q_camdeo_sub"
         },
         {
-          "label": "No — no dark patch, or FW space 1b not visible",
+          "label": "No — no dark patch present in FW space 1b",
+          "next": "g_aedias"
+        },
+        {
+          "label": "Cannot determine — FW space 1b obscured by hindwing",
           "next": "g_aedias"
         }
       ]
