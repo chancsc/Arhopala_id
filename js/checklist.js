@@ -182,14 +182,19 @@ function getDisplayQuestions() {
   if (cs.treeNodes) {
     for (const [q, choice] of cs.answers) {
       if (!choice.startsWith('Cannot determine')) continue;
+      // Collect CD-branch next-questions from every node sharing this question text.
+      // Only add the followup when all matching nodes agree on the same destination —
+      // ambiguous cases (same question text, different CD destinations in different
+      // tree branches) must not inject a spurious followup.
+      const candidates = new Set();
       for (const node of Object.values(cs.treeNodes)) {
         if (node.type !== 'question' || node.question !== q) continue;
         const cdChoice = node.choices.find(c => c.label === choice);
         if (!cdChoice || !cdChoice.next) continue;
         const follow = cs.treeNodes[cdChoice.next];
-        if (follow && follow.type === 'question') cdFollowups.add(follow.question);
-        break;
+        if (follow && follow.type === 'question') candidates.add(follow.question);
       }
+      if (candidates.size === 1) cdFollowups.add([...candidates][0]);
     }
   }
 

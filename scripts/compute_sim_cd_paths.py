@@ -226,6 +226,10 @@ def get_display_questions(answers, scores, feature_matrix, q_meta, q_cov, tree_n
         for q, choice in answers.items():
             if not choice.startswith('Cannot determine'):
                 continue
+            # Collect next-questions from every node sharing this question text;
+            # only add when all agree (ambiguous multi-node cases must not inject
+            # a spurious followup from the wrong tree branch).
+            candidates = set()
             for node in tree_nodes.values():
                 if node.get('type') != 'question' or node.get('question') != q:
                     continue
@@ -234,8 +238,9 @@ def get_display_questions(answers, scores, feature_matrix, q_meta, q_cov, tree_n
                     continue
                 follow = tree_nodes.get(cd_choice['next'])
                 if follow and follow.get('type') == 'question':
-                    cd_followups.add(follow['question'])
-                break
+                    candidates.add(follow['question'])
+            if len(candidates) == 1:
+                cd_followups.update(candidates)
 
     all_q = [q for q, choices in diversity.items()
              if q in touched or len(choices) >= 2 or q in top1_features or q in cd_followups]
