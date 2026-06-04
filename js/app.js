@@ -346,7 +346,6 @@ function buildPathDisplay(paths, note, resultFeatures, resultName) {
   const rf = resultFeatures || {};
   const canonical = pickCanonicalPath(paths, note, rf);
   if (!canonical) return '';
-  const fallback = pickFallbackPath(paths, note, rf);
   const simCd = (() => {
     if (!resultName) return null;
     if (state.simCdPaths && state.simCdPaths.has(resultName)) {
@@ -380,18 +379,6 @@ function buildPathDisplay(paths, note, resultFeatures, resultName) {
       </div>
     </details>
   `;
-
-  if (fallback) {
-    html += `
-      <details class="path-details path-details--skip">
-        <summary class="path-summary">Via "Cannot determine" — ${fallback.length} step${fallback.length !== 1 ? 's' : ''}</summary>
-        <div class="path-content">
-          <p class="path-skip-note">Steps where a feature is unclear or not visible in the photo.</p>
-          <ol class="path-steps">${renderSteps(fallback, true)}</ol>
-        </div>
-      </details>
-    `;
-  }
 
   if (simCd) {
     html += `
