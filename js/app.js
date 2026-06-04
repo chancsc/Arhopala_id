@@ -3,6 +3,7 @@ const state = {
   species: null,       // Map<taxon_id (number), species object>
   speciesIndex: [],    // [{name, common_name, note, taxon_photos, inat_url}] sorted A-Z
   questionNumbers: null, // Map<questionText, number> — stable Q-numbers by DFS order
+  simCdPaths: null,    // Map<resultName, [{question, choice}]> — pre-computed by Python
   currentNodeId: null,
   history: []          // [{ nodeId, choiceLabel }, ...]
 };
@@ -16,9 +17,10 @@ async function init() {
   const appEl = document.getElementById('app');
 
   try {
-    const [treeRes, speciesRes] = await Promise.all([
+    const [treeRes, speciesRes, simCdRes] = await Promise.all([
       fetch('data/tree.json', { cache: 'no-cache' }),
-      fetch('data/species.json', { cache: 'no-cache' })
+      fetch('data/species.json', { cache: 'no-cache' }),
+      fetch('data/sim_cd_paths.json', { cache: 'no-cache' })
     ]);
 
     if (!treeRes.ok || !speciesRes.ok) throw new Error('Failed to load data files');
@@ -32,6 +34,7 @@ async function init() {
     state.species = new Map(speciesData.species.map(s => [s.id, s]));
     state.speciesIndex = buildSpeciesIndex(treeData, speciesData);
     state.questionNumbers = buildQuestionNumbers(treeData);
+    state.simCdPaths = simCdRes.ok ? new Map(Object.entries(await simCdRes.json())) : null;
     state.currentNodeId = treeData.start;
     state.history = [];
 
@@ -339,9 +342,15 @@ function buildPathDisplay(paths, note, resultFeatures, resultName) {
   const canonical = pickCanonicalPath(paths, note, rf);
   if (!canonical) return '';
   const fallback = pickFallbackPath(paths, note, rf);
-  const simCd = resultName && state.tree
-    ? buildSimulationCdPath(state.tree, pathApplyFeatures(canonical, rf), resultName)
-    : null;
+  const simCd = (() => {
+    if (!resultName) return null;
+    if (state.simCdPaths && state.simCdPaths.has(resultName)) {
+      return state.simCdPaths.get(resultName);
+    }
+    return state.tree
+      ? buildSimulationCdPath(state.tree, pathApplyFeatures(canonical, rf), resultName)
+      : null;
+  })();
 
   const renderSteps = (path, applyRf) => (applyRf ? pathApplyFeatures(path, rf) : path).map(step => {
     if (step.group) {
@@ -567,14 +576,17 @@ async function initSpeciesPage() {
   const loadingEl = document.getElementById('loading');
   const appEl = document.getElementById('species-app');
   try {
-    const [treeRes, speciesRes] = await Promise.all([
-      fetch('data/tree.json', { cache: 'no-cache' }), fetch('data/species.json', { cache: 'no-cache' })
+    const [treeRes, speciesRes, simCdRes] = await Promise.all([
+      fetch('data/tree.json', { cache: 'no-cache' }),
+      fetch('data/species.json', { cache: 'no-cache' }),
+      fetch('data/sim_cd_paths.json', { cache: 'no-cache' })
     ]);
     if (!treeRes.ok || !speciesRes.ok) throw new Error('Failed to load data');
     const [treeData, speciesData] = await Promise.all([treeRes.json(), speciesRes.json()]);
     state.tree = treeData;
     state.speciesIndex = buildSpeciesIndex(treeData, speciesData);
     state.questionNumbers = buildQuestionNumbers(treeData);
+    state.simCdPaths = simCdRes.ok ? new Map(Object.entries(await simCdRes.json())) : null;
     loadingEl.style.display = 'none';
     appEl.style.display = '';
 
