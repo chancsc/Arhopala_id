@@ -3330,7 +3330,11 @@
       "taxon_id": null,
       "name": "Arhopala buddha cooperi",
       "common_name": "",
-      "note": "Tail very short ~1.0 mm. Underside ground colour hair-brown; tornal green scales present and distinct. Male: shining violet-blue; black borders 1.0 mm wide. Female: may resemble female A. aurea but differs in narrower HW border and thinner tail."
+      "note": "Tailed. Tail very short ~1.0 mm. Underside ground colour hair-brown; tornal green scales present and distinct. HW postdiscal spot 6 outwardly sinuous or concave; widely out of line with spots 5 and 7; touches or overlaps the end-cell bar. Costal spot present in FW underside space 10. FW postdiscal band weakly dislocated at vein 4; no spot at base of FW space 3. Male: shining violet-blue; black borders 1.0 mm wide. Female: may resemble female A. aurea but differs in narrower HW border and thinner tail.",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
+        "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW spot 6 is outwardly sinuous; costal spot present in FW space 10"
+      }
     },
     "r_arvina_adalitas": {
       "type": "result",
