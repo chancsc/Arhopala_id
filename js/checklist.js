@@ -15,76 +15,7 @@ const cs = {
   questionOrder: null,    // stable display order; null = not yet initialised
 };
 
-// ── Tree utilities (mirrors app.js) ─────────────────────────────────────────
-
-function buildQuestionNumbers(td) {
-  const nodes = td.nodes;
-  const numbers = new Map();
-  let n = 0;
-  const seen = new Set();
-  function dfs(id) {
-    if (seen.has(id)) return;
-    const node = nodes[id];
-    if (!node) return;
-    seen.add(id);
-    if (node.type === 'question') {
-      if (!numbers.has(node.question)) numbers.set(node.question, ++n);
-      for (const c of (node.choices || [])) if (c.next) dfs(c.next);
-    } else if (node.type === 'group') {
-      if (node.next) dfs(node.next);
-    }
-  }
-  dfs(td.start);
-  return numbers;
-}
-
-function buildTreePaths(td) {
-  const nodes = td.nodes;
-  const map = new Map();
-  function dfs(id, path, vis) {
-    if (vis.has(id)) return;
-    const node = nodes[id];
-    if (!node) return;
-    const v2 = new Set(vis); v2.add(id);
-    if (node.type === 'result') {
-      const n = node.name || '';
-      if (n) { if (!map.has(n)) map.set(n, []); map.get(n).push([...path]); }
-      return;
-    }
-    if (node.type === 'question') {
-      for (const c of (node.choices || []))
-        if (c.next) dfs(c.next, [...path, { question: node.question, choice: c.label }], v2);
-      return;
-    }
-    if (node.type === 'group' && node.next)
-      dfs(node.next, [...path, { group: node.group_name }], v2);
-  }
-  dfs(td.start, [], new Set());
-  return map;
-}
-
-// ── Canonical-path scoring (mirrors app.js buildPathDisplay skipCount) ────────
-// Kept in sync so feature-matrix canonical always matches the ID-key direct path.
-
-const ESCAPE_HATCHES = [
-  'None of the camdeo features present',
-  'HW spot 6 appears midway between spot 5 and the end-cell bar',
-];
-const isEscapeHatch = c => c && ESCAPE_HATCHES.some(eh => c.startsWith(eh));
-
-function pathScore(p, note) {
-  const lc = (note || '').toLowerCase();
-  const resultIsTailed    = /^tailed/.test(lc);
-  const resultIsNotTailed = /^tailless/.test(lc);
-  let score = p.filter(s => s.choice && s.choice.startsWith('Cannot determine')).length;
-  score    += p.filter(s => isEscapeHatch(s.choice)).length;
-  const startsTailed    = p.length > 0 && p[0].choice === 'Yes — hindwing is tailed';
-  const startsNotTailed = p.length > 0 && p[0].choice === 'No — hindwing is tailless';
-  if (startsTailed    && p.some(s => s.choice && /tailless/i.test(s.choice))) score += 100;
-  if (startsNotTailed && resultIsTailed)    score += 100;
-  if (startsTailed    && resultIsNotTailed) score += 100;
-  return score;
-}
+// buildTreePaths, buildQuestionNumbers, pathScore, pickCanonicalPath etc. live in path-utils.js
 
 // ── Data initialisation ──────────────────────────────────────────────────────
 
@@ -120,10 +51,8 @@ function initData(treeData, speciesData) {
   }
   const spInfo = new Map();
 
-  // Build feature matrix: canonical = lowest-score path (same ranking as app.js direct path).
-  // Score: +1 per CD step, +1 per escape-hatch step, +100 for tailed/tailless contradiction.
-  // Paths scoring ≥100 (contradictions) are excluded; if all paths contradict, use lowest score.
-  // Pre-build result features map for consistent-canonical tiebreaking
+  // Build feature matrix using pickCanonicalPath from path-utils.js —
+  // guaranteed to match the canonical path shown in the ID-key display.
   const resultFeaturesMap = new Map();
   for (const node of Object.values(treeData.nodes)) {
     if (node.type === 'result' && node.name && node.features)
@@ -133,23 +62,7 @@ function initData(treeData, speciesData) {
   for (const [name, paths] of pathsMap) {
     const note = resultNotes.get(name) || '';
     const rf = resultFeaturesMap.get(name) || {};
-    // isInconsistent returns 1 if any definite path answer contradicts the result's
-    // explicit features — used as a tiebreaker to prefer biologically correct paths
-    // over DFS-order artefacts when two choices route to the same next node.
-    const isInconsistent = p => {
-      for (const step of p) {
-        if (!step.question || !step.choice) continue;
-        if (step.choice.startsWith('Cannot determine')) continue;
-        const expected = rf[step.question];
-        if (expected && !expected.startsWith('Cannot determine') && step.choice !== expected) return 1;
-      }
-      return 0;
-    };
-    const scored = paths
-      .map(p => [pathScore(p, note), isInconsistent(p), p.length, p])
-      .sort((a, b) => a[0] - b[0] || a[1] - b[1] || a[2] - b[2]);
-    const best = scored.find(([s]) => s < 100) || scored[0];
-    const canonical = best ? best[3] : [];
+    const canonical = pickCanonicalPath(paths, note, rf) || [];
 
     const features = new Map();
     const covSeen = new Set();
