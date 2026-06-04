@@ -174,10 +174,10 @@
       "type": "question",
       "id": "q_tailed_ganesa",
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
-      "hint": "The ganesa group is characteristically small, with spots visible above the FW cell on the underside, a spot at the base of FW space 3, and short tails. Note: three of the five Peninsular species (A. ammon, A. ammonides, A. elizabethae) also show a conspicuously whitened gap between the outer and central spots in HW space 7.",
+      "hint": "The ganesa group is characteristically small, with spots visible above the FW cell on the underside, a spot at the base of FW space 3, and short tails. The spot at the base of FW space 3 is usually hidden under the hindwing in resting photographs — use small size and spots above the FW cell as the primary characters; if both are clearly present, answer Yes. Three of the five Peninsular species (A. ammon, A. ammonides, A. elizabethae) also show a conspicuously whitened gap between the outer and central spots in HW space 7.",
       "choices": [
         {
-          "label": "Yes — small; spots above FW cell; spot at base of FW space 3",
+          "label": "Yes — small; spots above FW cell; spot at base of FW space 3 (if visible)",
           "next": "g_ganesa"
         },
         {
