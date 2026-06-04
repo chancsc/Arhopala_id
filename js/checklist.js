@@ -300,8 +300,32 @@ function getDisplayQuestions() {
   } else {
     // Keep existing order; remove un-touched questions that are no longer relevant
     cs.questionOrder = cs.questionOrder.filter(q => touched(q) || allQSet.has(q));
-    // Append any newly relevant questions at the end
     const existing = new Set(cs.questionOrder);
+    // CD-followup questions: move (or insert) right after the deepest answered CD question
+    // so they appear immediately before other unanswered questions and aren't hidden by
+    // the 15-cap. Q88 may already be in question_order from the initial sort (it has 2
+    // answer choices) but sits at a far position — we must move it, not just append it.
+    if (cdFollowups.size > 0) {
+      const cdPositions = [...cs.answers.entries()]
+        .filter(([, ac]) => ac.startsWith('Cannot determine'))
+        .map(([aq]) => cs.questionOrder.indexOf(aq))
+        .filter(i => i !== -1);
+      if (cdPositions.length > 0) {
+        const insertAt = Math.max(...cdPositions) + 1;
+        for (const q of cdFollowups) {
+          if (!allQSet.has(q)) continue;
+          const curIdx = cs.questionOrder.indexOf(q);
+          if (curIdx === -1) {
+            cs.questionOrder.splice(insertAt, 0, q);
+            existing.add(q);
+          } else if (curIdx > insertAt) {
+            cs.questionOrder.splice(curIdx, 1);
+            cs.questionOrder.splice(insertAt, 0, q);
+          }
+        }
+      }
+    }
+    // Append any newly relevant questions at the end
     const newQs = allQ.filter(q => !existing.has(q)).sort(newQSort);
     if (newQs.length) cs.questionOrder.push(...newQs);
   }
