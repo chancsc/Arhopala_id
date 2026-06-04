@@ -496,16 +496,32 @@
     "q_tailless_epimuta": {
       "type": "question",
       "id": "q_tailless_epimuta",
-      "question": "On the hindwing underside, is postdiscal spot 6 displaced from the postdiscal row — shifted toward the end-cell bar rather than aligned with the level of spot 5?",
-      "hint": "Several groups show HW spot 6 displaced from the postdiscal row toward the end-cell bar — this includes the agelastus group (A. wildeyana, A. labuana, etc.), the agesilaus group (A. agesilaus, A. avatha), and the epimuta/antimuta/metamuta groups. If spot 6 is clearly pulled inward toward the discal cell — away from the level of spot 5 — answer Yes; follow-up questions will separate the groups using the HW vein-2 dislocation pattern and the FW postdiscal band character. If spots 5, 6 and 7 have their centres in line along the postdiscal row and spot 6 is not pulled inward, answer No.",
+      "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
+      "hint": "The position of HW postdiscal spot 6 relative to spot 5 and the end-cell bar is the primary character separating several tailless groups. In many species spot 6 is pulled inward (basad) toward the discal cell — away from its normal position in the postdiscal row alongside spot 5. Grades of displacement: slightly inward (spot 6 still closer to spot 5 than to the end-cell bar — metamuta group); equidistant/midway (agesilaus and epimuta groups); significantly inward, clearly nearer the end-cell bar than spot 5 but not touching (agelastus group — A. wildeyana, A. labuana, A. silhetensis); widely displaced, touching or overlapping the end-cell bar with spots 5, 6 and 7 widely out of line (antimuta group — A. antimuta). If spot 6 is not displaced at all, continue with the camdeo/amphimuta path.",
       "choices": [
         {
-          "label": "Yes — spot 6 displaced toward the end-cell bar",
+          "label": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line",
+          "next": "q_tailless_camdeo"
+        },
+        {
+          "label": "Slightly displaced inward; spot 6 still clearly nearer to spot 5 than to the end-cell bar",
           "next": "q_tailless_epimuta_vein2"
         },
         {
-          "label": "No — HW spots 5, 6 and 7 with centres in line along the postdiscal row; spot 6 not displaced toward the end-cell bar",
-          "next": "q_tailless_camdeo"
+          "label": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar",
+          "next": "q_tailless_epimuta_vein2"
+        },
+        {
+          "label": "Significantly displaced inward toward the discal cell; spot 6 clearly nearer to the end-cell bar than to spot 5, but not touching (e.g. A. wildeyana, A. labuana)",
+          "next": "q_tailless_epimuta_vein2"
+        },
+        {
+          "label": "Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
+          "next": "q_tailless_epimuta_vein2"
+        },
+        {
+          "label": "Cannot determine — HW spot 6 position unclear",
+          "next": "q_tailless_epimuta_vein2"
         }
       ]
     },
@@ -517,7 +533,7 @@
       "choices": [
         {
           "label": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
-          "next": "q_tailless_agesilaus"
+          "next": "q_tailless_agelastus_check"
         },
         {
           "label": "No — band fully dislocated at vein 2 (two separate portions)",
@@ -560,32 +576,16 @@
     "q_tailless_epimuta_midway": {
       "type": "question",
       "id": "q_tailless_epimuta_midway",
-      "question": "Is postdiscal spot 6 positioned roughly midway between spot 5 and the end-cell bar?",
-      "hint": "In the epimuta group (A. epimuta epiala, A. atosia malayana, A. lurida), spot 6 sits approximately equidistantly between spot 5 and the end-cell bar — clearly displaced from the postdiscal row but not reaching the bar. In A. metamuta metamuta, spot 6 is only mildly displaced and sits nearer to spot 5 than to the end-cell bar (less than midway).",
+      "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
+      "hint": "At this point only two groups remain: the epimuta group (A. atosia, A. lurida) and A. metamuta metamuta. Both have full dislocation at vein 2 and green tornal scales, and spots 5, 6 and 7 are broadly in line (not widely out of line). The only distinguishing character is spot 6 position: equidistant/midway (epimuta) vs still clearly nearer to spot 5 (metamuta).",
       "choices": [
         {
-          "label": "Yes — spot 6 roughly midway between spot 5 and end-cell bar",
+          "label": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar",
           "next": "g_epimuta"
         },
         {
-          "label": "No — spot 6 nearer to spot 5 than to end-cell bar (less than midway)",
+          "label": "Slightly displaced inward; spot 6 still clearly nearer to spot 5 than to the end-cell bar",
           "next": "r_metamuta_metamuta"
-        }
-      ]
-    },
-    "q_tailless_agesilaus": {
-      "type": "question",
-      "id": "q_tailless_agesilaus",
-      "question": "On the hindwing underside, is postdiscal spot 6 placed equidistantly between spot 5 and the end-cell bar?",
-      "hint": "The agesilaus group can be confused with the amphimuta group. Its defining feature is HW spot 6 placed equidistant from spot 5 and the end-cell bar — not closer to one or the other. Tailless.",
-      "choices": [
-        {
-          "label": "Yes — HW spot 6 equidistant between spot 5 and end-cell bar",
-          "next": "g_agesilaus"
-        },
-        {
-          "label": "No",
-          "next": "q_tailless_agelastus_check"
         }
       ]
     },
