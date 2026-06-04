@@ -91,7 +91,31 @@ def path_score(path: list, note: str = '') -> int:
     return score
 
 
-# ── Feature matrix (mirrors checklist.js initData) ───────────────────────────
+# ── Canonical path selection (mirrors path-utils.js pickCanonicalPath) ───────
+
+def is_inconsistent(path: list, rf: dict) -> int:
+    for step in path:
+        q, c = step.get('question'), step.get('choice', '')
+        if not q or not c or c.startswith('Cannot determine'):
+            continue
+        expected = rf.get(q)
+        if expected and not expected.startswith('Cannot determine') and c != expected:
+            return 1
+    return 0
+
+
+def pick_canonical_path(paths: list, note: str, rf: dict) -> list:
+    if not paths:
+        return []
+    scored = sorted(
+        ((path_score(p, note), is_inconsistent(p, rf), len(p), p) for p in paths),
+        key=lambda x: (x[0], x[1], x[2])
+    )
+    best = next((p for s, _, __, p in scored if s < 100), scored[0][3] if scored else [])
+    return best
+
+
+# ── Feature matrix (mirrors checklist.js initData + path-utils.js) ───────────
 
 def build_feature_matrix(tree: dict, paths_map: dict) -> dict[str, dict]:
     nodes = tree['nodes']
@@ -107,23 +131,65 @@ def build_feature_matrix(tree: dict, paths_map: dict) -> dict[str, dict]:
     }
     matrix: dict[str, dict] = {}
     for name, paths in paths_map.items():
-        note   = result_notes.get(name, '')
-        scored = sorted(((path_score(p, note), len(p), p) for p in paths),
-                        key=lambda x: (x[0], x[1]))
-        best   = next((p for s, _, p in scored if s < 100),
-                      scored[0][2] if scored else [])
+        note = result_notes.get(name, '')
+        rf   = result_features.get(name, {})
+        best = pick_canonical_path(paths, note, rf)
         features: dict[str, str] = {}
         for step in best:
             q, c = step.get('question'), step.get('choice')
             if q and c and not c.startswith('Cannot determine'):
                 features[q] = c
-        for q, c in result_features.get(name, {}).items():
+        for q, c in rf.items():
             if c.startswith('Cannot determine'):
                 features.pop(q, None)
             else:
                 features[q] = c
         matrix[name] = features
     return matrix
+
+
+# ── Key-path / feature-matrix cross-check ────────────────────────────────────
+
+def check_keypath_matrix_sync(paths_map: dict, matrix: dict, tree: dict) -> list[str]:
+    """
+    For every species, compare the key-path canonical answers (what buildPathDisplay
+    would show) against the feature-matrix entries (what Feature Scoring uses).
+    Returns a list of mismatch description strings; empty list = all in sync.
+    """
+    nodes = tree['nodes']
+    result_features = {
+        n['name']: n.get('features', {})
+        for n in nodes.values()
+        if n.get('type') == 'result' and n.get('name')
+    }
+    result_notes = {
+        n['name']: n.get('note', '')
+        for n in nodes.values()
+        if n.get('type') == 'result' and n.get('name')
+    }
+    mismatches = []
+    for name, paths in paths_map.items():
+        note = result_notes.get(name, '')
+        rf   = result_features.get(name, {})
+        canonical = pick_canonical_path(paths, note, rf)
+        # Apply features overrides (mirrors pathApplyFeatures)
+        display_answers = {}
+        for step in canonical:
+            q, c = step.get('question'), step.get('choice', '')
+            if not q or not c or c.startswith('Cannot determine'):
+                continue
+            override = rf.get(q, '')
+            display_answers[q] = override if (override and not override.startswith('Cannot determine')) else c
+        feat_row = matrix.get(name, {})
+        for q, display_ans in display_answers.items():
+            if q in feat_row and feat_row[q] != display_ans:
+                mismatches.append(
+                    f'  {name}\n'
+                    f'    Q: {q[:80]}\n'
+                    f'    key path : {display_ans[:70]}\n'
+                    f'    feat matrix: {feat_row[q][:70]}'
+                )
+    return mismatches
 
 
 # ── Scoring (mirrors checklist.js scoreAll) ───────────────────────────────────
@@ -295,6 +361,17 @@ def main() -> int:
     print('Building feature matrix…', flush=True)
     matrix = build_feature_matrix(tree, paths_map)
 
+    # Cross-check: key-path display answers must match feature-matrix entries.
+    # A mismatch means the ID key and Feature Scoring disagree on a species answer.
+    sync_mismatches = check_keypath_matrix_sync(paths_map, matrix, tree)
+    if sync_mismatches:
+        print(f'\n{"━"*72}')
+        print(f'KEY-PATH ↔ FEATURE-MATRIX SYNC FAILURES ({len(sync_mismatches)})\n')
+        for m in sync_mismatches:
+            print(m)
+    else:
+        print('Key-path ↔ feature-matrix sync: ✓ all in sync')
+
     result_notes: dict[str, str] = {
         n['name']: n.get('note', '')
         for n in tree['nodes'].values()
@@ -419,8 +496,11 @@ def main() -> int:
     grp_fail = sum(1 for n, _ in all_failures if is_group_result(n))
     if grp_fail:
         print(f'  Group results w/ failures   : {grp_fail} (expected; not counted as bugs)')
+    sync_ok = len(sync_mismatches) == 0
+    print(f'  Key-path ↔ matrix sync      : '
+          + ('✓' if sync_ok else f'✗  {len(sync_mismatches)} mismatch(es)'))
 
-    return 0 if n_indiv_fail == 0 else 1
+    return 0 if (n_indiv_fail == 0 and sync_ok) else 1
 
 
 if __name__ == '__main__':

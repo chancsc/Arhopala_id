@@ -47,78 +47,7 @@ async function init() {
   }
 }
 
-// DFS from tree root; builds Map<resultName, Array<path>> where each path is
-// an array of {question, choice} steps (group milestones are noted inline).
-function buildTreePaths(treeData) {
-  const nodes = treeData.nodes;
-  const pathsMap = new Map();
-
-  function dfs(nodeId, path, visited) {
-    if (visited.has(nodeId)) return;
-    const node = nodes[nodeId];
-    if (!node) return;
-
-    const vis2 = new Set(visited);
-    vis2.add(nodeId);
-
-    if (node.type === 'result') {
-      const name = node.name || '';
-      if (name) {
-        if (!pathsMap.has(name)) pathsMap.set(name, []);
-        pathsMap.get(name).push([...path]);
-      }
-      return;
-    }
-
-    if (node.type === 'question') {
-      for (const c of (node.choices || [])) {
-        if (c.next) dfs(c.next, [...path, { question: node.question, choice: c.label }], vis2);
-      }
-      return;
-    }
-
-    if (node.type === 'group') {
-      const step = { group: node.group_name };
-      if (node.next) {
-        dfs(node.next, [...path, step], vis2);
-      } else if (node.member_results && node.member_results.length) {
-        // Terminal group — register this CD path for each listed result node
-        for (const resultId of node.member_results) {
-          const rNode = nodes[resultId];
-          if (rNode && rNode.name) {
-            if (!pathsMap.has(rNode.name)) pathsMap.set(rNode.name, []);
-            pathsMap.get(rNode.name).push([...path, step]);
-          }
-        }
-      }
-    }
-  }
-
-  dfs(treeData.start, [], new Set());
-  return pathsMap;
-}
-
-// Assigns a stable Q-number to each unique question text in DFS encounter order.
-function buildQuestionNumbers(treeData) {
-  const nodes = treeData.nodes;
-  const numbers = new Map();
-  let n = 0;
-  const seen = new Set();
-  function dfs(id) {
-    if (seen.has(id)) return;
-    const node = nodes[id];
-    if (!node) return;
-    seen.add(id);
-    if (node.type === 'question') {
-      if (!numbers.has(node.question)) numbers.set(node.question, ++n);
-      for (const c of (node.choices || [])) if (c.next) dfs(c.next);
-    } else if (node.type === 'group') {
-      if (node.next) dfs(node.next);
-    }
-  }
-  dfs(treeData.start);
-  return numbers;
-}
+// buildTreePaths and buildQuestionNumbers live in path-utils.js
 
 // Build a flat sorted array of all result nodes enriched with species photo/url data
 function buildSpeciesIndex(treeData, speciesData) {
@@ -407,56 +336,11 @@ function buildPathDisplay(paths, note, resultFeatures) {
   if (!paths || paths.length === 0) return '';
 
   const rf = resultFeatures || {};
+  const canonical = pickCanonicalPath(paths, note, rf);
+  if (!canonical) return '';
+  const fallback = pickFallbackPath(paths, note, rf);
 
-  // Detect species tail status from the result note for contradiction detection
-  const noteLC = (note || '').toLowerCase();
-  const resultIsTailed = /^tailed/.test(noteLC);
-  const resultIsNotTailed = /^tailless/.test(noteLC);
-
-  // Canonical path: fewest "Cannot determine" choices.
-  // Contradiction penalty +100 for paths that start on the wrong tailed/tailless branch:
-  //   (a) starts tailed but later has a "tailless" answer
-  //   (b) starts tailless but result note says "Tailed."
-  //   (c) starts tailed but result note says "Tailless."
-  // Escape-hatch penalty +1 for paths that use the camdeo escape hatch
-  //   ("None of the camdeo features present" / "HW spot 6 appears midway…"), so the
-  //   direct "No" path is preferred as canonical over the "Yes → escape" path.
-  const ESCAPE_HATCHES = [
-    'None of the camdeo features present',
-    'HW spot 6 appears midway between spot 5 and the end-cell bar',
-  ];
-  const isEscapeHatch = c => c && ESCAPE_HATCHES.some(eh => c.startsWith(eh));
-  const skipCount = p => {
-    let score = p.filter(s => s.choice && s.choice.startsWith('Cannot determine')).length;
-    score += p.filter(s => isEscapeHatch(s.choice)).length;
-    const startsTailed   = p.length > 0 && p[0].choice === 'Yes — hindwing is tailed';
-    const startsNotTailed = p.length > 0 && p[0].choice === 'No — hindwing is tailless';
-    if (startsTailed   && p.some(s => s.choice && /tailless/i.test(s.choice))) score += 100;
-    if (startsNotTailed && resultIsTailed)   score += 100;
-    if (startsTailed   && resultIsNotTailed) score += 100;
-    return score;
-  };
-  // Returns 0 if path has no answers that contradict result features, 1 if any contradict.
-  // Used as a tiebreaker so the consistent path wins over a DFS-order artefact.
-  const isInconsistent = p => {
-    for (const step of p) {
-      if (!step.question || !step.choice) continue;
-      if (step.choice.startsWith('Cannot determine')) continue;
-      const expected = rf[step.question];
-      if (expected && !expected.startsWith('Cannot determine') && step.choice !== expected) return 1;
-    }
-    return 0;
-  };
-  const hasEscapeHatch = p => p.some(s => isEscapeHatch(s.choice));
-
-  // Apply explicit features overrides to a single path's display answers.
-  const applyFeatures = path => Object.keys(rf).length === 0 ? path : path.map(step =>
-    (step.question && rf[step.question] && !rf[step.question].startsWith('Cannot determine'))
-      ? { ...step, choice: rf[step.question] }
-      : step
-  );
-
-  const renderSteps = path => applyFeatures(path).map(step => {
+  const renderSteps = path => pathApplyFeatures(path, rf).map(step => {
     if (step.group) {
       return `<li class="path-step path-step--group"><span class="path-group">● ${escapeHtml(step.group)}</span></li>`;
     }
@@ -471,37 +355,6 @@ function buildPathDisplay(paths, note, resultFeatures) {
       </li>`;
   }).join('');
 
-  // Sort by (skipCount, inconsistency-with-result-features, path-length).
-  // Inconsistency tiebreaker ensures the biologically correct path wins over a
-  // DFS-order artefact when two choices route to the same next node.
-  const sorted = [...paths].sort((a, b) =>
-    skipCount(a) - skipCount(b) || isInconsistent(a) - isInconsistent(b) || a.length - b.length
-  );
-  const canonical = sorted[0];
-
-  // Fallback path: one more "Cannot determine" step than the canonical.
-  // Among candidates, prefer the path whose CD step occurs deepest in the sequence —
-  // this surfaces designed bypass routes (e.g. Q87-CD → Q88 for horsfieldi) over
-  // coincidental early bypasses (e.g. Q2-CD which just skips one early question).
-  // Depth tiebreaker: if equal depth, shorter path wins.
-  const cdDepth = p => {
-    const i = p.findIndex(s => s.choice && s.choice.startsWith('Cannot determine'));
-    return i === -1 ? 0 : i;
-  };
-  const validPaths = sorted.filter(p => skipCount(p) < 100);
-  const canonicalSkips = skipCount(canonical);
-  const fallbackPool = validPaths.filter(p => skipCount(p) > canonicalSkips && !hasEscapeHatch(p));
-  fallbackPool.sort((a, b) =>
-    skipCount(a) - skipCount(b) ||
-    isInconsistent(a) - isInconsistent(b) ||
-    cdDepth(b) - cdDepth(a) ||
-    a.length - b.length
-  );
-  const fallback = fallbackPool[0] || null;
-  const showFallback = fallback &&
-    JSON.stringify(fallback) !== JSON.stringify(canonical) &&
-    skipCount(fallback) > skipCount(canonical);
-
   let html = `
     <details class="path-details">
       <summary class="path-summary">Direct path — ${canonical.length} step${canonical.length !== 1 ? 's' : ''}</summary>
@@ -511,7 +364,7 @@ function buildPathDisplay(paths, note, resultFeatures) {
     </details>
   `;
 
-  if (showFallback) {
+  if (fallback) {
     html += `
       <details class="path-details path-details--skip">
         <summary class="path-summary">Via "Cannot determine" — ${fallback.length} step${fallback.length !== 1 ? 's' : ''}</summary>
