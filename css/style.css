@@ -895,6 +895,15 @@ details[open] .path-summary::before { content: '▼ '; }
   color: var(--accent);
 }
 
+.path-details--simcd .path-summary {
+  background: #eef4fb;
+  color: #2a5a8a;
+}
+
+.path-details--simcd .path-step--skip .path-a {
+  color: #2a5a8a;
+}
+
 .path-skip-note {
   font-size: 0.72rem;
   color: var(--text-muted);
