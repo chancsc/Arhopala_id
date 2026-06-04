@@ -7,6 +7,7 @@ const cs = {
   questionNumbers: null,  // Map<questionText, number> — stable Q-numbers by DFS order
   resultNotes: null,      // Map<name, string>
   speciesInfo: null,      // Map<name, {common_name, inat_url}>
+  treeNodes: null,        // raw nodes map from tree.json — used for CD-followup lookup
   answers: new Map(),     // Map<questionText, choiceLabel>
   scores: [],
   showAll: false,
@@ -88,6 +89,7 @@ function pathScore(p, note) {
 // ── Data initialisation ──────────────────────────────────────────────────────
 
 function initData(treeData, speciesData) {
+  cs.treeNodes = treeData.nodes;
   const pathsMap = buildTreePaths(treeData);
   const matrix = new Map();
   const qMeta = new Map();
@@ -259,9 +261,28 @@ function getDisplayQuestions() {
     ? (cs.featureMatrix.get(cs.scores[0].name) || new Map())
     : new Map();
 
-  // Candidate pool: touched questions + discriminating questions + top-1 key-path questions
+  // When a question was answered with "Cannot determine", surface the question that the
+  // decision tree would show next (the CD-branch follow-up). This ensures that, for
+  // example, answering Q87 as CD causes Q88 to appear so the user can score the
+  // alternative apex-shape character instead of missing it entirely.
+  const cdFollowups = new Set();
+  if (cs.treeNodes) {
+    for (const [q, choice] of cs.answers) {
+      if (!choice.startsWith('Cannot determine')) continue;
+      for (const node of Object.values(cs.treeNodes)) {
+        if (node.type !== 'question' || node.question !== q) continue;
+        const cdChoice = node.choices.find(c => c.label === choice);
+        if (!cdChoice || !cdChoice.next) continue;
+        const follow = cs.treeNodes[cdChoice.next];
+        if (follow && follow.type === 'question') cdFollowups.add(follow.question);
+        break;
+      }
+    }
+  }
+
+  // Candidate pool: touched + discriminating + top-1 key-path + CD-followup questions
   const allQ = [...diversity.entries()]
-    .filter(([q, choices]) => touched(q) || choices.size >= 2 || top1Features.has(q))
+    .filter(([q, choices]) => touched(q) || choices.size >= 2 || top1Features.has(q) || cdFollowups.has(q))
     .map(([q]) => q);
   const allQSet = new Set(allQ);
 
@@ -473,8 +494,8 @@ function onCandidateClick(e) {
 async function init() {
   try {
     const [treeData, speciesData] = await Promise.all([
-      fetch('data/tree.json').then(r => { if (!r.ok) throw new Error('tree.json'); return r.json(); }),
-      fetch('data/species.json').then(r => { if (!r.ok) throw new Error('species.json'); return r.json(); }),
+      fetch('data/tree.json', { cache: 'no-cache' }).then(r => { if (!r.ok) throw new Error('tree.json'); return r.json(); }),
+      fetch('data/species.json', { cache: 'no-cache' }).then(r => { if (!r.ok) throw new Error('species.json'); return r.json(); }),
     ]);
 
     initData(treeData, speciesData);

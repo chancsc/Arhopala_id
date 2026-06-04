@@ -17,8 +17,8 @@ async function init() {
 
   try {
     const [treeRes, speciesRes] = await Promise.all([
-      fetch('data/tree.json'),
-      fetch('data/species.json')
+      fetch('data/tree.json', { cache: 'no-cache' }),
+      fetch('data/species.json', { cache: 'no-cache' })
     ]);
 
     if (!treeRes.ok || !speciesRes.ok) throw new Error('Failed to load data files');
@@ -700,7 +700,7 @@ async function initSpeciesPage() {
   const appEl = document.getElementById('species-app');
   try {
     const [treeRes, speciesRes] = await Promise.all([
-      fetch('data/tree.json'), fetch('data/species.json')
+      fetch('data/tree.json', { cache: 'no-cache' }), fetch('data/species.json', { cache: 'no-cache' })
     ]);
     if (!treeRes.ok || !speciesRes.ok) throw new Error('Failed to load data');
     const [treeData, speciesData] = await Promise.all([treeRes.json(), speciesRes.json()]);
