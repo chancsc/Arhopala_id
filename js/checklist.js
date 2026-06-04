@@ -7,6 +7,7 @@ const cs = {
   questionNumbers: null,  // Map<questionText, number> — stable Q-numbers by DFS order
   resultNotes: null,      // Map<name, string>
   speciesInfo: null,      // Map<name, {common_name, inat_url}>
+  treeNodes: null,        // raw nodes map from tree.json — used for CD-followup lookup
   answers: new Map(),     // Map<questionText, choiceLabel>
   scores: [],
   showAll: false,
@@ -88,6 +89,7 @@ function pathScore(p, note) {
 // ── Data initialisation ──────────────────────────────────────────────────────
 
 function initData(treeData, speciesData) {
+  cs.treeNodes = treeData.nodes;
   const pathsMap = buildTreePaths(treeData);
   const matrix = new Map();
   const qMeta = new Map();
@@ -121,11 +123,33 @@ function initData(treeData, speciesData) {
   // Build feature matrix: canonical = lowest-score path (same ranking as app.js direct path).
   // Score: +1 per CD step, +1 per escape-hatch step, +100 for tailed/tailless contradiction.
   // Paths scoring ≥100 (contradictions) are excluded; if all paths contradict, use lowest score.
+  // Pre-build result features map for consistent-canonical tiebreaking
+  const resultFeaturesMap = new Map();
+  for (const node of Object.values(treeData.nodes)) {
+    if (node.type === 'result' && node.name && node.features)
+      resultFeaturesMap.set(node.name, node.features);
+  }
+
   for (const [name, paths] of pathsMap) {
     const note = resultNotes.get(name) || '';
-    const scored = paths.map(p => [pathScore(p, note), p]).sort((a, b) => a[0] - b[0]);
+    const rf = resultFeaturesMap.get(name) || {};
+    // isInconsistent returns 1 if any definite path answer contradicts the result's
+    // explicit features — used as a tiebreaker to prefer biologically correct paths
+    // over DFS-order artefacts when two choices route to the same next node.
+    const isInconsistent = p => {
+      for (const step of p) {
+        if (!step.question || !step.choice) continue;
+        if (step.choice.startsWith('Cannot determine')) continue;
+        const expected = rf[step.question];
+        if (expected && !expected.startsWith('Cannot determine') && step.choice !== expected) return 1;
+      }
+      return 0;
+    };
+    const scored = paths
+      .map(p => [pathScore(p, note), isInconsistent(p), p.length, p])
+      .sort((a, b) => a[0] - b[0] || a[1] - b[1] || a[2] - b[2]);
     const best = scored.find(([s]) => s < 100) || scored[0];
-    const canonical = best ? best[1] : [];
+    const canonical = best ? best[3] : [];
 
     const features = new Map();
     const covSeen = new Set();
@@ -142,10 +166,8 @@ function initData(treeData, speciesData) {
     // "Cannot determine" values neutralise that question for this species (remove from scoring).
     // All other values override or add features — explicit features take precedence over
     // the canonical path answer (e.g. to correct a DFS-order artefact).
-    const resultNode = Object.values(treeData.nodes).find(
-      n => n.type === 'result' && n.name === name && n.features);
-    if (resultNode) {
-      for (const [q, c] of Object.entries(resultNode.features)) {
+    if (Object.keys(rf).length > 0) {
+      for (const [q, c] of Object.entries(rf)) {
         if (c.startsWith('Cannot determine')) {
           features.delete(q);
         } else {
@@ -230,9 +252,37 @@ function getDisplayQuestions() {
 
   const touched = q => cs.answers.has(q);
 
-  // Candidate pool: touched questions + questions that still discriminate (≥2 distinct answers)
+  // Also keep questions on the top candidate's canonical path so users can follow
+  // the complete key path even after a question stops discriminating (e.g. Q72
+  // q_amphimuta_sub: all top candidates share the same "tailless" choice once the
+  // pool narrows to the amphimuta subgroup, so choices.size drops to 1 and it would
+  // otherwise vanish before the user can answer it).
+  const top1Features = (cs.answers.size > 0 && cs.scores.length > 0)
+    ? (cs.featureMatrix.get(cs.scores[0].name) || new Map())
+    : new Map();
+
+  // When a question was answered with "Cannot determine", surface the question that the
+  // decision tree would show next (the CD-branch follow-up). This ensures that, for
+  // example, answering Q87 as CD causes Q88 to appear so the user can score the
+  // alternative apex-shape character instead of missing it entirely.
+  const cdFollowups = new Set();
+  if (cs.treeNodes) {
+    for (const [q, choice] of cs.answers) {
+      if (!choice.startsWith('Cannot determine')) continue;
+      for (const node of Object.values(cs.treeNodes)) {
+        if (node.type !== 'question' || node.question !== q) continue;
+        const cdChoice = node.choices.find(c => c.label === choice);
+        if (!cdChoice || !cdChoice.next) continue;
+        const follow = cs.treeNodes[cdChoice.next];
+        if (follow && follow.type === 'question') cdFollowups.add(follow.question);
+        break;
+      }
+    }
+  }
+
+  // Candidate pool: touched + discriminating + top-1 key-path + CD-followup questions
   const allQ = [...diversity.entries()]
-    .filter(([q, choices]) => touched(q) || choices.size >= 2)
+    .filter(([q, choices]) => touched(q) || choices.size >= 2 || top1Features.has(q) || cdFollowups.has(q))
     .map(([q]) => q);
   const allQSet = new Set(allQ);
 
@@ -250,8 +300,32 @@ function getDisplayQuestions() {
   } else {
     // Keep existing order; remove un-touched questions that are no longer relevant
     cs.questionOrder = cs.questionOrder.filter(q => touched(q) || allQSet.has(q));
-    // Append any newly relevant questions at the end
     const existing = new Set(cs.questionOrder);
+    // CD-followup questions: move (or insert) right after the deepest answered CD question
+    // so they appear immediately before other unanswered questions and aren't hidden by
+    // the 15-cap. Q88 may already be in question_order from the initial sort (it has 2
+    // answer choices) but sits at a far position — we must move it, not just append it.
+    if (cdFollowups.size > 0) {
+      const cdPositions = [...cs.answers.entries()]
+        .filter(([, ac]) => ac.startsWith('Cannot determine'))
+        .map(([aq]) => cs.questionOrder.indexOf(aq))
+        .filter(i => i !== -1);
+      if (cdPositions.length > 0) {
+        const insertAt = Math.max(...cdPositions) + 1;
+        for (const q of cdFollowups) {
+          if (!allQSet.has(q)) continue;
+          const curIdx = cs.questionOrder.indexOf(q);
+          if (curIdx === -1) {
+            cs.questionOrder.splice(insertAt, 0, q);
+            existing.add(q);
+          } else if (curIdx > insertAt) {
+            cs.questionOrder.splice(curIdx, 1);
+            cs.questionOrder.splice(insertAt, 0, q);
+          }
+        }
+      }
+    }
+    // Append any newly relevant questions at the end
     const newQs = allQ.filter(q => !existing.has(q)).sort(newQSort);
     if (newQs.length) cs.questionOrder.push(...newQs);
   }
@@ -444,8 +518,8 @@ function onCandidateClick(e) {
 async function init() {
   try {
     const [treeData, speciesData] = await Promise.all([
-      fetch('data/tree.json').then(r => { if (!r.ok) throw new Error('tree.json'); return r.json(); }),
-      fetch('data/species.json').then(r => { if (!r.ok) throw new Error('species.json'); return r.json(); }),
+      fetch('data/tree.json', { cache: 'no-cache' }).then(r => { if (!r.ok) throw new Error('tree.json'); return r.json(); }),
+      fetch('data/species.json', { cache: 'no-cache' }).then(r => { if (!r.ok) throw new Error('species.json'); return r.json(); }),
     ]);
 
     initData(treeData, speciesData);

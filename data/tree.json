@@ -73,7 +73,7 @@
       "type": "question",
       "id": "q_tailed_epimuta",
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "hint": "Two groups share this character — HW spot 6 approximately midway between spot 5 and the end-cell bar: the epimuta group (A. atosia, A. lurida) and the alitaeus group (including A. pseudomuta). If Yes, a spot in FW space 11 will be checked next to tell them apart.\n\nAnswer No in all of these cases:\n• Spot 6 is in the postdiscal row at roughly the same level as spot 5 (most tailed species).\n• Spot 6 is displaced toward the end-cell bar but clearly less than midway — the gap between spot 6 and the bar is distinctly wider than the displacement from the postdiscal row (e.g., A. silhetensis adorea: spots 6 and 7 are oblique, outer edge of spot 6 well inside inner edge of spot 5, but spot 6 does not approach midway). Select the first No option.\n• Spot 6 is displaced well past midway — touching or overlapping the end-cell bar, with spots 5, 6 and 7 widely out of line (A. agrata and related species: spot 6 inner edge is in line with or inside the inner edge of spot 7). Select the second No option.",
+      "hint": "Two groups share this character — HW spot 6 approximately midway between spot 5 and the end-cell bar: the epimuta group (A. atosia, A. lurida) and the alitaeus group (including A. pseudomuta). If Yes, a spot in FW space 11 will be checked next to tell them apart.\n\nAnswer No in all of these cases:\n• Spot 6 is in the postdiscal row at roughly the same level as spot 5 (most tailed species).\n• Spot 6 is displaced toward the end-cell bar but clearly less than midway — the gap between spot 6 and the bar is distinctly wider than the displacement from the postdiscal row (e.g., A. silhetensis adorea: spots 6 and 7 are oblique, outer edge of spot 6 well inside inner edge of spot 5, but spot 6 does not approach midway). Select the first No option.\n• Spot 6 is displaced well past midway — touching or overlapping the end-cell bar, with spots 5, 6 and 7 widely out of line (A. agrata and related species; also the eumolphus group: spot 6 inner edge is in line with or inside the inner edge of spot 7). Select the second No option.",
       "choices": [
         {
           "label": "Yes — postdiscal spot in space 6 is roughly midway between spot 5 and the end-cell bar",
@@ -102,10 +102,6 @@
         {
           "label": "No — no central spot in FW space 11",
           "next": "q_epimuta_s2"
-        },
-        {
-          "label": "Cannot determine — FW space 11 not visible",
-          "next": "q_epimuta_or_alitaeus_tail"
         }
       ]
     },
@@ -212,11 +208,11 @@
     "q_tailed_dark_area": {
       "type": "question",
       "id": "q_tailed_dark_area",
-      "question": "Is there a distinct dark area under the forewing cell (space 1b), bounded outwardly by a pale line?",
-      "hint": "The camdeo group has a characteristic darkened patch in FW underside space 1b with a clearly defined pale line running across it. This feature is diagnostic for the entire camdeo group. In field photographs this area is often hidden under the hindwing — answer No if the patch is absent or if the area is not visible.",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
+      "hint": "The camdeo group has a restricted dark patch in FW underside space 1b with a clearly defined pale line running outwardly across it — this is a more localised marking than the complete basal-half darkening of the corinda group (already excluded). In field photographs this area is often hidden under the hindwing — answer No if the patch is absent or if the area is not visible.",
       "choices": [
         {
-          "label": "Yes — distinct dark patch in FW space 1b with pale bordering line",
+          "label": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)",
           "next": "q_camdeo_sub"
         },
         {
@@ -497,14 +493,14 @@
       "type": "question",
       "id": "q_tailless_epimuta",
       "question": "On the hindwing underside, is postdiscal spot 6 displaced from the postdiscal row — shifted toward the end-cell bar rather than aligned with the level of spot 5?",
-      "hint": "Several groups show HW spot 6 displaced from the postdiscal row toward the end-cell bar — this includes the agelastus group (A. wildeyana, A. labuana, etc.), the agesilaus group (A. agesilaus, A. avatha), and the epimuta/antimuta/metamuta groups. If spot 6 is clearly pulled inward toward the discal cell — away from the level of spot 5 — answer Yes; follow-up questions will separate the groups using the HW vein-2 dislocation pattern and the FW postdiscal band character. If spot 6 remains broadly aligned with the postdiscal row at roughly the same level as spot 5, answer No.",
+      "hint": "Several groups show HW spot 6 displaced from the postdiscal row toward the end-cell bar — this includes the agelastus group (A. wildeyana, A. labuana, etc.), the agesilaus group (A. agesilaus, A. avatha), and the epimuta/antimuta/metamuta groups. If spot 6 is clearly pulled inward toward the discal cell — away from the level of spot 5 — answer Yes; follow-up questions will separate the groups using the HW vein-2 dislocation pattern and the FW postdiscal band character. If spots 5, 6 and 7 have their centres in line along the postdiscal row and spot 6 is not pulled inward, answer No.",
       "choices": [
         {
           "label": "Yes — spot 6 displaced toward the end-cell bar",
           "next": "q_tailless_epimuta_vein2"
         },
         {
-          "label": "No — spot 6 is in the postdiscal band at roughly the same level as spot 5",
+          "label": "No — HW spots 5, 6 and 7 with centres in line along the postdiscal row; spot 6 not displaced toward the end-cell bar",
           "next": "q_tailless_camdeo"
         }
       ]
@@ -612,7 +608,7 @@
       "hint": "A small number of camdeo group species are tailless (A. belphoebe cowani, A. myrzalina). The camdeo group is identified by a restricted dark patch in FW underside space 1b with a clearly defined pale bordering line. In field photos this area is often hidden under the hindwing — if FW space 1b is not clearly visible, select Cannot determine; the key will continue without this character.",
       "choices": [
         {
-          "label": "Yes — distinct dark patch in FW space 1b with pale bordering line",
+          "label": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)",
           "next": "q_camdeo_sub"
         },
         {
@@ -1760,6 +1756,26 @@
         },
         {
           "label": "No — Malay Peninsula specimen",
+          "next": "q_amph_colour"
+        }
+      ]
+    },
+    "q_amph_colour": {
+      "type": "question",
+      "id": "q_amph_colour",
+      "question": "What is the male's overall upperside colour?",
+      "hint": "A. major is the brightest: cool, saturated blue with no violet tone. A. stubbsi is dull bluish-purple (blue still dominates). Both have the broad ≥1.5 mm border. All others have a violet component: A. amphimuta is warm violet-purple (reddish); A. zylda and A. sceva are violet-blue (cooler, but clearly violet); A. moolaiana is shining violet-blue. If the upperside is not visible, choose Cannot determine — the key continues using border width and underside characters.",
+      "choices": [
+        {
+          "label": "Distinctly blue or bluish-purple — cool tone, no warm reddish-violet hue (A. major / A. stubbsi)",
+          "next": "q_amph_s4"
+        },
+        {
+          "label": "Violet-blue or violet-purple — clear warm or violet tone (A. amphimuta / A. zylda / A. moolaiana / A. sceva)",
+          "next": "q_amph_s5"
+        },
+        {
+          "label": "Cannot determine — upperside not visible",
           "next": "q_amph_s4"
         }
       ]
@@ -2813,7 +2829,8 @@
       "common_name": "",
       "note": "Monotypic group. Filamentous HW tail ~3.5 mm. FW: pointed apex, straight termen. Underside: large purple-brown patch under FW cell (basal half of space 1b completely darkened); FW spot 4 shifted distad; no costal spot in FW space 10; ground colour sometimes glazed with purple wash. HW spot 6 outwardly convex; band partially dislocated at vein 2. Male: deep violet or dark purple, very narrow border. Female: purple-blue. Subspecies: acestes (Malay Peninsula and Singapore), corestes (Langkawi).",
       "features": {
-        "What is the underside ground colour and overall appearance?": "Underside sometimes with purple wash; dark patch under FW cell; pointed FW apex, straight termen; smaller (tail ~3.5 mm) — A. corinda"
+        "What is the underside ground colour and overall appearance?": "Underside sometimes with purple wash; dark patch under FW cell; pointed FW apex, straight termen; smaller (tail ~3.5 mm) — A. corinda",
+        "Does the forewing apex appear distinctly pointed and the termen straight (not rounded)?": "Yes — FW apex distinctly pointed; termen straight"
       }
     },
     "q_democritus_s1": {
@@ -2960,6 +2977,7 @@
       "common_name": "",
       "note": "HW tail 5.0 mm (longest in group). Male: rich violet; FW black border 2.5 mm at tornus, expanding strongly to 7.0 mm at costa. Female: shining blue with evenly curved FW border.",
       "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
         "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "Yes — HW spot 6 directly below spot 7 (not in echelon with spots 5 and 7)",
         "What is the underside ground colour and overall appearance?": "Hair brown; HW spot 6 directly below spot 7 (not echelon); tail ~5 mm — A. overdijkinki"
       }
@@ -2970,7 +2988,10 @@
       "taxon_id": null,
       "name": "Arhopala bazalus zalinda",
       "common_name": "",
-      "note": "HW tail ~3 mm. Male: deep purple; FW black border 1.0 mm at apex decreasing to 1.5 mm at tornus. Underside purplish-brown with very dark markings; FW apex powdered with pale violet scales. Female: usually purple-blue."
+      "note": "HW tail ~3 mm. Male: deep purple; FW black border 1.0 mm at apex decreasing to 1.5 mm at tornus. Underside purplish-brown with very dark markings; FW apex powdered with pale violet scales. Female: usually purple-blue.",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_acta": {
       "type": "result",
@@ -2978,7 +2999,10 @@
       "taxon_id": null,
       "name": "Arhopala acta",
       "common_name": "",
-      "note": "HW tail 3.0 mm. Male: light violet-blue with a regular, very narrow border. FW rounded. Underside markings faint. Female not described."
+      "note": "HW tail 3.0 mm. Male: light violet-blue with a regular, very narrow border. FW rounded. Underside markings faint. Female not described.",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_tameanga": {
       "type": "result",
@@ -2986,7 +3010,10 @@
       "taxon_id": null,
       "name": "Arhopala tameanga",
       "common_name": "",
-      "note": "HW tail 3.0 mm. Male: dark violet-blue; FW apex acute, termen nearly straight. Female: purple-blue with HW border ≥2.0 mm wide. Underside markings clearly defined. Bornean endemic."
+      "note": "HW tail 3.0 mm. Male: dark violet-blue; FW apex acute, termen nearly straight. Female: purple-blue with HW border ≥2.0 mm wide. Underside markings clearly defined. Bornean endemic.",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "q_eumolphus_green": {
       "type": "question",
@@ -3046,7 +3073,11 @@
       "taxon_id": null,
       "name": "Arhopala horsfieldi basiviridis",
       "common_name": "",
-      "note": "Male: green with very broad black borders reaching the cell on all wings. Underside generally darker than relatives, with broad markings. Female: more purple, with slightly broader borders than A. eumolphus."
+      "note": "Male: green with very broad black borders reaching the cell on all wings. Underside generally darker than relatives, with broad markings. Female: more purple, with slightly broader borders than A. eumolphus.",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
+        "Does the forewing apex appear distinctly pointed and the termen straight (not rounded)?": "No — FW apex not distinctly pointed; termen rounded"
+      }
     },
     "r_eumolphus_maxwelli": {
       "type": "result",
@@ -3054,7 +3085,10 @@
       "taxon_id": null,
       "name": "Arhopala eumolphus maxwelli",
       "common_name": "Green Oakblue",
-      "note": "Male: brassy green; FW rounded; black border 2.0 mm at tornus decreasing to 1.0 mm at apex. Female: purple-blue; black border usually reaches apex of FW cell."
+      "note": "Male: brassy green; FW rounded; black border 2.0 mm at tornus decreasing to 1.0 mm at apex. Female: purple-blue; black border usually reaches apex of FW cell.",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_hellenore_siroes": {
       "type": "result",
@@ -3062,7 +3096,10 @@
       "taxon_id": null,
       "name": "Arhopala hellenore siroes",
       "common_name": "",
-      "note": "Male: similar to A. eumolphus but border reduced to a thread above vein 4; FW apex more acute; termen straight or slightly concave. Female: purple-blue with narrower borders than A. eumolphus, not reaching apex of FW cell."
+      "note": "Male: similar to A. eumolphus but border reduced to a thread above vein 4; FW apex more acute; termen straight or slightly concave. Female: purple-blue with narrower borders than A. eumolphus, not reaching apex of FW cell.",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_fulla_intaca": {
       "type": "result",
@@ -3365,47 +3402,6 @@
       "covers_results": [
         "r_normani",
         "r_sublustris_ridleyi"
-      ]
-    },
-    "r_epimuta_alitaeus_unclear": {
-      "type": "result",
-      "id": "r_epimuta_alitaeus_unclear",
-      "taxon_id": null,
-      "name": "Epimuta / alitaeus group — FW space 11 and tail unclear",
-      "common_name": "Cannot determine to group",
-      "note": "⚠ FW space 11 not visible and tail length ambiguous. Two groups share HW spot 6 approximately midway between spot 5 and the end-cell bar:\n\nEpimuta group (tail ∼2.5 mm): A. atosia malayana — markings contrast feebly; A. lurida — markings distinctly darker.\n\nAlitaeus group (tail typically ∼3.5–4.0 mm; A. denta ∼2.5 mm): A. aida, A. alitaeus, A. ariana, A. arianaga, A. denta, A. elopura, A. havilandi, A. pseudomuta, A. sintanga. FW underside space 11 central spot is the key separator.\n\nTry to see FW space 11 to determine group membership.",
-      "covers_results": [
-        "r_atosia_malayana",
-        "r_lurida",
-        "r_aida",
-        "r_alitaeus",
-        "r_ariana",
-        "r_arianaga",
-        "r_denta",
-        "r_elopura",
-        "r_havilandi",
-        "r_pseudomuta",
-        "r_sintanga"
-      ]
-    },
-    "q_epimuta_or_alitaeus_tail": {
-      "type": "question",
-      "id": "q_epimuta_or_alitaeus_tail",
-      "question": "Approximately how long is the hindwing tail?",
-      "hint": "When FW space 11 is obscured, tail length gives a rough guide. Epimuta group (A. atosia, A. lurida): tail ∼2.5 mm. Alitaeus group: tail typically ∼3.5–4.0 mm (exception: A. denta ∼2.5 mm). A short tail does not definitively exclude the alitaeus group.",
-      "choices": [
-        {
-          "label": "Tail short — approximately 2.5 mm",
-          "next": "q_epimuta_s2"
-        },
-        {
-          "label": "Tail long — approximately 3.5–4.0 mm (likely alitaeus group)",
-          "next": "g_alitaeus"
-        },
-        {
-          "label": "Cannot determine — tail length also unclear",
-          "next": "r_epimuta_alitaeus_unclear"
-        }
       ]
     },
     "q_tailed_corinda_apex": {
