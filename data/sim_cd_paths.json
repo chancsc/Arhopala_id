@@ -1820,7 +1820,7 @@
     },
     {
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 in the postdiscal row at roughly the same level as spot 5"
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
@@ -1855,12 +1855,8 @@
       "choice": "Yes — HW cell considerably longer than half wing; FW apex acute or concave"
     },
     {
-      "question": "Are the underside markings incomplete — lacking basal/central cell spots on the forewing and various basal/discal spots on the hindwing, with a narrow postdiscal band?",
-      "choice": "No — complete underside markings"
-    },
-    {
-      "question": "In which region was this butterfly observed?",
-      "choice": "Peninsular Malaysia or Singapore"
+      "question": "Is the underside glazed with a distinct purple wash?",
+      "choice": "No — underside hair-brown (no purple glaze)"
     }
   ],
   "Arhopala trogon": [
@@ -1927,6 +1923,10 @@
     {
       "question": "Does the hindwing cell extend considerably longer than half the wing length, combined with an acute or concave FW apex?",
       "choice": "Yes — HW cell considerably longer than half wing; FW apex acute or concave"
+    },
+    {
+      "question": "Is the underside glazed with a distinct purple wash?",
+      "choice": "Yes — underside glazed with a purple wash"
     },
     {
       "question": "Is the forewing black border significantly wide at the tornus — 2.5–3.0 mm?",
@@ -1997,6 +1997,10 @@
     {
       "question": "Does the hindwing cell extend considerably longer than half the wing length, combined with an acute or concave FW apex?",
       "choice": "Yes — HW cell considerably longer than half wing; FW apex acute or concave"
+    },
+    {
+      "question": "Is the underside glazed with a distinct purple wash?",
+      "choice": "Yes — underside glazed with a purple wash"
     },
     {
       "question": "Is the forewing black border significantly wide at the tornus — 2.5–3.0 mm?",
@@ -2141,10 +2145,6 @@
     {
       "question": "Are the underside markings incomplete — lacking basal/central cell spots on the forewing and various basal/discal spots on the hindwing, with a narrow postdiscal band?",
       "choice": "No — complete underside markings"
-    },
-    {
-      "question": "In which region was this butterfly observed?",
-      "choice": "Borneo (Sabah, Sarawak, Brunei, or Kalimantan)"
     }
   ],
   "Arhopala anarte": [
