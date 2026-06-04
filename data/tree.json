@@ -1327,7 +1327,12 @@
       "taxon_id": null,
       "name": "Arhopala wildeyana wildeyana",
       "common_name": "",
-      "note": "Male upperside: violet blue with broader borders than A. labuana or A. agelastus — 2.0 mm at tornus to 5.0 mm at costa. Female: brighter and purer blue. Tailless. HW postdiscal spot 6 is displaced inward from the postdiscal row, touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line (agelastus group character)."
+      "note": "Tailless. Male upperside: violet blue with broader borders than A. labuana or A. agelastus — 2.0 mm at tornus to 5.0 mm at costa. Female: brighter and purer blue. Underside: HW postdiscal spot 6 significantly displaced inward (basad) toward the discal cell — clearly nearer to the end-cell bar than to spot 5, but not touching. Agelastus group; HW postdiscal band only partially dislocated at vein 2; FW postdiscal band continuous.",
+      "features": {
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Significantly displaced inward toward the discal cell; spot 6 clearly nearer to the end-cell bar than to spot 5, but not touching (e.g. A. wildeyana, A. labuana)",
+        "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
+        "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?": "Yes — FW postdiscal band continuous; often a spot at base of FW space 3 (agelastus group)"
+      }
     },
     "r_agelastus_agelastus": {
       "type": "result",
