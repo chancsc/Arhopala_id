@@ -387,10 +387,10 @@
       "type": "question",
       "id": "q_tailed_aurea_check",
       "question": "Does the hindwing cell extend considerably longer than half the wing length, combined with an acute or concave FW apex?",
-      "hint": "The aurea group (A. aurea, A. horsfieldi) has an exceptionally long hindwing cell — considerably more than half the wing length — together with an acute FW apex that may appear concave along the termen between veins 2 and 4. The eumolphus group (A. eumolphus, A. acta, etc.) has a shorter HW cell. Note that aurea males are also shining green, whereas eumolphus males are blue or purple — but use the cell length as the primary character here.",
+      "hint": "The aurea group (A. aurea, A. horsfieldi) has an exceptionally long hindwing cell — considerably more than half the wing length. The FW apex character is sex-dependent: males have a rather acute apex with a termen that is straight or slightly concave (particularly below vein 5); females have rounded forewings. For female specimens, rely on HW cell length alone. Males of the aurea group are also shining green, whereas eumolphus males are blue or purple — but use the cell length as the primary character.",
       "choices": [
         {
-          "label": "Yes — HW cell considerably longer than half wing; FW apex acute or concave",
+          "label": "Yes — HW cell considerably longer than half wing; FW apex acute or concave (male) / rounded (female)",
           "next": "g_aurea"
         },
         {
