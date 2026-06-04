@@ -317,7 +317,7 @@ function showSpeciesDetail(sp) {
     : '';
 
   const galleryHTML = buildPhotoGallery(sp);
-  const pathHTML = buildPathDisplay(sp.paths, sp.note, sp.resultFeatures);
+  const pathHTML = buildPathDisplay(sp.paths, sp.note, sp.resultFeatures, sp.name);
 
   detailEl.innerHTML = `
     <span class="result-badge">Species Info</span>
@@ -332,15 +332,18 @@ function showSpeciesDetail(sp) {
   `;
 }
 
-function buildPathDisplay(paths, note, resultFeatures) {
+function buildPathDisplay(paths, note, resultFeatures, resultName) {
   if (!paths || paths.length === 0) return '';
 
   const rf = resultFeatures || {};
   const canonical = pickCanonicalPath(paths, note, rf);
   if (!canonical) return '';
   const fallback = pickFallbackPath(paths, note, rf);
+  const simCd = resultName && state.tree
+    ? buildSimulationCdPath(state.tree, pathApplyFeatures(canonical, rf), resultName)
+    : null;
 
-  const renderSteps = path => pathApplyFeatures(path, rf).map(step => {
+  const renderSteps = (path, applyRf) => (applyRf ? pathApplyFeatures(path, rf) : path).map(step => {
     if (step.group) {
       return `<li class="path-step path-step--group"><span class="path-group">● ${escapeHtml(step.group)}</span></li>`;
     }
@@ -359,7 +362,7 @@ function buildPathDisplay(paths, note, resultFeatures) {
     <details class="path-details">
       <summary class="path-summary">Direct path — ${canonical.length} step${canonical.length !== 1 ? 's' : ''}</summary>
       <div class="path-content">
-        <ol class="path-steps">${renderSteps(canonical)}</ol>
+        <ol class="path-steps">${renderSteps(canonical, true)}</ol>
       </div>
     </details>
   `;
@@ -370,7 +373,19 @@ function buildPathDisplay(paths, note, resultFeatures) {
         <summary class="path-summary">Via "Cannot determine" — ${fallback.length} step${fallback.length !== 1 ? 's' : ''}</summary>
         <div class="path-content">
           <p class="path-skip-note">Steps where a feature is unclear or not visible in the photo.</p>
-          <ol class="path-steps">${renderSteps(fallback)}</ol>
+          <ol class="path-steps">${renderSteps(fallback, true)}</ol>
+        </div>
+      </details>
+    `;
+  }
+
+  if (simCd) {
+    html += `
+      <details class="path-details path-details--simcd">
+        <summary class="path-summary">Simulation CD path — ${simCd.length} step${simCd.length !== 1 ? 's' : ''}</summary>
+        <div class="path-content">
+          <p class="path-skip-note">Path when upperside and space 1–3 features are unavailable (all answered "Cannot determine").</p>
+          <ol class="path-steps">${renderSteps(simCd, false)}</ol>
         </div>
       </details>
     `;
@@ -557,6 +572,7 @@ async function initSpeciesPage() {
     ]);
     if (!treeRes.ok || !speciesRes.ok) throw new Error('Failed to load data');
     const [treeData, speciesData] = await Promise.all([treeRes.json(), speciesRes.json()]);
+    state.tree = treeData;
     state.speciesIndex = buildSpeciesIndex(treeData, speciesData);
     state.questionNumbers = buildQuestionNumbers(treeData);
     loadingEl.style.display = 'none';
@@ -635,7 +651,7 @@ function showSpeciesDetailInline(sp) {
     <h2 class="species-common">${escapeHtml(sp.common_name || sp.name)}</h2>
     ${sp.common_name ? `<p class="species-name">${escapeHtml(sp.name)}</p>` : ''}
     ${noteHTML}
-    ${buildPathDisplay(sp.paths, sp.note, sp.resultFeatures)}
+    ${buildPathDisplay(sp.paths, sp.note, sp.resultFeatures, sp.name)}
     ${buildPhotoGallery(sp)}
     <a class="btn-inat" href="${escapeAttr(sp.inat_url)}" target="_blank" rel="noopener noreferrer">
       ${iconExternal()} View on iNaturalist

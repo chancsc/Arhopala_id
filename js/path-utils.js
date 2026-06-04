@@ -100,6 +100,89 @@ function pickFallbackPath(paths, note, resultFeatures) {
   return fallback;
 }
 
+// ── Simulation CD path ────────────────────────────────────────────────────────
+
+// Returns true if the question is about upperside features or spaces 1–3 on the
+// underside — features that a field observer using only a photo may not be able
+// to assess reliably.
+function isSimCdQuestion(question) {
+  const q = (question || '').toLowerCase();
+  return q.includes('upperside') ||
+         q.includes('upper side') ||
+         /\bspace [123][ab]?\b/.test(q);
+}
+
+// Walk the tree from root to resultName, choosing the "Cannot determine" answer
+// for any question where isSimCdQuestion() is true (if a CD choice exists),
+// and the canonical answer for all other questions.
+// Returns the path array, or null if the target cannot be reached this way.
+function buildSimulationCdPath(treeData, canonicalPath, resultName) {
+  if (!treeData || !canonicalPath || !resultName) return null;
+  const nodes = treeData.nodes;
+
+  const canonicalAnswers = new Map();
+  for (const step of canonicalPath) {
+    if (step.question && step.choice) canonicalAnswers.set(step.question, step.choice);
+  }
+
+  function walk(nodeId, path, visited) {
+    if (visited.has(nodeId)) return null;
+    const node = nodes[nodeId];
+    if (!node) return null;
+    const vis2 = new Set(visited); vis2.add(nodeId);
+
+    if (node.type === 'result') {
+      return (node.name || '') === resultName ? path : null;
+    }
+    if (node.type === 'group') {
+      const step = { group: node.group_name };
+      if (node.next) return walk(node.next, [...path, step], vis2);
+      if (node.member_results) {
+        for (const rid of node.member_results) {
+          const rn = nodes[rid];
+          if (rn && rn.name === resultName) return [...path, step];
+        }
+      }
+      return null;
+    }
+    if (node.type === 'question') {
+      const choices = node.choices || [];
+      if (isSimCdQuestion(node.question)) {
+        const cdChoice = choices.find(c => c.label && c.label.startsWith('Cannot determine'));
+        if (cdChoice && cdChoice.next) {
+          const found = walk(cdChoice.next, [...path, { question: node.question, choice: cdChoice.label }], vis2);
+          if (found) return found;
+        }
+        // CD choice not available or didn't reach target — no sim-CD path.
+        return null;
+      }
+      // Try canonical answer first; fall back to DFS for questions reached only via a CD detour.
+      const realAnswer = canonicalAnswers.get(node.question);
+      if (realAnswer) {
+        const c = choices.find(ch => ch.label === realAnswer);
+        if (c && c.next) {
+          const found = walk(c.next, [...path, { question: node.question, choice: realAnswer }], vis2);
+          if (found) return found;
+        }
+      }
+      for (const c of choices) {
+        if (!c.next) continue;
+        if (c.label && c.label.startsWith('Cannot determine')) continue;
+        if (realAnswer && c.label === realAnswer) continue;
+        const found = walk(c.next, [...path, { question: node.question, choice: c.label }], vis2);
+        if (found) return found;
+      }
+      return null;
+    }
+    return null;
+  }
+
+  const result = walk(treeData.start, [], new Set());
+  if (!result) return null;
+  if (JSON.stringify(result) === JSON.stringify(canonicalPath)) return null;
+  return result;
+}
+
 // ── Tree traversal ────────────────────────────────────────────────────────────
 
 // DFS from tree root; returns Map<resultName, Array<path>>.
