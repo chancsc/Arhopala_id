@@ -2508,7 +2508,10 @@
       "taxon_id": null,
       "name": "Arhopala myrzala lammas",
       "common_name": "",
-      "note": "Tailed. Tail length not recorded in key. Underside: crimson-brown with markings outlined by white striae; spot at base of HW space 6. Male: shining royal blue with narrow black borders. Myrzala subgroup."
+      "note": "Tailed. Tail length not recorded in key. Underside: crimson-brown with markings outlined by white striae; spot at base of HW space 6. Male: shining royal blue with narrow black borders. Myrzala subgroup.",
+      "features": {
+        "Is the specimen tailed?": "Cannot determine"
+      }
     },
     "r_myrzalina": {
       "type": "result",
@@ -2516,7 +2519,10 @@
       "taxon_id": null,
       "name": "Arhopala myrzalina",
       "common_name": "",
-      "note": "Tailless. Underside: crimson-brown with markings outlined by white striae; spot at base of HW space 6. Male: broad FW border expanding from 1.5 mm at tornus to 4.0 mm at costa. Myrzala subgroup."
+      "note": "Tailless. Underside: crimson-brown with markings outlined by white striae; spot at base of HW space 6. Male: broad FW border expanding from 1.5 mm at tornus to 4.0 mm at costa. Myrzala subgroup.",
+      "features": {
+        "Is the specimen tailed?": "Cannot determine"
+      }
     },
     "r_bazaloides_bazaloides": {
       "type": "result",
