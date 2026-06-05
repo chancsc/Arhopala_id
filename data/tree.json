@@ -2963,7 +2963,10 @@
       "taxon_id": null,
       "name": "Arhopala atosia malayana",
       "common_name": "Tailed Disc Oakblue",
-      "note": "HW tail ~2.5 mm. Male FW upperside: thread-width black border; discal patch large and circular, extending widely into the cell and space 1b. Underside markings contrast feebly with the ground colour."
+      "note": "HW tail ~2.5 mm. Male FW upperside: thread-width black border; discal patch large and circular, extending widely into the cell and space 1b. Underside markings contrast feebly with the ground colour.",
+      "features": {
+        "Is this a relatively large species with a conspicuously projecting tornal lobe on the hindwing, and postdiscal spots 6 and 7 placed vertically?": "No — or tornal lobe less conspicuous"
+      }
     },
     "r_lurida": {
       "type": "result",
@@ -2971,7 +2974,10 @@
       "taxon_id": null,
       "name": "Arhopala lurida",
       "common_name": "",
-      "note": "HW tail ~2.5 mm. Male FW upperside: border slightly expanding toward apex; discal patch smaller than in A. atosia, almost entirely confined to bases of spaces 2 and 3. Underside markings darker and more clearly defined than A. atosia."
+      "note": "HW tail ~2.5 mm. Male FW upperside: border slightly expanding toward apex; discal patch smaller than in A. atosia, almost entirely confined to bases of spaces 2 and 3. Underside markings darker and more clearly defined than A. atosia.",
+      "features": {
+        "Is this a relatively large species with a conspicuously projecting tornal lobe on the hindwing, and postdiscal spots 6 and 7 placed vertically?": "No — or tornal lobe less conspicuous"
+      }
     },
     "r_epimuta_tailed_unclear": {
       "type": "result",
@@ -2980,6 +2986,9 @@
       "name": "Epimuta group — tailed species (unresolved)",
       "common_name": "Cannot determine to species",
       "note": "⚠ Neither underside nor upperside visible. Both candidates have HW tail ~2.5 mm.\n\nPrimary character (underside): A. atosia malayana — markings contrast feebly with ground colour. A. lurida — markings darker and more clearly defined.\n\nConfirmatory character (upperside, male): A. atosia — FW discal patch large and circular, extending widely into cell and space 1b; border a thread. A. lurida — patch smaller, almost confined to bases of spaces 2–3; border slightly expanding toward apex.\n\nCheck the underside contrast first; inspect upperside if still uncertain.",
+      "features": {
+        "Is this a relatively large species with a conspicuously projecting tornal lobe on the hindwing, and postdiscal spots 6 and 7 placed vertically?": "No — or tornal lobe less conspicuous"
+      },
       "covers_results": [
         "r_atosia_malayana",
         "r_lurida"
