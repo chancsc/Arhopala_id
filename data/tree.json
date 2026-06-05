@@ -2039,15 +2039,15 @@
       "taxon_id": null,
       "name": "Arhopala moorei busa",
       "common_name": "",
-      "note": "Tailless. Male: both wings the same shade of bluish-purple in all lights (FW 16–18 mm). Female: duller and more purple than A. muta's female. Underside: basal spot present in FW cell; spots quadrate; FW space 2 spot stepped toward termen."
+      "note": "Tailless. Male: both wings the same shade of blue in all lights — key distinction from A. muta maranda, whose HW is slightly paler and brighter (FW 16–18 mm). Female: bluish purple with broad black borders (duller and more purple than A. muta's female). Underside: spots quadrate/banded; FW space 2 spot stepped toward termen; HW postdiscal band dislocated — inner edge of spot in space 2 in line with, or only slightly outside, the outer edge of spot 1b. HW cilia: white spot in space 1a absent (very rarely present but extremely obscure)."
     },
     "r_muta_maranda": {
       "type": "result",
       "id": "r_muta_maranda",
       "taxon_id": null,
       "name": "Arhopala muta maranda",
-      "common_name": "",
-      "note": "Tailless. Male: FW rather dark bright blue; HW slightly paler and more glistening — the two wings are NOT the same shade in all lights (FW 17–19 mm). FW black border expands from 1.0–1.5 mm at tornus to 1.5–2.0 mm at apex. Female: shining blue with only a slight purple tint. Underside: basal spot present in FW cell; HW postdiscal band dislocated — inner edge of spot in space 2 in line with, or only slightly outside, the outer edge of spot 1b."
+      "common_name": "Raffles's Oakblue",
+      "note": "Tailless. Male: FW rather dark bright blue; HW slightly paler and more glistening — the two wings are NOT the same shade in all lights (FW 17–19 mm). FW black border expands from 1.0–1.5 mm at tornus to 1.5–2.0 mm at apex. Female: shining blue with only a slight purple tint, broad black borders. Underside: spots quadrate/banded; FW space 2 spot stepped toward termen; HW postdiscal band dislocated — inner edge of spot in space 2 in line with, or only slightly outside, the outer edge of spot 1b. HW cilia: white spot in space 1a absent."
     },
     "q_perimuta_s1": {
       "type": "question",
