@@ -101,19 +101,23 @@ function getCdLabel(nodes, questionText) {
 function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
   if (!canonicalAnswers || canonicalAnswers.size === 0) return null;
 
+  // Build question → choices lookup so isSimCdQuestion can inspect CD choice labels
+  const qChoicesMap = new Map();
+  for (const node of Object.values(treeNodes)) {
+    if (node.type === 'question' && !qChoicesMap.has(node.question))
+      qChoicesMap.set(node.question, node.choices || []);
+  }
+
   // Build sim-CD answers: replace sim-CD questions with their CD label
   const simAnswers = new Map();
-  let hasCd = false;
   for (const [q, answer] of canonicalAnswers) {
-    if (isSimCdQuestion(q)) {
+    if (isSimCdQuestion(q, qChoicesMap.get(q))) {
       const cdLabel = getCdLabel(treeNodes, q);
-      if (cdLabel) { simAnswers.set(q, cdLabel); hasCd = true; }
-      else           simAnswers.set(q, answer);
+      simAnswers.set(q, cdLabel || answer);
     } else {
       simAnswers.set(q, answer);
     }
   }
-  if (!hasCd) return null;
 
   // Augment simAnswers with inferred answers for CD-followup questions.
   // When a sim-CD question Q has canonical answer C → node X, and Q's CD branch
@@ -137,6 +141,8 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
     if (!followNode || followNode.type !== 'question') continue;
     const followQText = followNode.question;
     if (simAnswers.has(followQText)) continue;
+    // Don't pre-fill answers for follow questions that are themselves sim-CD
+    if (isSimCdQuestion(followQText, followNode.choices || [])) continue;
     for (const fc of (followNode.choices || [])) {
       if (fc.next === canonicalNext && !(fc.label && fc.label.startsWith('Cannot determine'))) {
         simAnswers.set(followQText, fc.label);
@@ -166,7 +172,7 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
       if (simAnswers.has(q)) {
         nextQ = q; nextAns = simAnswers.get(q); break;
       }
-      if (isSimCdQuestion(q)) {
+      if (isSimCdQuestion(q, qChoicesMap.get(q))) {
         const cdLabel = getCdLabel(treeNodes, q);
         if (cdLabel) { nextQ = q; nextAns = cdLabel; simCdQs.add(q); break; }
       }

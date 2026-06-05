@@ -80,6 +80,13 @@ const { matrix } = buildFeatureMatrix(treeData, pathsMap);
 const qNumbers   = buildQuestionNumbers(treeData);
 const treeNodes  = treeData.nodes;
 
+// Question → choices lookup so isSimCdQuestion can inspect CD choice labels
+const questionChoicesMap = new Map();
+for (const node of Object.values(treeNodes)) {
+  if (node.type === 'question' && !questionChoicesMap.has(node.question))
+    questionChoicesMap.set(node.question, node.choices || []);
+}
+
 // Find species (case-insensitive partial match)
 const targetName = [...matrix.keys()].find(n => n.toLowerCase().includes(targetArg.toLowerCase()));
 if (!targetName) {
@@ -95,7 +102,7 @@ console.log(`Canonical features: ${canonicalAnswers.size} questions\n`);
 // Build sim-CD answer map
 const simAnswers = new Map();
 for (const [q, ans] of canonicalAnswers) {
-  if (isSimCdQuestion(q)) {
+  if (isSimCdQuestion(q, questionChoicesMap.get(q))) {
     const cd = getCdLabel(treeNodes, q);
     simAnswers.set(q, cd || ans);
   } else {
@@ -111,17 +118,22 @@ const storedAnswerMap = new Map((stored || []).map(s => [s.question, s.choice]))
 const answers       = new Map();
 const questionOrder = [];
 const simPath       = [];
+// Track sim-CD questions encountered during simulation (mirrors compute_sim_cd_paths.js)
+const simCdQs = new Set([...simAnswers.entries()]
+  .filter(([, a]) => a.startsWith('Cannot determine')).map(([q]) => q));
 
-for (let step = 0; step < 40; step++) {
+for (let step = 0; step < 50; step++) {
   const scores = scoreAllPure(answers, matrix);
   getDisplayQuestionsPure(answers, scores, matrix, treeNodes, questionOrder);
 
-  // Check stop condition
+  // Stop once species is uniquely #1 AND all sim-CD questions have been answered
   if (scores.length > 0 && scores[0].name === targetName &&
       (scores.length < 2 || scores[0].score > scores[1].score)) {
-    const rank2 = scores[1] ? `  #2: ${scores[1].name.replace('Arhopala ','')} ${scores[1].score}/${scores[1].max}` : '';
-    console.log(`  → STOP: ${targetName.replace('Arhopala ','')} is #1 (${scores[0].score}/${scores[0].max})${rank2}`);
-    break;
+    if ([...simCdQs].every(q => answers.has(q))) {
+      const rank2 = scores[1] ? `  #2: ${scores[1].name.replace('Arhopala ','')} ${scores[1].score}/${scores[1].max}` : '';
+      console.log(`  → STOP: ${targetName.replace('Arhopala ','')} is #1 (${scores[0].score}/${scores[0].max})${rank2}`);
+      break;
+    }
   }
 
   // Find next answerable question in the window (cap 15).
@@ -134,9 +146,9 @@ for (let step = 0; step < 40; step++) {
     if (answers.has(q)) continue;
     if (++seen > 15) break;
     if (simAnswers.has(q)) { nextQ = q; nextAns = simAnswers.get(q); break; }
-    if (isSimCdQuestion(q)) {
+    if (isSimCdQuestion(q, questionChoicesMap.get(q))) {
       const cd = getCdLabel(treeNodes, q);
-      if (cd) { nextQ = q; nextAns = cd; break; }
+      if (cd) { nextQ = q; nextAns = cd; simCdQs.add(q); break; }
     }
     // Window question not in this species' features — use stored path answer if present
     if (storedAnswerMap.has(q)) { nextQ = q; nextAns = storedAnswerMap.get(q); break; }

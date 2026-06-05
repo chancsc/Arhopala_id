@@ -105,11 +105,17 @@ function pickFallbackPath(paths, note, resultFeatures) {
 // Returns true if the question is about upperside features or spaces 1–3 on the
 // underside — features that a field observer using only a photo may not be able
 // to assess reliably.
-function isSimCdQuestion(question) {
+// Pass the node's choices array (optional) to also catch questions whose text
+// doesn't say "upperside" but whose CD choice label does (e.g. border-width Qs).
+function isSimCdQuestion(question, choices) {
   const q = (question || '').toLowerCase();
-  return q.includes('upperside') ||
-         q.includes('upper side') ||
-         /\bspace [123][ab]?\b/.test(q);
+  if (q.includes('upperside') || q.includes('upper side') || /\bspace [123][ab]?\b/.test(q))
+    return true;
+  if (Array.isArray(choices)) {
+    return choices.some(c =>
+      c.label && c.label.startsWith('Cannot determine') && /upperside/i.test(c.label));
+  }
+  return false;
 }
 
 // Walk the tree from root to resultName, choosing the "Cannot determine" answer
@@ -147,7 +153,7 @@ function buildSimulationCdPath(treeData, canonicalPath, resultName) {
     }
     if (node.type === 'question') {
       const choices = node.choices || [];
-      if (isSimCdQuestion(node.question)) {
+      if (isSimCdQuestion(node.question, choices)) {
         const cdChoice = choices.find(c => c.label && c.label.startsWith('Cannot determine'));
         if (cdChoice && cdChoice.next) {
           const found = walk(cdChoice.next, [...path, { question: node.question, choice: cdChoice.label }], vis2);
