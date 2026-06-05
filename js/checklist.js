@@ -110,144 +110,18 @@ function initData(treeData, speciesData) {
 
 // ── Scoring ──────────────────────────────────────────────────────────────────
 
+// Thin wrapper: delegates to scoreAllPure() in path-utils.js.
 function scoreAll() {
-  if (cs.answers.size === 0) {
-    cs.scores = [...cs.featureMatrix.keys()].map(n => ({ name: n, score: 0, max: 0 }));
-    return;
-  }
-  cs.scores = [...cs.featureMatrix.entries()].map(([name, features]) => {
-    let score = 0, max = 0;
-    for (const [q, ans] of cs.answers) {
-      if (ans.startsWith('Cannot determine')) continue; // treated as unanswered; no score effect
-      max += 2;
-      if (features.has(q)) score += features.get(q) === ans ? 2 : -1;
-      // 0 if the question is not on this species' canonical path (not applicable)
-    }
-    return { name, score, max };
-  }).sort((a, b) => {
-    // Sort by match percentage (score/max) so species with fewer applicable
-    // questions aren't disadvantaged vs species with longer canonical paths.
-    // max=0 means no applicable questions were answered → treat as 0% (neutral).
-    const pctA = a.max > 0 ? a.score / a.max : 0;
-    const pctB = b.max > 0 ? b.score / b.max : 0;
-    return pctB - pctA || a.name.localeCompare(b.name);
-  });
+  cs.scores = scoreAllPure(cs.answers, cs.featureMatrix);
 }
 
 // ── Question selection ───────────────────────────────────────────────────────
 
+// Thin wrapper: delegates to getDisplayQuestionsPure() in path-utils.js so the
+// browser and the Node.js sim script share exactly one implementation.
 function getDisplayQuestions() {
-  // Build diversity pool: all species tied at the leading score percentage.
-  // A hard top-30 cut would exclude tied species alphabetically (e.g. ijanensis
-  // at rank 47 when 70+ species all match Q1/Q2/Q4 at 100%), causing diagnostic
-  // questions for those species to disappear from the list.
-  let topNames;
-  if (cs.answers.size === 0 || cs.scores.every(s => s.score === 0)) {
-    topNames = [...cs.featureMatrix.keys()];
-  } else {
-    const topPct = cs.scores[0].max > 0 ? cs.scores[0].score / cs.scores[0].max : 0;
-    topNames = cs.scores
-      .filter(s => (s.max > 0 ? s.score / s.max : 0) >= topPct)
-      .map(s => s.name);
-  }
-
-  // Build diversity map: question → set of distinct answers among top candidates
-  // Also build filtered coverage: count of top candidates that have each question.
-  const diversity = new Map();
-  const filteredCov = new Map();
-  for (const name of topNames) {
-    for (const [q, c] of (cs.featureMatrix.get(name) || new Map())) {
-      if (!diversity.has(q)) diversity.set(q, new Set());
-      diversity.get(q).add(c);
-      filteredCov.set(q, (filteredCov.get(q) || 0) + 1);
-    }
-  }
-
-  const touched = q => cs.answers.has(q);
-
-  // Also keep questions on the top candidate's canonical path so users can follow
-  // the complete key path even after a question stops discriminating (e.g. Q72
-  // q_amphimuta_sub: all top candidates share the same "tailless" choice once the
-  // pool narrows to the amphimuta subgroup, so choices.size drops to 1 and it would
-  // otherwise vanish before the user can answer it).
-  const top1Features = (cs.answers.size > 0 && cs.scores.length > 0)
-    ? (cs.featureMatrix.get(cs.scores[0].name) || new Map())
-    : new Map();
-
-  // When a question was answered with "Cannot determine", surface the question that the
-  // decision tree would show next (the CD-branch follow-up). This ensures that, for
-  // example, answering Q87 as CD causes Q88 to appear so the user can score the
-  // alternative apex-shape character instead of missing it entirely.
-  const cdFollowups = new Set();
-  if (cs.treeNodes) {
-    for (const [q, choice] of cs.answers) {
-      if (!choice.startsWith('Cannot determine')) continue;
-      // Collect CD-branch next-questions from every node sharing this question text.
-      // Only add the followup when all matching nodes agree on the same destination —
-      // ambiguous cases (same question text, different CD destinations in different
-      // tree branches) must not inject a spurious followup.
-      const candidates = new Set();
-      for (const node of Object.values(cs.treeNodes)) {
-        if (node.type !== 'question' || node.question !== q) continue;
-        const cdChoice = node.choices.find(c => c.label === choice);
-        if (!cdChoice || !cdChoice.next) continue;
-        const follow = cs.treeNodes[cdChoice.next];
-        if (follow && follow.type === 'question') candidates.add(follow.question);
-      }
-      if (candidates.size === 1) cdFollowups.add([...candidates][0]);
-    }
-  }
-
-  // Candidate pool: touched + discriminating + top-1 key-path + CD-followup questions
-  const allQ = [...diversity.entries()]
-    .filter(([q, choices]) => touched(q) || choices.size >= 2 || top1Features.has(q) || cdFollowups.has(q))
-    .map(([q]) => q);
-  const allQSet = new Set(allQ);
-
-  // Sort helper for new questions: morphology before upperside, then by filtered coverage
-  const newQSort = (a, b) => {
-    const aUpper = /upperside/i.test(a);
-    const bUpper = /upperside/i.test(b);
-    if (aUpper !== bUpper) return aUpper ? 1 : -1;
-    return (filteredCov.get(b) || 0) - (filteredCov.get(a) || 0);
-  };
-
-  if (!cs.questionOrder) {
-    // First render: establish initial stable order
-    cs.questionOrder = allQ.slice().sort(newQSort);
-  } else {
-    // Keep existing order; remove un-touched questions that are no longer relevant
-    cs.questionOrder = cs.questionOrder.filter(q => touched(q) || allQSet.has(q));
-    const existing = new Set(cs.questionOrder);
-    // CD-followup questions: move (or insert) right after the deepest answered CD question
-    // so they appear immediately before other unanswered questions and aren't hidden by
-    // the 15-cap. Q88 may already be in question_order from the initial sort (it has 2
-    // answer choices) but sits at a far position — we must move it, not just append it.
-    if (cdFollowups.size > 0) {
-      const cdPositions = [...cs.answers.entries()]
-        .filter(([, ac]) => ac.startsWith('Cannot determine'))
-        .map(([aq]) => cs.questionOrder.indexOf(aq))
-        .filter(i => i !== -1);
-      if (cdPositions.length > 0) {
-        const insertAt = Math.max(...cdPositions) + 1;
-        for (const q of cdFollowups) {
-          if (!allQSet.has(q)) continue;
-          const curIdx = cs.questionOrder.indexOf(q);
-          if (curIdx === -1) {
-            cs.questionOrder.splice(insertAt, 0, q);
-            existing.add(q);
-          } else if (curIdx > insertAt) {
-            cs.questionOrder.splice(curIdx, 1);
-            cs.questionOrder.splice(insertAt, 0, q);
-          }
-        }
-      }
-    }
-    // Append any newly relevant questions at the end
-    const newQs = allQ.filter(q => !existing.has(q)).sort(newQSort);
-    if (newQs.length) cs.questionOrder.push(...newQs);
-  }
-
+  if (!cs.questionOrder) cs.questionOrder = [];
+  getDisplayQuestionsPure(cs.answers, cs.scores, cs.featureMatrix, cs.treeNodes, cs.questionOrder);
   return cs.questionOrder;
 }
 
