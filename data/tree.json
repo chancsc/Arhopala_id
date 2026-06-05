@@ -851,10 +851,12 @@
       "type": "group",
       "id": "g_amphimuta_perimuta",
       "group_name": "amphimuta group — perimuta subgroup",
-      "description": "The FW postdiscal spots in spaces 2 and 3 are in line with each other. Two Malaysian species, one easily recognized by a yellowish discal area on the HW underside.",
+      "description": "Tailless. FW postdiscal spots in spaces 2 and 3 are in line with each other (may be oblique); spot 4 shifted distad. Three Malaysian species, one (A. perimuta regina) immediately recognized by a yellowish discal area on the HW underside.",
       "key_features": [
-        "HW spots 5, 6, 7 in echelon (centres in straight line)",
-        "FW postdiscal spots in spaces 2 and 3 are in line"
+        "Tailless",
+        "HW spots 5, 6, 7 in echelon (centres overlapping, in a straight line)",
+        "FW postdiscal spots 2 and 3 in line; spot 4 shifted distad",
+        "A. perimuta: yellowish HW discal area; markings obscure; no tornal green scales"
       ],
       "next": "q_perimuta_s1"
     },
@@ -2065,7 +2067,7 @@
       "taxon_id": null,
       "name": "Arhopala perimuta regina",
       "common_name": "",
-      "note": "Tailless; evenly rounded HW tornus with no tooth or tail at vein 2. Easily recognized: HW underside has a yellowish discal area with obscure or almost absent markings; tornal green scales completely absent. FW postdiscal spots 2 and 3 are in line (perimuta subgroup)."
+      "note": "Tailless; evenly rounded HW tornus with no tooth or tail at vein 2. Easily recognized: HW underside has a prominent central yellowish discal area; markings generally obscure or ill-defined; tornal green scales completely absent. HW postdiscal spots 5, 6, and 7 in echelon (centres overlapping, in a straight line); spot 6 positioned nearer to spot 5 than to the end-cell bar. FW: postdiscal spots 2 and 3 in line (may be oblique); spot 4 shifted distad out of line with spots 5 and 6; dark area under the FW cell obscure, ill-defined, or absent; no spot at the extreme base of space 3."
     },
     "r_metamuta_metamuta": {
       "type": "result",
