@@ -305,6 +305,57 @@ def compute_sim_cd_path(result_name, feature_matrix, q_meta, q_cov, tree_nodes,
     if not has_cd:
         return None  # No sim-CD questions in path; identical to direct path
 
+    # Augment sim_answers with answers for CD-followup questions.
+    # When a sim-CD question Q (answered CD in sim_answers) has a canonical answer
+    # C → node X, and Q's CD branch leads to followup question F, and F has a
+    # non-CD choice that also leads to X — add that choice for F.
+    #
+    # Example: Q88 "basal half of space 1b darkened?" is sim-CD.
+    #   Canonical for non-corinda tailed: "No — not darkened" → q_ijanensis_hw_streak (Q80)
+    #   CD branch → q_tailed_corinda_apex (Q89 "FW apex pointed?")
+    #   Q89 "No — not pointed" → q_ijanensis_hw_streak ← same destination
+    #   ⇒ add sim_answers[Q89] = "No — FW apex not distinctly pointed; termen rounded"
+    # This lets the simulation answer Q89 when it appears as a CD-followup after Q88[CD].
+    for node in tree_nodes.values():
+        if node.get('type') != 'question':
+            continue
+        q_text = node.get('question')
+        if q_text not in sim_answers:
+            continue
+        if not sim_answers[q_text].startswith('Cannot determine'):
+            continue
+        canonical_ans = canonical_answers.get(q_text)
+        if not canonical_ans or canonical_ans.startswith('Cannot determine'):
+            continue
+        # Destination of Q's canonical (non-CD) answer
+        canonical_next = None
+        for c in (node.get('choices') or []):
+            if c['label'] == canonical_ans:
+                canonical_next = c.get('next')
+                break
+        if not canonical_next:
+            continue
+        # Destination of Q's CD branch (the CD-followup question)
+        cd_next = None
+        for c in (node.get('choices') or []):
+            if c['label'].startswith('Cannot determine'):
+                cd_next = c.get('next')
+                break
+        if not cd_next:
+            continue
+        follow_node = tree_nodes.get(cd_next)
+        if not follow_node or follow_node.get('type') != 'question':
+            continue
+        follow_q_text = follow_node['question']
+        if follow_q_text in sim_answers:
+            continue  # Already have an answer for this question
+        # Find the non-CD choice of the followup question that leads to canonical_next
+        for fc in (follow_node.get('choices') or []):
+            if (fc.get('next') == canonical_next and
+                    not fc['label'].startswith('Cannot determine')):
+                sim_answers[follow_q_text] = fc['label']
+                break
+
     # Simulate Feature Scoring, answering questions in display order.
     # Continue until:
     # - rank #1 achieved with strict score lead AND no more sim-CD questions remain unshown
