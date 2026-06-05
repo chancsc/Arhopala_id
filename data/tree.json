@@ -443,22 +443,6 @@
         },
         {
           "label": "No — postdiscal spots distinct; typical markings present",
-          "next": "q_tailless_perimuta"
-        }
-      ]
-    },
-    "q_tailless_perimuta": {
-      "type": "question",
-      "id": "q_tailless_perimuta",
-      "question": "Is there a prominent yellowish area in the centre of the hindwing underside, and are the underside markings generally obscure or ill-defined?",
-      "hint": "A. perimuta regina is one of the easiest tailless Arhopala to recognise: the hindwing underside has a striking central yellowish discal area (not white or grey), and the markings across both wings are generally obscure or ill-defined — ill-defined enough that precise spot positions can be hard to assess. It also completely lacks the metallic green or brassy tornal scales seen in most other tailless Arhopala. If the HW discal area is the usual whitish-grey and the markings are well-defined, continue.",
-      "choices": [
-        {
-          "label": "Yes — prominent yellowish HW central discal area; markings obscure or ill-defined; no tornal green scales",
-          "next": "r_perimuta_regina"
-        },
-        {
-          "label": "No — HW discal area whitish-grey; markings well-defined",
           "next": "q_tailless_inornata"
         }
       ]
@@ -475,6 +459,22 @@
         },
         {
           "label": "No",
+          "next": "q_tailless_perimuta"
+        }
+      ]
+    },
+    "q_tailless_perimuta": {
+      "type": "question",
+      "id": "q_tailless_perimuta",
+      "question": "Is there a prominent yellowish area in the centre of the hindwing underside, and are the underside markings generally obscure or ill-defined?",
+      "hint": "A. perimuta regina is one of the easiest tailless Arhopala to recognise: the hindwing underside has a striking central yellowish discal area (not white or grey), and the markings across both wings are generally obscure or ill-defined — ill-defined enough that precise spot positions can be hard to assess. It also completely lacks the metallic green or brassy tornal scales seen in most other tailless Arhopala. If the HW discal area is the usual whitish-grey and the markings are well-defined, continue.",
+      "choices": [
+        {
+          "label": "Yes — prominent yellowish HW central discal area; markings obscure or ill-defined; no tornal green scales",
+          "next": "r_perimuta_regina"
+        },
+        {
+          "label": "No — HW discal area whitish-grey; markings well-defined",
           "next": "q_tailless_hypomuta"
         }
       ]
