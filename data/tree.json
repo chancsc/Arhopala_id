@@ -2950,10 +2950,6 @@
         {
           "label": "Markings darker and more clearly defined",
           "next": "r_lurida"
-        },
-        {
-          "label": "Cannot determine — underside also not visible",
-          "next": "r_epimuta_tailed_unclear"
         }
       ]
     },
@@ -3488,7 +3484,7 @@
           "next": "q_ijanensis_hw_streak"
         },
         {
-          "label": "Cannot determine — FW outline not visible",
+          "label": "Cannot determine — FW outline not clear",
           "next": "q_ijanensis_hw_streak"
         }
       ]
