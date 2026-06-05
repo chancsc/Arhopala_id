@@ -103,6 +103,10 @@ for (const [q, ans] of canonicalAnswers) {
   }
 }
 
+// Load stored path early so window-question fallback can use it during simulation
+const stored        = simCdPaths[targetName];
+const storedAnswerMap = new Map((stored || []).map(s => [s.question, s.choice]));
+
 // Simulate step by step
 const answers       = new Map();
 const questionOrder = [];
@@ -120,7 +124,10 @@ for (let step = 0; step < 40; step++) {
     break;
   }
 
-  // Find next answerable question in the window (cap 15)
+  // Find next answerable question in the window (cap 15).
+  // For questions that appear in the window but are not in this species' own
+  // feature set (e.g. questions owned by neighbouring candidates), look up the
+  // answer in the stored sim_cd path so the simulation stays on-track.
   let nextQ = null, nextAns = null;
   let seen = 0;
   for (const q of questionOrder) {
@@ -131,6 +138,8 @@ for (let step = 0; step < 40; step++) {
       const cd = getCdLabel(treeNodes, q);
       if (cd) { nextQ = q; nextAns = cd; break; }
     }
+    // Window question not in this species' features — use stored path answer if present
+    if (storedAnswerMap.has(q)) { nextQ = q; nextAns = storedAnswerMap.get(q); break; }
   }
   if (nextQ === null) { console.log('  (no more answerable questions in window)'); break; }
 
@@ -148,7 +157,6 @@ for (let step = 0; step < 40; step++) {
 }
 
 // Compare with stored sim_cd path
-const stored = simCdPaths[targetName];
 console.log('\n=== Stored sim_cd path ===');
 if (!stored) {
   console.log('  (none stored)');
