@@ -231,6 +231,140 @@ function buildTreePaths(treeData) {
   return pathsMap;
 }
 
+// ── Feature Scoring pure functions ───────────────────────────────────────────
+// These take all state as explicit parameters so they can be called identically
+// from the browser (checklist.js wraps them with cs.* args) and from Node.js
+// (compute_sim_cd_paths.js passes local variables directly).  One implementation,
+// zero drift between the simulation script and the live app.
+
+// Score all species given current answers and the feature matrix.
+// Returns a sorted array of { name, score, max } (highest match% first).
+function scoreAllPure(answers, featureMatrix) {
+  if (answers.size === 0)
+    return [...featureMatrix.keys()].map(n => ({ name: n, score: 0, max: 0 }));
+  return [...featureMatrix.entries()].map(([name, features]) => {
+    let score = 0, max = 0;
+    for (const [q, ans] of answers) {
+      if (ans.startsWith('Cannot determine')) continue;
+      max += 2;
+      if (features.has(q)) score += features.get(q) === ans ? 2 : -1;
+    }
+    return { name, score, max };
+  }).sort((a, b) => {
+    const pctA = a.max > 0 ? a.score / a.max : 0;
+    const pctB = b.max > 0 ? b.score / b.max : 0;
+    return pctB - pctA || a.name.localeCompare(b.name);
+  });
+}
+
+// Compute the ordered list of questions to display given current state.
+//
+// questionOrder is a MUTABLE array that carries state across renders:
+//   • pass an empty array [] for the first render (function fills it)
+//   • pass the same array on subsequent renders (function updates in-place)
+//
+// Returns the cdFollowups Set (useful for callers that need it, e.g. the sim).
+function getDisplayQuestionsPure(answers, scores, featureMatrix, treeNodes, questionOrder) {
+  // ── top candidate pool ──
+  let topNames;
+  if (answers.size === 0 || scores.every(s => s.score === 0)) {
+    topNames = [...featureMatrix.keys()];
+  } else {
+    const topPct = scores[0].max > 0 ? scores[0].score / scores[0].max : 0;
+    topNames = scores
+      .filter(s => (s.max > 0 ? s.score / s.max : 0) >= topPct)
+      .map(s => s.name);
+  }
+
+  // ── diversity & filtered coverage ──
+  const diversity   = new Map();
+  const filteredCov = new Map();
+  for (const name of topNames) {
+    for (const [q, c] of (featureMatrix.get(name) || new Map())) {
+      if (!diversity.has(q)) diversity.set(q, new Set());
+      diversity.get(q).add(c);
+      filteredCov.set(q, (filteredCov.get(q) || 0) + 1);
+    }
+  }
+
+  const touched       = q => answers.has(q);
+  const top1Features  = (answers.size > 0 && scores.length > 0)
+    ? (featureMatrix.get(scores[0].name) || new Map()) : new Map();
+
+  // ── CD-followup insertion ──
+  // When a question was answered CD, surface the tree's next question on that
+  // branch so the user can score an alternative character.  Only insert when
+  // all nodes sharing the question text agree on the same CD destination
+  // (ambiguous multi-node cases must not inject a spurious followup).
+  const cdFollowups = new Set();
+  if (treeNodes) {
+    for (const [q, choice] of answers) {
+      if (!choice.startsWith('Cannot determine')) continue;
+      const candidates = new Set();
+      for (const node of Object.values(treeNodes)) {
+        if (node.type !== 'question' || node.question !== q) continue;
+        const cdChoice = node.choices.find(c => c.label === choice);
+        if (!cdChoice || !cdChoice.next) continue;
+        const follow = treeNodes[cdChoice.next];
+        if (follow && follow.type === 'question') candidates.add(follow.question);
+      }
+      if (candidates.size === 1) cdFollowups.add([...candidates][0]);
+    }
+  }
+
+  // ── candidate question pool ──
+  const allQ = [...diversity.entries()]
+    .filter(([q, choices]) => touched(q) || choices.size >= 2 || top1Features.has(q) || cdFollowups.has(q))
+    .map(([q]) => q);
+  const allQSet = new Set(allQ);
+
+  // Sort helper: underside morphology before upperside, then by filtered coverage
+  const newQSort = (a, b) => {
+    const aUpper = /upperside/i.test(a);
+    const bUpper = /upperside/i.test(b);
+    if (aUpper !== bUpper) return aUpper ? 1 : -1;
+    return (filteredCov.get(b) || 0) - (filteredCov.get(a) || 0);
+  };
+
+  if (questionOrder.length === 0) {
+    // First render: establish stable initial order
+    questionOrder.push(...allQ.slice().sort(newQSort));
+  } else {
+    // Keep existing order; remove unanswered questions that are no longer relevant
+    const filtered = questionOrder.filter(q => touched(q) || allQSet.has(q));
+    questionOrder.length = 0;
+    questionOrder.push(...filtered);
+    const existing = new Set(questionOrder);
+
+    // Move/insert CD-followup questions right after the deepest answered CD question
+    if (cdFollowups.size > 0) {
+      const cdPositions = [...answers.entries()]
+        .filter(([, ac]) => ac.startsWith('Cannot determine'))
+        .map(([aq]) => questionOrder.indexOf(aq))
+        .filter(i => i !== -1);
+      if (cdPositions.length > 0) {
+        const insertAt = Math.max(...cdPositions) + 1;
+        for (const q of cdFollowups) {
+          if (!allQSet.has(q)) continue;
+          const curIdx = questionOrder.indexOf(q);
+          if (curIdx === -1) {
+            questionOrder.splice(insertAt, 0, q);
+            existing.add(q);
+          } else if (curIdx > insertAt) {
+            questionOrder.splice(curIdx, 1);
+            questionOrder.splice(insertAt, 0, q);
+          }
+        }
+      }
+    }
+    // Append newly relevant questions at the end
+    const newQs = allQ.filter(q => !existing.has(q)).sort(newQSort);
+    if (newQs.length) questionOrder.push(...newQs);
+  }
+
+  return cdFollowups;
+}
+
 // Assigns a stable Q-number to each unique question text in DFS encounter order.
 function buildQuestionNumbers(treeData) {
   const nodes = treeData.nodes;
@@ -253,4 +387,18 @@ function buildQuestionNumbers(treeData) {
 
   dfs(treeData.start);
   return numbers;
+}
+
+// ── Node.js export ────────────────────────────────────────────────────────────
+// Ignored by browsers (module is undefined); picked up by compute_sim_cd_paths.js.
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = {
+    isSimCdQuestion,
+    scoreAllPure,
+    getDisplayQuestionsPure,
+    buildTreePaths,
+    buildQuestionNumbers,
+    pickCanonicalPath,
+    pickFallbackPath,
+  };
 }
