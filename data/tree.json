@@ -1502,15 +1502,15 @@
     "q_alitaeus_s2_term": {
       "type": "question",
       "id": "q_alitaeus_s2_term",
-      "question": "Is the forewing termen notably straight and the apex slightly produced (pointed)?",
-      "hint": "A. aida has a distinctly straight FW termen with a slightly produced apex, and the male black border expands from ~1.25 mm at the tornus to ~2.0 mm at the apex. A. ariana has a more normal wing shape; FW postdiscal spot 4 is shifted distad out of line with adjacent spots.",
+      "question": "Is the forewing termen notably straight and the apex more produced (pointed) than other group members?",
+      "hint": "Both A. aida and A. ariana have postdiscal spot 4 shifted distad out of line with spots 5 and 6 — this is NOT the distinguishing character here.\n\nA. aida: FW termen distinctly straight and the apex more produced than other alitaeus-group members; HW postdiscal band completely dislocated at vein 2; male black border broad, expanding from ~1.25 mm at the tornus to ~2.0 mm at the apex.\nA. ariana: FW shape more normal (termen less straight, apex less produced); male border 1.0–1.5 mm, slightly wider at apex.",
       "choices": [
         {
-          "label": "Yes — FW termen straight; apex slightly produced; border widens toward apex",
+          "label": "Yes — FW termen straight; apex more produced; male border widens to ~2.0 mm at apex",
           "next": "r_aida"
         },
         {
-          "label": "No — FW shape normal; postdiscal spot 4 shifted distad; border 1.0–1.5 mm",
+          "label": "No — FW shape more normal; apex less produced; male border 1.0–1.5 mm",
           "next": "r_ariana"
         }
       ]
@@ -1569,7 +1569,7 @@
       "taxon_id": null,
       "name": "Arhopala aida",
       "common_name": "",
-      "note": "Underside brown with a slatey to purplish glaze. FW: no basal spot in space 10; termen straight, apex slightly produced. Male: border expands from ~1.25 mm at tornus to ~2.0 mm at apex. Tail ~3.5–4.0 mm."
+      "note": "Underside paler brown. Nominate subspecies (A. aida aida): slatey grey glaze — strong in Langkawi specimens, weaker through the rest of the Malay Peninsula. A. aida ophir (Mt. Ophir): pale purple glaze instead.\n\nFW: no basal spot in space 10; costal spot in mid-space 11; postdiscal spot 4 shifted distad out of line with spots 5 and 6; termen straight and more produced than other alitaeus-group members. HW: postdiscal spot 6 outwardly straight or convex; postdiscal band completely dislocated at vein 2. Male: black borders relatively broad, expanding from ~1.25 mm at tornus to ~2.0 mm at apex. Tail ~3.5–4.0 mm. FW 16.0–19.0 mm."
     },
     "r_havilandi": {
       "type": "result",
