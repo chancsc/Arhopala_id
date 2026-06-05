@@ -1185,6 +1185,14 @@
       "choice": "No — Malay Peninsula specimen"
     },
     {
+      "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
+      "choice": "No — border regular ~0.5 mm"
+    },
+    {
+      "question": "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?",
+      "choice": "No — HW band not strongly dislocated at vein 2"
+    },
+    {
       "question": "Is the male distinctly blue above, with the border widening from ~2.0 mm at the tornus to ~3.0 mm at the apex?",
       "choice": "Yes — distinctly blue; border expands 2.0→3.0 mm from tornus to apex"
     }
@@ -1205,6 +1213,10 @@
     {
       "question": "Does the hindwing have a very rounded tornus, and are tornal green scales absent?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a prominent yellowish area in the centre of the hindwing underside, and are the underside markings generally obscure or ill-defined?",
+      "choice": "No — HW discal area whitish-grey; markings well-defined"
     },
     {
       "question": "Is there a small spot at the extreme base of hindwing space 6 on the underside?",
@@ -1239,12 +1251,16 @@
       "choice": "No — Malay Peninsula specimen"
     },
     {
-      "question": "Is the male distinctly blue above, with the border widening from ~2.0 mm at the tornus to ~3.0 mm at the apex?",
-      "choice": "No — dull bluish purple; border broad but even (~2.0 mm)"
+      "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
+      "choice": "No — border regular ~0.5 mm"
     },
     {
-      "question": "What is the male's overall upperside colour?",
-      "choice": "Cannot determine — upperside not visible"
+      "question": "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?",
+      "choice": "No — HW band not strongly dislocated at vein 2"
+    },
+    {
+      "question": "Is the male distinctly blue above, with the border widening from ~2.0 mm at the tornus to ~3.0 mm at the apex?",
+      "choice": "No — dull bluish purple; border broad but even (~2.0 mm)"
     }
   ],
   "Arhopala moolaiana yajuna": [

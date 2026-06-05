@@ -1911,7 +1911,11 @@
       "taxon_id": null,
       "name": "Arhopala major major",
       "common_name": "",
-      "note": "Tailless. Both sexes bluer than A. amphimuta above. Male: FW black border expands from 2.0 mm at tornus to 3.0 mm at apex. Underside similar to A. amphimuta. HW cilia often prolonged into a short tooth at vein 2."
+      "note": "Tailless. Both sexes bluer than A. amphimuta above. Male: FW black border expands from 2.0 mm at tornus to 3.0 mm at apex. Underside similar to A. amphimuta. HW cilia often prolonged into a short tooth at vein 2.",
+      "features": {
+        "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?": "No — border regular ~0.5 mm",
+        "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2"
+      }
     },
     "r_stubbsi": {
       "type": "result",
@@ -1919,7 +1923,11 @@
       "taxon_id": null,
       "name": "Arhopala stubbsi",
       "common_name": "",
-      "note": "Tailless. Male: rather dull bluish-purple with a broad, even ~2.0 mm black border — the widest border in the amphimuta subgroup. HW cilia often prolonged at vein 2."
+      "note": "Tailless. Male: rather dull bluish-purple with a broad, even ~2.0 mm black border — the widest border in the amphimuta subgroup. HW cilia often prolonged at vein 2.",
+      "features": {
+        "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?": "No — border regular ~0.5 mm",
+        "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2"
+      }
     },
     "r_moolaiana_yajuna": {
       "type": "result",
