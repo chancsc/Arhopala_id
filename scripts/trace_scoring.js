@@ -168,6 +168,13 @@ for (let step = 0; step < 50; step++) {
   console.log(`         (was #${rank} → now #${newRank})\n`);
 }
 
+// Apply same canonical-equality suppression as compute_sim_cd_paths.js:
+// if simPath is identical to the canonical path, treat it as null (nothing to show).
+const canonicalPath = simPath
+  .filter(s => canonicalAnswers.has(s.question))
+  .map(s => ({ question: s.question, choice: canonicalAnswers.get(s.question) }));
+const live = JSON.stringify(simPath) === JSON.stringify(canonicalPath) ? null : simPath;
+
 // Compare with stored sim_cd path
 console.log('\n=== Stored sim_cd path ===');
 if (!stored) {
@@ -182,17 +189,20 @@ if (!stored) {
 }
 
 console.log('\n=== Comparison ===');
-const live = simPath;
-const maxLen = Math.max(live.length, stored ? stored.length : 0);
+const maxLen = Math.max(live ? live.length : 0, stored ? stored.length : 0);
 let match = true;
-for (let i = 0; i < maxLen; i++) {
-  const l = live[i];
-  const s = stored ? stored[i] : null;
-  const lKey = l ? `Q${qNumbers.get(l.question)||'?'} ${l.choice.slice(0,30)}` : '(missing)';
-  const sKey = s ? `Q${qNumbers.get(s.question)||'?'} ${s.choice.slice(0,30)}` : '(missing)';
-  const ok = l && s && l.question === s.question && l.choice === s.choice;
-  if (!ok) match = false;
-  console.log(`  Step ${i+1}: live=[${lKey}]  stored=[${sKey}]  ${ok ? '✓' : '✗ MISMATCH'}`);
+if (maxLen === 0) {
+  console.log('  (both null — no sim-CD difference for this species)');
+} else {
+  for (let i = 0; i < maxLen; i++) {
+    const l = live   ? live[i]   : null;
+    const s = stored ? stored[i] : null;
+    const lKey = l ? `Q${qNumbers.get(l.question)||'?'} ${l.choice.slice(0,30)}` : '(missing)';
+    const sKey = s ? `Q${qNumbers.get(s.question)||'?'} ${s.choice.slice(0,30)}` : '(missing)';
+    const ok = l && s && l.question === s.question && l.choice === s.choice;
+    if (!ok) match = false;
+    console.log(`  Step ${i+1}: live=[${lKey}]  stored=[${sKey}]  ${ok ? '✓' : '✗ MISMATCH'}`);
+  }
 }
 if (match) console.log('\n  ✓ Paths match exactly');
 else        console.log('\n  ✗ Paths differ — stored sim_cd path needs updating');
