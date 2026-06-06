@@ -3495,6 +3495,10 @@
     {
       "question": "Is this a relatively large species with a conspicuously projecting tornal lobe on the hindwing, and postdiscal spots 6 and 7 placed vertically?",
       "choice": "Yes — large; conspicuous projecting HW tornal lobe; spots 6 and 7 vertical"
+    },
+    {
+      "question": "Which cleander group subgroup does the specimen belong to?",
+      "choice": "HW spot 5 contiguous/merged with end-cell bar; HW band partially dislocated at vein 2 (agaba subgroup)"
     }
   ],
   "Arhopala cleander aphadantas": [
@@ -4861,6 +4865,10 @@
     {
       "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
       "choice": "Yes — purplish-brown underside; FW apex with pale violet powder"
+    },
+    {
+      "question": "How long is the hindwing tail?",
+      "choice": "Tail ~3 mm"
     }
   ],
   "Arhopala acta": [
@@ -4947,6 +4955,10 @@
     {
       "question": "How distinct are the underside markings?",
       "choice": "Underside markings very faint or obscure"
+    },
+    {
+      "question": "How long is the hindwing tail?",
+      "choice": "Tail ~3 mm"
     }
   ],
   "Arhopala tameanga": [
@@ -5153,6 +5165,10 @@
     {
       "question": "How distinct are the underside markings?",
       "choice": "Underside markings standard contrast"
+    },
+    {
+      "question": "How long is the hindwing tail?",
+      "choice": "Tail ~3 mm"
     }
   ],
   "Arhopala hellenore siroes": [
@@ -5705,6 +5721,10 @@
     {
       "question": "Does the hindwing cell extend considerably longer than half the wing length, combined with an acute or concave FW apex?",
       "choice": "No — HW cell moderate length (eumolphus or oenea group)"
+    },
+    {
+      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
+      "choice": "Yes — underside spots uniformly narrow and rectangular; FW apex acute, termen nearly straight"
     }
   ],
   "Arhopala paralea": [
@@ -5837,6 +5857,10 @@
     {
       "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
       "choice": "HW spot 6 is outwardly sinuous; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)"
+    },
+    {
+      "question": "Does the butterfly have a hindwing tail?",
+      "choice": "Tailed"
     }
   ],
   "Arhopala arvina adalitas": [

@@ -157,7 +157,7 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
 
     const newScores = scoreAllPure(answers, matrix);
     if (newScores.length > 0 && newScores[0].name === resultName &&
-        (newScores.length < 2 || newScores[0].score > newScores[1].score)) {
+        (newScores.length < 2 || newScores[0].score >= newScores[1].score + 2)) {
       if ([...simCdQs].every(q => answers.has(q))) break;
     }
   }

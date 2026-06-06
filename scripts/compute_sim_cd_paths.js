@@ -182,10 +182,12 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
     answers.set(nextQ, nextAns);
     simPath.push({ question: nextQ, choice: nextAns });
 
-    // Stop once species is uniquely #1 and all sim-CD questions are answered
+    // Stop once species is uniquely #1 by at least 2 points and all sim-CD questions answered.
+    // Gap >= 2 prevents stopping at a group-level question when the next question is
+    // the decisive subgroup discriminator (e.g. Q33→Q34 for A. agaba).
     const newScores = scoreAllPure(answers, matrix);
     if (newScores.length > 0 && newScores[0].name === resultName &&
-        (newScores.length < 2 || newScores[0].score > newScores[1].score)) {
+        (newScores.length < 2 || newScores[0].score >= newScores[1].score + 2)) {
       if ([...simCdQs].every(q => answers.has(q))) break;
     }
   }

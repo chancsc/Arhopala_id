@@ -128,7 +128,7 @@ for (let step = 0; step < 50; step++) {
 
   // Stop once species is uniquely #1 AND all sim-CD questions have been answered
   if (scores.length > 0 && scores[0].name === targetName &&
-      (scores.length < 2 || scores[0].score > scores[1].score)) {
+      (scores.length < 2 || scores[0].score >= scores[1].score + 2)) {
     if ([...simCdQs].every(q => answers.has(q))) {
       const rank2 = scores[1] ? `  #2: ${scores[1].name.replace('Arhopala ','')} ${scores[1].score}/${scores[1].max}` : '';
       console.log(`  → STOP: ${targetName.replace('Arhopala ','')} is #1 (${scores[0].score}/${scores[0].max})${rank2}`);
