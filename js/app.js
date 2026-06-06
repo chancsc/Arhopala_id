@@ -155,7 +155,7 @@ function render() {
 
 function renderQuestion(node) {
   const hintHTML = node.hint
-    ? `<p class="question-hint">${escapeHtml(node.hint)}</p>`
+    ? `<p class="question-hint">${renderHint(node.hint)}</p>`
     : '';
 
   const guideLinkHTML = node.guide_link
@@ -503,6 +503,15 @@ function escapeHtml(str) {
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
+}
+
+// Like escapeHtml but converts [text](https://...) to clickable links.
+function renderHint(str) {
+  if (!str) return '';
+  return escapeHtml(str).replace(
+    /\[([^\]]+)\]\((https:\/\/[^)]+)\)/g,
+    (_, text, url) => `<a href="${escapeAttr(url)}" target="_blank" rel="noopener">${text}</a>`
+  );
 }
 
 function escapeAttr(str) {
