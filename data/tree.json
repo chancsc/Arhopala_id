@@ -499,11 +499,11 @@
     "q_tailless_agesias": {
       "type": "question",
       "id": "q_tailless_agesias",
-      "question": "Are the underside spots prominent and rounded, with a central spot in FW space 11 and a notably short forewing vein 9?",
-      "hint": "The agesias group has large, rounded, prominent spots (not narrow bands). Key features: central spot in FW space 11 (above the cell), and FW vein 9 is noticeably shorter than usual.",
+      "question": "Are the underside spots prominent and rounded, with a central spot in FW space 11?",
+      "hint": "The agesias group has large, rounded, prominent spots (not narrow bands). The key feature is a central spot in FW space 11 (above the cell). FW vein 9 is also noticeably shorter than usual in this group, but this can be hard to confirm from photos — the spot pattern alone is sufficient.",
       "choices": [
         {
-          "label": "Yes — prominent rounded spots; central FW spot in space 11; FW vein 9 notably short",
+          "label": "Yes — prominent rounded spots; central FW spot in space 11",
           "next": "g_agesias"
         },
         {
