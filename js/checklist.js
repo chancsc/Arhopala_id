@@ -154,7 +154,7 @@ function renderHint(str) {
 // Phrases in question text that link to Visual Guide sections
 const GUIDE_LINKS = new Map([
   ['hindwing space 6', 'guide.html#hw-space6-basal-spot'],
-  ['central spot in FW space 11', 'guide.html#fw-space-11'],
+  ['forewing underside space 11', 'guide.html#fw-space-11'],
   ['postdiscal spot 6', 'guide.html#spot6-end-cell-bar'],
   ['dislocated at vein 4', 'guide.html#fw-band-vein4'],
 ]);
