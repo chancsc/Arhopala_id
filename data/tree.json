@@ -1319,7 +1319,10 @@
       "taxon_id": null,
       "name": "Arhopala barami penanga",
       "common_name": "",
-      "note": "The only tailed species in the agelastus group. Male upperside: blue with a broad FW border expanding from 2.5 mm at the tornus to 8.0 mm at the costa. Female: paler blue."
+      "note": "The only tailed species in the agelastus group; relatively large for the group (FW 22.0–23.0 mm). Underside: HW postdiscal spot 6 widely out of line with spots 5 and 7 — inner edge of spot 6 in line with, or even further inward (basad) than, the inner edge of spot 7; spot 6 outwardly convex and typically touches or overlaps the end-cell bar. FW postdiscal band continuous; no costal spot in space 10; small spot often present at base of space 3; inner submarginal spots uniform in size and colour. Male upperside: blue with an exceptionally broad FW border expanding from 2.5 mm at the tornus to 8.0 mm at the costa. Female: paler blue with similarly broad borders.",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_cardoni": {
       "type": "result",
@@ -1888,7 +1891,7 @@
       "taxon_id": null,
       "name": "Arhopala delta",
       "common_name": "",
-      "note": "The ONLY tailed member of the amphimuta subgroup — short tooth-like tail at vein 2. Male: deep violet with a narrow, regular black border. Part of the amphimuta subgroup (HW spots 5–7 in echelon; spots rounded).",
+      "note": "Tailed — short tooth-like tail at vein 2; the ONLY tailed member of the amphimuta subgroup (all others tailless). Male: deep violet with a narrow, regular black border. Part of the amphimuta subgroup (HW spots 5–7 in echelon; spots rounded).",
       "features": {
         "On the forewing underside, is the basal cell spot absent?": "No — basal cell spot present on FW underside",
         "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "No — no white patch on HW cilia"
@@ -2285,7 +2288,10 @@
       "taxon_id": null,
       "name": "Arhopala borneensis",
       "common_name": "",
-      "note": "Bornean taxon. Underside hair-brown with complete markings (as A. aurea). Male: brassy green with strong blue suffusion at base; FW border thread throughout, widening almost imperceptibly toward tornus; HW green reaches termen narrowly in spaces 5 and 6 (unlike A. aurea where green does not reach termen). Short stumpy HW tail (~2 mm)."
+      "note": "Bornean taxon; underside pattern essentially matches A. aurea. Underside hair-brown with complete markings; HW cell exceptionally long (more than half the wing length); FW postdiscal spots in spaces 2 and 3 wider than those above vein 4 (spot 3 especially wide); dark patch in FW space 1b not solid; HW postdiscal band only partially dislocated at vein 2. HW postdiscal spot 6 widely out of line with spots 5 and 7 — inner edge of spot 6 in line with, or even further inward (basad) than, the inner edge of spot 7; spot 6 touches or overlaps the end-cell bar. Short and stout tail at vein 2, just under 2.0 mm. Male: brassy green with strong blue suffusion at base; FW border thread throughout, widening almost imperceptibly toward tornus; HW green reaches termen narrowly in spaces 5 and 6 (unlike A. aurea where green does not reach termen). Female: blue with a black HW border reaching at least halfway to the end of the cell.",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "q_camdeo_c1": {
       "type": "question",

@@ -25,45 +25,45 @@ Status legend: ✅ checked & consistent · 🛠️ checked & fixed · 🚩 confl
 | arhopala_alaconia.txt | Arhopala alaconia media | ✅ | spot 6 "outer edge concave/sinuous" (vs convex in other agelastus-group), tornal green scales, f. kempi tailed form ~2.5mm — all match q_agelastus_s4 + note exactly |
 | arhopala_alitaeus.txt | Arhopala alitaeus | ✅ | spot 6 "rounded, overlaps end-cell bar, inner edge in/inside 7" matches q_tailed_epimuta + q_alitaeus_s1_marks; FW space-10 base spot, annular markings, slatey-purple glaze match note |
 | arhopala_ammonides.txt | Arhopala ammonides chunsu | ✅ | spot 6 "inner edge in line with/inside 7, touches/overlaps end-cell bar" matches q_tailed_epimuta; white area filling space-7 gap, no tornal green scales, ~14mm — match note |
-| arhopala_amphimuta.txt | Arhopala amphimuta amphimuta | ⏳ | |
-| arhopala_anthelus.txt | Arhopala anthelus grahami | ⏳ | |
-| arhopala_antimuta.txt | Arhopala antimuta antimuta | ⏳ | |
-| arhopala_athada.txt | Arhopala athada athada | ⏳ | |
+| arhopala_amphimuta.txt | Arhopala amphimuta amphimuta | ✅ | spot 6 echelon/nearer-to-5 description, FW spot-3 oblique oval — match note & q_tailless_epimuta routing |
+| arhopala_anthelus.txt | Arhopala anthelus grahami | ✅ | spot 6 echelon/nearer-to-5, ≥3 FW space-11 spots, 2 HW space-8 spots, deep purple-brown — match note & Q81 |
+| arhopala_antimuta.txt | Arhopala antimuta antimuta | ✅ | spot 6 "directly below 7, widely out of line, touches/overlaps end-cell bar" matches q_tailless_epimuta_spot6_pos (Q109) + note exactly |
+| arhopala_athada.txt | Arhopala athada athada | ✅ | spot 6 "quadrate, fills gap 5↔bar, often overlaps bar" matches q_cleander_s3 (Q37) + note (FW spot 9 narrower/shifted basad, tornal lobe) |
 | arhopala_atosia.txt | Arhopala atosia malayana | ✅ | note enriched (ground colour, echelon, tail/size); Q81 spot-6 "midway" already correct; guide Q-number ref fixed (Q9→Q81) |
-| arhopala_aurea.txt | Arhopala aurea | ⏳ | |
-| arhopala_barami.txt | Arhopala barami penanga | ⏳ | |
-| arhopala_bazalus.txt | Arhopala bazalus zalinda | ⏳ | |
-| arhopala_borneensis.txt | Arhopala borneensis | ⏳ | |
-| arhopala_buddha.txt | Arhopala buddha cooperi | ⏳ | |
-| arhopala_centaurus.txt | Arhopala centaurus nakula | ⏳ | |
-| arhopala_corinda.txt | Arhopala corinda acestes | ⏳ | |
-| arhopala_delta.txt | Arhopala delta | ⏳ | |
-| arhopala_democritus.txt | Arhopala democritus democritus / lycaenaria | ⏳ | |
+| arhopala_aurea.txt | Arhopala aurea | ✅ | spot 6 "widely out of line, inner edge in/inside spot 7, touches/overlaps bar" matches features override + note verbatim |
+| arhopala_barami.txt | Arhopala barami penanga | 🛠️ | **fixed real bug**: canonical q_tailed_epimuta routing picked "spot 6 same level as spot 5" (DFS artefact, no override existed); notebook clearly says "widely out of line...touches/overlaps end-cell bar, outwardly convex" — added matching `features` override + enriched note from supplied description |
+| arhopala_bazalus.txt | Arhopala bazalus zalinda | ✅ | spot 6 "directly below 7, widely out of line, touches/overlaps bar" matches features override + note + Q48 |
+| arhopala_borneensis.txt | Arhopala borneensis | 🛠️ | **fixed real bug**: same as barami — canonical routing picked "same level as spot 5" though notebook (and its own "matches A. aurea" claim, confirmed against r_aurea's "widely out of line/touches bar" note) says otherwise; added matching `features` override + enriched note (HW cell length, FW spot 2/3 width, tail, space-1b patch) |
+| arhopala_buddha.txt | Arhopala buddha cooperi | ✅ | spot 6 "widely out of line, sinuous, touches/overlaps bar", costal FW space-10 spot, green tornal scales — match features override + note |
+| arhopala_centaurus.txt | Arhopala centaurus nakula | ✅ | spot 6 not diagnostic here (txt agrees); routes via greenish-silver FW cell outlines + rounded tornus/vestigial tornal lobe — match note |
+| arhopala_corinda.txt | Arhopala corinda acestes | ✅ | spot 6 "convex, inner edge in/inside spot 7, touches/overlaps bar" matches note "outwardly convex; band partially dislocated at vein 2"; tail ~3.5mm, pointed apex match |
+| arhopala_delta.txt | Arhopala delta | 🛠️ | **fixed real bug** (internal contradiction, not a notebook issue): canonical path answered Q1 "tailless" yet ended at the tailed-only q_amphimuta_sub choice "(A. delta)" — caused by note text "The ONLY tailed member..." not matching the `/^tailed/` detection regex used by pickCanonicalPath's tiebreaker. Reworded note to start "Tailed — ..."; canonical path now self-consistently starts "Yes — hindwing is tailed" (16-step path, sim_cd_paths.json regenerated, 116/116 validate) |
+| arhopala_democritus.txt | Arhopala democritus democritus / lycaenaria | ✅ | spot 6 "concave, inner edge in/inside 7, touches/overlaps bar" matches both result notes; ground-colour split (lycaenaria hair-brown/buff vs democritus dark-chocolate/white striae) matches Q23 branches |
 | arhopala_elopura.txt | Arhopala elopura | ✅ | full note rewritten + Q81 features override added from supplied description |
-| arhopala_epimuta.txt | Arhopala epimuta epiala | ⏳ | |
-| arhopala_eumolphus.txt | Arhopala eumolphus maxwelli | ⏳ | |
-| arhopala_fulla.txt | Arhopala fulla intaca | ⏳ | |
+| arhopala_epimuta.txt | Arhopala epimuta epiala | ✅ | spot 6 "midway between 5 and end-cell bar" matches canonical Q97 "Equidistant" + group description exactly |
+| arhopala_eumolphus.txt | Arhopala eumolphus maxwelli | ✅ | spot 6 "directly below spot 7" matches canonical Q48/Q81 + group description (txt's added "outwardly concave" shape claim is an enrichable gap, not a conflict) |
+| arhopala_fulla.txt | Arhopala fulla intaca | ✅ | "spot 6 not clearly defined; postdiscal spots merged into obscure streak" matches canonical Q90 "Yes — replaced by faint obscure streak" + note |
 | arhopala_hellenore.txt | Arhopala hellenore siroes | 🛠️ | spot-6 position consistent; fixed unrelated Q57/Q89 wording conflict surfaced while checking |
-| arhopala_horsfieldi.txt | Arhopala horsfieldi basiviridis | ⏳ | |
-| arhopala_hypomuta.txt | Arhopala hypomuta hypomuta | ⏳ | |
-| arhopala_ijanensis.txt | Arhopala ijanensis | ⏳ | |
-| arhopala_inornata.txt | Arhopala inornata inornata | ⏳ | |
-| arhopala_kinabala.txt | Arhopala kinabala | ⏳ | |
-| arhopala_lurida.txt | Arhopala lurida | ⏳ | |
-| arhopala_major.txt | Arhopala major major | ⏳ | |
-| arhopala_moolaiana.txt | Arhopala moolaiana yajuna | ⏳ | |
-| arhopala_moorei.txt | Arhopala moorei busa | ⏳ | |
-| arhopala_muta.txt | Arhopala muta maranda | ⏳ | |
-| arhopala_myrzala.txt | Arhopala myrzala lammas | ⏳ | |
-| arhopala_myrzalina.txt | Arhopala myrzalina | ⏳ | |
-| arhopala_norda.txt | Arhopala norda | ⏳ | |
-| arhopala_opalina.txt | Arhopala opalina azata | ⏳ | |
-| arhopala_perimuta.txt | Arhopala perimuta regina | ⏳ | |
-| arhopala_pseudomuta.txt | Arhopala pseudomuta | ⏳ | |
-| arhopala_selta.txt | Arhopala selta selta | ⏳ | |
-| arhopala_silhetensis.txt | Arhopala silhetensis adorea | ⏳ | |
-| arhopala_stinga.txt | Arhopala stinga | ⏳ | |
-| arhopala_trogon.txt | Arhopala trogon | ⏳ | |
-| arhopala_vihara.txt | Arhopala vihara | ⏳ | |
-| arhopala_wildeyana.txt | Arhopala wildeyana wildeyana | ⏳ | |
-| flos_morphina.txt | *(no matching result node — different genus)* | ⏳ | likely a confusable/lookalike reference; check whether it's mentioned anywhere in tree.json notes/hints |
+| arhopala_horsfieldi.txt | Arhopala horsfieldi basiviridis | ✅ | spot 6 "directly below spot 7" matches canonical Q48 + eumolphus-group description (txt's "outwardly concave" shape claim is an enrichable gap, mirrors eumolphus) |
+| arhopala_hypomuta.txt | Arhopala hypomuta hypomuta | ✅ | "small spot at extreme base of HW space 6" matches canonical Q93 "Yes" + note's key diagnostic; echelon spot 6 description consistent |
+| arhopala_ijanensis.txt | Arhopala ijanensis | ✅ | "whitish streak from dorsum base to apex" matches canonical Q80 "Yes" + note; echelon spot 6 nearer-to-5 consistent |
+| arhopala_inornata.txt | Arhopala inornata inornata | ✅ | spot 6 "immediately below spot 7, touches/overlaps bar" matches note + canonical routing (very rounded tornus, no tornal green scales, band fully dislocated at vein 2) |
+| arhopala_kinabala.txt | Arhopala kinabala | ✅ | spot 6 "elongate, overlaps end-cell bar" matches note "oval, significantly enlarged, overlaps bar"; FW space-11 spots, dark-brown ground match |
+| arhopala_lurida.txt | Arhopala lurida | ✅ | spot 6 "about midway between 5 and end-cell bar" matches canonical Q81 "roughly midway" exactly; tail ~2.5mm, "darker/more clearly defined than atosia" match |
+| arhopala_major.txt | Arhopala major major | ✅ | spot 6 "nearer to 5 than bar, in echelon" matches canonical Q97/Q98 "Not displaced...echelon"; band dislocation, white cilia spot, hair-brown ground match note |
+| arhopala_moolaiana.txt | Arhopala moolaiana yajuna | ✅ | spot 6 "nearer to 5 than bar, in echelon, overlapping" matches Q97/Q98 + note's "band only partially dislocated at vein 2" |
+| arhopala_moorei.txt | Arhopala moorei busa | ✅ | spot 6 "nearer to 5, echelon" + "spots quadrate/banded, FW space-2 spot stepped outward" matches Q97/Q98/Q62 + note |
+| arhopala_muta.txt | Arhopala muta maranda | ✅ | spot 6 "nearer to 5, echelon, overlapping" + "quadrate/banded markings" matches Q97/Q98/Q62 + note ("white spot in HW space 1a absent") |
+| arhopala_myrzala.txt | Arhopala myrzala lammas | ✅ | spot 6 "echelon, centres in line, nearer to 5 than bar" matches canonical Q8 "echelon; spot 6 nearer to spot 5" + note (crimson-brown, white striae, space-6 basal spot) |
+| arhopala_myrzalina.txt | Arhopala myrzalina | 🚩 | **CONFLICT needs human review**: notebook says HW spots 7/6/5 "widely out of line" and spot 6 "typically touches or overlaps the end-cell bar" — but the *only* structural route to r_myrzalina (via q_tailless_epimuta → q_tailless_camdeo → camdeo/myrzala-subgroup path) requires answering "Not displaced — spot 6...roughly level with spot 5; spots 5,6,7 in line" at that question (any "widely displaced/touching bar" answer routes elsewhere, e.g. toward antimuta). This also conflicts with its sister species myrzala lammas (same subgroup, same "crimson-brown/white-striae" underside), whose separately-extracted notebook agrees with the tree's "echelon, nearer to spot 5" placement — suggesting the myrzalina extraction may have picked up boilerplate "widely out of line/touching bar" phrasing from a different species' description. Left tree.json untouched (changing it would break myrzalina's routing entirely) — please confirm which description is correct |
+| arhopala_norda.txt | Arhopala norda | ✅ | spot 6 "nearer to 5, echelon, overlapping" + "white patch on HW cilia above tornal lobe, less rounded spots" matches Q97/Q98/Q68 + note (vs A. major) |
+| arhopala_opalina.txt | Arhopala opalina azata | ✅ | spot 6 "echelon, as large as/larger than spot 7, nearer to 5" matches Q8/Q10/Q19 + note (txt omits tail status — minor gap, note says "Tailed, ~4–6mm") |
+| arhopala_perimuta.txt | Arhopala perimuta regina | ✅ | spot 6 "echelon, nearer to 5 than bar" matches note verbatim; yellowish HW discal area, no tornal green scales, FW spots 2/3 in line all match |
+| arhopala_pseudomuta.txt | Arhopala pseudomuta | ✅ | spot 6 "slightly oblique, does not overlap end-cell bar" matches note verbatim (txt's extra "inner edge in/inside spot 7" detail is a minor enrichable gap) |
+| arhopala_selta.txt | Arhopala selta selta | ✅ | "spot 6 widely overlaps end-cell bar" matches note "widely overlaps the end-cell bar (diagnostic vs phaenops)" near-verbatim |
+| arhopala_silhetensis.txt | Arhopala silhetensis adorea | ✅ | spot 6 "well inside inner edge of spot 5, does not overlap bar, outer edge convex/sinuous" matches note (tree.json note is more granular — enrichment-style match only) |
+| arhopala_stinga.txt | Arhopala stinga | ✅ | spot 6 "inner edge in line with/inward of spot 7, touches/overlaps bar" matches note + "underside exactly resembles A. trogon" / long HW cell / purple wash |
+| arhopala_trogon.txt | Arhopala trogon | ✅ | spot 6 "inner edge in/basad of spot 7, touches/overlaps bar" matches note "spot 6 touches or overlaps the end-cell bar; HW end-cell bar notably long" (routing choice phrases it as "directly below spot 7" — same placement, different wording) |
+| arhopala_vihara.txt | Arhopala vihara | ✅ | "spot 6 rounded, more or less separated from adjacent spots" + "FW spots 4,5,6 in continuation" matches note verbatim |
+| arhopala_wildeyana.txt | Arhopala wildeyana wildeyana | 🚩 | **CONFLICT needs human review**: notebook says HW spot 6 "typically touches or overlaps the end-cell bar" (inner edge in/basad of spot 7, widely out of line, outwardly convex) — but tree.json's note/features say spot 6 is "significantly displaced inward toward the discal cell...clearly nearer to the end-cell bar than to spot 5, but **not touching**" (e.g. explicitly named in the q_tailless_epimuta choice label itself). Notably, that wildeyana description was itself a deliberate correction in an earlier session (commit 102caa6, "remove incorrect 'touching/overlapping end-cell bar' — that is the antimuta description") — so the new notebook text re-introduces exactly the claim that correction removed. Left tree.json untouched pending source verification — please confirm which description is correct (and whether sister species A. labuana, currently defaulting to "slightly displaced" by DFS artefact with no override, needs the same review) |
+| flos_morphina.txt | *(different genus — Flos morphina, no matching tree.json result node)* | ✅ | confirmed via case-insensitive grep of tree.json + guide.html for "morphina"/"Flos"/"morpheus" — zero references; not used anywhere as a lookalike/confusable note. No action needed (out of scope for this Arhopala-only key) |
