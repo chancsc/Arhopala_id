@@ -10,21 +10,21 @@ files appear or get re-checked. For each species, focus especially on the
 **hindwing postdiscal spot 6 position** (the emphasized character in the
 extraction queries), plus any other notable underside keys.
 
-Status legend: ✅ checked & consistent · 🛠️ checked & fixed · ⏳ pending
+Status legend: ✅ checked & consistent · 🛠️ checked & fixed · 🚩 conflict found, needs human review · ⏳ pending
 
 | File | Species (tree.json result node) | Status | Notes |
 |---|---|---|---|
-| arhopala_abseus.txt | Arhopala abseus | ⏳ | |
-| arhopala_achelous.txt | Arhopala achelous achelous | ⏳ | |
-| arhopala_aedias.txt | Arhopala aedias | ⏳ | |
+| arhopala_abseus.txt | Arhopala abseus | ✅ | spot-6 echelon/widely-out-of-line + touches end-cell bar description, costal/space-12 spot, FW border — all consistent with note & q_abseus_species routing |
+| arhopala_achelous.txt | Arhopala achelous achelous | 🚩 | **CONFLICT needs human review**: notebook says HW spot 6 "arranged in echelon, centres more or less in a straight line" and "nearer to spot 5 than to end-cell bar"; tree.json note/features (added as "field observations", commit 9a4d0b0) say spot 6 is "very small, situated directly below spot 7 ... distinctly displaced toward the end-cell bar" — opposite placements, and this is the diagnostic separating achelous from anthelus grahami. Left tree.json untouched pending source verification — please confirm which description is correct |
+| arhopala_aedias.txt | Arhopala aedias | ✅ | spot 6 "in echelon, nearer to spot 5 than end-cell bar"; FW spot 4 shifted distad; long filamentous tail ~6mm — all match q_long_tail_spot4/note |
 | arhopala_agaba.txt | Arhopala agaba | 🛠️ | sim-CD path fixed earlier this session (Q38–Q41 stop-condition) |
-| arhopala_agelastus.txt | Arhopala agelastus agelastus | ⏳ | |
-| arhopala_agesias.txt | Arhopala agesias | ⏳ | |
-| arhopala_agrata.txt | Arhopala agrata agrata | ⏳ | |
-| arhopala_aida.txt | Arhopala aida | ⏳ | |
-| arhopala_alaconia.txt | Arhopala alaconia media | ⏳ | |
-| arhopala_alitaeus.txt | Arhopala alitaeus | ⏳ | |
-| arhopala_ammonides.txt | Arhopala ammonides chunsu | ⏳ | |
+| arhopala_agelastus.txt | Arhopala agelastus agelastus | ✅ | spot-6 "widely out of line, inner edge in line with/inside 7, touches/overlaps end-cell bar, outwardly convex" matches q_agelastus_s4/q_97 + note |
+| arhopala_agesias.txt | Arhopala agesias | ✅ | spot 6 echelon/nearer-to-5 description consistent with tailless routing; FW space 11 single subcostal spot, hair-brown ground colour match note |
+| arhopala_agrata.txt | Arhopala agrata agrata | ✅ | spot 6 "wider than 7, inner edge in/inside 7's, touches/overlaps end-cell bar, widely out of line" matches q_tailed_epimuta features override + note |
+| arhopala_aida.txt | Arhopala aida | ✅ | alitaeus-group spot-6 placement (midway, touches/overlaps bar) matches q_tailed_epimuta "Yes" routing; note's "outwardly straight/convex" + "band completely dislocated at vein 2" not contradicted, just not extracted in txt |
+| arhopala_alaconia.txt | Arhopala alaconia media | ✅ | spot 6 "outer edge concave/sinuous" (vs convex in other agelastus-group), tornal green scales, f. kempi tailed form ~2.5mm — all match q_agelastus_s4 + note exactly |
+| arhopala_alitaeus.txt | Arhopala alitaeus | ✅ | spot 6 "rounded, overlaps end-cell bar, inner edge in/inside 7" matches q_tailed_epimuta + q_alitaeus_s1_marks; FW space-10 base spot, annular markings, slatey-purple glaze match note |
+| arhopala_ammonides.txt | Arhopala ammonides chunsu | ✅ | spot 6 "inner edge in line with/inside 7, touches/overlaps end-cell bar" matches q_tailed_epimuta; white area filling space-7 gap, no tornal green scales, ~14mm — match note |
 | arhopala_amphimuta.txt | Arhopala amphimuta amphimuta | ⏳ | |
 | arhopala_anthelus.txt | Arhopala anthelus grahami | ⏳ | |
 | arhopala_antimuta.txt | Arhopala antimuta antimuta | ⏳ | |
