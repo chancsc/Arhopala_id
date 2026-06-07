@@ -2413,11 +2413,11 @@
     "q_camdeo_c5": {
       "type": "question",
       "id": "q_camdeo_c5",
-      "question": "Is the male a deep, dull bluish-purple with a forewing border expanding to 1.5 mm at the apex?",
-      "hint": "A. semperi russelli has a distinctive deep, dull bluish-purple male (not clear violet) and a FW border that expands from thread-width to 1.5 mm at the apex, with a large cell on the underside. If the male upperside is not visible, choose 'Cannot determine' — HW spot 6 (next question) can still separate the remaining candidates, but A. semperi russelli may be missed.",
+      "question": "Is the male a deep, dull bluish-purple with a forewing border expanding to 1.25 mm at the apex?",
+      "hint": "A. semperi russelli has a distinctive deep, dull bluish-purple male (not clear violet) and a FW border that expands from thread-width to 1.25 mm at the apex, with a large cell on the underside. If the male upperside is not visible, choose 'Cannot determine' — HW spot 6 (next question) can still separate the remaining candidates, but A. semperi russelli may be missed.",
       "choices": [
         {
-          "label": "Yes — deep dull bluish-purple; border expands to 1.5 mm at apex; large rare species",
+          "label": "Yes — deep dull bluish-purple; border expands to 1.25 mm at apex; large rare species",
           "next": "r_semperi_russelli"
         },
         {
@@ -2500,7 +2500,7 @@
       "taxon_id": null,
       "name": "Arhopala semperi russelli",
       "common_name": "",
-      "note": "Tailed. Long tail ~4–6 mm. Large and very rare. Male: deep, dull bluish-purple; FW border expands to 1.5 mm at the apex. Female: purple, notably whitish between the veins in the marginal area of both wings. Camdeo subgroup."
+      "note": "Tailed. Long tail ~4–6 mm. Large and very rare. Male: deep, dull bluish-purple; FW border expands to 1.25 mm at the apex. Female: purple, with a distinct whitish patch at the end of the cell. Camdeo subgroup."
     },
     "r_camdana_camdana": {
       "type": "result",
