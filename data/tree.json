@@ -489,10 +489,26 @@
       "choices": [
         {
           "label": "Yes — small spot at extreme base of HW space 6",
-          "next": "g_hypomuta"
+          "next": "q_tailless_hypomuta_camdeo_check"
         },
         {
           "label": "No",
+          "next": "q_tailless_agesias"
+        }
+      ]
+    },
+    "q_tailless_hypomuta_camdeo_check": {
+      "type": "question",
+      "id": "q_tailless_hypomuta_camdeo_check",
+      "question": "Is the underside crimson-brown with markings outlined by white striae, with a restricted dark patch in FW space 1b bounded by a pale line?",
+      "hint": "The myrzala subgroup of the camdeo group (A. myrzala, A. myrzalina) ALSO has a small spot at the base of HW space 6, which can be mistaken for the hypomuta-group character just checked. If the underside additionally shows the camdeo group's crimson-brown colouring with white striae and the diagnostic restricted dark patch in FW space 1b, this is the myrzala subgroup, not A. hypomuta — continue down that route instead.",
+      "choices": [
+        {
+          "label": "No — underside not crimson-brown, or no FW space-1b dark patch (true hypomuta-group character)",
+          "next": "g_hypomuta"
+        },
+        {
+          "label": "Yes — crimson-brown with white striae and FW space-1b dark patch (myrzala subgroup)",
           "next": "q_tailless_agesias"
         }
       ]
@@ -2541,7 +2557,8 @@
       "common_name": "",
       "note": "Tailless. Underside: crimson-brown with markings outlined by white striae; spot at base of HW space 6; central and outer spots in HW space 7 conjoined at their upper ends; HW postdiscal spots 5, 6 and 7 more or less in line, spot 6 roughly level with spot 5 (cf. A. antimuta — hair-brown ground colour, spot 6 widely out of line and overlapping the end-cell bar). Male: broad FW border expanding from 1.5 mm at tornus to 4.0 mm at costa. Myrzala subgroup.",
       "features": {
-        "Is the specimen tailed?": "Cannot determine"
+        "Is the specimen tailed?": "Cannot determine",
+        "Is there a small spot at the extreme base of hindwing space 6 on the underside?": "Yes — small spot at extreme base of HW space 6"
       }
     },
     "r_bazaloides_bazaloides": {

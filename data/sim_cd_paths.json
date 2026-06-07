@@ -3059,8 +3059,36 @@
       "choice": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line"
     },
     {
-      "question": "What does the hindwing underside look like?",
-      "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
+      "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
+      "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "Is the male's black border reduced to a thread (very narrow), and is the male a dark, dull purple?",
+      "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "Is the male distinctly blue above, with the border widening from ~2.0 mm at the tornus to ~3.0 mm at the apex?",
+      "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "Is the male a warm violet-purple (with a reddish hue rather than blue), and is the FW postdiscal spot in space 3 an oblique oval?",
+      "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "What is the male's overall upperside colour?",
+      "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "Is the male's black border broad, 1.5 mm or wider?",
+      "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "Is the species noticeably small and duller bluish-purple on the male upperside?",
+      "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "On the male upperside, are both the forewing and hindwing exactly the same shade of blue in all lights?",
+      "choice": "Cannot determine — upperside not visible"
     }
   ],
   "Arhopala johoreana johoreana": [
@@ -3420,19 +3448,11 @@
     },
     {
       "question": "Is there a small spot at the extreme base of hindwing space 6 on the underside?",
-      "choice": "No"
+      "choice": "Yes — small spot at extreme base of HW space 6"
     },
     {
-      "question": "Are the underside spots prominent and rounded, with a central spot in FW space 11?",
-      "choice": "No"
-    },
-    {
-      "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line"
-    },
-    {
-      "question": "What does the hindwing underside look like?",
-      "choice": "Crimson-brown ground colour with markings outlined in white striae; spot at the base of HW space 6"
+      "question": "Is the underside crimson-brown with markings outlined by white striae, with a restricted dark patch in FW space 1b bounded by a pale line?",
+      "choice": "Yes — crimson-brown with white striae and FW space-1b dark patch (myrzala subgroup)"
     }
   ],
   "Arhopala bazaloides bazaloides": [
@@ -5723,6 +5743,10 @@
     {
       "question": "Is there a small spot at the extreme base of hindwing space 6 on the underside?",
       "choice": "Yes — small spot at extreme base of HW space 6"
+    },
+    {
+      "question": "Is the underside crimson-brown with markings outlined by white striae, with a restricted dark patch in FW space 1b bounded by a pale line?",
+      "choice": "No — underside not crimson-brown, or no FW space-1b dark patch (true hypomuta-group character)"
     }
   ],
   "Arhopala ijanensis": [
