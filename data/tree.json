@@ -255,7 +255,7 @@
       "type": "question",
       "id": "q_tailed_anthelus",
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
-      "hint": "The anthelus group (2 spp.) is defined by partial dislocation of the FW postdiscal band at vein 4, a spot at the base of FW space 10, and the absence of a spot at the base of HW space 6. A. anthelus grahami: ≥3 spots in FW space 11 and 2 subbasal spots in HW space 8; FW 28 mm. A. achelous achelous: no spots in FW space 11 and only 1 HW space 8 spot; FW 22 mm; HW spot 6 very small, displaced toward the outer side of space 7; strong purple tinge on underside (nominate); subspecies malu (Kedawi) lacks most of the purple tinge.",
+      "hint": "The anthelus group (2 spp.) is defined by partial dislocation of the FW postdiscal band at vein 4, a spot at the base of FW space 10, and the absence of a spot at the base of HW space 6. A. anthelus grahami: ≥3 spots in FW space 11 and 2 subbasal spots in HW space 8; FW 28 mm. A. achelous achelous: no spots in FW space 11 and only 1 HW space 8 spot; FW 22 mm; HW spot 6 noticeably smaller than spot 7 — roughly a quarter its size; strong purple tinge on underside (nominate); subspecies malu (Kedawi) lacks most of the purple tinge.",
       "choices": [
         {
           "label": "Yes — FW band partially dislocated at vein 4; spot at base of FW space 10; no spot at base of HW space 6",
@@ -518,7 +518,7 @@
       "id": "q_tailless_epimuta",
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
       "guide_link": "guide.html#hw-spot6-position",
-      "hint": "The position of HW postdiscal spot 6 relative to spot 5 and the end-cell bar is the primary character separating several tailless groups. In many species spot 6 is pulled inward (basad) toward the discal cell — away from its normal position in the postdiscal row alongside spot 5. Grades of displacement: slightly inward (spot 6 still closer to spot 5 than to the end-cell bar — metamuta group); equidistant/midway (agesilaus and epimuta groups); significantly inward, clearly nearer the end-cell bar than spot 5 but not touching (agelastus group — A. wildeyana, A. labuana, A. silhetensis); widely displaced, touching or overlapping the end-cell bar with spots 5, 6 and 7 widely out of line (antimuta group — A. antimuta). If spot 6 is not displaced at all, continue with the camdeo/amphimuta path.",
+      "hint": "The position of HW postdiscal spot 6 relative to spot 5 and the end-cell bar is the primary character separating several tailless groups. In many species spot 6 is pulled inward (basad) toward the discal cell — away from its normal position in the postdiscal row alongside spot 5. Grades of displacement: slightly inward (spot 6 still closer to spot 5 than to the end-cell bar — metamuta group); equidistant/midway (agesilaus and epimuta groups); significantly inward, clearly nearer the end-cell bar than spot 5 but not touching (agelastus group — A. labuana, A. silhetensis); widely displaced, touching or overlapping the end-cell bar with spots 5, 6 and 7 widely out of line (A. wildeyana; antimuta group — A. antimuta). If spot 6 is not displaced at all, continue with the camdeo/amphimuta path.",
       "choices": [
         {
           "label": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line",
@@ -533,7 +533,7 @@
           "next": "q_tailless_epimuta_vein2"
         },
         {
-          "label": "Significantly displaced inward toward the discal cell; spot 6 clearly nearer to the end-cell bar than to spot 5, but not touching (e.g. A. wildeyana, A. labuana)",
+          "label": "Significantly displaced inward toward the discal cell; spot 6 clearly nearer to the end-cell bar than to spot 5, but not touching (e.g. A. labuana)",
           "next": "q_tailless_epimuta_vein2"
         },
         {
@@ -1354,9 +1354,9 @@
       "taxon_id": null,
       "name": "Arhopala wildeyana wildeyana",
       "common_name": "",
-      "note": "Tailless. Male upperside: violet blue with broader borders than A. labuana or A. agelastus — 2.0 mm at tornus to 5.0 mm at costa. Female: brighter and purer blue. Underside: HW postdiscal spot 6 significantly displaced inward (basad) toward the discal cell — clearly nearer to the end-cell bar than to spot 5, but not touching. Agelastus group; HW postdiscal band only partially dislocated at vein 2; FW postdiscal band continuous.",
+      "note": "Tailless. Male upperside: violet blue with broader borders than A. labuana or A. agelastus — 2.0 mm at tornus to 5.0 mm at costa. Female: brighter and purer blue. Underside: HW postdiscal spots 5, 6 and 7 widely out of line; the inner edge of spot 6 is in line with, or even further inward (basad) than, the inner edge of spot 7; spot 6 is outwardly convex and typically touches or overlaps the end-cell bar. Agelastus group; HW postdiscal band only partially dislocated at vein 2; FW postdiscal band continuous.",
       "features": {
-        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Significantly displaced inward toward the discal cell; spot 6 clearly nearer to the end-cell bar than to spot 5, but not touching (e.g. A. wildeyana, A. labuana)",
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
         "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
         "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?": "Yes — FW postdiscal band continuous; often a spot at base of FW space 3 (agelastus group)"
       }
@@ -2121,7 +2121,7 @@
       "type": "question",
       "id": "q_anthelus_s1",
       "question": "Does the forewing underside have at least 3 spots in space 11, AND does the hindwing underside have 2 subbasal spots in space 8?",
-      "hint": "A. anthelus grahami (anthelus subgroup): EXTRA spots — ≥3 in FW space 11 and 2 subbasal spots in HW space 8; spots on FW and upper HW half are deep purple-brown; FW 28 mm. A. achelous achelous (achelous subgroup): NO spots in FW space 11 and only a single spot at the base of HW space 8; FW 22 mm. Additional diagnostic for achelous: HW postdiscal spot 6 is very small and sits directly below spot 7, displaced toward the outer side of space 7 (toward the end-cell bar). The nominate shows a strong purple tinge on the underside; subspecies malu (Kedawi) lacks most of this purple tinge.",
+      "hint": "A. anthelus grahami (anthelus subgroup): EXTRA spots — ≥3 in FW space 11 and 2 subbasal spots in HW space 8; spots on FW and upper HW half are deep purple-brown; FW 28 mm. A. achelous achelous (achelous subgroup): NO spots in FW space 11 and only a single spot at the base of HW space 8; FW 22 mm. Additional diagnostic for achelous: HW postdiscal spot 6 is noticeably smaller than spot 7 — roughly a quarter its size (spots 5, 6 and 7 otherwise in the normal echelon arrangement, spot 6 nearer to spot 5 than to the end-cell bar). The nominate shows a strong purple tinge on the underside; subspecies malu (Kedawi) lacks most of this purple tinge.",
       "choices": [
         {
           "label": "Yes — ≥3 spots in FW space 11; 2 subbasal spots in HW space 8; spots deep purple-brown",
@@ -2141,7 +2141,7 @@
       "common_name": "",
       "note": "One of the most beautiful in the genus. FW 28 mm. Underside: ≥3 spots in FW space 11; 2 spots at base of HW space 8; spots on FW and upper HW half deep purple-brown. Male: brilliant shining blue, narrow black border. Female: violet-blue with fairly broad black borders. Anthelus subgroup.",
       "features": {
-        "Is HW postdiscal spot 6 very small and displaced outward toward the end-cell bar, sitting below spot 7?": "No — HW spot 6 not unusually small or displaced; spots on upper HW half deep purple-brown"
+        "Is HW postdiscal spot 6 noticeably smaller than spot 7 — roughly a quarter its size?": "No — HW spot 6 not markedly smaller than spot 7; spots on upper HW half deep purple-brown"
       }
     },
     "r_achelous_achelous": {
@@ -2150,9 +2150,9 @@
       "taxon_id": null,
       "name": "Arhopala achelous achelous",
       "common_name": "",
-      "note": "Tailed. FW 22 mm. Underside: strong purple tinge (nominate); no spots in FW space 11; single spot at base of HW space 8. Diagnostic: HW postdiscal spot 6 is very small, situated directly below spot 7 at the outer side of space 7 — distinctly displaced toward the end-cell bar. Subspecies A. achelous malu (Kedawi: Langkawi, Perlis, north Kedah) lacks most of the purple tinge found in the nominate. Male: shining dark blue, narrow ~0.5 mm black border. Achelous subgroup.",
+      "note": "Tailed. FW 22 mm. Underside: strong purple tinge (nominate); no spots in FW space 11; single spot at base of HW space 8. Lacks spots in FW space 11 (cf. A. anthelus); single spot at base of HW space 8 (cf. two in A. anthelus). HW postdiscal spots 5, 6 and 7 in the normal echelon arrangement, spot 6 nearer to spot 5 than to the end-cell bar — but diagnostically, spot 6 is noticeably smaller than spot 7, roughly a quarter its size. Subspecies A. achelous malu (Kedawi: Langkawi, Perlis, north Kedah) lacks most of the purple tinge found in the nominate. Male: shining dark blue, narrow ~0.5 mm black border. Achelous subgroup.",
       "features": {
-        "Is HW postdiscal spot 6 very small and displaced outward toward the end-cell bar, sitting below spot 7?": "Yes — HW spot 6 very small, displaced outward below spot 7 toward end-cell bar"
+        "Is HW postdiscal spot 6 noticeably smaller than spot 7 — roughly a quarter its size?": "Yes — HW spot 6 noticeably smaller than spot 7, roughly a quarter its size"
       }
     },
     "q_aurea_s1": {
