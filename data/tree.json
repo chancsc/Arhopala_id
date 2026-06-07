@@ -3176,7 +3176,7 @@
       "note": "Male: green with very broad black borders reaching the cell on all wings. Underside generally darker than relatives, with broad markings. Female: more purple, with slightly broader borders than A. eumolphus.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
-        "Does the forewing apex appear distinctly pointed and the termen straight (not rounded)?": "No — FW apex not distinctly pointed; termen normal to rounded (not as straight as corinda)"
+        "Does the forewing apex appear distinctly pointed and the termen straight (not rounded)?": "No — FW apex not as sharply pointed, nor termen as straight, as in A. corinda (may still be acute, e.g. eumolphus group, or broadly rounded)"
       }
     },
     "r_eumolphus_maxwelli": {
@@ -3512,14 +3512,14 @@
       "type": "question",
       "id": "q_tailed_corinda_apex",
       "question": "Does the forewing apex appear distinctly pointed and the termen straight (not rounded)?",
-      "hint": "[A. corinda](https://www.inaturalist.org/search?q=Arhopala+corinda) has a distinctly pointed FW apex and straight termen — unlike most other Arhopala whose FW apex is broadly rounded. This alternative character can help confirm corinda when FW space 1b is hidden. If the FW outline is not clear, choose Cannot determine and continue.",
+      "hint": "[A. corinda](https://www.inaturalist.org/search?q=Arhopala+corinda) has an unusually distinctly pointed FW apex and straight termen — more extreme than the merely acute apex seen in groups such as eumolphus (e.g. A. hellenore), and quite different from the broadly rounded apex of most other Arhopala. This alternative character can help confirm corinda when FW space 1b is hidden. If the FW outline is not clear, choose Cannot determine and continue.",
       "choices": [
         {
           "label": "Yes — FW apex distinctly pointed; termen straight",
           "next": "g_corinda"
         },
         {
-          "label": "No — FW apex not distinctly pointed; termen normal to rounded (not as straight as corinda)",
+          "label": "No — FW apex not as sharply pointed, nor termen as straight, as in A. corinda (may still be acute, e.g. eumolphus group, or broadly rounded)",
           "next": "q_ijanensis_hw_streak"
         },
         {
