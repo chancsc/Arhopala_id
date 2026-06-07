@@ -156,6 +156,7 @@ const GUIDE_LINKS = new Map([
   ['hindwing space 6', 'guide.html#hw-space6-basal-spot'],
   ['forewing underside space 11', 'guide.html#fw-space-11'],
   ['postdiscal spot 6', 'guide.html#spot6-end-cell-bar'],
+  ['shifted distad (outward, out of line with spots 5 and 6)', 'guide.html#fw-spot4-distad'],
   ['dislocated at vein 4', 'guide.html#fw-band-vein4'],
 ]);
 
