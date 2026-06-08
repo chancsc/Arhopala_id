@@ -4326,7 +4326,7 @@
     },
     {
       "question": "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?",
-      "choice": "Yes — HW spot 6 widely overlaps the end-cell bar; male violet-blue, border expanding toward apex"
+      "choice": "Yes — HW spot 6 widely overlaps the end-cell bar"
     }
   ],
   "Arhopala phaenops sandakani": [
@@ -4412,6 +4412,10 @@
     },
     {
       "question": "Is the male border noticeably expanding toward the apex (similar to A. selta)?",
+      "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "Is the male a bright, glistening blue (not matt or indigo)?",
       "choice": "Cannot determine — upperside not visible"
     },
     {
@@ -4506,7 +4510,11 @@
     },
     {
       "question": "Is the male a bright, glistening blue (not matt or indigo)?",
-      "choice": "No — matt indigo blue; larger; thread-like border"
+      "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "Is the male less shining and more violet (rather than purely bright blue)?",
+      "choice": "Cannot determine — upperside not visible"
     }
   ],
   "Arhopala normani": [
@@ -4596,7 +4604,7 @@
     },
     {
       "question": "Is the male a bright, glistening blue (not matt or indigo)?",
-      "choice": "Yes — bright glistening blue (not matt); borders under 0.5 mm"
+      "choice": "Cannot determine — upperside not visible"
     },
     {
       "question": "Is the male less shining and more violet (rather than purely bright blue)?",
@@ -4690,7 +4698,7 @@
     },
     {
       "question": "Is the male a bright, glistening blue (not matt or indigo)?",
-      "choice": "Yes — bright glistening blue (not matt); borders under 0.5 mm"
+      "choice": "Cannot determine — upperside not visible"
     },
     {
       "question": "Is the male less shining and more violet (rather than purely bright blue)?",
@@ -6425,6 +6433,10 @@
       "choice": "Cannot determine — upperside not visible"
     },
     {
+      "question": "Is the male a bright, glistening blue (not matt or indigo)?",
+      "choice": "Cannot determine — upperside not visible"
+    },
+    {
       "question": "Is the male less shining and more violet (rather than purely bright blue)?",
       "choice": "Cannot determine — upperside not visible"
     }
@@ -6516,7 +6528,7 @@
     },
     {
       "question": "Is the male a bright, glistening blue (not matt or indigo)?",
-      "choice": "Yes — bright glistening blue (not matt); borders under 0.5 mm"
+      "choice": "Cannot determine — upperside not visible"
     },
     {
       "question": "Is the male less shining and more violet (rather than purely bright blue)?",

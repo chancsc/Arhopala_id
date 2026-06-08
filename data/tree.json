@@ -2848,7 +2848,7 @@
       "hint": "A. selta selta: HW spot 6 widely overlaps the end-cell bar; male violet-blue with border expanding toward apex. A. phaenops sandakani is similar to A. selta but HW spot 6 usually does NOT overlap the end-cell bar.",
       "choices": [
         {
-          "label": "Yes — HW spot 6 widely overlaps the end-cell bar; male violet-blue, border expanding toward apex",
+          "label": "Yes — HW spot 6 widely overlaps the end-cell bar",
           "next": "r_selta_selta"
         },
         {
@@ -2890,6 +2890,10 @@
         {
           "label": "No — matt indigo blue; larger; thread-like border",
           "next": "r_milleri"
+        },
+        {
+          "label": "Cannot determine — upperside not visible",
+          "next": "r_alea_s6_unclear"
         }
       ]
     },
