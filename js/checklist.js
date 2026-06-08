@@ -17,6 +17,41 @@ const cs = {
 
 // buildTreePaths, buildQuestionNumbers, pathScore, pickCanonicalPath etc. live in path-utils.js
 
+// ── Persistence ──────────────────────────────────────────────────────────────
+// Mobile browsers often discard a backgrounded tab and reload it from scratch
+// when the user switches back, which would otherwise wipe the in-memory
+// answers Map. Persist to localStorage so selections survive that — they only
+// go away when the user explicitly hits Reset.
+
+const ANSWERS_KEY = 'arhopala-cl-answers';
+
+function saveAnswers() {
+  try {
+    localStorage.setItem(ANSWERS_KEY, JSON.stringify([...cs.answers]));
+  } catch (e) { /* storage unavailable (private mode, quota, etc.) — ignore */ }
+}
+
+function loadAnswers() {
+  try {
+    const raw = localStorage.getItem(ANSWERS_KEY);
+    if (!raw) return new Map();
+    const pairs = JSON.parse(raw);
+    if (!Array.isArray(pairs)) return new Map();
+    // Drop entries whose question/choice no longer exist in the current tree
+    // (e.g. after a data update) so stale storage can't corrupt scoring.
+    return new Map(pairs.filter(([q, c]) => {
+      const meta = cs.questionMeta.get(q);
+      return meta && meta.choices.includes(c);
+    }));
+  } catch (e) {
+    return new Map();
+  }
+}
+
+function clearSavedAnswers() {
+  try { localStorage.removeItem(ANSWERS_KEY); } catch (e) { /* ignore */ }
+}
+
 // ── Data initialisation ──────────────────────────────────────────────────────
 
 function initData(treeData, speciesData) {
@@ -312,6 +347,7 @@ function onQuestionClick(e) {
   } else {
     cs.answers.set(q, c);
   }
+  saveAnswers();
   render();
 }
 
@@ -336,6 +372,7 @@ async function init() {
     ]);
 
     initData(treeData, speciesData);
+    cs.answers = loadAnswers();
     render();
 
     document.getElementById('loading').style.display = 'none';
@@ -351,6 +388,7 @@ async function init() {
       cs.showAll = false;
       cs.expandedName = null;
       cs.questionOrder = null;
+      clearSavedAnswers();
       render();
     });
   } catch (err) {
