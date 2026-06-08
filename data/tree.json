@@ -303,15 +303,15 @@
     "q_tailed_cleander": {
       "type": "question",
       "id": "q_tailed_cleander",
-      "question": "Is this a relatively large species with a conspicuously projecting tornal lobe on the hindwing, and postdiscal spots 6 and 7 placed vertically?",
-      "hint": "The cleander group is distinguished by its large size and the prominent projecting tornal lobe (bulge at the anal angle of the hindwing). The postdiscal band is dislocated at vein 2, with spots 6 and 7 stacked vertically.",
+      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
+      "hint": "The cleander group has a projecting tornal lobe (bulge at the anal angle of the hindwing) — its size and prominence vary by subgroup, from large and conspicuous (cleander subgroup) to smaller and less conspicuous (alea and agaba subgroups). The next question narrows down the subgroup.",
       "choices": [
         {
-          "label": "Yes — large; conspicuous projecting HW tornal lobe; spots 6 and 7 vertical",
+          "label": "Yes — tornal lobe present and projecting (size and prominence vary by subgroup — see next question)",
           "next": "q_cleander_sub"
         },
         {
-          "label": "No — or tornal lobe less conspicuous",
+          "label": "No — tornal lobe absent or only weakly developed",
           "next": "q_tailed_agrata"
         }
       ]
@@ -3096,7 +3096,7 @@
       "common_name": "Tailed Disc Oakblue",
       "note": "Underside ground colour uniform hair brown; markings less defined and paler than the closely related A. lurida (whose markings are darker and more sharply defined), contrasting feebly with the ground colour. HW postdiscal spot 6 positioned roughly midway between spot 5 and the end-cell bar; spots 5, 6 and 7 in echelon, their centres broadly in line. Filamentous tail at vein 2, ~2.5 mm — distinguishing it from the tailless A. epimuta. FW ~22.0 mm. Male FW upperside: thread-width black border; discal patch large and circular, extending widely into the cell and space 1b.",
       "features": {
-        "Is this a relatively large species with a conspicuously projecting tornal lobe on the hindwing, and postdiscal spots 6 and 7 placed vertically?": "No — or tornal lobe less conspicuous"
+        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — tornal lobe absent or only weakly developed"
       }
     },
     "r_lurida": {
@@ -3107,7 +3107,7 @@
       "common_name": "",
       "note": "HW tail ~2.5 mm. Male FW upperside: border slightly expanding toward apex; discal patch smaller than in A. atosia, almost entirely confined to bases of spaces 2 and 3. Underside markings darker and more clearly defined than A. atosia.",
       "features": {
-        "Is this a relatively large species with a conspicuously projecting tornal lobe on the hindwing, and postdiscal spots 6 and 7 placed vertically?": "No — or tornal lobe less conspicuous"
+        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — tornal lobe absent or only weakly developed"
       }
     },
     "r_epimuta_tailed_unclear": {
@@ -3118,7 +3118,7 @@
       "common_name": "Cannot determine to species",
       "note": "⚠ Neither underside nor upperside visible. Both candidates have HW tail ~2.5 mm.\n\nPrimary character (underside): A. atosia malayana — markings contrast feebly with ground colour. A. lurida — markings darker and more clearly defined.\n\nConfirmatory character (upperside, male): A. atosia — FW discal patch large and circular, extending widely into cell and space 1b; border a thread. A. lurida — patch smaller, almost confined to bases of spaces 2–3; border slightly expanding toward apex.\n\nCheck the underside contrast first; inspect upperside if still uncertain.",
       "features": {
-        "Is this a relatively large species with a conspicuously projecting tornal lobe on the hindwing, and postdiscal spots 6 and 7 placed vertically?": "No — or tornal lobe less conspicuous"
+        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — tornal lobe absent or only weakly developed"
       },
       "covers_results": [
         "r_atosia_malayana",
