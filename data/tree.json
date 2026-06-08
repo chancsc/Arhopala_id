@@ -862,7 +862,10 @@
       "taxon_id": null,
       "name": "Arhopala agesilaus gesa",
       "common_name": "",
-      "note": "Tailless. FW underside has a basal cell spot. Male: rich violet blue; FW black border 2.0 mm at tornus expanding to 4.0 mm at apex. Female: bluer shade than male. Superficially resembles a small Arhopala major."
+      "note": "Tailless. FW underside has a basal cell spot. Male: rich violet blue; FW black border 2.0 mm at tornus expanding to 4.0 mm at apex. Female: bluer shade than male. Superficially resembles a small Arhopala major.",
+      "features": {
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar"
+      }
     },
     "r_avatha": {
       "type": "result",
@@ -870,7 +873,10 @@
       "taxon_id": null,
       "name": "Arhopala avatha",
       "common_name": "",
-      "note": "Tailless. Uniquely lacks the basal cell spot on FW underside. Male: very dark bluish violet; FW black border 1.0 mm at tornus increasing to 2.0 mm at apex (narrow borders). Female: purple. Similar to Arhopala antimuta but distinguished by wider borders in the male."
+      "note": "Tailless. Uniquely lacks the basal cell spot on FW underside. Male: very dark bluish violet; FW black border 1.0 mm at tornus increasing to 2.0 mm at apex (narrow borders). Female: purple. Similar to Arhopala antimuta but distinguished by wider borders in the male.",
+      "features": {
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar"
+      }
     },
     "g_oenea": {
       "type": "group",
@@ -1332,7 +1338,10 @@
       "taxon_id": null,
       "name": "Arhopala epimete suedas",
       "common_name": "",
-      "note": "Unique in the agelastus group: costal spot present in FW space 10. FW underside: lower portion of postdiscal band significantly wider than upper part. HW lacks tornal green scales. Both sexes alike: blue with broad FW borders (2.0 mm at tornus to 6.0 mm at costa). Blue on HW confined to the cell. Tailless."
+      "note": "Unique in the agelastus group: costal spot present in FW space 10. FW underside: lower portion of postdiscal band significantly wider than upper part. HW lacks tornal green scales. Both sexes alike: blue with broad FW borders (2.0 mm at tornus to 6.0 mm at costa). Blue on HW confined to the cell. Tailless.",
+      "features": {
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_barami_penanga": {
       "type": "result",
@@ -1351,7 +1360,10 @@
       "taxon_id": null,
       "name": "Arhopala cardoni",
       "common_name": "",
-      "note": "Tailless; evenly rounded HW tornus with no tooth or tail at vein 2. Underside markings small and macular (dot-like); no tornal green scales. Male: bright blue with violet tinge; FW border 2.0 mm at tornus expanding to 5.0 mm at apex. Female: purer blue with slightly wider black borders than the male."
+      "note": "Tailless; evenly rounded HW tornus with no tooth or tail at vein 2. Underside markings small and macular (dot-like); no tornal green scales. Male: bright blue with violet tinge; FW border 2.0 mm at tornus expanding to 5.0 mm at apex. Female: purer blue with slightly wider black borders than the male.",
+      "features": {
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_alaconia_media": {
       "type": "result",
@@ -1359,7 +1371,10 @@
       "taxon_id": null,
       "name": "Arhopala alaconia media",
       "common_name": "",
-      "note": "Alesia subgroup (agelastus group) — the long-established Malayan member of this subgroup. Underside: inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened; HW postdiscal spot 6 outwardly concave or sinuous; tornal green scales present on the hindwing; small spot often at base of FW space 3. Normally tailless (slightly toothed), but a very rare tailed form (f. kempi, ~2.5 mm tail at vein 2) exists. Both sexes alike: violet blue with FW border 3.0 mm at tornus expanding to mid-costa."
+      "note": "Alesia subgroup (agelastus group) — the long-established Malayan member of this subgroup. Underside: inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened; HW postdiscal spot 6 outwardly concave or sinuous; tornal green scales present on the hindwing; small spot often at base of FW space 3. Normally tailless (slightly toothed), but a very rare tailed form (f. kempi, ~2.5 mm tail at vein 2) exists. Both sexes alike: violet blue with FW border 3.0 mm at tornus expanding to mid-costa.",
+      "features": {
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_alesia_sacharja": {
       "type": "result",
@@ -1378,7 +1393,10 @@
       "taxon_id": null,
       "name": "Arhopala labuana",
       "common_name": "",
-      "note": "Male upperside: much darker violet than A. agelastus, with narrower black borders. Female: dark blue. Tailless."
+      "note": "Male upperside: much darker violet than A. agelastus, with narrower black borders. Female: dark blue. Tailless.",
+      "features": {
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_wildeyana": {
       "type": "result",
@@ -1399,7 +1417,10 @@
       "taxon_id": null,
       "name": "Arhopala agelastus agelastus",
       "common_name": "",
-      "note": "Underside: HW postdiscal spot in space 3 is almost in line with spots in spaces 2 and 4 (distinguishes female from allied species). Male: violet blue with FW border 1.0 mm at tornus to 4.0 mm at apex. Female: brighter blue with broader borders. Tailless."
+      "note": "Underside: HW postdiscal spot in space 3 is almost in line with spots in spaces 2 and 4 (distinguishes female from allied species). Male: violet blue with FW border 1.0 mm at tornus to 4.0 mm at apex. Female: brighter blue with broader borders. Tailless.",
+      "features": {
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "q_agesias_s1": {
       "type": "question",
@@ -2147,7 +2168,10 @@
       "taxon_id": null,
       "name": "Arhopala antimuta antimuta",
       "common_name": "",
-      "note": "The most abundant species in the amphimuta group. Tailless. Male: deep violet-blue; black border reduced to a thread. HW underside: postdiscal spot 6 displaced well past the postdiscal row — touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line. FW postdiscal spots 2 and 3 are in line (perimuta subgroup). Confirmatory: male upperside uniformly coloured — no contrasting wing colour as in A. metamuta."
+      "note": "The most abundant species in the amphimuta group. Tailless. Male: deep violet-blue; black border reduced to a thread. HW underside: postdiscal spot 6 displaced well past the postdiscal row — touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line. FW postdiscal spots 2 and 3 are in line (perimuta subgroup). Confirmatory: male upperside uniformly coloured — no contrasting wing colour as in A. metamuta.",
+      "features": {
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "q_anthelus_s1": {
       "type": "question",
@@ -2726,7 +2750,10 @@
       "taxon_id": null,
       "name": "Arhopala zambra zambra",
       "common_name": "",
-      "note": "FW postdiscal band partially dislocated at vein 4. FW postdiscal spot 9 as wide as or wider than spot 6. Male: typically deep blue. Large species (FW > 21 mm); conspicuously projecting HW tornal lobe."
+      "note": "FW postdiscal band partially dislocated at vein 4. FW postdiscal spot 9 as wide as or wider than spot 6. Male: typically deep blue. Large species (FW > 21 mm); conspicuously projecting HW tornal lobe.",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_athada_athada": {
       "type": "result",
@@ -2734,7 +2761,10 @@
       "taxon_id": null,
       "name": "Arhopala athada athada",
       "common_name": "",
-      "note": "FW postdiscal spot 9 narrower than spot 6, shifted basad. HW postdiscal spot 6 fills the gap between spot 5 and the end-cell bar. Large species (FW > 21 mm); conspicuously projecting HW tornal lobe."
+      "note": "FW postdiscal spot 9 narrower than spot 6, shifted basad. HW postdiscal spot 6 fills the gap between spot 5 and the end-cell bar. Large species (FW > 21 mm); conspicuously projecting HW tornal lobe.",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_silhetensis_adorea": {
       "type": "result",
@@ -2897,7 +2927,10 @@
       "taxon_id": null,
       "name": "Arhopala evansi",
       "common_name": "",
-      "note": "Alea subgroup. Distinctive underside: slatey pink glaze with striae that are whiter than in other alea subgroup members. Smaller species (FW < 21 mm)."
+      "note": "Alea subgroup. Distinctive underside: slatey pink glaze with striae that are whiter than in other alea subgroup members. Smaller species (FW < 21 mm).",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_aroa_aroa": {
       "type": "result",
@@ -2905,7 +2938,10 @@
       "taxon_id": null,
       "name": "Arhopala aroa aroa",
       "common_name": "",
-      "note": "Alea subgroup. Recognizable by its rounded, elongate wings (distinctive wing shape). Narrow postdiscal bands that are well clear of the submarginal lunules. Smaller species (FW < 21 mm)."
+      "note": "Alea subgroup. Recognizable by its rounded, elongate wings (distinctive wing shape). Narrow postdiscal bands that are well clear of the submarginal lunules. Smaller species (FW < 21 mm).",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_phanda_phanda": {
       "type": "result",
@@ -2921,7 +2957,10 @@
       "taxon_id": null,
       "name": "Arhopala selta selta",
       "common_name": "",
-      "note": "Alea subgroup. HW postdiscal spot 6 widely overlaps the end-cell bar (diagnostic vs phaenops). Male: violet-blue with border expanding toward the apex. Smaller species (FW < 21 mm)."
+      "note": "Alea subgroup. HW postdiscal spot 6 widely overlaps the end-cell bar (diagnostic vs phaenops). Male: violet-blue with border expanding toward the apex. Smaller species (FW < 21 mm).",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_phaenops_sandakani": {
       "type": "result",
@@ -2945,7 +2984,10 @@
       "taxon_id": null,
       "name": "Arhopala normani",
       "common_name": "",
-      "note": "Alea subgroup. Superficially similar to A. sublustris ridleyi but male is less shining and more violet. Borders narrow. Genitalia often needed for certain identification."
+      "note": "Alea subgroup. Superficially similar to A. sublustris ridleyi but male is less shining and more violet. Borders narrow. Genitalia often needed for certain identification.",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_sublustris_ridleyi": {
       "type": "result",
@@ -2989,7 +3031,10 @@
       "taxon_id": null,
       "name": "Arhopala democritus democritus",
       "common_name": "",
-      "note": "Underside: dark chocolate-brown ground colour; markings outlined by prominent silvery-white striae and dots (more contrast than lycaenaria). Upperside: both male and female lighter and more silvery blue. Distribution: Kedawi; also recorded at Fraser's Hill."
+      "note": "Underside: dark chocolate-brown ground colour; markings outlined by prominent silvery-white striae and dots (more contrast than lycaenaria). Upperside: both male and female lighter and more silvery blue. Distribution: Kedawi; also recorded at Fraser's Hill.",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_democritus_lycaenaria": {
       "type": "result",
@@ -2997,7 +3042,10 @@
       "taxon_id": null,
       "name": "Arhopala democritus lycaenaria",
       "common_name": "",
-      "note": "Standard Malay Peninsula subspecies. Underside: hair-brown ground colour; all markings outlined by dull yellowish-white striae (less contrast than democritus ssp.). Short HW tail 1.5–2.0 mm. Macular underside markings; FW spot 4 shifted distad; HW spot 6 outwardly concave; HW band widely dislocated at vein 2."
+      "note": "Standard Malay Peninsula subspecies. Underside: hair-brown ground colour; all markings outlined by dull yellowish-white striae (less contrast than democritus ssp.). Short HW tail 1.5–2.0 mm. Macular underside markings; FW spot 4 shifted distad; HW spot 6 outwardly concave; HW band widely dislocated at vein 2.",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "q_epimuta_s1": {
       "type": "question",
@@ -3074,7 +3122,10 @@
       "taxon_id": null,
       "name": "Arhopala epimuta epiala",
       "common_name": "",
-      "note": "Tailless. Male FW upperside: large circular discal patch similar to A. atosia, but distinguished by the complete absence of a hindwing tail."
+      "note": "Tailless. Male FW upperside: large circular discal patch similar to A. atosia, but distinguished by the complete absence of a hindwing tail.",
+      "features": {
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar"
+      }
     },
     "q_eumolphus_s1": {
       "type": "question",
@@ -3322,7 +3373,10 @@
       "taxon_id": null,
       "name": "Arhopala paraganesa mendava",
       "common_name": "",
-      "note": "Montane species on the Malay Peninsula. Underside HW: roughly quadrate whitish area from mid-cell to costa; no tornal green scales. Upperside: bright pale blue with broad borders; male HW mostly fuscous; female with obscure whitish patch at FW end-cell."
+      "note": "Montane species on the Malay Peninsula. Underside HW: roughly quadrate whitish area from mid-cell to costa; no tornal green scales. Upperside: bright pale blue with broad borders; male HW mostly fuscous; female with obscure whitish patch at FW end-cell.",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_ammonides_chunsu": {
       "type": "result",
@@ -3349,7 +3403,10 @@
       "taxon_id": null,
       "name": "Arhopala ariel",
       "common_name": "",
-      "note": "No whitened gap between HW space 7 spots; no mid-cell whitish patch. Tornal green scales present; HW spot 6 normal. Upperside male: bluish-purple, hardly shining; FW border 1.5 mm at tornus expanding to 4.0 mm at apex. Female: bluer shade with broader borders."
+      "note": "No whitened gap between HW space 7 spots; no mid-cell whitish patch. Tornal green scales present; HW spot 6 normal. Upperside male: bluish-purple, hardly shining; FW border 1.5 mm at tornus expanding to 4.0 mm at apex. Female: bluer shade with broader borders.",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_elizabethae": {
       "type": "result",
@@ -3357,7 +3414,10 @@
       "taxon_id": null,
       "name": "Arhopala elizabethae",
       "common_name": "",
-      "note": "Gap between outer and central spots in HW space 7 conspicuously whitened. Tornal green scales present; HW spot 6 normal (not reaching base of space). Upperside male: shining deep blue with borders slightly wider than A. ariel; female similar to male."
+      "note": "Gap between outer and central spots in HW space 7 conspicuously whitened. Tornal green scales present; HW spot 6 normal (not reaching base of space). Upperside male: shining deep blue with borders slightly wider than A. ariel; female similar to male.",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_ariel_or_elizabethae": {
       "type": "result",
@@ -3444,7 +3504,10 @@
       "taxon_id": null,
       "name": "Arhopala paralea",
       "common_name": "",
-      "note": "Tail 2.5 mm. Underside ground colour pale purplish-brown; tornal green scales absent or vestigial. Male: violet-blue; FW border 2.0 mm at mid-costa, slightly increasing toward tornus and apex; HW border 2.5 mm. Montane on the Malay Peninsula."
+      "note": "Tail 2.5 mm. Underside ground colour pale purplish-brown; tornal green scales absent or vestigial. Male: violet-blue; FW border 2.0 mm at mid-costa, slightly increasing toward tornus and apex; HW border 2.5 mm. Montane on the Malay Peninsula.",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_buddha_cooperi": {
       "type": "result",

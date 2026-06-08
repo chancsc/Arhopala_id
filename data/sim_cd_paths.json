@@ -30,7 +30,7 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Slightly displaced inward; spot 6 still clearly nearer to spot 5 than to the end-cell bar"
+      "choice": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar"
     },
     {
       "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
@@ -76,7 +76,7 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Slightly displaced inward; spot 6 still clearly nearer to spot 5 than to the end-cell bar"
+      "choice": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar"
     },
     {
       "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
@@ -346,7 +346,7 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Slightly displaced inward; spot 6 still clearly nearer to spot 5 than to the end-cell bar"
+      "choice": "Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
@@ -462,7 +462,7 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Slightly displaced inward; spot 6 still clearly nearer to spot 5 than to the end-cell bar"
+      "choice": "Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
@@ -512,7 +512,7 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Slightly displaced inward; spot 6 still clearly nearer to spot 5 than to the end-cell bar"
+      "choice": "Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
@@ -636,7 +636,7 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Slightly displaced inward; spot 6 still clearly nearer to spot 5 than to the end-cell bar"
+      "choice": "Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
@@ -756,7 +756,7 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Slightly displaced inward; spot 6 still clearly nearer to spot 5 than to the end-cell bar"
+      "choice": "Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
@@ -2469,14 +2469,6 @@
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
       "choice": "Slightly displaced inward; spot 6 still clearly nearer to spot 5 than to the end-cell bar"
-    },
-    {
-      "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
-      "choice": "No — band fully dislocated at vein 2 (two separate portions)"
-    },
-    {
-      "question": "Are HW postdiscal spots 5, 6 and 7 widely out of line — with the inner edge of spot 6 in line with or inside the inner edge of spot 7, and spot 6 touching or overlapping the end-cell bar?",
-      "choice": "No — spots broadly in line; spot 6 only slightly displaced, nearer to spot 5"
     }
   ],
   "Arhopala antimuta antimuta": [
@@ -2510,15 +2502,11 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Slightly displaced inward; spot 6 still clearly nearer to spot 5 than to the end-cell bar"
+      "choice": "Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
       "choice": "No — band fully dislocated at vein 2 (two separate portions)"
-    },
-    {
-      "question": "Are HW postdiscal spots 5, 6 and 7 widely out of line — with the inner edge of spot 6 in line with or inside the inner edge of spot 7, and spot 6 touching or overlapping the end-cell bar?",
-      "choice": "Yes — spots 5, 6 and 7 widely out of line; inner edge of spot 6 in line with or inside inner edge of spot 7; spot 6 touches or overlaps end-cell bar"
     }
   ],
   "Arhopala anthelus grahami": [
@@ -3784,7 +3772,7 @@
     },
     {
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 in the postdiscal row at roughly the same level as spot 5"
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
@@ -3815,12 +3803,12 @@
       "choice": "Larger (FW > 21 mm); tornal lobe conspicuously projecting (cleander subgroup)"
     },
     {
-      "question": "Is the forewing postdiscal band NOT dislocated at vein 4 — straight through or only slightly sinuous?",
-      "choice": "No — FW band partially dislocated at vein 4"
-    },
-    {
       "question": "Is the forewing postdiscal spot in space 9 as wide as or wider than the spot in space 6?",
       "choice": "Yes — FW spot 9 as wide as or wider than spot 6; male deep blue"
+    },
+    {
+      "question": "Is the forewing postdiscal band NOT dislocated at vein 4 — straight through or only slightly sinuous?",
+      "choice": "No — FW band partially dislocated at vein 4"
     }
   ],
   "Arhopala athada athada": [
@@ -3854,7 +3842,7 @@
     },
     {
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 in the postdiscal row at roughly the same level as spot 5"
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
@@ -3885,12 +3873,12 @@
       "choice": "Larger (FW > 21 mm); tornal lobe conspicuously projecting (cleander subgroup)"
     },
     {
-      "question": "Is the forewing postdiscal band NOT dislocated at vein 4 — straight through or only slightly sinuous?",
-      "choice": "No — FW band partially dislocated at vein 4"
-    },
-    {
       "question": "Is the forewing postdiscal spot in space 9 as wide as or wider than the spot in space 6?",
       "choice": "No — FW spot 9 narrower than spot 6, shifted basad"
+    },
+    {
+      "question": "Is the forewing postdiscal band NOT dislocated at vein 4 — straight through or only slightly sinuous?",
+      "choice": "No — FW band partially dislocated at vein 4"
     },
     {
       "question": "Does hindwing postdiscal spot 6 completely fill the gap between spot 5 and the end-cell bar (no gap visible between spot 6 and the bar)?",
@@ -4068,7 +4056,7 @@
     },
     {
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 in the postdiscal row at roughly the same level as spot 5"
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
@@ -4138,7 +4126,7 @@
     },
     {
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 in the postdiscal row at roughly the same level as spot 5"
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
@@ -4290,7 +4278,7 @@
     },
     {
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 in the postdiscal row at roughly the same level as spot 5"
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
@@ -4333,12 +4321,12 @@
       "choice": "No — typical wing shape"
     },
     {
-      "question": "Is the postdiscal band placed very close to the inner submarginal lunules?",
-      "choice": "No — postdiscal band not especially close to submarginal lunules"
-    },
-    {
       "question": "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?",
       "choice": "Yes — HW spot 6 widely overlaps the end-cell bar; male violet-blue, border expanding toward apex"
+    },
+    {
+      "question": "Is the postdiscal band placed very close to the inner submarginal lunules?",
+      "choice": "No — postdiscal band not especially close to submarginal lunules"
     }
   ],
   "Arhopala phaenops sandakani": [
@@ -4424,10 +4412,6 @@
     },
     {
       "question": "Is the male border noticeably expanding toward the apex (similar to A. selta)?",
-      "choice": "Cannot determine — upperside not visible"
-    },
-    {
-      "question": "Is the male less shining and more violet (rather than purely bright blue)?",
       "choice": "Cannot determine — upperside not visible"
     }
   ],
@@ -4552,7 +4536,7 @@
     },
     {
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 in the postdiscal row at roughly the same level as spot 5"
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
@@ -4595,12 +4579,12 @@
       "choice": "No — typical wing shape"
     },
     {
-      "question": "Is the postdiscal band placed very close to the inner submarginal lunules?",
-      "choice": "No — postdiscal band not especially close to submarginal lunules"
-    },
-    {
       "question": "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?",
       "choice": "No — HW spot 6 does not widely overlap the end-cell bar"
+    },
+    {
+      "question": "Is the postdiscal band placed very close to the inner submarginal lunules?",
+      "choice": "No — postdiscal band not especially close to submarginal lunules"
     },
     {
       "question": "Is the male border noticeably expanding toward the apex (similar to A. selta)?",
@@ -4703,10 +4687,6 @@
     {
       "question": "Is the male a bright, glistening blue (not matt or indigo)?",
       "choice": "Yes — bright glistening blue (not matt); borders under 0.5 mm"
-    },
-    {
-      "question": "Is the male less shining and more violet (rather than purely bright blue)?",
-      "choice": "Cannot determine — upperside not visible"
     }
   ],
   "Arhopala corinda acestes": [
@@ -4770,7 +4750,7 @@
     },
     {
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 in the postdiscal row at roughly the same level as spot 5"
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
@@ -4824,7 +4804,7 @@
     },
     {
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 in the postdiscal row at roughly the same level as spot 5"
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
@@ -4979,6 +4959,10 @@
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
       "choice": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar"
+    },
+    {
+      "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
+      "choice": "No — band fully dislocated at vein 2 (two separate portions)"
     }
   ],
   "Arhopala overdijkinki unda": [
@@ -5524,7 +5508,7 @@
     },
     {
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 in the postdiscal row at roughly the same level as spot 5"
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
@@ -5639,12 +5623,12 @@
       "choice": "Yes — gap between HW space 7 spots conspicuously whitened"
     },
     {
-      "question": "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?",
-      "choice": "Yes — HW spot 6 extended to base of space"
-    },
-    {
       "question": "Are tornal green scales present on the hindwing underside?",
       "choice": "Tornal green scales present"
+    },
+    {
+      "question": "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?",
+      "choice": "Yes — HW spot 6 extended to base of space"
     }
   ],
   "Arhopala ariel": [
@@ -5678,7 +5662,7 @@
     },
     {
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 in the postdiscal row at roughly the same level as spot 5"
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
@@ -5728,7 +5712,7 @@
     },
     {
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 in the postdiscal row at roughly the same level as spot 5"
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
@@ -5743,12 +5727,12 @@
       "choice": "Yes — gap between HW space 7 spots conspicuously whitened"
     },
     {
-      "question": "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?",
-      "choice": "No — HW spot 6 normal, not reaching base"
-    },
-    {
       "question": "Are tornal green scales present on the hindwing underside?",
       "choice": "Tornal green scales present"
+    },
+    {
+      "question": "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?",
+      "choice": "No — HW spot 6 normal, not reaching base"
     }
   ],
   "Ganesa group — ariel or elizabethae (unresolved)": [
@@ -5980,7 +5964,7 @@
     },
     {
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 in the postdiscal row at roughly the same level as spot 5"
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
@@ -6431,10 +6415,6 @@
     {
       "question": "Is the male border noticeably expanding toward the apex (similar to A. selta)?",
       "choice": "Cannot determine — upperside not visible"
-    },
-    {
-      "question": "Is the male less shining and more violet (rather than purely bright blue)?",
-      "choice": "Cannot determine — upperside not visible"
     }
   ],
   "Alea subgroup — normani or sublustris (unresolved)": [
@@ -6525,10 +6505,6 @@
     {
       "question": "Is the male a bright, glistening blue (not matt or indigo)?",
       "choice": "Yes — bright glistening blue (not matt); borders under 0.5 mm"
-    },
-    {
-      "question": "Is the male less shining and more violet (rather than purely bright blue)?",
-      "choice": "Cannot determine — upperside not visible"
     }
   ]
 }
