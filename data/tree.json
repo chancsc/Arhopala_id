@@ -21,7 +21,7 @@
       "type": "question",
       "id": "q_tailed_vein3",
       "question": "Is the tail located at vein 3 and short?",
-      "hint": "In the vast majority of Arhopala the tail (when present) is at vein 2. Only 3 species in the entire genus have a tail at vein 3 — all in the abseus group: A. abseus abseus (small, deep violet-blue male), A. anella (larger, very wide fuscous borders), and A. alesia sacharja (Langkawi; also NE India to Vietnam). The vein 3 tail is one vein closer to the forewing than usual, and is distinctively short and white-tipped. Also check for a spot at the base of hindwing space 1a.",
+      "hint": "In the vast majority of Arhopala the tail (when present) is at vein 2. Only 2 species in the entire genus have a tail at vein 3 — both in the abseus group: A. abseus abseus (small, deep violet-blue male) and A. anella (larger, very wide fuscous borders). The vein 3 tail is one vein closer to the forewing than usual, and is distinctively short and white-tipped. Also check for a spot at the base of hindwing space 1a.",
       "choices": [
         {
           "label": "Yes — short white-tipped tail at vein 3 (only 3 spp. in entire genus)",
@@ -1093,7 +1093,7 @@
       "type": "group",
       "id": "g_agelastus",
       "group_name": "agelastus group",
-      "description": "FW underside postdiscal band is continuous; often a spot at base of FW space 3. Most species lack a costal spot in FW space 10 (exception: epimete suedas). HW postdiscal band only partially dislocated at vein 2. Most species are tailless; males typically have broad black borders. Seven Malaysian species in four subgroups.",
+      "description": "FW underside postdiscal band is continuous; often a spot at base of FW space 3. Most species lack a costal spot in FW space 10 (exception: epimete suedas). HW postdiscal band only partially dislocated at vein 2. Most species are tailless; males typically have broad black borders. Eight Malaysian species in four subgroups.",
       "key_features": [
         "FW postdiscal band continuous; often spot at base of FW space 3",
         "HW postdiscal band partially dislocated at vein 2",
@@ -1171,7 +1171,7 @@
       "type": "question",
       "id": "q_abseus_species",
       "question": "What is the underside ground colour and are the markings darkened?",
-      "hint": "Three species share the vein 3 white-tipped tail. abseus has strongly darkened (blackish-brown) underside markings and a costal spot in FW space 12. anella is larger with hair-brown underside and no spot in FW space 12. alesia sacharja (recorded in Langkawi; also NE India to Vietnam) is a late Malayan record — detailed underside characters for separation from anella are not fully documented; use distribution as a supplementary guide.",
+      "hint": "Two species share the vein 3 white-tipped tail. abseus has strongly darkened (blackish-brown) underside markings and a costal spot in FW space 12. anella is larger with hair-brown underside and no spot in FW space 12.",
       "choices": [
         {
           "label": "Markings much darkened (blackish brown); costal spot present in FW space 12",
@@ -1180,10 +1180,6 @@
         {
           "label": "Underside hair brown; spots large and rounded; no spot in FW space 12; male with very wide fuscous borders on upperside",
           "next": "r_anella"
-        },
-        {
-          "label": "Langkawi (or NE India / Myanmar / Thailand / Vietnam range)",
-          "next": "r_alesia_sacharja"
         }
       ]
     },
@@ -1202,14 +1198,6 @@
       "name": "Arhopala anella",
       "common_name": "",
       "note": "Considerably larger than A. abseus. Underside ground colour hair brown; markings not prominently darkened; no spot in FW space 12. Male upperside: blue restricted to basal halves of FW spaces 1b, 2, and 3 and the lower half of the cell; HW blue confined almost entirely to the cell; very wide fuscous borders. Female: relatively narrow black borders."
-    },
-    "r_alesia_sacharja": {
-      "type": "result",
-      "id": "r_alesia_sacharja",
-      "taxon_id": null,
-      "name": "Arhopala alesia sacharja",
-      "common_name": "",
-      "note": "Short white-tipped tail at vein 3 (abseus group). First recorded in Malaysia from Langkawi in 1994. Also distributed across NE India, Myanmar, Thailand, Laos, and Vietnam. ⚠ Detailed underside characters to separate from A. anella are not fully documented in Malayan material — distribution is currently the most reliable field indicator for this subspecies."
     },
     "g_aedias": {
       "type": "group",
@@ -1273,15 +1261,31 @@
       "type": "question",
       "id": "q_agelastus_s4",
       "question": "Are the inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened, and is HW postdiscal spot 6 outwardly concave or sinuous?",
-      "hint": "Arhopala alaconia media (alesia subgroup) is distinguished by strikingly enlarged and darkened inner submarginal spots in these specific spaces, combined with an outwardly concave or sinuous HW postdiscal spot 6.",
+      "hint": "These strikingly enlarged and darkened inner submarginal spots, combined with an outwardly concave or sinuous HW postdiscal spot 6, identify the alesia subgroup of the agelastus group — A. alaconia media and the rare Langkawi record A. alesia sacharja.",
       "choices": [
         {
           "label": "Yes — inner submarginal spots enlarged and darkened; HW spot 6 outwardly concave or sinuous",
-          "next": "r_alaconia_media"
+          "next": "q_alesia_subgroup_species"
         },
         {
           "label": "No",
           "next": "q_agelastus_s5"
+        }
+      ]
+    },
+    "q_alesia_subgroup_species": {
+      "type": "question",
+      "id": "q_alesia_subgroup_species",
+      "question": "Are tornal green scales present on the hindwing, and is there a small spot at the base of FW space 3?",
+      "hint": "Both alesia-subgroup species are typically tailless and share the enlarged, darkened submarginal spots and concave/sinuous HW spot 6. A. alaconia media additionally has tornal green scales on the hindwing and often a small spot at the base of FW space 3; a very rare tailed form (f. kempi, ~2.5 mm tail at vein 2) occurs. A. alesia sacharja is a much rarer, late Malayan record (first found in Langkawi in 1994; also NE India to Vietnam) for which these supplementary characters are not documented — detailed underside characters to separate the two are not fully established in Malayan material, so distribution (Langkawi) is the most useful supplementary guide.",
+      "choices": [
+        {
+          "label": "Yes — tornal green scales present; small spot often at base of FW space 3",
+          "next": "r_alaconia_media"
+        },
+        {
+          "label": "No / not documented — rare Langkawi record (also NE India to Vietnam)",
+          "next": "r_alesia_sacharja"
         }
       ]
     },
@@ -1354,7 +1358,15 @@
       "taxon_id": null,
       "name": "Arhopala alaconia media",
       "common_name": "",
-      "note": "Alesia subgroup. Underside: inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened; HW postdiscal spot 6 outwardly concave or sinuous. Normally tailless (slightly toothed), but a rare tailed form (f. kempi) exists. Both sexes alike: violet blue with FW border 3.0 mm at tornus expanding to mid-costa."
+      "note": "Alesia subgroup (agelastus group) — the long-established Malayan member of this subgroup. Underside: inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened; HW postdiscal spot 6 outwardly concave or sinuous; tornal green scales present on the hindwing; small spot often at base of FW space 3. Normally tailless (slightly toothed), but a very rare tailed form (f. kempi, ~2.5 mm tail at vein 2) exists. Both sexes alike: violet blue with FW border 3.0 mm at tornus expanding to mid-costa."
+    },
+    "r_alesia_sacharja": {
+      "type": "result",
+      "id": "r_alesia_sacharja",
+      "taxon_id": null,
+      "name": "Arhopala alesia sacharja",
+      "common_name": "",
+      "note": "Alesia subgroup (agelastus group), alongside A. alaconia media — a very rare, late Malayan record (first found in Langkawi in 1994; also distributed across NE India, Myanmar, Thailand, Laos, and Vietnam). Typically tailless. Underside: inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened; HW postdiscal spot 6 outwardly concave or sinuous, positioned below the spot in space 7. Sexes alike: violet blue with broad FW border ~3.0 mm at the tornus, expanding towards the mid-costa. ⚠ Detailed underside characters to separate it from A. alaconia media are not fully documented in Malayan material — distribution (Langkawi) is currently the most reliable supplementary field indicator."
     },
     "r_labuana": {
       "type": "result",

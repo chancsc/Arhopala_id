@@ -529,6 +529,68 @@
     {
       "question": "Are the inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened, and is HW postdiscal spot 6 outwardly concave or sinuous?",
       "choice": "Yes — inner submarginal spots enlarged and darkened; HW spot 6 outwardly concave or sinuous"
+    },
+    {
+      "question": "Are tornal green scales present on the hindwing, and is there a small spot at the base of FW space 3?",
+      "choice": "Yes — tornal green scales present; small spot often at base of FW space 3"
+    }
+  ],
+  "Arhopala alesia sacharja": [
+    {
+      "question": "Does the hindwing have a tail?",
+      "choice": "No — hindwing is tailless"
+    },
+    {
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
+      "choice": "Cannot determine — FW space 1b obscured by hindwing"
+    },
+    {
+      "question": "Are the underside markings almost entirely suppressed — the postdiscal spots replaced by a faint, obscure streak rather than a series of distinct separate spots, with most other typical markings absent?",
+      "choice": "No — postdiscal spots distinct; typical markings present"
+    },
+    {
+      "question": "Does the hindwing have a very rounded tornus, and are tornal green scales absent?",
+      "choice": "No"
+    },
+    {
+      "question": "Is there a prominent yellowish area in the centre of the hindwing underside, and are the underside markings generally obscure or ill-defined?",
+      "choice": "No — HW discal area not prominently yellowish; markings well-defined"
+    },
+    {
+      "question": "Is there a small spot at the extreme base of hindwing space 6 on the underside?",
+      "choice": "No"
+    },
+    {
+      "question": "Are the underside spots prominent and rounded, with a central spot in FW space 11?",
+      "choice": "No"
+    },
+    {
+      "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
+      "choice": "Slightly displaced inward; spot 6 still clearly nearer to spot 5 than to the end-cell bar"
+    },
+    {
+      "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
+      "choice": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
+    },
+    {
+      "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
+      "choice": "Yes — FW postdiscal band continuous; often a spot at base of FW space 3 (agelastus group)"
+    },
+    {
+      "question": "Is there a costal spot in forewing space 10?",
+      "choice": "No — FW space 10 lacks a costal spot"
+    },
+    {
+      "question": "Are the underside markings small and macular (dot-like), and are tornal green scales absent from the hindwing?",
+      "choice": "No — markings larger or not macular"
+    },
+    {
+      "question": "Are the inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened, and is HW postdiscal spot 6 outwardly concave or sinuous?",
+      "choice": "Yes — inner submarginal spots enlarged and darkened; HW spot 6 outwardly concave or sinuous"
+    },
+    {
+      "question": "Are tornal green scales present on the hindwing, and is there a small spot at the base of FW space 3?",
+      "choice": "No / not documented — rare Langkawi record (also NE India to Vietnam)"
     }
   ],
   "Arhopala labuana": [
