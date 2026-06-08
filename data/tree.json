@@ -2968,7 +2968,10 @@
       "taxon_id": null,
       "name": "Arhopala phaenops sandakani",
       "common_name": "",
-      "note": "Alea subgroup. Similar to A. selta selta (border expanding toward apex) but HW postdiscal spot 6 usually does NOT overlap the end-cell bar. Smaller species (FW < 21 mm)."
+      "note": "Alea subgroup. Similar to A. selta selta (border expanding toward apex) but HW postdiscal spot 6 usually does NOT overlap the end-cell bar. Smaller species (FW < 21 mm).",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_milleri": {
       "type": "result",
@@ -2976,7 +2979,10 @@
       "taxon_id": null,
       "name": "Arhopala milleri",
       "common_name": "",
-      "note": "Alea subgroup. Larger than A. sublustris (but still FW < 21 mm). Male: more matt indigo blue (not bright glistening) with a thread-like border. Genitalia often needed for certain identification."
+      "note": "Alea subgroup. Larger than A. sublustris (but still FW < 21 mm). Male: more matt indigo blue (not bright glistening) with a thread-like border. Genitalia often needed for certain identification.",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_normani": {
       "type": "result",
@@ -2995,7 +3001,10 @@
       "taxon_id": null,
       "name": "Arhopala sublustris ridleyi",
       "common_name": "",
-      "note": "Alea subgroup. Male: bright glistening blue with borders under 0.5 mm. Brighter and more glistening than A. normani. Smaller species (FW < 21 mm)."
+      "note": "Alea subgroup. Male: bright glistening blue with borders under 0.5 mm. Brighter and more glistening than A. normani. Smaller species (FW < 21 mm).",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_corinda_acestes": {
       "type": "result",
@@ -3395,7 +3404,10 @@
       "taxon_id": null,
       "name": "Arhopala ammon ammon",
       "common_name": "",
-      "note": "Tornal green scales present. Underside HW: spot 6 extended to base of space; outer and central spots in space 7 separate, gap whitened. Upperside male: dark blue, narrow borders (1.5 mm at FW apex). Female: narrow borders (2.0 mm at FW tornus and HW)."
+      "note": "Tornal green scales present. Underside HW: spot 6 extended to base of space; outer and central spots in space 7 separate, gap whitened. Upperside male: dark blue, narrow borders (1.5 mm at FW apex). Female: narrow borders (2.0 mm at FW tornus and HW).",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_ariel": {
       "type": "result",
@@ -3429,7 +3441,10 @@
       "covers_results": [
         "r_ariel",
         "r_elizabethae"
-      ]
+      ],
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_hypomuta_hypomuta": {
       "type": "result",
@@ -3599,7 +3614,10 @@
         "r_sublustris_ridleyi",
         "r_milleri",
         "r_alea_glist_unclear"
-      ]
+      ],
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_alea_glist_unclear": {
       "type": "result",
@@ -3611,7 +3629,10 @@
       "covers_results": [
         "r_normani",
         "r_sublustris_ridleyi"
-      ]
+      ],
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "q_tailed_corinda_apex": {
       "type": "question",
