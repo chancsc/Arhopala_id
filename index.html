@@ -115,6 +115,82 @@
     }
     .start-here-cta:hover { background: #234820; }
 
+    .start-here-alt {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 0.9rem;
+      font-size: 0.83rem;
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .start-here-alt li {
+      position: relative;
+      padding-left: 1.1rem;
+      margin-bottom: 0.35rem;
+    }
+    .start-here-alt li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+    }
+    .start-here-alt a {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-color: var(--border);
+      text-underline-offset: 2px;
+    }
+    .start-here-alt a:hover { text-decoration-color: var(--primary); }
+
+    /* ── Introduction ── */
+    .landing-intro {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1rem 1.1rem 1.1rem;
+      margin-bottom: 1.4rem;
+    }
+    .landing-intro-title {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin: 0 0 0.5rem;
+    }
+    .landing-intro-lead {
+      font-size: 0.83rem;
+      color: var(--text);
+      line-height: 1.55;
+      margin: 0 0 0.9rem;
+    }
+    .landing-intro-sub {
+      font-size: 0.73rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin: 0.85rem 0 0.5rem;
+    }
+    .landing-intro-features {
+      display: grid;
+      gap: 0.7rem;
+    }
+    .landing-intro-feature-name {
+      font-size: 0.83rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin: 0 0 0.2rem;
+    }
+    .landing-intro-feature-desc {
+      font-size: 0.8rem;
+      color: var(--text);
+      line-height: 1.5;
+      margin: 0 0 0.35rem;
+    }
+    .landing-intro-feature-desc:last-child { margin-bottom: 0; }
+
     /* ── Quick links ── */
     .landing-links {
       display: grid;
@@ -178,6 +254,58 @@
       </div>
     </div>
 
+    <!-- Introduction -->
+    <div class="landing-intro">
+      <p class="landing-intro-title">Introduction</p>
+      <p class="landing-intro-lead">
+        <strong>Arhopala ID</strong> helps you put a name to a Malaysian Oak Blue (<em>Arhopala</em>)
+        butterfly from a photo of its wing underside. Rather than memorising dozens of similar-looking
+        species, you work through a small set of clearly illustrated characters — tail shape, spot
+        position, banding pattern — and the app narrows the candidates down for you.
+      </p>
+
+      <p class="landing-intro-sub">What each section is for</p>
+      <div class="landing-intro-features">
+
+        <div class="landing-intro-feature">
+          <p class="landing-intro-feature-name">Feature Scoring</p>
+          <p class="landing-intro-feature-desc">
+            Mark the characters you can clearly see in your photo, in any order. Every candidate
+            species is scored and ranked live as you go, and any feature you leave blank never
+            counts against a match.
+          </p>
+        </div>
+
+        <div class="landing-intro-feature">
+          <p class="landing-intro-feature-name">Species Search</p>
+          <p class="landing-intro-feature-desc">
+            Browse or search the full list of taxa covered by this key. Each species page shows its
+            identification characters, reference photos, and the route the key takes to reach it —
+            displayed as two paths:
+          </p>
+          <p class="landing-intro-feature-desc">
+            <strong>Direct path</strong> — the exact sequence of questions and answers the ID key
+            follows, step by step, to arrive at this species.
+          </p>
+          <p class="landing-intro-feature-desc">
+            <strong>Simulation CD path</strong> — an alternative route showing how the key still
+            reaches the same species when the hardest-to-see characters (such as upperside features
+            and forewing underside spaces 1–3, often hidden in resting photos) are all answered
+            “Cannot determine”.
+          </p>
+        </div>
+
+        <div class="landing-intro-feature">
+          <p class="landing-intro-feature-name">Visual Guide</p>
+          <p class="landing-intro-feature-desc">
+            Illustrated wing diagrams that introduce the anatomy and terminology — wing spaces, spot
+            numbering, the end-cell bar, and more — used throughout the key and the scoring questions.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
     <!-- Where to Start card -->
     <div class="start-here">
       <p class="start-here-title">Where to start</p>
@@ -186,6 +314,11 @@
         candidates are ranked in real time. Leave anything unclear blank; unanswered questions
         do not penalise any candidate.
       </p>
+
+      <ul class="start-here-alt">
+        <li>Use the <a href="guide.html">Visual Guide</a> to get familiar with the features and keys first.</li>
+        <li>Use <a href="species.html">Species Search</a> to get familiar with the various features on <em>Arhopala</em> and see how they derive the final species.</li>
+      </ul>
 
       <p class="start-here-sub">Know these five terms before you score</p>
       <div class="start-here-terms">
