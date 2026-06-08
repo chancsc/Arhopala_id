@@ -5574,7 +5574,7 @@
     },
     {
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 in the postdiscal row at roughly the same level as spot 5"
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
@@ -5639,12 +5639,12 @@
       "choice": "Yes — gap between HW space 7 spots conspicuously whitened"
     },
     {
-      "question": "Are tornal green scales present on the hindwing underside?",
-      "choice": "Tornal green scales present"
-    },
-    {
       "question": "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?",
       "choice": "Yes — HW spot 6 extended to base of space"
+    },
+    {
+      "question": "Are tornal green scales present on the hindwing underside?",
+      "choice": "Tornal green scales present"
     }
   ],
   "Arhopala ariel": [
@@ -5743,12 +5743,12 @@
       "choice": "Yes — gap between HW space 7 spots conspicuously whitened"
     },
     {
-      "question": "Are tornal green scales present on the hindwing underside?",
-      "choice": "Tornal green scales present"
-    },
-    {
       "question": "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?",
       "choice": "No — HW spot 6 normal, not reaching base"
+    },
+    {
+      "question": "Are tornal green scales present on the hindwing underside?",
+      "choice": "Tornal green scales present"
     }
   ],
   "Ganesa group — ariel or elizabethae (unresolved)": [
