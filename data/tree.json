@@ -381,7 +381,7 @@
         },
         {
           "label": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)",
-          "next": "q_amphimuta_sub"
+          "next": "r_delta"
         }
       ]
     },
@@ -1951,7 +1951,8 @@
       "note": "Tailed — short tooth-like tail at vein 2; the ONLY tailed member of the amphimuta subgroup (all others tailless). Male: deep violet with a narrow, regular black border. Part of the amphimuta subgroup (HW spots 5–7 in echelon; spots rounded).",
       "features": {
         "On the forewing underside, is the basal cell spot absent?": "No — basal cell spot present on FW underside",
-        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "No — no white patch on HW cilia"
+        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "No — no white patch on HW cilia",
+        "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
       }
     },
     "r_avathina_avathina": {
