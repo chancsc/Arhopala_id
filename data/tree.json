@@ -320,18 +320,18 @@
       "type": "question",
       "id": "q_cleander_sub",
       "question": "Which of these best matches the specimen's size, tornal lobe, and hindwing markings?",
-      "hint": "Agaba subgroup: HW postdiscal spot 5 contiguous or amalgamated with end-cell bar; HW band only PARTIALLY dislocated at vein 2 (unlike others). Cleander subgroup: large (FW > 21 mm); tornal lobe conspicuously projecting; HW band completely dislocated at v2. Alea subgroup: smaller (FW < 21 mm); tornal lobe less conspicuous.",
+      "hint": "Agaba subgroup: HW postdiscal spot 5 contiguous or amalgamated with end-cell bar; HW band only PARTIALLY dislocated at vein 2 (unlike others). Cleander subgroup: tornal lobe large and clearly visible; underside plain hair brown; FW typically 22–26 mm (athada 22–23, cleander 23–24, silhetensis 23–26 mm). Alea subgroup: tornal lobe present but smaller and less prominent; FW typically 17–21 mm (phanda 17–19, selta/aroa/evansi 18–21, aurelia 19–20 mm); aurelia and evansi have a distinctive slatey purple or pinkish underside glaze.",
       "choices": [
         {
           "label": "HW spot 5 contiguous/merged with end-cell bar; HW band partially dislocated at vein 2 (agaba subgroup)",
           "next": "r_agaba"
         },
         {
-          "label": "Larger (FW > 21 mm); tornal lobe conspicuously projecting (cleander subgroup)",
+          "label": "Tornal lobe large and conspicuously projecting; underside plain hair brown; FW typically 22–26 mm (cleander subgroup)",
           "next": "g_cleander"
         },
         {
-          "label": "Smaller (FW < 21 mm); tornal lobe less conspicuous (alea subgroup)",
+          "label": "Tornal lobe smaller and less prominent; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)",
           "next": "g_cleander_alea"
         }
       ]
