@@ -155,11 +155,11 @@
       "type": "question",
       "id": "q_long_tail_spot4",
       "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
-      "hint": "This separates A. overdijkinki (eumolphus group, tail ~5 mm) from the echelon-spot species. In A. overdijkinki, HW postdiscal spot 6 sits directly below spot 7, breaking the diagonal row. In A. aedias (aedias group, tail ~6 mm) and A. opalina (camdeo group, tail 4–6 mm), spots 5, 6, and 7 are arranged in echelon — with spot 6 sitting closer to spot 5 than to spot 7. If echelon is confirmed, a follow-up question checks for the camdeo-group dark area under the FW cell.",
+      "hint": "This separates A. overdijkinki (eumolphus group, tail ~5 mm) from the echelon-spot species. In A. overdijkinki, HW postdiscal spot 6 sits directly below spot 7, breaking the diagonal row. Note: A. eumolphus also has spot 6 directly below spot 7, but its tail is only ~3 mm — if the tail is not clearly ~5 mm, go back and answer No at the previous question. In A. aedias (aedias group, tail ~6 mm) and A. opalina (camdeo group, tail 4–6 mm), spots 5, 6, and 7 are arranged in echelon — with spot 6 sitting closer to spot 5 than to spot 7. If echelon is confirmed, a follow-up question checks for the camdeo-group dark area under the FW cell.",
       "choices": [
         {
           "label": "Yes — HW spot 6 directly below spot 7 (not in echelon with spots 5 and 7)",
-          "next": "r_overdijkinki_unda"
+          "next": "q_eumolphus_s1"
         },
         {
           "label": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
@@ -3144,7 +3144,7 @@
       "type": "question",
       "id": "q_eumolphus_s1",
       "question": "How long is the hindwing tail?",
-      "hint": "Measure the tail at vein 2. overdijkinki has a distinctly longer tail (~5 mm) compared with all other species in the group (~3 mm).",
+      "hint": "Measure the tail at vein 2. A. overdijkinki has a distinctly longer tail (~5 mm); all other eumolphus group species — including A. eumolphus itself — have tails of only ~3 mm. If you arrived here from the 'very long tail ≥5 mm' gateway and the tail now looks closer to ~3 mm, choose Tail ~3 mm to continue correctly.",
       "choices": [
         {
           "label": "Tail ~5 mm (markedly long)",
