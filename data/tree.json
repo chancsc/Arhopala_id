@@ -3148,11 +3148,13 @@
       "choices": [
         {
           "label": "Yes — outer edge of spot 6 outwardly straight",
-          "next": "r_overdijkinki_unda"
+          "next": "r_overdijkinki_unda",
+          "tooltip": "\"Straight\" means the outer edge runs in a roughly flat line — no inward curve."
         },
         {
           "label": "No — outer edge of spot 6 outwardly concave (curves inward)",
-          "next": "q_eumolphus_green"
+          "next": "q_eumolphus_green",
+          "tooltip": "\"Concave\" means curved inward — like the inside of a bowl or cave. \"Outwardly concave\" means the outer edge of the spot curves inward when viewed from outside."
         },
         {
           "label": "Cannot determine — spot 6 edge shape unclear",
@@ -3718,11 +3720,13 @@
       "choices": [
         {
           "label": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)",
-          "next": "q_eumolphus_green"
+          "next": "q_eumolphus_green",
+          "tooltip": "\"Concave\" means curved inward — like the inside of a bowl or cave. \"Outwardly concave\" means the outer edge of the spot curves inward when viewed from outside."
         },
         {
           "label": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)",
-          "next": "q_acta_vs_tameanga"
+          "next": "q_acta_vs_tameanga",
+          "tooltip": "\"Straight\" means the outer edge runs in a roughly flat line — no inward curve."
         },
         {
           "label": "Cannot determine — spot 6 shape unclear",

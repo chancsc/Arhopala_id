@@ -138,6 +138,13 @@ function render() {
   const choicesEl = appEl.querySelector('.choices');
   if (choicesEl) {
     choicesEl.addEventListener('click', e => {
+      const info = e.target.closest('.choice-info');
+      if (info) {
+        e.stopPropagation();
+        toggleChoiceTooltip(info);
+        return;
+      }
+      hideChoiceTooltip();
       const btn = e.target.closest('.choice-btn');
       if (btn) handleChoice(btn.dataset.label, btn.dataset.next);
     });
@@ -163,7 +170,12 @@ function renderQuestion(node) {
     : '';
 
   const choicesHTML = node.choices
-    .map(c => `<button class="choice-btn" data-label="${escapeAttr(c.label)}" data-next="${escapeAttr(c.next)}">${escapeHtml(c.label)}</button>`)
+    .map(c => {
+      const icon = c.tooltip
+        ? `<span class="choice-info" data-tooltip="${escapeAttr(c.tooltip)}" aria-label="Explain term" role="button" tabindex="0">i</span>`
+        : '';
+      return `<button class="choice-btn" data-label="${escapeAttr(c.label)}" data-next="${escapeAttr(c.next)}"><span class="choice-label">${escapeHtml(c.label)}</span>${icon}</button>`;
+    })
     .join('');
 
   const qNum = state.questionNumbers && state.questionNumbers.has(node.question)
@@ -472,7 +484,51 @@ function renderErrorCard(message) {
   `;
 }
 
+// ===== Choice tooltip popup =====
+
+let _tooltipEl = null;
+let _tooltipIcon = null;
+
+function getTooltipEl() {
+  if (!_tooltipEl) {
+    _tooltipEl = document.createElement('div');
+    _tooltipEl.id = 'choice-tooltip-popup';
+    document.body.appendChild(_tooltipEl);
+    document.addEventListener('click', e => {
+      if (!e.target.closest('.choice-info') && !e.target.closest('#choice-tooltip-popup')) {
+        hideChoiceTooltip();
+      }
+    });
+  }
+  return _tooltipEl;
+}
+
+function toggleChoiceTooltip(iconEl) {
+  if (_tooltipIcon === iconEl) {
+    hideChoiceTooltip();
+    return;
+  }
+  const el = getTooltipEl();
+  el.textContent = iconEl.dataset.tooltip;
+  el.classList.add('visible');
+  _tooltipIcon = iconEl;
+
+  const rect = iconEl.getBoundingClientRect();
+  const popW = Math.min(280, window.innerWidth * 0.9);
+  let left = rect.left + rect.width / 2 - popW / 2;
+  left = Math.max(8, Math.min(left, window.innerWidth - popW - 8));
+  const top = rect.bottom + 6;
+  el.style.cssText = `left:${left}px;top:${top}px;max-width:${popW}px;`;
+  el.classList.add('visible');
+}
+
+function hideChoiceTooltip() {
+  if (_tooltipEl) _tooltipEl.classList.remove('visible');
+  _tooltipIcon = null;
+}
+
 function handleChoice(label, nextNodeId) {
+  hideChoiceTooltip();
   state.history.push({ nodeId: state.currentNodeId, choiceLabel: label });
   state.currentNodeId = nextNodeId;
   render();
