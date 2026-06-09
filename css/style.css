@@ -186,9 +186,7 @@ body {
 }
 
 .choice-btn {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  display: block;
   width: 100%;
   min-height: 48px;
   padding: 0.7rem 1rem;
@@ -213,28 +211,24 @@ body {
   transform: scale(0.98);
 }
 
-.choice-label {
-  flex: 1;
-}
-
-.choice-info {
-  flex-shrink: 0;
-  width: 1.4rem;
-  height: 1.4rem;
-  border-radius: 50%;
-  background: var(--primary);
-  color: #fff;
-  font-size: 0.72rem;
-  font-weight: 700;
-  line-height: 1.4rem;
-  text-align: center;
+.question-terms-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0.65rem;
+  background: transparent;
+  border: 1.5px solid var(--accent);
+  border-radius: 20px;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background var(--transition);
-  user-select: none;
+  transition: background var(--transition), color var(--transition);
 }
 
-.choice-btn:hover .choice-info {
-  background: rgba(255,255,255,0.35);
+.question-terms-btn:hover {
+  background: var(--accent);
   color: #fff;
 }
 

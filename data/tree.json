@@ -3148,19 +3148,18 @@
       "choices": [
         {
           "label": "Yes — outer edge of spot 6 outwardly straight",
-          "next": "r_overdijkinki_unda",
-          "tooltip": "\"Straight\" means the outer edge runs in a roughly flat line — no inward curve."
+          "next": "r_overdijkinki_unda"
         },
         {
           "label": "No — outer edge of spot 6 outwardly concave (curves inward)",
-          "next": "q_eumolphus_green",
-          "tooltip": "\"Concave\" means curved inward — like the inside of a bowl or cave. \"Outwardly concave\" means the outer edge of the spot curves inward when viewed from outside."
+          "next": "q_eumolphus_green"
         },
         {
           "label": "Cannot determine — spot 6 edge shape unclear",
           "next": "q_eumolphus_s1"
         }
-      ]
+      ],
+      "terms": "\"Concave\" means curved inward — like the inside of a bowl or cave. \"Outwardly concave\" means the outer edge curves inward when viewed from outside the spot. Contrast with \"straight\", where the edge runs flat with no inward curve."
     },
     "q_eumolphus_s1": {
       "type": "question",
@@ -3720,19 +3719,18 @@
       "choices": [
         {
           "label": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)",
-          "next": "q_eumolphus_green",
-          "tooltip": "\"Concave\" means curved inward — like the inside of a bowl or cave. \"Outwardly concave\" means the outer edge of the spot curves inward when viewed from outside."
+          "next": "q_eumolphus_green"
         },
         {
           "label": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)",
-          "next": "q_acta_vs_tameanga",
-          "tooltip": "\"Straight\" means the outer edge runs in a roughly flat line — no inward curve."
+          "next": "q_acta_vs_tameanga"
         },
         {
           "label": "Cannot determine — spot 6 shape unclear",
           "next": "q_eumolphus_green"
         }
-      ]
+      ],
+      "terms": "\"Concave\" means curved inward — like the inside of a bowl or cave. \"Outwardly concave\" means the outer edge curves inward when viewed from outside the spot. Contrast with \"straight\", where the edge runs flat with no inward curve."
     },
     "q_acta_vs_tameanga": {
       "type": "question",

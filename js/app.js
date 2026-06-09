@@ -135,15 +135,17 @@ function render() {
   const restartBtn = appEl.querySelector('.btn-restart');
   if (restartBtn) restartBtn.addEventListener('click', restart);
 
+  const termsBtn = appEl.querySelector('.question-terms-btn');
+  if (termsBtn) {
+    termsBtn.addEventListener('click', e => {
+      e.stopPropagation();
+      toggleChoiceTooltip(termsBtn);
+    });
+  }
+
   const choicesEl = appEl.querySelector('.choices');
   if (choicesEl) {
     choicesEl.addEventListener('click', e => {
-      const info = e.target.closest('.choice-info');
-      if (info) {
-        e.stopPropagation();
-        toggleChoiceTooltip(info);
-        return;
-      }
       hideChoiceTooltip();
       const btn = e.target.closest('.choice-btn');
       if (btn) handleChoice(btn.dataset.label, btn.dataset.next);
@@ -170,22 +172,22 @@ function renderQuestion(node) {
     : '';
 
   const choicesHTML = node.choices
-    .map(c => {
-      const icon = c.tooltip
-        ? `<span class="choice-info" data-tooltip="${escapeAttr(c.tooltip)}" aria-label="Explain term" role="button" tabindex="0">i</span>`
-        : '';
-      return `<button class="choice-btn" data-label="${escapeAttr(c.label)}" data-next="${escapeAttr(c.next)}"><span class="choice-label">${escapeHtml(c.label)}</span>${icon}</button>`;
-    })
+    .map(c => `<button class="choice-btn" data-label="${escapeAttr(c.label)}" data-next="${escapeAttr(c.next)}">${escapeHtml(c.label)}</button>`)
     .join('');
 
   const qNum = state.questionNumbers && state.questionNumbers.has(node.question)
     ? `<span class="path-qnum">Q${state.questionNumbers.get(node.question)}</span> `
     : '';
 
+  const termsBtn = node.terms
+    ? `<button class="question-terms-btn" data-terms="${escapeAttr(node.terms)}" aria-label="Explain terms">ⓘ Explain terms</button>`
+    : '';
+
   return `
     <div class="card">
       ${buildBackButton()}
       <h2 class="question-text">${qNum}${escapeHtml(node.question)}</h2>
+      ${termsBtn}
       ${hintHTML}
       ${guideLinkHTML}
       <div class="choices">${choicesHTML}</div>
