@@ -3085,10 +3085,10 @@
       "type": "question",
       "id": "q_epimuta_s2",
       "question": "How do the underside markings contrast with the ground colour?",
-      "hint": "Both tailed Epimuta species share a similar underside pattern but differ in contrast. A. atosia malayana: markings blend into the ground colour (feebly contrasting). A. lurida: markings are distinctly darker and more sharply defined.",
+      "hint": "Both tailed Epimuta species share a similar underside pattern but differ in contrast. A. atosia malayana: markings blend into the ground colour (feebly/weakly contrasting). A. lurida: markings are distinctly darker and more sharply defined.",
       "choices": [
         {
-          "label": "Markings contrast feebly — pattern blends into ground colour",
+          "label": "Markings contrast feebly/weakly — pattern blends into ground colour",
           "next": "r_atosia_malayana"
         },
         {
@@ -3103,7 +3103,7 @@
       "taxon_id": null,
       "name": "Arhopala atosia malayana",
       "common_name": "Tailed Disc Oakblue",
-      "note": "Underside ground colour uniform hair brown; markings less defined and paler than the closely related A. lurida (whose markings are darker and more sharply defined), contrasting feebly with the ground colour. HW postdiscal spot 6 positioned roughly midway between spot 5 and the end-cell bar; spots 5, 6 and 7 in echelon, their centres broadly in line. Filamentous tail at vein 2, ~2.5 mm — distinguishing it from the tailless A. epimuta. FW ~22.0 mm. Male FW upperside: thread-width black border; discal patch large and circular, extending widely into the cell and space 1b.",
+      "note": "Underside ground colour uniform hair brown; markings less defined and paler than the closely related A. lurida (whose markings are darker and more sharply defined), contrasting feebly/weakly with the ground colour. HW postdiscal spot 6 positioned roughly midway between spot 5 and the end-cell bar; spots 5, 6 and 7 in echelon, their centres broadly in line. Filamentous tail at vein 2, ~2.5 mm — distinguishing it from the tailless A. epimuta. FW ~22.0 mm. Male FW upperside: thread-width black border; discal patch large and circular, extending widely into the cell and space 1b.",
       "features": {
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — tornal lobe absent or only weakly developed"
       }
@@ -3125,7 +3125,7 @@
       "taxon_id": null,
       "name": "Epimuta group — tailed species (unresolved)",
       "common_name": "Cannot determine to species",
-      "note": "⚠ Neither underside nor upperside visible. Both candidates have HW tail ~2.5 mm.\n\nPrimary character (underside): A. atosia malayana — markings contrast feebly with ground colour. A. lurida — markings darker and more clearly defined.\n\nConfirmatory character (upperside, male): A. atosia — FW discal patch large and circular, extending widely into cell and space 1b; border a thread. A. lurida — patch smaller, almost confined to bases of spaces 2–3; border slightly expanding toward apex.\n\nCheck the underside contrast first; inspect upperside if still uncertain.",
+      "note": "⚠ Neither underside nor upperside visible. Both candidates have HW tail ~2.5 mm.\n\nPrimary character (underside): A. atosia malayana — markings contrast feebly/weakly with ground colour. A. lurida — markings darker and more clearly defined.\n\nConfirmatory character (upperside, male): A. atosia — FW discal patch large and circular, extending widely into cell and space 1b; border a thread. A. lurida — patch smaller, almost confined to bases of spaces 2–3; border slightly expanding toward apex.\n\nCheck the underside contrast first; inspect upperside if still uncertain.",
       "features": {
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — tornal lobe absent or only weakly developed"
       },
