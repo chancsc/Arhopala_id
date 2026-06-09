@@ -3152,7 +3152,7 @@
         },
         {
           "label": "No — outer edge of spot 6 outwardly concave (curves inward)",
-          "next": "q_eumolphus_blue"
+          "next": "q_eumolphus_green"
         },
         {
           "label": "Cannot determine — spot 6 edge shape unclear",
@@ -3188,7 +3188,7 @@
         },
         {
           "label": "No — hair-brown underside; no violet powder at apex",
-          "next": "q_eumolphus_green"
+          "next": "q_eumolphus_spot6_group"
         }
       ]
     },
@@ -3224,10 +3224,11 @@
       "taxon_id": null,
       "name": "Arhopala acta",
       "common_name": "",
-      "note": "HW tail 3.0 mm. Male: light violet-blue with a regular, very narrow border. FW rounded. Underside markings faint. Female not described.",
+      "note": "HW tail ~3 mm. Spot 6 outer edge outwardly straight. Underside markings very faint. No costal spot in FW space 10. FW apex rounded. Male: blue/violet (not green).",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
-        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
+        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
+        "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)"
       }
     },
     "r_tameanga": {
@@ -3236,10 +3237,11 @@
       "taxon_id": null,
       "name": "Arhopala tameanga",
       "common_name": "",
-      "note": "HW tail 3.0 mm. Male: dark violet-blue; FW apex acute, termen nearly straight. Female: purple-blue with HW border ≥2.0 mm wide. Underside markings clearly defined. Bornean endemic.",
+      "note": "HW tail ~3 mm. Spot 6 outer edge outwardly straight. Underside markings clearly defined. FW apex acute; termen straight. FW 27 mm. Male: blue/violet (not green).",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
-        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
+        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
+        "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)"
       }
     },
     "q_eumolphus_green": {
@@ -3262,7 +3264,7 @@
       "type": "question",
       "id": "q_eumolphus_rounded",
       "question": "How distinct are the underside markings?",
-      "hint": "Three species share a rounded FW and ~3 mm tail. They differ in underside contrast: acta has very faint markings; horsfieldi has unusually dark, broad markings; eumolphus maxwelli is intermediate (standard contrast). If the upperside is visible: acta = blue/violet; horsfieldi = green with very broad borders reaching the cell; eumolphus = brassy green with narrow borders.",
+      "hint": "In this rounded-FW group, A. horsfieldi has unusually dark, broad underside markings; A. eumolphus is intermediate (standard contrast). A. acta (faint markings, no FW space 10 costal spot, straight spot 6 outer edge) should have been separated earlier — if reached here, it has very faint markings.",
       "choices": [
         {
           "label": "Underside markings very faint or obscure",
@@ -3300,11 +3302,12 @@
       "taxon_id": null,
       "name": "Arhopala horsfieldi basiviridis",
       "common_name": "",
-      "note": "Male: green with very broad black borders reaching the cell on all wings. Underside generally darker than relatives, with broad markings. Female: more purple, with slightly broader borders than A. eumolphus.",
+      "note": "Spot 6 outer edge outwardly concave. Underside markings very broad. FW apex rounded. Male: brassy green; very broad black borders reaching cell on both wings.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
         "Does the forewing apex appear distinctly pointed and the termen straight (not rounded)?": "No — FW apex not as sharply pointed, nor termen as straight, as in A. corinda (may still be acute, e.g. eumolphus group, or broadly rounded)",
-        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
+        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
+        "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)"
       }
     },
     "r_eumolphus_maxwelli": {
@@ -3316,7 +3319,8 @@
       "note": "HW tail ~3 mm. Outer edge of HW postdiscal spot 6 outwardly concave (contrast: straight in A. overdijkinki). Markings broad. FW 21–23 mm. Male: brassy green; FW rounded; black border 2.0 mm at tornus decreasing to 1.0 mm at apex. Female: purple-blue; black border usually reaches apex of FW cell.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
-        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
+        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
+        "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)"
       }
     },
     "r_hellenore_siroes": {
@@ -3325,10 +3329,11 @@
       "taxon_id": null,
       "name": "Arhopala hellenore siroes",
       "common_name": "",
-      "note": "Male: similar to A. eumolphus but border reduced to a thread above vein 4; FW apex more acute; termen straight or slightly concave. Female: purple-blue with narrower borders than A. eumolphus, not reaching apex of FW cell.",
+      "note": "Spot 6 outer edge outwardly concave. FW apex acute; termen straight or slightly concave. Male: brassy green; black border thread-width above vein 4. Malay Peninsula.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
-        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
+        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
+        "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)"
       }
     },
     "r_fulla_intaca": {
@@ -3702,6 +3707,42 @@
         {
           "label": "Cannot determine — FW space 1b obscured by hindwing",
           "next": "g_aedias"
+        }
+      ]
+    },
+    "q_eumolphus_spot6_group": {
+      "type": "question",
+      "id": "q_eumolphus_spot6_group",
+      "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
+      "hint": "This separates two subgroups within the hair-brown eumolphus group species. A. horsfieldi, A. eumolphus, and A. hellenore have a brassy green male and the outer edge of HW spot 6 is characteristically concave. A. acta and A. tameanga have a blue/violet male (not green) and the outer edge of spot 6 is outwardly straight.",
+      "choices": [
+        {
+          "label": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)",
+          "next": "q_eumolphus_green"
+        },
+        {
+          "label": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)",
+          "next": "q_acta_vs_tameanga"
+        },
+        {
+          "label": "Cannot determine — spot 6 shape unclear",
+          "next": "q_eumolphus_green"
+        }
+      ]
+    },
+    "q_acta_vs_tameanga": {
+      "type": "question",
+      "id": "q_acta_vs_tameanga",
+      "question": "Is the forewing termen evenly curved (rounded apex)?",
+      "hint": "A. acta has a rounded FW apex with very faint underside markings and no costal spot in FW space 10. A. tameanga has an acute FW apex (more pointed tip, termen straight or slightly concave) with clearly defined markings.",
+      "choices": [
+        {
+          "label": "Yes — FW apex rounded; termen evenly curved",
+          "next": "r_acta"
+        },
+        {
+          "label": "No — FW apex acute; termen straight or slightly concave",
+          "next": "r_tameanga"
         }
       ]
     }

@@ -5167,16 +5167,16 @@
       "choice": "No — hair-brown underside; no violet powder at apex"
     },
     {
-      "question": "Is the forewing termen evenly curved (rounded apex), or straight and slightly concave (acute apex)?",
-      "choice": "FW apex rounded; termen evenly curved"
-    },
-    {
-      "question": "How distinct are the underside markings?",
-      "choice": "Underside markings very faint or obscure"
+      "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
+      "choice": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)"
     },
     {
       "question": "How long is the hindwing tail?",
       "choice": "Tail ~3 mm"
+    },
+    {
+      "question": "Is the forewing termen evenly curved (rounded apex)?",
+      "choice": "Yes — FW apex rounded; termen evenly curved"
     }
   ],
   "Arhopala tameanga": [
@@ -5257,16 +5257,16 @@
       "choice": "No — hair-brown underside; no violet powder at apex"
     },
     {
-      "question": "Is the forewing termen evenly curved (rounded apex), or straight and slightly concave (acute apex)?",
-      "choice": "FW apex acute; termen straight or slightly concave"
+      "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
+      "choice": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)"
     },
     {
       "question": "How long is the hindwing tail?",
       "choice": "Tail ~3 mm"
     },
     {
-      "question": "Where was this specimen found?",
-      "choice": "Borneo (Sabah / Sarawak / Brunei)"
+      "question": "Is the forewing termen evenly curved (rounded apex)?",
+      "choice": "No — FW apex acute; termen straight or slightly concave"
     }
   ],
   "Arhopala horsfieldi basiviridis": [
@@ -5377,6 +5377,10 @@
       "choice": "No — hair-brown underside; no violet powder at apex"
     },
     {
+      "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
+      "choice": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)"
+    },
+    {
       "question": "Is the forewing termen evenly curved (rounded apex), or straight and slightly concave (acute apex)?",
       "choice": "FW apex rounded; termen evenly curved"
     },
@@ -5465,6 +5469,10 @@
     {
       "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
       "choice": "No — hair-brown underside; no violet powder at apex"
+    },
+    {
+      "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
+      "choice": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)"
     },
     {
       "question": "Is the forewing termen evenly curved (rounded apex), or straight and slightly concave (acute apex)?",
