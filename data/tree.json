@@ -1329,6 +1329,10 @@
         {
           "label": "Standard: 1.0 mm at tornus to 4.0 mm at apex",
           "next": "r_agelastus_agelastus"
+        },
+        {
+          "label": "Cannot determine — upperside not visible",
+          "next": "q_agelastus_spot3_align"
         }
       ]
     },
@@ -3745,6 +3749,26 @@
         {
           "label": "No — FW apex acute; termen straight or slightly concave",
           "next": "r_tameanga"
+        }
+      ]
+    },
+    "q_agelastus_spot3_align": {
+      "id": "q_agelastus_spot3_align",
+      "type": "question",
+      "question": "Is the hindwing underside postdiscal spot in space 3 almost in line with the spots in spaces 2 and 4?",
+      "hint": "In A. agelastus, spot 3 sits nearly level with spots 2 and 4 — it is not displaced outward the way spots 5–7 are. In A. wildeyana, spot 3 tends to follow the general outward displacement of the row.",
+      "choices": [
+        {
+          "label": "Yes — spot 3 almost in line with spots 2 and 4",
+          "next": "r_agelastus_agelastus"
+        },
+        {
+          "label": "No — spot 3 displaced, not clearly in line",
+          "next": "r_wildeyana"
+        },
+        {
+          "label": "Cannot determine — spot alignment unclear",
+          "next": "r_wildeyana"
         }
       ]
     }
