@@ -159,7 +159,7 @@
       "choices": [
         {
           "label": "Yes — HW spot 6 directly below spot 7 (not in echelon with spots 5 and 7)",
-          "next": "q_eumolphus_s1"
+          "next": "q_eumolphus_spot6_shape"
         },
         {
           "label": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
@@ -3140,11 +3140,31 @@
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar"
       }
     },
+    "q_eumolphus_spot6_shape": {
+      "type": "question",
+      "id": "q_eumolphus_spot6_shape",
+      "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly straight?",
+      "hint": "This is the key underside character separating [A. overdijkinki](https://www.inaturalist.org/search?q=Arhopala+overdijkinki) from [A. eumolphus](https://www.inaturalist.org/search?q=Arhopala+eumolphus) — both share hair-brown underside and spot 6 placed directly below spot 7. In A. overdijkinki the outer edge of spot 6 is characteristically outwardly straight. In A. eumolphus (and other species in the group) it is outwardly concave — the edge curves inward. If the shape is unclear, use the tail length question instead.",
+      "choices": [
+        {
+          "label": "Yes — outer edge of spot 6 outwardly straight",
+          "next": "r_overdijkinki_unda"
+        },
+        {
+          "label": "No — outer edge of spot 6 outwardly concave (curves inward)",
+          "next": "q_eumolphus_blue"
+        },
+        {
+          "label": "Cannot determine — spot 6 edge shape unclear",
+          "next": "q_eumolphus_s1"
+        }
+      ]
+    },
     "q_eumolphus_s1": {
       "type": "question",
       "id": "q_eumolphus_s1",
       "question": "How long is the hindwing tail?",
-      "hint": "Measure the tail at vein 2. [A. overdijkinki](https://www.inaturalist.org/search?q=Arhopala+overdijkinki) has a distinctly longer tail (~5 mm); all other eumolphus group species — including [A. eumolphus](https://www.inaturalist.org/search?q=Arhopala+eumolphus) itself — have tails of only ~3 mm. A second confirming character: the outer edge of HW postdiscal spot 6 is outwardly straight in A. overdijkinki but outwardly concave in A. eumolphus — both characters should agree before committing to an ID. If you arrived here from the 'very long tail ≥5 mm' gateway and the tail now looks closer to ~3 mm, choose Tail ~3 mm to continue correctly.",
+      "hint": "Measure the tail at vein 2. [A. overdijkinki](https://www.inaturalist.org/search?q=Arhopala+overdijkinki) has a distinctly longer tail (~5 mm); all other eumolphus group species — including [A. eumolphus](https://www.inaturalist.org/search?q=Arhopala+eumolphus) itself — have tails of only ~3 mm.",
       "choices": [
         {
           "label": "Tail ~5 mm (markedly long)",
@@ -3182,7 +3202,8 @@
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
         "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "Yes — HW spot 6 directly below spot 7 (not in echelon with spots 5 and 7)",
-        "What is the underside ground colour and overall appearance?": "Hair brown; HW spot 6 directly below spot 7 (not echelon); tail ~5 mm — A. overdijkinki"
+        "What is the underside ground colour and overall appearance?": "Hair brown; HW spot 6 directly below spot 7 (not echelon); tail ~5 mm — A. overdijkinki",
+        "Is the outer edge of hindwing postdiscal spot 6 outwardly straight?": "Yes — outer edge of spot 6 outwardly straight"
       }
     },
     "r_bazalus_zalinda": {
