@@ -1719,22 +1719,6 @@
         "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "No — no white patch on HW cilia"
       }
     },
-    "q_amph_s1": {
-      "type": "question",
-      "id": "q_amph_s1",
-      "question": "Does the hindwing have a short tail (tooth-like projection) at vein 2?",
-      "hint": "A. delta is the ONLY tailed member of the amphimuta subgroup. All other amphimuta subgroup species are tailless.",
-      "choices": [
-        {
-          "label": "Yes — tailed at vein 2",
-          "next": "r_delta"
-        },
-        {
-          "label": "No — tailless",
-          "next": "q_amph_s2"
-        }
-      ]
-    },
     "q_amph_s2": {
       "type": "question",
       "id": "q_amph_s2",
