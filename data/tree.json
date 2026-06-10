@@ -3021,9 +3021,10 @@
       "taxon_id": null,
       "name": "Arhopala normani",
       "common_name": "",
-      "note": "Alea subgroup. Superficially similar to A. sublustris ridleyi but male is less shining and more violet. Borders narrow. Genitalia often needed for certain identification.",
+      "note": "Alea subgroup. Superficially similar to A. sublustris ridleyi but male is less shining and more violet. Borders narrow. Genitalia often needed for certain identification. HW postdiscal spot 6 widely overlaps the end-cell bar (cf. A. phaenops, where spot 6 usually does not overlap the bar). (Feature Scoring: Q50 = 'Yes — HW spot 6 widely overlaps the end-cell bar'; the key tree reaches this species via 'No — HW spot 6 does not widely overlap the end-cell bar' as a routing shortcut to Q51.)",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
+        "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes — HW spot 6 widely overlaps the end-cell bar"
       }
     },
     "r_sublustris_ridleyi": {
@@ -3543,7 +3544,10 @@
       "taxon_id": null,
       "name": "Arhopala allata pandora",
       "common_name": "",
-      "note": "Tailed at vein 2. FW ~22 mm. FW apex acute; termen straight between veins 2–4. Underside postdiscal band sinuous or only slightly dislocated at vein 4; HW postdiscal spots narrow, regular, rectangular. Male: dark purple; FW border 0.5 mm at tornus expanding to 1.5 mm at apex. Female: dark shining blue. Rare; recorded from NE India to Neomalaya and Philippines."
+      "note": "Tailed at vein 2. FW ~22 mm. FW apex acute; termen straight between veins 2–4. Underside postdiscal band sinuous or only slightly dislocated at vein 4; HW postdiscal spots narrow, regular, rectangular. Male: dark purple; FW border 0.5 mm at tornus expanding to 1.5 mm at apex. Female: dark shining blue. Rare; recorded from NE India to Neomalaya and Philippines. HW postdiscal spots 5, 6 and 7 in echelon, spot 6 nearer to spot 5 than the end-cell bar. (Feature Scoring: Q56 = 'HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)'; the key tree reaches this species via 'HW spot 6 placed directly below spot 7 (spot 6 not sinuous)' as a routing shortcut to Q57.)",
+      "features": {
+        "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
+      }
     },
     "q_rama_s1": {
       "type": "question",
@@ -3606,7 +3610,10 @@
       "taxon_id": null,
       "name": "Arhopala arvina adalitas",
       "common_name": "",
-      "note": "Tailless. Underside ground colour hair-brown; tornal green scales present. Male: darker blue than A. buddha; black border reduced to a thread. Female: purple-blue."
+      "note": "Tailless. Underside ground colour hair-brown; tornal green scales present. Male: darker blue than A. buddha; black border reduced to a thread. Female: purple-blue. HW postdiscal spots 5, 6 and 7 widely out of line; inner edge of spot 6 in line with or inside the inner edge of spot 7; spot 6 touches or overlaps the end-cell bar; outer edge of spot 6 outwardly sinuous. (Feature Scoring: Q86 = 'Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line'; the key tree reaches this species via 'Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line' as a routing shortcut to Q17.)",
+      "features": {
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_vihara": {
       "type": "result",

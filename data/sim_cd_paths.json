@@ -1649,18 +1649,6 @@
     {
       "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
       "choice": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
-    },
-    {
-      "question": "Is the forewing postdiscal band nearly completely dislocated at vein 4?",
-      "choice": "Yes — FW band nearly completely dislocated at vein 4"
-    },
-    {
-      "question": "On the forewing underside, is the basal cell spot absent?",
-      "choice": "No — basal cell spot present on FW underside"
-    },
-    {
-      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch on HW cilia"
     }
   ],
   "Arhopala avathina avathina": [
@@ -4471,6 +4459,18 @@
     {
       "question": "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?",
       "choice": "Yes — HW spot 6 widely overlaps the end-cell bar"
+    },
+    {
+      "question": "Is the male border noticeably expanding toward the apex (similar to A. selta)?",
+      "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "Is the male a bright, glistening blue (not matt or indigo)?",
+      "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "Is the male less shining and more violet (rather than purely bright blue)?",
+      "choice": "Cannot determine — upperside not visible"
     }
   ],
   "Arhopala phaenops sandakani": [
@@ -4560,10 +4560,6 @@
     },
     {
       "question": "Is the male a bright, glistening blue (not matt or indigo)?",
-      "choice": "Cannot determine — upperside not visible"
-    },
-    {
-      "question": "Is the male less shining and more violet (rather than purely bright blue)?",
       "choice": "Cannot determine — upperside not visible"
     }
   ],
@@ -4655,10 +4651,6 @@
     {
       "question": "Is the male a bright, glistening blue (not matt or indigo)?",
       "choice": "Cannot determine — upperside not visible"
-    },
-    {
-      "question": "Is the male less shining and more violet (rather than purely bright blue)?",
-      "choice": "Cannot determine — upperside not visible"
     }
   ],
   "Arhopala normani": [
@@ -4740,7 +4732,7 @@
     },
     {
       "question": "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?",
-      "choice": "No — HW spot 6 does not widely overlap the end-cell bar"
+      "choice": "Yes — HW spot 6 widely overlaps the end-cell bar"
     },
     {
       "question": "Is the male border noticeably expanding toward the apex (similar to A. selta)?",
@@ -4842,10 +4834,6 @@
     },
     {
       "question": "Is the male a bright, glistening blue (not matt or indigo)?",
-      "choice": "Cannot determine — upperside not visible"
-    },
-    {
-      "question": "Is the male less shining and more violet (rather than purely bright blue)?",
       "choice": "Cannot determine — upperside not visible"
     }
   ],
@@ -6090,7 +6078,7 @@
     },
     {
       "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
-      "choice": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7 (spot 6 not sinuous)"
+      "choice": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
     },
     {
       "question": "Does the hindwing cell extend considerably longer than half the wing length, combined with an acute or concave FW apex?",
@@ -6280,15 +6268,15 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line"
+      "choice": "Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
-      "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
-      "choice": "No — spots not in echelon"
+      "question": "How broad is the male forewing black border?",
+      "choice": "Cannot determine — upperside not visible"
     },
     {
-      "question": "Is hindwing postdiscal spot 6 outwardly sinuous, and is there a costal spot present in forewing underside space 1?",
-      "choice": "Cannot determine"
+      "question": "Is the male upperside notably darker violet with narrower black borders than typical for the group?",
+      "choice": "Cannot determine — upperside not visible"
     }
   ],
   "Arhopala vihara": [
@@ -6587,10 +6575,6 @@
     {
       "question": "Is the male a bright, glistening blue (not matt or indigo)?",
       "choice": "Cannot determine — upperside not visible"
-    },
-    {
-      "question": "Is the male less shining and more violet (rather than purely bright blue)?",
-      "choice": "Cannot determine — upperside not visible"
     }
   ],
   "Alea subgroup — normani or sublustris (unresolved)": [
@@ -6680,10 +6664,6 @@
     },
     {
       "question": "Is the male a bright, glistening blue (not matt or indigo)?",
-      "choice": "Cannot determine — upperside not visible"
-    },
-    {
-      "question": "Is the male less shining and more violet (rather than purely bright blue)?",
       "choice": "Cannot determine — upperside not visible"
     }
   ]
