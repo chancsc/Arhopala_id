@@ -179,6 +179,13 @@ body {
 }
 .question-guide-link:hover { text-decoration: underline; }
 
+.question-text-link {
+  color: var(--primary);
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
+}
+.question-text-link:hover { text-decoration-style: solid; }
+
 .choices {
   display: flex;
   flex-direction: column;

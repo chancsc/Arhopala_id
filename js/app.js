@@ -167,7 +167,7 @@ function renderQuestion(node) {
     ? `<p class="question-hint">${renderHint(node.hint)}</p>`
     : '';
 
-  const guideLinkHTML = node.guide_link
+  const guideLinkHTML = (node.guide_link && !node.question_link)
     ? `<a href="${escapeAttr(node.guide_link)}" class="question-guide-link" target="_blank" rel="noopener">&#128247; Visual guide →</a>`
     : '';
 
@@ -186,13 +186,26 @@ function renderQuestion(node) {
   return `
     <div class="card">
       ${buildBackButton()}
-      <h2 class="question-text">${qNum}${escapeHtml(node.question)}</h2>
+      <h2 class="question-text">${qNum}${renderQuestionText(node.question, node.question_link)}</h2>
       ${termsBtn}
       ${hintHTML}
       ${guideLinkHTML}
       <div class="choices">${choicesHTML}</div>
     </div>
   `;
+}
+
+// Render a question's text, optionally turning a substring into a link to the
+// visual guide. `link` is `{ text, href }` — `text` must appear verbatim in
+// `question`; if it doesn't, falls back to plain escaped text.
+function renderQuestionText(question, link) {
+  if (!link || !link.text) return escapeHtml(question);
+  const idx = question.indexOf(link.text);
+  if (idx === -1) return escapeHtml(question);
+  const before = question.slice(0, idx);
+  const linked = question.slice(idx, idx + link.text.length);
+  const after = question.slice(idx + link.text.length);
+  return `${escapeHtml(before)}<a href="${escapeAttr(link.href)}" class="question-text-link" target="_blank" rel="noopener">${escapeHtml(linked)}</a>${escapeHtml(after)}`;
 }
 
 function renderResult(node) {
