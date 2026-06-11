@@ -421,19 +421,15 @@
       "type": "question",
       "id": "q_amphimuta_sub",
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
-      "hint": "Four subgroups. Muta: spots more quadrate/banded, FW space 2 stepped toward termen. Perimuta: FW spots 2 and 3 in line (may be oblique); the HW postdiscal band is also often completely or widely dislocated at vein 2 — a useful underside cue when FW spots 2–3 aren't visible. Kurzi: tailless, rounded HW tornus, HW band widely dislocated at vein 2. Amphimuta (largest, 12 spp.): spots rounded, cilia often prolonged into a short tooth at vein 2.\n\nCaution: A. antimuta (perimuta subgroup) — by far the most abundant species in this group — can also show the HW band dislocated at vein 2, so don't pick 'kurzi subgroup' on that character alone. A. kurzi is additionally distinguished by a FW underside spot in space 1b shifted inward, placed midway between the end-cell bar and postdiscal spot in space 2 (a character A. antimuta lacks). If that FW space 1b spot isn't visible/present, prefer the perimuta subgroup option.\n\nIf FW spots 2–3 alignment is unclear, choose 'Cannot determine (spots 2–3)' — the perimuta species can still be separated by their own distinctive characters (yellowish HW area for perimuta; contrasting HW colour for metamuta; spot 6 below spot 7 + thread border for antimuta).",
+      "hint": "Four subgroups. Muta: spots more quadrate/banded, FW space 2 stepped toward termen. Kurzi and perimuta subgroups: HW postdiscal band fully dislocated at vein 2 — two clearly separate portions with a visible gap; a follow-up question separates A. kurzi from the perimuta subgroup (A. perimuta, A. metamuta, A. antimuta). Amphimuta (largest, 12 spp.): spots rounded, cilia often prolonged into a short tooth at vein 2.\n\nIf the HW band dislocation at vein 2 isn't visible, choose 'Cannot determine' — A. antimuta (perimuta subgroup) is by far the most abundant species in this group and can still be recognized by its own characters (spot 6 positioned directly below spot 7, touching or overlapping the end-cell bar, with a thread-like male border), while A. perimuta and A. metamuta have their own distinctive HW colours.",
       "choices": [
         {
           "label": "Spots more quadrate/banded; FW space 2 spot stepped outward toward termen (muta subgroup)",
           "next": "g_amphimuta_muta"
         },
         {
-          "label": "FW postdiscal spots in spaces 2 and 3 are in line (perimuta subgroup)",
-          "next": "g_amphimuta_perimuta"
-        },
-        {
-          "label": "Tailless; rounded HW tornus; HW postdiscal band widely dislocated at vein 2 (kurzi subgroup)",
-          "next": "r_kurzi"
+          "label": "HW postdiscal band fully dislocated at vein 2 — two clearly separate portions with a visible gap (kurzi or perimuta subgroup)",
+          "next": "q_amphimuta_dislocated_split"
         },
         {
           "label": "Spots rounded; tailed — a distinct tail present at vein 2 (A. delta)",
@@ -444,7 +440,31 @@
           "next": "q_amph_s2"
         },
         {
-          "label": "Cannot determine — FW spots 2 and 3 alignment not visible (check perimuta species characters)",
+          "label": "Cannot determine — HW band dislocation at vein 2 not visible (check kurzi/perimuta species characters)",
+          "next": "g_amphimuta_perimuta"
+        }
+      ]
+    },
+    "q_amphimuta_dislocated_split": {
+      "type": "question",
+      "id": "q_amphimuta_dislocated_split",
+      "question": "On the hindwing underside, are postdiscal spots 4 and 5 in a precise, straight (vertical) alignment with each other, distinct from the broader 5-6-7 echelon?",
+      "hint": "A. kurzi (sole member of the kurzi subgroup, tailless with a very rounded HW tornus): spots 5, 6 and 7 are roughly in echelon, but spots 4 and 5 specifically line up in a tight, straight vertical alignment — a more reliable cue than the broader 5-6-7 echelon. The FW underside also has a spot in space 1b shifted inward, placed midway between the end-cell bar and the postdiscal spot in space 2.\n\nIn the perimuta subgroup — A. antimuta (by far the most abundant amphimuta-group species), A. perimuta, and A. metamuta — spots 4 and 5 are NOT in this tight alignment. Instead, spot 6 is displaced well past the postdiscal row, positioned directly below spot 7 (its inner edge in line with or inside the inner edge of spot 7), typically touching or overlapping the end-cell bar.\n\nIf the FW underside basal cell spot is absent, this points to A. avathina avathina (amphimuta subgroup) instead — select that option below.\n\nIf neither alignment is clearly visible, choose 'Cannot determine' — A. antimuta is far more common than A. kurzi, so the key will continue with the perimuta subgroup.",
+      "choices": [
+        {
+          "label": "Yes — HW spots 4 and 5 precisely aligned in a straight vertical line (A. kurzi)",
+          "next": "r_kurzi"
+        },
+        {
+          "label": "No — spot 6 displaced well past the row, positioned directly below spot 7, touching or overlapping the end-cell bar (perimuta subgroup)",
+          "next": "g_amphimuta_perimuta"
+        },
+        {
+          "label": "FW underside basal cell spot is absent (consider A. avathina avathina)",
+          "next": "q_amph_s2"
+        },
+        {
+          "label": "Cannot determine — spot alignment not clearly visible",
           "next": "g_amphimuta_perimuta"
         }
       ]
