@@ -368,6 +368,10 @@
       "type": "question",
       "id": "q_tailed_spot_arrangement",
       "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
+      "question_link": {
+        "text": "postdiscal spot 4",
+        "href": "guide.html#fw-spot4-distad"
+      },
       "hint": "HW spot 6 shape is the decisive character here. If spot 6 is outwardly sinuous (S-curved), choose the sinuous option regardless of FW spot 4 position — A. buddha (rama group) has both FW spot 4 out of line AND sinuous spot 6, so it belongs to the sinuous choice. The 'FW spot 4 out of line' option applies only when spot 6 is not sinuous (aurea and eumolphus groups).",
       "choices": [
         {

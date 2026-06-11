@@ -193,6 +193,7 @@ const GUIDE_LINKS = new Map([
   ['forewing underside space 11', 'guide.html#fw-space-11'],
   ['postdiscal spot 6', 'guide.html#spot6-end-cell-bar'],
   ['postdiscal spot in space 6', 'guide.html#hw-spot6-position'],
+  ['postdiscal spot 4', 'guide.html#fw-spot4-distad'],
   ['shifted distad (outward, out of line with spots 5 and 6)', 'guide.html#fw-spot4-distad'],
   ['dislocated at vein 4', 'guide.html#fw-band-vein4'],
   ['tail located at vein 3', 'guide.html#tail-vein2-vs-vein3'],
