@@ -1819,7 +1819,7 @@
       "choices": [
         {
           "label": "Yes — border thread-like",
-          "next": "r_moolaiana_yajuna"
+          "next": "q_amph_cilia_spot1a"
         },
         {
           "label": "No — border regular ~0.5 mm",
@@ -1828,6 +1828,26 @@
         {
           "label": "Cannot determine — upperside not visible",
           "next": "q_amph_s6"
+        }
+      ]
+    },
+    "q_amph_cilia_spot1a": {
+      "type": "question",
+      "id": "q_amph_cilia_spot1a",
+      "question": "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like A. norda)?",
+      "hint": "A. moolaiana yajuna, A. amphimuta and A. major all have a small white spot on the HW cilia near the tornus with a very weak tooth at vein 2 (HW postdiscal band only partially dislocated at vein 2). A. moolaiana's postdiscal spots are less rounded — like A. norda — while A. amphimuta and A. major have more rounded spots and are themselves indistinguishable beneath. A. zylda and A. stubbsi lack the white cilia spot and tooth altogether and are separated from each other only by upperside characters (border colour and width).",
+      "choices": [
+        {
+          "label": "Yes — white cilia spot near the tornus + weak tooth present; postdiscal spots less rounded (more angular), similar to A. norda",
+          "next": "r_moolaiana_yajuna"
+        },
+        {
+          "label": "Yes — white cilia spot near the tornus + weak tooth present; postdiscal spots more rounded, similar to A. amphimuta/A. major",
+          "next": "r_moolaiana_yajuna"
+        },
+        {
+          "label": "No — no white cilia spot or tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)",
+          "next": "r_moolaiana_yajuna"
         }
       ]
     },
@@ -2006,7 +2026,8 @@
       "note": "Tailless. Both sexes bluer than A. amphimuta above. Male: FW black border expands from 2.0 mm at tornus to 3.0 mm at apex. Underside similar to A. amphimuta. HW cilia often prolonged into a short tooth at vein 2.",
       "features": {
         "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?": "No — border regular ~0.5 mm",
-        "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2"
+        "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
+        "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like A. norda)?": "Yes — white cilia spot near the tornus + weak tooth present; postdiscal spots more rounded, similar to A. amphimuta/A. major"
       }
     },
     "r_stubbsi": {
@@ -2018,7 +2039,8 @@
       "note": "Tailless. Male: rather dull bluish-purple with a broad, even ~2.0 mm black border — the widest border in the amphimuta subgroup. HW cilia often prolonged at vein 2.",
       "features": {
         "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?": "No — border regular ~0.5 mm",
-        "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2"
+        "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
+        "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like A. norda)?": "No — no white cilia spot or tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)"
       }
     },
     "r_moolaiana_yajuna": {
@@ -2054,7 +2076,10 @@
       "taxon_id": null,
       "name": "Arhopala amphimuta amphimuta",
       "common_name": "Common Oakblue",
-      "note": "Tailless. Male: dark bluish-purple with a regular 0.5–1.0 mm black border; FW 20–23 mm. HW cilia often prolonged into a very short tooth at vein 2 (may be inconspicuous in worn specimens). FW underside: postdiscal band slightly dislocated at vein 4; spot in space 3 usually an oblique oval. Female: lighter purple with typical broad black borders. HW postdiscal band only partially dislocated at vein 2 (as in A. zylda)."
+      "note": "Tailless. Male: dark bluish-purple with a regular 0.5–1.0 mm black border; FW 20–23 mm. HW cilia often prolonged into a very short tooth at vein 2 (may be inconspicuous in worn specimens). FW underside: postdiscal band slightly dislocated at vein 4; spot in space 3 usually an oblique oval. Female: lighter purple with typical broad black borders. HW postdiscal band only partially dislocated at vein 2 (as in A. zylda).",
+      "features": {
+        "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like A. norda)?": "Yes — white cilia spot near the tornus + weak tooth present; postdiscal spots more rounded, similar to A. amphimuta/A. major"
+      }
     },
     "r_zylda_elioti": {
       "type": "result",
@@ -2062,7 +2087,10 @@
       "taxon_id": null,
       "name": "Arhopala zylda elioti",
       "common_name": "",
-      "note": "Tailless. Male: shining blue with a slight violet tinge; border 1.0 mm; FW 16–17 mm. HW evenly rounded — no trace of a tooth at vein 2 (A. amphimuta has a short tooth). Female: paler blue with exceptionally narrow black borders (the narrowest in the amphimuta subgroup). HW postdiscal band only partially dislocated at vein 2 (as in A. amphimuta). Malay Peninsula."
+      "note": "Tailless. Male: shining blue with a slight violet tinge; border 1.0 mm; FW 16–17 mm. HW evenly rounded — no trace of a tooth at vein 2 (A. amphimuta has a short tooth). Female: paler blue with exceptionally narrow black borders (the narrowest in the amphimuta subgroup). HW postdiscal band only partially dislocated at vein 2 (as in A. amphimuta). Malay Peninsula.",
+      "features": {
+        "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like A. norda)?": "No — no white cilia spot or tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)"
+      }
     },
     "r_dajagaka": {
       "type": "result",
