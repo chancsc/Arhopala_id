@@ -421,7 +421,7 @@
       "type": "question",
       "id": "q_amphimuta_sub",
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
-      "hint": "Four subgroups. Muta: spots more quadrate/banded, FW space 2 stepped toward termen. Perimuta: FW spots 2 and 3 in line (may be oblique). Kurzi: tailless, rounded HW tornus, HW band widely dislocated at vein 2. Amphimuta (largest, 12 spp.): spots rounded, cilia often prolonged into a short tooth at vein 2.\n\nIf FW spots 2–3 alignment is unclear, choose 'Cannot determine (spots 2–3)' — the perimuta species can still be separated by their own distinctive characters (yellowish HW area for perimuta; contrasting HW colour for metamuta; spot 6 below spot 7 + thread border for antimuta).",
+      "hint": "Four subgroups. Muta: spots more quadrate/banded, FW space 2 stepped toward termen. Perimuta: FW spots 2 and 3 in line (may be oblique); also, the HW postdiscal band is often completely or widely dislocated at vein 2 — a useful underside cue when FW spots 2–3 aren't visible. Kurzi: tailless, rounded HW tornus, HW band widely dislocated at vein 2. Amphimuta (largest, 12 spp.): spots rounded, cilia often prolonged into a short tooth at vein 2.\n\nIf FW spots 2–3 alignment is unclear, choose 'Cannot determine (spots 2–3)' — the perimuta species can still be separated by their own distinctive characters (yellowish HW area for perimuta; contrasting HW colour for metamuta; spot 6 below spot 7 + thread border for antimuta).",
       "choices": [
         {
           "label": "Spots more quadrate/banded; FW space 2 spot stepped outward toward termen (muta subgroup)",
@@ -2007,7 +2007,10 @@
       "taxon_id": null,
       "name": "Arhopala moolaiana yajuna",
       "common_name": "",
-      "note": "Tailless. Male: bright shining violet-blue with a thread-like black border; FW 18–22 mm. Female: blue colour reaches the HW termen or very nearly so — black border is extremely narrow or absent at the termen (diagnostic; unique in the amphimuta group). Underside markings very similar to A. norda. HW postdiscal band only partially dislocated at vein 2. Range: Malay Peninsula and south Myanmar."
+      "note": "Tailless. Male: bright shining violet-blue with a thread-like black border; FW 18–22 mm. Female: blue colour reaches the HW termen or very nearly so — black border is extremely narrow or absent at the termen (diagnostic; unique in the amphimuta group). Underside markings very similar to A. norda. HW postdiscal band only partially dislocated at vein 2. Range: Malay Peninsula and south Myanmar. (Feature Scoring: Q102 = 'No — HW band not strongly dislocated at vein 2'; the key tree reaches this species via Q101 'Yes — border thread-like' as a routing shortcut, bypassing Q102.)",
+      "features": {
+        "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2"
+      }
     },
     "r_alica": {
       "type": "result",
