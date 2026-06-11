@@ -77,7 +77,10 @@
       "type": "question",
       "id": "q_tailed_epimuta",
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "guide_link": "guide.html#hw-spot6-position",
+      "question_link": {
+        "text": "postdiscal spot in space 6",
+        "href": "guide.html#hw-spot6-position"
+      },
       "hint": "Two groups share this character — HW spot 6 approximately midway between spot 5 and the end-cell bar: the epimuta group (A. atosia, A. lurida) and the alitaeus group (including A. pseudomuta). If Yes, a spot in FW space 11 will be checked next to tell them apart.\n\nAnswer No in all of these cases:\n• Spot 6 is in the postdiscal row at roughly the same level as spot 5 (most tailed species).\n• Spot 6 is displaced toward the end-cell bar but clearly less than midway — the gap between spot 6 and the bar is distinctly wider than the displacement from the postdiscal row (e.g., A. silhetensis adorea: spots 6 and 7 are oblique, outer edge of spot 6 well inside inner edge of spot 5, but spot 6 does not approach midway). Select the first No option.\n• Spot 6 is displaced well past midway — touching or overlapping the end-cell bar, with spots 5, 6 and 7 widely out of line (A. agrata and related species; also the eumolphus group: spot 6 inner edge is in line with or inside the inner edge of spot 7). Select the second No option.",
       "choices": [
         {
