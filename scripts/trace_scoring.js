@@ -160,6 +160,15 @@ for (let step = 0; step < 50; step++) {
     }
     // Window question not in this species' features — use stored path answer if present
     if (storedAnswerMap.has(q)) { nextQ = q; nextAns = storedAnswerMap.get(q); break; }
+    // Orphan question: neither choice changes this species' own score (see
+    // compute_sim_cd_paths.js). Default to the non-"Yes" choice so the
+    // simulation keeps moving, matching the live page which keeps presenting
+    // questions until the window is exhausted.
+    const choices = questionChoicesMap.get(q) || [];
+    if (choices.length >= 2) {
+      const noChoice = choices.find(c => !c.label.startsWith('Yes')) || choices[0];
+      nextQ = q; nextAns = noChoice.label; break;
+    }
   }
   if (nextQ === null) { console.log('  (no more answerable questions in window)'); break; }
 

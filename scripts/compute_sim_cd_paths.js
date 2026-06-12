@@ -176,6 +176,17 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
         const cdLabel = getCdLabel(treeNodes, q);
         if (cdLabel) { nextQ = q; nextAns = cdLabel; simCdQs.add(q); break; }
       }
+      // Orphan question: appears in the window because it distinguishes other
+      // top-tier candidates, but resultName has no recorded answer for it (so
+      // neither choice changes resultName's own score). The live Feature
+      // Scoring page still presents it and waits for an answer, so default to
+      // the non-"Yes" choice — the answer a specimen of resultName would give
+      // for a feature it does not possess — and keep the simulation moving.
+      const choices = qChoicesMap.get(q) || [];
+      if (choices.length >= 2) {
+        const noChoice = choices.find(c => !c.label.startsWith('Yes')) || choices[0];
+        nextQ = q; nextAns = noChoice.label; break;
+      }
     }
     if (nextQ === null) break;
 
