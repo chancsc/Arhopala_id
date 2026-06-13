@@ -936,7 +936,7 @@
         "Spots more quadrate/banded in shape",
         "FW space 2 spot stepped outward toward termen"
       ],
-      "next": "q_muta_s1"
+      "next": "q_muta_size"
     },
     "g_amphimuta_perimuta": {
       "type": "group",
@@ -2125,6 +2125,26 @@
       "name": "Arhopala baluensis",
       "common_name": "",
       "note": "Tailless. Bornean endemic. Smaller Bornean species (FW 18–20 mm). Male: dark purple-blue with a regular 0.5 mm border. Female: purple-blue with narrower-than-typical black borders. HW cilia in space 1a lacks a white spot (may be rarely present but obscure). Male valva unilobate; certain identification may require genitalia dissection."
+    },
+    "q_muta_size": {
+      "type": "question",
+      "id": "q_muta_size",
+      "question": "What is the forewing length?",
+      "hint": "A. tropaea is notably small (FW 13.0–14.0 mm) — distinctly smaller than A. moorei busa (FW 16.0–18.0 mm) and A. muta maranda (FW 17.0–19.0 mm). Forewing length alone separates A. tropaea from the other two muta-subgroup species, even when the upperside cannot be examined.",
+      "choices": [
+        {
+          "label": "Small — FW 13.0–14.0 mm",
+          "next": "r_tropaea"
+        },
+        {
+          "label": "Larger — FW 16.0–19.0 mm",
+          "next": "q_muta_s2"
+        },
+        {
+          "label": "Cannot determine — forewing length not measured",
+          "next": "q_muta_s1"
+        }
+      ]
     },
     "q_muta_s1": {
       "type": "question",
