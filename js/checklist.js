@@ -209,14 +209,16 @@ function linkifyQ(text) {
   return html;
 }
 
-// Species mentions in choice labels that link to iNaturalist
-const SPECIES_LINKS = new Map([
+// Phrases in choice labels that link out — to iNaturalist (species) or to
+// Visual Guide sections (feature descriptions)
+const CHOICE_LINKS = new Map([
   ['A. corinda', 'https://www.inaturalist.org/search?q=Arhopala+corinda'],
+  ['central cell spot is band-like, stretching entirely across the cell', 'guide.html#hw-central-cell-spot'],
 ]);
 
 function linkifyChoice(text) {
   let html = esc(text);
-  for (const [phrase, url] of SPECIES_LINKS) {
+  for (const [phrase, url] of CHOICE_LINKS) {
     html = html.replace(esc(phrase),
       `<a href="${url}" class="guide-link" target="_blank" rel="noopener">${esc(phrase)}</a>`);
   }
