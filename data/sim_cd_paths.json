@@ -6360,15 +6360,19 @@
     },
     {
       "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
-      "choice": "No — band fully dislocated at vein 2 (two separate portions)"
+      "choice": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
     },
     {
-      "question": "Are green tornal scales present on the HW underside?",
-      "choice": "No — green tornal scales absent; HW has yellowish discal area; markings obscure or almost absent"
+      "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
+      "choice": "No — FW postdiscal band dislocated or broken (agesilaus group)"
     },
     {
-      "question": "Are HW postdiscal spots 5, 6 and 7 widely out of line — with the inner edge of spot 6 in line with or inside the inner edge of spot 7, and spot 6 touching or overlapping the end-cell bar?",
-      "choice": "No — spots broadly in line; spot 6 only slightly displaced, nearer to spot 5"
+      "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
+      "choice": "No — spots not in echelon"
+    },
+    {
+      "question": "Is hindwing postdiscal spot 6 outwardly sinuous or concave, and is there a costal spot present in forewing underside space 10, above the end-cell bar?",
+      "choice": "Yes — HW spot 6 outwardly sinuous or concave; costal spot in FW space 10 above the end-cell bar"
     }
   ],
   "Arhopala vihara": [

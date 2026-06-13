@@ -734,11 +734,11 @@
     "q_tailless_rama": {
       "type": "question",
       "id": "q_tailless_rama",
-      "question": "Is hindwing postdiscal spot 6 outwardly sinuous, and is there a costal spot present in forewing underside space 1?",
-      "hint": "Arhopala arvina adalitas is the only tailless species in the rama group. Its key underside characters are an S-shaped (outwardly sinuous) HW postdiscal spot 6 and a costal spot at the base of FW space 1. Underside ground colour is hair-brown; tornal green scales are present.",
+      "question": "Is hindwing postdiscal spot 6 outwardly sinuous or concave, and is there a costal spot present in forewing underside space 10, above the end-cell bar?",
+      "hint": "Arhopala arvina adalitas is the only tailless species in the rama group. Its key underside characters are an S-shaped (outwardly sinuous or concave) HW postdiscal spot 6 and a costal spot in FW space 10, above the end-cell bar. Underside ground colour is hair-brown; tornal green scales are present. FW ~18.0 mm — slightly larger than A. antimuta antimuta (FW ~16.0 mm), which also has spot 6 widely out of line but instead has the HW postdiscal band completely dislocated at vein 2 (vs only partially dislocated in A. arvina adalitas).",
       "choices": [
         {
-          "label": "Yes — HW spot 6 outwardly sinuous; costal spot in FW space 1",
+          "label": "Yes — HW spot 6 outwardly sinuous or concave; costal spot in FW space 10 above the end-cell bar",
           "next": "r_arvina_adalitas"
         },
         {
@@ -2268,7 +2268,7 @@
       "taxon_id": null,
       "name": "Arhopala antimuta antimuta",
       "common_name": "",
-      "note": "The most abundant species in the amphimuta group. Tailless. Male: deep violet-blue; black border reduced to a thread. HW underside: postdiscal spot 6 displaced well past the postdiscal row — touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line. FW postdiscal spots 2 and 3 are in line (perimuta subgroup). Confirmatory: male upperside uniformly coloured — no contrasting wing colour as in A. metamuta.",
+      "note": "The most abundant species in the amphimuta group. Tailless. FW ~16.0 mm. Male: deep violet-blue; black border reduced to a thread. HW underside: postdiscal band completely dislocated at vein 2 (though this character can sometimes be inconstant — cf. A. arvina adalitas, in which it is only partially dislocated); postdiscal spot 6 positioned directly below spot 7, displaced well past the postdiscal row — touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line. FW postdiscal spots 2 and 3 are in line (perimuta subgroup). Confirmatory: male upperside uniformly coloured — no contrasting wing colour as in A. metamuta.",
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
       }
@@ -3684,9 +3684,10 @@
       "taxon_id": null,
       "name": "Arhopala arvina adalitas",
       "common_name": "",
-      "note": "Tailless. Underside ground colour hair-brown; tornal green scales present. Male: darker blue than A. buddha; black border reduced to a thread. Female: purple-blue. HW postdiscal spots 5, 6 and 7 widely out of line; inner edge of spot 6 in line with or inside the inner edge of spot 7; spot 6 touches or overlaps the end-cell bar; outer edge of spot 6 outwardly sinuous. (Feature Scoring: Q86 = 'Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line'; the key tree reaches this species via 'Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line' as a routing shortcut to Q17.)",
+      "note": "Tailless. FW ~18.0 mm — slightly larger than A. antimuta antimuta (FW ~16.0 mm). Underside ground colour hair-brown; tornal green scales present. Male: darker blue than A. buddha; black border reduced to a thread. Female: purple-blue. HW postdiscal band only partially dislocated at vein 2 (cf. A. antimuta antimuta, where it is completely dislocated at vein 2, though that character can sometimes be inconstant). HW postdiscal spots 5, 6 and 7 widely out of line; inner edge of spot 6 in line with or inside the inner edge of spot 7; spot 6 touches or overlaps the end-cell bar; outer edge of spot 6 outwardly sinuous or concave. Normally has a costal spot in FW space 10, above the end-cell bar. (Feature Scoring: Q86 = 'Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line'; the key tree reaches this species via 'Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line' as a routing shortcut to Q17. Q109 = 'Yes — band only partially dislocated at vein 2 (shifted but connected)', also not on the canonical path but added here to separate this species from A. antimuta antimuta in Feature Scoring.)",
       "features": {
-        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
+        "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
       }
     },
     "r_vihara": {
