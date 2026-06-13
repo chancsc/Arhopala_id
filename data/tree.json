@@ -2725,7 +2725,23 @@
         },
         {
           "label": "Cannot determine — upperside not visible",
+          "next": "q_centaurus_costal10"
+        }
+      ]
+    },
+    "q_centaurus_costal10": {
+      "type": "question",
+      "id": "q_centaurus_costal10",
+      "question": "Is there a costal spot present in forewing underside space 10, above the end-cell bar?",
+      "hint": "A. centaurus nakula has a costal spot in FW space 10 and a continuous FW postdiscal band. A. amantes lacks this costal spot, has the FW postdiscal spot in space 4 shifted distad (out of line with the spots above and below it), and the dark patch under the cell in space 1a extends to the postdiscal band.",
+      "choices": [
+        {
+          "label": "Yes — costal spot present in FW space 10",
           "next": "q_centaurus_s1"
+        },
+        {
+          "label": "No — no costal spot in FW space 10",
+          "next": "r_amantes"
         }
       ]
     },
@@ -2755,7 +2771,10 @@
       "taxon_id": null,
       "name": "Arhopala centaurus nakula",
       "common_name": "Centaur Oakblue",
-      "note": "Decisive character: FW cell spots outlined in distinctive greenish-silver lines on the underside — unique to this species in Peninsular Malaysia. One of the largest Arhopala in the region (FW 28–29 mm). HW tailed; tornus rounded; tornal lobe vestigial or absent.\n\nTwo Peninsular subspecies: A. c. nakula (mainland, Langkawi, Singapore) and A. c. dixoni (Tioman Island only). Male: purplish blue, FW border reduced to a thread. Female: paler and more purple; FW border more intensely darkened over distal half of cell; moderately broad black borders.\n\nConfirmatory: non-Peninsular relatives share the silvery FW markings but are not recorded here — A. araxes (Sumatra–Sulawesi; distinct HW tornal lobe) and A. amantes (S. Myanmar; very broad black borders 3.0–5.0 mm widening toward apex)."
+      "features": {
+        "Is there a costal spot present in forewing underside space 10, above the end-cell bar?": "Yes — costal spot present in FW space 10"
+      },
+      "note": "Decisive character: FW cell spots outlined in distinctive greenish-silver lines on the underside — unique to this species in Peninsular Malaysia. FW postdiscal band continuous; a costal spot is present in FW space 10, above the end-cell bar. One of the largest Arhopala in the region (FW 28–29 mm). HW cell short (much less than half the wing); HW tailed; tornus rounded; tornal lobe vestigial or absent.\n\nTwo Peninsular subspecies: A. c. nakula (mainland, Langkawi, Singapore) and A. c. dixoni (Tioman Island only). Male: purplish blue, FW border reduced to a thread. Female: paler and more purple; FW border more intensely darkened over distal half of cell; moderately broad black borders.\n\nConfirmatory: non-Peninsular relatives share the silvery FW markings but are not recorded here — A. araxes (Sumatra–Sulawesi; distinct HW tornal lobe) and A. amantes (S. Myanmar; very broad black borders 3.0–5.0 mm widening toward apex)."
     },
     "r_araxes": {
       "type": "result",
@@ -2771,7 +2790,10 @@
       "taxon_id": null,
       "name": "Arhopala amantes",
       "common_name": "",
-      "note": "Keyed here due to similar silvery FW cell markings, but technically outside the centaurus group. FW ~27 mm. Male: shining blue, very broad borders — 3.0 mm at tornus expanding to 5.0 mm at apex. Female: lighter blue. Underside: FW spot 4 shifted distad; lacks costal spot in FW space 10. Range: South Myanmar."
+      "features": {
+        "Is there a costal spot present in forewing underside space 10, above the end-cell bar?": "No — no costal spot in FW space 10"
+      },
+      "note": "Keyed here due to similar silvery FW cell markings, but technically outside the centaurus group. FW ~27 mm. Male: shining blue, very broad borders — 3.0 mm at tornus expanding to 5.0 mm at apex. Female: lighter blue. Underside: FW postdiscal spot in space 4 shifted distad (outwards), out of line with the spots above and below it; FW postdiscal band continuous elsewhere; lacks costal spot in FW space 10; dark patch under the cell in the upper part of space 1a extends all the way to the postdiscal band. Range: South Myanmar."
     },
     "r_agaba": {
       "type": "result",

@@ -3697,8 +3697,8 @@
       "choice": "Cannot determine — upperside not visible"
     },
     {
-      "question": "Does the hindwing have a distinct tornal lobe?",
-      "choice": "No — HW tornus rounded, tornal lobe vestigial or absent; male purplish blue; FW 28–29 mm"
+      "question": "Is there a costal spot present in forewing underside space 10, above the end-cell bar?",
+      "choice": "Yes — costal spot present in FW space 10"
     }
   ],
   "Arhopala araxes": [
@@ -3717,6 +3717,10 @@
     {
       "question": "Does the male have very broad black borders (3.0 mm at tornus expanding to 5.0 mm at apex), AND is the FW postdiscal spot in space 4 shifted distad (out of line)?",
       "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "Is there a costal spot present in forewing underside space 10, above the end-cell bar?",
+      "choice": "Yes — costal spot present in FW space 10"
     },
     {
       "question": "Does the hindwing have a distinct tornal lobe?",
@@ -3741,8 +3745,8 @@
       "choice": "Cannot determine — upperside not visible"
     },
     {
-      "question": "Does the hindwing have a distinct tornal lobe?",
-      "choice": "No — HW tornus rounded, tornal lobe vestigial or absent; male purplish blue; FW 28–29 mm"
+      "question": "Is there a costal spot present in forewing underside space 10, above the end-cell bar?",
+      "choice": "No — no costal spot in FW space 10"
     }
   ],
   "Arhopala agaba": [
