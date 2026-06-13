@@ -3031,7 +3031,7 @@
       "taxon_id": null,
       "name": "Arhopala evansi",
       "common_name": "",
-      "note": "Alea subgroup. Distinctive underside: slatey pink glaze with striae that are whiter than in other alea subgroup members. Smaller species (FW < 21 mm).",
+      "note": "Alea subgroup. Distinctive underside: slatey pink glaze with striae that are whiter than in other alea subgroup members. Forewing postdiscal spots in spaces 2 and 3 are in echelon, upright, and larger than the spots immediately above them. Smaller species (FW < 21 mm).",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
       }
@@ -3053,7 +3053,7 @@
       "taxon_id": null,
       "name": "Arhopala phanda phanda",
       "common_name": "",
-      "note": "Alea subgroup. Underside postdiscal band placed very close to the inner submarginal lunules (diagnostic). Smaller species (FW < 21 mm)."
+      "note": "Alea subgroup. Underside postdiscal band placed very close to the inner submarginal lunules — a trait shared with A. normani, but A. phanda differs in having HW postdiscal spot 6 quadrate (in normani, spot 6 is not much narrower at the bottom than at the top) and usually lacks a costal spot in FW space 10. Smaller species (FW < 21 mm)."
     },
     "r_selta_selta": {
       "type": "result",
@@ -3061,7 +3061,7 @@
       "taxon_id": null,
       "name": "Arhopala selta selta",
       "common_name": "",
-      "note": "Alea subgroup. HW postdiscal spot 6 widely overlaps the end-cell bar (diagnostic vs phaenops). Male: violet-blue with border expanding toward the apex. Smaller species (FW < 21 mm).",
+      "note": "Alea subgroup. FW termen rounded. HW postdiscal spot 6 widely overlaps the end-cell bar — separates it from A. phaenops, whose spot 6 usually does not, or only just, overlaps the end-cell bar. Male: violet-blue with border expanding toward the apex. Smaller species (FW < 21 mm).",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
       }
@@ -3083,7 +3083,7 @@
       "taxon_id": null,
       "name": "Arhopala milleri",
       "common_name": "",
-      "note": "Alea subgroup. Larger than A. sublustris (but still FW < 21 mm). Male: more matt indigo blue (not bright glistening) with a thread-like border. Genitalia often needed for certain identification.",
+      "note": "Alea subgroup. Larger than A. sublustris (but still FW < 21 mm). Male: more matt indigo blue (not bright glistening) with a regular, thread-like border under 0.5 mm; blue upperside lacks a violet tinge, like A. sublustris. Genitalia often needed for certain identification.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
       }
@@ -3094,9 +3094,10 @@
       "taxon_id": null,
       "name": "Arhopala normani",
       "common_name": "",
-      "note": "Alea subgroup. Superficially similar to A. sublustris ridleyi but male is less shining and more violet. Borders narrow. Genitalia often needed for certain identification. HW postdiscal spot 6 widely overlaps the end-cell bar (cf. A. phaenops, where spot 6 usually does not overlap the bar). (Feature Scoring: Q50 = 'Yes — HW spot 6 widely overlaps the end-cell bar'; the key tree reaches this species via 'No — HW spot 6 does not widely overlap the end-cell bar' as a routing shortcut to Q51.)",
+      "note": "Alea subgroup. Wings shaped similarly to A. sublustris and A. phanda. Underside postdiscal band placed close to the inner submarginal lunules on both wings (also seen in A. phanda — see Feature Scoring note below). Superficially similar to A. sublustris ridleyi but male is less shining and more violet, lacking the pure bright blue (no violet tinge) of A. sublustris and A. milleri. Borders narrow. Genitalia often needed for certain identification. HW postdiscal spot 6 is usually not much narrower at the bottom than at the top and widely overlaps the end-cell bar (cf. A. phaenops, where spot 6 usually does not overlap the bar; cf. A. phanda, whose spot 6 is quadrate). (Feature Scoring: Q49 = 'Yes — postdiscal band very close to inner submarginal lunules' and Q50 = 'Yes — HW spot 6 widely overlaps the end-cell bar'; the key tree reaches this species via 'No' on both as routing shortcuts to Q50 and Q51 respectively.)",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
+        "Is the postdiscal band placed very close to the inner submarginal lunules?": "Yes — postdiscal band very close to inner submarginal lunules",
         "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes — HW spot 6 widely overlaps the end-cell bar"
       }
     },
@@ -3106,7 +3107,7 @@
       "taxon_id": null,
       "name": "Arhopala sublustris ridleyi",
       "common_name": "",
-      "note": "Alea subgroup. Male: bright glistening blue with borders under 0.5 mm. Brighter and more glistening than A. normani. Smaller species (FW < 21 mm).",
+      "note": "Alea subgroup. Male: bright glistening blue with a regular, thread-like border under 0.5 mm, lacking a violet tinge. Brighter and more glistening than A. normani. Smaller species (FW < 21 mm).",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
       }
