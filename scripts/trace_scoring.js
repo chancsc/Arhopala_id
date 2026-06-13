@@ -71,65 +71,6 @@ function getCdLabel(nodes, questionText) {
   return null;
 }
 
-// Set of result names reachable from a given node, following all branches.
-function reachableResults(treeNodes, nodeId, visited = new Set()) {
-  if (visited.has(nodeId)) return new Set();
-  visited.add(nodeId);
-  const node = treeNodes[nodeId];
-  if (!node) return new Set();
-  if (node.type === 'result') return new Set(node.name ? [node.name] : []);
-  if (node.type === 'question') {
-    const out = new Set();
-    for (const c of (node.choices || [])) {
-      if (!c.next) continue;
-      for (const r of reachableResults(treeNodes, c.next, visited)) out.add(r);
-    }
-    return out;
-  }
-  if (node.type === 'group') {
-    const out = new Set();
-    if (node.next) for (const r of reachableResults(treeNodes, node.next, visited)) out.add(r);
-    if (node.member_results) for (const rid of node.member_results) {
-      const rn = treeNodes[rid];
-      if (rn && rn.name) out.add(rn.name);
-    }
-    return out;
-  }
-  return new Set();
-}
-
-// Walk forward from a group/question node using resultName's own canonical
-// answers, collecting {group}/{question, choice} steps. Returns the step
-// array only if the walk reaches a result node (a complete resolution);
-// returns null if it dead-ends (e.g. no canonical answer recorded for the
-// within-group differentiator), so the caller can leave the simulation alone.
-function walkForwardCanonical(treeNodes, startId, canonicalAnswers) {
-  const steps = [];
-  let current = startId;
-  while (current) {
-    const node = treeNodes[current];
-    if (!node) return null;
-    if (node.type === 'result') return steps;
-    if (node.type === 'group') {
-      steps.push({ group: node.group_name });
-      if (node.next) { current = node.next; continue; }
-      if (node.member_results && node.member_results.length === 1) { current = node.member_results[0]; continue; }
-      return null;
-    }
-    if (node.type === 'question') {
-      const ans = canonicalAnswers.get(node.question);
-      if (!ans) return null;
-      const choice = (node.choices || []).find(c => c.label === ans);
-      if (!choice) return null;
-      steps.push({ question: node.question, choice: ans });
-      current = choice.next || null;
-      continue;
-    }
-    return null;
-  }
-  return null;
-}
-
 // ── Main ──────────────────────────────────────────────────────────────────────
 const targetArg = process.argv[2];
 if (!targetArg) { console.error('Usage: node trace_scoring.js "<species name>"'); process.exit(1); }
@@ -242,34 +183,6 @@ for (let step = 0; step < 50; step++) {
   const newScores = scoreAllPure(answers, matrix);
   const newRank   = newScores.findIndex(s => s.name === targetName) + 1;
   console.log(`         (was #${rank} → now #${newRank})\n`);
-
-  // Group-confirmation early exit (must stay in sync with compute_sim_cd_paths.js).
-  let groupExit = false;
-  if (!nextAns.startsWith('Cannot determine')) for (const node of Object.values(treeNodes)) {
-    if (node.type !== 'question' || node.question !== nextQ) continue;
-    const choice = (node.choices || []).find(c => c.label === nextAns);
-    if (!choice || !choice.next) continue;
-    const target = treeNodes[choice.next];
-    if (!target || target.type !== 'group') continue;
-    const reachable = reachableResults(treeNodes, choice.next);
-    if (reachable.size <= 2 && reachable.has(targetName)) {
-      const ext = walkForwardCanonical(treeNodes, choice.next, canonicalAnswers);
-      if (ext) {
-        simPath.push(...ext);
-        for (const s of ext) {
-          if (s.group) console.log(`  → [group: ${s.group}]`);
-          else {
-            const eqn = qNumbers.get(s.question) || '?';
-            console.log(`  → Q${eqn}: ${s.question.slice(0, 65)}\n         -> ${s.choice.slice(0, 65)}`);
-          }
-        }
-        console.log(`  → STOP: group-confirmation early exit (reachable result set <= 2, includes ${targetName.replace('Arhopala ','')})`);
-        groupExit = true;
-        break;
-      }
-    }
-  }
-  if (groupExit) break;
 }
 
 // Apply same canonical-equality suppression as compute_sim_cd_paths.js:
@@ -285,7 +198,6 @@ if (!stored) {
   console.log('  (none stored)');
 } else {
   stored.forEach((s, i) => {
-    if (s.group) { console.log(`  ${i+1}. [group: ${s.group}]`); return; }
     const qn = qNumbers.get(s.question) || '?';
     const cd = s.choice.startsWith('Cannot determine') ? ' [CD]' : '';
     console.log(`  ${i+1}. Q${qn}${cd}: ${s.question.slice(0,65)}`);
@@ -302,9 +214,9 @@ if (maxLen === 0) {
   for (let i = 0; i < maxLen; i++) {
     const l = live   ? live[i]   : null;
     const s = stored ? stored[i] : null;
-    const lKey = l ? (l.group ? `[group: ${l.group}]` : `Q${qNumbers.get(l.question)||'?'} ${l.choice.slice(0,30)}`) : '(missing)';
-    const sKey = s ? (s.group ? `[group: ${s.group}]` : `Q${qNumbers.get(s.question)||'?'} ${s.choice.slice(0,30)}`) : '(missing)';
-    const ok = !!l && !!s && (l.group ? l.group === s.group : (l.question === s.question && l.choice === s.choice));
+    const lKey = l ? `Q${qNumbers.get(l.question)||'?'} ${l.choice.slice(0,30)}` : '(missing)';
+    const sKey = s ? `Q${qNumbers.get(s.question)||'?'} ${s.choice.slice(0,30)}` : '(missing)';
+    const ok = l && s && l.question === s.question && l.choice === s.choice;
     if (!ok) match = false;
     console.log(`  Step ${i+1}: live=[${lKey}]  stored=[${sKey}]  ${ok ? '✓' : '✗ MISMATCH'}`);
   }
