@@ -209,6 +209,20 @@ function linkifyQ(text) {
   return html;
 }
 
+// Species mentions in choice labels that link to iNaturalist
+const SPECIES_LINKS = new Map([
+  ['A. corinda', 'https://www.inaturalist.org/search?q=Arhopala+corinda'],
+]);
+
+function linkifyChoice(text) {
+  let html = esc(text);
+  for (const [phrase, url] of SPECIES_LINKS) {
+    html = html.replace(esc(phrase),
+      `<a href="${url}" class="guide-link" target="_blank" rel="noopener">${esc(phrase)}</a>`);
+  }
+  return html;
+}
+
 
 function renderCandidates() {
   const listEl = document.getElementById('cl-candidates');
@@ -289,7 +303,7 @@ function renderQuestions() {
       return `<button class="cl-cbtn${sel === c ? ' sel' : ''}${isCD ? ' cd' : ''}"
               data-q="${esc(q)}" data-c="${esc(c)}"
               title="${esc(c)}">
-        ${esc(c)}
+        ${linkifyChoice(c)}
       </button>`;
     }).join('');
 
@@ -341,6 +355,8 @@ function onQuestionClick(e) {
     renderQuestions();
     return;
   }
+  // Let embedded iNaturalist links navigate without toggling the choice
+  if (e.target.closest('a')) return;
   const btn = e.target.closest('.cl-cbtn');
   if (!btn) return;
   const q = btn.dataset.q;
