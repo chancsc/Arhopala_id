@@ -4965,20 +4965,24 @@
       "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
     },
     {
+      "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
+      "choice": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)"
+    },
+    {
       "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
       "choice": "No — hair-brown underside; no violet powder at apex"
     },
     {
-      "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
-      "choice": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)"
+      "question": "Is the forewing termen evenly curved (rounded apex), or straight and slightly concave (acute apex)?",
+      "choice": "FW apex rounded; termen evenly curved"
+    },
+    {
+      "question": "How distinct are the underside markings?",
+      "choice": "Underside markings very faint or obscure"
     },
     {
       "question": "How long is the hindwing tail?",
       "choice": "Tail ~5 mm (markedly long)"
-    },
-    {
-      "question": "Is the forewing termen evenly curved (rounded apex)?",
-      "choice": "No — FW apex acute; termen straight or slightly concave"
     }
   ],
   "Arhopala democritus lycaenaria": [
@@ -5055,20 +5059,24 @@
       "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
     },
     {
+      "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
+      "choice": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)"
+    },
+    {
       "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
       "choice": "No — hair-brown underside; no violet powder at apex"
     },
     {
-      "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
-      "choice": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)"
+      "question": "Is the forewing termen evenly curved (rounded apex), or straight and slightly concave (acute apex)?",
+      "choice": "FW apex rounded; termen evenly curved"
+    },
+    {
+      "question": "How distinct are the underside markings?",
+      "choice": "Underside markings very faint or obscure"
     },
     {
       "question": "How long is the hindwing tail?",
       "choice": "Tail ~5 mm (markedly long)"
-    },
-    {
-      "question": "Is the forewing termen evenly curved (rounded apex)?",
-      "choice": "No — FW apex acute; termen straight or slightly concave"
     }
   ],
   "Arhopala atosia malayana": [
@@ -5325,6 +5333,10 @@
       "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
     },
     {
+      "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
+      "choice": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)"
+    },
+    {
       "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
       "choice": "Yes — purplish-brown underside; FW apex with pale violet powder"
     },
@@ -5407,12 +5419,12 @@
       "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
     },
     {
-      "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
-      "choice": "No — hair-brown underside; no violet powder at apex"
-    },
-    {
       "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
       "choice": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)"
+    },
+    {
+      "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
+      "choice": "No — hair-brown underside; no violet powder at apex"
     },
     {
       "question": "How long is the hindwing tail?",
@@ -5497,12 +5509,12 @@
       "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
     },
     {
-      "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
-      "choice": "No — hair-brown underside; no violet powder at apex"
-    },
-    {
       "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
       "choice": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)"
+    },
+    {
+      "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
+      "choice": "No — hair-brown underside; no violet powder at apex"
     },
     {
       "question": "How long is the hindwing tail?",
@@ -5617,12 +5629,12 @@
       "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
     },
     {
-      "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
-      "choice": "No — hair-brown underside; no violet powder at apex"
-    },
-    {
       "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
       "choice": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)"
+    },
+    {
+      "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
+      "choice": "No — hair-brown underside; no violet powder at apex"
     },
     {
       "question": "Is the forewing termen evenly curved (rounded apex), or straight and slightly concave (acute apex)?",
@@ -5711,12 +5723,12 @@
       "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
     },
     {
-      "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
-      "choice": "No — hair-brown underside; no violet powder at apex"
-    },
-    {
       "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
       "choice": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)"
+    },
+    {
+      "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
+      "choice": "No — hair-brown underside; no violet powder at apex"
     },
     {
       "question": "Is the forewing termen evenly curved (rounded apex), or straight and slightly concave (acute apex)?",
