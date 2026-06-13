@@ -130,17 +130,6 @@ function walkForwardCanonical(treeNodes, startId, canonicalAnswers) {
   return null;
 }
 
-// democritus democritus/lycaenaria: Q31 (macular underside markings) is
-// group-diagnostic for this pair — answering it "Yes" routes straight to
-// g_democritus (size-2 group), triggering the group-confirmation early exit.
-// It sorts late by coverage (cov 47, after Q70/Q71 at 59), so once Q70 has
-// been answered, pull it forward to run immediately for this pair only —
-// avoids reordering it for the ~44 other species that answer "No" to Q31.
-// (must stay in sync with compute_sim_cd_paths.js)
-const Q31_TEXT = 'Are the underside markings macular — composed of separated lines and dots rather than continuous solid bands?';
-const Q70_TEXT = 'Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?';
-const DEMOCRITUS_NAMES = new Set(['Arhopala democritus democritus', 'Arhopala democritus lycaenaria']);
-
 // ── Main ──────────────────────────────────────────────────────────────────────
 const targetArg = process.argv[2];
 if (!targetArg) { console.error('Usage: node trace_scoring.js "<species name>"'); process.exit(1); }
@@ -195,16 +184,6 @@ const simCdQs = new Set([...simAnswers.entries()]
 for (let step = 0; step < 50; step++) {
   const scores = scoreAllPure(answers, matrix);
   getDisplayQuestionsPure(answers, scores, matrix, treeNodes, questionOrder);
-
-  // Pull Q31 forward to right after Q70 for the democritus pair (see comment above).
-  if (DEMOCRITUS_NAMES.has(targetName) && answers.has(Q70_TEXT) && !answers.has(Q31_TEXT)) {
-    const q70Idx = questionOrder.indexOf(Q70_TEXT);
-    const q31Idx = questionOrder.indexOf(Q31_TEXT);
-    if (q70Idx !== -1 && q31Idx > q70Idx + 1) {
-      questionOrder.splice(q31Idx, 1);
-      questionOrder.splice(q70Idx + 1, 0, Q31_TEXT);
-    }
-  }
 
   // Stop once species is uniquely #1 AND all sim-CD questions have been answered.
   // After gap >= 2, also continue while own canonical features remain in the window
