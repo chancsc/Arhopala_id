@@ -41,6 +41,9 @@
       "choice": "No — FW postdiscal band dislocated or broken (agesilaus group)"
     },
     {
+      "group": "agesilaus group"
+    },
+    {
       "question": "Is a basal cell spot present on the forewing underside?",
       "choice": "Yes — basal cell spot present on FW underside"
     }
@@ -85,6 +88,9 @@
     {
       "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
       "choice": "No — FW postdiscal band dislocated or broken (agesilaus group)"
+    },
+    {
+      "group": "agesilaus group"
     },
     {
       "question": "Is a basal cell spot present on the forewing underside?",
@@ -153,6 +159,9 @@
       "choice": "HW central cell spot is band-like, stretching entirely across the cell (ace subgroup)"
     },
     {
+      "group": "agrata group — ace subgroup"
+    },
+    {
       "question": "Is the forewing postdiscal band clearly dislocated at vein 4, and is hindwing postdiscal spot 6 outwardly concave?",
       "choice": "Yes — FW band clearly dislocated at vein 4; HW spot 6 outwardly concave"
     }
@@ -219,6 +228,9 @@
       "choice": "HW central cell spot is band-like, stretching entirely across the cell (ace subgroup)"
     },
     {
+      "group": "agrata group — ace subgroup"
+    },
+    {
       "question": "Is the forewing postdiscal band clearly dislocated at vein 4, and is hindwing postdiscal spot 6 outwardly concave?",
       "choice": "No — FW band sinuous or only slightly dislocated; HW spot 6 straight or convex"
     }
@@ -283,6 +295,9 @@
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
       "choice": "FW lacks postdiscal spot in space 9; no costal spot in FW space 10 (agrata subgroup)"
+    },
+    {
+      "group": "agrata group — agrata subgroup"
     }
   ],
   "Arhopala abseus": [
@@ -301,6 +316,9 @@
     {
       "question": "Is the tail located at vein 3 and short?",
       "choice": "Yes — short white-tipped tail at vein 3 (only 3 spp. in entire genus)"
+    },
+    {
+      "group": "abseus group"
     },
     {
       "question": "What is the underside ground colour and are the markings darkened?",
@@ -323,6 +341,9 @@
     {
       "question": "Is the tail located at vein 3 and short?",
       "choice": "Yes — short white-tipped tail at vein 3 (only 3 spp. in entire genus)"
+    },
+    {
+      "group": "abseus group"
     },
     {
       "question": "What is the underside ground colour and are the markings darkened?",
@@ -2715,12 +2736,11 @@
       "choice": "Yes — FW band partially dislocated at vein 4; spot at base of FW space 10; no spot at base of HW space 6"
     },
     {
-      "question": "Does the forewing underside have at least 3 spots in space 11, AND does the hindwing underside have 2 subbasal spots in space 8?",
-      "choice": "Yes — ≥3 spots in FW space 11; 2 subbasal spots in HW space 8; spots deep purple-brown"
+      "group": "anthelus group"
     },
     {
-      "question": "Is HW postdiscal spot 6 noticeably smaller than spot 7 — roughly a quarter its size?",
-      "choice": "No — HW spot 6 not markedly smaller than spot 7; spots on upper HW half deep purple-brown"
+      "question": "Does the forewing underside have at least 3 spots in space 11, AND does the hindwing underside have 2 subbasal spots in space 8?",
+      "choice": "Yes — ≥3 spots in FW space 11; 2 subbasal spots in HW space 8; spots deep purple-brown"
     }
   ],
   "Arhopala achelous achelous": [
@@ -2769,12 +2789,11 @@
       "choice": "Yes — FW band partially dislocated at vein 4; spot at base of FW space 10; no spot at base of HW space 6"
     },
     {
-      "question": "Does the forewing underside have at least 3 spots in space 11, AND does the hindwing underside have 2 subbasal spots in space 8?",
-      "choice": "No — 0 spots in FW space 11; single spot at base of HW space 8"
+      "group": "anthelus group"
     },
     {
-      "question": "Is HW postdiscal spot 6 noticeably smaller than spot 7 — roughly a quarter its size?",
-      "choice": "Yes — HW spot 6 noticeably smaller than spot 7, roughly a quarter its size"
+      "question": "Does the forewing underside have at least 3 spots in space 11, AND does the hindwing underside have 2 subbasal spots in space 8?",
+      "choice": "No — 0 spots in FW space 11; single spot at base of HW space 8"
     }
   ],
   "Arhopala aurea": [
@@ -3693,6 +3712,9 @@
     {
       "question": "What does the hindwing underside look like?",
       "choice": "Purple-brown ground colour with whitish striae; extra spot visible mid-space 8 adjoining the central spot in space 7"
+    },
+    {
+      "group": "bazaloides subgroup"
     }
   ],
   "Arhopala centaurus nakula": [
@@ -4889,6 +4911,9 @@
     {
       "question": "Does the forewing apex appear distinctly pointed and the termen straight (not rounded)?",
       "choice": "Yes — FW apex distinctly pointed; termen straight"
+    },
+    {
+      "group": "corinda group"
     }
   ],
   "Arhopala democritus democritus": [
@@ -4945,44 +4970,11 @@
       "choice": "Yes — macular markings (dots/lines); HW postdiscal band widely dislocated at vein 2"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "group": "democritus group"
     },
     {
-      "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
-      "choice": "HW central cell spot is band-like, stretching entirely across the cell (ace subgroup)"
-    },
-    {
-      "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
-      "choice": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7 (spot 6 not sinuous)"
-    },
-    {
-      "question": "Does the hindwing cell extend considerably longer than half the wing length, combined with an acute or concave FW apex?",
-      "choice": "No — HW cell moderate length (eumolphus or oenea group)"
-    },
-    {
-      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
-      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
-    },
-    {
-      "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
-      "choice": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)"
-    },
-    {
-      "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
-      "choice": "No — hair-brown underside; no violet powder at apex"
-    },
-    {
-      "question": "Is the forewing termen evenly curved (rounded apex), or straight and slightly concave (acute apex)?",
-      "choice": "FW apex rounded; termen evenly curved"
-    },
-    {
-      "question": "How distinct are the underside markings?",
-      "choice": "Underside markings very faint or obscure"
-    },
-    {
-      "question": "How long is the hindwing tail?",
-      "choice": "Tail ~3 mm"
+      "question": "Is the underside ground colour a dark chocolate brown with markings outlined by prominent silvery-white striae and dots?",
+      "choice": "Yes — dark chocolate brown; prominent silvery-white striae; male/female more silvery blue (Kedawi/Fraser's Hill)"
     }
   ],
   "Arhopala democritus lycaenaria": [
@@ -5039,44 +5031,11 @@
       "choice": "Yes — macular markings (dots/lines); HW postdiscal band widely dislocated at vein 2"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "group": "democritus group"
     },
     {
-      "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
-      "choice": "HW central cell spot is band-like, stretching entirely across the cell (ace subgroup)"
-    },
-    {
-      "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
-      "choice": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7 (spot 6 not sinuous)"
-    },
-    {
-      "question": "Does the hindwing cell extend considerably longer than half the wing length, combined with an acute or concave FW apex?",
-      "choice": "No — HW cell moderate length (eumolphus or oenea group)"
-    },
-    {
-      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
-      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
-    },
-    {
-      "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
-      "choice": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)"
-    },
-    {
-      "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
-      "choice": "No — hair-brown underside; no violet powder at apex"
-    },
-    {
-      "question": "Is the forewing termen evenly curved (rounded apex), or straight and slightly concave (acute apex)?",
-      "choice": "FW apex rounded; termen evenly curved"
-    },
-    {
-      "question": "How distinct are the underside markings?",
-      "choice": "Underside markings very faint or obscure"
-    },
-    {
-      "question": "How long is the hindwing tail?",
-      "choice": "Tail ~3 mm"
+      "question": "Is the underside ground colour a dark chocolate brown with markings outlined by prominent silvery-white striae and dots?",
+      "choice": "No — hair brown; dull yellowish-white striae (standard Peninsula subspecies)"
     }
   ],
   "Arhopala atosia malayana": [
@@ -5755,6 +5714,9 @@
     {
       "question": "Are the underside markings almost entirely suppressed — the postdiscal spots replaced by a faint, obscure streak rather than a series of distinct separate spots, with most other typical markings absent?",
       "choice": "Yes — postdiscal spots replaced by a faint obscure streak; markings almost entirely absent"
+    },
+    {
+      "group": "fulla group"
     }
   ],
   "Arhopala paraganesa mendava": [
@@ -6093,6 +6055,9 @@
     {
       "question": "Is the underside crimson-brown with markings outlined by white striae, with a restricted dark patch in FW space 1b bounded by a pale line?",
       "choice": "No — underside not crimson-brown, or no FW space-1b dark patch (true hypomuta-group character)"
+    },
+    {
+      "group": "hypomuta group"
     }
   ],
   "Arhopala ijanensis": [
@@ -6131,6 +6096,9 @@
     {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "Yes — whitish streak present on HW underside from dorsal base to apex"
+    },
+    {
+      "group": "ijanensis group"
     }
   ],
   "Arhopala inornata inornata": [
@@ -6149,6 +6117,9 @@
     {
       "question": "Does the hindwing have a very rounded tornus, and are tornal green scales absent?",
       "choice": "Yes — very rounded HW tornus; no tornal green scales"
+    },
+    {
+      "group": "inornata group"
     }
   ],
   "Arhopala allata pandora": [
@@ -6223,6 +6194,9 @@
     {
       "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
       "choice": "Yes — underside spots uniformly narrow and rectangular; FW apex acute, termen nearly straight"
+    },
+    {
+      "group": "oenea group"
     }
   ],
   "Arhopala paralea": [
@@ -6289,6 +6263,9 @@
     {
       "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
       "choice": "HW spot 6 is outwardly sinuous; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)"
+    },
+    {
+      "group": "rama group"
     },
     {
       "question": "Does the butterfly have a hindwing tail?",
@@ -6363,6 +6340,9 @@
     {
       "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
       "choice": "HW spot 6 is outwardly sinuous; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)"
+    },
+    {
+      "group": "rama group"
     },
     {
       "question": "Does the butterfly have a hindwing tail?",
@@ -6487,6 +6467,9 @@
     {
       "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
       "choice": "FW spot 4 in continuation with spots 5 and 6; HW spot 6 rounded and more or less separated"
+    },
+    {
+      "group": "vihara group"
     }
   ],
   "Muta subgroup — tropaea / moorei / muta (unresolved)": [
