@@ -2130,14 +2130,14 @@
       "type": "question",
       "id": "q_muta_s1",
       "question": "Is the species noticeably small and duller bluish-purple on the male upperside?",
-      "hint": "A. tropaea is distinctly smaller (FW ~12–14 mm) than A. moorei busa (FW 16–18 mm) and A. muta maranda (FW 17–19 mm), with a duller, less saturated bluish-purple male upperside. A. muta and A. moorei are larger, brighter blue.",
+      "hint": "A. tropaea is distinctly smaller (FW 13.0–14.0 mm) than A. moorei busa (FW 16.0–18.0 mm) and A. muta maranda (FW 17.0–19.0 mm), with a duller, less saturated bluish-purple male upperside. A. muta and A. moorei are larger, brighter blue.",
       "choices": [
         {
           "label": "Yes — noticeably small; male duller bluish-purple",
           "next": "r_tropaea"
         },
         {
-          "label": "No — larger (FW 16–19 mm); male bright blue",
+          "label": "No — larger (FW 16.0–19.0 mm); male bright blue",
           "next": "q_muta_s2"
         },
         {
@@ -2150,14 +2150,14 @@
       "type": "question",
       "id": "q_muta_s2",
       "question": "On the male upperside, are both the forewing and hindwing exactly the same shade of blue in all lights?",
-      "hint": "A. moorei busa: both wings the same shade of blue (bluish-purple) in all lights; female is duller and more purple than A. muta's female; FW 16–18 mm. A. muta maranda: FW is a rather dark, bright blue; HW is slightly paler and more glistening, so the two wings are NOT the same shade in all lights; FW border expands from 1.0–1.5 mm at tornus to 1.5–2.0 mm at apex; FW 17–19 mm.",
+      "hint": "A. moorei busa: both wings the same shade of blue (bluish-purple) in all lights; female is duller and more purple than A. muta's female; FW 16.0–18.0 mm. A. muta maranda: FW is a rather dark, bright blue; HW is slightly paler and more glistening, so the two wings are NOT the same shade in all lights; FW border expands from 1.0–1.5 mm at tornus to 1.5–2.0 mm at apex; FW 17.0–19.0 mm.",
       "choices": [
         {
-          "label": "Yes — both wings same shade of blue in all lights; female more purple (FW 16–18 mm)",
+          "label": "Yes — both wings same shade of blue in all lights; female more purple (FW 16.0–18.0 mm)",
           "next": "r_moorei_busa"
         },
         {
-          "label": "No — FW dark bright blue; HW slightly paler and more glistening; border expands toward apex (FW 17–19 mm)",
+          "label": "No — FW dark bright blue; HW slightly paler and more glistening; border expands toward apex (FW 17.0–19.0 mm)",
           "next": "r_muta_maranda"
         },
         {
@@ -2172,7 +2172,7 @@
       "taxon_id": null,
       "name": "Arhopala tropaea",
       "common_name": "",
-      "note": "Tailless. Very small species. Male: duller bluish-purple upperside (noticeably less bright than A. muta or A. moorei). Underside: postdiscal spots quadrate/banded; FW space 2 spot stepped toward termen (muta subgroup)."
+      "note": "Tailless. Very small species (FW 13.0–14.0 mm). Male: duller bluish-purple upperside (noticeably less bright than A. muta or A. moorei). Underside: postdiscal spots quadrate/banded; FW space 2 spot stepped toward termen (muta subgroup)."
     },
     "r_moorei_busa": {
       "type": "result",
@@ -2180,7 +2180,7 @@
       "taxon_id": null,
       "name": "Arhopala moorei busa",
       "common_name": "",
-      "note": "Tailless. Male: both wings the same shade of blue in all lights — key distinction from A. muta maranda, whose HW is slightly paler and brighter (FW 16–18 mm). Female: bluish purple with broad black borders (duller and more purple than A. muta's female). Underside: spots quadrate/banded; FW space 2 spot stepped toward termen; HW postdiscal band dislocated — inner edge of spot in space 2 in line with, or only slightly outside, the outer edge of spot 1b. HW cilia: white spot in space 1a absent (very rarely present but extremely obscure)."
+      "note": "Tailless. Male: both wings the same shade of blue in all lights — key distinction from A. muta maranda, whose HW is slightly paler and brighter (FW 16.0–18.0 mm). Female: bluish purple with broad black borders (duller and more purple than A. muta's female). Underside: spots quadrate/banded; FW space 2 spot stepped toward termen; HW postdiscal band dislocated — inner edge of spot in space 2 in line with, or only slightly outside, the outer edge of spot 1b. HW cilia: white spot in space 1a absent (very rarely present but extremely obscure)."
     },
     "r_muta_maranda": {
       "type": "result",
@@ -2188,7 +2188,7 @@
       "taxon_id": null,
       "name": "Arhopala muta maranda",
       "common_name": "Raffles's Oakblue",
-      "note": "Tailless. Male: FW rather dark bright blue; HW slightly paler and more glistening — the two wings are NOT the same shade in all lights (FW 17–19 mm). FW black border expands from 1.0–1.5 mm at tornus to 1.5–2.0 mm at apex. Female: shining blue with only a slight purple tint, broad black borders. Underside: spots quadrate/banded; FW space 2 spot stepped toward termen; HW postdiscal band dislocated — inner edge of spot in space 2 in line with, or only slightly outside, the outer edge of spot 1b. HW cilia: white spot in space 1a absent."
+      "note": "Tailless. Male: FW rather dark bright blue; HW slightly paler and more glistening — the two wings are NOT the same shade in all lights (FW 17.0–19.0 mm). FW black border expands from 1.0–1.5 mm at tornus to 1.5–2.0 mm at apex. Female: shining blue with only a slight purple tint, broad black borders. Underside: spots quadrate/banded; FW space 2 spot stepped toward termen; HW postdiscal band dislocated — inner edge of spot in space 2 in line with, or only slightly outside, the outer edge of spot 1b. HW cilia: white spot in space 1a absent."
     },
     "q_perimuta_s1": {
       "type": "question",
@@ -3693,7 +3693,7 @@
       "taxon_id": null,
       "name": "Muta subgroup — tropaea / moorei / muta (unresolved)",
       "common_name": "Cannot determine to species",
-      "note": "⚠ Cannot distinguish to species without male upperside colour and size.\n\nA. tropaea: notably small; male duller bluish-purple. Underside markings more quadrate.\n\nA. moorei busa: larger (FW 16–19 mm); male bright blue; FW and HW same shade of blue in all lights.\n\nA. muta maranda: larger (FW 16–19 mm); male bright blue; FW dark bright blue, HW slightly paler and more glistening; border slightly broader.\n\nInspect the male upperside to confirm species.",
+      "note": "⚠ Cannot distinguish to species without male upperside colour and size.\n\nA. tropaea: notably small (FW 13.0–14.0 mm); male duller bluish-purple. Underside markings more quadrate.\n\nA. moorei busa: larger (FW 16.0–18.0 mm); male bright blue; FW and HW same shade of blue in all lights.\n\nA. muta maranda: larger (FW 17.0–19.0 mm); male bright blue; FW dark bright blue, HW slightly paler and more glistening; border slightly broader.\n\nInspect the male upperside to confirm species.",
       "covers_results": [
         "r_tropaea",
         "r_moorei_busa",
