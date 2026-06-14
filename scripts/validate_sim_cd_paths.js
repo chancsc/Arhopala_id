@@ -170,8 +170,6 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
     if (newScores.length > 0 && newScores[0].name === resultName &&
         (newScores.length < 2 || newScores[0].score >= newScores[1].score + 2)) {
       if ([...simCdQs].every(q => answers.has(q))) {
-        const atMax = newScores[0].score >= newScores[0].max;
-        if (atMax) break;
         getDisplayQuestionsPure(answers, newScores, matrix, treeNodes, questionOrder);
         const ownLeft = questionOrder
           .filter(q => !answers.has(q)).slice(0, 15)

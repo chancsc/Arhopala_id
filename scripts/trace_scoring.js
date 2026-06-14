@@ -126,17 +126,17 @@ for (let step = 0; step < 50; step++) {
   const scores = scoreAllPure(answers, matrix);
   getDisplayQuestionsPure(answers, scores, matrix, treeNodes, questionOrder);
 
-  // Stop once species is uniquely #1 AND all sim-CD questions have been answered.
-  // After gap >= 2, also continue while own canonical features remain in the window
-  // and the species hasn't reached max score (prevents premature stops like Q34 for agaba).
+  // Stop once species is uniquely #1 AND all sim-CD questions have been answered
+  // AND no more of the species' own canonical features remain in the window. This
+  // mirrors live Feature Scoring, which keeps presenting confirmatory own-feature
+  // questions even after the species has already clinched #1.
   if (scores.length > 0 && scores[0].name === targetName &&
       (scores.length < 2 || scores[0].score >= scores[1].score + 2)) {
     if ([...simCdQs].every(q => answers.has(q))) {
-      const atMax = scores[0].score >= scores[0].max;
-      const ownLeft = atMax ? 0 : questionOrder
+      const ownLeft = questionOrder
         .filter(q => !answers.has(q)).slice(0, 15)
         .filter(q => simAnswers.has(q)).length;
-      if (atMax || ownLeft === 0) {
+      if (ownLeft === 0) {
         const rank2 = scores[1] ? `  #2: ${scores[1].name.replace('Arhopala ','')} ${scores[1].score}/${scores[1].max}` : '';
         console.log(`  → STOP: ${targetName.replace('Arhopala ','')} is #1 (${scores[0].score}/${scores[0].max})${rank2}`);
         break;
