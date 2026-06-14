@@ -410,7 +410,7 @@ function buildPathDisplay(paths, note, resultFeatures, resultName) {
   if (simCd) {
     html += `
       <details class="path-details path-details--simcd">
-        <summary class="path-summary">Simulation CD path — ${simCd.length} step${simCd.length !== 1 ? 's' : ''}</summary>
+        <summary class="path-summary">Underside-only path — ${simCd.length} step${simCd.length !== 1 ? 's' : ''}</summary>
         <div class="path-content">
           <p class="path-skip-note">Path when upperside and FW underside space 1–3 features are unavailable (all answered "Cannot determine").</p>
           <ol class="path-steps">${renderSteps(simCd, false)}</ol>
