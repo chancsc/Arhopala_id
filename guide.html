@@ -116,6 +116,21 @@
       .guide-img-wrap { padding: 1.5rem 2rem; }
     }
 
+    /* Stack term key/value pairs on narrow screens so long labels
+       (e.g. "Tornus — less rounded, or with green/brassy scales")
+       don't force the grid wider than the viewport. */
+    @media (max-width: 479px) {
+      .guide-terms {
+        grid-template-columns: 1fr;
+        gap: 0.2rem 0;
+      }
+      .guide-term-key {
+        white-space: normal;
+        margin-top: 0.5rem;
+      }
+      .guide-term-key:first-of-type { margin-top: 0; }
+    }
+
     /* ── Start Here card ── */
     .start-here {
       background: #f0f5ee;
