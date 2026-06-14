@@ -190,26 +190,57 @@ function renderHint(str) {
 const GUIDE_LINKS = new Map([
   ['hindwing space 6', 'guide.html#hw-space6-basal-spot'],
   ['extreme base of forewing underside space 10', 'guide.html#fw-space10-base-spot'],
+  ['spot at the base of FW space 10', 'guide.html#fw-space10-base-spot'],
   ['forewing underside space 10', 'guide.html#fw-spots'],
+  ['costal spot in forewing space 10', 'guide.html#fw-spots'],
+  ['forewing postdiscal spot in space 9', 'guide.html#fw-spots'],
   ['forewing underside space 11', 'guide.html#fw-space-11'],
   ['forewing space 11', 'guide.html#fw-space-11'],
   ['FW space 11', 'guide.html#fw-space-11'],
+  ['3 spots in space 11', 'guide.html#fw-space-11'],
+  ['position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar', 'guide.html#hw-spot6-position'],
+  ['HW postdiscal spot 6 overlap the end-cell bar', 'guide.html#hw-spot6-position'],
+  ['postdiscal spot 6 widely overlap the end-cell bar', 'guide.html#hw-spot6-position'],
+  ['position of the hindwing postdiscal spot 6', 'guide.html#hw-spot6-position'],
   ['postdiscal spot 6', 'guide.html#spot6-end-cell-bar'],
   ['forming a straight line', 'guide.html#spot6-end-cell-bar'],
   ['postdiscal spot in space 6', 'guide.html#hw-spot6-position'],
+  ['not in echelon with spots 5 and 7', 'guide.html#hw-spot6-position'],
+  ['gap between spot 5 and the end-cell bar', 'guide.html#hw-spot6-position'],
+  ['widely out of line — with the inner edge of spot 6 in line with or inside the inner edge of spot 7, and spot 6 touching or overlapping the end-cell bar', 'guide.html#hw-spot6-position'],
+  ['echelon HW spots 5–7', 'guide.html#hw-tail-spots-fw-spaces'],
+  ['5-6-7 echelon', 'guide.html#hw-tail-spots-fw-spaces'],
   ['postdiscal spot 4', 'guide.html#fw-spot4-distad'],
+  ['FW postdiscal spot in space 4 shifted distad (out of line)', 'guide.html#fw-spot4-distad'],
   ['spots above the forewing cell', 'guide.html#fw-spots-above-cell'],
+  ['weak tooth at vein 2', 'guide.html#wing-regions'],
+  ['inner submarginal spots', 'guide.html#wing-regions'],
+  ['hindwing underside central cell spot', 'guide.html#hw-central-cell-spot'],
+  ['gap between the outer and central spots in hindwing space 7', 'guide.html#wing-spaces'],
   ['shifted distad (outward, out of line with spots 5 and 6)', 'guide.html#fw-spot4-distad'],
   ['dislocated at vein 4', 'guide.html#fw-band-vein4'],
   ['tail located at vein 3', 'guide.html#tail-vein2-vs-vein3'],
 ]);
 
 function linkifyQ(text) {
-  let html = esc(text);
+  const escaped = esc(text);
+  const claimed = [];
   for (const [phrase, url] of GUIDE_LINKS) {
-    html = html.replace(esc(phrase),
-      `<a href="${url}" class="guide-link" target="_blank" rel="noopener">${esc(phrase)}</a>`);
+    const escPhrase = esc(phrase);
+    const start = escaped.indexOf(escPhrase);
+    if (start === -1) continue;
+    const end = start + escPhrase.length;
+    if (claimed.some(r => start < r.end && end > r.start)) continue;
+    claimed.push({ start, end, url, phrase: escPhrase });
   }
+  claimed.sort((a, b) => a.start - b.start);
+  let html = '', last = 0;
+  for (const r of claimed) {
+    html += escaped.slice(last, r.start);
+    html += `<a href="${r.url}" class="guide-link" target="_blank" rel="noopener">${r.phrase}</a>`;
+    last = r.end;
+  }
+  html += escaped.slice(last);
   return html;
 }
 
