@@ -220,6 +220,7 @@ const GUIDE_LINKS = new Map([
   ['shifted distad (outward, out of line with spots 5 and 6)', 'guide.html#fw-spot4-distad'],
   ['dislocated at vein 4', 'guide.html#fw-band-vein4'],
   ['tail located at vein 3', 'guide.html#tail-vein2-vs-vein3'],
+  ['very rounded tornus, and are tornal green scales absent', 'guide.html#hw-tornus-rounded'],
 ]);
 
 function linkifyQ(text) {
