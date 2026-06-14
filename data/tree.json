@@ -69,7 +69,7 @@
         },
         {
           "label": "No — no whitish streak",
-          "next": "q_tailed_epimuta"
+          "next": "q_tailed_macular"
         }
       ]
     },
@@ -274,7 +274,7 @@
         },
         {
           "label": "No",
-          "next": "q_tailed_macular"
+          "next": "q_tailed_alitaeus"
         }
       ]
     },
@@ -290,7 +290,7 @@
         },
         {
           "label": "No — markings form more continuous bands",
-          "next": "q_tailed_alitaeus"
+          "next": "q_tailed_epimuta"
         }
       ]
     },
