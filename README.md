@@ -114,9 +114,9 @@ The lowest-score path is canonical. Paths scoring ≥ 100 are excluded from cano
 **Expected baseline (June 2026)**
 
 ```
-score 0  (clean direct path)  : 108 / 114
-score 1–99 (CD or ESC step)   :   6 / 114  — all unresolved species groups
-score ≥100 (contradiction)    :   0 / 114
+score 0  (clean direct path)  : 110 / 116
+score 1–99 (CD or ESC step)   :   6 / 116  — all unresolved species groups
+score ≥100 (contradiction)    :   0 / 116
 ```
 
 The 6 imperfect paths are unresolved species clusters where the key cannot separate two species with certainty; their canonical paths inherently contain one CD step. Any new contradiction (score ≥ 100) or unexpected ESC flag indicates a tree structural bug to fix.
@@ -129,4 +129,4 @@ Run the script after any edit to `data/tree.json` to catch regressions before de
 
 ## Coverage
 
-5 of 25 *Arhopala* species groups currently covered. Further groups will be added as the identification key is extended.
+116 species and subspecies of *Arhopala* recorded from Peninsular Malaysia are currently covered, spanning the major species groups (centaurus, ganesa, amphimuta, epimuta, agrata, camdeo, alitaeus, agelastus, aurea, and others). A handful of closely similar species pairs remain flagged as unresolved groups where the key cannot reliably separate them from photographs alone. Coverage will continue to be refined and extended.

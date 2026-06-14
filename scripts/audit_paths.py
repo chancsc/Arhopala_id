@@ -71,11 +71,9 @@ Exit code: 0 = all checks pass, 1 = issues found.
 
 EXPECTED BASELINE (June 2026)
 ------------------------------
-  score 0 (clean)       : 108 / 114
-  score 1–99 (CD/ESC)   :   6 / 114  — all unresolved species groups
-  score ≥100 (error)    :   0 / 114
-  CD coverage gaps      :   0
-  Orphaned nodes        :   1  — q_amph_s1 (superseded by split choice)
+  score 0 (clean)       : 110 / 116
+  score 1–99 (CD/ESC)   :   6 / 116  — all unresolved species groups
+  score ≥100 (error)    :   0 / 116
 """
 
 import json
