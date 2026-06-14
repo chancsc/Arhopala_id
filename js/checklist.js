@@ -195,6 +195,7 @@ const GUIDE_LINKS = new Map([
   ['forewing space 11', 'guide.html#fw-space-11'],
   ['FW space 11', 'guide.html#fw-space-11'],
   ['postdiscal spot 6', 'guide.html#spot6-end-cell-bar'],
+  ['forming a straight line', 'guide.html#spot6-end-cell-bar'],
   ['postdiscal spot in space 6', 'guide.html#hw-spot6-position'],
   ['postdiscal spot 4', 'guide.html#fw-spot4-distad'],
   ['spots above the forewing cell', 'guide.html#fw-spots-above-cell'],
