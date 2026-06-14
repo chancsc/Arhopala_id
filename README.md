@@ -130,3 +130,55 @@ Run the script after any edit to `data/tree.json` to catch regressions before de
 ## Coverage
 
 116 species and subspecies of *Arhopala* recorded from Peninsular Malaysia are currently covered, spanning the major species groups (centaurus, ganesa, amphimuta, epimuta, agrata, camdeo, alitaeus, agelastus, aurea, and others). A handful of closely similar species pairs remain flagged as unresolved groups where the key cannot reliably separate them from photographs alone. Coverage will continue to be refined and extended.
+
+---
+
+## Replicating for another genus
+
+The app is genus-agnostic at the data layer: `index.html`, `checklist.html`, `species.html`, `guide.html`, and the shared scoring engine in `js/path-utils.js` work entirely from `data/tree.json` and `data/species.json`. To adapt the project for a different genus (or a different region):
+
+### 1. Rebrand
+
+"Arhopala" / "Arhopala ID" are hardcoded as page titles, headings, and menu labels in `index.html`, `about.html`, `checklist.html`, `guide.html`, `species.html`, `key.html`. Search-and-replace:
+
+- `Arhopala ID` → your app name
+- `Arhopala` → your genus name (also used as the default iNaturalist search term in `js/app.js`)
+- `js/checklist.js`'s `ANSWERS_KEY` localStorage key (`'arhopala-cl-answers'`) — rename so saved answers don't collide if both apps share a domain
+
+### 2. Regenerate `data/species.json`
+
+Edit `scripts/fetch_species.py`:
+
+- `get_arhopala_taxon_id()` — change the `q` param from `"Arhopala"` to your genus name
+- `MALAYSIA_PLACE_ID` — change to your target region's iNaturalist place ID (look up via `https://api.inaturalist.org/v1/places/autocomplete?q=<region>`)
+- Update the `User-Agent` header to point at your fork
+
+Then run `python scripts/fetch_species.py` to generate `data/species.json`.
+
+### 3. Build `data/tree.json` from your identification key
+
+This is the bulk of the work — transcribe your morphological key into the flat node-map format described in [Data](#data): `question`, `result`, and `group` node types. Each `result` node's `taxon_id` must match an entry in `data/species.json`.
+
+Tips:
+
+- Keep each question scoped to a single observable character, so Feature Scoring can score it independently of the others.
+- Give any question whose feature is hard to see in typical photos (e.g. upperside-only characters) a "Cannot determine — ..." choice, so the ID Key can offer a fallback path and Feature Scoring can skip it without penalising candidates.
+- For species pairs the key can't separate from photographs alone, route both into a `group` node with a descriptive `group_name`.
+
+### 4. Validate the tree
+
+```
+python scripts/audit_paths.py            # canonical path quality, CD coverage, orphans
+node scripts/compute_sim_cd_paths.js      # regenerate data/sim_cd_paths.json
+node scripts/validate_sim_cd_paths.js     # confirm it matches the live simulation
+```
+
+Run all three after any edit to `data/tree.json` — see the `scripts/audit_paths.py` section above for what each check covers.
+
+### 5. Build the Visual Guide
+
+`guide.html` is a series of self-contained `<section class="guide-section" id="...">` blocks, each pairing an annotated photo with a `guide-terms` definition list. Add one section per diagnostic character your key relies on, then link to it from the relevant question in `data/tree.json` via `question_link` (inline text link) or `guide_link` (standalone button), and add a matching entry to the `GUIDE_LINKS` map in `js/checklist.js` so Feature Scoring's question text links to the same section.
+
+### 6. Deploy
+
+Enable GitHub Pages on `main` (root). All asset paths are relative, so the app works under any repo subpath.
