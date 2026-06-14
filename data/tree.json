@@ -569,6 +569,10 @@
       "type": "question",
       "id": "q_tailless_agesias",
       "question": "Are the underside spots prominent and rounded, with a central spot in FW space 11?",
+      "question_link": {
+        "text": "FW space 11",
+        "href": "guide.html#fw-space-11"
+      },
       "hint": "The agesias group has large, rounded, prominent spots (not narrow bands). The key feature is a central spot in FW space 11 (above the cell). FW vein 9 is also noticeably shorter than usual in this group, but this can be hard to confirm from photos — the spot pattern alone is sufficient.",
       "choices": [
         {
