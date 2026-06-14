@@ -2745,6 +2745,10 @@
       "type": "question",
       "id": "q_centaurus_costal10",
       "question": "Is there a costal spot present in forewing underside space 10, above the end-cell bar?",
+      "question_link": {
+        "text": "forewing underside space 10",
+        "href": "guide.html#fw-spots"
+      },
       "hint": "A. centaurus nakula has a costal spot in FW space 10 and a continuous FW postdiscal band. A. amantes lacks this costal spot, has the FW postdiscal spot in space 4 shifted distad (out of line with the spots above and below it), and the dark patch under the cell in space 1a extends to the postdiscal band.",
       "choices": [
         {

@@ -190,6 +190,7 @@ function renderHint(str) {
 const GUIDE_LINKS = new Map([
   ['hindwing space 6', 'guide.html#hw-space6-basal-spot'],
   ['extreme base of forewing underside space 10', 'guide.html#fw-space10-base-spot'],
+  ['forewing underside space 10', 'guide.html#fw-spots'],
   ['forewing underside space 11', 'guide.html#fw-space-11'],
   ['forewing space 11', 'guide.html#fw-space-11'],
   ['FW space 11', 'guide.html#fw-space-11'],
