@@ -221,6 +221,7 @@ const GUIDE_LINKS = new Map([
   ['dislocated at vein 4', 'guide.html#fw-band-vein4'],
   ['tail located at vein 3', 'guide.html#tail-vein2-vs-vein3'],
   ['very rounded tornus, and are tornal green scales absent', 'guide.html#hw-tornus-rounded'],
+  ['cell spots on the forewing underside outlined in greenish silver', 'guide.html#fw-cell-silver'],
 ]);
 
 function linkifyQ(text) {

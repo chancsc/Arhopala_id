@@ -210,6 +210,10 @@
       "type": "question",
       "id": "q_tailed_cell_silver",
       "question": "Are the cell spots on the forewing underside outlined in greenish silver?",
+      "question_link": {
+        "text": "cell spots on the forewing underside",
+        "href": "guide.html#fw-cell-silver"
+      },
       "hint": "Examine the underside forewing cell. [A. centaurus](https://www.inaturalist.org/search?q=Arhopala+centaurus) has distinctive greenish-silver lines edging the cell markings — not iridescence but a true metallic outline unique to this species in Peninsular Malaysia. If present, this is decisive: no further questions needed. Non-Peninsular relatives with similar markings ([A. araxes](https://www.inaturalist.org/search?q=Arhopala+araxes), Sumatra–Sulawesi; [A. amantes](https://www.inaturalist.org/search?q=Arhopala+amantes), S. Myanmar) are not recorded from the Malay Peninsula.",
       "choices": [
         {
