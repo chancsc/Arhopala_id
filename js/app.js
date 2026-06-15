@@ -199,13 +199,13 @@ function renderQuestion(node) {
 // visual guide. `link` is `{ text, href }` — `text` must appear verbatim in
 // `question`; if it doesn't, falls back to plain escaped text.
 function renderQuestionText(question, link) {
-  if (!link || !link.text) return escapeHtml(question);
+  if (!link || !link.text) return renderHint(question);
   const idx = question.indexOf(link.text);
-  if (idx === -1) return escapeHtml(question);
+  if (idx === -1) return renderHint(question);
   const before = question.slice(0, idx);
   const linked = question.slice(idx, idx + link.text.length);
   const after = question.slice(idx + link.text.length);
-  return `${escapeHtml(before)}<a href="${escapeAttr(link.href)}" class="question-text-link" target="_blank" rel="noopener">${escapeHtml(linked)}</a>${escapeHtml(after)}`;
+  return `${renderHint(before)}<a href="${escapeAttr(link.href)}" class="question-text-link" target="_blank" rel="noopener">${escapeHtml(linked)}</a>${renderHint(after)}`;
 }
 
 function renderResult(node) {

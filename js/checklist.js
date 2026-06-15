@@ -224,25 +224,34 @@ const GUIDE_LINKS = new Map([
   ['cell spots on the forewing underside outlined in greenish silver', 'guide.html#fw-cell-silver'],
 ]);
 
+const MD_LINK_RE = /\[([^\]]+)\]\((https:\/\/[^)]+)\)/g;
+
 function linkifyQ(text) {
-  const escaped = esc(text);
   const claimed = [];
+  let m;
+  MD_LINK_RE.lastIndex = 0;
+  while ((m = MD_LINK_RE.exec(text)) !== null) {
+    claimed.push({
+      start: m.index,
+      end: m.index + m[0].length,
+      html: `<a href="${escAttr(m[2])}" target="_blank" rel="noopener">${esc(m[1])}</a>`,
+    });
+  }
   for (const [phrase, url] of GUIDE_LINKS) {
-    const escPhrase = esc(phrase);
-    const start = escaped.indexOf(escPhrase);
+    const start = text.indexOf(phrase);
     if (start === -1) continue;
-    const end = start + escPhrase.length;
+    const end = start + phrase.length;
     if (claimed.some(r => start < r.end && end > r.start)) continue;
-    claimed.push({ start, end, url, phrase: escPhrase });
+    claimed.push({ start, end, html: `<a href="${url}" class="guide-link" target="_blank" rel="noopener">${esc(phrase)}</a>` });
   }
   claimed.sort((a, b) => a.start - b.start);
   let html = '', last = 0;
   for (const r of claimed) {
-    html += escaped.slice(last, r.start);
-    html += `<a href="${r.url}" class="guide-link" target="_blank" rel="noopener">${r.phrase}</a>`;
+    html += esc(text.slice(last, r.start));
+    html += r.html;
     last = r.end;
   }
-  html += escaped.slice(last);
+  html += esc(text.slice(last));
   return html;
 }
 
