@@ -393,7 +393,7 @@ function buildPathDisplay(paths, note, resultFeatures, resultName) {
       : '';
     return `
       <li class="path-step${isCd ? ' path-step--skip' : ''}">
-        <span class="path-q">${qn}${escapeHtml(step.question)}</span>
+        <span class="path-q">${qn}${renderHint(step.question)}</span>
         <span class="path-a">↳ ${escapeHtml(step.choice)}</span>
       </li>`;
   }).join('');
