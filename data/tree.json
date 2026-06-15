@@ -464,7 +464,7 @@
         "text": "echelon HW spots 5–7",
         "href": "guide.html#hw-tail-spots-fw-spaces"
       },
-      "hint": "Four subgroups. Muta: spots more quadrate/banded, FW space 2 stepped toward termen. Kurzi and perimuta subgroups: HW postdiscal band fully dislocated at vein 2 — two clearly separate portions with a visible gap; a follow-up question separates [A. kurzi](https://www.inaturalist.org/search?q=Arhopala+kurzi) from the perimuta subgroup ([A. perimuta](https://www.inaturalist.org/search?q=Arhopala+perimuta), [A. metamuta](https://www.inaturalist.org/search?q=Arhopala+metamuta), [A. antimuta](https://www.inaturalist.org/search?q=Arhopala+antimuta)). Amphimuta (largest, 12 spp.): spots rounded, cilia often prolonged into a short tooth at vein 2.\n\nIf the HW band dislocation at vein 2 isn't visible, choose 'Cannot determine' — [A. antimuta](https://www.inaturalist.org/search?q=Arhopala+antimuta) (perimuta subgroup) is by far the most abundant species in this group and can still be recognized by its own characters (spot 6 positioned directly below spot 7, touching or overlapping the end-cell bar, with a thread-like male border), while [A. perimuta](https://www.inaturalist.org/search?q=Arhopala+perimuta) and [A. metamuta](https://www.inaturalist.org/search?q=Arhopala+metamuta) have their own distinctive HW colours.",
+      "hint": "Four subgroups. Muta: spots more quadrate/banded, FW space 2 stepped toward termen. Kurzi and perimuta subgroups: HW postdiscal band fully dislocated at vein 2 — two clearly separate portions with a visible gap; a follow-up question separates [A. kurzi](https://www.inaturalist.org/search?q=Arhopala+kurzi) from the perimuta subgroup ([A. perimuta](https://www.inaturalist.org/search?q=Arhopala+perimuta), [A. metamuta](https://www.inaturalist.org/search?q=Arhopala+metamuta), [A. antimuta](https://www.inaturalist.org/search?q=Arhopala+antimuta)). Amphimuta (largest, 12 spp.): spots rounded, cilia often prolonged into a short tooth at vein 2.\n\nIf the FW space 2 spot position isn't visible (forewing underside not visible), choose 'Cannot determine' — [A. antimuta](https://www.inaturalist.org/search?q=Arhopala+antimuta) (perimuta subgroup) is by far the most abundant species in this group and can still be recognized by its own characters (spot 6 positioned directly below spot 7, touching or overlapping the end-cell bar, with a thread-like male border), while [A. perimuta](https://www.inaturalist.org/search?q=Arhopala+perimuta) and [A. metamuta](https://www.inaturalist.org/search?q=Arhopala+metamuta) have their own distinctive HW colours.",
       "choices": [
         {
           "label": "Spots more quadrate/banded; FW space 2 spot stepped outward toward termen (muta subgroup)",
@@ -483,7 +483,7 @@
           "next": "q_amph_s2"
         },
         {
-          "label": "Cannot determine — HW band dislocation at vein 2 not visible (check kurzi/perimuta species characters)",
+          "label": "Cannot determine — FW space 2 spot position not visible, so muta subgroup cannot be ruled out (check kurzi/perimuta species characters)",
           "next": "g_amphimuta_perimuta"
         }
       ]
