@@ -219,7 +219,7 @@ function renderResult(node) {
     || `https://www.inaturalist.org/search?q=${encodeURIComponent(sciName || 'Arhopala')}`;
 
   const noteHTML = node.note
-    ? `<div class="id-note">${escapeHtml(node.note)}</div>`
+    ? `<div class="id-note">${renderHint(node.note)}</div>`
     : '';
 
   const galleryHTML = buildPhotoGallery(species);
@@ -246,7 +246,7 @@ function renderResult(node) {
 
 function renderGroup(node) {
   const featuresHTML = node.key_features && node.key_features.length
-    ? `<ul class="key-features">${node.key_features.map(f => `<li>${escapeHtml(f)}</li>`).join('')}</ul>`
+    ? `<ul class="key-features">${node.key_features.map(f => `<li>${renderHint(f)}</li>`).join('')}</ul>`
     : '';
 
   const continueOrPending = node.next
@@ -264,7 +264,7 @@ function renderGroup(node) {
       ${buildBackButton()}
       <span class="result-badge result-badge--group">Group Identified</span>
       <h2 class="species-common">${escapeHtml(node.group_name)}</h2>
-      <p class="group-description">${escapeHtml(node.description)}</p>
+      <p class="group-description">${renderHint(node.description)}</p>
       ${featuresHTML}
       ${continueOrPending}
       <div class="action-row">
@@ -348,7 +348,7 @@ function showSpeciesDetail(sp) {
   detailEl.scrollTop = 0;
 
   const noteHTML = sp.note
-    ? `<div class="id-note">${escapeHtml(sp.note)}</div>`
+    ? `<div class="id-note">${renderHint(sp.note)}</div>`
     : '';
 
   const galleryHTML = buildPhotoGallery(sp);
@@ -736,7 +736,7 @@ function showSpeciesDetailInline(sp) {
   const detailEl = document.getElementById('species-detail');
   detailEl.style.display = 'block';
   detailEl.scrollTop = 0;
-  const noteHTML = sp.note ? `<div class="id-note">${escapeHtml(sp.note)}</div>` : '';
+  const noteHTML = sp.note ? `<div class="id-note">${renderHint(sp.note)}</div>` : '';
   detailEl.innerHTML = `
     <span class="result-badge">Species Info</span>
     <h2 class="species-common">${escapeHtml(sp.common_name || sp.name)}</h2>

@@ -311,7 +311,7 @@ function renderCandidateDetail(name) {
   const info = cs.speciesInfo.get(name) || {};
   return `
     <div class="cl-cand-detail">
-      ${note ? `<p class="cl-note">${esc(note)}</p>` : ''}
+      ${note ? `<p class="cl-note">${renderHint(note)}</p>` : ''}
       <a class="cl-inat-link" href="${esc(info.inat_url)}" target="_blank" rel="noopener">
         View on iNaturalist →
       </a>
