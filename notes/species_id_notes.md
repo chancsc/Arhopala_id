@@ -296,3 +296,17 @@ Restructured Q92 implemented in `data/tree.json` as of 2026-06-02:
 - `q_tailless_epimuta_tornal`: green tornal scales → No = A. perimuta regina; Yes = continue
 - `q_tailless_epimuta_spot6_pos`: spots widely out of line / spot 6 overlaps bar → Yes = A. antimuta antimuta; No = continue
 - `q_tailless_epimuta_midway`: spot 6 midway → Yes = g_epimuta; No = A. metamuta metamuta
+
+---
+
+## A. moorei busa — Q87 spot-6 field observation (2026-06-16)
+
+**Source:** Field photo review (Issue #3, spot-6 tailless review).
+
+**Observation:** Spot 6 appears equidistant — roughly midway between spot 5 and the end-cell bar — as observed in field photos. Literature places moorei in the amphimuta group with spot 6 nearer to spot 5 (Not displaced / Slightly displaced).
+
+**Attempted fix:** Added a features override to `r_moorei_busa` setting Q87 = "Equidistant". This caused the sim-CD simulation to route moorei through the epimuta/vein2 subtree (`q_tailless_epimuta_vein2` → `q_tailless_epimuta_tornal`), where moorei has no canonical answers. The simulation produced a wrong Q89 answer ("No — green tornal scales absent; HW has yellowish discal area") that routes to A. perimuta regina instead of moorei.
+
+**Decision:** Override removed. Field observation retained in `notebook_data/arhopala_moorei.txt` only.
+
+**Pending:** To properly implement the equidistant observation, moorei would need to be reachable via the "Equidistant" branch of Q87 in the tree — requiring restructuring of the camdeo/amphimuta subtree. Deferred.
