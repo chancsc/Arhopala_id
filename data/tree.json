@@ -739,15 +739,15 @@
     "q_tailless_partial_muta_check": {
       "type": "question",
       "id": "q_tailless_partial_muta_check",
-      "question": "On the forewing underside, is the postdiscal spot in space 2 distinctly stepped outward toward the termen, and are the postdiscal spots more quadrate/banded in shape?",
-      "hint": "In the muta subgroup ([A. moorei busa](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780493&preferred_place_id=6734), [A. muta maranda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780491&preferred_place_id=6734), [A. tropaea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340245&preferred_place_id=6734)), the spots are more rectangular or banded rather than rounded, and the FW postdiscal spot in space 2 is noticeably offset outward from the main band toward the termen. In the agelastus and agesilaus groups, the spots are more rounded and the FW spot arrangement is different. If FW spots are quadrate/banded and FW space 2 is stepped, select Yes.",
+      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
+      "hint": "In the muta subgroup ([A. moorei busa](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780493&preferred_place_id=6734), [A. muta maranda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780491&preferred_place_id=6734), [A. tropaea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780493&preferred_place_id=6734)), the HW postdiscal spots are noticeably rectangular or banded rather than round. In the agelastus and agesilaus groups, the spots are more rounded or oval. Check the HW underside only — FW visibility is not required.",
       "choices": [
         {
-          "label": "Yes — FW space 2 spot stepped outward toward termen; spots more quadrate/banded (muta subgroup)",
+          "label": "Yes — HW spots more quadrate or banded in shape (muta subgroup)",
           "next": "g_amphimuta_muta"
         },
         {
-          "label": "No — spots rounded or FW space 2 not clearly stepped; different FW pattern",
+          "label": "No — HW spots more rounded in shape (agelastus or agesilaus group)",
           "next": "q_tailless_agelastus_check"
         }
       ]
@@ -2339,7 +2339,7 @@
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar",
         "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
-        "On the forewing underside, is the postdiscal spot in space 2 distinctly stepped outward toward the termen, and are the postdiscal spots more quadrate/banded in shape?": "Yes — FW space 2 spot stepped outward toward termen; spots more quadrate/banded (muta subgroup)"
+        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "Yes — HW spots more quadrate or banded in shape (muta subgroup)"
       }
     },
     "r_muta_maranda": {
