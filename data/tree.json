@@ -635,15 +635,11 @@
         "href": "guide.html#hw-spot6-position"
       },
       "guide_link": "guide.html#hw-spot6-position",
-      "hint": "The position of HW postdiscal spot 6 relative to spot 5 and the end-cell bar is the primary character separating several tailless groups. In many species spot 6 is pulled inward (basad) toward the discal cell — away from its normal position in the postdiscal row alongside spot 5. Grades of displacement: slightly inward (spot 6 still closer to spot 5 than to the end-cell bar — metamuta group); equidistant/midway (agesilaus and epimuta groups); significantly inward, clearly nearer the end-cell bar than spot 5 but not touching (agelastus group — [A. labuana](https://www.inaturalist.org/search?q=Arhopala+labuana), [A. silhetensis](https://www.inaturalist.org/search?q=Arhopala+silhetensis)); widely displaced, touching or overlapping the end-cell bar with spots 5, 6 and 7 widely out of line ([A. wildeyana](https://www.inaturalist.org/search?q=Arhopala+wildeyana); antimuta group — [A. antimuta](https://www.inaturalist.org/search?q=Arhopala+antimuta)). If spot 6 is not displaced at all, continue with the camdeo/amphimuta path.",
+      "hint": "The position of HW postdiscal spot 6 relative to spot 5 and the end-cell bar is the primary character separating several tailless groups. In many species spot 6 is pulled inward (basad) toward the discal cell — away from its normal position in the postdiscal row alongside spot 5. Grades of displacement: not displaced or only slightly inward (spot 6 roughly level with spot 5 — camdeo, amphimuta and metamuta groups); equidistant/midway (agesilaus and epimuta groups); significantly inward, clearly nearer the end-cell bar than spot 5 but not touching (agelastus group — [A. labuana](https://www.inaturalist.org/search?q=Arhopala+labuana), [A. silhetensis](https://www.inaturalist.org/search?q=Arhopala+silhetensis)); widely displaced, touching or overlapping the end-cell bar with spots 5, 6 and 7 widely out of line ([A. wildeyana](https://www.inaturalist.org/search?q=Arhopala+wildeyana); antimuta group — [A. antimuta](https://www.inaturalist.org/search?q=Arhopala+antimuta)). Tiebreaker: if spot 6 looks borderline between two adjacent options, choose the more displaced one — e.g. choose 'Equidistant' rather than 'Not displaced / Slightly displaced'; choose 'Widely displaced' rather than 'Equidistant'.",
       "choices": [
         {
-          "label": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line",
-          "next": "q_tailless_camdeo"
-        },
-        {
-          "label": "Slightly displaced inward; spot 6 still clearly nearer to spot 5 than to the end-cell bar",
-          "next": "q_tailless_epimuta_vein2"
+          "label": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line",
+          "next": "q_tailless_not_slightly_check"
         },
         {
           "label": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar",
@@ -749,6 +745,22 @@
         {
           "label": "No — FW postdiscal band dislocated or broken (agesilaus group)",
           "next": "g_agesilaus"
+        }
+      ]
+    },
+    "q_tailless_not_slightly_check": {
+      "type": "question",
+      "id": "q_tailless_not_slightly_check",
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "hint": "In [A. metamuta metamuta](https://www.inaturalist.org/search?q=Arhopala+metamuta), even though spot 6 is only slightly displaced, the HW postdiscal band at vein 2 is fully broken into two distinct portions with a clear gap. In the camdeo, amphimuta and most other non-displaced tailless groups, the band is continuous across vein 2 with no such gap.",
+      "choices": [
+        {
+          "label": "Yes — HW postdiscal band fully separated at vein 2 (two distinct portions with a clear gap; metamuta type)",
+          "next": "q_tailless_epimuta_tornal"
+        },
+        {
+          "label": "No — HW postdiscal band continuous or not clearly separated at vein 2",
+          "next": "q_tailless_camdeo"
         }
       ]
     },
@@ -964,7 +976,7 @@
       "common_name": "",
       "note": "Tailless. FW underside has a basal cell spot. Male: rich violet blue; FW black border 2.0 mm at tornus expanding to 4.0 mm at apex. Female: bluer shade than male. Superficially resembles a small [Arhopala major](https://www.inaturalist.org/search?q=Arhopala+major).",
       "features": {
-        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar"
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
       }
     },
     "r_avatha": {
@@ -975,7 +987,7 @@
       "common_name": "",
       "note": "Tailless. Uniquely lacks the basal cell spot on FW underside. Male: very dark bluish violet; FW black border 1.0 mm at tornus increasing to 2.0 mm at apex (narrow borders). Female: purple. Similar to [Arhopala antimuta](https://www.inaturalist.org/search?q=Arhopala+antimuta) but distinguished by wider borders in the male.",
       "features": {
-        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar"
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
       }
     },
     "g_oenea": {
@@ -1591,7 +1603,10 @@
       "taxon_id": null,
       "name": "Arhopala similis",
       "common_name": "",
-      "note": "Tailless. Superficially identical to [A. agesias](https://www.inaturalist.org/search?q=Arhopala+agesias) but uniquely lacks the postdiscal band on the FW underside. Status as a separate species (vs. dimorph of [A. agesias](https://www.inaturalist.org/search?q=Arhopala+agesias)) has been questioned, though female genitalia differ slightly."
+      "note": "Tailless. Superficially identical to [A. agesias](https://www.inaturalist.org/search?q=Arhopala+agesias) but uniquely lacks the postdiscal band on the FW underside. Status as a separate species (vs. dimorph of [A. agesias](https://www.inaturalist.org/search?q=Arhopala+agesias)) has been questioned, though female genitalia differ slightly.",
+      "features": {
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar"
+      }
     },
     "r_agesias": {
       "type": "result",
@@ -1599,7 +1614,10 @@
       "taxon_id": null,
       "name": "Arhopala agesias",
       "common_name": "",
-      "note": "Tailless. The most common species in the group. Underside: hair-brown ground colour with all markings as rounded spots; single central spot in FW space 11."
+      "note": "Tailless. The most common species in the group. Underside: hair-brown ground colour with all markings as rounded spots; single central spot in FW space 11.",
+      "features": {
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar"
+      }
     },
     "q_alitaeus_s1": {
       "type": "question",
@@ -2172,7 +2190,10 @@
       "taxon_id": null,
       "name": "Arhopala alica",
       "common_name": "",
-      "note": "Tailless. Bornean endemic. Male: dark, dull purple with a thread-like black border; FW ~17 mm. Female: purple with broad black borders (contrasts sharply with [A. moolaiana](https://www.inaturalist.org/search?q=Arhopala+moolaiana) female). HW postdiscal band only partially dislocated at vein 2. Distinguished from [A. moolaiana](https://www.inaturalist.org/search?q=Arhopala+moolaiana) by: darker/duller male colour, smaller size, broader female borders, and Bornean range."
+      "note": "Tailless. Bornean endemic. Male: dark, dull purple with a thread-like black border; FW ~17 mm. Female: purple with broad black borders (contrasts sharply with [A. moolaiana](https://www.inaturalist.org/search?q=Arhopala+moolaiana) female). HW postdiscal band only partially dislocated at vein 2. Distinguished from [A. moolaiana](https://www.inaturalist.org/search?q=Arhopala+moolaiana) by: darker/duller male colour, smaller size, broader female borders, and Bornean range.",
+      "features": {
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Cannot determine — HW spot 6 position unclear"
+      }
     },
     "r_sceva_indra": {
       "type": "result",
@@ -2294,7 +2315,10 @@
       "taxon_id": null,
       "name": "Arhopala moorei busa",
       "common_name": "",
-      "note": "Tailless. Male: both wings the same shade of blue in all lights — key distinction from [A. muta maranda](https://www.inaturalist.org/search?q=Arhopala+muta), whose HW is slightly paler and brighter (FW 16.0–18.0 mm). Female: bluish purple with broad black borders (duller and more purple than [A. muta](https://www.inaturalist.org/search?q=Arhopala+muta)'s female). Underside: spots quadrate/banded; FW space 2 spot stepped toward termen; HW postdiscal band dislocated — inner edge of spot in space 2 in line with, or only slightly outside, the outer edge of spot 1b. HW cilia: white spot in space 1a absent (very rarely present but extremely obscure)."
+      "note": "Tailless. Male: both wings the same shade of blue in all lights — key distinction from [A. muta maranda](https://www.inaturalist.org/search?q=Arhopala+muta), whose HW is slightly paler and brighter (FW 16.0–18.0 mm). Female: bluish purple with broad black borders (duller and more purple than [A. muta](https://www.inaturalist.org/search?q=Arhopala+muta)'s female). Underside: spots quadrate/banded; FW space 2 spot stepped toward termen; HW postdiscal band dislocated — inner edge of spot in space 2 in line with, or only slightly outside, the outer edge of spot 1b. HW cilia: white spot in space 1a absent (very rarely present but extremely obscure).",
+      "features": {
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar"
+      }
     },
     "r_muta_maranda": {
       "type": "result",

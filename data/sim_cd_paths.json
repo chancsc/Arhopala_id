@@ -30,7 +30,7 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar"
+      "choice": "Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
@@ -76,7 +76,7 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar"
+      "choice": "Widely displaced; spot 6 touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
@@ -893,6 +893,10 @@
       "choice": "Yes — prominent rounded spots; central FW spot in space 11"
     },
     {
+      "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
+    },
+    {
       "question": "How many spots are in forewing space 11, and what is the underside ground colour?",
       "choice": "Two spots in FW space 11; ground colour dark brown; markings blackish-brown"
     }
@@ -925,6 +929,10 @@
     {
       "question": "Are the underside spots prominent and rounded, with a central spot in FW space 11?",
       "choice": "Yes — prominent rounded spots; central FW spot in space 11"
+    },
+    {
+      "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
+      "choice": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar"
     },
     {
       "question": "How many spots are in forewing space 11, and what is the underside ground colour?",
@@ -963,6 +971,10 @@
     {
       "question": "Are the underside spots prominent and rounded, with a central spot in FW space 11?",
       "choice": "Yes — prominent rounded spots; central FW spot in space 11"
+    },
+    {
+      "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
+      "choice": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar"
     },
     {
       "question": "How many spots are in forewing space 11, and what is the underside ground colour?",
@@ -1606,7 +1618,11 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line"
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
+    },
+    {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
@@ -1746,7 +1762,11 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line"
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
+    },
+    {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
@@ -1792,7 +1812,11 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line"
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
+    },
+    {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
@@ -1842,7 +1866,11 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line"
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
+    },
+    {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
@@ -1920,7 +1948,11 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line"
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
+    },
+    {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
@@ -1998,7 +2030,11 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line"
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
+    },
+    {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
@@ -2068,7 +2104,11 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line"
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
+    },
+    {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
@@ -2091,12 +2131,12 @@
       "choice": "Yes — Bornean specimen"
     },
     {
-      "question": "Is the male's black border reduced to a thread (very narrow), and is the male a dark, dull purple?",
-      "choice": "Cannot determine — upperside not visible"
-    },
-    {
       "question": "Is the specimen large (FW approximately 21–25 mm), or does the female have thick black borders with darker venation?",
       "choice": "Very small (FW ~17 mm) — smaller than A. baluensis"
+    },
+    {
+      "question": "Is the male's black border reduced to a thread (very narrow), and is the male a dark, dull purple?",
+      "choice": "Cannot determine — upperside not visible"
     }
   ],
   "Arhopala sceva indra": [
@@ -2130,7 +2170,11 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line"
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
+    },
+    {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
@@ -2196,7 +2240,11 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line"
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
+    },
+    {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
@@ -2274,7 +2322,11 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line"
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
+    },
+    {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
@@ -2352,7 +2404,11 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line"
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
+    },
+    {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
@@ -2375,12 +2431,12 @@
       "choice": "Yes — Bornean specimen"
     },
     {
-      "question": "Is the male's black border reduced to a thread (very narrow), and is the male a dark, dull purple?",
-      "choice": "Cannot determine — upperside not visible"
-    },
-    {
       "question": "Is the specimen large (FW approximately 21–25 mm), or does the female have thick black borders with darker venation?",
       "choice": "Larger (FW 21–25 mm); female with thick black borders and darker venation"
+    },
+    {
+      "question": "Is the male's black border reduced to a thread (very narrow), and is the male a dark, dull purple?",
+      "choice": "Cannot determine — upperside not visible"
     }
   ],
   "Arhopala baluensis": [
@@ -2414,7 +2470,11 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line"
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
+    },
+    {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
@@ -2437,12 +2497,12 @@
       "choice": "Yes — Bornean specimen"
     },
     {
-      "question": "Is the male's black border reduced to a thread (very narrow), and is the male a dark, dull purple?",
-      "choice": "Cannot determine — upperside not visible"
-    },
-    {
       "question": "Is the specimen large (FW approximately 21–25 mm), or does the female have thick black borders with darker venation?",
       "choice": "Smaller (FW 18–20 mm); female with narrower borders; HW cilia space 1a lacks white spot"
+    },
+    {
+      "question": "Is the male's black border reduced to a thread (very narrow), and is the male a dark, dull purple?",
+      "choice": "Cannot determine — upperside not visible"
     }
   ],
   "Arhopala tropaea": [
@@ -2476,7 +2536,11 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line"
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
+    },
+    {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
@@ -2522,23 +2586,23 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line"
+      "choice": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar"
     },
     {
-      "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
-      "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
+      "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
+      "choice": "No — band fully dislocated at vein 2 (two separate portions)"
     },
     {
-      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
-      "choice": "Spots more quadrate/banded; FW space 2 spot stepped outward toward termen (muta subgroup)"
+      "question": "Are HW postdiscal spots 5, 6 and 7 widely out of line — with the inner edge of spot 6 in line with or inside the inner edge of spot 7, and spot 6 touching or overlapping the end-cell bar?",
+      "choice": "No — spots broadly in line; spot 6 only slightly displaced, nearer to spot 5"
     },
     {
-      "question": "What is the forewing length?",
-      "choice": "Larger — FW 16.0–19.0 mm"
+      "question": "Are green tornal scales present on the HW underside?",
+      "choice": "No — green tornal scales absent; HW has yellowish discal area; markings obscure or almost absent"
     },
     {
-      "question": "On the male upperside, are both the forewing and hindwing exactly the same shade of blue in all lights?",
-      "choice": "Cannot determine — upperside not visible"
+      "question": "Does the hindwing have a short tail (~2.5 mm)?",
+      "choice": "No tail — hindwing untailed"
     }
   ],
   "Arhopala muta maranda": [
@@ -2572,7 +2636,11 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line"
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
+    },
+    {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
@@ -2647,8 +2715,8 @@
       "choice": "Slightly displaced inward; spot 6 still clearly nearer to spot 5 than to the end-cell bar"
     },
     {
-      "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
-      "choice": "No — band fully dislocated at vein 2 (two separate portions)"
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "Yes — HW postdiscal band fully separated at vein 2 (two distinct portions with a clear gap; metamuta type)"
     },
     {
       "question": "Are HW postdiscal spots 5, 6 and 7 widely out of line — with the inner edge of spot 6 in line with or inside the inner edge of spot 7, and spot 6 touching or overlapping the end-cell bar?",
@@ -3330,7 +3398,11 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line"
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
+    },
+    {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
@@ -3730,7 +3802,11 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line"
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
+    },
+    {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "What does the hindwing underside look like?",
@@ -5225,12 +5301,12 @@
       "choice": "No — band fully dislocated at vein 2 (two separate portions)"
     },
     {
-      "question": "Are green tornal scales present on the HW underside?",
-      "choice": "Yes — green tornal scales present"
-    },
-    {
       "question": "Are HW postdiscal spots 5, 6 and 7 widely out of line — with the inner edge of spot 6 in line with or inside the inner edge of spot 7, and spot 6 touching or overlapping the end-cell bar?",
       "choice": "No — spots broadly in line; spot 6 only slightly displaced, nearer to spot 5"
+    },
+    {
+      "question": "Are green tornal scales present on the HW underside?",
+      "choice": "Yes — green tornal scales present"
     },
     {
       "question": "Does the hindwing have a short tail (~2.5 mm)?",
@@ -6523,12 +6599,8 @@
       "choice": "No — FW postdiscal band dislocated or broken (agesilaus group)"
     },
     {
-      "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
-      "choice": "No — spots not in echelon"
-    },
-    {
-      "question": "Is hindwing postdiscal spot 6 outwardly sinuous or concave, and is there a costal spot present in forewing underside space 10, above the end-cell bar?",
-      "choice": "Yes — HW spot 6 outwardly sinuous or concave; costal spot in FW space 10 above the end-cell bar"
+      "question": "Is a basal cell spot present on the forewing underside?",
+      "choice": "No — basal cell spot absent (unique within this group)"
     }
   ],
   "Arhopala vihara": [
@@ -6628,7 +6700,11 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line"
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
+    },
+    {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
@@ -6674,7 +6750,11 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line"
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
+    },
+    {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
