@@ -671,7 +671,7 @@
       "choices": [
         {
           "label": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
-          "next": "q_tailless_agelastus_check"
+          "next": "q_tailless_partial_muta_check"
         },
         {
           "label": "No — band fully dislocated at vein 2 (two separate portions)",
@@ -733,6 +733,22 @@
         {
           "label": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line",
           "next": "r_metamuta_metamuta"
+        }
+      ]
+    },
+    "q_tailless_partial_muta_check": {
+      "type": "question",
+      "id": "q_tailless_partial_muta_check",
+      "question": "On the forewing underside, is the postdiscal spot in space 2 distinctly stepped outward toward the termen, and are the postdiscal spots more quadrate/banded in shape?",
+      "hint": "In the muta subgroup ([A. moorei busa](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780493&preferred_place_id=6734), [A. muta maranda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780491&preferred_place_id=6734), [A. tropaea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340245&preferred_place_id=6734)), the spots are more rectangular or banded rather than rounded, and the FW postdiscal spot in space 2 is noticeably offset outward from the main band toward the termen. In the agelastus and agesilaus groups, the spots are more rounded and the FW spot arrangement is different. If FW spots are quadrate/banded and FW space 2 is stepped, select Yes.",
+      "choices": [
+        {
+          "label": "Yes — FW space 2 spot stepped outward toward termen; spots more quadrate/banded (muta subgroup)",
+          "next": "g_amphimuta_muta"
+        },
+        {
+          "label": "No — spots rounded or FW space 2 not clearly stepped; different FW pattern",
+          "next": "q_tailless_agelastus_check"
         }
       ]
     },
@@ -2322,7 +2338,8 @@
       "note": "Tailless. Male: both wings the same shade of blue in all lights — key distinction from [A. muta maranda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780491&preferred_place_id=6734), whose HW is slightly paler and brighter (FW 16.0–18.0 mm). Female: bluish purple with broad black borders (duller and more purple than [A. muta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780491&preferred_place_id=6734)'s female). Underside: spots quadrate/banded; FW space 2 spot stepped toward termen; HW postdiscal band dislocated — inner edge of spot in space 2 in line with, or only slightly outside, the outer edge of spot 1b. HW cilia: white spot in space 1a absent (very rarely present but extremely obscure).",
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar",
-        "Are green tornal scales present on the HW underside?": "Yes — green tornal scales present"
+        "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
+        "On the forewing underside, is the postdiscal spot in space 2 distinctly stepped outward toward the termen, and are the postdiscal spots more quadrate/banded in shape?": "Yes — FW space 2 spot stepped outward toward termen; spots more quadrate/banded (muta subgroup)"
       }
     },
     "r_muta_maranda": {
