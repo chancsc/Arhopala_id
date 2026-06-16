@@ -18,7 +18,7 @@ from pathlib import Path
 import requests
 
 INAT_BASE = "https://api.inaturalist.org/v1"
-MALAYSIA_PLACE_ID = 6870
+MALAYSIA_PLACE_ID = 7155
 OUTPUT = Path(__file__).parent.parent / "data" / "species.json"
 
 session = requests.Session()

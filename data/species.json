@@ -1,998 +1,817 @@
 {
-  "_note": "Run scripts/fetch_species.py to populate this file with real iNaturalist data including taxon IDs and photos.",
-  "generated": "2026-05-27",
+  "generated": "2026-06-16",
   "place": "Malaysia",
-  "place_id": 6870,
+  "place_id": 7155,
   "species": [
     {
-      "id": null,
+      "id": 333427,
       "name": "Arhopala abseus",
-      "common_name": "Aberrant Bushblue",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+abseus",
+      "common_name": "Aberrant Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/333427",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 119,
+      "wikipedia_url": "http://en.wikipedia.org/wiki/Arhopala_abseus"
     },
     {
-      "id": null,
+      "id": 785837,
+      "name": "Arhopala ace",
+      "common_name": "Tytler's Dull Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/785837",
+      "taxon_photos": [],
+      "observation_count": 6,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_ace"
+    },
+    {
+      "id": 940963,
+      "name": "Arhopala achelous",
+      "common_name": "",
+      "inat_url": "https://www.inaturalist.org/taxa/940963",
+      "taxon_photos": [],
+      "observation_count": 22,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_achelous"
+    },
+    {
+      "id": 498179,
       "name": "Arhopala aedias",
       "common_name": "Large Metallic Oakblue",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+aedias",
+      "inat_url": "https://www.inaturalist.org/taxa/498179",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 85,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_aedias"
     },
     {
-      "id": null,
-      "name": "Arhopala agelastus agelastus",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+agelastus",
+      "id": 880739,
+      "name": "Arhopala agaba",
+      "common_name": "Purple-glazed Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/880739",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 7,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_agaba"
     },
     {
-      "id": null,
-      "name": "Arhopala labuana",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+labuana",
+      "id": 1294319,
+      "name": "Arhopala agelastus",
+      "common_name": "Green-edged Tailess Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/1294319",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 8,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_agelastus"
     },
     {
-      "id": null,
-      "name": "Arhopala wildeyana wildeyana",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+wildeyana",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala barami penanga",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+barami",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala alaconia media",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+alaconia",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala cardoni",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+cardoni",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala epimete suedas",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+epimete",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala agesilaus gesa",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+agesilaus",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala avatha",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+avatha",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
+      "id": 149210,
       "name": "Arhopala agesias",
       "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+agesias",
+      "inat_url": "https://www.inaturalist.org/taxa/149210",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 6,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_agesias"
     },
     {
-      "id": null,
-      "name": "Arhopala similis",
+      "id": 1278725,
+      "name": "Arhopala agesilaus",
       "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+similis",
+      "inat_url": "https://www.inaturalist.org/taxa/1278725",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 1,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_agesilaus"
     },
     {
-      "id": null,
-      "name": "Arhopala kinabala",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+kinabala",
+      "id": 859032,
+      "name": "Arhopala agrata",
+      "common_name": "De Nicéville's Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/859032",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 43,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_agrata"
     },
     {
-      "id": null,
-      "name": "Arhopala anella",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+anella",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala alesia sacharja",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+alesia",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala ace ace",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+ace",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala azinis azinis",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+azinis",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala agrata agrata",
-      "common_name": "de Nicéville's Dull Oakblue",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+agrata",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala pseudomuta",
-      "common_name": "Raffles's Oakblue",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+pseudomuta",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala elopura",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+elopura",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala arianaga",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+arianaga",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala ariana",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+ariana",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
+      "id": 880740,
       "name": "Arhopala aida",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+aida",
+      "common_name": "White-stained Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/880740",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 10,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_aida"
     },
     {
-      "id": null,
-      "name": "Arhopala havilandi",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+havilandi",
+      "id": 880741,
+      "name": "Arhopala alaconia",
+      "common_name": "Patchy Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/880741",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 4,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_alaconia"
     },
     {
-      "id": null,
-      "name": "Arhopala sintanga",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+sintanga",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala alitaeus",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+alitaeus",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala denta",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+denta",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala amphimuta amphimuta",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+amphimuta",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala major major",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+major",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala norda",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+norda",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala delta",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+delta",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala moolaiana yajuna",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+moolaiana",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala sceva indra",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+sceva",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala zylda elioti",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+zylda",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala avathina avathina",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+avathina",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala stubbsi",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+stubbsi",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala baluensis",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+baluensis",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala dajagaka",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+dajagaka",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
+      "id": 1495881,
       "name": "Arhopala alica",
       "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+alica",
+      "inat_url": "https://www.inaturalist.org/taxa/1495881",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 4,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_alica"
     },
     {
-      "id": null,
-      "name": "Arhopala kurzi",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+kurzi",
+      "id": 528441,
+      "name": "Arhopala alitaeus",
+      "common_name": "Purple Broken-band Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/528441",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 8,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_alitaeus"
     },
     {
-      "id": null,
-      "name": "Arhopala muta maranda",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+muta",
+      "id": 847055,
+      "name": "Arhopala allata",
+      "common_name": "Rosy Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/847055",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 4,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_allata"
     },
     {
-      "id": null,
-      "name": "Arhopala moorei busa",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+moorei",
+      "id": 506221,
+      "name": "Arhopala ammon",
+      "common_name": "Malayan oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/506221",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 6,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_ammon"
     },
     {
-      "id": null,
-      "name": "Arhopala tropaea",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+tropaea",
+      "id": 470744,
+      "name": "Arhopala ammonides",
+      "common_name": "Little Cerulean Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/470744",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 11,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_ammonides"
     },
     {
-      "id": null,
-      "name": "Arhopala antimuta antimuta",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+antimuta",
+      "id": 498183,
+      "name": "Arhopala amphimuta",
+      "common_name": "Broad Yellow Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/498183",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 62,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_amphimuta"
     },
     {
-      "id": null,
-      "name": "Arhopala metamuta metamuta",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+metamuta",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala perimuta regina",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+perimuta",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala anthelus grahami",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+anthelus",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala achelous achelous",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+achelous",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala aurea",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+aurea",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala trogon",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+trogon",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala stinga",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+stinga",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala caeca",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+caeca",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala borneensis",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+borneensis",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala opalina azata",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+opalina",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala camdana camdana",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+camdana",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala semperi russelli",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+semperi",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala hellada ozana",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+hellada",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
+      "id": 1340240,
       "name": "Arhopala anarte",
       "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+anarte",
+      "inat_url": "https://www.inaturalist.org/taxa/1340240",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 2,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_anarte"
     },
     {
-      "id": null,
-      "name": "Arhopala varro selama",
+      "id": 1294316,
+      "name": "Arhopala anella",
       "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+varro",
+      "inat_url": "https://www.inaturalist.org/taxa/1294316",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 7,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_anella"
     },
     {
-      "id": null,
-      "name": "Arhopala dispar pendleburyi",
+      "id": 149211,
+      "name": "Arhopala anthelus",
+      "common_name": "Magnificent Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/149211",
+      "taxon_photos": [],
+      "observation_count": 32,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_anthelus"
+    },
+    {
+      "id": 498184,
+      "name": "Arhopala antimuta",
+      "common_name": "Small Tailless Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/498184",
+      "taxon_photos": [],
+      "observation_count": 103,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_antimuta"
+    },
+    {
+      "id": 816304,
+      "name": "Arhopala ariana",
+      "common_name": "Pinkish-washed Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/816304",
+      "taxon_photos": [],
+      "observation_count": 6,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_ariana"
+    },
+    {
+      "id": 1556287,
+      "name": "Arhopala arianaga",
       "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+dispar",
+      "inat_url": "https://www.inaturalist.org/taxa/1556287",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 2,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_arianaga"
     },
     {
-      "id": null,
-      "name": "Arhopala belphoebe cowani",
+      "id": 885911,
+      "name": "Arhopala ariel",
+      "common_name": "Chocolate Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/885911",
+      "taxon_photos": [],
+      "observation_count": 1,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_ariel"
+    },
+    {
+      "id": 1340248,
+      "name": "Arhopala aroa",
       "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+belphoebe",
+      "inat_url": "https://www.inaturalist.org/taxa/1340248",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 1,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_aroa"
     },
     {
-      "id": null,
-      "name": "Arhopala johoreana johoreana",
+      "id": 1294761,
+      "name": "Arhopala arvina",
       "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+johoreana",
+      "inat_url": "https://www.inaturalist.org/taxa/1294761",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 3,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_arvina"
     },
     {
-      "id": null,
-      "name": "Arhopala myrzala lammas",
+      "id": 363432,
+      "name": "Arhopala athada",
+      "common_name": "Vinous Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/363432",
+      "taxon_photos": [],
+      "observation_count": 11,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_athada"
+    },
+    {
+      "id": 498181,
+      "name": "Arhopala atosia",
+      "common_name": "Tailed Disc Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/498181",
+      "taxon_photos": [],
+      "observation_count": 147,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_atosia"
+    },
+    {
+      "id": 429759,
+      "name": "Arhopala aurea",
+      "common_name": "Long-celled Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/429759",
+      "taxon_photos": [],
+      "observation_count": 73,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_aurea"
+    },
+    {
+      "id": 1062607,
+      "name": "Arhopala avatha",
       "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+myrzala",
+      "inat_url": "https://www.inaturalist.org/taxa/1062607",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 2,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_avatha"
     },
     {
-      "id": null,
-      "name": "Arhopala myrzalina",
+      "id": 888416,
+      "name": "Arhopala avathina",
+      "common_name": "Lunulate Yellow Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/888416",
+      "taxon_photos": [],
+      "observation_count": 5,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_avathina"
+    },
+    {
+      "id": 888417,
+      "name": "Arhopala baluensis",
       "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+myrzalina",
+      "inat_url": "https://www.inaturalist.org/taxa/888417",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 1,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_baluensis"
     },
     {
-      "id": null,
-      "name": "Arhopala bazaloides bazaloides",
+      "id": 958932,
+      "name": "Arhopala barami",
+      "common_name": "Wood's Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/958932",
+      "taxon_photos": [],
+      "observation_count": 15,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_barami"
+    },
+    {
+      "id": 358718,
+      "name": "Arhopala bazalus",
+      "common_name": "Powdered Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/358718",
+      "taxon_photos": [],
+      "observation_count": 15,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_bazalus"
+    },
+    {
+      "id": 1403674,
+      "name": "Arhopala bella",
       "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+bazaloides",
+      "inat_url": "https://www.inaturalist.org/taxa/1403674",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 4,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_bella"
     },
     {
-      "id": null,
-      "name": "Arhopala centaurus nakula",
-      "common_name": "Centaur Oakblue",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+centaurus",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala araxes",
+      "id": 925156,
+      "name": "Arhopala borneensis",
       "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+araxes",
+      "inat_url": "https://www.inaturalist.org/taxa/925156",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 8,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_borneensis"
     },
     {
-      "id": null,
-      "name": "Arhopala amantes",
+      "id": 885913,
+      "name": "Arhopala buddha",
+      "common_name": "Buddha Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/885913",
+      "taxon_photos": [],
+      "observation_count": 20,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_buddha"
+    },
+    {
+      "id": 1607761,
+      "name": "Arhopala caeca",
       "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+amantes",
+      "inat_url": "https://www.inaturalist.org/taxa/1607761",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 2,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_caeca"
     },
     {
-      "id": null,
-      "name": "Arhopala agaba",
+      "id": 146903,
+      "name": "Arhopala centaurus",
+      "common_name": "Dull Oak-blue",
+      "inat_url": "https://www.inaturalist.org/taxa/146903",
+      "taxon_photos": [],
+      "observation_count": 141,
+      "wikipedia_url": "http://en.wikipedia.org/wiki/Arhopala_centaurus"
+    },
+    {
+      "id": 149214,
+      "name": "Arhopala cleander",
+      "common_name": "Large Mergui Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/149214",
+      "taxon_photos": [],
+      "observation_count": 7,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_cleander"
+    },
+    {
+      "id": 793494,
+      "name": "Arhopala corinda",
+      "common_name": "Ultramarine Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/793494",
+      "taxon_photos": [],
+      "observation_count": 11,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_corinda"
+    },
+    {
+      "id": 896391,
+      "name": "Arhopala delta",
+      "common_name": "Deltal Dull Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/896391",
+      "taxon_photos": [],
+      "observation_count": 9,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_delta"
+    },
+    {
+      "id": 622433,
+      "name": "Arhopala democritus",
+      "common_name": "White-dot Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/622433",
+      "taxon_photos": [],
+      "observation_count": 124,
+      "wikipedia_url": "http://en.wikipedia.org/wiki/Arhopala_democritus"
+    },
+    {
+      "id": 1192142,
+      "name": "Arhopala denta",
       "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+agaba",
+      "inat_url": "https://www.inaturalist.org/taxa/1192142",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 1,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_denta"
     },
     {
-      "id": null,
-      "name": "Arhopala aroa aroa",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+aroa",
+      "id": 880746,
+      "name": "Arhopala elopura",
+      "common_name": "Yellow Tailed Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/880746",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 21,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_elopura"
     },
     {
-      "id": null,
-      "name": "Arhopala athada athada",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+athada",
+      "id": 429757,
+      "name": "Arhopala epimuta",
+      "common_name": "Tailess Disc Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/429757",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 104,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_epimuta"
     },
     {
-      "id": null,
-      "name": "Arhopala aurelia",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+aurelia",
+      "id": 498188,
+      "name": "Arhopala eumolphus",
+      "common_name": "Green Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/498188",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 32,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_eumolphus"
     },
     {
-      "id": null,
-      "name": "Arhopala cleander aphadantas",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+cleander",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala corinda acestes",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+corinda",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala democritus democritus",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+democritus",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala democritus lycaenaria",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+democritus",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
+      "id": 1296657,
       "name": "Arhopala evansi",
       "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+evansi",
+      "inat_url": "https://www.inaturalist.org/taxa/1296657",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 1,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_evansi"
     },
     {
-      "id": null,
+      "id": 880792,
+      "name": "Arhopala fulla",
+      "common_name": "Spotless Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/880792",
+      "taxon_photos": [],
+      "observation_count": 12,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_fulla"
+    },
+    {
+      "id": 1168050,
+      "name": "Arhopala havilandi",
+      "common_name": "",
+      "inat_url": "https://www.inaturalist.org/taxa/1168050",
+      "taxon_photos": [],
+      "observation_count": 2,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_havilandi"
+    },
+    {
+      "id": 980542,
+      "name": "Arhopala hellada",
+      "common_name": "long-banded Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/980542",
+      "taxon_photos": [],
+      "observation_count": 3,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_hellada"
+    },
+    {
+      "id": 883689,
+      "name": "Arhopala hellenore",
+      "common_name": "Doherty's Green Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/883689",
+      "taxon_photos": [],
+      "observation_count": 10,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_hellenore"
+    },
+    {
+      "id": 888216,
+      "name": "Arhopala horsfieldi",
+      "common_name": "Peacock Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/888216",
+      "taxon_photos": [],
+      "observation_count": 18,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_horsfieldi"
+    },
+    {
+      "id": 887008,
+      "name": "Arhopala hypomuta",
+      "common_name": "Violet Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/887008",
+      "taxon_photos": [],
+      "observation_count": 15,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_hypomuta"
+    },
+    {
+      "id": 1555627,
+      "name": "Arhopala ijanensis",
+      "common_name": "White-banded Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/1555627",
+      "taxon_photos": [],
+      "observation_count": 19,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_ijanensis"
+    },
+    {
+      "id": 1340246,
+      "name": "Arhopala inornata",
+      "common_name": "",
+      "inat_url": "https://www.inaturalist.org/taxa/1340246",
+      "taxon_photos": [],
+      "observation_count": 13,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_inornata"
+    },
+    {
+      "id": 881533,
+      "name": "Arhopala kinabala",
+      "common_name": "Golden-spotted Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/881533",
+      "taxon_photos": [],
+      "observation_count": 21,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_kinabala"
+    },
+    {
+      "id": 1149928,
+      "name": "Arhopala kurzi",
+      "common_name": "",
+      "inat_url": "https://www.inaturalist.org/taxa/1149928",
+      "taxon_photos": [],
+      "observation_count": 14,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_kurzi"
+    },
+    {
+      "id": 475784,
+      "name": "Arhopala lurida",
+      "common_name": "Lesser Disc Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/475784",
+      "taxon_photos": [],
+      "observation_count": 22,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_lurida"
+    },
+    {
+      "id": 429756,
+      "name": "Arhopala major",
+      "common_name": "Major Yellow Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/429756",
+      "taxon_photos": [],
+      "observation_count": 96,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_major"
+    },
+    {
+      "id": 1340245,
+      "name": "Arhopala metamuta",
+      "common_name": "",
+      "inat_url": "https://www.inaturalist.org/taxa/1340245",
+      "taxon_photos": [],
+      "observation_count": 3,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_metamuta"
+    },
+    {
+      "id": 1340247,
       "name": "Arhopala milleri",
       "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+milleri",
+      "inat_url": "https://www.inaturalist.org/taxa/1340247",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 2,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_milleri"
     },
     {
-      "id": null,
+      "id": 549326,
+      "name": "Arhopala moolaiana",
+      "common_name": "Pale Yellow Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/549326",
+      "taxon_photos": [],
+      "observation_count": 25,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_moolaiana"
+    },
+    {
+      "id": 780493,
+      "name": "Arhopala moorei",
+      "common_name": "Moore's Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/780493",
+      "taxon_photos": [],
+      "observation_count": 3,
+      "wikipedia_url": "http://en.wikipedia.org/wiki/Arhopala_moorei"
+    },
+    {
+      "id": 780491,
+      "name": "Arhopala muta",
+      "common_name": "Mutal Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/780491",
+      "taxon_photos": [],
+      "observation_count": 21,
+      "wikipedia_url": "http://en.wikipedia.org/wiki/Arhopala_muta"
+    },
+    {
+      "id": 498177,
+      "name": "Arhopala myrzala",
+      "common_name": "Malayan Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/498177",
+      "taxon_photos": [],
+      "observation_count": 21,
+      "wikipedia_url": "http://en.wikipedia.org/wiki/Arhopala_myrzala"
+    },
+    {
+      "id": 1564116,
+      "name": "Arhopala myrzalina",
+      "common_name": "",
+      "inat_url": "https://www.inaturalist.org/taxa/1564116",
+      "taxon_photos": [],
+      "observation_count": 8,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_myrzalina"
+    },
+    {
+      "id": 887831,
+      "name": "Arhopala norda",
+      "common_name": "Langkawi Yellow Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/887831",
+      "taxon_photos": [],
+      "observation_count": 27,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_norda"
+    },
+    {
+      "id": 1340249,
       "name": "Arhopala normani",
       "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+normani",
+      "inat_url": "https://www.inaturalist.org/taxa/1340249",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 1,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_normani"
     },
     {
-      "id": null,
-      "name": "Arhopala phaenops sandakani",
+      "id": 994269,
+      "name": "Arhopala opalina",
+      "common_name": "Opal Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/994269",
+      "taxon_photos": [],
+      "observation_count": 11,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_opalina"
+    },
+    {
+      "id": 1390509,
+      "name": "Arhopala overdijkinki",
       "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+phaenops",
+      "inat_url": "https://www.inaturalist.org/taxa/1390509",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 7,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_overdijkinki"
     },
     {
-      "id": null,
-      "name": "Arhopala phanda phanda",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+phanda",
+      "id": 333568,
+      "name": "Arhopala paraganesa",
+      "common_name": "Dusky Bushblue",
+      "inat_url": "https://www.inaturalist.org/taxa/333568",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 6,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_paraganesa"
     },
     {
-      "id": null,
-      "name": "Arhopala selta selta",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+selta",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala silhetensis adorea",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+silhetensis",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala sublustris ridleyi",
-      "common_name": "Ridley's Oakblue",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+sublustris",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala zambra zambra",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+zambra",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala atosia malayana",
-      "common_name": "Tailed Disc Oakblue",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+atosia",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala lurida",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+lurida",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala epimuta epiala",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+epimuta",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala bazalus zalinda",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+bazalus",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala overdijkinki unda",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+overdijkinki",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala acta",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+acta",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala tameanga",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+tameanga",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala horsfieldi basiviridis",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+horsfieldi",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala eumolphus maxwelli",
-      "common_name": "Green Oakblue",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+eumolphus",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala hellenore siroes",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+hellenore",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala fulla intaca",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+fulla",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala paraganesa mendava",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+paraganesa",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala ammonides chunsu",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+ammonides",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala ammon ammon",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+ammon",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala ariel",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+ariel",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala elizabethae",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+elizabethae",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala hypomuta hypomuta",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+hypomuta",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala ijanensis",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+ijanensis",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala inornata inornata",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+inornata",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
-      "name": "Arhopala allata pandora",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+allata",
-      "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
-    },
-    {
-      "id": null,
+      "id": 1275891,
       "name": "Arhopala paralea",
       "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+paralea",
+      "inat_url": "https://www.inaturalist.org/taxa/1275891",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 1,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_paralea"
     },
     {
-      "id": null,
-      "name": "Arhopala buddha cooperi",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+buddha",
+      "id": 448212,
+      "name": "Arhopala perimuta",
+      "common_name": "Yellowdisc Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/448212",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 29,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_perimuta"
     },
     {
-      "id": null,
-      "name": "Arhopala arvina adalitas",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+arvina",
+      "id": 887006,
+      "name": "Arhopala phaenops",
+      "common_name": "Sumatran Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/887006",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 2,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_phaenops"
     },
     {
-      "id": null,
-      "name": "Arhopala vihara vihara",
-      "common_name": "",
-      "inat_url": "https://www.inaturalist.org/search?q=Arhopala+vihara",
+      "id": 940969,
+      "name": "Arhopala phanda",
+      "common_name": "Golden Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/940969",
       "taxon_photos": [],
-      "observation_count": 0,
-      "wikipedia_url": ""
+      "observation_count": 10,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_phanda"
+    },
+    {
+      "id": 498185,
+      "name": "Arhopala pseudomuta",
+      "common_name": "Raffles's oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/498185",
+      "taxon_photos": [],
+      "observation_count": 79,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_pseudomuta"
+    },
+    {
+      "id": 888422,
+      "name": "Arhopala sceva",
+      "common_name": "",
+      "inat_url": "https://www.inaturalist.org/taxa/888422",
+      "taxon_photos": [],
+      "observation_count": 3,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_sceva"
+    },
+    {
+      "id": 880747,
+      "name": "Arhopala selta",
+      "common_name": "Reddish-brown Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/880747",
+      "taxon_photos": [],
+      "observation_count": 8,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_selta"
+    },
+    {
+      "id": 1148362,
+      "name": "Arhopala semperi",
+      "common_name": "",
+      "inat_url": "https://www.inaturalist.org/taxa/1148362",
+      "taxon_photos": [],
+      "observation_count": 2,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_semperi"
+    },
+    {
+      "id": 498186,
+      "name": "Arhopala silhetensis",
+      "common_name": "Sylhet Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/498186",
+      "taxon_photos": [],
+      "observation_count": 40,
+      "wikipedia_url": "http://en.wikipedia.org/wiki/Arhopala_silhetensis"
+    },
+    {
+      "id": 149215,
+      "name": "Arhopala similis",
+      "common_name": "Druce's Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/149215",
+      "taxon_photos": [],
+      "observation_count": 6,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_similis"
+    },
+    {
+      "id": 1394352,
+      "name": "Arhopala stinga",
+      "common_name": "",
+      "inat_url": "https://www.inaturalist.org/taxa/1394352",
+      "taxon_photos": [],
+      "observation_count": 35,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_stinga"
+    },
+    {
+      "id": 475916,
+      "name": "Arhopala sublustris",
+      "common_name": "Bright Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/475916",
+      "taxon_photos": [],
+      "observation_count": 6,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_sublustris"
+    },
+    {
+      "id": 447353,
+      "name": "Arhopala trogon",
+      "common_name": "Green-suffused Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/447353",
+      "taxon_photos": [],
+      "observation_count": 46,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_trogon"
+    },
+    {
+      "id": 785409,
+      "name": "Arhopala tropaea",
+      "common_name": "",
+      "inat_url": "https://www.inaturalist.org/taxa/785409",
+      "taxon_photos": [],
+      "observation_count": 1,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_tropaea"
+    },
+    {
+      "id": 880748,
+      "name": "Arhopala vihara",
+      "common_name": "Large Spotted Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/880748",
+      "taxon_photos": [],
+      "observation_count": 13,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_vihara"
+    },
+    {
+      "id": 1294333,
+      "name": "Arhopala wildeyana",
+      "common_name": "",
+      "inat_url": "https://www.inaturalist.org/taxa/1294333",
+      "taxon_photos": [],
+      "observation_count": 30,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_wildeyana"
+    },
+    {
+      "id": 706582,
+      "name": "Arhopala zambra",
+      "common_name": "Zambra Oakblue",
+      "inat_url": "https://www.inaturalist.org/taxa/706582",
+      "taxon_photos": [],
+      "observation_count": 5,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_zambra"
+    },
+    {
+      "id": 1340244,
+      "name": "Arhopala zylda",
+      "common_name": "",
+      "inat_url": "https://www.inaturalist.org/taxa/1340244",
+      "taxon_photos": [],
+      "observation_count": 2,
+      "wikipedia_url": "https://en.wikipedia.org/wiki/Arhopala_zylda"
     }
   ]
 }
