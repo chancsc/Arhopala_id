@@ -2177,8 +2177,7 @@
       "features": {
         "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?": "No — border regular ~0.5 mm",
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
-        "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes — white cilia spot near the tornus + weak tooth present; postdiscal spots more rounded, similar to A. amphimuta/A. major",
-        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Cannot determine — duplicate of the cilia-spot/tooth question above; A. major does have the spot (canonical path answer is an artifact of routing to A. norda)"
+        "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes — white cilia spot near the tornus + weak tooth present; postdiscal spots more rounded, similar to A. amphimuta/A. major"
       }
     },
     "r_stubbsi": {
@@ -2202,8 +2201,7 @@
       "common_name": "",
       "note": "Tailless. Male: bright shining violet-blue with a thread-like black border; FW 18–22 mm. Female: blue colour reaches the HW termen or very nearly so — black border is extremely narrow or absent at the termen (diagnostic; unique in the amphimuta group). Underside markings very similar to [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734). HW postdiscal band only partially dislocated at vein 2. Range: Malay Peninsula and south Myanmar. (Feature Scoring: Q102 = 'No — HW band not strongly dislocated at vein 2'; the key tree reaches this species via Q101 'Yes — border thread-like' as a routing shortcut, bypassing Q102.)",
       "features": {
-        "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
-        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Cannot determine — duplicate of the cilia-spot/tooth question below; A. moolaiana does have the spot (canonical path answer is an artifact of routing to A. norda)"
+        "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2"
       }
     },
     "r_alica": {
@@ -2223,10 +2221,7 @@
       "taxon_id": null,
       "name": "Arhopala sceva indra",
       "common_name": "",
-      "note": "Tailless. A smaller species. HW underside postdiscal series is dislocated at vein 2 (distinctive within the amphimuta subgroup). Male: dark violet-blue.",
-      "features": {
-        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Cannot determine — A. sceva does have a white spot in space 1a + weak tooth (canonical path answer is an artifact of routing to A. norda)"
-      }
+      "note": "Tailless. A smaller species. HW underside postdiscal series is dislocated at vein 2 (distinctive within the amphimuta subgroup). Male: dark violet-blue."
     },
     "r_amphimuta_amphimuta": {
       "type": "result",
@@ -2236,8 +2231,7 @@
       "common_name": "Common Oakblue",
       "note": "Tailless. Male: dark bluish-purple with a regular 0.5–1.0 mm black border; FW 20–23 mm. HW cilia often prolonged into a very short tooth at vein 2 (may be inconspicuous in worn specimens). FW underside: postdiscal band slightly dislocated at vein 4; spot in space 3 usually an oblique oval. Female: lighter purple with typical broad black borders. HW postdiscal band only partially dislocated at vein 2 (as in [A. zylda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340244&preferred_place_id=6734)).",
       "features": {
-        "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes — white cilia spot near the tornus + weak tooth present; postdiscal spots more rounded, similar to A. amphimuta/A. major",
-        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Cannot determine — duplicate of the cilia-spot/tooth question above; A. amphimuta does have the spot (canonical path answer is an artifact of routing to A. norda)"
+        "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes — white cilia spot near the tornus + weak tooth present; postdiscal spots more rounded, similar to A. amphimuta/A. major"
       }
     },
     "r_zylda_elioti": {
@@ -2257,10 +2251,7 @@
       "taxon_id": null,
       "name": "Arhopala dajagaka",
       "common_name": "",
-      "note": "Tailless. Bornean endemic. Larger Bornean species (FW 21–25 mm). Male: dark bluish-purple with a thin black border. Female: THICK black borders and noticeably darker venation across the wings (diagnostic). Male valva unilobate; certain identification may require genitalia dissection.",
-      "features": {
-        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Cannot determine — A. dajagaka does have a white spot in space 1a + weak tooth (canonical path answer is an artifact of routing to A. norda)"
-      }
+      "note": "Tailless. Bornean endemic. Larger Bornean species (FW 21–25 mm). Male: dark bluish-purple with a thin black border. Female: THICK black borders and noticeably darker venation across the wings (diagnostic). Male valva unilobate; certain identification may require genitalia dissection."
     },
     "r_baluensis": {
       "type": "result",
