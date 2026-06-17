@@ -1621,12 +1621,12 @@
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
-      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch on HW cilia"
-    },
-    {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
       "choice": "HW postdiscal band fully dislocated at vein 2 — two clearly separate portions with a visible gap (kurzi or perimuta subgroup)"
+    },
+    {
+      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
+      "choice": "No — no white patch on HW cilia"
     },
     {
       "question": "On the hindwing underside, are postdiscal spots 4 and 5 in a precise, straight (vertical) alignment with each other, distinct from the broader 5-6-7 echelon?",
@@ -1815,12 +1815,40 @@
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
-      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded"
-    },
-    {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
       "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
+    },
+    {
+      "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
+      "choice": "No — Malay Peninsula specimen"
+    },
+    {
+      "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
+      "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?",
+      "choice": "No — HW band not strongly dislocated at vein 2"
+    },
+    {
+      "question": "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?",
+      "choice": "No — no white cilia spot or tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)"
+    },
+    {
+      "question": "Is the male distinctly blue above, with the border widening from ~2.0 mm at the tornus to ~3.0 mm at the apex?",
+      "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "What is the male's overall upperside colour?",
+      "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "Is the male's black border broad, 1.5 mm or wider?",
+      "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
+      "choice": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded"
     }
   ],
   "Arhopala major major": [
@@ -1867,10 +1895,6 @@
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
-    },
-    {
-      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch on HW cilia"
     },
     {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
@@ -1951,10 +1975,6 @@
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
-      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch on HW cilia"
-    },
-    {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
       "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
     },
@@ -1985,6 +2005,10 @@
     {
       "question": "Is the male's black border broad, 1.5 mm or wider?",
       "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
+      "choice": "No — no white patch on HW cilia"
     }
   ],
   "Arhopala moolaiana yajuna": [
@@ -2031,10 +2055,6 @@
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
-    },
-    {
-      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch on HW cilia"
     },
     {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
@@ -2121,10 +2141,6 @@
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
-      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch on HW cilia"
-    },
-    {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
       "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
     },
@@ -2189,10 +2205,6 @@
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
-    },
-    {
-      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch on HW cilia"
     },
     {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
@@ -2273,10 +2285,6 @@
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
-      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch on HW cilia"
-    },
-    {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
       "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
     },
@@ -2307,6 +2315,10 @@
     {
       "question": "Is the male's black border broad, 1.5 mm or wider?",
       "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
+      "choice": "No — no white patch on HW cilia"
     }
   ],
   "Arhopala dajagaka": [
@@ -2355,16 +2367,16 @@
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
-      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch on HW cilia"
-    },
-    {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
       "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
     },
     {
       "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
       "choice": "Yes — Bornean specimen"
+    },
+    {
+      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
+      "choice": "No — no white patch on HW cilia"
     },
     {
       "question": "Is the specimen large (FW approximately 21–25 mm), or does the female have thick black borders with darker venation?",
@@ -2421,16 +2433,16 @@
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
-      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch on HW cilia"
-    },
-    {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
       "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
     },
     {
       "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
       "choice": "Yes — Bornean specimen"
+    },
+    {
+      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
+      "choice": "No — no white patch on HW cilia"
     },
     {
       "question": "Is the specimen large (FW approximately 21–25 mm), or does the female have thick black borders with darker venation?",
@@ -3341,10 +3353,6 @@
       "choice": "No — spots not in echelon"
     },
     {
-      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch on HW cilia"
-    },
-    {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
       "choice": "Spots more quadrate/banded; FW space 2 spot stepped outward toward termen (muta subgroup)"
     },
@@ -3375,6 +3383,10 @@
     {
       "question": "Is the male's black border broad, 1.5 mm or wider?",
       "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
+      "choice": "No — no white patch on HW cilia"
     }
   ],
   "Arhopala johoreana johoreana": [
