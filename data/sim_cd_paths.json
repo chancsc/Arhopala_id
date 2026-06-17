@@ -1821,6 +1821,30 @@
     {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
       "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
+    },
+    {
+      "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
+      "choice": "No — Malay Peninsula specimen"
+    },
+    {
+      "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
+      "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?",
+      "choice": "No — HW band not strongly dislocated at vein 2"
+    },
+    {
+      "question": "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?",
+      "choice": "No — no white cilia spot or tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)"
+    },
+    {
+      "question": "What is the male's overall upperside colour?",
+      "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "Is the male's black border broad, 1.5 mm or wider?",
+      "choice": "Cannot determine — upperside not visible"
     }
   ],
   "Arhopala major major": [
@@ -2034,7 +2058,7 @@
     },
     {
       "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch on HW cilia"
+      "choice": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded"
     },
     {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
