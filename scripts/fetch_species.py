@@ -80,7 +80,7 @@ def build_entry(item: dict) -> dict:
         "id": t["id"],
         "name": t["name"],
         "common_name": t.get("preferred_common_name", ""),
-        "inat_url": f"https://www.inaturalist.org/taxa/{t['id']}",
+        "inat_url": f"https://www.inaturalist.org/observations?verifiable=true&taxon_id={t['id']}&preferred_place_id=6734",
         "taxon_photos": extract_photos(t),
         "observation_count": item["count"],
         "wikipedia_url": t.get("wikipedia_url", ""),
