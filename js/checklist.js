@@ -412,6 +412,11 @@ function onQuestionClick(e) {
   // Toggle: clicking the selected choice clears it
   if (cs.answers.get(q) === c) {
     cs.answers.delete(q);
+    // Force a fresh sort: getDisplayQuestionsPure only appends newly-relevant
+    // questions at the tail of the existing order, so questions that were
+    // filtered out while this answer was set would otherwise reappear at the
+    // bottom instead of their natural sorted position.
+    cs.questionOrder = null;
   } else {
     cs.answers.set(q, c);
   }
