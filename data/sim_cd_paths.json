@@ -575,8 +575,8 @@
       "choice": "No — markings larger or not macular"
     },
     {
-      "question": "Are the inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened, and is HW postdiscal spot 6 outwardly concave or sinuous?",
-      "choice": "Yes — inner submarginal spots enlarged and darkened; HW spot 6 outwardly concave or sinuous"
+      "question": "On the hindwing underside, are the inner submarginal spots in spaces 4–5 notably enlarged and darkened?",
+      "choice": "Yes — HW spaces 4–5 submarginal spots notably enlarged and darkened"
     }
   ],
   "Arhopala alesia sacharja": [
@@ -647,6 +647,10 @@
     {
       "question": "What is the shape and position of the hindwing postdiscal spot 6, and are the inner submarginal spots notably enlarged and darkened?",
       "choice": "Spot 6 outwardly concave ⌣ or sinuous ∿, positioned below spot 7 (in the normal row, not displaced); inner submarginal spots in HW spaces 4–5 notably enlarged and darkened (alesia subgroup)"
+    },
+    {
+      "question": "Was this specimen observed in Langkawi?",
+      "choice": "Yes — observed in Langkawi"
     }
   ],
   "Arhopala labuana": [
@@ -703,8 +707,8 @@
       "choice": "No — markings larger or not macular"
     },
     {
-      "question": "Are the inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened, and is HW postdiscal spot 6 outwardly concave or sinuous?",
-      "choice": "No"
+      "question": "On the hindwing underside, are the inner submarginal spots in spaces 4–5 notably enlarged and darkened?",
+      "choice": "No / cannot determine"
     },
     {
       "question": "Is the hindwing underside postdiscal spot in space 3 almost in line with the spots in spaces 2 and 4?",
@@ -713,6 +717,10 @@
     {
       "question": "Is the male upperside notably darker violet with narrower black borders than typical for the group?",
       "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "Are the inner submarginal spots in FW spaces 2–3 notably enlarged and darkened, and is HW postdiscal spot 6 outwardly concave or sinuous?",
+      "choice": "No"
     }
   ],
   "Arhopala wildeyana wildeyana": [
@@ -769,8 +777,8 @@
       "choice": "No — markings larger or not macular"
     },
     {
-      "question": "Are the inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened, and is HW postdiscal spot 6 outwardly concave or sinuous?",
-      "choice": "No"
+      "question": "On the hindwing underside, are the inner submarginal spots in spaces 4–5 notably enlarged and darkened?",
+      "choice": "No / cannot determine"
     },
     {
       "question": "Is the hindwing underside postdiscal spot in space 3 almost in line with the spots in spaces 2 and 4?",
@@ -779,6 +787,10 @@
     {
       "question": "Is the male upperside notably darker violet with narrower black borders than typical for the group?",
       "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "Are the inner submarginal spots in FW spaces 2–3 notably enlarged and darkened, and is HW postdiscal spot 6 outwardly concave or sinuous?",
+      "choice": "No"
     }
   ],
   "Arhopala agelastus agelastus": [
@@ -835,8 +847,8 @@
       "choice": "No — markings larger or not macular"
     },
     {
-      "question": "Are the inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened, and is HW postdiscal spot 6 outwardly concave or sinuous?",
-      "choice": "No"
+      "question": "On the hindwing underside, are the inner submarginal spots in spaces 4–5 notably enlarged and darkened?",
+      "choice": "No / cannot determine"
     },
     {
       "question": "Is the hindwing underside postdiscal spot in space 3 almost in line with the spots in spaces 2 and 4?",
@@ -849,6 +861,10 @@
     {
       "question": "Is the male upperside notably darker violet with narrower black borders than typical for the group?",
       "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "Are the inner submarginal spots in FW spaces 2–3 notably enlarged and darkened, and is HW postdiscal spot 6 outwardly concave or sinuous?",
+      "choice": "No"
     }
   ],
   "Arhopala kinabala": [
