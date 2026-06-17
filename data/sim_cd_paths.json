@@ -464,7 +464,11 @@
     },
     {
       "question": "What is the shape and position of the hindwing postdiscal spot 6, and are the inner submarginal spots notably enlarged and darkened?",
-      "choice": "Spot 6 outwardly convex ⌢; touches or overlaps the end-cell bar; spots 5, 6 and 7 widely out of line; submarginal spots uniform"
+      "choice": "Spot 6 outwardly convex ⌢; touches or overlaps the end-cell bar; spots 5, 6 and 7 widely out of line; submarginal spots uniform (not enlarged)"
+    },
+    {
+      "question": "Is this a relatively large specimen, with a forewing length of approximately 22.0–23.0 mm?",
+      "choice": "Yes — relatively large, FW ~22.0–23.0 mm"
     }
   ],
   "Arhopala cardoni": [
@@ -610,7 +614,7 @@
     },
     {
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
@@ -646,11 +650,11 @@
     },
     {
       "question": "What is the shape and position of the hindwing postdiscal spot 6, and are the inner submarginal spots notably enlarged and darkened?",
-      "choice": "Spot 6 outwardly concave ⌣ or sinuous ∿, positioned below spot 7 (in the normal row, not displaced); inner submarginal spots in HW spaces 4–5 notably enlarged and darkened (alesia subgroup)"
+      "choice": "Spot 6 outwardly convex ⌢; touches or overlaps the end-cell bar; spots 5, 6 and 7 widely out of line; submarginal spots uniform (not enlarged)"
     },
     {
-      "question": "Is there a specific reason to suspect the rare A. alesia sacharja over the far more frequently encountered tailed form of A. alaconia?",
-      "choice": "Yes — specific reason to suspect the rare A. alesia sacharja"
+      "question": "Is this a relatively large specimen, with a forewing length of approximately 22.0–23.0 mm?",
+      "choice": "No — smaller"
     }
   ],
   "Arhopala labuana": [

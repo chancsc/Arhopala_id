@@ -432,31 +432,35 @@
         "text": "position of the hindwing postdiscal spot 6",
         "href": "guide.html#hw-spot6-position"
       },
-      "hint": "Two tailed exceptions occur within the otherwise-tailless agelastus group, distinguished chiefly by HW spot 6: [A. barami penanga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=958932&preferred_place_id=6734) has spot 6 outwardly convex, widely displaced toward (often touching/overlapping) the end-cell bar, with spots 5–6–7 widely out of line and uniform submarginal spots; the alesia subgroup has spot 6 outwardly concave or sinuous and positioned below spot 7 — in the normal postdiscal row, not displaced — paired with strikingly enlarged and darkened inner submarginal spots in HW spaces 4–5, and a tail at the usual vein 2 position. Within the alesia subgroup, [A. alesia sacharja](https://www.inaturalist.org/search?q=Arhopala+alesia) and the tailed f. kempi form of [A. alaconia media](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880741&preferred_place_id=6734) are essentially identical on the underside, and both occur in Langkawi, so locality does not separate them — the next question asks about relative rarity instead.",
+      "hint": "Two tailed exceptions occur within the otherwise-tailless agelastus group, distinguished chiefly by HW spot 6: [A. barami penanga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=958932&preferred_place_id=6734) AND [A. alesia sacharja](https://www.inaturalist.org/search?q=Arhopala+alesia) both have spot 6 outwardly convex, widely displaced toward (often touching/overlapping) the end-cell bar, with spots 5–6–7 widely out of line and uniform (not enlarged) submarginal spots — field photos show these two are effectively identical here, despite older literature describing A. alesia sacharja's spot 6 as concave; the next question separates them by size and border width. The tailed f. kempi form of [A. alaconia media](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880741&preferred_place_id=6734) is genuinely different: spot 6 outwardly concave or sinuous, positioned below spot 7 — in the normal postdiscal row, not displaced — paired with strikingly enlarged and darkened inner submarginal spots in HW spaces 4–5.",
       "choices": [
         {
-          "label": "Spot 6 outwardly convex ⌢; touches or overlaps the end-cell bar; spots 5, 6 and 7 widely out of line; submarginal spots uniform",
-          "next": "r_barami_penanga"
+          "label": "Spot 6 outwardly convex ⌢; touches or overlaps the end-cell bar; spots 5, 6 and 7 widely out of line; submarginal spots uniform (not enlarged)",
+          "next": "q_tailed_barami_alesia"
         },
         {
-          "label": "Spot 6 outwardly concave ⌣ or sinuous ∿, positioned below spot 7 (in the normal row, not displaced); inner submarginal spots in HW spaces 4–5 notably enlarged and darkened (alesia subgroup)",
-          "next": "q_tailed_alesia_alaconia"
+          "label": "Spot 6 outwardly concave ⌣ or sinuous ∿, positioned below spot 7 (in the normal row, not displaced); inner submarginal spots in HW spaces 4–5 notably enlarged and darkened",
+          "next": "r_alaconia_media"
         }
       ]
     },
-    "q_tailed_alesia_alaconia": {
+    "q_tailed_barami_alesia": {
       "type": "question",
-      "id": "q_tailed_alesia_alaconia",
-      "question": "Is there a specific reason to suspect the rare A. alesia sacharja over the far more frequently encountered tailed form of A. alaconia?",
-      "hint": "A. alesia sacharja and the tailed f. kempi form of A. alaconia media (alesia subgroup) are virtually identical on the underside — both tailed at vein 2, with concave/sinuous HW spot 6 and enlarged, darkened HW spaces 4–5 submarginal spots — and no field-visible character is known to separate them. Both also occur in Langkawi, so locality is not a useful clue. In practice the tailed form of A. alaconia is encountered fairly often, while A. alesia sacharja is known from only a single historical Malaysian record (Langkawi, 1994) — so default to A. alaconia f. kempi unless there is a specific reason (e.g. known local population data) to suspect A. alesia sacharja.",
+      "id": "q_tailed_barami_alesia",
+      "question": "Is this a relatively large specimen, with a forewing length of approximately 22.0–23.0 mm?",
+      "hint": "[A. barami penanga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=958932&preferred_place_id=6734) is relatively large for the group (FW 22.0–23.0 mm) and also has an exceptionally broad male upperside border (2.5 mm at tornus widening to 8.0 mm at costa, if the upperside is visible). [A. alesia sacharja](https://www.inaturalist.org/search?q=Arhopala+alesia) is smaller, with a more moderate upperside border (~3.0 mm at tornus, not reaching such an extreme width); it is also known from only a single historical Malaysian record (Langkawi, 1994), so default to A. barami penanga if size cannot be assessed.",
       "choices": [
         {
-          "label": "No — default to the far more frequently encountered A. alaconia f. kempi",
-          "next": "r_alaconia_media"
+          "label": "Yes — relatively large, FW ~22.0–23.0 mm",
+          "next": "r_barami_penanga"
         },
         {
-          "label": "Yes — specific reason to suspect the rare A. alesia sacharja",
+          "label": "No — smaller",
           "next": "r_alesia_sacharja"
+        },
+        {
+          "label": "Cannot determine — size not assessable",
+          "next": "r_barami_penanga"
         }
       ]
     },
@@ -1534,7 +1538,7 @@
       "taxon_id": null,
       "name": "Arhopala barami penanga",
       "common_name": "",
-      "note": "One of two tailed exceptions in the otherwise-tailless agelastus group (alongside [A. alesia sacharja](https://www.inaturalist.org/search?q=Arhopala+alesia), alesia subgroup); relatively large for the group (FW 22.0–23.0 mm). Underside: HW postdiscal spot 6 widely out of line with spots 5 and 7 — inner edge of spot 6 in line with, or even further inward (basad) than, the inner edge of spot 7; spot 6 outwardly convex and typically touches or overlaps the end-cell bar. FW postdiscal band continuous; no costal spot in space 10; small spot often present at base of space 3; inner submarginal spots uniform in size and colour. Male upperside: blue with an exceptionally broad FW border expanding from 2.5 mm at the tornus to 8.0 mm at the costa. Female: paler blue with similarly broad borders.",
+      "note": "One of two tailed exceptions in the otherwise-tailless agelastus group; relatively large for the group (FW 22.0–23.0 mm). Underside: HW postdiscal spot 6 widely out of line with spots 5 and 7 — inner edge of spot 6 in line with, or even further inward (basad) than, the inner edge of spot 7; spot 6 outwardly convex and typically touches or overlaps the end-cell bar. FW postdiscal band continuous; no costal spot in space 10; small spot often present at base of space 3; inner submarginal spots uniform in size and colour. [A. alesia sacharja](https://www.inaturalist.org/search?q=Arhopala+alesia) shares this exact spot-6/submarginal-spot pattern (per field-photo review, correcting older literature) — separate by size and border width: A. barami penanga is larger (FW 22.0–23.0 mm) with an exceptionally broad male border expanding from 2.5 mm at the tornus to 8.0 mm at the costa, vs. A. alesia sacharja's smaller size and more moderate border. Female: paler blue with similarly broad borders.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
       }
@@ -1556,7 +1560,7 @@
       "taxon_id": null,
       "name": "Arhopala alaconia media",
       "common_name": "",
-      "note": "Alesia subgroup (agelastus group) — the long-established Malayan member of this subgroup. Underside: inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened; HW postdiscal spot 6 outwardly concave or sinuous; tornal green scales present on the hindwing; small spot often at base of FW space 3. Normally tailless (slightly toothed), but a tailed form (f. kempi, ~2.5 mm tail at vein 2) — though described as rare in the literature — is reportedly encountered fairly often in the field; reachable in the tailed branch as the default identification at the alesia-subgroup fork (vs. the much rarer A. alesia sacharja, known from a single historical Langkawi record — both species occur in Langkawi, so locality does not separate them). Both sexes alike: violet blue with FW border 3.0 mm at tornus expanding to mid-costa.",
+      "note": "Alesia subgroup (agelastus group) — the long-established Malayan member of this subgroup, and (per field-photo review) the only Malayan agelastus-group species that genuinely has a concave/sinuous HW spot 6 paired with enlarged submarginal spots; [A. alesia sacharja](https://www.inaturalist.org/search?q=Arhopala+alesia), despite older literature placing it in the same subgroup, actually has a convex spot 6 touching the end-cell bar and uniform (not enlarged) submarginal spots — see notebook correction. Underside: inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened; HW postdiscal spot 6 outwardly concave or sinuous; tornal green scales present on the hindwing; small spot often at base of FW space 3. Normally tailless (slightly toothed), but a tailed form (f. kempi, ~2.5 mm tail at vein 2) — though described as rare in the literature — is reportedly encountered fairly often in the field, and is reachable directly in the tailed branch via this spot-6/submarginal-spot character. Both sexes alike: violet blue with FW border 3.0 mm at tornus expanding to mid-costa.",
       "features": {
         "Does the hindwing have a tail?": "No — hindwing is tailless",
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced"
@@ -1568,9 +1572,9 @@
       "taxon_id": null,
       "name": "Arhopala alesia sacharja",
       "common_name": "",
-      "note": "Alesia subgroup (agelastus group), alongside [A. alaconia media](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880741&preferred_place_id=6734) — and, with [A. barami penanga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=958932&preferred_place_id=6734), one of only two tailed exceptions in the otherwise-tailless agelastus group. Tail at the usual vein 2 position (not the unusual short white-tipped vein-3 tail of the abseus group). A very rare, late Malayan record (first found in Langkawi in 1994; also distributed across NE India, Myanmar, Thailand, Laos, and Vietnam). Underside: FW postdiscal band continuous, often with a small spot at the base of FW space 3; HW postdiscal band only partially dislocated at vein 2; inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened; HW postdiscal spot 6 outwardly concave or sinuous, positioned below the spot in space 7 — in the normal postdiscal row, not displaced toward the end-cell bar (cf. [A. barami penanga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=958932&preferred_place_id=6734), where spot 6 is convex and widely displaced). Sexes alike: violet blue with broad FW border ~3.0 mm at the tornus, expanding towards the mid-costa.",
+      "note": "Agelastus group, alongside [A. barami penanga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=958932&preferred_place_id=6734) one of only two tailed exceptions in the otherwise-tailless group. Tail at the usual vein 2 position (not the unusual short white-tipped vein-3 tail of the abseus group). A very rare, late Malayan record (first found in Langkawi in 1994; also distributed across NE India, Myanmar, Thailand, Laos, and Vietnam). Underside (per field-photo review, correcting older literature that described a concave spot 6 and enlarged submarginal spots — see notebook correction): FW postdiscal band continuous, often with a small spot at the base of FW space 3; HW postdiscal band only partially dislocated at vein 2; inner submarginal spots uniform in size, NOT enlarged; HW postdiscal spot 6 outwardly convex, touching or overlapping the end-cell bar, spots 5/6/7 widely out of line — effectively identical to A. barami penanga here. Separated from A. barami penanga by being smaller, with a more moderate male FW border (~3.0 mm at tornus, not reaching barami's extreme 8.0 mm at costa). Sexes alike: violet blue.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
       }
     },
     "r_labuana": {
