@@ -9,11 +9,11 @@
       "choices": [
         {
           "label": "Yes — hindwing is tailed",
-          "next": "q_tailed_cell_silver"
+          "next": "q_alaconia_wedge_tailed"
         },
         {
           "label": "No — hindwing is tailless",
-          "next": "q_tailless_fulla"
+          "next": "q_alaconia_wedge_tailless"
         }
       ]
     },
@@ -306,7 +306,7 @@
         },
         {
           "label": "No — markings form more continuous bands",
-          "next": "q_alaconia_wedge_tailed"
+          "next": "q_tailed_epimuta"
         }
       ]
     },
@@ -322,7 +322,7 @@
         },
         {
           "label": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered",
-          "next": "q_tailed_epimuta"
+          "next": "q_tailed_cell_silver"
         }
       ]
     },
@@ -662,7 +662,7 @@
         },
         {
           "label": "No",
-          "next": "q_alaconia_wedge_tailless"
+          "next": "q_tailless_epimuta"
         }
       ]
     },
@@ -678,7 +678,7 @@
         },
         {
           "label": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered",
-          "next": "q_tailless_epimuta"
+          "next": "q_tailless_fulla"
         }
       ]
     },
