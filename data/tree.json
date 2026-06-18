@@ -318,7 +318,7 @@
       "choices": [
         {
           "label": "Yes — HW spaces 4–5 submarginal spots black, wedge-shaped (∧); postdiscal spots large with a thick pale border",
-          "next": "r_alaconia_media"
+          "next": "r_alaconia_kempi"
         },
         {
           "label": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered",
@@ -456,7 +456,7 @@
         },
         {
           "label": "Spot 6 outwardly concave ⌣ or sinuous ∿, positioned below spot 7 (in the normal row, not displaced); inner submarginal spots in HW spaces 4–5 notably enlarged and darkened",
-          "next": "r_alaconia_media"
+          "next": "r_alaconia_kempi"
         }
       ]
     },
@@ -1592,11 +1592,19 @@
       "taxon_id": null,
       "name": "Arhopala alaconia media",
       "common_name": "",
-      "note": "Alesia subgroup (agelastus group) — the long-established Malayan member of this subgroup, and (per field-photo review) the only Malayan agelastus-group species that genuinely has a concave/sinuous HW spot 6 paired with enlarged submarginal spots; [A. alesia sacharja](https://www.inaturalist.org/search?q=Arhopala+alesia), despite older literature placing it in the same subgroup, actually has a convex spot 6 touching the end-cell bar and uniform (not enlarged) submarginal spots — see notebook correction. Distinctive early-exit character (per field-photo review): hindwing underside spaces 4–5 submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border — unique to this species among Malaysian Arhopala. Underside: inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened; HW postdiscal spot 6 outwardly concave or sinuous; tornal green scales present on the hindwing; small spot often at base of FW space 3. Normally tailless (slightly toothed), but a tailed form (f. kempi, ~2.5 mm tail at vein 2) — though described as rare in the literature — is reportedly encountered fairly often in the field, and is reachable directly in the tailed branch via this same wedge-shaped submarginal-spot character. Both sexes alike: violet blue with FW border 3.0 mm at tornus expanding to mid-costa.",
+      "note": "Alesia subgroup (agelastus group) — the long-established Malayan member of this subgroup, and (per field-photo review) the only Malayan agelastus-group species that genuinely has a concave/sinuous HW spot 6 paired with enlarged submarginal spots; [A. alesia sacharja](https://www.inaturalist.org/search?q=Arhopala+alesia), despite older literature placing it in the same subgroup, actually has a convex spot 6 touching the end-cell bar and uniform (not enlarged) submarginal spots — see notebook correction. Distinctive early-exit character (per field-photo review): hindwing underside spaces 4–5 submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border — unique to this species among Malaysian Arhopala. Underside: inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened; HW postdiscal spot 6 outwardly concave or sinuous; tornal green scales present on the hindwing; small spot often at base of FW space 3. This is the normal tailless form (slightly toothed); see Arhopala alaconia media f. kempi for the rarer tailed form (~2.5 mm tail at vein 2), which is reached directly in the tailed branch via this same wedge-shaped submarginal-spot character. Both sexes alike: violet blue with FW border 3.0 mm at tornus expanding to mid-costa.",
       "features": {
-        "Does the hindwing have a tail?": "Cannot determine — normally tailless, but the f. kempi form is tailed and reportedly encountered fairly often; tail presence/absence should not be treated as a discriminating feature for this species in Feature Scoring",
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced"
       }
+    },
+    "r_alaconia_kempi": {
+      "type": "result",
+      "id": "r_alaconia_kempi",
+      "taxon_id": null,
+      "name": "Arhopala alaconia media f. kempi",
+      "common_name": "",
+      "note": "Alesia subgroup (agelastus group) — the rarer tailed form (f. kempi, ~2.5 mm tail at vein 2) of Arhopala alaconia media; though described as rare in the literature, it is reportedly encountered fairly often in the field. Same diagnostic characters as the tailless form: hindwing underside spaces 4–5 submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border — unique to this species among Malaysian Arhopala; inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened; HW postdiscal spot 6 outwardly concave or sinuous; tornal green scales present on the hindwing; small spot often at base of FW space 3. Both sexes alike: violet blue with FW border 3.0 mm at tornus expanding to mid-costa.",
+      "features": {}
     },
     "r_alesia_sacharja": {
       "type": "result",
