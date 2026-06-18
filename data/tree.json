@@ -313,15 +313,15 @@
     "q_alaconia_wedge_tailed": {
       "type": "question",
       "id": "q_alaconia_wedge_tailed",
-      "question": "Are the hindwing underside submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border?",
-      "hint": "(per field-photo review) This combination — bold, blackish wedge-shaped (∧) submarginal spots paired with large postdiscal spots bordered by a conspicuously thick pale margin — is unique to the tailed f. kempi form of Arhopala alaconia media among Malaysian Arhopala and is usually clear even in average photos. If present, you can identify the species directly here without checking HW spot 6 position/shape.",
+      "question": "In hindwing underside spaces 4 and 5, are the submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border?",
+      "hint": "(per field-photo review) This combination — bold, blackish wedge-shaped (∧) submarginal spots in HW spaces 4–5, paired with large postdiscal spots bordered by a conspicuously thick pale margin — is unique to the tailed f. kempi form of Arhopala alaconia media among Malaysian Arhopala and is usually clear even in average photos. If present, you can identify the species directly here without checking HW spot 6 position/shape.",
       "choices": [
         {
-          "label": "Yes — submarginal spots black, wedge-shaped (∧); postdiscal spots large with a thick pale border",
+          "label": "Yes — HW spaces 4–5 submarginal spots black, wedge-shaped (∧); postdiscal spots large with a thick pale border",
           "next": "r_alaconia_media"
         },
         {
-          "label": "No — submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered",
+          "label": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered",
           "next": "q_tailed_epimuta"
         }
       ]
@@ -669,15 +669,15 @@
     "q_alaconia_wedge_tailless": {
       "type": "question",
       "id": "q_alaconia_wedge_tailless",
-      "question": "Are the hindwing underside submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border?",
-      "hint": "(per field-photo review) This combination — bold, blackish wedge-shaped (∧) submarginal spots paired with large postdiscal spots bordered by a conspicuously thick pale margin — is unique to Arhopala alaconia media among Malaysian Arhopala and is usually clear even in average photos. If present, you can identify the species directly here without checking HW spot 6 position/shape.",
+      "question": "In hindwing underside spaces 4 and 5, are the submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border?",
+      "hint": "(per field-photo review) This combination — bold, blackish wedge-shaped (∧) submarginal spots in HW spaces 4–5, paired with large postdiscal spots bordered by a conspicuously thick pale margin — is unique to Arhopala alaconia media among Malaysian Arhopala and is usually clear even in average photos. If present, you can identify the species directly here without checking HW spot 6 position/shape.",
       "choices": [
         {
-          "label": "Yes — submarginal spots black, wedge-shaped (∧); postdiscal spots large with a thick pale border",
+          "label": "Yes — HW spaces 4–5 submarginal spots black, wedge-shaped (∧); postdiscal spots large with a thick pale border",
           "next": "r_alaconia_media"
         },
         {
-          "label": "No — submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered",
+          "label": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered",
           "next": "q_tailless_epimuta"
         }
       ]
@@ -1592,7 +1592,7 @@
       "taxon_id": null,
       "name": "Arhopala alaconia media",
       "common_name": "",
-      "note": "Alesia subgroup (agelastus group) — the long-established Malayan member of this subgroup, and (per field-photo review) the only Malayan agelastus-group species that genuinely has a concave/sinuous HW spot 6 paired with enlarged submarginal spots; [A. alesia sacharja](https://www.inaturalist.org/search?q=Arhopala+alesia), despite older literature placing it in the same subgroup, actually has a convex spot 6 touching the end-cell bar and uniform (not enlarged) submarginal spots — see notebook correction. Distinctive early-exit character (per field-photo review): hindwing underside submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border — unique to this species among Malaysian Arhopala. Underside: inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened; HW postdiscal spot 6 outwardly concave or sinuous; tornal green scales present on the hindwing; small spot often at base of FW space 3. Normally tailless (slightly toothed), but a tailed form (f. kempi, ~2.5 mm tail at vein 2) — though described as rare in the literature — is reportedly encountered fairly often in the field, and is reachable directly in the tailed branch via this same wedge-shaped submarginal-spot character. Both sexes alike: violet blue with FW border 3.0 mm at tornus expanding to mid-costa.",
+      "note": "Alesia subgroup (agelastus group) — the long-established Malayan member of this subgroup, and (per field-photo review) the only Malayan agelastus-group species that genuinely has a concave/sinuous HW spot 6 paired with enlarged submarginal spots; [A. alesia sacharja](https://www.inaturalist.org/search?q=Arhopala+alesia), despite older literature placing it in the same subgroup, actually has a convex spot 6 touching the end-cell bar and uniform (not enlarged) submarginal spots — see notebook correction. Distinctive early-exit character (per field-photo review): hindwing underside spaces 4–5 submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border — unique to this species among Malaysian Arhopala. Underside: inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened; HW postdiscal spot 6 outwardly concave or sinuous; tornal green scales present on the hindwing; small spot often at base of FW space 3. Normally tailless (slightly toothed), but a tailed form (f. kempi, ~2.5 mm tail at vein 2) — though described as rare in the literature — is reportedly encountered fairly often in the field, and is reachable directly in the tailed branch via this same wedge-shaped submarginal-spot character. Both sexes alike: violet blue with FW border 3.0 mm at tornus expanding to mid-costa.",
       "features": {
         "Does the hindwing have a tail?": "Cannot determine — normally tailless, but the f. kempi form is tailed and reportedly encountered fairly often; tail presence/absence should not be treated as a discriminating feature for this species in Feature Scoring",
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced"
