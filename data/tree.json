@@ -306,6 +306,22 @@
         },
         {
           "label": "No — markings form more continuous bands",
+          "next": "q_alesia_ground_colour"
+        }
+      ]
+    },
+    "q_alesia_ground_colour": {
+      "type": "question",
+      "id": "q_alesia_ground_colour",
+      "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
+      "hint": "(per field-photo review) Distinctive early-exit character for [A. alesia sacharja](https://www.inaturalist.org/search?q=Arhopala+alesia): underside ground colour pale grey-brown, not the typical hair-brown. HW postdiscal spots in spaces 4–5 and the end-cell bar are very pale, close to the ground colour with little contrast, each ringed by a black border and then a white outer ring — yet the FW postdiscal band is almost entirely dark/black, strongly contrasting against the pale ground. Its only close rival, [A. barami penanga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=958932&preferred_place_id=6734), is typical hair-brown underside with solid spots darker than the ground colour — answer No for it. If unsure, answer No and continue; the spot-6/size characters ahead still separate the two.",
+      "choices": [
+        {
+          "label": "Yes — pale grey-brown ground colour; HW spaces 4–5 spots and end-cell bar pale, ringed black then white, low-contrast; FW band strongly dark by contrast",
+          "next": "r_alesia_sacharja"
+        },
+        {
+          "label": "No — typical hair-brown underside; spots solid, darker than the ground colour",
           "next": "q_tailed_epimuta"
         }
       ]
@@ -1612,7 +1628,7 @@
       "taxon_id": null,
       "name": "Arhopala alesia sacharja",
       "common_name": "",
-      "note": "Agelastus group, alongside [A. barami penanga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=958932&preferred_place_id=6734) one of only two tailed exceptions in the otherwise-tailless group. Tail at the usual vein 2 position (not the unusual short white-tipped vein-3 tail of the abseus group). A very rare, late Malayan record (first found in Langkawi in 1994; also distributed across NE India, Myanmar, Thailand, Laos, and Vietnam). Underside (per field-photo review, correcting older literature that described a concave spot 6 and enlarged submarginal spots — see notebook correction): ground colour light brown; FW postdiscal band almost entirely dark/black, strongly contrasting against the ground colour, continuous, often with a small spot at the base of FW space 3; HW postdiscal band only slightly dislocated at vein 2 (shifted but still touching); inner submarginal spots in HW spaces 4–5 and the end-cell bar very pale, close to the ground colour with little contrast, each ringed by a black border and then a white outer ring; HW postdiscal spot 6 outwardly convex, touching or overlapping the end-cell bar, spots 5/6/7 widely out of line — effectively identical to A. barami penanga here. Separated from A. barami penanga by being smaller, with a more moderate male FW border (~3.0 mm at tornus, not reaching barami's extreme 8.0 mm at costa). Sexes alike: violet blue.",
+      "note": "Agelastus group, alongside [A. barami penanga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=958932&preferred_place_id=6734) one of only two tailed exceptions in the otherwise-tailless group. Tail at the usual vein 2 position (not the unusual short white-tipped vein-3 tail of the abseus group). A very rare, late Malayan record (first found in Langkawi in 1994; also distributed across NE India, Myanmar, Thailand, Laos, and Vietnam). Underside (per field-photo review, correcting older literature that described a concave spot 6 and enlarged submarginal spots — see notebook correction): ground colour pale grey-brown, distinctly paler than the typical hair-brown Arhopala underside — a useful early-exit character, since its only close rival A. barami penanga has a typical hair-brown underside with solid spots darker than the ground colour; FW postdiscal band almost entirely dark/black, strongly contrasting against the pale ground colour, continuous, often with a small spot at the base of FW space 3; HW postdiscal band only slightly dislocated at vein 2 (shifted but still touching); inner submarginal spots in HW spaces 4–5 and the end-cell bar very pale, close to the ground colour with little contrast, each ringed by a black border and then a white outer ring; HW postdiscal spot 6 outwardly convex, touching or overlapping the end-cell bar, spots 5/6/7 widely out of line — effectively identical to A. barami penanga here. Separated from A. barami penanga by being smaller, with a more moderate male FW border (~3.0 mm at tornus, not reaching barami's extreme 8.0 mm at costa). Sexes alike: violet blue.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
       }
