@@ -9,6 +9,7 @@ const cs = {
   speciesInfo: null,      // Map<name, {common_name, inat_url}>
   treeNodes: null,        // raw nodes map from tree.json — used for CD-followup lookup
   answers: new Map(),     // Map<questionText, choiceLabel>
+  everAnswered: new Set(), // Set<questionText> — answered at least once this session (even if since toggled off)
   scores: [],
   showAll: false,
   expandedName: null,     // species name currently expanded in detail panel
@@ -156,7 +157,7 @@ function scoreAll() {
 // browser and the Node.js sim script share exactly one implementation.
 function getDisplayQuestions() {
   if (!cs.questionOrder) cs.questionOrder = [];
-  getDisplayQuestionsPure(cs.answers, cs.scores, cs.featureMatrix, cs.treeNodes, cs.questionOrder);
+  getDisplayQuestionsPure(cs.answers, cs.scores, cs.featureMatrix, cs.treeNodes, cs.questionOrder, cs.everAnswered);
   return cs.questionOrder;
 }
 
@@ -419,6 +420,7 @@ function onQuestionClick(e) {
     cs.questionOrder = null;
   } else {
     cs.answers.set(q, c);
+    cs.everAnswered.add(q);
   }
   saveAnswers();
   render();
@@ -446,6 +448,7 @@ async function init() {
 
     initData(treeData, speciesData);
     cs.answers = loadAnswers();
+    cs.everAnswered = new Set(cs.answers.keys());
     render();
 
     document.getElementById('loading').style.display = 'none';
@@ -458,6 +461,7 @@ async function init() {
     });
     document.getElementById('cl-reset').addEventListener('click', () => {
       cs.answers.clear();
+      cs.everAnswered.clear();
       cs.showAll = false;
       cs.expandedName = null;
       cs.questionOrder = null;

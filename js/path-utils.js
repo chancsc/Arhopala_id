@@ -269,8 +269,14 @@ function scoreAllPure(answers, featureMatrix) {
 //   • pass an empty array [] for the first render (function fills it)
 //   • pass the same array on subsequent renders (function updates in-place)
 //
+// everAnswered (optional) is a Set<questionText> of questions the user has ever
+// answered this session, even if currently unanswered (toggled off). Questions
+// in this set are always treated as "touched" so they don't disappear from the
+// list the moment their answer is cleared — they just lose their selection.
+// Callers that never unanswer a question (the simulation scripts) can omit it.
+//
 // Returns the cdFollowups Set (useful for callers that need it, e.g. the sim).
-function getDisplayQuestionsPure(answers, scores, featureMatrix, treeNodes, questionOrder) {
+function getDisplayQuestionsPure(answers, scores, featureMatrix, treeNodes, questionOrder, everAnswered) {
   // ── top candidate pool ──
   let topNames;
   if (answers.size === 0 || scores.every(s => s.score === 0)) {
@@ -293,7 +299,7 @@ function getDisplayQuestionsPure(answers, scores, featureMatrix, treeNodes, ques
     }
   }
 
-  const touched       = q => answers.has(q);
+  const touched       = q => answers.has(q) || (everAnswered && everAnswered.has(q));
   const top1Features  = (answers.size > 0 && scores.length > 0)
     ? (featureMatrix.get(scores[0].name) || new Map()) : new Map();
 
@@ -319,10 +325,19 @@ function getDisplayQuestionsPure(answers, scores, featureMatrix, treeNodes, ques
   }
 
   // ── candidate question pool ──
-  const allQ = [...diversity.entries()]
-    .filter(([q, choices]) => touched(q) || choices.size >= 2 || top1Features.has(q) || cdFollowups.has(q))
-    .map(([q]) => q);
-  const allQSet = new Set(allQ);
+  // Start from diversity (questions some top candidate has a feature for), then
+  // make sure every touched question is included even if no current top
+  // candidate happens to have it as a feature — otherwise a question can vanish
+  // entirely the moment the answer that kept its species in the top pool is
+  // cleared, instead of just losing its selection.
+  const allQSet = new Set(
+    [...diversity.entries()]
+      .filter(([q, choices]) => touched(q) || choices.size >= 2 || top1Features.has(q) || cdFollowups.has(q))
+      .map(([q]) => q)
+  );
+  for (const q of answers.keys()) allQSet.add(q);
+  if (everAnswered) for (const q of everAnswered) allQSet.add(q);
+  const allQ = [...allQSet];
 
   // Sort helper: underside morphology before upperside, then by filtered coverage
   const newQSort = (a, b) => {
