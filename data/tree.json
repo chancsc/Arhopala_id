@@ -33,7 +33,7 @@
         },
         {
           "label": "No — tail at the usual vein 2 (typical position)",
-          "next": "q_tailed_long_tail"
+          "next": "q_alaconia_wedge_tailed"
         }
       ]
     },
@@ -222,11 +222,11 @@
         },
         {
           "label": "No — no silver outlines",
-          "next": "q_alaconia_wedge_tailed"
+          "next": "q_tailed_vein3"
         },
         {
           "label": "Cannot determine — FW cell not clearly visible",
-          "next": "q_alaconia_wedge_tailed"
+          "next": "q_tailed_vein3"
         }
       ]
     },
@@ -322,7 +322,7 @@
         },
         {
           "label": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered",
-          "next": "q_tailed_vein3"
+          "next": "q_tailed_long_tail"
         }
       ]
     },
