@@ -9,7 +9,7 @@
       "choices": [
         {
           "label": "Yes — hindwing is tailed",
-          "next": "q_alaconia_wedge_tailed"
+          "next": "q_tailed_cell_silver"
         },
         {
           "label": "No — hindwing is tailless",
@@ -222,11 +222,11 @@
         },
         {
           "label": "No — no silver outlines",
-          "next": "q_tailed_vein3"
+          "next": "q_alaconia_wedge_tailed"
         },
         {
           "label": "Cannot determine — FW cell not clearly visible",
-          "next": "q_tailed_vein3"
+          "next": "q_alaconia_wedge_tailed"
         }
       ]
     },
@@ -322,7 +322,7 @@
         },
         {
           "label": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered",
-          "next": "q_tailed_cell_silver"
+          "next": "q_tailed_vein3"
         }
       ]
     },
