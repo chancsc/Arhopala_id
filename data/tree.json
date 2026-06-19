@@ -81,7 +81,7 @@
         "text": "postdiscal spot in space 6",
         "href": "guide.html#hw-spot6-position"
       },
-      "hint": "Two groups have spot 6 displaced above spot 5’s level toward the end-cell bar: the epimuta group ([A. atosia](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498181&preferred_place_id=6734), [A. lurida](https://www.inaturalist.org/observations?verifiable=true&taxon_id=475784&preferred_place_id=6734)) and the alitaeus group (including [A. pseudomuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498185&preferred_place_id=6734)). The degree of displacement differs: in the epimuta group it is modest and spot 6 may appear close to spot 5’s level in some views; in the alitaeus group it is more pronounced and spot 6 is clearly above spot 5’s level. Answer Yes for any upward displacement, even subtle. If Yes, a spot in FW space 11 will be checked next to tell them apart.\n\nAnswer No in all of these cases:\n• Spot 6 is at the same level as spot 5 with no upward displacement (most tailed species). Select the first No option.\n• Spot 6 is displaced toward the end-cell bar but clearly less than midway — the gap between spot 6 and the bar is distinctly wider than the displacement from the postdiscal row (e.g., [A. silhetensis adorea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498186&preferred_place_id=6734): spots 6 and 7 are oblique, outer edge of spot 6 well inside inner edge of spot 5, but spot 6 does not approach midway).\n• Spot 6 is displaced well past midway — touching or overlapping the end-cell bar, with spots 5, 6 and 7 widely out of line ([A. agrata](https://www.inaturalist.org/observations?verifiable=true&taxon_id=859032&preferred_place_id=6734) and related species; also the eumolphus group: spot 6 inner edge is in line with or inside the inner edge of spot 7). Select the second No option.",
+      "hint": "Two groups have spot 6 displaced above spot 5’s level toward the end-cell bar: the epimuta group ([A. atosia](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498181&preferred_place_id=6734), [A. lurida](https://www.inaturalist.org/observations?verifiable=true&taxon_id=475784&preferred_place_id=6734)) and the alitaeus group (including [A. pseudomuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498185&preferred_place_id=6734) and [A. alitaeus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=528441&preferred_place_id=6734)). The degree of displacement differs: in the epimuta group it is modest and spot 6 may appear close to spot 5’s level in some views; in the alitaeus group it is more pronounced — spot 6 is clearly above spot 5’s level and, in both pseudomuta and alitaeus, actually touches/overlaps the end-cell bar. Answer Yes for any upward displacement, even up to a full overlap, AS LONG AS the FW space 11 spot (checked next) or markings still point to the alitaeus group — don't be misled into the third 'No' option below just because spot 6 touches the bar. If Yes, a spot in FW space 11 will be checked next to tell pseudomuta/alitaeus apart from the epimuta group.\n\nAnswer No in all of these cases:\n• Spot 6 is at the same level as spot 5 with no upward displacement (most tailed species). Select the first No option.\n• Spot 6 is displaced toward the end-cell bar but clearly less than midway — the gap between spot 6 and the bar is distinctly wider than the displacement from the postdiscal row (e.g., [A. silhetensis adorea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498186&preferred_place_id=6734): spots 6 and 7 are oblique, outer edge of spot 6 well inside inner edge of spot 5, but spot 6 does not approach midway).\n• Spot 6 is displaced well past midway — touching or overlapping the end-cell bar, with spots 5, 6 and 7 widely out of line — in groups OTHER than alitaeus/pseudomuta ([A. agrata](https://www.inaturalist.org/observations?verifiable=true&taxon_id=859032&preferred_place_id=6734) and related species; also the eumolphus group: spot 6 inner edge is in line with or inside the inner edge of spot 7). Select the second No option.",
       "choices": [
         {
           "label": "Yes — spot 6 is displaced above spot 5's level toward the end-cell bar (displacement may be subtle in the epimuta group — any upward shift counts)",
@@ -1792,19 +1792,15 @@
     "q_alitaeus_s1_marks": {
       "type": "question",
       "id": "q_alitaeus_s1_marks",
-      "question": "Are the underside markings clearly visible and annular (ring-like), AND does HW postdiscal spot 6 overlap the end-cell bar?",
-      "question_link": {
-        "text": "HW postdiscal spot 6 overlap the end-cell bar",
-        "href": "guide.html#hw-spot6-position"
-      },
-      "hint": "[A. alitaeus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=528441&preferred_place_id=6734): markings purple-brown, annular/macular, clearly contrasting with the pale slatey-purple ground colour; HW postdiscal spot 6 is rounded and overlaps the end-cell bar; spots 5, 6 and 7 are widely out of line; HW postdiscal band completely dislocated at vein 2.\n[A. pseudomuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498185&preferred_place_id=6734): markings faint, hair-brown, barely darker than the ground colour; HW postdiscal spot 6 is slightly oblique and does NOT overlap the end-cell bar; spots 5, 6 and 7 also widely out of line; HW postdiscal band completely dislocated at vein 2.",
+      "question": "Are the underside markings clearly visible and annular (ring-like), strongly contrasting with the ground colour?",
+      "hint": "(per field-photo review) HW postdiscal spot 6 is touching/overlapping the end-cell bar in both species and is no longer a useful discriminator here — use the markings instead.\n[A. alitaeus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=528441&preferred_place_id=6734): markings purple-brown, annular/macular, clearly contrasting with the pale slatey-purple ground colour; HW postdiscal spot 6 rounded, touching/overlapping the end-cell bar; spots 5, 6 and 7 widely out of line; HW postdiscal band completely dislocated at vein 2.\n[A. pseudomuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498185&preferred_place_id=6734): markings faint, hair-brown, barely darker than the ground colour; HW postdiscal spot 6 directly below spot 7, also touching/overlapping the end-cell bar, outer edge curved outward (convex); spots 5, 6 and 7 also widely out of line; HW postdiscal band completely dislocated at vein 2.",
       "choices": [
         {
-          "label": "Yes — markings annular and clearly contrasting; HW spot 6 overlaps end-cell bar",
+          "label": "Yes — markings annular and clearly contrasting with the ground colour",
           "next": "r_alitaeus"
         },
         {
-          "label": "No — markings faint, barely darker than ground colour; HW spot 6 does not overlap end-cell bar",
+          "label": "No — markings faint, barely darker than ground colour",
           "next": "r_pseudomuta"
         }
       ]
@@ -1879,7 +1875,7 @@
       "taxon_id": null,
       "name": "Arhopala pseudomuta",
       "common_name": "Raffles's Oakblue",
-      "note": "Underside hair-brown; markings hardly darker than ground colour. FW: basal spot present in space 10. HW: postdiscal space 6 slightly oblique, does not overlap end-cell bar. Male: violet-blue with black border ~1.0 mm. Tail ~3.5–4.0 mm."
+      "note": "Underside hair-brown; markings hardly darker than ground colour. FW: basal spot present in space 10. HW: postdiscal spot 6 directly below spot 7, touching/overlapping the end-cell bar; outer edge curved outward (convex) (per field-photo review — supersedes the earlier 'slightly oblique, does not overlap' literature description). Male: violet-blue with black border ~1.0 mm. Tail ~3.5–4.0 mm."
     },
     "r_elopura": {
       "type": "result",

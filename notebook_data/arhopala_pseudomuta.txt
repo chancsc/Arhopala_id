@@ -43,6 +43,8 @@ Male (ariavana): Features a broader black border.
 
 Female: Displays typical broad black borders.
 
+CORRECTION (2026-06-19, field-photo review): the spot-6 overlap claim in line 36 above does not hold up against field photos. In actual specimens: spot 6 is positioned directly below spot 7, and it touches/overlaps the end-cell bar — contradicting the earlier "slightly oblique, does not overlap" description (which conflicted with line 34's own "inner edge in line with or inside the inner edge of spot 7" anyway). The outer edge of spot 6 is curved outward (convex). This puts pseudomuta's spot-6 placement in the same "touching/overlapping the end-cell bar" bucket as A. alitaeus itself, so spot-6 overlap is no longer a usable character to separate the two — the markings (pseudomuta: faint, hair-brown, barely darker than ground colour; alitaeus: purple-brown, annular/macular, clearly contrasting) remain the reliable discriminator. Updated q_alitaeus_s1_marks, r_pseudomuta's note, and q_tailed_epimuta's hint in data/tree.json accordingly.
+
 ---
 
 Visual Reference
