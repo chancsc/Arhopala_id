@@ -523,7 +523,7 @@
       "hint": "Four subgroups. Muta: spots more quadrate/banded, FW space 2 stepped toward termen. Kurzi and perimuta subgroups: HW postdiscal band fully dislocated at vein 2 — two clearly separate portions with a visible gap; a follow-up question separates [A. kurzi](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1149928&preferred_place_id=6734) from the perimuta subgroup ([A. perimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=448212&preferred_place_id=6734), [A. metamuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340245&preferred_place_id=6734), [A. antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734)). Amphimuta (largest, 12 spp.): spots rounded, cilia often prolonged into a short tooth at vein 2.\n\nIf the FW space 2 spot position isn't visible (forewing underside not visible), choose 'Cannot determine' — [A. antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734) (perimuta subgroup) is by far the most abundant species in this group and can still be recognized by its own characters (spot 6 positioned directly below spot 7, touching or overlapping the end-cell bar, with a thread-like male border), while [A. perimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=448212&preferred_place_id=6734) and [A. metamuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340245&preferred_place_id=6734) have their own distinctive HW colours.",
       "choices": [
         {
-          "label": "Spots more quadrate/banded; FW space 2 spot stepped outward toward termen (muta subgroup)",
+          "label": "Spots more quadrate/banded (muta subgroup)",
           "next": "g_amphimuta_muta"
         },
         {
@@ -827,7 +827,7 @@
       "hint": "The agelastus group has a continuous (non-dislocated) FW postdiscal band, often with a small spot at the base of FW space 3; most species lack a costal spot in FW space 10 (exception: epimete suedas). The agesilaus group ([A. agesilaus gesa](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1278725&preferred_place_id=6734), [A. avatha](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1062607&preferred_place_id=6734)) has a dislocated FW postdiscal band — spots shift at a vein, breaking the smooth row.",
       "choices": [
         {
-          "label": "Yes — FW postdiscal band continuous; often a spot at base of FW space 3 (agelastus group)",
+          "label": "Yes — FW postdiscal band continuous (agelastus group)",
           "next": "g_agelastus"
         },
         {
@@ -1322,7 +1322,7 @@
       "group_name": "agelastus group",
       "description": "FW underside postdiscal band is continuous; often a spot at base of FW space 3. Most species lack a costal spot in FW space 10 (exception: epimete suedas). HW postdiscal band only partially dislocated at vein 2. Most species are tailless; males typically have broad black borders. Eight Malaysian species in four subgroups.",
       "key_features": [
-        "FW postdiscal band continuous; often spot at base of FW space 3",
+        "FW postdiscal band continuous",
         "HW postdiscal band partially dislocated at vein 2",
         "Most species tailless (barami penanga and alesia sacharja are the rare tailed exceptions, both keyed in the tailed branch)",
         "Males: broad black borders, often similar to females"
@@ -1655,7 +1655,7 @@
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced",
         "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
-        "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?": "Yes — FW postdiscal band continuous; often a spot at base of FW space 3 (agelastus group)"
+        "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?": "Yes — FW postdiscal band continuous (agelastus group)"
       }
     },
     "r_agelastus_agelastus": {
