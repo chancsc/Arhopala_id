@@ -2687,6 +2687,10 @@
       "choice": "Small — FW 13.0–14.0 mm"
     },
     {
+      "question": "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?",
+      "choice": "Very small — spots noticeably small"
+    },
+    {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     }
@@ -2745,6 +2749,10 @@
       "choice": "Larger — FW 16.0–19.0 mm"
     },
     {
+      "question": "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?",
+      "choice": "Normal — spots normal-sized, with a clear gap from the end-cell bar"
+    },
+    {
       "question": "On the male upperside, are both the forewing and hindwing exactly the same shade of blue in all lights?",
       "choice": "Cannot determine — upperside not visible"
     }
@@ -2799,8 +2807,8 @@
       "choice": "Larger — FW 16.0–19.0 mm"
     },
     {
-      "question": "On the hindwing underside, are postdiscal spots 5, 6 and 7 noticeably large, with the row sitting very close to — almost touching — the end-cell bar?",
-      "choice": "No — spots smaller, with a visible gap from the end-cell bar"
+      "question": "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?",
+      "choice": "Normal — spots normal-sized, with a clear gap from the end-cell bar"
     },
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
@@ -3641,8 +3649,8 @@
       "choice": "Larger — FW 16.0–19.0 mm"
     },
     {
-      "question": "On the hindwing underside, are postdiscal spots 5, 6 and 7 noticeably large, with the row sitting very close to — almost touching — the end-cell bar?",
-      "choice": "Yes — spots large, almost touching the end-cell bar"
+      "question": "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?",
+      "choice": "Large — spots large, almost touching the end-cell bar"
     },
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
@@ -7313,8 +7321,8 @@
       "choice": "Larger — FW 16.0–19.0 mm"
     },
     {
-      "question": "On the male upperside, are both the forewing and hindwing exactly the same shade of blue in all lights?",
-      "choice": "Cannot determine — upperside not visible"
+      "question": "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?",
+      "choice": "Large — spots large, almost touching the end-cell bar"
     }
   ],
   "Camdeo group — belphoebe or johoreana (unresolved)": [
