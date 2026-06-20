@@ -2799,6 +2799,10 @@
       "choice": "Larger — FW 16.0–19.0 mm"
     },
     {
+      "question": "On the hindwing underside, are postdiscal spots 5, 6 and 7 noticeably large, with the row sitting very close to — almost touching — the end-cell bar?",
+      "choice": "No — spots smaller, with a visible gap from the end-cell bar"
+    },
+    {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
@@ -3637,12 +3641,32 @@
       "choice": "Larger — FW 16.0–19.0 mm"
     },
     {
+      "question": "On the hindwing underside, are postdiscal spots 5, 6 and 7 noticeably large, with the row sitting very close to — almost touching — the end-cell bar?",
+      "choice": "Yes — spots large, almost touching the end-cell bar"
+    },
+    {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
-      "question": "On the male upperside, are both the forewing and hindwing exactly the same shade of blue in all lights?",
-      "choice": "Cannot determine — upperside not visible"
+      "question": "What does the hindwing underside look like?",
+      "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11? (camdeo group)",
+      "choice": "No — no spot in FW space 11"
+    },
+    {
+      "question": "Is the underside ground colour extensively whitened?",
+      "choice": "No — underside ground colour normal (not whitened)"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at or before vein 7 (lower part absent)?",
+      "choice": "Yes — FW postdiscal band incomplete, ending at vein 7"
+    },
+    {
+      "question": "Is the hindwing tail completely absent (tailless)?",
+      "choice": "Yes — tailless (no HW tail)"
     }
   ],
   "Arhopala johoreana johoreana": [
