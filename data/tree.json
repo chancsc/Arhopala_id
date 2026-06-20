@@ -739,11 +739,27 @@
       "choices": [
         {
           "label": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
-          "next": "q_tailless_partial_muta_check"
+          "next": "q_tailless_vein2_rama_check"
         },
         {
           "label": "No — band fully dislocated at vein 2 (two separate portions)",
           "next": "q_tailless_epimuta_tornal"
+        }
+      ]
+    },
+    "q_tailless_vein2_rama_check": {
+      "type": "question",
+      "id": "q_tailless_vein2_rama_check",
+      "question": "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?",
+      "hint": "[A. arvina adalitas](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1294761&preferred_place_id=6734) (the only tailless rama-group species) also has spots 5, 6 and 7 widely out of line with HW spot 6 touching/overlapping the end-cell bar, which can land it on this branch — but its sinuous/concave spot 6 shape and FW costal spot in space 10 separate it from the muta, agelastus and agesilaus groups below.",
+      "choices": [
+        {
+          "label": "Yes — HW spot 6 outwardly sinuous or concave; costal spot in FW space 10 above the end-cell bar",
+          "next": "r_arvina_adalitas"
+        },
+        {
+          "label": "No — spot 6 not sinuous/concave, or no FW costal spot in space 10",
+          "next": "q_tailless_partial_muta_check"
         }
       ]
     },
@@ -4019,7 +4035,7 @@
       "taxon_id": null,
       "name": "Arhopala arvina adalitas",
       "common_name": "",
-      "note": "Tailless. FW ~18.0 mm — slightly larger than [A. antimuta antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734) (FW ~16.0 mm). Underside ground colour hair-brown; tornal green scales present. Male: darker blue than [A. buddha](https://www.inaturalist.org/observations?verifiable=true&taxon_id=885913&preferred_place_id=6734); black border reduced to a thread. Female: purple-blue. HW postdiscal band only partially dislocated at vein 2 (cf. [A. antimuta antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734), where it is completely dislocated at vein 2, though that character can sometimes be inconstant). HW postdiscal spots 5, 6 and 7 widely out of line; inner edge of spot 6 in line with or inside the inner edge of spot 7; spot 6 touches or overlaps the end-cell bar; outer edge of spot 6 outwardly sinuous or concave. Normally has a costal spot in FW space 10, above the end-cell bar. (Feature Scoring: Q86 = 'Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced'; the key tree reaches this species via 'Not displaced — spot 6 in the postdiscal row, roughly level with spot 5; spots 5, 6 and 7 in line' as a routing shortcut to Q17. Q109 = 'Yes — band only partially dislocated at vein 2 (shifted but connected)', also not on the canonical path but added here to separate this species from [A. antimuta antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734) in Feature Scoring.)",
+      "note": "Tailless. FW ~18.0 mm — slightly larger than [A. antimuta antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734) (FW ~16.0 mm). Underside ground colour hair-brown; tornal green scales present. Male: darker blue than [A. buddha](https://www.inaturalist.org/observations?verifiable=true&taxon_id=885913&preferred_place_id=6734); black border reduced to a thread. Female: purple-blue. HW postdiscal band only partially dislocated at vein 2 (cf. [A. antimuta antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734), where it is completely dislocated at vein 2, though that character can sometimes be inconstant). HW postdiscal spots 5, 6 and 7 widely out of line; inner edge of spot 6 in line with or inside the inner edge of spot 7; spot 6 touches or overlaps the end-cell bar; outer edge of spot 6 outwardly sinuous or concave. Normally has a costal spot in FW space 10, above the end-cell bar. (2026-06-20 fix: the spot-6-displacement and vein-2-dislocation questions previously routed here only via false answers that contradicted these true features, which would have misidentified a truthfully-answered specimen into the muta/agelastus/agesilaus groups instead. The tree now checks for arvina adalitas's sinuous/concave spot 6 + FW space 10 costal spot right after the true 'touching/overlapping' and 'partially dislocated' answers, so the canonical path matches the true answers above.)",
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced",
         "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
