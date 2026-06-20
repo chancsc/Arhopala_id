@@ -2773,20 +2773,16 @@
     "q_camdeo_incomplete": {
       "type": "question",
       "id": "q_camdeo_incomplete",
-      "question": "Is the hindwing tail completely absent (tailless)?",
+      "question": "Does the hindwing have a tail?",
       "hint": "Tail presence alone separates these two species — no upperside needed. [A. belphoebe cowani](https://www.inaturalist.org/search?q=Arhopala+belphoebe) is completely tailless; both sexes have broad dark borders and pale violet-blue upperside. [A. johoreana johoreana](https://www.inaturalist.org/search?q=Arhopala+johoreana) has a short hindwing tail and is much darker violet-blue.",
       "choices": [
         {
-          "label": "Yes — tailless (no HW tail)",
-          "next": "q_belphoebe_cell_spots_check"
-        },
-        {
-          "label": "No — short HW tail present",
+          "label": "Yes — hindwing is tailed",
           "next": "r_johoreana_johoreana"
         },
         {
-          "label": "Cannot determine — tail condition unclear",
-          "next": "r_camdeo_incomplete_unclear"
+          "label": "No — hindwing is tailless",
+          "next": "q_belphoebe_cell_spots_check"
         }
       ]
     },
@@ -4116,18 +4112,6 @@
       "covers_results": [
         "r_moorei_busa",
         "r_muta_maranda"
-      ]
-    },
-    "r_camdeo_incomplete_unclear": {
-      "type": "result",
-      "id": "r_camdeo_incomplete_unclear",
-      "taxon_id": null,
-      "name": "Camdeo group — belphoebe or johoreana (unresolved)",
-      "common_name": "Cannot determine to species",
-      "note": "⚠ Cannot distinguish to species without upperside and tail inspection.\n\n[A. belphoebe cowani](https://www.inaturalist.org/search?q=Arhopala+belphoebe): tailless; broad dark borders; pale violet-blue; both sexes alike.\n\n[A. johoreana johoreana](https://www.inaturalist.org/search?q=Arhopala+johoreana): short tail present; much darker violet-blue.\n\nCheck hindwing for tail presence/absence to confirm species.",
-      "covers_results": [
-        "r_belphoebe_cowani",
-        "r_johoreana_johoreana"
       ]
     },
     "r_alea_s6_unclear": {

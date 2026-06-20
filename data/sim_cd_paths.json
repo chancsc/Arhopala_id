@@ -3671,10 +3671,6 @@
     {
       "question": "Is the forewing postdiscal band incomplete, ending at or before vein 7 (lower part absent)?",
       "choice": "Yes — FW postdiscal band incomplete, ending at vein 7"
-    },
-    {
-      "question": "Is the hindwing tail completely absent (tailless)?",
-      "choice": "Yes — tailless (no HW tail)"
     }
   ],
   "Arhopala johoreana johoreana": [
@@ -3721,10 +3717,6 @@
     {
       "question": "Is the forewing postdiscal band incomplete, ending at or before vein 7 (lower part absent)?",
       "choice": "Yes — FW postdiscal band incomplete, ending at vein 7"
-    },
-    {
-      "question": "Is the hindwing tail completely absent (tailless)?",
-      "choice": "No — short HW tail present"
     }
   ],
   "Arhopala hellada ozana": [
@@ -7323,56 +7315,6 @@
     {
       "question": "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?",
       "choice": "Large — spots large, almost touching the end-cell bar"
-    }
-  ],
-  "Camdeo group — belphoebe or johoreana (unresolved)": [
-    {
-      "question": "Does the hindwing have a tail?",
-      "choice": "Yes — hindwing is tailed"
-    },
-    {
-      "question": "Are the cell spots on the forewing underside outlined in greenish silver?",
-      "choice": "No — no silver outlines"
-    },
-    {
-      "question": "Is the tail located at vein 3 and short?",
-      "choice": "No — tail at the usual vein 2 (typical position)"
-    },
-    {
-      "question": "Among tailed species: in hindwing underside spaces 4 and 5, are the submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border?",
-      "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
-    },
-    {
-      "question": "Is the tail very long and thread-like — approximately 5 mm or longer?",
-      "choice": "Yes — tail very long, approximately 5 mm or longer (eumolphus or aedias group)"
-    },
-    {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
-    },
-    {
-      "question": "What does the hindwing underside look like?",
-      "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
-    },
-    {
-      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
-      "choice": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
-    },
-    {
-      "question": "Is there a central spot in forewing underside space 11? (camdeo group)",
-      "choice": "No — no spot in FW space 11"
-    },
-    {
-      "question": "Is the underside ground colour extensively whitened?",
-      "choice": "No — underside ground colour normal (not whitened)"
-    },
-    {
-      "question": "Is the forewing postdiscal band incomplete, ending at or before vein 7 (lower part absent)?",
-      "choice": "Yes — FW postdiscal band incomplete, ending at vein 7"
-    },
-    {
-      "question": "Is the hindwing tail completely absent (tailless)?",
-      "choice": "No — short HW tail present"
     }
   ],
   "Alea subgroup — phaenops / normani / sublustris (unresolved)": [
