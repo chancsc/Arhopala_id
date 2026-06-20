@@ -3634,11 +3634,15 @@
     },
     {
       "question": "What is the forewing length?",
-      "choice": "Small — FW 13.0–14.0 mm"
+      "choice": "Larger — FW 16.0–19.0 mm"
     },
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
-      "choice": "No — spots not in echelon"
+      "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
+    },
+    {
+      "question": "On the male upperside, are both the forewing and hindwing exactly the same shade of blue in all lights?",
+      "choice": "Cannot determine — upperside not visible"
     }
   ],
   "Arhopala johoreana johoreana": [

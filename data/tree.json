@@ -2882,7 +2882,11 @@
       "taxon_id": null,
       "name": "Arhopala belphoebe cowani",
       "common_name": "",
-      "note": "Tailless. FW postdiscal band incomplete, ending at vein 7. Underside hair-brown with markings narrowly outlined by pale buff lines; lacks a spot in the middle of HW space 8 and at the extreme base of HW space 6. Both sexes alike (monomorphic): broad dark borders (~5.0 mm at FW costa) and pale violet-blue upperside with a violet tinge. Camdeo subgroup. Very rare — no verified iNaturalist sightings; identify from this text key, not photos."
+      "note": "Tailless. FW postdiscal band incomplete, ending at vein 7. Underside hair-brown with markings narrowly outlined by pale buff lines; lacks a spot in the middle of HW space 8 and at the extreme base of HW space 6. Both sexes alike (monomorphic): broad dark borders (~5.0 mm at FW costa) and pale violet-blue upperside with a violet tinge. Camdeo subgroup. Very rare — no verified iNaturalist sightings; identify from this text key, not photos.",
+      "features": {
+        "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)",
+        "What is the forewing length?": "Larger — FW 16.0–19.0 mm"
+      }
     },
     "r_johoreana_johoreana": {
       "type": "result",
