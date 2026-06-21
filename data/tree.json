@@ -1356,7 +1356,27 @@
         "FW spot 4 shifted distad; no costal spot in space 10",
         "HW spot 6 outwardly convex; band partially dislocated at vein 2"
       ],
-      "next": "r_corinda_acestes"
+      "next": "q_corinda_hw_cell_length"
+    },
+    "q_corinda_hw_cell_length": {
+      "type": "question",
+      "id": "q_corinda_hw_cell_length",
+      "question": "Is the hindwing cell longer than half the length of the wing?",
+      "hint": "Confirmatory for [A. corinda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=793494&preferred_place_id=6734) — its hindwing cell is longer than half the wing length, a useful additional check alongside the FW space 1b patch and HW spot 6 shape.",
+      "choices": [
+        {
+          "label": "Yes — HW cell longer than half the wing length",
+          "next": "r_corinda_acestes"
+        },
+        {
+          "label": "No — HW cell about half the wing length or shorter",
+          "next": "r_corinda_acestes"
+        },
+        {
+          "label": "Cannot determine — HW cell length not assessable",
+          "next": "r_corinda_acestes"
+        }
+      ]
     },
     "g_aurea": {
       "type": "group",
@@ -3488,7 +3508,8 @@
       "note": "Monotypic group. Filamentous HW tail ~3.5 mm. FW: pointed apex, straight termen. Underside: large purple-brown patch under FW cell (basal half of space 1b completely darkened); FW spot 4 shifted distad; no costal spot in FW space 10; ground colour sometimes glazed with purple wash. HW spot 6 outwardly convex; band partially dislocated at vein 2. Male: deep violet or dark purple, very narrow border. Female: purple-blue. Subspecies: acestes (Malay Peninsula and Singapore), corestes (Langkawi).",
       "features": {
         "What is the underside ground colour and overall appearance?": "Underside sometimes with purple wash; dark patch under FW cell; pointed FW apex, straight termen; smaller (tail ~3.5 mm) — A. corinda",
-        "On the hindwing underside, is postdiscal spot 6 notably convex and touching or overlapping the end-cell bar, with no costal spot present in forewing space 10?": "Yes — HW spot 6 convex, touching/overlapping the end-cell bar; no FW space 10 costal spot"
+        "On the hindwing underside, is postdiscal spot 6 notably convex and touching or overlapping the end-cell bar, with no costal spot present in forewing space 10?": "Yes — HW spot 6 convex, touching/overlapping the end-cell bar; no FW space 10 costal spot",
+        "Is the hindwing cell longer than half the length of the wing?": "Yes — HW cell longer than half the wing length"
       }
     },
     "q_democritus_s1": {
