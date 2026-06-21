@@ -3488,7 +3488,7 @@
       "note": "Monotypic group. Filamentous HW tail ~3.5 mm. FW: pointed apex, straight termen. Underside: large purple-brown patch under FW cell (basal half of space 1b completely darkened); FW spot 4 shifted distad; no costal spot in FW space 10; ground colour sometimes glazed with purple wash. HW spot 6 outwardly convex; band partially dislocated at vein 2. Male: deep violet or dark purple, very narrow border. Female: purple-blue. Subspecies: acestes (Malay Peninsula and Singapore), corestes (Langkawi).",
       "features": {
         "What is the underside ground colour and overall appearance?": "Underside sometimes with purple wash; dark patch under FW cell; pointed FW apex, straight termen; smaller (tail ~3.5 mm) — A. corinda",
-        "Does the forewing apex appear distinctly pointed and the termen straight (not rounded)?": "Yes — FW apex distinctly pointed; termen straight"
+        "On the hindwing underside, is postdiscal spot 6 notably convex and touching or overlapping the end-cell bar, with no costal spot present in forewing space 10?": "Yes — HW spot 6 convex, touching/overlapping the end-cell bar; no FW space 10 costal spot"
       }
     },
     "q_democritus_s1": {
@@ -3779,7 +3779,7 @@
       "note": "Spot 6 outer edge outwardly concave. Underside markings very broad. FW apex rounded. Male: brassy green; very broad black borders reaching cell on both wings.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
-        "Does the forewing apex appear distinctly pointed and the termen straight (not rounded)?": "No — FW apex not as sharply pointed, nor termen as straight, as in A. corinda (may still be acute, e.g. eumolphus group, or broadly rounded)",
+        "On the hindwing underside, is postdiscal spot 6 notably convex and touching or overlapping the end-cell bar, with no costal spot present in forewing space 10?": "No — HW spot 6 not convex/overlapping the bar in this way, or a FW space 10 costal spot is present",
         "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)"
       }
@@ -4150,19 +4150,19 @@
     "q_tailed_corinda_apex": {
       "type": "question",
       "id": "q_tailed_corinda_apex",
-      "question": "Does the forewing apex appear distinctly pointed and the termen straight (not rounded)?",
-      "hint": "[A. corinda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=793494&preferred_place_id=6734) has an unusually distinctly pointed FW apex and straight termen — more extreme than the merely acute apex seen in groups such as eumolphus (e.g. [A. hellenore](https://www.inaturalist.org/observations?verifiable=true&taxon_id=883689&preferred_place_id=6734)), and quite different from the broadly rounded apex of most other Arhopala. This alternative character can help confirm corinda when FW space 1b is hidden. If the FW outline is not clear, choose Cannot determine and continue.",
+      "question": "On the hindwing underside, is postdiscal spot 6 notably convex and touching or overlapping the end-cell bar, with no costal spot present in forewing space 10?",
+      "hint": "[A. corinda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=793494&preferred_place_id=6734) has HW spot 6 outwardly convex and touching/overlapping the end-cell bar (its centre in line with, or even more basad than, spot 7's centre), combined with no costal spot in FW space 10. This alternative character can help confirm corinda when FW space 1b is hidden, since the apex shape alone is not a reliable separator from other acute-apexed groups. If the hindwing underside is not clear, choose Cannot determine and continue.",
       "choices": [
         {
-          "label": "Yes — FW apex distinctly pointed; termen straight",
+          "label": "Yes — HW spot 6 convex, touching/overlapping the end-cell bar; no FW space 10 costal spot",
           "next": "g_corinda"
         },
         {
-          "label": "No — FW apex not as sharply pointed, nor termen as straight, as in A. corinda (may still be acute, e.g. eumolphus group, or broadly rounded)",
+          "label": "No — HW spot 6 not convex/overlapping the bar in this way, or a FW space 10 costal spot is present",
           "next": "q_ijanensis_hw_streak"
         },
         {
-          "label": "Cannot determine — FW outline not clear",
+          "label": "Cannot determine — HW underside not clear",
           "next": "q_ijanensis_hw_streak"
         }
       ]
