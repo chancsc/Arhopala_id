@@ -1349,12 +1349,12 @@
       "type": "group",
       "id": "g_corinda",
       "group_name": "corinda group",
-      "description": "Monotypic. Filamentous HW tail ~3.5 mm. FW: pointed apex, straight termen. FW underside: basal half of space 1b completely darkened (large purple-brown patch); spot 4 shifted distad; no costal spot in FW space 10. HW underside: spot 6 outwardly convex; band partially dislocated at vein 2. Male deep violet/dark purple, very narrow border.",
+      "description": "Monotypic. Filamentous HW tail ~3.5 mm. FW: pointed apex, straight termen. FW underside: basal half of space 1b completely darkened (large purple-brown patch); spot 4 shifted distad; no costal spot in FW space 10. HW underside: spot 6 outwardly convex or almost straight; band partially dislocated at vein 2. Male deep violet/dark purple, very narrow border.",
       "key_features": [
         "Filamentous HW tail ~3.5 mm",
         "FW underside: large purple-brown patch in basal half of space 1b",
         "FW spot 4 shifted distad; no costal spot in space 10",
-        "HW spot 6 outwardly convex; band partially dislocated at vein 2"
+        "HW spot 6 outwardly convex or almost straight; band partially dislocated at vein 2"
       ],
       "next": "q_corinda_hw_cell_length"
     },
@@ -3505,10 +3505,10 @@
       "taxon_id": null,
       "name": "Arhopala corinda acestes",
       "common_name": "",
-      "note": "Monotypic group. Filamentous HW tail ~3.5 mm. FW: pointed apex, straight termen. Underside: large purple-brown patch under FW cell (basal half of space 1b completely darkened); FW spot 4 shifted distad; no costal spot in FW space 10; ground colour sometimes glazed with purple wash. HW spot 6 outwardly convex; band partially dislocated at vein 2. Male: deep violet or dark purple, very narrow border. Female: purple-blue. Subspecies: acestes (Malay Peninsula and Singapore), corestes (Langkawi).",
+      "note": "Monotypic group. Filamentous HW tail ~3.5 mm. FW: pointed apex, straight termen. Underside: large purple-brown patch under FW cell (basal half of space 1b completely darkened); FW spot 4 shifted distad; no costal spot in FW space 10; ground colour sometimes glazed with purple wash. HW spot 6 outwardly convex or almost straight; band partially dislocated at vein 2. Male: deep violet or dark purple, very narrow border. Female: purple-blue. Subspecies: acestes (Malay Peninsula and Singapore), corestes (Langkawi).",
       "features": {
         "What is the underside ground colour and overall appearance?": "Underside sometimes with purple wash; dark patch under FW cell; pointed FW apex, straight termen; smaller (tail ~3.5 mm) — A. corinda",
-        "On the hindwing underside, is postdiscal spot 6 notably convex and touching or overlapping the end-cell bar, with no costal spot present in forewing space 10?": "Yes — HW spot 6 convex, touching/overlapping the end-cell bar; no FW space 10 costal spot",
+        "On the hindwing underside, is postdiscal spot 6 convex or almost straight (not concave) and touching or overlapping the end-cell bar, with no costal spot present in forewing space 10?": "Yes — HW spot 6 convex or almost straight, touching/overlapping the end-cell bar; no FW space 10 costal spot",
         "Is the hindwing cell longer than half the length of the wing?": "Yes — HW cell longer than half the wing length"
       }
     },
@@ -3800,7 +3800,7 @@
       "note": "Spot 6 outer edge outwardly concave. Underside markings very broad. FW apex rounded. Male: brassy green; very broad black borders reaching cell on both wings.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
-        "On the hindwing underside, is postdiscal spot 6 notably convex and touching or overlapping the end-cell bar, with no costal spot present in forewing space 10?": "No — HW spot 6 not convex/overlapping the bar in this way, or a FW space 10 costal spot is present",
+        "On the hindwing underside, is postdiscal spot 6 convex or almost straight (not concave) and touching or overlapping the end-cell bar, with no costal spot present in forewing space 10?": "No — HW spot 6 concave or not overlapping the bar in this way, or a FW space 10 costal spot is present",
         "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)"
       }
@@ -4171,15 +4171,15 @@
     "q_tailed_corinda_apex": {
       "type": "question",
       "id": "q_tailed_corinda_apex",
-      "question": "On the hindwing underside, is postdiscal spot 6 notably convex and touching or overlapping the end-cell bar, with no costal spot present in forewing space 10?",
-      "hint": "[A. corinda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=793494&preferred_place_id=6734) has HW spot 6 outwardly convex and touching/overlapping the end-cell bar (its centre in line with, or even more basad than, spot 7's centre), combined with no costal spot in FW space 10. This alternative character can help confirm corinda when FW space 1b is hidden, since the apex shape alone is not a reliable separator from other acute-apexed groups. If the hindwing underside is not clear, choose Cannot determine and continue.",
+      "question": "On the hindwing underside, is postdiscal spot 6 convex or almost straight (not concave) and touching or overlapping the end-cell bar, with no costal spot present in forewing space 10?",
+      "hint": "[A. corinda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=793494&preferred_place_id=6734) has HW spot 6 outwardly convex or almost straight (not concave) and touching/overlapping the end-cell bar (its centre in line with, or even more basad than, spot 7's centre), combined with no costal spot in FW space 10. This alternative character can help confirm corinda when FW space 1b is hidden, since the apex shape alone is not a reliable separator from other acute-apexed groups. If the hindwing underside is not clear, choose Cannot determine and continue.",
       "choices": [
         {
-          "label": "Yes — HW spot 6 convex, touching/overlapping the end-cell bar; no FW space 10 costal spot",
+          "label": "Yes — HW spot 6 convex or almost straight, touching/overlapping the end-cell bar; no FW space 10 costal spot",
           "next": "g_corinda"
         },
         {
-          "label": "No — HW spot 6 not convex/overlapping the bar in this way, or a FW space 10 costal spot is present",
+          "label": "No — HW spot 6 concave or not overlapping the bar in this way, or a FW space 10 costal spot is present",
           "next": "q_ijanensis_hw_streak"
         },
         {
