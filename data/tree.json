@@ -1866,12 +1866,12 @@
       "hint": "[A. ariana](https://www.inaturalist.org/observations?verifiable=true&taxon_id=816304&preferred_place_id=6734) is dark brown with a faint purplish wash; [A. aida](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880740&preferred_place_id=6734) is brown with a slatey to purplish glaze and a slightly produced FW apex. [A. elopura](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880746&preferred_place_id=6734) and [A. arianaga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1556287&preferred_place_id=6734) are hair-brown with markings barely darker than the ground colour.",
       "choices": [
         {
-          "label": "Yes — dark brownish with a slatey or purplish glaze",
-          "next": "q_alitaeus_s2_term"
-        },
-        {
           "label": "No — hair-brown, markings barely darker than ground colour",
           "next": "q_alitaeus_s2_sp6"
+        },
+        {
+          "label": "Yes — dark brownish with a slatey or purplish glaze",
+          "next": "q_alitaeus_s2_term"
         }
       ]
     },
@@ -1895,7 +1895,7 @@
       "type": "question",
       "id": "q_alitaeus_s2_sp6",
       "question": "Is the hindwing postdiscal space 6 partly fuscous (darkened)?",
-      "hint": "[A. elopura](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880746&preferred_place_id=6734) has HW space 6 partly fuscous (dark). In [A. arianaga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1556287&preferred_place_id=6734), HW space 6 is entirely blue; underside markings are slightly darker than the ground colour with a faint pinkish glaze, and the male border is reduced to a thread.",
+      "hint": "[A. elopura](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880746&preferred_place_id=6734) has HW space 6 partly fuscous (dark). In [A. arianaga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1556287&preferred_place_id=6734), HW space 6 is entirely blue; underside markings are slightly darker than the ground colour with a faint pinkish glaze, and the male border is reduced to a thread.\n\n\"HW space 6 entirely blue\" is an upperside character — if the upperside is not visible, select Cannot determine.",
       "choices": [
         {
           "label": "Yes — HW space 6 partly fuscous; male upperside purer blue, border ~0.5 mm",
@@ -1904,6 +1904,10 @@
         {
           "label": "No — HW space 6 entirely blue; faint pinkish glaze; male border thread-like",
           "next": "r_arianaga"
+        },
+        {
+          "label": "Cannot determine — upperside not visible; HW space 6 colour cannot be assessed",
+          "next": "g_elopura_arianaga_cd"
         }
       ]
     },
@@ -1936,6 +1940,22 @@
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
       }
+    },
+    "g_elopura_arianaga_cd": {
+      "type": "group",
+      "id": "g_elopura_arianaga_cd",
+      "group_name": "A. elopura or A. arianaga (upperside not visible)",
+      "description": "Without the upperside, these two species cannot be reliably separated — the only diagnostic difference is whether hindwing space 6 is partly fuscous (A. elopura) or entirely blue (A. arianaga), both of which are upperside characters. Underside ground colour and markings are otherwise effectively identical.",
+      "key_features": [
+        "Underside ground colour uniform hair-brown; markings barely darker than the ground colour",
+        "HW postdiscal spot 6 outwardly straight or convex, touching/overlapping the end-cell bar",
+        "Male border very narrow to thread-like at the apex"
+      ],
+      "no_next_note": "To confirm to species, the upperside hindwing space 6 colour (partly fuscous vs. entirely blue) must be assessed.",
+      "member_results": [
+        "r_elopura",
+        "r_arianaga"
+      ]
     },
     "r_ariana": {
       "type": "result",
