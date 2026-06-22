@@ -1867,7 +1867,7 @@
       "choices": [
         {
           "label": "No — hair-brown, markings barely darker than ground colour",
-          "next": "q_alitaeus_s2_sp6"
+          "next": "q_elopura_arianaga_size"
         },
         {
           "label": "Yes — dark brownish with a slatey or purplish glaze",
@@ -1888,6 +1888,26 @@
         {
           "label": "No — FW shape more normal; apex less produced; male border 1.0–1.5 mm",
           "next": "r_ariana"
+        }
+      ]
+    },
+    "q_elopura_arianaga_size": {
+      "type": "question",
+      "id": "q_elopura_arianaga_size",
+      "question": "What is the forewing length (base to apex, excluding the tail)?",
+      "hint": "[A. elopura](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880746&preferred_place_id=6734) is the smaller of the pair, FW 17.0–19.0 mm. [A. arianaga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1556287&preferred_place_id=6734) is distinctly larger, FW 21.0–22.0 mm — the two size ranges do not overlap, making this a reliable underside-only character when a size reference (scale bar, pinned set, or known wingspan) is available.",
+      "choices": [
+        {
+          "label": "17.0–19.0 mm — smaller",
+          "next": "r_elopura"
+        },
+        {
+          "label": "21.0–22.0 mm — larger",
+          "next": "r_arianaga"
+        },
+        {
+          "label": "Cannot determine — no size reference available",
+          "next": "q_alitaeus_s2_sp6"
         }
       ]
     },
@@ -1925,9 +1945,10 @@
       "taxon_id": null,
       "name": "Arhopala elopura",
       "common_name": "",
-      "note": "Underside ground colour uniform hair brown; markings notably faint, barely darker than the ground colour (less contrasting than [A. pseudomuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498185&preferred_place_id=6734)). FW: costal spot in mid-space 11 above the central cell spot; postdiscal spot 4 shifted distad, out of line with spots 5 and 6; no spot at extreme base of space 10. HW: postdiscal band completely dislocated at vein 2; postdiscal space 6 partly fuscous; postdiscal spot 6 outwardly straight or convex — inner edge in line with or inside the inner edge of spot 7, touching or overlapping the end-cell bar; centres of spots 5, 6 and 7 widely out of line. Tail ~3.5–4.0 mm; FW 17–19 mm. Male: shining blue; black border very narrow, thread-like to just under 0.5 mm at apex. Female: broader black borders; blue areas often a purer shade than in related species.",
+      "note": "Underside ground colour uniform hair brown; markings notably faint, barely darker than the ground colour (less contrasting than [A. pseudomuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498185&preferred_place_id=6734)). FW: costal spot in mid-space 11 above the central cell spot; postdiscal spot 4 shifted distad, out of line with spots 5 and 6; no spot at extreme base of space 10. HW: postdiscal band completely dislocated at vein 2; postdiscal space 6 partly fuscous; postdiscal spot 6 outwardly straight or convex — inner edge in line with or inside the inner edge of spot 7, touching or overlapping the end-cell bar; centres of spots 5, 6 and 7 widely out of line. Tail ~3.5–4.0 mm; FW 17.0–19.0 mm (smaller than A. arianaga, FW 21.0–22.0 mm). Male: shining blue; black border very narrow, thread-like to just under 0.5 mm at apex. Female: broader black borders; blue areas often a purer shade than in related species.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
+        "What is the forewing length (base to apex, excluding the tail)?": "17.0–19.0 mm — smaller"
       }
     },
     "r_arianaga": {
@@ -1936,22 +1957,23 @@
       "taxon_id": null,
       "name": "Arhopala arianaga",
       "common_name": "",
-      "note": "Underside markings slightly darker than ground colour with a very faint pinkish glaze. FW: no basal spot in space 10. HW: postdiscal space 6 entirely blue. Male: black border reduced to a thread. Tail ~3.5–4.0 mm.",
+      "note": "Underside markings slightly darker than ground colour with a very faint pinkish glaze. FW: no basal spot in space 10; FW length 21.0–22.0 mm (distinctly larger than A. elopura, FW 17.0–19.0 mm). HW: postdiscal space 6 entirely blue. Male: black border reduced to a thread. Tail ~3.5–4.0 mm.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
+        "What is the forewing length (base to apex, excluding the tail)?": "21.0–22.0 mm — larger"
       }
     },
     "g_elopura_arianaga_cd": {
       "type": "group",
       "id": "g_elopura_arianaga_cd",
       "group_name": "A. elopura or A. arianaga (upperside not visible)",
-      "description": "Without the upperside, these two species cannot be reliably separated — the only diagnostic difference is whether hindwing space 6 is partly fuscous (A. elopura) or entirely blue (A. arianaga), both of which are upperside characters. Underside ground colour and markings are otherwise effectively identical.",
+      "description": "Without a size reference and without the upperside, these two species cannot be reliably separated on underside pattern alone — hindwing space 6 colour (partly fuscous in A. elopura vs. entirely blue in A. arianaga) is an upperside character. Underside ground colour and markings are otherwise effectively identical. Note: if forewing length can be measured, A. elopura (17.0–19.0 mm) and A. arianaga (21.0–22.0 mm) have non-overlapping size ranges and can be separated that way instead.",
       "key_features": [
         "Underside ground colour uniform hair-brown; markings barely darker than the ground colour",
         "HW postdiscal spot 6 outwardly straight or convex, touching/overlapping the end-cell bar",
         "Male border very narrow to thread-like at the apex"
       ],
-      "no_next_note": "To confirm to species, the upperside hindwing space 6 colour (partly fuscous vs. entirely blue) must be assessed.",
+      "no_next_note": "To confirm to species, either the forewing length (17.0–19.0 mm = elopura, 21.0–22.0 mm = arianaga) or the upperside hindwing space 6 colour (partly fuscous vs. entirely blue) must be assessed.",
       "member_results": [
         "r_elopura",
         "r_arianaga"
