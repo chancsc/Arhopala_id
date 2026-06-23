@@ -949,10 +949,6 @@
       "choice": "Yes — prominent rounded spots; central FW spot in space 11"
     },
     {
-      "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
-    },
-    {
       "question": "How many spots are in forewing space 11, and what is the underside ground colour?",
       "choice": "Two spots in FW space 11; ground colour dark brown; markings blackish-brown"
     }
@@ -3633,10 +3629,6 @@
       "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
-      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
-      "choice": "Spots more quadrate/banded (muta subgroup)"
-    },
-    {
       "question": "What is the forewing length?",
       "choice": "Larger — FW 16.0–19.0 mm"
     },
@@ -5739,10 +5731,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "What does the hindwing underside look like?",
-      "choice": "Crimson-brown ground colour with markings outlined in white striae; spot at the base of HW space 6"
-    },
-    {
       "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
       "choice": "Yes — HW spot 6 directly below spot 7 (not in echelon with spots 5 and 7)"
     },
@@ -7249,10 +7237,6 @@
     {
       "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
       "choice": "Yes — HW spots more quadrate or banded in shape (muta subgroup)"
-    },
-    {
-      "question": "What is the forewing length?",
-      "choice": "Small — FW 13.0–14.0 mm"
     }
   ],
   "Muta subgroup — moorei or muta maranda (unresolved)": [
@@ -7307,10 +7291,6 @@
     {
       "question": "What is the forewing length?",
       "choice": "Larger — FW 16.0–19.0 mm"
-    },
-    {
-      "question": "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?",
-      "choice": "Large — spots large, almost touching the end-cell bar"
     }
   ],
   "Alea subgroup — phaenops / normani / sublustris (unresolved)": [

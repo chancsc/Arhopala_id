@@ -121,6 +121,9 @@ const simPath       = [];
 // Track sim-CD questions encountered during simulation (mirrors compute_sim_cd_paths.js)
 const simCdQs = new Set([...simAnswers.entries()]
   .filter(([, a]) => a.startsWith('Cannot determine')).map(([q]) => q));
+// Orphan questions defaulted to choices[0] (no clear negative choice exists) —
+// excluded from simPath/display, mirroring compute_sim_cd_paths.js.
+const orphanNoDisplay = new Set();
 
 for (let step = 0; step < 50; step++) {
   const scores = scoreAllPure(answers, matrix);
@@ -161,18 +164,22 @@ for (let step = 0; step < 50; step++) {
     // Window question not in this species' features — use stored path answer if present
     if (storedAnswerMap.has(q)) { nextQ = q; nextAns = storedAnswerMap.get(q); break; }
     // Orphan question: neither choice changes this species' own score (see
-    // compute_sim_cd_paths.js). Default to the non-"Yes" choice so the
-    // simulation keeps moving, matching the live page which keeps presenting
-    // questions until the window is exhausted.
+    // compute_sim_cd_paths.js). Default to a clear negative choice when one
+    // exists; for multi-way classification questions with no negative choice,
+    // still default to choices[0] to keep moving, but suppress it from
+    // simPath/display since it would fabricate an unrelated answer.
     const choices = questionChoicesMap.get(q) || [];
     if (choices.length >= 2) {
-      const noChoice = choices.find(c => !c.label.startsWith('Yes')) || choices[0];
-      nextQ = q; nextAns = noChoice.label; break;
+      const noChoice = choices.find(c => /^(No|None)\b/i.test(c.label)) || choices[0];
+      nextQ = q; nextAns = noChoice.label;
+      if (!/^(No|None)\b/i.test(noChoice.label)) orphanNoDisplay.add(nextQ);
+      break;
     }
   }
   if (nextQ === null) { console.log('  (no more answerable questions in window)'); break; }
 
   answers.set(nextQ, nextAns);
+  if (orphanNoDisplay.has(nextQ)) continue;
   simPath.push({ question: nextQ, choice: nextAns });
 
   const rank = scores.findIndex(s => s.name === targetName) + 1;

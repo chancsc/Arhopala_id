@@ -276,7 +276,7 @@ function scoreAllPure(answers, featureMatrix) {
 // Callers that never unanswer a question (the simulation scripts) can omit it.
 //
 // Returns the cdFollowups Set (useful for callers that need it, e.g. the sim).
-function getDisplayQuestionsPure(answers, scores, featureMatrix, treeNodes, questionOrder, everAnswered) {
+function getDisplayQuestionsPure(answers, scores, featureMatrix, treeNodes, questionOrder, everAnswered, positionMemo) {
   // ── top candidate pool ──
   let topNames;
   if (answers.size === 0 || scores.every(s => s.score === 0)) {
@@ -351,6 +351,16 @@ function getDisplayQuestionsPure(answers, scores, featureMatrix, treeNodes, ques
     // First render: establish stable initial order
     questionOrder.push(...allQ.slice().sort(newQSort));
   } else {
+    // Remember the position of any question about to be pruned for being
+    // irrelevant, so that if it becomes relevant again later in this same
+    // session it can be restored near its previous spot (see below) instead
+    // of always being pushed to the tail of a long list.
+    if (positionMemo) {
+      questionOrder.forEach((q, i) => {
+        if (!touched(q) && !allQSet.has(q)) positionMemo.set(q, i);
+      });
+    }
+
     // Keep existing order; remove unanswered questions that are no longer relevant
     const filtered = questionOrder.filter(q => touched(q) || allQSet.has(q));
     questionOrder.length = 0;
@@ -378,9 +388,28 @@ function getDisplayQuestionsPure(answers, scores, featureMatrix, treeNodes, ques
         }
       }
     }
-    // Append newly relevant questions at the end
+    // Append newly relevant questions — restore a remembered position when
+    // this exact question was previously visible in this session and got
+    // pruned (e.g. the user switched a question's answer away and back),
+    // rather than unconditionally appending to the tail. Without this, a
+    // question that temporarily drops out of relevance and later becomes
+    // relevant again — by re-selecting the same answer that first surfaced
+    // it — gets pushed to the very end of a long list and falls past the
+    // 15-question unanswered-display cap, making it appear to vanish
+    // permanently even though the underlying logic still considers it
+    // relevant. Only affects questions with a remembered position from
+    // *this* session; first-time-appearing questions are unaffected and
+    // still sort to the tail exactly as before.
     const newQs = allQ.filter(q => !existing.has(q)).sort(newQSort);
-    if (newQs.length) questionOrder.push(...newQs);
+    for (const q of newQs) {
+      const remembered = positionMemo && positionMemo.has(q) ? positionMemo.get(q) : null;
+      if (remembered !== null) {
+        questionOrder.splice(Math.min(remembered, questionOrder.length), 0, q);
+      } else {
+        questionOrder.push(q);
+      }
+      existing.add(q);
+    }
   }
 
   return cdFollowups;

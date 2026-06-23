@@ -14,6 +14,7 @@ const cs = {
   showAll: false,
   expandedName: null,     // species name currently expanded in detail panel
   questionOrder: null,    // stable display order; null = not yet initialised
+  positionMemo: new Map(), // Map<questionText, number> — last known index before a question was pruned for irrelevance, so it can be restored near its old spot if it becomes relevant again
 };
 
 // buildTreePaths, buildQuestionNumbers, pathScore, pickCanonicalPath etc. live in path-utils.js
@@ -157,7 +158,7 @@ function scoreAll() {
 // browser and the Node.js sim script share exactly one implementation.
 function getDisplayQuestions() {
   if (!cs.questionOrder) cs.questionOrder = [];
-  getDisplayQuestionsPure(cs.answers, cs.scores, cs.featureMatrix, cs.treeNodes, cs.questionOrder, cs.everAnswered);
+  getDisplayQuestionsPure(cs.answers, cs.scores, cs.featureMatrix, cs.treeNodes, cs.questionOrder, cs.everAnswered, cs.positionMemo);
   return cs.questionOrder;
 }
 
@@ -480,6 +481,7 @@ async function init() {
       cs.showAll = false;
       cs.expandedName = null;
       cs.questionOrder = null;
+      cs.positionMemo.clear();
       clearSavedAnswers();
       render();
     });

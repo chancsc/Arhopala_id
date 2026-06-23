@@ -135,6 +135,10 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
   const simPath       = [];
   const simCdQs       = new Set([...simAnswers.entries()]
     .filter(([, a]) => a.startsWith('Cannot determine')).map(([q]) => q));
+  // Orphan questions defaulted to choices[0] (no clear negative choice exists) —
+  // tracked separately so they're excluded from the displayed simPath while
+  // still advancing the simulation. Must stay in sync with compute_sim_cd_paths.js.
+  const orphanNoDisplay = new Set();
 
   for (let step = 0; step < 50; step++) {
     const scores = scoreAllPure(answers, matrix);
@@ -151,20 +155,24 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
       }
       // Orphan question: appears in the window because it distinguishes other
       // top-tier candidates, but resultName has no recorded answer for it (so
-      // neither choice changes resultName's own score). The live Feature
-      // Scoring page still presents it and waits for an answer, so default to
-      // the non-"Yes" choice — the answer a specimen of resultName would give
-      // for a feature it does not possess — and keep the simulation moving.
+      // neither choice changes resultName's own score). Default to a clear
+      // negative choice when one exists (a real, meaningful answer); for
+      // multi-way classification questions with no negative/not-applicable
+      // choice, still default to choices[0] to keep the simulation moving,
+      // but suppress it from the displayed path since it would fabricate an
+      // answer unrelated to the species' real morphology.
       const choices = qChoicesMap.get(q) || [];
       if (choices.length >= 2) {
-        const noChoice = choices.find(c => !c.label.startsWith('Yes')) || choices[0];
-        nextQ = q; nextAns = noChoice.label; break;
+        const noChoice = choices.find(c => /^(No|None)\b/i.test(c.label)) || choices[0];
+        nextQ = q; nextAns = noChoice.label;
+        if (!/^(No|None)\b/i.test(noChoice.label)) orphanNoDisplay.add(nextQ);
+        break;
       }
     }
     if (nextQ === null) break;
 
     answers.set(nextQ, nextAns);
-    simPath.push({ question: nextQ, choice: nextAns });
+    if (!orphanNoDisplay.has(nextQ)) simPath.push({ question: nextQ, choice: nextAns });
 
     const newScores = scoreAllPure(answers, matrix);
     if (newScores.length > 0 && newScores[0].name === resultName &&

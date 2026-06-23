@@ -157,6 +157,10 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
   const simPath       = [];
   const simCdQs       = new Set([...simAnswers.entries()]
     .filter(([, a]) => a.startsWith('Cannot determine')).map(([q]) => q));
+  // Orphan questions defaulted to choices[0] (no clear negative choice exists) —
+  // tracked separately so they're excluded from the displayed simPath while
+  // still advancing the simulation. See orphan-question comment below.
+  const orphanNoDisplay = new Set();
 
   for (let step = 0; step < 50; step++) {
     const scores = scoreAllPure(answers, matrix);
@@ -180,18 +184,29 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
       // top-tier candidates, but resultName has no recorded answer for it (so
       // neither choice changes resultName's own score). The live Feature
       // Scoring page still presents it and waits for an answer, so default to
-      // the non-"Yes" choice — the answer a specimen of resultName would give
-      // for a feature it does not possess — and keep the simulation moving.
+      // a "doesn't apply here" choice — the answer a specimen of resultName
+      // would give for a feature it does not possess — and keep the
+      // simulation moving. For genuinely binary questions this is a real,
+      // meaningful negative answer (e.g. "No — hindwing is tailless") and is
+      // safe to show in the stored path. For multi-way classification
+      // questions with no clear negative/not-applicable choice (e.g. "which
+      // subgroup best fits the specimen?" with 5 mutually exclusive
+      // subgroups), there is no sensible default — picking choices[0] would
+      // fabricate an answer unrelated to the species' real morphology, so we
+      // still pick it to keep the simulation progressing but suppress it from
+      // the displayed path.
       const choices = qChoicesMap.get(q) || [];
       if (choices.length >= 2) {
-        const noChoice = choices.find(c => !c.label.startsWith('Yes')) || choices[0];
-        nextQ = q; nextAns = noChoice.label; break;
+        const noChoice = choices.find(c => /^(No|None)\b/i.test(c.label)) || choices[0];
+        nextQ = q; nextAns = noChoice.label;
+        if (!/^(No|None)\b/i.test(noChoice.label)) orphanNoDisplay.add(nextQ);
+        break;
       }
     }
     if (nextQ === null) break;
 
     answers.set(nextQ, nextAns);
-    simPath.push({ question: nextQ, choice: nextAns });
+    if (!orphanNoDisplay.has(nextQ)) simPath.push({ question: nextQ, choice: nextAns });
 
     // Stop once species is uniquely #1 by at least 2 points, all sim-CD questions
     // answered, and no more of the species' own canonical features remain visible
