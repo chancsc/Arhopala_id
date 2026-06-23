@@ -260,6 +260,21 @@ function linkifyQ(text) {
 // Visual Guide sections (feature descriptions)
 const CHOICE_LINKS = new Map([
   ['A. corinda', 'https://www.inaturalist.org/search?q=Arhopala+corinda'],
+  ['A. overdijkinki', 'https://www.inaturalist.org/observations?verifiable=true&taxon_id=1390509&preferred_place_id=6734'],
+  ['A. aedias', 'https://www.inaturalist.org/observations?verifiable=true&taxon_id=498179&preferred_place_id=6734'],
+  ['A. delta', 'https://www.inaturalist.org/observations?verifiable=true&taxon_id=896391&preferred_place_id=6734'],
+  ['A. kurzi', 'https://www.inaturalist.org/observations?verifiable=true&taxon_id=1149928&preferred_place_id=6734'],
+  ['A. avathina avathina', 'https://www.inaturalist.org/observations?verifiable=true&taxon_id=888416&preferred_place_id=6734'],
+  ['A. alica', 'https://www.inaturalist.org/observations?verifiable=true&taxon_id=1495881&preferred_place_id=6734'],
+  ['A. labuana', 'https://www.inaturalist.org/search?q=Arhopala+labuana'],
+  ['A. norda', 'https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734'],
+  ['A. amphimuta', 'https://www.inaturalist.org/observations?verifiable=true&taxon_id=498183&preferred_place_id=6734'],
+  ['A. major', 'https://www.inaturalist.org/observations?verifiable=true&taxon_id=429756&preferred_place_id=6734'],
+  ['A. moolaiana', 'https://www.inaturalist.org/observations?verifiable=true&taxon_id=549326&preferred_place_id=6734'],
+  ['A. stubbsi', 'https://www.inaturalist.org/search?q=Arhopala+stubbsi'],
+  ['A. zylda', 'https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340244&preferred_place_id=6734'],
+  ['A. sceva', 'https://www.inaturalist.org/observations?verifiable=true&taxon_id=888422&preferred_place_id=6734'],
+  ['A. baluensis', 'https://www.inaturalist.org/observations?verifiable=true&taxon_id=888417&preferred_place_id=6734'],
   ['central cell spot is band-like, stretching entirely across the cell', 'guide.html#hw-central-cell-spot'],
 ]);
 
