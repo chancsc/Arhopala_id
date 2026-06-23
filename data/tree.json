@@ -520,7 +520,7 @@
         "text": "echelon HW spots 5–7",
         "href": "guide.html#hw-tail-spots-fw-spaces"
       },
-      "hint": "Four subgroups. Muta: spots more quadrate/banded, FW space 2 stepped toward termen. Kurzi and perimuta subgroups: HW postdiscal band fully dislocated at vein 2 — two clearly separate portions with a visible gap; a follow-up question separates [A. kurzi](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1149928&preferred_place_id=6734) from the perimuta subgroup ([A. perimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=448212&preferred_place_id=6734), [A. metamuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340245&preferred_place_id=6734), [A. antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734)). Amphimuta (largest, 12 spp.): spots rounded, cilia often prolonged into a short tooth at vein 2.\n\nIf the FW space 2 spot position isn't visible (forewing underside not visible), choose 'Cannot determine' — [A. antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734) (perimuta subgroup) is by far the most abundant species in this group and can still be recognized by its own characters (spot 6 positioned directly below spot 7, touching or overlapping the end-cell bar, with a thread-like male border), while [A. perimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=448212&preferred_place_id=6734) and [A. metamuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340245&preferred_place_id=6734) have their own distinctive HW colours.",
+      "hint": "Four subgroups. Muta: spots more quadrate/banded, FW space 2 stepped toward termen. Kurzi and perimuta subgroups: HW postdiscal band fully dislocated at vein 2 — two clearly separate portions with a visible gap; a follow-up question separates [A. kurzi](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1149928&preferred_place_id=6734) from the perimuta subgroup ([A. perimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=448212&preferred_place_id=6734), [A. metamuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340245&preferred_place_id=6734), [A. antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734)). Amphimuta (largest, 12 spp.): spots rounded, cilia often prolonged into a short tooth at vein 2.\n\nIf the band is shifted at vein 2 but the two portions are still connected (no clear gap) rather than fully separated, choose the partial-dislocation option — this still points toward the kurzi/perimuta subgroup follow-up question rather than the rounded amphimuta or quadrate muta subgroups.\n\nIf the FW space 2 spot position isn't visible (forewing underside not visible), choose 'Cannot determine' — [A. antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734) (perimuta subgroup) is by far the most abundant species in this group and can still be recognized by its own characters (spot 6 positioned directly below spot 7, touching or overlapping the end-cell bar, with a thread-like male border), while [A. perimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=448212&preferred_place_id=6734) and [A. metamuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340245&preferred_place_id=6734) have their own distinctive HW colours.",
       "choices": [
         {
           "label": "Spots more quadrate/banded (muta subgroup)",
@@ -528,6 +528,10 @@
         },
         {
           "label": "HW postdiscal band fully dislocated at vein 2 — two clearly separate portions with a visible gap (kurzi or perimuta subgroup)",
+          "next": "q_amphimuta_dislocated_split"
+        },
+        {
+          "label": "HW postdiscal band only partially dislocated at vein 2 — shifted but still connected, not fully separated",
           "next": "q_amphimuta_dislocated_split"
         },
         {
@@ -2973,7 +2977,8 @@
       "features": {
         "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)",
         "What is the forewing length?": "Larger — FW 16.0–19.0 mm",
-        "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?": "Large — spots large, almost touching the end-cell bar"
+        "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?": "Large — spots large, almost touching the end-cell bar",
+        "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?": "HW postdiscal band only partially dislocated at vein 2 — shifted but still connected, not fully separated"
       }
     },
     "r_johoreana_johoreana": {
