@@ -2727,12 +2727,12 @@
       "choice": "Spots more quadrate/banded (muta subgroup)"
     },
     {
-      "question": "What is the forewing length?",
-      "choice": "Small — FW 13.0–14.0 mm"
-    },
-    {
       "question": "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?",
       "choice": "Very small — spots noticeably small"
+    },
+    {
+      "question": "What is the forewing length?",
+      "choice": "Small — FW 13.0–14.0 mm"
     },
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
@@ -2851,12 +2851,12 @@
       "choice": "Spots more quadrate/banded (muta subgroup)"
     },
     {
-      "question": "What is the forewing length?",
-      "choice": "Larger — FW 16.0–19.0 mm"
-    },
-    {
       "question": "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?",
       "choice": "Normal — spots normal-sized, with a clear gap from the end-cell bar"
+    },
+    {
+      "question": "What is the forewing length?",
+      "choice": "Larger — FW 16.0–19.0 mm"
     },
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
@@ -3695,10 +3695,6 @@
     {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
       "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
-    },
-    {
-      "question": "What is the forewing length?",
-      "choice": "Larger — FW 16.0–19.0 mm"
     },
     {
       "question": "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?",
