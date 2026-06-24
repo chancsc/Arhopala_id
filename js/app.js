@@ -417,7 +417,7 @@ function buildPathDisplay(paths, note, resultFeatures, resultName) {
 
   let html = `
     <details class="path-details">
-      <summary class="path-summary">Direct path — ${canonicalSteps.length} step${canonicalSteps.length !== 1 ? 's' : ''}</summary>
+      <summary class="path-summary">Feature Scoring path — ${canonicalSteps.length} step${canonicalSteps.length !== 1 ? 's' : ''}</summary>
       <div class="path-content">
         <ol class="path-steps">${renderSteps(canonicalSteps)}</ol>
       </div>
