@@ -233,8 +233,28 @@
     "q_tailed_dark_area": {
       "type": "question",
       "id": "q_tailed_dark_area",
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
-      "hint": "The camdeo group has a restricted dark patch in FW underside space 1b with a clearly defined pale line running outwardly across it — this is a more localised marking than the complete basal-half darkening of the corinda group (already excluded). In field photographs this area is often hidden under the hindwing. Also check the HW ground colour and look for an extra spot in the middle of HW space 8; the position of HW postdiscal spot 6 relative to spot 5 and the end-cell bar is diagnostic — in this group spot 6 sits clearly nearer to spot 5. If spot 6 appears midway between spot 5 and the end-cell bar, the FW space 1b patch is absent or not visible, or the underside does not match any of the camdeo-group patterns below, select the last option.",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
+      "hint": "The camdeo group has a restricted dark patch in FW underside space 1b with a clearly defined pale line running outwardly across it — this is a more localised marking than the complete basal-half darkening of the corinda group (already excluded). In field photographs this area is often hidden under the hindwing — answer No if the patch is absent or if the area is not visible.",
+      "choices": [
+        {
+          "label": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)",
+          "next": "q_camdeo_sub"
+        },
+        {
+          "label": "No — no dark patch present in FW space 1b",
+          "next": "q_tailed_anthelus"
+        },
+        {
+          "label": "Cannot determine — FW space 1b obscured by hindwing",
+          "next": "q_tailed_anthelus"
+        }
+      ]
+    },
+    "q_camdeo_sub": {
+      "type": "question",
+      "id": "q_camdeo_sub",
+      "question": "What does the hindwing underside look like?",
+      "hint": "Check the overall ground colour and look for an extra spot in the middle of HW space 8. The position of HW postdiscal spot 6 relative to spot 5 and the end-cell bar is also diagnostic: in this group, spot 6 sits clearly nearer to spot 5. If spot 6 appears midway between spot 5 and the end-cell bar — typical of the epimuta and agesilaus groups — select the last option.",
       "choices": [
         {
           "label": "Crimson-brown ground colour with markings outlined in white striae; spot at the base of HW space 6",
@@ -249,11 +269,7 @@
           "next": "g_camdeo_general"
         },
         {
-          "label": "No restricted dark patch visible in FW space 1b, HW spot 6 appears midway between spot 5 and the end-cell bar, or the underside does not match any of the above — not camdeo group",
-          "next": "q_tailed_anthelus"
-        },
-        {
-          "label": "Cannot determine — FW space 1b obscured by hindwing",
+          "label": "HW spot 6 appears midway between spot 5 and the end-cell bar, or the underside does not match any of the above — may not be the right group",
           "next": "q_tailed_anthelus"
         }
       ]
@@ -855,27 +871,15 @@
     "q_tailless_camdeo": {
       "type": "question",
       "id": "q_tailless_camdeo",
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
-      "hint": "A small number of camdeo group species are tailless ([A. belphoebe cowani](https://www.inaturalist.org/search?q=Arhopala+belphoebe), [A. myrzalina](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1564116&preferred_place_id=6734)). The camdeo group is identified by a restricted dark patch in FW underside space 1b with a clearly defined pale bordering line (often hidden under the hindwing in field photos), plus HW ground colour and spot pattern — check for an extra spot in the middle of HW space 8, and the position of HW postdiscal spot 6 relative to spot 5 and the end-cell bar (spot 6 sits clearly nearer to spot 5 in this group).",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
+      "hint": "A small number of camdeo group species are tailless ([A. belphoebe cowani](https://www.inaturalist.org/search?q=Arhopala+belphoebe), [A. myrzalina](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1564116&preferred_place_id=6734)). The camdeo group is identified by a restricted dark patch in FW underside space 1b with a clearly defined pale bordering line. In field photos this area is often hidden under the hindwing — if FW space 1b is not clearly visible, select Cannot determine; the key will continue without this character.",
       "choices": [
         {
-          "label": "Crimson-brown ground colour with markings outlined in white striae; spot at the base of HW space 6",
-          "next": "g_camdeo_myrzala"
+          "label": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)",
+          "next": "q_camdeo_sub"
         },
         {
-          "label": "Purple-brown ground colour with whitish striae; extra spot visible mid-space 8 adjoining the central spot in space 7",
-          "next": "g_camdeo_bazaloides"
-        },
-        {
-          "label": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8",
-          "next": "g_camdeo_general"
-        },
-        {
-          "label": "HW spot 6 appears midway between spot 5 and the end-cell bar, or the underside otherwise does not match any of the above, but a restricted dark patch is visible in FW space 1b",
-          "next": "q_tailed_anthelus"
-        },
-        {
-          "label": "No restricted dark patch present in FW space 1b — not camdeo group",
+          "label": "No — no dark patch present in FW space 1b",
           "next": "q_tailless_band_early"
         },
         {
@@ -1501,7 +1505,8 @@
       "features": {
         "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
         "What is the underside ground colour and overall appearance?": "Hair brown; spots narrowly buff-outlined; large (FW 20–29 mm); rounded FW apex; tail ~6 mm — A. aedias",
-        "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
+        "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?": "No — no dark patch present in FW space 1b",
+        "What does the hindwing underside look like?": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
       }
     },
     "q_agelastus_s1": {
@@ -3040,7 +3045,8 @@
       "common_name": "",
       "note": "Tailed. Long tail ~4–6 mm. FW postdiscal band complete, partially dislocated at vein 4 (spot 4 slightly shifted outward). Male: pale greyish-blue with a violet tinge, very narrow thread-like black border. Female: slightly deeper blue with broader borders. Underside: uniform grey-brown to hair brown; HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5; spot 6 as large as or larger than spot 7. Restricted dark patch in FW space 1b bounded by a pale line; central spot in space 1b not unusually elongate (cf. [A. semperi russelli](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1148362&preferred_place_id=6734)). End-cell bar not often enlarged outwards at its lower end (cf. [A. semperi russelli](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1148362&preferred_place_id=6734)). HW cell approximately half the wing length or longer. FW 22–26 mm. Camdeo subgroup.",
       "features": {
-        "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?": "No — HW spot 6 not smaller than spot 7; male pale greyish-blue with violet tinge"
+        "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?": "No — HW spot 6 not smaller than spot 7; male pale greyish-blue with violet tinge",
+        "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)"
       }
     },
     "q_camdeo_m1": {
@@ -4297,27 +4303,15 @@
     "q_long_tail_echelon_check": {
       "type": "question",
       "id": "q_long_tail_echelon_check",
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
-      "hint": "For long-tailed species (tail ≥5 mm) with HW spots 5, 6, and 7 in echelon: [A. aedias](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498179&preferred_place_id=6734) has NO dark area under the forewing cell (characteristic of the aedias group). [A. opalina](https://www.inaturalist.org/observations?verifiable=true&taxon_id=994269&preferred_place_id=6734) has a restricted dark patch in FW underside space 1b bounded by a clearly defined pale bordering line — the same camdeo-group feature visible in shorter-tailed camdeo species — plus the HW ground colour and spot pattern typical of that group (check for an extra spot in the middle of HW space 8, and whether HW postdiscal spot 6 sits clearly nearer to spot 5 than to the end-cell bar).",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
+      "hint": "For long-tailed species (tail ≥5 mm) with HW spots 5, 6, and 7 in echelon: [A. aedias](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498179&preferred_place_id=6734) has NO dark area under the forewing cell (characteristic of the aedias group). [A. opalina](https://www.inaturalist.org/observations?verifiable=true&taxon_id=994269&preferred_place_id=6734) has a restricted dark patch in FW underside space 1b bounded by a clearly defined pale bordering line — the same camdeo-group feature visible in shorter-tailed camdeo species.",
       "choices": [
         {
-          "label": "Crimson-brown ground colour with markings outlined in white striae; spot at the base of HW space 6",
-          "next": "g_camdeo_myrzala"
+          "label": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)",
+          "next": "q_camdeo_sub"
         },
         {
-          "label": "Purple-brown ground colour with whitish striae; extra spot visible mid-space 8 adjoining the central spot in space 7",
-          "next": "g_camdeo_bazaloides"
-        },
-        {
-          "label": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8",
-          "next": "g_camdeo_general"
-        },
-        {
-          "label": "HW spot 6 appears midway between spot 5 and the end-cell bar, or the underside otherwise does not match any of the above, but a restricted dark patch is visible in FW space 1b",
-          "next": "q_tailed_anthelus"
-        },
-        {
-          "label": "No restricted dark patch present in FW space 1b — not camdeo group",
+          "label": "No — no dark patch present in FW space 1b",
           "next": "g_aedias"
         },
         {

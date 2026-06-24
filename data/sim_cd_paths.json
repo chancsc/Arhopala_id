@@ -5,7 +5,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -63,7 +63,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -137,7 +137,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -211,7 +211,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -285,7 +285,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -355,7 +355,7 @@
       "choice": "Yes — tail very long, approximately 5 mm or longer (eumolphus or aedias group)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -365,6 +365,10 @@
     {
       "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
       "choice": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
+    },
+    {
+      "question": "What does the hindwing underside look like?",
+      "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
     },
     {
       "question": "Is there a central spot in forewing underside space 11? (camdeo group)",
@@ -393,7 +397,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -467,7 +471,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -533,7 +537,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -595,7 +599,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -649,7 +653,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -683,7 +687,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -761,7 +765,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -839,7 +843,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -921,7 +925,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -955,7 +959,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -997,7 +1001,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -1055,7 +1059,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -1125,7 +1129,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -1203,7 +1207,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -1281,7 +1285,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -1359,7 +1363,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -1437,7 +1441,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -1507,7 +1511,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -1581,7 +1585,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -1659,7 +1663,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -1713,7 +1717,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -1795,7 +1799,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -1873,7 +1877,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -1931,7 +1935,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -2017,7 +2021,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -2103,7 +2107,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -2189,7 +2193,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -2267,7 +2271,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -2281,7 +2285,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -2359,7 +2363,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -2445,7 +2449,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -2531,7 +2535,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -2605,7 +2609,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -2679,7 +2683,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -2741,7 +2745,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -2803,7 +2807,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -2869,7 +2873,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -2891,7 +2895,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -2945,7 +2949,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -3011,7 +3015,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -3077,7 +3081,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -3143,7 +3147,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -3233,7 +3237,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -3319,7 +3323,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -3405,7 +3409,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -3491,7 +3495,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -3581,7 +3585,7 @@
       "choice": "Yes — tail very long, approximately 5 mm or longer (eumolphus or aedias group)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -3591,6 +3595,10 @@
     {
       "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
       "choice": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
+    },
+    {
+      "question": "What does the hindwing underside look like?",
+      "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
     },
     {
       "question": "Is there a central spot in forewing underside space 11? (camdeo group)",
@@ -3619,7 +3627,7 @@
       "choice": "Yes — tail very long, approximately 5 mm or longer (eumolphus or aedias group)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -3629,6 +3637,10 @@
     {
       "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
       "choice": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
+    },
+    {
+      "question": "What does the hindwing underside look like?",
+      "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
     },
     {
       "question": "Is there a central spot in forewing underside space 11? (camdeo group)",
@@ -3645,7 +3657,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -3711,7 +3723,7 @@
       "choice": "Yes — tail very long, approximately 5 mm or longer (eumolphus or aedias group)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -3721,6 +3733,10 @@
     {
       "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
       "choice": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
+    },
+    {
+      "question": "What does the hindwing underside look like?",
+      "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
     },
     {
       "question": "Is there a central spot in forewing underside space 11? (camdeo group)",
@@ -3753,7 +3769,7 @@
       "choice": "Yes — tail very long, approximately 5 mm or longer (eumolphus or aedias group)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -3763,6 +3779,10 @@
     {
       "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
       "choice": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
+    },
+    {
+      "question": "What does the hindwing underside look like?",
+      "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
     },
     {
       "question": "Is there a central spot in forewing underside space 11? (camdeo group)",
@@ -3803,7 +3823,7 @@
       "choice": "Yes — tail very long, approximately 5 mm or longer (eumolphus or aedias group)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -3813,6 +3833,10 @@
     {
       "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
       "choice": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
+    },
+    {
+      "question": "What does the hindwing underside look like?",
+      "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
     },
     {
       "question": "Is there a central spot in forewing underside space 11? (camdeo group)",
@@ -3853,7 +3877,7 @@
       "choice": "Yes — tail very long, approximately 5 mm or longer (eumolphus or aedias group)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -3863,6 +3887,10 @@
     {
       "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
       "choice": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
+    },
+    {
+      "question": "What does the hindwing underside look like?",
+      "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
     },
     {
       "question": "Is there a central spot in forewing underside space 11? (camdeo group)",
@@ -3907,7 +3935,7 @@
       "choice": "Yes — tail very long, approximately 5 mm or longer (eumolphus or aedias group)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -3917,6 +3945,10 @@
     {
       "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
       "choice": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
+    },
+    {
+      "question": "What does the hindwing underside look like?",
+      "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
     },
     {
       "question": "Is there a central spot in forewing underside space 11? (camdeo group)",
@@ -3961,7 +3993,7 @@
       "choice": "Yes — tail very long, approximately 5 mm or longer (eumolphus or aedias group)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -3971,6 +4003,10 @@
     {
       "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
       "choice": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
+    },
+    {
+      "question": "What does the hindwing underside look like?",
+      "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
     },
     {
       "question": "Is there a central spot in forewing underside space 11? (camdeo group)",
@@ -4015,7 +4051,7 @@
       "choice": "Yes — tail very long, approximately 5 mm or longer (eumolphus or aedias group)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -4027,24 +4063,8 @@
       "choice": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11? (camdeo group)",
-      "choice": "No — no spot in FW space 11"
-    },
-    {
-      "question": "Is the underside ground colour extensively whitened?",
-      "choice": "No — underside ground colour normal (not whitened)"
-    },
-    {
-      "question": "Is a very short hindwing tail (≤2 mm) present AND are the underside spots indistinct?",
-      "choice": "No — no tail, or tail longer than 2 mm; underside spots distinct"
-    },
-    {
-      "question": "Is the male a deep, dull bluish-purple with a forewing border expanding to 1.25 mm at the apex?",
-      "choice": "Cannot determine — upperside not visible (note: may miss semperi russelli)"
-    },
-    {
-      "question": "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?",
-      "choice": "No — HW spot 6 not smaller than spot 7; male pale greyish-blue with violet tinge"
+      "question": "What does the hindwing underside look like?",
+      "choice": "Crimson-brown ground colour with markings outlined in white striae; spot at the base of HW space 6"
     }
   ],
   "Arhopala myrzalina": [
@@ -4053,7 +4073,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -4091,6 +4111,10 @@
     {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
       "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
+    },
+    {
+      "question": "What does the hindwing underside look like?",
+      "choice": "Crimson-brown ground colour with markings outlined in white striae; spot at the base of HW space 6"
     }
   ],
   "Arhopala bazaloides bazaloides": [
@@ -4115,7 +4139,7 @@
       "choice": "Yes — tail very long, approximately 5 mm or longer (eumolphus or aedias group)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -4127,24 +4151,8 @@
       "choice": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11? (camdeo group)",
-      "choice": "No — no spot in FW space 11"
-    },
-    {
-      "question": "Is the underside ground colour extensively whitened?",
-      "choice": "No — underside ground colour normal (not whitened)"
-    },
-    {
-      "question": "Is a very short hindwing tail (≤2 mm) present AND are the underside spots indistinct?",
-      "choice": "No — no tail, or tail longer than 2 mm; underside spots distinct"
-    },
-    {
-      "question": "Is the male a deep, dull bluish-purple with a forewing border expanding to 1.25 mm at the apex?",
-      "choice": "Cannot determine — upperside not visible (note: may miss semperi russelli)"
-    },
-    {
-      "question": "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?",
-      "choice": "No — HW spot 6 not smaller than spot 7; male pale greyish-blue with violet tinge"
+      "question": "What does the hindwing underside look like?",
+      "choice": "Purple-brown ground colour with whitish striae; extra spot visible mid-space 8 adjoining the central spot in space 7"
     }
   ],
   "Arhopala centaurus nakula": [
@@ -4231,7 +4239,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -4317,7 +4325,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -4391,7 +4399,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -4469,7 +4477,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -4551,7 +4559,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -4633,7 +4641,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -4707,7 +4715,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -4785,7 +4793,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -4867,7 +4875,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -4957,7 +4965,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -5051,7 +5059,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -5145,7 +5153,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -5239,7 +5247,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -5325,7 +5333,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -5419,7 +5427,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -5461,7 +5469,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -5519,7 +5527,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -5577,7 +5585,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -5639,7 +5647,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -5685,7 +5693,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -5755,7 +5763,7 @@
       "choice": "Yes — tail very long, approximately 5 mm or longer (eumolphus or aedias group)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -5801,7 +5809,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -5891,7 +5899,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -5989,7 +5997,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -6087,7 +6095,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -6193,7 +6201,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -6295,7 +6303,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -6381,7 +6389,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -6411,7 +6419,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -6473,7 +6481,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -6535,7 +6543,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -6601,7 +6609,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -6663,7 +6671,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -6729,7 +6737,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -6775,7 +6783,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -6821,7 +6829,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -6847,7 +6855,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -6881,7 +6889,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -6959,7 +6967,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -7041,7 +7049,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -7107,7 +7115,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -7169,7 +7177,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -7227,7 +7235,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -7277,7 +7285,7 @@
       "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -7347,7 +7355,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
@@ -7433,7 +7441,7 @@
       "choice": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell) bounded by a pale line, and what does the hindwing underside look like?",
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
