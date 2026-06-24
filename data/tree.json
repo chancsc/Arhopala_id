@@ -3369,7 +3369,7 @@
       "hint": "[A. phanda phanda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=940969&preferred_place_id=6734): outer edge of spot 6 just overlaps or is in line with the inner edge of spot 5 — this is the character that actually separates it from the rest of the alea subgroup, since the close band placement alone is shared with [A. normani](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340249&preferred_place_id=6734). In normani and other subgroup members, the outer edge of spot 6 sits well inside the inner edge of spot 5.",
       "choices": [
         {
-          "label": "Yes — outer edge of spot 6 overlaps or aligns with inner edge of spot 5 (phanda)",
+          "label": "Yes — outer edge of spot 6 overlaps or aligns with inner edge of spot 5 (A. phanda)",
           "next": "r_phanda_phanda"
         },
         {
