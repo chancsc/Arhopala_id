@@ -383,7 +383,24 @@ function buildPathDisplay(paths, note, resultFeatures, resultName) {
       : null;
   })();
 
-  const renderSteps = (path, applyRf) => (applyRf ? pathApplyFeatures(path, rf) : path).map(step => {
+  // Two distinct tree nodes can deliberately share question text (so Feature
+  // Scoring treats them as one question) yet both land on the same species'
+  // canonical path — drop the repeat rather than showing the same Q+answer twice.
+  const dedupeSteps = path => {
+    const seen = new Set();
+    return path.filter(step => {
+      if (step.group) return true;
+      const key = step.question + ' ' + step.choice;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  };
+
+  const canonicalSteps = dedupeSteps(pathApplyFeatures(canonical, rf));
+  const simCdSteps = simCd ? dedupeSteps(simCd) : null;
+
+  const renderSteps = steps => steps.map(step => {
     if (step.group) {
       return `<li class="path-step path-step--group"><span class="path-group">● ${escapeHtml(step.group)}</span></li>`;
     }
@@ -400,20 +417,20 @@ function buildPathDisplay(paths, note, resultFeatures, resultName) {
 
   let html = `
     <details class="path-details">
-      <summary class="path-summary">Direct path — ${canonical.length} step${canonical.length !== 1 ? 's' : ''}</summary>
+      <summary class="path-summary">Direct path — ${canonicalSteps.length} step${canonicalSteps.length !== 1 ? 's' : ''}</summary>
       <div class="path-content">
-        <ol class="path-steps">${renderSteps(canonical, true)}</ol>
+        <ol class="path-steps">${renderSteps(canonicalSteps)}</ol>
       </div>
     </details>
   `;
 
-  if (simCd) {
+  if (simCdSteps) {
     html += `
       <details class="path-details path-details--simcd">
-        <summary class="path-summary">Underside-only path — ${simCd.length} step${simCd.length !== 1 ? 's' : ''}</summary>
+        <summary class="path-summary">Underside-only path — ${simCdSteps.length} step${simCdSteps.length !== 1 ? 's' : ''}</summary>
         <div class="path-content">
           <p class="path-skip-note">Path when upperside and FW underside space 1–3 features are unavailable (all answered "Cannot determine").</p>
-          <ol class="path-steps">${renderSteps(simCd, false)}</ol>
+          <ol class="path-steps">${renderSteps(simCdSteps)}</ol>
         </div>
       </details>
     `;
