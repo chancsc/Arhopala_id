@@ -202,7 +202,7 @@
         },
         {
           "label": "No",
-          "next": "q_tailed_dark_area"
+          "next": "q_tailed_anthelus"
         }
       ]
     },
@@ -227,26 +227,6 @@
         {
           "label": "Cannot determine — FW cell not clearly visible",
           "next": "q_tailed_vein3"
-        }
-      ]
-    },
-    "q_tailed_dark_area": {
-      "type": "question",
-      "id": "q_tailed_dark_area",
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
-      "hint": "The camdeo group has a restricted dark patch in FW underside space 1b with a clearly defined pale line running outwardly across it — this is a more localised marking than the complete basal-half darkening of the corinda group (already excluded). In field photographs this area is often hidden under the hindwing — answer No if the patch is absent or if the area is not visible.",
-      "choices": [
-        {
-          "label": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)",
-          "next": "q_camdeo_sub"
-        },
-        {
-          "label": "No — no dark patch present in FW space 1b",
-          "next": "q_tailed_anthelus"
-        },
-        {
-          "label": "Cannot determine — FW space 1b obscured by hindwing",
-          "next": "q_tailed_anthelus"
         }
       ]
     },
