@@ -1378,6 +1378,10 @@
       "type": "question",
       "id": "q_corinda_hw_cell_length",
       "question": "Is the hindwing cell longer than half the length of the wing?",
+      "question_link": {
+        "text": "hindwing cell longer",
+        "href": "guide.html#hindwing-cell"
+      },
       "hint": "Confirmatory for [A. corinda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=793494&preferred_place_id=6734) — its hindwing cell is longer than half the wing length, a useful additional check alongside the FW space 1b patch and HW spot 6 shape.",
       "choices": [
         {
@@ -4276,6 +4280,10 @@
       "type": "question",
       "id": "q_corinda_cell_gate_apex",
       "question": "Is the hindwing cell longer than half the length of the wing?",
+      "question_link": {
+        "text": "hindwing cell longer",
+        "href": "guide.html#hindwing-cell"
+      },
       "hint": "[A. corinda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=793494&preferred_place_id=6734) has an unusually long HW cell (longer than half the wing length) — checking this first helps rule out two rare agelastus-group species (A. barami penanga, A. alesia sacharja) that share corinda's HW spot 6 shape alone but have an ordinary (not elongated) HW cell, before confirming the spot-6 shape itself.",
       "choices": [
         {
