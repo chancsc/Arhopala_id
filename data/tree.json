@@ -69,7 +69,7 @@
         },
         {
           "label": "No — no whitish streak",
-          "next": "q_tailed_macular"
+          "next": "q_alesia_ground_colour"
         }
       ]
     },
@@ -222,11 +222,11 @@
         },
         {
           "label": "No — no silver outlines",
-          "next": "q_tailed_vein3"
+          "next": "q_tailed_macular"
         },
         {
           "label": "Cannot determine — FW cell not clearly visible",
-          "next": "q_tailed_vein3"
+          "next": "q_tailed_macular"
         }
       ]
     },
@@ -286,7 +286,7 @@
         },
         {
           "label": "No — markings form more continuous bands",
-          "next": "q_alesia_ground_colour"
+          "next": "q_tailed_vein3"
         }
       ]
     },
