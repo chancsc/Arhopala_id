@@ -5225,6 +5225,10 @@
     {
       "question": "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?",
       "choice": "Yes — HW spot 6 widely overlaps the end-cell bar"
+    },
+    {
+      "question": "Is there a costal spot present in forewing underside space 10?",
+      "choice": "No — no costal spot in FW space 10 (A. milleri)"
     }
   ],
   "Arhopala phaenops sandakani": [
@@ -5412,7 +5416,11 @@
     },
     {
       "question": "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?",
-      "choice": "No — HW spot 6 does not widely overlap the end-cell bar"
+      "choice": "Yes — HW spot 6 widely overlaps the end-cell bar"
+    },
+    {
+      "question": "Is there a costal spot present in forewing underside space 10?",
+      "choice": "No — no costal spot in FW space 10 (A. milleri)"
     }
   ],
   "Arhopala normani": [
@@ -5592,7 +5600,11 @@
     },
     {
       "question": "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?",
-      "choice": "No — HW spot 6 does not widely overlap the end-cell bar"
+      "choice": "Yes — HW spot 6 widely overlaps the end-cell bar"
+    },
+    {
+      "question": "Is there a costal spot present in forewing underside space 10?",
+      "choice": "Yes — costal spot present in FW space 10 (A. sublustris)"
     }
   ],
   "Arhopala corinda acestes": [

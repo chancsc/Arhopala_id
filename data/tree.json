@@ -3605,7 +3605,8 @@
       "common_name": "",
       "note": "Alea subgroup. FW termen rounded. HW postdiscal spot 6 widely overlaps the end-cell bar — separates it from [A. phaenops](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887006&preferred_place_id=6734), whose spot 6 usually does not, or only just, overlaps the end-cell bar. Male: violet-blue with border expanding toward the apex. Smaller species (FW < 21 mm).",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
+        "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes — HW spot 6 widely overlaps the end-cell bar"
       }
     },
     "r_phaenops_sandakani": {
@@ -3616,7 +3617,8 @@
       "common_name": "",
       "note": "Alea subgroup. Similar to [A. selta selta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880747&preferred_place_id=6734) (border expanding toward apex) but HW postdiscal spot 6 usually does NOT overlap the end-cell bar. Smaller species (FW < 21 mm).",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
+        "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "No — HW spot 6 does not widely overlap the end-cell bar"
       }
     },
     "r_milleri": {
@@ -3628,7 +3630,8 @@
       "note": "Alea subgroup. Larger than [A. sublustris](https://www.inaturalist.org/observations?verifiable=true&taxon_id=475916&preferred_place_id=6734) (but still FW < 21 mm). No costal spot in FW underside space 10 (present in A. sublustris — per field photo/plate review). Male: more matt indigo blue (not bright glistening) with a regular, thread-like border under 0.5 mm; blue upperside lacks a violet tinge, like [A. sublustris](https://www.inaturalist.org/observations?verifiable=true&taxon_id=475916&preferred_place_id=6734). Genitalia often needed for certain identification.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
-        "Is there a costal spot present in forewing underside space 10?": "No — no costal spot in FW space 10 (A. milleri)"
+        "Is there a costal spot present in forewing underside space 10?": "No — no costal spot in FW space 10 (A. milleri)",
+        "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes — HW spot 6 widely overlaps the end-cell bar"
       }
     },
     "r_normani": {
@@ -3653,7 +3656,8 @@
       "note": "Alea subgroup. Male: bright glistening blue with a regular, thread-like border under 0.5 mm, lacking a violet tinge. Brighter and more glistening than [A. normani](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340249&preferred_place_id=6734). Costal spot present in FW underside space 10 (absent in A. milleri — per field photo/plate review). Smaller species (FW < 21 mm).",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
-        "Is there a costal spot present in forewing underside space 10?": "Yes — costal spot present in FW space 10 (A. sublustris)"
+        "Is there a costal spot present in forewing underside space 10?": "Yes — costal spot present in FW space 10 (A. sublustris)",
+        "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes — HW spot 6 widely overlaps the end-cell bar"
       }
     },
     "r_corinda_acestes": {
