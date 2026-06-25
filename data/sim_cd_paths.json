@@ -435,16 +435,16 @@
       "choice": "No — underside ground colour normal (not whitened)"
     },
     {
-      "question": "Is the male a deep, dull bluish-purple with a forewing border expanding to 1.25 mm at the apex?",
-      "choice": "Cannot determine — upperside not visible (note: may miss semperi russelli)"
-    },
-    {
       "question": "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?",
       "choice": "No — HW spot 6 not smaller than spot 7; male pale greyish-blue with violet tinge"
     },
     {
-      "question": "Is a very short hindwing tail (≤2 mm) present AND are the underside spots indistinct?",
-      "choice": "No — no tail, or tail longer than 2 mm; underside spots distinct"
+      "question": "What is the underside ground colour and overall appearance?",
+      "choice": "Hair brown; spots narrowly buff-outlined; large (FW 20–29 mm); rounded FW apex; tail ~6 mm — A. aedias"
+    },
+    {
+      "question": "Is the forewing postdiscal spot in space 4 shifted distad (outward, out of line with spots 5 and 6)?",
+      "choice": "Yes — FW spot 4 shifted distad, out of line with spots 5 and 6"
     }
   ],
   "Arhopala epimete suedas": [
@@ -4051,16 +4051,16 @@
       "choice": "No — underside ground colour normal (not whitened)"
     },
     {
+      "question": "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?",
+      "choice": "Yes — HW spot 6 smaller than spot 7; male clear violet-blue"
+    },
+    {
       "question": "Is the male a deep, dull bluish-purple with a forewing border expanding to 1.25 mm at the apex?",
       "choice": "Cannot determine — upperside not visible (note: may miss semperi russelli)"
     },
     {
       "question": "What is the forewing length (base to apex)?",
       "choice": "Large — FW approximately 28.0 mm"
-    },
-    {
-      "question": "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?",
-      "choice": "Yes — HW spot 6 smaller than spot 7; male clear violet-blue"
     },
     {
       "question": "Is a very short hindwing tail (≤2 mm) present AND are the underside spots indistinct?",
@@ -4117,16 +4117,16 @@
       "choice": "No — underside ground colour normal (not whitened)"
     },
     {
+      "question": "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?",
+      "choice": "Yes — HW spot 6 smaller than spot 7; male clear violet-blue"
+    },
+    {
       "question": "Is the male a deep, dull bluish-purple with a forewing border expanding to 1.25 mm at the apex?",
       "choice": "Cannot determine — upperside not visible (note: may miss semperi russelli)"
     },
     {
       "question": "What is the forewing length (base to apex)?",
       "choice": "Smaller — FW approximately 21.0 mm or less"
-    },
-    {
-      "question": "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?",
-      "choice": "Yes — HW spot 6 smaller than spot 7; male clear violet-blue"
     },
     {
       "question": "Is a very short hindwing tail (≤2 mm) present AND are the underside spots indistinct?",
@@ -4183,20 +4183,20 @@
       "choice": "No — underside ground colour normal (not whitened)"
     },
     {
-      "question": "Is the male a deep, dull bluish-purple with a forewing border expanding to 1.25 mm at the apex?",
-      "choice": "Cannot determine — upperside not visible (note: may miss semperi russelli)"
-    },
-    {
-      "question": "What is the forewing length (base to apex)?",
-      "choice": "Smaller — FW approximately 21.0 mm or less"
-    },
-    {
       "question": "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?",
       "choice": "No — HW spot 6 not smaller than spot 7; male pale greyish-blue with violet tinge"
     },
     {
       "question": "Is a very short hindwing tail (≤2 mm) present AND are the underside spots indistinct?",
       "choice": "No — no tail, or tail longer than 2 mm; underside spots distinct"
+    },
+    {
+      "question": "Is the male a deep, dull bluish-purple with a forewing border expanding to 1.25 mm at the apex?",
+      "choice": "Cannot determine — upperside not visible (note: may miss semperi russelli)"
+    },
+    {
+      "question": "What is the forewing length (base to apex)?",
+      "choice": "Smaller — FW approximately 21.0 mm or less"
     }
   ],
   "Arhopala myrzala lammas": [
@@ -5913,16 +5913,16 @@
       "choice": "Yes — HW spot 6 directly below spot 7 (not in echelon with spots 5 and 7)"
     },
     {
+      "question": "What is the underside ground colour and overall appearance?",
+      "choice": "Hair brown; HW spot 6 directly below spot 7 (not echelon); tail ~5 mm — A. overdijkinki"
+    },
+    {
       "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly straight?",
       "choice": "Yes — outer edge of spot 6 outwardly straight"
     },
     {
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
       "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
-      "question": "What is the underside ground colour and overall appearance?",
-      "choice": "Hair brown; HW spot 6 directly below spot 7 (not echelon); tail ~5 mm — A. overdijkinki"
     }
   ],
   "Arhopala bazalus zalinda": [

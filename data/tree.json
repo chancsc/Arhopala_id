@@ -1551,7 +1551,11 @@
         "What is the underside ground colour and overall appearance?": "Hair brown; spots narrowly buff-outlined; large (FW 20–29 mm); rounded FW apex; tail ~6 mm — A. aedias",
         "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?": "No — no dark patch present in FW space 1b",
         "What does the hindwing underside look like?": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8",
-        "Is the forewing postdiscal spot in space 4 shifted distad (outward, out of line with spots 5 and 6)?": "Yes — FW spot 4 shifted distad, out of line with spots 5 and 6"
+        "Is the forewing postdiscal spot in space 4 shifted distad (outward, out of line with spots 5 and 6)?": "Yes — FW spot 4 shifted distad, out of line with spots 5 and 6",
+        "Is the forewing postdiscal band incomplete, ending at or before vein 7?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)",
+        "Is there a central spot in forewing underside space 11? (camdeo group)": "No — no spot in FW space 11",
+        "Is the underside ground colour extensively whitened?": "No — underside ground colour normal (not whitened)",
+        "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?": "No — HW spot 6 not smaller than spot 7; male pale greyish-blue with violet tinge"
       }
     },
     "q_agelastus_s1": {
@@ -2418,6 +2422,7 @@
       "common_name": "",
       "note": "Tailless. Both sexes bluer than [A. amphimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498183&preferred_place_id=6734) above. Male: FW black border expands from 2.0 mm at tornus to 3.0 mm at apex. Underside similar to [A. amphimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498183&preferred_place_id=6734). HW cilia often prolonged into a short tooth at vein 2.",
       "features": {
+        "Is the male a warm violet-purple (with a reddish hue rather than blue), and is the FW postdiscal spot in space 3 an oblique oval?": "Distinctly blue (not violet or purple) with a broad border ≥2 mm — may be A. major or A. stubbsi",
         "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?": "No — border regular ~0.5 mm",
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
         "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes — white cilia spot near the tornus + weak tooth present; postdiscal spots more rounded, similar to A. amphimuta/A. major"
@@ -3246,7 +3251,10 @@
       "taxon_id": null,
       "name": "Arhopala araxes",
       "common_name": "",
-      "note": "FW ~27 mm. HW with a distinct tornal lobe (unlike [A. centaurus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=146903&preferred_place_id=6734)). Male: shining blue with violet tinge toward apices; FW border a thread at tornus, increasing to 1.0 mm at apex. Female: blue. Range: Sumatra to Sulawesi region. Underside: FW cell spots outlined in greenish silver."
+      "note": "FW ~27 mm. HW with a distinct tornal lobe (unlike [A. centaurus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=146903&preferred_place_id=6734)). Male: shining blue with violet tinge toward apices; FW border a thread at tornus, increasing to 1.0 mm at apex. Female: blue. Range: Sumatra to Sulawesi region. Underside: FW cell spots outlined in greenish silver; costal spot present in FW space 10 (also present in A. centaurus nakula).",
+      "features": {
+        "Is there a costal spot present in forewing underside space 10, above the end-cell bar?": "Yes — costal spot present in FW space 10"
+      }
     },
     "r_amantes": {
       "type": "result",
