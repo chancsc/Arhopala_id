@@ -3603,10 +3603,11 @@
       "taxon_id": null,
       "name": "Arhopala selta selta",
       "common_name": "",
-      "note": "Alea subgroup. FW termen rounded. HW postdiscal spot 6 widely overlaps the end-cell bar — separates it from [A. phaenops](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887006&preferred_place_id=6734), whose spot 6 usually does not, or only just, overlaps the end-cell bar. Male: violet-blue with border expanding toward the apex. Smaller species (FW < 21 mm).",
+      "note": "Alea subgroup. FW termen rounded. HW postdiscal spot 6 widely overlaps the end-cell bar — separates it from [A. phaenops](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887006&preferred_place_id=6734), whose spot 6 usually does not, or only just, overlaps the end-cell bar. Costal spot present in FW underside space 10, matching A. sublustris ridleyi (absent in A. milleri). Male: violet-blue with border expanding toward the apex. Smaller species (FW < 21 mm).",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
-        "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes — HW spot 6 widely overlaps the end-cell bar"
+        "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes — HW spot 6 widely overlaps the end-cell bar",
+        "Is there a costal spot present in forewing underside space 10?": "Yes — costal spot present in FW space 10 (A. selta)"
       }
     },
     "r_phaenops_sandakani": {
