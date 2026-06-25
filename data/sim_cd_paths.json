@@ -4035,6 +4035,10 @@
       "choice": "Cannot determine — upperside not visible (note: may miss semperi russelli)"
     },
     {
+      "question": "What is the forewing length (base to apex)?",
+      "choice": "Large — FW approximately 28.0 mm"
+    },
+    {
       "question": "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?",
       "choice": "Yes — HW spot 6 smaller than spot 7; male clear violet-blue"
     },
@@ -4097,6 +4101,10 @@
       "choice": "Cannot determine — upperside not visible (note: may miss semperi russelli)"
     },
     {
+      "question": "What is the forewing length (base to apex)?",
+      "choice": "Smaller — FW approximately 21.0 mm or less"
+    },
+    {
       "question": "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?",
       "choice": "Yes — HW spot 6 smaller than spot 7; male clear violet-blue"
     },
@@ -4157,6 +4165,10 @@
     {
       "question": "Is the male a deep, dull bluish-purple with a forewing border expanding to 1.25 mm at the apex?",
       "choice": "Cannot determine — upperside not visible (note: may miss semperi russelli)"
+    },
+    {
+      "question": "What is the forewing length (base to apex)?",
+      "choice": "Smaller — FW approximately 21.0 mm or less"
     },
     {
       "question": "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?",
