@@ -2065,12 +2065,12 @@
       "choice": "No — basal cell spot present on FW underside"
     },
     {
-      "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
-      "choice": "No — Malay Peninsula specimen"
+      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
+      "choice": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded"
     },
     {
-      "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
-      "choice": "Cannot determine — upperside not visible"
+      "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
+      "choice": "No — Malay Peninsula specimen"
     },
     {
       "question": "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?",
@@ -2078,18 +2078,14 @@
     },
     {
       "question": "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?",
-      "choice": "No — no white cilia spot or tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)"
+      "choice": "Yes — white cilia spot near the tornus + weak tooth present; postdiscal spots less rounded (more angular), similar to A. norda"
     },
     {
-      "question": "Is the male distinctly blue above, with the border widening from ~2.0 mm at the tornus to ~3.0 mm at the apex?",
+      "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
       "choice": "Cannot determine — upperside not visible"
     },
     {
       "question": "What is the male's overall upperside colour?",
-      "choice": "Cannot determine — upperside not visible"
-    },
-    {
-      "question": "Is the male's black border broad, 1.5 mm or wider?",
       "choice": "Cannot determine — upperside not visible"
     },
     {
@@ -2151,12 +2147,12 @@
       "choice": "No — basal cell spot present on FW underside"
     },
     {
-      "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
-      "choice": "No — Malay Peninsula specimen"
+      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
+      "choice": "No — no white patch on HW cilia"
     },
     {
-      "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
-      "choice": "Cannot determine — upperside not visible"
+      "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
+      "choice": "No — Malay Peninsula specimen"
     },
     {
       "question": "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?",
@@ -2167,15 +2163,15 @@
       "choice": "Yes — white cilia spot near the tornus + weak tooth present; postdiscal spots more rounded, similar to A. amphimuta/A. major"
     },
     {
+      "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
+      "choice": "Cannot determine — upperside not visible"
+    },
+    {
       "question": "Is the male a warm violet-purple (with a reddish hue rather than blue), and is the FW postdiscal spot in space 3 an oblique oval?",
       "choice": "Cannot determine — upperside not visible"
     },
     {
       "question": "What is the male's overall upperside colour?",
-      "choice": "Cannot determine — upperside not visible"
-    },
-    {
-      "question": "Is the male's black border broad, 1.5 mm or wider?",
       "choice": "Cannot determine — upperside not visible"
     },
     {
@@ -2237,12 +2233,12 @@
       "choice": "No — basal cell spot present on FW underside"
     },
     {
-      "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
-      "choice": "No — Malay Peninsula specimen"
+      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
+      "choice": "No — no white patch on HW cilia"
     },
     {
-      "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
-      "choice": "Cannot determine — upperside not visible"
+      "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
+      "choice": "No — Malay Peninsula specimen"
     },
     {
       "question": "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?",
@@ -2251,6 +2247,10 @@
     {
       "question": "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?",
       "choice": "No — no white cilia spot or tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)"
+    },
+    {
+      "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
+      "choice": "Cannot determine — upperside not visible"
     },
     {
       "question": "Is the male distinctly blue above, with the border widening from ~2.0 mm at the tornus to ~3.0 mm at the apex?",
@@ -2323,12 +2323,12 @@
       "choice": "No — basal cell spot present on FW underside"
     },
     {
-      "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
-      "choice": "No — Malay Peninsula specimen"
+      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
+      "choice": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded"
     },
     {
-      "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
-      "choice": "Cannot determine — upperside not visible"
+      "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
+      "choice": "No — Malay Peninsula specimen"
     },
     {
       "question": "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?",
@@ -2337,6 +2337,10 @@
     {
       "question": "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?",
       "choice": "Yes — white cilia spot near the tornus + weak tooth present; postdiscal spots less rounded (more angular), similar to A. norda"
+    },
+    {
+      "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
+      "choice": "Cannot determine — upperside not visible"
     },
     {
       "question": "What is the male's overall upperside colour?",
@@ -2415,16 +2419,20 @@
       "choice": "No — basal cell spot present on FW underside"
     },
     {
+      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
+      "choice": "No — no white patch on HW cilia"
+    },
+    {
       "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
       "choice": "No — Malay Peninsula specimen"
     },
     {
-      "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
-      "choice": "Cannot determine — upperside not visible"
-    },
-    {
       "question": "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?",
       "choice": "Yes — HW postdiscal series dislocated at vein 2; smaller species; male dark violet-blue"
+    },
+    {
+      "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
+      "choice": "Cannot determine — upperside not visible"
     },
     {
       "question": "What is the male's overall upperside colour?",
@@ -2433,10 +2441,6 @@
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
-    },
-    {
-      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch on HW cilia"
     }
   ],
   "Arhopala amphimuta amphimuta": [
@@ -2493,12 +2497,12 @@
       "choice": "No — basal cell spot present on FW underside"
     },
     {
-      "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
-      "choice": "No — Malay Peninsula specimen"
+      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
+      "choice": "No — no white patch on HW cilia"
     },
     {
-      "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
-      "choice": "Cannot determine — upperside not visible"
+      "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
+      "choice": "No — Malay Peninsula specimen"
     },
     {
       "question": "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?",
@@ -2509,15 +2513,19 @@
       "choice": "Yes — white cilia spot near the tornus + weak tooth present; postdiscal spots more rounded, similar to A. amphimuta/A. major"
     },
     {
+      "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
+      "choice": "Cannot determine — upperside not visible"
+    },
+    {
       "question": "Is the male a warm violet-purple (with a reddish hue rather than blue), and is the FW postdiscal spot in space 3 an oblique oval?",
       "choice": "Cannot determine — upperside not visible"
     },
     {
-      "question": "What is the male's overall upperside colour?",
-      "choice": "Cannot determine — upperside not visible"
+      "question": "What is the forewing length, and are the hindwing cilia prolonged into a short tooth at vein 2?",
+      "choice": "Larger (FW ~20–23 mm); HW cilia often form a short tooth at vein 2"
     },
     {
-      "question": "Is the male's black border broad, 1.5 mm or wider?",
+      "question": "What is the male's overall upperside colour?",
       "choice": "Cannot determine — upperside not visible"
     },
     {
@@ -2579,12 +2587,12 @@
       "choice": "No — basal cell spot present on FW underside"
     },
     {
-      "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
-      "choice": "No — Malay Peninsula specimen"
+      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
+      "choice": "No — no white patch on HW cilia"
     },
     {
-      "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
-      "choice": "Cannot determine — upperside not visible"
+      "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
+      "choice": "No — Malay Peninsula specimen"
     },
     {
       "question": "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?",
@@ -2593,6 +2601,10 @@
     {
       "question": "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?",
       "choice": "No — no white cilia spot or tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)"
+    },
+    {
+      "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
+      "choice": "Cannot determine — upperside not visible"
     },
     {
       "question": "Is the male distinctly blue above, with the border widening from ~2.0 mm at the tornus to ~3.0 mm at the apex?",
@@ -2665,12 +2677,12 @@
       "choice": "No — basal cell spot present on FW underside"
     },
     {
-      "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
-      "choice": "Yes — Bornean specimen"
-    },
-    {
       "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
       "choice": "No — no white patch on HW cilia"
+    },
+    {
+      "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
+      "choice": "Yes — Bornean specimen"
     },
     {
       "question": "Is the specimen large (FW approximately 21–25 mm), or does the female have thick black borders with darker venation?",
@@ -2739,12 +2751,12 @@
       "choice": "No — basal cell spot present on FW underside"
     },
     {
-      "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
-      "choice": "Yes — Bornean specimen"
-    },
-    {
       "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
       "choice": "No — no white patch on HW cilia"
+    },
+    {
+      "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
+      "choice": "Yes — Bornean specimen"
     },
     {
       "question": "Is the specimen large (FW approximately 21–25 mm), or does the female have thick black borders with darker venation?",

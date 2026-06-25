@@ -2402,7 +2402,12 @@
       "taxon_id": null,
       "name": "Arhopala norda",
       "common_name": "",
-      "note": "Tailless. Distinguished from [A. major](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429756&preferred_place_id=6734) by the small white patch on the HW cilia just above the tornal lobe, and by less rounded (more angular) postdiscal spots on the underside."
+      "note": "Tailless. Distinguished from [A. major](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429756&preferred_place_id=6734) by the small white patch on the HW cilia just above the tornal lobe, and by less rounded (more angular) postdiscal spots on the underside.",
+      "features": {
+        "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes — white cilia spot near the tornus + weak tooth present; postdiscal spots less rounded (more angular), similar to A. norda",
+        "Is the specimen from Borneo (not the Malay Peninsula)?": "No — Malay Peninsula specimen",
+        "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2"
+      }
     },
     "r_major_major": {
       "type": "result",
@@ -2414,8 +2419,7 @@
       "features": {
         "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?": "No — border regular ~0.5 mm",
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
-        "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes — white cilia spot near the tornus + weak tooth present; postdiscal spots more rounded, similar to A. amphimuta/A. major",
-        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Cannot determine — duplicate of the cilia-spot/tooth question above; A. major does have the spot (canonical path answer is an artifact of routing to A. norda)"
+        "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes — white cilia spot near the tornus + weak tooth present; postdiscal spots more rounded, similar to A. amphimuta/A. major"
       }
     },
     "r_stubbsi": {
@@ -2428,8 +2432,7 @@
       "features": {
         "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?": "No — border regular ~0.5 mm",
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
-        "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "No — no white cilia spot or tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)",
-        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Cannot determine — duplicate of the cilia-spot/tooth question above; A. stubbsi correctly lacks the spot, already established there"
+        "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "No — no white cilia spot or tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)"
       }
     },
     "r_moolaiana_yajuna": {
@@ -2441,7 +2444,7 @@
       "note": "Tailless. Male: bright shining violet-blue with a thread-like black border; FW 18–22 mm. Female: blue colour reaches the HW termen or very nearly so — black border is extremely narrow or absent at the termen (diagnostic; unique in the amphimuta group). Underside markings very similar to [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734). HW postdiscal band only partially dislocated at vein 2. Range: Malay Peninsula and south Myanmar. (Feature Scoring: Q102 = 'No — HW band not strongly dislocated at vein 2'; the key tree reaches this species via Q101 'Yes — border thread-like' as a routing shortcut, bypassing Q102.)",
       "features": {
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
-        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Cannot determine — duplicate of the cilia-spot/tooth question below; A. moolaiana does have the spot (already established there, confirmed by field photo)"
+        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded"
       }
     },
     "r_alica": {
@@ -2473,7 +2476,7 @@
       "features": {
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
         "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes — white cilia spot near the tornus + weak tooth present; postdiscal spots more rounded, similar to A. amphimuta/A. major",
-        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Cannot determine — duplicate of the cilia-spot/tooth question above; A. amphimuta does have the spot (canonical path answer is an artifact of routing to A. norda)"
+        "What is the forewing length, and are the hindwing cilia prolonged into a short tooth at vein 2?": "Larger (FW ~20–23 mm); HW cilia often form a short tooth at vein 2"
       }
     },
     "r_zylda_elioti": {
@@ -2486,7 +2489,7 @@
       "features": {
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
         "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "No — no white cilia spot or tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)",
-        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Cannot determine — duplicate of the cilia-spot/tooth question above; A. zylda correctly lacks the spot, already established there"
+        "What is the forewing length, and are the hindwing cilia prolonged into a short tooth at vein 2?": "Smaller (FW ~16–17 mm); HW cilia evenly rounded, no tooth at vein 2"
       }
     },
     "r_dajagaka": {
