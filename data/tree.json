@@ -616,7 +616,10 @@
       "type": "question",
       "id": "q_tailless_inornata",
       "question": "Does the hindwing have a very rounded tornus, and are tornal green scales absent?",
-      "question_link": { "text": "very rounded tornus, and are tornal green scales absent", "href": "guide.html#hw-tornus-rounded" },
+      "question_link": {
+        "text": "very rounded tornus, and are tornal green scales absent",
+        "href": "guide.html#hw-tornus-rounded"
+      },
       "hint": "The inornata group has a distinctively rounded hindwing tornus (anal angle). Unlike many other tailless Arhopala, it lacks metallic green or brassy tornal scales.",
       "choices": [
         {
@@ -3014,7 +3017,10 @@
       "taxon_id": null,
       "name": "Arhopala anarte",
       "common_name": "",
-      "note": "Tailed. One of the most beautiful and largest species in the genus. Immediately recognized by the central spot in FW underside space 11 (no other camdeo subgroup member has this). Male: shining pale silvery blue overlaid with violet toward the margins. Camdeo subgroup."
+      "note": "Tailed. One of the most beautiful and largest species in the genus. Immediately recognized by the central spot in FW underside space 11 (no other camdeo subgroup member has this). Male: shining pale silvery blue overlaid with violet toward the margins. Camdeo subgroup.",
+      "features": {
+        "Is the forewing postdiscal band incomplete, ending at or before vein 7?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+      }
     },
     "r_dispar_pendleburyi": {
       "type": "result",
@@ -3022,7 +3028,10 @@
       "taxon_id": null,
       "name": "Arhopala dispar pendleburyi",
       "common_name": "",
-      "note": "Tailed. Long tail ~4–6 mm. Distinctive for its extensively whitened underside ground colour (diagnostic). Male: pale blue with a thread-like border; FW cell-end also whitened. Camdeo subgroup."
+      "note": "Tailed. Long tail ~4–6 mm. Distinctive for its extensively whitened underside ground colour (diagnostic). Male: pale blue with a thread-like border; FW cell-end also whitened. Camdeo subgroup.",
+      "features": {
+        "Is the forewing postdiscal band incomplete, ending at or before vein 7?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+      }
     },
     "r_belphoebe_cowani": {
       "type": "result",
