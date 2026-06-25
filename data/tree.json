@@ -3133,7 +3133,8 @@
       "common_name": "",
       "note": "Moderately large, tailed species (exact tail length not recorded in key). Underside: crimson-brown with markings outlined by white striae; spot always present at base of HW space 6; central and outer postdiscal spots in space 7 conjoined at their upper ends. Male: shining royal blue with narrow black borders. Myrzala subgroup.",
       "features": {
-        "Is the specimen tailed?": "Cannot determine"
+        "Is the specimen tailed?": "Cannot determine",
+        "Is the forewing postdiscal band incomplete, ending at or before vein 7?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
       }
     },
     "r_myrzalina": {
@@ -3154,7 +3155,10 @@
       "taxon_id": null,
       "name": "Arhopala bazaloides bazaloides",
       "common_name": "",
-      "note": "Tailed. Underside: purple-brown with markings outlined by white striae; extra spot in mid-space 8 on HW underside (diagnostic for subgroup); NO spot at base of HW space 6 (unlike myrzala subgroup). Male: dark violet-blue with regular 2.0 mm black borders. Bazaloides subgroup."
+      "note": "Tailed. Underside: purple-brown with markings outlined by white striae; extra spot in mid-space 8 on HW underside (diagnostic for subgroup); NO spot at base of HW space 6 (unlike myrzala subgroup). Male: dark violet-blue with regular 2.0 mm black borders. Bazaloides subgroup.",
+      "features": {
+        "Is the forewing postdiscal band incomplete, ending at or before vein 7?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+      }
     },
     "q_centaurus_amantes": {
       "type": "question",
