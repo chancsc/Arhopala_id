@@ -339,11 +339,25 @@ function getDisplayQuestionsPure(answers, scores, featureMatrix, treeNodes, ques
   if (everAnswered) for (const q of everAnswered) allQSet.add(q);
   const allQ = [...allQSet];
 
-  // Sort helper: underside morphology before upperside, then by filtered coverage
+  // Questions explicitly flagged "deprioritize" in tree.json (e.g. the FW
+  // space-1b dark-patch check) are usually unanswerable from a field photo, yet
+  // can carry high coverage. Treat them like upperside questions in the sort so
+  // they sink below the readily-visible underside characters instead of leading.
+  const deprioritized = new Set();
+  if (treeNodes) {
+    for (const node of Object.values(treeNodes)) {
+      if (node.type === 'question' && node.deprioritize && node.question)
+        deprioritized.add(node.question);
+    }
+  }
+
+  // Sort helper: readily-visible underside morphology first, then hard-to-assess
+  // characters (upperside or deprioritized questions), then by filtered coverage.
+  const hardToAssess = q => /upperside/i.test(q) || deprioritized.has(q);
   const newQSort = (a, b) => {
-    const aUpper = /upperside/i.test(a);
-    const bUpper = /upperside/i.test(b);
-    if (aUpper !== bUpper) return aUpper ? 1 : -1;
+    const aHard = hardToAssess(a);
+    const bHard = hardToAssess(b);
+    if (aHard !== bHard) return aHard ? 1 : -1;
     return (filteredCov.get(b) || 0) - (filteredCov.get(a) || 0);
   };
 

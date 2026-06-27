@@ -141,6 +141,7 @@
     "q_tailed_moderate_camdeo": {
       "type": "question",
       "id": "q_tailed_moderate_camdeo",
+      "deprioritize": true,
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "hint": "A small number of camdeo subgroup species have a moderate or short tail rather than the long (≥5 mm) tail typical of most camdeo members: [A. hellada ozana](https://www.inaturalist.org/observations?verifiable=true&taxon_id=980542&preferred_place_id=6734) (~2.5 mm) and [A. varro selama](https://www.inaturalist.org/search?q=Arhopala+varro) (~1.5 mm). The camdeo group is identified by a restricted dark patch in FW underside space 1b with a clearly defined pale bordering line. In field photos this area is often hidden under the hindwing — if FW space 1b is not clearly visible, select Cannot determine; the key will continue without this character.",
       "choices": [
@@ -894,6 +895,7 @@
     "q_tailless_camdeo": {
       "type": "question",
       "id": "q_tailless_camdeo",
+      "deprioritize": true,
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "hint": "A small number of camdeo group species are tailless ([A. belphoebe cowani](https://www.inaturalist.org/search?q=Arhopala+belphoebe), [A. myrzalina](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1564116&preferred_place_id=6734)). The camdeo group is identified by a restricted dark patch in FW underside space 1b with a clearly defined pale bordering line. In field photos this area is often hidden under the hindwing — if FW space 1b is not clearly visible, select Cannot determine; the key will continue without this character.",
       "choices": [
@@ -4379,6 +4381,7 @@
     "q_long_tail_echelon_check": {
       "type": "question",
       "id": "q_long_tail_echelon_check",
+      "deprioritize": true,
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "hint": "For long-tailed species (tail ≥5 mm) with HW spots 5, 6, and 7 in echelon: [A. aedias](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498179&preferred_place_id=6734) has NO dark area under the forewing cell (characteristic of the aedias group). [A. opalina](https://www.inaturalist.org/observations?verifiable=true&taxon_id=994269&preferred_place_id=6734) has a restricted dark patch in FW underside space 1b bounded by a clearly defined pale bordering line — the same camdeo-group feature visible in shorter-tailed camdeo species.",
       "choices": [
