@@ -101,6 +101,11 @@ function getCdLabel(nodes, questionText) {
 function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
   if (!canonicalAnswers || canonicalAnswers.size === 0) return null;
 
+  // Result node id(s) for this species — used to detect a terminal direct exit.
+  const targetResultIds = new Set();
+  for (const [id, node] of Object.entries(treeNodes))
+    if (node && node.type === 'result' && node.name === resultName) targetResultIds.add(id);
+
   // Build question → choices lookup so isSimCdQuestion can inspect CD choice labels
   const qChoicesMap = new Map();
   for (const node of Object.values(treeNodes)) {
@@ -207,6 +212,22 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
 
     answers.set(nextQ, nextAns);
     if (!orphanNoDisplay.has(nextQ)) simPath.push({ question: nextQ, choice: nextAns });
+
+    // Terminal direct exit: when the species' own (real) answer to this question
+    // routes straight to its result node in the tree, it is definitively
+    // identified — stop here instead of continuing to ask confirmatory scoring
+    // questions (which would extend the displayed path past the actual ID point,
+    // e.g. A. agaba's paler-subapical-area question → r_agaba).
+    if (canonicalAnswers.get(nextQ) === nextAns) {
+      let hitTargetResult = false;
+      for (const node of Object.values(treeNodes)) {
+        if (node.type === 'question' && node.question === nextQ) {
+          const ch = (node.choices || []).find(c => c.label === nextAns);
+          if (ch && targetResultIds.has(ch.next)) { hitTargetResult = true; break; }
+        }
+      }
+      if (hitTargetResult) break;
+    }
 
     // Stop once species is uniquely #1 by at least 2 points, all sim-CD questions
     // answered, and no more of the species' own canonical features remain visible

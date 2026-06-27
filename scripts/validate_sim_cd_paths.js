@@ -89,6 +89,11 @@ function getCdLabel(nodes, questionText) {
 function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
   if (!canonicalAnswers || canonicalAnswers.size === 0) return null;
 
+  // Result node id(s) for this species — used to detect a terminal direct exit.
+  const targetResultIds = new Set();
+  for (const [id, node] of Object.entries(treeNodes))
+    if (node && node.type === 'result' && node.name === resultName) targetResultIds.add(id);
+
   const qChoicesMap = new Map();
   for (const node of Object.values(treeNodes)) {
     if (node.type === 'question' && !qChoicesMap.has(node.question))
@@ -173,6 +178,20 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
 
     answers.set(nextQ, nextAns);
     if (!orphanNoDisplay.has(nextQ)) simPath.push({ question: nextQ, choice: nextAns });
+
+    // Terminal direct exit: when the species' own (real) answer to this question
+    // routes straight to its result node, it is definitively identified — stop.
+    // Must stay in sync with compute_sim_cd_paths.js.
+    if (canonicalAnswers.get(nextQ) === nextAns) {
+      let hitTargetResult = false;
+      for (const node of Object.values(treeNodes)) {
+        if (node.type === 'question' && node.question === nextQ) {
+          const ch = (node.choices || []).find(c => c.label === nextAns);
+          if (ch && targetResultIds.has(ch.next)) { hitTargetResult = true; break; }
+        }
+      }
+      if (hitTargetResult) break;
+    }
 
     const newScores = scoreAllPure(answers, matrix);
     if (newScores.length > 0 && newScores[0].name === resultName &&
