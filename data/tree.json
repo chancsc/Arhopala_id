@@ -9,7 +9,7 @@
       "choices": [
         {
           "label": "Yes — hindwing is tailed",
-          "next": "q_tailed_cell_silver"
+          "next": "q_aurea_brown"
         },
         {
           "label": "No — hindwing is tailless",
@@ -2729,7 +2729,7 @@
         },
         {
           "label": "No — underside hair-brown (no purple glaze)",
-          "next": "q_aurea_brown"
+          "next": "q_aurea_brown2"
         }
       ]
     },
@@ -2782,7 +2782,7 @@
         },
         {
           "label": "No — complete underside markings",
-          "next": "q_aurea_brown2"
+          "next": "q_tailed_cell_silver"
         }
       ]
     },
