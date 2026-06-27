@@ -917,7 +917,7 @@
       "type": "question",
       "id": "q_tailless_band_early",
       "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "hint": "[A. belphoebe cowani](https://www.inaturalist.org/search?q=Arhopala+belphoebe) is the only tailless species with an incomplete FW postdiscal band — decisive on its own, no further questions needed. All other tailless species have a complete (or only partially dislocated) band.",
+      "hint": "[A. belphoebe cowani](https://www.inaturalist.org/search?q=Arhopala+belphoebe) is the only tailless species with an incomplete FW postdiscal band — decisive on its own, no further questions needed. All other tailless species have a complete (or only partially dislocated) band. Note: A. belphoebe cowani is very rarely encountered — it currently has no research-grade sightings on iNaturalist — so answer Yes only if the incomplete band (ending at vein 7, no spot 9) is clearly visible.",
       "choices": [
         {
           "label": "Yes — FW postdiscal band incomplete, ending at vein 7",
@@ -2897,7 +2897,7 @@
       "type": "question",
       "id": "q_camdeo_c3",
       "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "hint": "[A. belphoebe cowani](https://www.inaturalist.org/search?q=Arhopala+belphoebe) and [A. johoreana johoreana](https://www.inaturalist.org/search?q=Arhopala+johoreana) both have an incomplete FW postdiscal band. All other camdeo subgroup members have a complete (or nearly complete) band.",
+      "hint": "[A. belphoebe cowani](https://www.inaturalist.org/search?q=Arhopala+belphoebe) and [A. johoreana johoreana](https://www.inaturalist.org/search?q=Arhopala+johoreana) both have an incomplete FW postdiscal band. All other camdeo subgroup members have a complete (or nearly complete) band. Note: both A. belphoebe cowani and A. johoreana johoreana are very rarely encountered — neither currently has any research-grade sightings on iNaturalist — so answer Yes only if the incomplete band (ending at vein 7, no spot 9) is clearly visible.",
       "choices": [
         {
           "label": "Yes — FW postdiscal band incomplete, ending at vein 7",
