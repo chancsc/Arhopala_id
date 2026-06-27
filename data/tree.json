@@ -69,6 +69,22 @@
         },
         {
           "label": "No — no whitish streak",
+          "next": "q_agaba_subapical"
+        }
+      ]
+    },
+    "q_agaba_subapical": {
+      "type": "question",
+      "id": "q_agaba_subapical",
+      "question": "Do both the forewing and hindwing have a distinctly paler subapical area, irrorated (sprinkled) with whitish scales?",
+      "hint": "[A. agaba](https://www.inaturalist.org/search?q=Arhopala+agaba) (agaba subgroup of the cleander group) is uniquely identified on the underside by a paler subapical area on BOTH wings — the region just before the apex is sprinkled (irrorated) with whitish scales, appearing noticeably paler than the rest of the wing. No other species in the region shows this on both wings, so it is decisive on its own. If only one wing looks paler, or the paling is not a whitish irroration, answer No and continue with the key.",
+      "choices": [
+        {
+          "label": "Yes — both FW and HW have a distinctly paler, whitish-irrorated subapical area (A. agaba)",
+          "next": "r_agaba"
+        },
+        {
+          "label": "No — subapical area not distinctly paler on both wings",
           "next": "q_alesia_ground_colour"
         }
       ]
