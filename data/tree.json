@@ -916,7 +916,7 @@
     "q_tailless_band_early": {
       "type": "question",
       "id": "q_tailless_band_early",
-      "question": "Is the forewing postdiscal band incomplete, ending at or before vein 7?",
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
       "hint": "[A. belphoebe cowani](https://www.inaturalist.org/search?q=Arhopala+belphoebe) is the only tailless species with an incomplete FW postdiscal band — decisive on its own, no further questions needed. All other tailless species have a complete (or only partially dislocated) band.",
       "choices": [
         {
@@ -1554,7 +1554,7 @@
         "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?": "No — no dark patch present in FW space 1b",
         "What does the hindwing underside look like?": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8",
         "Is the forewing postdiscal spot in space 4 shifted distad (outward, out of line with spots 5 and 6)?": "Yes — FW spot 4 shifted distad, out of line with spots 5 and 6",
-        "Is the forewing postdiscal band incomplete, ending at or before vein 7?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)",
+        "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)",
         "Is there a central spot in forewing underside space 11? (camdeo group)": "No — no spot in FW space 11",
         "Is the underside ground colour extensively whitened?": "No — underside ground colour normal (not whitened)",
         "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?": "No — HW spot 6 not smaller than spot 7; male pale greyish-blue with violet tinge"
@@ -2896,7 +2896,7 @@
     "q_camdeo_c3": {
       "type": "question",
       "id": "q_camdeo_c3",
-      "question": "Is the forewing postdiscal band incomplete, ending at or before vein 7?",
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
       "hint": "[A. belphoebe cowani](https://www.inaturalist.org/search?q=Arhopala+belphoebe) and [A. johoreana johoreana](https://www.inaturalist.org/search?q=Arhopala+johoreana) both have an incomplete FW postdiscal band. All other camdeo subgroup members have a complete (or nearly complete) band.",
       "choices": [
         {
@@ -3030,7 +3030,7 @@
       "common_name": "",
       "note": "Tailed. One of the most beautiful and largest species in the genus. Immediately recognized by the central spot in FW underside space 11 (no other camdeo subgroup member has this). Male: shining pale silvery blue overlaid with violet toward the margins. Camdeo subgroup.",
       "features": {
-        "Is the forewing postdiscal band incomplete, ending at or before vein 7?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+        "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
       }
     },
     "r_dispar_pendleburyi": {
@@ -3041,7 +3041,7 @@
       "common_name": "",
       "note": "Tailed. Long tail ~4–6 mm. Distinctive for its extensively whitened underside ground colour (diagnostic). Male: pale blue with a thread-like border; FW cell-end also whitened. Camdeo subgroup.",
       "features": {
-        "Is the forewing postdiscal band incomplete, ending at or before vein 7?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+        "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
       }
     },
     "r_belphoebe_cowani": {
@@ -3146,7 +3146,7 @@
       "note": "Moderately large, tailed species (exact tail length not recorded in key). Underside: crimson-brown with markings outlined by white striae; spot always present at base of HW space 6; central and outer postdiscal spots in space 7 conjoined at their upper ends. Male: shining royal blue with narrow black borders. Myrzala subgroup.",
       "features": {
         "Is the specimen tailed?": "Cannot determine",
-        "Is the forewing postdiscal band incomplete, ending at or before vein 7?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+        "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
       }
     },
     "r_myrzalina": {
@@ -3169,7 +3169,7 @@
       "common_name": "",
       "note": "Tailed. Underside: purple-brown with markings outlined by white striae; extra spot in mid-space 8 on HW underside (diagnostic for subgroup); NO spot at base of HW space 6 (unlike myrzala subgroup). Male: dark violet-blue with regular 2.0 mm black borders. Bazaloides subgroup.",
       "features": {
-        "Is the forewing postdiscal band incomplete, ending at or before vein 7?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+        "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
       }
     },
     "q_centaurus_amantes": {
