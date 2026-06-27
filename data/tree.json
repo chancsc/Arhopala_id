@@ -404,14 +404,14 @@
       "type": "question",
       "id": "q_tailed_cleander",
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "hint": "The cleander group has a projecting tornal lobe (bulge at the anal angle of the hindwing) — its size and prominence vary by subgroup, from large and conspicuous (cleander subgroup) to smaller and less conspicuous (alea and agaba subgroups). The next question narrows down the subgroup.",
+      "hint": "First, just decide whether a tornal lobe is present at all: the cleander group has a projecting tornal lobe — a bulge at the anal angle of the hindwing. Count ANY bulge as present, even a small one; answer No only if the anal angle is plain or evenly rounded with no bulge. How large the lobe is (which separates the cleander and alea subgroups) is asked on the next screen — don't try to judge size here.",
       "choices": [
         {
-          "label": "Yes — tornal lobe present and projecting (size and prominence vary by subgroup — see next question)",
+          "label": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next",
           "next": "q_cleander_sub"
         },
         {
-          "label": "No — tornal lobe absent or only weakly developed",
+          "label": "No — anal angle plain or rounded; no tornal lobe (bulge) at all",
           "next": "q_tailed_agrata"
         }
       ]
@@ -419,15 +419,15 @@
     "q_cleander_sub": {
       "type": "question",
       "id": "q_cleander_sub",
-      "question": "Which of these best matches the specimen's size, tornal lobe, and hindwing markings?",
-      "hint": "Cleander subgroup: tornal lobe large and clearly visible; underside plain hair brown; FW typically 22–26 mm (athada 22–23, cleander 23–24, silhetensis 23–26 mm). Alea subgroup: tornal lobe present but smaller and less prominent; FW typically 17–21 mm (phanda 17–19, selta/aroa/evansi 18–21, aurelia 19–20 mm); aurelia and evansi have a distinctive slatey purple or pinkish underside glaze.",
+      "question": "How large is the tornal lobe (and what size is the specimen)?",
+      "hint": "You have already confirmed a tornal lobe is present; now judge its size, backed up by forewing length and underside colour. Cleander subgroup: lobe large and conspicuous; underside plain hair brown; FW typically 22–26 mm (athada 22–23, cleander 23–24, silhetensis 23–26 mm). Alea subgroup: lobe small but clearly present; FW typically 17–21 mm (phanda 17–19, selta/aroa/evansi 18–21, aurelia 19–20 mm); aurelia and evansi have a distinctive slatey purple or pinkish underside glaze.",
       "choices": [
         {
-          "label": "Tornal lobe large and conspicuously projecting; underside plain hair brown; FW typically 22–26 mm (cleander subgroup)",
+          "label": "Large and conspicuous lobe; underside plain hair brown; FW typically 22–26 mm (cleander subgroup)",
           "next": "g_cleander"
         },
         {
-          "label": "Tornal lobe smaller and less prominent; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)",
+          "label": "Small but clearly present lobe; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)",
           "next": "g_cleander_alea"
         }
       ]
@@ -3771,7 +3771,7 @@
       "common_name": "Tailed Disc Oakblue",
       "note": "Underside ground colour uniform hair brown; markings less defined and paler than the closely related [A. lurida](https://www.inaturalist.org/observations?verifiable=true&taxon_id=475784&preferred_place_id=6734) (whose markings are darker and more sharply defined), contrasting feebly/weakly with the ground colour. HW postdiscal spot 6 positioned roughly midway between spot 5 and the end-cell bar; spots 5, 6 and 7 in echelon, their centres broadly in line. Filamentous tail at vein 2, ~2.5 mm — distinguishing it from the tailless [A. epimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429757&preferred_place_id=6734). FW ~22.0 mm. Male FW upperside: thread-width black border; discal patch large and circular, extending widely into the cell and space 1b.",
       "features": {
-        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — tornal lobe absent or only weakly developed"
+        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
       }
     },
     "r_lurida": {
@@ -3782,7 +3782,7 @@
       "common_name": "",
       "note": "HW tail ~2.5 mm. Male FW upperside: border slightly expanding toward apex; discal patch smaller than in [A. atosia](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498181&preferred_place_id=6734), almost entirely confined to bases of spaces 2 and 3. Underside markings darker and more clearly defined than [A. atosia](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498181&preferred_place_id=6734).",
       "features": {
-        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — tornal lobe absent or only weakly developed"
+        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
       }
     },
     "r_epimuta_tailed_unclear": {
@@ -3793,7 +3793,7 @@
       "common_name": "Cannot determine to species",
       "note": "⚠ Neither underside nor upperside visible. Both candidates have HW tail ~2.5 mm.\n\nPrimary character (underside): [A. atosia malayana](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498181&preferred_place_id=6734) — markings contrast feebly/weakly with ground colour. [A. lurida](https://www.inaturalist.org/observations?verifiable=true&taxon_id=475784&preferred_place_id=6734) — markings darker and more clearly defined.\n\nConfirmatory character (upperside, male): [A. atosia](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498181&preferred_place_id=6734) — FW discal patch large and circular, extending widely into cell and space 1b; border a thread. [A. lurida](https://www.inaturalist.org/observations?verifiable=true&taxon_id=475784&preferred_place_id=6734) — patch smaller, almost confined to bases of spaces 2–3; border slightly expanding toward apex.\n\nCheck the underside contrast first; inspect upperside if still uncertain.",
       "features": {
-        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — tornal lobe absent or only weakly developed"
+        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
       },
       "covers_results": [
         "r_atosia_malayana",

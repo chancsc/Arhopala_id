@@ -66,7 +66,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -148,7 +148,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -230,7 +230,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -308,7 +308,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -1412,7 +1412,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -2118,7 +2118,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -2212,7 +2212,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -2306,7 +2306,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -2400,7 +2400,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -2494,7 +2494,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -2572,7 +2572,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -2978,15 +2978,15 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — tornal lobe present and projecting (size and prominence vary by subgroup — see next question)"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "Which of these best matches the specimen's size, tornal lobe, and hindwing markings?",
-      "choice": "Tornal lobe large and conspicuously projecting; underside plain hair brown; FW typically 22–26 mm (cleander subgroup)"
+      "question": "How large is the tornal lobe (and what size is the specimen)?",
+      "choice": "Large and conspicuous lobe; underside plain hair brown; FW typically 22–26 mm (cleander subgroup)"
     },
     {
       "question": "Is the forewing postdiscal band NOT dislocated at vein 4 — straight through or only slightly sinuous?",
@@ -3060,15 +3060,15 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — tornal lobe present and projecting (size and prominence vary by subgroup — see next question)"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "Which of these best matches the specimen's size, tornal lobe, and hindwing markings?",
-      "choice": "Tornal lobe large and conspicuously projecting; underside plain hair brown; FW typically 22–26 mm (cleander subgroup)"
+      "question": "How large is the tornal lobe (and what size is the specimen)?",
+      "choice": "Large and conspicuous lobe; underside plain hair brown; FW typically 22–26 mm (cleander subgroup)"
     },
     {
       "question": "Is the forewing postdiscal spot in space 9 as wide as or wider than the spot in space 6?",
@@ -3142,15 +3142,15 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — tornal lobe present and projecting (size and prominence vary by subgroup — see next question)"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "Which of these best matches the specimen's size, tornal lobe, and hindwing markings?",
-      "choice": "Tornal lobe large and conspicuously projecting; underside plain hair brown; FW typically 22–26 mm (cleander subgroup)"
+      "question": "How large is the tornal lobe (and what size is the specimen)?",
+      "choice": "Large and conspicuous lobe; underside plain hair brown; FW typically 22–26 mm (cleander subgroup)"
     },
     {
       "question": "Is the forewing postdiscal spot in space 9 as wide as or wider than the spot in space 6?",
@@ -3224,7 +3224,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — tornal lobe present and projecting (size and prominence vary by subgroup — see next question)"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -3239,8 +3239,8 @@
       "choice": "No"
     },
     {
-      "question": "Which of these best matches the specimen's size, tornal lobe, and hindwing markings?",
-      "choice": "Tornal lobe large and conspicuously projecting; underside plain hair brown; FW typically 22–26 mm (cleander subgroup)"
+      "question": "How large is the tornal lobe (and what size is the specimen)?",
+      "choice": "Large and conspicuous lobe; underside plain hair brown; FW typically 22–26 mm (cleander subgroup)"
     },
     {
       "question": "Is the forewing postdiscal band NOT dislocated at vein 4 — straight through or only slightly sinuous?",
@@ -3322,15 +3322,15 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — tornal lobe present and projecting (size and prominence vary by subgroup — see next question)"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "Which of these best matches the specimen's size, tornal lobe, and hindwing markings?",
-      "choice": "Tornal lobe smaller and less prominent; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)"
+      "question": "How large is the tornal lobe (and what size is the specimen)?",
+      "choice": "Small but clearly present lobe; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)"
     },
     {
       "question": "Is the underside pale slatey purple with conspicuous dark markings outlined by nearly-white striae?",
@@ -3404,15 +3404,15 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — tornal lobe present and projecting (size and prominence vary by subgroup — see next question)"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "Which of these best matches the specimen's size, tornal lobe, and hindwing markings?",
-      "choice": "Tornal lobe smaller and less prominent; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)"
+      "question": "How large is the tornal lobe (and what size is the specimen)?",
+      "choice": "Small but clearly present lobe; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)"
     },
     {
       "question": "Is the underside pale slatey purple with conspicuous dark markings outlined by nearly-white striae?",
@@ -3490,15 +3490,15 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — tornal lobe present and projecting (size and prominence vary by subgroup — see next question)"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "Which of these best matches the specimen's size, tornal lobe, and hindwing markings?",
-      "choice": "Tornal lobe smaller and less prominent; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)"
+      "question": "How large is the tornal lobe (and what size is the specimen)?",
+      "choice": "Small but clearly present lobe; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)"
     },
     {
       "question": "Is the underside pale slatey purple with conspicuous dark markings outlined by nearly-white striae?",
@@ -3580,15 +3580,15 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — tornal lobe present and projecting (size and prominence vary by subgroup — see next question)"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "Which of these best matches the specimen's size, tornal lobe, and hindwing markings?",
-      "choice": "Tornal lobe smaller and less prominent; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)"
+      "question": "How large is the tornal lobe (and what size is the specimen)?",
+      "choice": "Small but clearly present lobe; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)"
     },
     {
       "question": "Is the underside pale slatey purple with conspicuous dark markings outlined by nearly-white striae?",
@@ -3678,15 +3678,15 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — tornal lobe present and projecting (size and prominence vary by subgroup — see next question)"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "Which of these best matches the specimen's size, tornal lobe, and hindwing markings?",
-      "choice": "Tornal lobe smaller and less prominent; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)"
+      "question": "How large is the tornal lobe (and what size is the specimen)?",
+      "choice": "Small but clearly present lobe; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)"
     },
     {
       "question": "Is the underside pale slatey purple with conspicuous dark markings outlined by nearly-white striae?",
@@ -3780,15 +3780,15 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — tornal lobe present and projecting (size and prominence vary by subgroup — see next question)"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "Which of these best matches the specimen's size, tornal lobe, and hindwing markings?",
-      "choice": "Tornal lobe smaller and less prominent; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)"
+      "question": "How large is the tornal lobe (and what size is the specimen)?",
+      "choice": "Small but clearly present lobe; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)"
     },
     {
       "question": "Is the underside pale slatey purple with conspicuous dark markings outlined by nearly-white striae?",
@@ -3882,15 +3882,15 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — tornal lobe present and projecting (size and prominence vary by subgroup — see next question)"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "Which of these best matches the specimen's size, tornal lobe, and hindwing markings?",
-      "choice": "Tornal lobe smaller and less prominent; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)"
+      "question": "How large is the tornal lobe (and what size is the specimen)?",
+      "choice": "Small but clearly present lobe; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)"
     },
     {
       "question": "Is the underside pale slatey purple with conspicuous dark markings outlined by nearly-white striae?",
@@ -3988,15 +3988,15 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — tornal lobe present and projecting (size and prominence vary by subgroup — see next question)"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "Which of these best matches the specimen's size, tornal lobe, and hindwing markings?",
-      "choice": "Tornal lobe smaller and less prominent; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)"
+      "question": "How large is the tornal lobe (and what size is the specimen)?",
+      "choice": "Small but clearly present lobe; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)"
     },
     {
       "question": "Is the underside pale slatey purple with conspicuous dark markings outlined by nearly-white striae?",
@@ -4082,15 +4082,15 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — tornal lobe present and projecting (size and prominence vary by subgroup — see next question)"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "Which of these best matches the specimen's size, tornal lobe, and hindwing markings?",
-      "choice": "Tornal lobe smaller and less prominent; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)"
+      "question": "How large is the tornal lobe (and what size is the specimen)?",
+      "choice": "Small but clearly present lobe; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)"
     },
     {
       "question": "Is the underside pale slatey purple with conspicuous dark markings outlined by nearly-white striae?",
@@ -4218,7 +4218,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -4288,7 +4288,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -4408,7 +4408,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -4498,7 +4498,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -4604,7 +4604,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -4710,7 +4710,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -4812,7 +4812,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -4914,7 +4914,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -5502,7 +5502,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -5588,7 +5588,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -5678,7 +5678,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -5768,7 +5768,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — tornal lobe absent or only weakly developed"
+      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -5850,15 +5850,15 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — tornal lobe present and projecting (size and prominence vary by subgroup — see next question)"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "Which of these best matches the specimen's size, tornal lobe, and hindwing markings?",
-      "choice": "Tornal lobe smaller and less prominent; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)"
+      "question": "How large is the tornal lobe (and what size is the specimen)?",
+      "choice": "Small but clearly present lobe; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)"
     },
     {
       "question": "Is the underside pale slatey purple with conspicuous dark markings outlined by nearly-white striae?",
@@ -5944,15 +5944,15 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — tornal lobe present and projecting (size and prominence vary by subgroup — see next question)"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "Which of these best matches the specimen's size, tornal lobe, and hindwing markings?",
-      "choice": "Tornal lobe smaller and less prominent; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)"
+      "question": "How large is the tornal lobe (and what size is the specimen)?",
+      "choice": "Small but clearly present lobe; FW typically 17–21 mm; some with slatey purple or pinkish underside (alea subgroup)"
     },
     {
       "question": "Is the underside pale slatey purple with conspicuous dark markings outlined by nearly-white striae?",
