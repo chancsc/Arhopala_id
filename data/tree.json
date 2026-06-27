@@ -3573,7 +3573,10 @@
       "taxon_id": null,
       "name": "Arhopala aurelia",
       "common_name": "",
-      "note": "Alea subgroup. Distinctive underside: pale slatey purple with conspicuous dark markings outlined by nearly-white striae. Smaller species (FW < 21 mm); less conspicuous HW tornal lobe."
+      "note": "Alea subgroup. Distinctive underside: pale slatey purple with conspicuous dark markings outlined by nearly-white striae. HW postdiscal spot 6 displaced past midway, touching or overlapping the end-cell bar (spots 5, 6 and 7 widely out of line). Smaller species (FW < 21 mm); less conspicuous HW tornal lobe.",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_evansi": {
       "type": "result",
@@ -3879,9 +3882,9 @@
       "taxon_id": null,
       "name": "Arhopala acta",
       "common_name": "",
-      "note": "HW tail ~3 mm. Spot 6 outer edge outwardly straight. Underside markings very faint. No costal spot in FW space 10. FW apex rounded. Male: blue/violet (not green).",
+      "note": "HW tail ~3 mm. Spot 6 not displaced (in the postdiscal row, level with spot 5). Spot 6 outer edge outwardly straight. Underside markings very faint. No costal spot in FW space 10. FW apex rounded. Male: blue/violet (not green).",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar",
         "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)"
       }

@@ -3309,12 +3309,12 @@
       "choice": "No — underside hair-brown (no purple glaze)"
     },
     {
-      "question": "In which region was this butterfly observed?",
-      "choice": "Peninsular Malaysia or Singapore"
-    },
-    {
       "question": "Are the underside markings incomplete — lacking basal/central cell spots on the forewing and various basal/discal spots on the hindwing, with a narrow postdiscal band?",
       "choice": "No — complete underside markings"
+    },
+    {
+      "question": "In which region was this butterfly observed?",
+      "choice": "Peninsular Malaysia or Singapore"
     }
   ],
   "Arhopala trogon": [
@@ -3657,12 +3657,12 @@
       "choice": "No — underside hair-brown (no purple glaze)"
     },
     {
-      "question": "In which region was this butterfly observed?",
-      "choice": "Borneo (Sabah, Sarawak, Brunei, or Kalimantan)"
-    },
-    {
       "question": "Are the underside markings incomplete — lacking basal/central cell spots on the forewing and various basal/discal spots on the hindwing, with a narrow postdiscal band?",
       "choice": "No — complete underside markings"
+    },
+    {
+      "question": "In which region was this butterfly observed?",
+      "choice": "Borneo (Sabah, Sarawak, Brunei, or Kalimantan)"
     }
   ],
   "Arhopala anarte": [
@@ -4848,7 +4848,7 @@
     },
     {
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
@@ -6003,16 +6003,16 @@
       "choice": "No — HW cell moderate length (eumolphus or oenea group)"
     },
     {
+      "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
+      "choice": "Yes — purplish-brown underside; FW apex with pale violet powder"
+    },
+    {
       "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
       "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
     },
     {
       "question": "How long is the hindwing tail?",
       "choice": "Tail ~3 mm"
-    },
-    {
-      "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
-      "choice": "Yes — purplish-brown underside; FW apex with pale violet powder"
     }
   ],
   "Arhopala acta": [
@@ -6054,7 +6054,7 @@
     },
     {
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
     },
     {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
@@ -6191,20 +6191,20 @@
       "choice": "No — HW cell moderate length (eumolphus or oenea group)"
     },
     {
-      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
-      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
-    },
-    {
-      "question": "How long is the hindwing tail?",
-      "choice": "Tail ~3 mm"
-    },
-    {
       "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
       "choice": "No — hair-brown underside; no violet powder at apex"
     },
     {
       "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
       "choice": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)"
+    },
+    {
+      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
+      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
+    },
+    {
+      "question": "How long is the hindwing tail?",
+      "choice": "Tail ~3 mm"
     },
     {
       "question": "Is the forewing termen evenly curved (rounded apex)?",
@@ -6289,14 +6289,6 @@
       "choice": "No — HW cell moderate length (eumolphus or oenea group)"
     },
     {
-      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
-      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
-    },
-    {
-      "question": "How long is the hindwing tail?",
-      "choice": "Tail ~3 mm"
-    },
-    {
       "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
       "choice": "No — hair-brown underside; no violet powder at apex"
     },
@@ -6311,6 +6303,14 @@
     {
       "question": "How distinct are the underside markings?",
       "choice": "Underside markings very dark and broad"
+    },
+    {
+      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
+      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
+    },
+    {
+      "question": "How long is the hindwing tail?",
+      "choice": "Tail ~3 mm"
     },
     {
       "question": "On the hindwing underside, is postdiscal spot 6 convex or almost straight (not concave) and touching or overlapping the end-cell bar, with no costal spot present in forewing space 10?",
@@ -6395,14 +6395,6 @@
       "choice": "No — HW cell moderate length (eumolphus or oenea group)"
     },
     {
-      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
-      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
-    },
-    {
-      "question": "How long is the hindwing tail?",
-      "choice": "Tail ~3 mm"
-    },
-    {
       "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
       "choice": "No — hair-brown underside; no violet powder at apex"
     },
@@ -6417,6 +6409,14 @@
     {
       "question": "How distinct are the underside markings?",
       "choice": "Underside markings standard contrast"
+    },
+    {
+      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
+      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
+    },
+    {
+      "question": "How long is the hindwing tail?",
+      "choice": "Tail ~3 mm"
     }
   ],
   "Arhopala hellenore siroes": [
@@ -6497,14 +6497,6 @@
       "choice": "No — HW cell moderate length (eumolphus or oenea group)"
     },
     {
-      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
-      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
-    },
-    {
-      "question": "How long is the hindwing tail?",
-      "choice": "Tail ~3 mm"
-    },
-    {
       "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
       "choice": "No — hair-brown underside; no violet powder at apex"
     },
@@ -6515,6 +6507,14 @@
     {
       "question": "Is the forewing termen evenly curved (rounded apex), or straight and slightly concave (acute apex)?",
       "choice": "FW apex acute; termen straight or slightly concave"
+    },
+    {
+      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
+      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
+    },
+    {
+      "question": "How long is the hindwing tail?",
+      "choice": "Tail ~3 mm"
     },
     {
       "question": "Where was this specimen found?",
