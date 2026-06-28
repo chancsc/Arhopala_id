@@ -224,6 +224,7 @@ const GUIDE_LINKS = new Map([
   ['tail located at vein 3', 'guide.html#tail-vein2-vs-vein3'],
   ['very rounded tornus, and are tornal green scales absent', 'guide.html#hw-tornus-rounded'],
   ['cell spots on the forewing underside outlined in greenish silver', 'guide.html#fw-cell-silver'],
+  ['spaces 4 and 5, are the submarginal spots prominently black and wedge-shaped (∧)', 'guide.html#hw-spaces45-wedge'],
 ]);
 
 const MD_LINK_RE = /\[([^\]]+)\]\((https:\/\/[^)]+)\)/g;
