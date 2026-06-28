@@ -192,20 +192,6 @@ body {
   gap: 0.6rem;
 }
 
-.choice-row {
-  display: flex;
-  flex-direction: column;
-}
-
-.choice-guide-link {
-  align-self: flex-start;
-  font-size: 0.75rem;
-  color: var(--primary);
-  text-decoration: none;
-  margin: 0.3rem 0 0 0.4rem;
-}
-.choice-guide-link:hover { text-decoration: underline; }
-
 .choice-btn {
   display: block;
   width: 100%;

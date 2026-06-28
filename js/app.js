@@ -172,21 +172,7 @@ function renderQuestion(node) {
     : '';
 
   const choicesHTML = node.choices
-    .map(c => {
-      const btn = `<button class="choice-btn" data-label="${escapeAttr(c.label)}" data-next="${escapeAttr(c.next)}">${escapeHtml(c.label)}</button>`;
-      // Optional per-choice link to a visual-guide section. Rendered as a
-      // separate element below the button (not inside it) so tapping the link
-      // opens the guide without also selecting the answer. `guide_link` may be
-      // a string href or an { text, href } object.
-      const gl = c.guide_link
-        ? (() => {
-            const href = typeof c.guide_link === 'string' ? c.guide_link : c.guide_link.href;
-            const text = (typeof c.guide_link === 'object' && c.guide_link.text) || 'See visual guide';
-            return `<a class="choice-guide-link" href="${escapeAttr(href)}" target="_blank" rel="noopener">&#128247; ${escapeHtml(text)} →</a>`;
-          })()
-        : '';
-      return `<div class="choice-row">${btn}${gl}</div>`;
-    })
+    .map(c => `<button class="choice-btn" data-label="${escapeAttr(c.label)}" data-next="${escapeAttr(c.next)}">${escapeHtml(c.label)}</button>`)
     .join('');
 
   const qNum = state.questionNumbers && state.questionNumbers.has(node.question)
