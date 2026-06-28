@@ -101,7 +101,11 @@
       "choices": [
         {
           "label": "Yes — spot 6 is displaced above spot 5's level toward the end-cell bar (displacement may be subtle in the epimuta group — any upward shift counts)",
-          "next": "q_epimuta_alitaeus_split"
+          "next": "q_epimuta_alitaeus_split",
+          "guide_link": {
+            "text": "spot 6 displaced upward toward the end-cell bar",
+            "href": "guide.html#spot6-end-cell-bar"
+          }
         },
         {
           "label": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar",
