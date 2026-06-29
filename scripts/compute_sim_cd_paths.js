@@ -106,6 +106,14 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
   for (const [id, node] of Object.entries(treeNodes))
     if (node && node.type === 'result' && node.name === resultName) targetResultIds.add(id);
 
+  // Questions flagged ("hideOrphanInPath") to omit from the displayed sim-CD
+  // path when answered only via the orphan-fallback — avoids showing a default
+  // "No" that can contradict a real answer to a sibling question about the same
+  // character (e.g. the corinda HW-cell-length gate vs the aurea cell question).
+  const hideOrphanQs = new Set();
+  for (const node of Object.values(treeNodes))
+    if (node && node.type === 'question' && node.hideOrphanInPath && node.question) hideOrphanQs.add(node.question);
+
   // Build question → choices lookup so isSimCdQuestion can inspect CD choice labels
   const qChoicesMap = new Map();
   for (const node of Object.values(treeNodes)) {
@@ -204,7 +212,7 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
       if (choices.length >= 2) {
         const noChoice = choices.find(c => /^(No|None)\b/i.test(c.label)) || choices[0];
         nextQ = q; nextAns = noChoice.label;
-        if (!/^(No|None)\b/i.test(noChoice.label)) orphanNoDisplay.add(nextQ);
+        if (!/^(No|None)\b/i.test(noChoice.label) || hideOrphanQs.has(nextQ)) orphanNoDisplay.add(nextQ);
         break;
       }
     }

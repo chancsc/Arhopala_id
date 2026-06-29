@@ -4369,6 +4369,7 @@
     "q_corinda_cell_gate_apex": {
       "type": "question",
       "id": "q_corinda_cell_gate_apex",
+      "hideOrphanInPath": true,
       "question": "Is the hindwing cell longer than half the length of the wing?",
       "question_link": {
         "text": "hindwing cell longer",
