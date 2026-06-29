@@ -297,3 +297,30 @@ which is a real feature only for *A. corinda*).
   **not** change the live Feature Scoring checklist — both overlapping questions are still
   presented there. Deduplicating them in the live flow is a separate, riskier change
   (merging questions can break convergence — see the Q46/Q47 merge attempt).
+
+## A question added only for the key's branching is invisible in Feature Scoring
+
+The two modes consume `tree.json` differently. The **decision-tree key** (`app.js`,
+`key.html`/`species.html`) walks `next` pointers, so a new question node appears the moment
+its branch is reached. **Feature Scoring** (`checklist.js`, `checklist.html`) is score-based:
+a question only shows if it's in some species' **feature matrix** — i.e. on a canonical path
+or registered as a result-node `features` override. So a question spliced onto a branch that
+sits *off* every species' canonical path (e.g. a CD-detour fallback) has **zero Feature
+Scoring coverage and never appears on the checklist** — Feature-Scoring users can't answer
+it. Real case: `q_corinda_tail_check` (Q88), added on the corinda Q77 CD-detour to fix a
+key-only misroute (long-celled aurea-group specimens funneled to *A. corinda* when FW
+space-1b is obscured — `8c8cb43`), was invisible in Feature Scoring.
+
+To make such a character usable in Feature Scoring, **register it as a `features` value on
+the relevant species** (`284943b`: Q88 set on *A. corinda* = "long ~3.5 mm" and *A. aurea /
+borneensis / trogon / stinga* = "short ~2 mm"). Give the species **different** values — a
+distinguishing character helps both sides (mismatches widen the margin), whereas a **shared**
+value dilutes (the reverted Q77-on-aurea-group attempt gave corinda and the aurea group the
+same "Yes" and regressed corinda). Verify with `regen-validate` + full sweep, and
+browser-check the checklist (serve locally, drive `checklist.html` with Playwright at
+`/opt/node22/lib/node_modules/playwright`, Chromium at `/opt/pw-browsers`) to confirm the
+question actually renders and the target still ranks #1.
+
+Corollary: when a user reports a Feature-Scoring problem, reproduce it **in Feature Scoring**,
+not the key — the two can diverge (a species can be misrouted in the key yet rank #1 in
+Feature Scoring, as *A. aurea* did).
