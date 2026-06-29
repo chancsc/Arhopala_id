@@ -4366,6 +4366,26 @@
         }
       ]
     },
+    "q_corinda_tail_check": {
+      "type": "question",
+      "id": "q_corinda_tail_check",
+      "question": "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?",
+      "hint": "Among the long-celled species reaching this point, [A. corinda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=793494&preferred_place_id=6734) has a long, filamentous tail (~3.5 mm). The aurea group ([A. aurea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429759&preferred_place_id=6734), [A. borneensis](https://www.inaturalist.org/search?q=Arhopala+borneensis), [A. trogon](https://www.inaturalist.org/observations?verifiable=true&taxon_id=447353&preferred_place_id=6734), [A. stinga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1394352&preferred_place_id=6734)) all have a short, stout tail just under 2 mm. This separates corinda from the aurea group when the forewing space-1b patch cannot be seen.",
+      "choices": [
+        {
+          "label": "Long and filamentous, about 3.5 mm (A. corinda)",
+          "next": "q_tailed_corinda_apex"
+        },
+        {
+          "label": "Short and stout, just under 2 mm (aurea group or other)",
+          "next": "q_ijanensis_hw_streak"
+        },
+        {
+          "label": "Cannot determine — tail length not assessable",
+          "next": "q_ijanensis_hw_streak"
+        }
+      ]
+    },
     "q_corinda_cell_gate_apex": {
       "type": "question",
       "id": "q_corinda_cell_gate_apex",
@@ -4380,7 +4400,7 @@
       "choices": [
         {
           "label": "Yes — HW cell longer than half the wing length",
-          "next": "q_tailed_corinda_apex"
+          "next": "q_corinda_tail_check"
         },
         {
           "label": "No — HW cell about half the wing length or shorter",
