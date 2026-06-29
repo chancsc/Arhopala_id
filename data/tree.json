@@ -469,7 +469,7 @@
       "choices": [
         {
           "label": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7 (spot 6 not sinuous)",
-          "next": "q_tailed_aurea_check"
+          "next": "q_aurea_s1"
         },
         {
           "label": "FW spot 4 in continuation with spots 5 and 6; HW spot 6 rounded and more or less separated",
@@ -1447,7 +1447,7 @@
         "Male upperside: shining green; female blue or purple-blue",
         "Short stumpy HW tail (~2 mm)"
       ],
-      "next": "q_aurea_s1"
+      "next": "q_aurea_brown2"
     },
     "g_ganesa": {
       "type": "group",
@@ -2743,7 +2743,7 @@
         },
         {
           "label": "No — underside hair-brown (no purple glaze)",
-          "next": "q_aurea_brown2"
+          "next": "q_tailed_aurea_check"
         }
       ]
     },
