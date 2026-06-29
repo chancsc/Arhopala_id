@@ -2739,31 +2739,11 @@
       "choices": [
         {
           "label": "Yes — underside glazed with a purple wash",
-          "next": "q_trogon_stinga_space3"
+          "next": "q_aurea_purple"
         },
         {
           "label": "No — underside hair-brown (no purple glaze)",
           "next": "q_aurea_brown2"
-        }
-      ]
-    },
-    "q_trogon_stinga_space3": {
-      "type": "question",
-      "id": "q_trogon_stinga_space3",
-      "question": "On the forewing underside, is the innermost postdiscal spot (nearest the dorsum) especially wide — distinctly broader than the postdiscal spots further out toward the apex?",
-      "hint": "Both [A. trogon](https://www.inaturalist.org/observations?verifiable=true&taxon_id=447353&preferred_place_id=6734) and [A. stinga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1394352&preferred_place_id=6734) have the FW underside postdiscal spots in spaces 2 and 3 wider than those above vein 4. The difference: in A. stinga the space-3 spot (innermost, nearest the dorsum) is ESPECIALLY wide — distinctly broader than the rest. In A. trogon spots 2 and 3 are wider than those above vein 4 but the space-3 spot is not especially enlarged. This underside character separates the two even when the upperside (border width / male coloration) cannot be seen. If you cannot judge the relative spot widths, choose Cannot determine and the upperside border check follows.",
-      "choices": [
-        {
-          "label": "Yes — innermost (space-3) postdiscal spot especially wide, distinctly broader than the rest (A. stinga)",
-          "next": "r_stinga"
-        },
-        {
-          "label": "No — inner postdiscal spots wider than those above vein 4, but the space-3 spot not especially enlarged (A. trogon)",
-          "next": "r_trogon"
-        },
-        {
-          "label": "Cannot determine — forewing postdiscal spot widths not assessable",
-          "next": "q_aurea_purple"
         }
       ]
     },
