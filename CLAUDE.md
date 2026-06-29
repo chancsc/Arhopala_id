@@ -269,3 +269,31 @@ answered "Cannot determine" 99% of the time) can therefore dominate the early or
   `598b9c5` (the three FW space-1b nodes). Empirically confirm safety first — removing the
   question from scoring entirely should break nothing (it did not), proving it's
   redundant-for-convergence before demoting it.
+
+## Orphan-defaulted question shows a contradictory answer in the Underside-only path
+
+The sim-CD/Underside-only path runs the Feature Scoring simulation; for questions the
+species has **no real feature for** (orphans), the simulator picks a default "No" choice
+to keep moving (`orphanNoDisplay` only suppresses multi-way classification orphans, not
+clear-`No` ones — see `compute_sim_cd_paths.js`). That default "No" is a *positive factual
+claim*, so when a sibling question about the **same character** is a real feature with the
+opposite answer, the displayed path shows two contradictory lines. Real case: *A. trogon*
+(aurea group) showed Q64 "HW cell **considerably longer** than half" (its real feature) **and**
+Q77 "HW cell **about half or shorter**" (orphan default from the corinda cell-length gate,
+which is a real feature only for *A. corinda*).
+
+- **Do not** fix it by giving the affected species a real answer to the orphan question
+  (tried: added Q77 "Yes" to aurea/trogon/stinga/borneensis — it **regressed *A. corinda***,
+  which leaned on that long-cell feature; sharing it diluted corinda's margin). Revert.
+- **Do** suppress it from the *display only*: add a `"hideOrphanInPath": true` flag on the
+  question node, honored in the orphan branch of `computeSimCdPath` (added to
+  `orphanNoDisplay` so it's left out of the shown path). The answer is still set internally,
+  so the simulation and **all scoring are unchanged**; species that have it as a *real*
+  feature (corinda) still show it. The flag is checked by question text, so flagging one of
+  several same-text nodes covers them all. Must be applied identically in
+  `compute_sim_cd_paths.js` **and** `validate_sim_cd_paths.js`. Precedent: `a68bff6`
+  (`q_corinda_cell_gate_apex`). Verify: `regen-validate` + full sweep zero changes.
+- **Scope caveat:** this only cleans the result-card *Underside-only path* summary. It does
+  **not** change the live Feature Scoring checklist — both overlapping questions are still
+  presented there. Deduplicating them in the live flow is a separate, riskier change
+  (merging questions can break convergence — see the Q46/Q47 merge attempt).
