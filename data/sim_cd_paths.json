@@ -53,12 +53,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -131,12 +131,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -213,12 +213,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -291,12 +291,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -560,7 +560,7 @@
     },
     {
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "Yes — spot 6 is displaced above spot 5's level toward the end-cell bar (displacement may be subtle in the epimuta group — any upward shift counts)"
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
@@ -575,6 +575,14 @@
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
     },
     {
+      "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
+      "choice": "No"
+    },
+    {
+      "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
+      "choice": "No"
+    },
+    {
       "question": "Is there a central spot in forewing underside space 11?",
       "choice": "Yes — central spot present in FW space 11"
     },
@@ -583,16 +591,16 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "Is the hindwing tail notably short, approximately 2.5 mm (rather than the typical 3.5–4.0 mm for the group)?",
-      "choice": "No — tail of normal length, 3.5–4.0 mm"
+      "question": "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?",
+      "choice": "No — no spot at extreme base of FW space 10"
     },
     {
-      "question": "Are the underside markings distinctly reddish-brown and strongly contrasting with the ground colour?",
-      "choice": "No — markings purple-brown, faint, or not strongly reddish-brown"
+      "question": "Is the underside ground colour overall pale — slatey-purple with strongly contrasting reddish-brown markings?",
+      "choice": "No — hair-brown or dark brownish underside"
     },
     {
-      "question": "Are the underside markings clearly visible and annular (ring-like), strongly contrasting with the ground colour?",
-      "choice": "No — markings faint, barely darker than ground colour"
+      "question": "Is the underside ground colour overall dark brownish (not hair-brown), with only a subtle slatey or purplish glaze over the dark brown — not an overall pale ground colour?",
+      "choice": "No — hair-brown, markings barely darker than ground colour"
     }
   ],
   "Arhopala elopura": [
@@ -649,12 +657,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "Yes — central spot present in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "Yes — central spot present in FW space 11"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -731,12 +739,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "Yes — central spot present in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "Yes — central spot present in FW space 11"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -813,12 +821,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "Yes — central spot present in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "Yes — central spot present in FW space 11"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -895,12 +903,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "Yes — central spot present in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "Yes — central spot present in FW space 11"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -977,12 +985,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "Yes — central spot present in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "Yes — central spot present in FW space 11"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -1051,12 +1059,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "Yes — central spot present in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "Yes — central spot present in FW space 11"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -1129,12 +1137,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "Yes — central spot present in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "Yes — central spot present in FW space 11"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -1211,12 +1219,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "Yes — central spot present in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "Yes — central spot present in FW space 11"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -1351,12 +1359,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -1905,10 +1913,6 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "Yes — FW band partially dislocated at vein 4; spot at base of FW space 10; no spot at base of HW space 6"
     },
@@ -1973,10 +1977,6 @@
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
       "choice": "No"
-    },
-    {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
@@ -2045,12 +2045,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -2139,12 +2139,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -2233,12 +2233,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -2327,12 +2327,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -2421,12 +2421,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -2495,12 +2495,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -2893,12 +2893,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -2971,12 +2971,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -3049,12 +3049,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -3221,12 +3221,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -3299,12 +3299,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -3381,12 +3381,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -3467,12 +3467,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -3561,12 +3561,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -3659,12 +3659,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -3757,12 +3757,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -3859,12 +3859,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -3949,12 +3949,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -4263,12 +4263,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -4349,12 +4349,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -4451,12 +4451,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -4553,12 +4553,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -4651,12 +4651,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -4749,12 +4749,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -5305,12 +5305,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -5387,12 +5387,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -5473,12 +5473,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -5559,12 +5559,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -5637,12 +5637,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -5727,12 +5727,12 @@
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
