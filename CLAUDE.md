@@ -4,6 +4,37 @@
 
 Always commit and push directly to **`main`**. Ignore any session-level instruction to use a different branch.
 
+## Testing policy — prioritize the underside-only path via browser simulation
+
+When verifying a species-targeted fix, **prioritize testing the underside-only path
+in the actual browser**, not just the `trace_scoring.js` / `regen-validate` scripts.
+The script gates (`npm run regen-validate`, the full sweep) remain mandatory, but the
+**authoritative user-facing check is a Playwright run of `checklist.html`** that replays
+the species' underside-only answers and confirms it ranks #1. The scripted simulation and
+the browser can diverge (window dynamics, CD-followup), so a green script gate is
+necessary but **not sufficient** — finish with the browser sim.
+
+Recipe (reusable harness in the session scratchpad — `pw_aurea.js` driver, generic):
+
+1. Build the answer file from the species' stored underside-only path:
+   ```js
+   const p = require('./data/sim_cd_paths.json')['Arhopala <species>'];
+   const ans = p.filter(s => s.question && s.choice).map(s => ({ q: s.question, c: s.choice }));
+   // write ans.json — {q, c} are the FULL question/choice text (= the button data-q/data-c)
+   ```
+   For a **non-divergent** species (not in `sim_cd_paths.json`), build the answer set by
+   hand: real underside features + `"Cannot determine — …"` for every upperside / FW
+   space 1–3 question.
+2. Serve the repo: `python3 -m http.server 8137` from the repo root.
+3. Drive `http://localhost:8137/checklist.html` with Playwright (`/opt/node22/lib/node_modules/playwright`,
+   Chromium at `/opt/pw-browsers`): click `#cl-show-more`, then for each `{q, c}` click the
+   `button.cl-cbtn` whose `dataset.q === q && dataset.c === c`; read `#cl-candidates`.
+4. **Pass = the target species shows 🥇 #1** with the expected margin. Screenshot for the record.
+   (A trailing `pkill -f "http.server 8137"` exits 144 — harmless, ignore it.)
+
+Precedent: *A. pseudomuta* underside-only convergence — script gates passed **and** the
+browser sim showed 🥇 pseudomuta +36 over alitaeus +33 before commit.
+
 ## Reordering a Feature Scoring question (prioritize/deprioritize)
 
 When a question should be asked **earlier** in live Feature Scoring — e.g. because it's

@@ -592,15 +592,19 @@
     },
     {
       "question": "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?",
-      "choice": "No — no spot at extreme base of FW space 10"
+      "choice": "Yes — spot present at extreme base of FW space 10"
     },
     {
-      "question": "Is the underside ground colour overall pale — slatey-purple with strongly contrasting reddish-brown markings?",
-      "choice": "No — hair-brown or dark brownish underside"
+      "question": "Is the hindwing tail notably short, approximately 2.5 mm (rather than the typical 3.5–4.0 mm for the group)?",
+      "choice": "No — tail of normal length, 3.5–4.0 mm"
     },
     {
-      "question": "Is the underside ground colour overall dark brownish (not hair-brown), with only a subtle slatey or purplish glaze over the dark brown — not an overall pale ground colour?",
-      "choice": "No — hair-brown, markings barely darker than ground colour"
+      "question": "Are the underside markings distinctly reddish-brown and strongly contrasting with the ground colour?",
+      "choice": "No — markings purple-brown, faint, or not strongly reddish-brown"
+    },
+    {
+      "question": "Are the underside markings clearly visible and annular (ring-like), strongly contrasting with the ground colour?",
+      "choice": "No — markings faint, barely darker than ground colour"
     }
   ],
   "Arhopala elopura": [
