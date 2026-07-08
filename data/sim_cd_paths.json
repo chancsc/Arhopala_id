@@ -415,12 +415,12 @@
       "choice": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
     },
     {
-      "question": "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?",
-      "choice": "No — spot 6 not sinuous/concave, or no FW costal spot in space 10"
-    },
-    {
       "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
       "choice": "No — HW spots more rounded in shape (agelastus or agesilaus group)"
+    },
+    {
+      "question": "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?",
+      "choice": "No — spot 6 not sinuous/concave, or no FW costal spot in space 10"
     },
     {
       "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
@@ -489,12 +489,12 @@
       "choice": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
     },
     {
-      "question": "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?",
-      "choice": "No — spot 6 not sinuous/concave, or no FW costal spot in space 10"
-    },
-    {
       "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
       "choice": "No — HW spots more rounded in shape (agelastus or agesilaus group)"
+    },
+    {
+      "question": "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?",
+      "choice": "No — spot 6 not sinuous/concave, or no FW costal spot in space 10"
     },
     {
       "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
@@ -1294,7 +1294,7 @@
     },
     {
       "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch on HW cilia"
+      "choice": "No — no white patch just above the tornal lobe (the small white spot in space 1a may still be present)"
     },
     {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
@@ -1446,7 +1446,7 @@
     },
     {
       "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch on HW cilia"
+      "choice": "No — no white patch just above the tornal lobe (the small white spot in space 1a may still be present)"
     },
     {
       "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
@@ -1532,7 +1532,7 @@
     },
     {
       "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch on HW cilia"
+      "choice": "No — no white patch just above the tornal lobe (the small white spot in space 1a may still be present)"
     },
     {
       "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
@@ -1622,7 +1622,7 @@
     },
     {
       "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch on HW cilia"
+      "choice": "No — no white patch just above the tornal lobe (the small white spot in space 1a may still be present)"
     },
     {
       "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
@@ -1700,7 +1700,7 @@
     },
     {
       "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch on HW cilia"
+      "choice": "No — no white patch just above the tornal lobe (the small white spot in space 1a may still be present)"
     },
     {
       "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
@@ -1766,35 +1766,51 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar"
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
     },
     {
       "question": "Among tailless species: in hindwing underside spaces 4 and 5, are the submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border?",
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
-      "choice": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
-      "question": "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?",
-      "choice": "No — spot 6 not sinuous/concave, or no FW costal spot in space 10"
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
-      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
-      "choice": "Yes — HW spots more quadrate or banded in shape (muta subgroup)"
-    },
-    {
-      "question": "What is the forewing length?",
-      "choice": "Larger — FW 16.0–19.0 mm"
+      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
+      "choice": "Spots more quadrate/banded (muta subgroup)"
     },
     {
       "question": "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?",
       "choice": "Normal — spots normal-sized, with a clear gap from the end-cell bar"
     },
     {
+      "question": "What is the forewing length?",
+      "choice": "Larger — FW 16.0–19.0 mm"
+    },
+    {
       "question": "On the male upperside, are both the forewing and hindwing exactly the same shade of blue in all lights?",
       "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
+      "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
+    },
+    {
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
+      "choice": "Cannot determine — FW space 1b obscured by hindwing"
+    },
+    {
+      "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
+      "choice": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
+      "choice": "Yes — HW spots more quadrate or banded in shape (muta subgroup)"
     }
   ],
   "Arhopala muta maranda": [
@@ -1851,6 +1867,10 @@
       "choice": "Larger — FW 16.0–19.0 mm"
     },
     {
+      "question": "On the male upperside, are both the forewing and hindwing exactly the same shade of blue in all lights?",
+      "choice": "Cannot determine — upperside not visible"
+    },
+    {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
@@ -1859,8 +1879,8 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the male upperside, are both the forewing and hindwing exactly the same shade of blue in all lights?",
-      "choice": "Cannot determine — upperside not visible"
+      "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
+      "choice": "No — band fully dislocated at vein 2 (two separate portions)"
     }
   ],
   "Arhopala anthelus grahami": [
@@ -3601,10 +3621,6 @@
       "choice": "No — postdiscal band not especially close to submarginal lunules"
     },
     {
-      "question": "Is the male border noticeably expanding toward the apex (similar to [A. selta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880747&preferred_place_id=6734))?",
-      "choice": "Cannot determine — upperside not visible"
-    },
-    {
       "question": "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?",
       "choice": "Yes — HW spot 6 widely overlaps the end-cell bar"
     }
@@ -3699,10 +3715,6 @@
       "choice": "No — postdiscal band not especially close to submarginal lunules"
     },
     {
-      "question": "Is the male border noticeably expanding toward the apex (similar to [A. selta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880747&preferred_place_id=6734))?",
-      "choice": "Cannot determine — upperside not visible"
-    },
-    {
       "question": "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?",
       "choice": "No — HW spot 6 does not widely overlap the end-cell bar"
     }
@@ -3795,10 +3807,6 @@
     {
       "question": "Is the postdiscal band placed very close to the inner submarginal lunules?",
       "choice": "No — postdiscal band not especially close to submarginal lunules"
-    },
-    {
-      "question": "Is the male border noticeably expanding toward the apex (similar to [A. selta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880747&preferred_place_id=6734))?",
-      "choice": "Cannot determine — upperside not visible"
     },
     {
       "question": "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?",
@@ -3987,10 +3995,6 @@
     {
       "question": "Is the postdiscal band placed very close to the inner submarginal lunules?",
       "choice": "No — postdiscal band not especially close to submarginal lunules"
-    },
-    {
-      "question": "Is the male border noticeably expanding toward the apex (similar to [A. selta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880747&preferred_place_id=6734))?",
-      "choice": "Cannot determine — upperside not visible"
     },
     {
       "question": "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?",
@@ -5509,6 +5513,52 @@
       "choice": "Tail ~1.0 mm (very short); underside hair-brown; tornal green scales present"
     }
   ],
+  "Arhopala arvina adalitas": [
+    {
+      "question": "Does the hindwing have a tail?",
+      "choice": "No — hindwing is tailless"
+    },
+    {
+      "question": "Are the underside markings almost entirely suppressed — the postdiscal spots replaced by a faint, obscure streak rather than a series of distinct separate spots, with most other typical markings absent?",
+      "choice": "No — postdiscal spots distinct; typical markings present"
+    },
+    {
+      "question": "Does the hindwing have a very rounded tornus, and are tornal green scales absent?",
+      "choice": "No"
+    },
+    {
+      "question": "Is there a prominent yellowish area in the centre of the hindwing underside, and are the underside markings generally obscure or ill-defined?",
+      "choice": "No — HW discal area not prominently yellowish; markings well-defined"
+    },
+    {
+      "question": "Is there a small spot at the extreme base of hindwing space 6 on the underside?",
+      "choice": "No"
+    },
+    {
+      "question": "Are the underside spots prominent and rounded, with a central spot in FW space 11?",
+      "choice": "No"
+    },
+    {
+      "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
+      "choice": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced"
+    },
+    {
+      "question": "Among tailless species: in hindwing underside spaces 4 and 5, are the submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border?",
+      "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
+    },
+    {
+      "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
+      "choice": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
+      "choice": "No — HW spots more rounded in shape (agelastus or agesilaus group)"
+    },
+    {
+      "question": "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?",
+      "choice": "Yes — HW spot 6 outwardly sinuous or concave; costal spot in FW space 10 above the end-cell bar"
+    }
+  ],
   "Arhopala vihara": [
     {
       "question": "Does the hindwing have a tail?",
@@ -5767,12 +5817,12 @@
       "choice": "No — postdiscal band not especially close to submarginal lunules"
     },
     {
-      "question": "Is the male border noticeably expanding toward the apex (similar to [A. selta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880747&preferred_place_id=6734))?",
-      "choice": "Cannot determine — upperside not visible"
-    },
-    {
       "question": "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?",
       "choice": "No — HW spot 6 does not widely overlap the end-cell bar"
+    },
+    {
+      "question": "Is the male upperside border noticeably expanding toward the apex (similar to [A. selta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880747&preferred_place_id=6734))?",
+      "choice": "Cannot determine — upperside not visible"
     }
   ]
 }

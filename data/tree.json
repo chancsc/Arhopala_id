@@ -2140,7 +2140,7 @@
       "note": "Tailless; HW tornus very rounded. FW 18–22 mm. Male: rather dull purple-blue with a thread-like black border. Female: purple; HW border unusually variable — purple sometimes reaches termen between veins 2 and 5, other specimens almost confined to cell. Underside FW: markings variable; lower postdiscal band sometimes obsolete; when fully developed, spot in space 1b shifted inward, placed midway between end-cell bar and postdiscal spot in space 2. Underside HW: postdiscal band WIDELY dislocated at vein 2 (diagnostic for subgroup). Forest species, low to moderate elevations.",
       "features": {
         "On the forewing underside, is the basal cell spot absent?": "No — basal cell spot present on FW underside",
-        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "No — no white patch on HW cilia"
+        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "No — no white patch just above the tornal lobe (the small white spot in space 1a may still be present)"
       }
     },
     "q_amph_s2": {
@@ -2163,14 +2163,14 @@
       "type": "question",
       "id": "q_amph_s3",
       "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "hint": "[A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734) has a small but distinctive white patch on the HW cilia just above the tornal lobe, and also has less rounded (more angular) postdiscal spots compared to [A. major](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429756&preferred_place_id=6734).",
+      "hint": "[A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734) and [A. moolaiana](https://www.inaturalist.org/observations?verifiable=true&taxon_id=549326&preferred_place_id=6734) have a small but distinctive white patch on the HW cilia just above the tornal lobe; norda also has less rounded (more angular) postdiscal spots compared to [A. major](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429756&preferred_place_id=6734). This tornal-lobe patch is separate from the small white spot in space 1a, which is present in [A. major](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429756&preferred_place_id=6734) too — so answer No here for A. major (it lacks the tornal-lobe patch specifically).",
       "choices": [
         {
           "label": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded",
           "next": "r_norda"
         },
         {
-          "label": "No — no white patch on HW cilia",
+          "label": "No — no white patch just above the tornal lobe (the small white spot in space 1a may still be present)",
           "next": "q_amph_geo"
         }
       ]
@@ -2404,7 +2404,7 @@
       "note": "Tailed — distinct tail at vein 2; the ONLY tailed member of the amphimuta subgroup (all others tailless). Male: deep violet with a narrow, regular black border. Underside: FW postdiscal band nearly completely dislocated at vein 4. HW postdiscal spots in spaces 6 and 7 more or less rounded; spots 5–7 in echelon (centres in straight line).",
       "features": {
         "On the forewing underside, is the basal cell spot absent?": "No — basal cell spot present on FW underside",
-        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "No — no white patch on HW cilia",
+        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "No — no white patch just above the tornal lobe (the small white spot in space 1a may still be present)",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)",
         "Is the forewing postdiscal band nearly completely dislocated at vein 4?": "Yes — FW band nearly completely dislocated at vein 4",
         "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
@@ -2611,7 +2611,7 @@
       "common_name": "",
       "note": "Tailless. Male: both wings the same shade of blue in all lights — key distinction from [A. muta maranda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780491&preferred_place_id=6734), whose HW is slightly paler and brighter (FW 16.0–18.0 mm). Female: bluish purple with broad black borders (duller and more purple than [A. muta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780491&preferred_place_id=6734)'s female). Underside: spots quadrate/banded; FW space 2 spot stepped toward termen; HW postdiscal band dislocated — inner edge of spot in space 2 in line with, or only slightly outside, the outer edge of spot 1b. HW cilia: white spot in space 1a absent (very rarely present but extremely obscure).",
       "features": {
-        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar",
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line",
         "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
         "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "Yes — HW spots more quadrate or banded in shape (muta subgroup)",
         "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?": "Normal — spots normal-sized, with a clear gap from the end-cell bar"
@@ -3507,7 +3507,7 @@
     "q_alea_s6": {
       "type": "question",
       "id": "q_alea_s6",
-      "question": "Is the male border noticeably expanding toward the apex (similar to [A. selta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880747&preferred_place_id=6734))?",
+      "question": "Is the male upperside border noticeably expanding toward the apex (similar to [A. selta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880747&preferred_place_id=6734))?",
       "hint": "[A. selta selta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880747&preferred_place_id=6734) and [A. phaenops sandakani](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887006&preferred_place_id=6734) both have a border expanding toward the apex (the next question separates them via HW spot 6 overlap). [A. normani](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340249&preferred_place_id=6734) also has HW spot 6 widely overlapping the end-cell bar, so spot 6 overlap alone cannot separate it from selta — normani is identified here by its narrow, non-expanding border instead. The remaining species (sublustris, milleri, normani) have narrow or thread-like borders that do NOT expand toward the apex.",
       "choices": [
         {

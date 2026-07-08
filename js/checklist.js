@@ -268,6 +268,7 @@ const CHOICE_LINKS = new Map([
   ['A. kurzi', 'https://www.inaturalist.org/observations?verifiable=true&taxon_id=1149928&preferred_place_id=6734'],
   ['A. avathina avathina', 'https://www.inaturalist.org/observations?verifiable=true&taxon_id=888416&preferred_place_id=6734'],
   ['A. alica', 'https://www.inaturalist.org/observations?verifiable=true&taxon_id=1495881&preferred_place_id=6734'],
+  ['A. fulla', 'https://www.inaturalist.org/observations?verifiable=true&taxon_id=880792&preferred_place_id=6734'],
   ['A. labuana', 'https://www.inaturalist.org/search?q=Arhopala+labuana'],
   ['A. norda', 'https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734'],
   ['A. amphimuta', 'https://www.inaturalist.org/observations?verifiable=true&taxon_id=498183&preferred_place_id=6734'],
