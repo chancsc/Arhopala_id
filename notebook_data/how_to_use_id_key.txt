@@ -1,19 +1,17 @@
-SAMPLE:
-
-HOW TO USE THE JAMIDES DICHOTOMOUS IDENTIFICATION KEY (keys.txt)
-=================================================================
+HOW TO USE A DICHOTOMOUS IDENTIFICATION KEY (keys.txt)
+=======================================================
 
 OVERVIEW
 --------
-keys.txt is a dichotomous (two-choice) key for identifying Malaysian
-Jamides (Caerulean) butterflies. At each step you choose between exactly
+keys.txt is a dichotomous (two-choice) key for identifying [TAXON GROUP]
+in [GEOGRAPHIC REGION / SCOPE]. At each step you choose between exactly
 two numbered statements that describe an observable feature; one statement
 matches your specimen, the other does not. Following the chosen statement
 leads you to either the next pair of choices or directly to a species name.
 
-The key covers 19 species (and one out-of-range Sumatran species, J. lucide,
-included for completeness). It is adapted from the treatment in Corner &
-Penney and is reproduced here in a compact numbered-lead format.
+The key covers [N] species [and any out-of-range taxa included for
+completeness]. It is adapted from the treatment in [AUTHOR / PUBLICATION]
+and is reproduced here in a compact numbered-lead format.
 
 
 UNDERSTANDING THE LEAD FORMAT
@@ -30,10 +28,10 @@ and written as:
 Together, leads n and m form one couplet — a pair of contrasting statements.
 Exactly one will match your specimen; the other will not.
 
-A lead that ends with a species name in the form "... Jamides species" is a
-TERMINAL lead — it is the final identification, not a pointer to more choices.
+A lead that ends with a taxon name is a TERMINAL lead — it is the final
+identification, not a pointer to more choices.
 
-A lead that ends without a species name is an INTERMEDIATE lead — it points
+A lead that ends without a taxon name is an INTERMEDIATE lead — it points
 you forward; the next couplet to consider is the one that immediately follows
 in the numbered sequence (the lowest-numbered lead in the text after the
 current one that you have not yet visited).
@@ -41,14 +39,13 @@ current one that you have not yet visited).
 
 STEP-BY-STEP INSTRUCTIONS
 --------------------------
-1. Start at couplet {1, 21} — the very first pair in the key.
-   Read BOTH leads 1 and 21 carefully.
+1. Start at the first couplet in the key — the lead numbered "1" and its
+   paired sibling. Read BOTH leads carefully.
 
 2. Decide which lead matches your specimen.
-   - If lead 1 matches → remain in the sub-key that begins at the next
-     listed lead (which is lead 2).
-   - If lead 21 matches → skip to lead 21's sub-key (which begins at
-     lead 22).
+   - If the first lead matches → remain in the sub-key that begins at the
+     next listed lead (lead 2).
+   - If the sibling lead matches → skip to that lead's sub-key.
 
 3. At the next couplet, again read both alternatives and choose the one
    that matches.
@@ -65,9 +62,9 @@ READING THE PAIRED STRUCTURE
 The "(m)" parenthetical tells you which lead is the alternative.
 
 Example:
-    2 (7): Underside forewing postdiscal band slightly dislocated at vein 6...
+    2 (7): [Character A — first option]...
     ...
-    7: Underside forewing postdiscal band continuous from vein 3 to vein 7...
+    7: [Character A — second/contrasting option]...
 
 Leads 2 and 7 are a pair. If lead 2 matches your specimen, proceed to the
 sub-key starting at lead 3. If lead 7 matches, proceed to the sub-key
@@ -78,130 +75,86 @@ does not carry a parenthetical — its partner is implicit from the first lead's
 parenthetical: lead 2 says "(7)", so the pair is {2, 7}.
 
 
-WORKED EXAMPLE — identifying Jamides caeruleus
------------------------------------------------
-Specimen: Jamides caeruleus (Sky Blue), collected in Peninsular Malaysia.
+WORKED EXAMPLE — identifying [EXAMPLE TAXON]
+---------------------------------------------
+Specimen: [Taxon name] ([Common name]), collected in [Location].
 
-Step 1 — Couplet {1, 21}
-  Lead 1: "Underside forewing postdiscal band in space 3 more or less in
-           line with the band in spaces 4 and 5."
-  Lead 21: "Underside forewing postdiscal band completely dislocated at
-            vein 4..."
-  → Band in space 3 is clearly shifted inward (dislocated). CHOOSE LEAD 21.
+Step 1 — Couplet {1, n}
+  Lead 1: "[First character — option A]"
+  Lead n: "[First character — option B]"
+  → [Observation on specimen]. CHOOSE LEAD [1 or n].
 
-Step 2 — Couplet {22, 37}  [follow lead 21's sub-key, which starts at 22]
-  Lead 22: "Underside all white striae clearly defined."
-  Lead 37: "Underside postdiscal and submarginal striae so broad... mostly white."
-  → Striae are clearly defined. CHOOSE LEAD 22.
+Step 2 — Couplet {p, q}  [follow the sub-key of the chosen lead]
+  Lead p: "[Second character — option A]"
+  Lead q: "[Second character — option B]"
+  → [Observation on specimen]. CHOOSE LEAD [p or q].
 
-Step 3 — Couplet {23, 36}
-  Lead 23: "Underside forewing postdiscal band slightly dislocated at vein 6..."
-  Lead 36: "Underside forewing postdiscal band slightly curved but not
-            dislocated at vein 6. ♂ upperside green..."
-  → Band is also shifted at vein 6 (not green-uppersided). CHOOSE LEAD 23.
+Step 3 — Couplet {r, s}
+  Lead r: "[Third character — option A] → [Taxon name]"
+  Lead s: "[Third character — option B]"
+  → [Observation on specimen]. CHOOSE LEAD r.
+  → RESULT: [Taxon name]  ✓
 
-Step 4 — Couplet {24, 27}
-  Lead 24: "Underside hindwing striae arranged so that there is a more or
-            less continuous pair of subbasal white lines."
-  Lead 27: "Underside hindwing subbasal striae dislocated."
-  → Subbasal striae are dislocated. CHOOSE LEAD 27.
-
-Step 5 — Couplet {28, 29}
-  Lead 28: "Underside forewing usually with a pair of costal white dashes...
-            Small, fwl less than 15.0 mm."
-  Lead 29: "Underside forewing without costal dashes... Larger, fwl normally
-            more than 15.0 mm."
-  → No costal dashes; forewing larger than 15 mm. CHOOSE LEAD 29.
-
-Step 6 — Couplet {30, 31}
-  Lead 30: "Underside hindwing with the second white stria from the base in
-            space 7 in line with the third stria from the base in the cell...
-            ♂ upperside metallic caerulean blue... → Jamides caeruleus"
-  Lead 31: "Underside hindwing with the second white stria from the base in
-            space 7 about midway between the second and third striae from the
-            base in the cell."
-  → Stria in space 7 is in line with the third cell stria. CHOOSE LEAD 30.
-  → RESULT: Jamides caeruleus  ✓
-
-Key path followed: leads 21 · 22 · 23 · 27 · 29 · 30
+Key path followed: leads [1] · [p] · [r]
 
 
 SYMBOLS USED IN THE KEY
 ------------------------
 ♂   — male
 ♀   — female
-fwl — forewing length (measured from base to apex)
-HW  — hindwing
-FW  — forewing
 →   — "leads to" or "identification is"
 ...  — continued text (line wrapped for readability)
+[Add any additional abbreviations specific to this key and taxon group,
+ e.g. fwl = forewing length, HW = hindwing, FW = forewing, etc.]
 
 
-UPPERSIDE FEATURES
-------------------
-Several couplets (especially K8–K11 and K15, K18–K19 in the tool's
-numbering) rely primarily on upperside characters — male wing colour,
-border width, androconia, hindwing submarginal markings, female upperside
-transparency. These features require a specimen or a photo showing the
-upperside. If you only have an underside photograph, you may not be able
-to resolve these couplets, but underside features alone are often sufficient
-to narrow the identification considerably.
+FEATURES THAT MAY REQUIRE ADDITIONAL VIEWS OR PREPARATION
+----------------------------------------------------------
+[Some couplets in this key rely on characters that may not be visible from
+a single view or photograph. List those here. For example:]
 
-The id_keys.html scoring tool provides a "Skip — upperside feature" button
-for couplets that depend primarily on the upperside.
+Several couplets rely primarily on [upperside / underside / dissection /
+sex-specific] characters. These features require a specimen or a photograph
+showing [the relevant surface or structure]. If you only have [e.g. an
+underside photograph], you may not be able to resolve these couplets, but
+the remaining features alone are often sufficient to narrow the identification
+considerably.
+
+[Optional: if using a digital scoring tool, note any "Skip" functionality
+available for inaccessible characters.]
 
 
 COVERAGE AND SCOPE
 ------------------
-This key covers the 19 Jamides species recorded from Malaysia (Peninsular
-Malaysia + Sabah/Sarawak). It does not cover:
-- Jamides lucide (Sumatra only; included in the original key for completeness
-  but not recorded from Malaysia)
-- Jamides species from outside the Malaysian region
-- Undescribed or recently described taxa not in the original C&P treatment
+This key covers [N] [taxon group] species recorded from [geographic region].
+It does not cover:
+- [Out-of-range taxa included for reference but not recorded in region]
+- [Taxon group] species from outside [geographic region]
+- Undescribed or recently described taxa not in the original [PUBLICATION]
+  treatment
+[Add any other scope limitations, e.g. seasonal forms, hybrids, etc.]
 
 
-READING ORDER SUMMARY OF THE 19 COUPLETS
------------------------------------------
-K1  {1,  21} — FW band in space 3: in line vs. dislocated at vein 4
-K2  {2,   7} — FW band at vein 6: slightly dislocated vs. continuous
-K3  {3,   4} — Underside colour: greyish-brown buff striae vs. paler grey white striae
-K4  {5,   6} — HW submarginal spaces: strongly darkened vs. barely darker
-K5  {8,   9} — ♂ underside: atypical white-on-black (yehi) vs. typical
-K6  {9,  18} — HW submarginal spaces: not blackened vs. wedge-shaped black spots
-K7  {10, 15} — HW striae: subbasal pair only vs. subbasal + discal pairs
-K8  {11, 12} — ♂ upperside: whitish blue broad border vs. pale blue narrow border
-K9  {13, 14} — ♂ upperside: unicolorous thread border (pura) vs. deepening blue (zebra)
-K10 {16, 17} — ♂ upperside: deep sky blue + HW spots (malaccanus) vs. paler no spots
-K11 {19, 20} — ♂ upperside: sky blue thread border (philatus) vs. almost white (aratus)
-K12 {22, 37} — Striae: all clearly defined vs. extremely broad (lucide, out of range)
-K13 {23, 36} — FW band: dislocated at vein 6 vs. only curved (♂ green = abdul)
-K14 {24, 27} — HW subbasal striae: continuous pair vs. dislocated
-K15 {25, 26} — ♂ upperside: purple-blue no androconia + costal dashes (cunilda) vs. paler + androconia (ferrari)
-K16 {28, 29} — FW costal dashes + size: small with dashes (talinga) vs. larger without
-K17 {30, 31} — HW stria 7: in line with 3rd cell stria (caeruleus) vs. midway
-K18 {32, 35} — ♂ upperside border: thread no HW marks (elpis/limes) vs. ~1mm + HW marks (alecto)
-K19 {33, 34} — Size + striae: smaller narrow (elpis) vs. larger diffuse Borneo (limes)
+READING ORDER SUMMARY OF THE COUPLETS
+--------------------------------------
+[Replace the entries below with the actual couplet pairs from your key,
+ using the format: K[n] {lead_a, lead_b} — [Character]: [A description] vs. [B description]]
+
+K1  {1,  n} — [Character 1]: [option A] vs. [option B]
+K2  {2,  m} — [Character 2]: [option A] vs. [option B]
+K3  {3,  p} — [Character 3]: [option A] vs. [option B]
+K4  {5,  6} — [Character 4]: [option A] vs. [option B]
+...
 
 
-SPECIES KEY PATHS (lead sequences)
-------------------------------------
-Jamides bochus nabonassar      :  1 · 2 · 3
-Jamides cyta minna             :  1 · 2 · 4 · 5
-Jamides lugine                 :  1 · 2 · 4 · 6
-Jamides yehi                   :  1 · 7 · 8
-Jamides celeno aelianus        :  1 · 7 · 9 · 10 · 11
-Jamides pura pura              :  1 · 7 · 9 · 10 · 12 · 13
-Jamides zebra lakatti          :  1 · 7 · 9 · 10 · 12 · 14
-Jamides malaccanus malaccanus  :  1 · 7 · 9 · 10 · 15 · 16
-Jamides parasaturatus paramalaccanus: 1 · 7 · 9 · 10 · 15 · 17
-Jamides philatus subditus      :  1 · 7 · 9 · 18 · 19
-Jamides aratus adana           :  1 · 7 · 9 · 18 · 20
-Jamides cunilda nisanca        : 21 · 22 · 23 · 24 · 25
-Jamides ferrari evansi         : 21 · 22 · 23 · 24 · 26
-Jamides talinga talinga        : 21 · 22 · 23 · 27 · 28
-Jamides caeruleus caeruleus    : 21 · 22 · 23 · 27 · 29 · 30
-Jamides elpis pseudelpis       : 21 · 22 · 23 · 27 · 29 · 31 · 32 · 33
-Jamides limes                  : 21 · 22 · 23 · 27 · 29 · 31 · 32 · 34
-Jamides alecto ageladas        : 21 · 22 · 23 · 27 · 29 · 31 · 35
-Jamides abdul abdul            : 21 · 22 · 36
+TAXON KEY PATHS (lead sequences)
+----------------------------------
+[List all taxa with their sequence of lead numbers from start to terminal
+ lead, separated by · (middle dot). The last number in each path is the
+ terminal lead where that taxon is identified.]
+
+[Taxon name 1]    :  1 · 2 · 3
+[Taxon name 2]    :  1 · 2 · 4 · 5
+[Taxon name 3]    :  1 · 2 · 4 · 6
+[Taxon name 4]    :  1 · 7 · 8
+...
