@@ -1,0 +1,297 @@
+TECHNICAL DESIGN — SEQUENTIAL DICHOTOMOUS KEY WEB TOOL
+========================================================
+File: id_keys.html + js/id_keys.js + data/id_key.json
+Purpose: Interactive, sequential C&P-style dichotomous key with real-time
+         candidate ranking. Designed for identifying [TAXON GROUP] but fully
+         generic — replace the data file and guide links to adapt it to any
+         genus or species group.
+
+
+OVERVIEW
+--------
+The tool presents one key couplet at a time. The user selects option A or B;
+the page immediately navigates to the next couplet determined by the key's
+branching structure. In parallel, a candidate ranking panel updates in real
+time using a simple +1/−1 scoring model. When the user reaches a terminal
+lead (a lead whose text names a specific taxon), the page displays the
+identification result.
+
+Three files define the complete tool:
+
+  id_key.json    — the key data: couplets, lead texts, species paths
+  id_keys.js     — navigation logic, scoring, rendering (no framework)
+  id_keys.html   — page shell, CSS, hamburger menu; loads the two above
+
+
+1. DATA FILE: id_key.json
+--------------------------
+The JSON file has three top-level objects:
+
+  {
+    "couplets":      [ ... ],    // array of couplet objects (ordered)
+    "leads":         { ... },    // object: lead number (string) → lead text
+    "species_paths": { ... }     // object: species name → array of lead numbers
+  }
+
+1a. COUPLET OBJECT
+Each element of the "couplets" array describes one choice-pair in the key:
+
+  {
+    "id":             "cp_1_21",          // unique string, e.g. "cp_<num_a>_<num_b>"
+    "num_a":          1,                  // lead number of option A
+    "num_b":          21,                 // lead number of option B
+    "label":          "K1",              // display label shown in the UI
+    "question":       "Forewing band…",  // the question posed to the user
+    "a_text":         "Band in line…",   // full text of option A
+    "b_text":         "Band dislocated…",// full text of option B
+    "upperside":      false,             // true if upperside character → shows Skip button
+    "hint":           "…",              // optional explanatory text (collapsed by default)
+    "guide_phrase":   "dislocated at vein 6", // substring in a_text or b_text to linkify
+    "guide_link":     "guide.html#fw-band-vein3-vein6", // href for guide_phrase link
+    "question_phrase":"band at space 3", // optional: substring in question to linkify
+    "question_link":  "guide.html#fw-band-vein3-vein6", // href for question_phrase link
+    "species_a":      [ "Genus sp1", "Genus sp2", ... ], // taxa matching option A
+    "species_b":      [ "Genus sp3", ... ]               // taxa matching option B
+  }
+
+  FIELD NOTES
+  - num_a / num_b: must match the lead numbers used in the original key text.
+    The couplets array must be in the same order as the key's text flow (the
+    sub-key that follows option A always occupies the NEXT position in the array).
+  - label: use any short string; "K1"–"K19" is the Jamides convention.
+  - upperside: set to true for any couplet whose characters require the upperside
+    of the specimen. This adds a "Skip" button in the UI.
+  - guide_phrase / guide_link: the first occurrence of guide_phrase in a_text or
+    b_text is hyperlinked to guide_link. Leave both empty to show no link in buttons.
+  - question_phrase / question_link: same mechanism but applied to the question
+    label rather than the button text. Leave absent or empty if not needed.
+  - species_a / species_b: full scientific names (including subspecies if desired).
+    Every taxon the key can identify should appear in exactly one side of every
+    couplet that is relevant to it. Irrelevant couplets (where the taxon is on
+    neither side) are neutral in scoring and need not list the taxon at all.
+
+1b. LEADS OBJECT
+A flat dictionary mapping each lead number (as a string key) to its full text:
+
+  "leads": {
+    "1":  "Band in space 3 more or less in line…",
+    "3":  "Greyish brown… → Genus species1",
+    "21": "Band completely dislocated at vein 4…",
+    ...
+  }
+
+  - TERMINAL LEADS: a lead that ends an identification path must contain the
+    taxon name in the text. The code detects terminals by checking whether the
+    lead text contains the genus name (default: "Jamides"). Change the constant
+    GENUS_MARKER in id_keys.js if the genus differs (see Section 4).
+  - NON-TERMINAL LEADS: intermediate leads contain descriptive text only.
+
+1c. SPECIES_PATHS OBJECT
+Maps each identifiable taxon to the ordered list of lead numbers chosen to
+reach its terminal lead:
+
+  "species_paths": {
+    "Genus sp1 ssp1": [1, 2, 3],
+    "Genus sp2 ssp2": [1, 2, 4, 5],
+    "Genus sp3 ssp3": [21, 22, 36],
+    ...
+  }
+
+  - Each array element is the lead number CHOSEN at that step (not the couplet
+    number). The last element in the array is always the terminal lead number
+    for that taxon.
+  - Used only in js/app.js (species detail page). Not used by id_keys.js at
+    runtime, but needed by buildCPKeyPath() to show the C&P key path in the
+    species info panel.
+
+
+2. NAVIGATION ALGORITHM (id_keys.js)
+--------------------------------------
+State variables:
+  ks.couplets        — couplets array (from JSON)
+  ks.leads           — leads object (from JSON)
+  ks.answers         — [{coupletId, choice}] ordered history of user choices
+  ks.currentCouplet  — the couplet object currently displayed (null if done)
+  ks.result          — {leadNum, text, speciesName} when identification reached
+
+2a. CHOOSING A (option A, lead num_a)
+  - If num_a is terminal → set ks.result, clear ks.currentCouplet.
+  - Otherwise → next couplet = couplets[currentIndex + 1]  (next in array).
+
+2b. CHOOSING B (option B, lead num_b)
+  - If num_b is terminal → set ks.result, clear ks.currentCouplet.
+  - Otherwise → find the couplet whose num_a = num_b + 1.
+    SPECIAL CASE: if no couplet has num_a = num_b + 1, fall back to
+    the couplet whose num_a = num_b. This handles keys where the same
+    lead number acts as both the B lead of one couplet and the A lead
+    of the next (a quirk in some published keys where an intermediate
+    lead is shared — see K5/K6 in the Jamides key, lead 9).
+
+2c. SKIP (upperside couplets only)
+  - Advance to the first non-terminal branch. Specifically:
+      if num_a is NOT terminal → skip via A (index + 1)
+      else if num_b is NOT terminal → skip via B (num_b + 1 search)
+      else both terminal → Skip button hidden; user must choose.
+  - Skip contributes no score (neutral). Scoring treats skip as absent.
+
+2d. TERMINAL DETECTION
+  function ksIsTerminal(leadNum):
+    return ks.leads[String(leadNum)].includes(GENUS_MARKER)
+  where GENUS_MARKER = "Jamides" by default. Change this string when
+  adapting the tool to another genus (see Section 4).
+
+2e. HISTORY AND BACK-NAVIGATION
+  ks.answers is an ordered array. Each entry: { coupletId, choice }.
+  Clicking an item in the history breadcrumb truncates ks.answers to
+  just before that step and replays ksReplayHistory() to restore
+  ks.currentCouplet and ks.result from scratch.
+
+  ksReplayHistory():
+    starts at couplets[0], then for each saved answer:
+      validates that couplet id matches currentCouplet
+      applies the choice to advance currentCouplet
+      stops at first mismatch (invalid/stale history) or terminal
+
+2f. PERSISTENCE
+  localStorage key: "jamides-ks-answers-v2"
+  Stores: { answers: [{coupletId, choice}, ...] }
+  On load: ksLoadAnswers() filters against current valid couplet ids,
+  then ksReplayHistory() restores navigation state.
+
+
+3. SCORING ALGORITHM
+---------------------
+Runs after every user action (ksScoreAll).
+
+For each taxon T known from any couplet:
+  score_T = 0, max_T = 0
+  for each non-skip answered couplet C:
+    inA = (T is in C.species_a)
+    inB = (T is in C.species_b)
+    if !inA && !inB: skip (neutral — C does not involve T)
+    max_T++
+    if (inA && choice == 'A') or (inB && choice == 'B'): score_T += 1
+    if (inA && choice == 'B') or (inB && choice == 'A'): score_T -= 1
+
+Candidates are ranked by score_T / max_T descending. The top 8 are
+shown in the panel with a proportional progress bar.
+
+KEY PROPERTY: a taxon that does not appear in any side of a couplet is
+unaffected by that couplet's answer. Only couplets genuinely relevant to a
+taxon contribute to its score.
+
+
+4. ADAPTING FOR ANOTHER GENUS
+-------------------------------
+To deploy this tool for a different butterfly genus (or any other taxon
+group with a numbered-lead dichotomous key):
+
+STEP 1 — Prepare the key data
+  a. Obtain a numbered-lead dichotomous key for your taxon group.
+  b. Number all leads sequentially (if not already numbered).
+  c. Identify paired couplets: {lead_a, lead_b} where lead_a carries the
+     "(lead_b)" parenthetical in the original text.
+  d. For each lead, determine whether it is terminal (names a specific taxon).
+
+STEP 2 — Build id_key.json
+  a. "leads" object: copy every lead text verbatim, keyed by lead number.
+  b. "couplets" array: one object per couplet, in key-text order (the
+     sub-key entered by choosing A must immediately follow in the array).
+     Fill in num_a, num_b, label (K1, K2…), question, a_text, b_text.
+     Set upperside: true for couplets that require the upperside of the
+     specimen. Set guide_phrase / guide_link for any illustrated features.
+  c. "species_paths": trace each terminal taxon's path through the key
+     and record the ordered list of chosen lead numbers.
+
+STEP 3 — Edit GENUS_MARKER in id_keys.js
+  Change the string "Jamides" (in ksIsTerminal and ksExtractSpecies) to
+  the genus name of your taxon group. This is the marker the code uses
+  to recognise terminal leads:
+
+    function ksIsTerminal(leadNum) {
+      return (ks.leads[String(leadNum)] || '').includes('YOUR_GENUS_HERE');
+    }
+
+    function ksExtractSpecies(text) {
+      const match = text.match(/\bYOUR_GENUS_HERE\s+\w+(?:\s+\w+)?/);
+      return match ? match[0] : '';
+    }
+
+  If your key uses a common name or other terminal marker instead of a
+  genus name, adjust the pattern accordingly.
+
+STEP 4 — Edit ANSWERS_KEY in id_keys.js
+  Change the localStorage key to avoid collisions with other instances:
+
+    const ANSWERS_KEY = 'mygenus-ks-answers-v1';
+
+STEP 5 — Update the data/species.json reference (optional)
+  id_keys.js fetches species.json to populate common names and iNaturalist
+  URLs in the candidate panel. The structure required is:
+
+    { "species": [
+        { "name": "Genus species subspecies",
+          "common_name": "Common Name",
+          "inat_url": "https://www.inaturalist.org/…" },
+        ...
+    ]}
+
+  The code matches on the first two words of the name (genus + species
+  epithet) to be robust to subspecies differences between files.
+  If you do not have a species.json, modify ksInitData() to skip that
+  fetch and omit the common_name / inat_url lookups.
+
+STEP 6 — Update id_keys.html
+  a. Change the <title> and topbar title to your taxon group.
+  b. Update the <meta name="description"> text.
+  c. Update navigation links (the hamburger menu) to match your site.
+  d. Adjust the localStorage key in ANSWERS_KEY if you skipped Step 4.
+
+STEP 7 — Verify the navigation structure
+  Run the key manually for 2–3 known species to confirm:
+  - Choosing A always reaches the correct next couplet.
+  - Choosing B jumps to the right sub-key (num_b + 1 rule).
+  - Each terminal lead correctly identifies the expected taxon.
+  - Skip (where applicable) advances to the non-terminal branch.
+
+COMMON PITFALLS
+  - Array order matters: couplets must be in key-text order. If A always
+    goes to the immediately next couplet in the array, ordering is correct.
+  - Terminal lead text: the genus name must appear verbatim in the lead text
+    for ksIsTerminal() to fire. Check spelling and spacing.
+  - Lead-9-style dual use: if a lead number appears as both the B of one
+    couplet and the A of the next (shared intermediate lead), the fallback
+    in ksGetNext() (num_a === leadNum) handles it automatically.
+  - Skip on all-terminal couplets: the Skip button is automatically hidden
+    when both A and B are terminal (both lead to a species name). This is
+    by design — the user must choose one.
+
+
+5. FILE DEPENDENCY SUMMARY
+---------------------------
+id_keys.html
+  └── loads css/style.css          (shared site styles)
+  └── loads js/id_keys.js          (key logic)
+      └── fetches data/id_key.json (key data at runtime)
+      └── fetches data/species.json (common names, iNat URLs at runtime)
+
+app.js (species detail page) also consumes id_key.json:
+  └── buildCPKeyPath() reads species_paths + leads to render the key
+      path in the species info panel, showing both chosen and false leads.
+
+
+6. KEY CONSTANTS AND CONFIGURATION POINTS
+------------------------------------------
+In id_keys.js:
+  ANSWERS_KEY     localStorage key (change per deployment)
+  GENUS_MARKER    string used to detect terminal leads ("Jamides")
+  ksGetNext()     navigation logic for A/B choices
+  ksSkipNext()    skip navigation (picks non-terminal branch)
+  ksScoreAll()    scoring algorithm (+1/−1 model)
+
+In id_key.json (per couplet):
+  upperside       controls Skip button visibility
+  guide_phrase    phrase to linkify in button text
+  guide_link      href for guide_phrase
+  question_phrase phrase to linkify in question label
+  question_link   href for question_phrase
