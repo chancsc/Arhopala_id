@@ -4,6 +4,7 @@ const state = {
   speciesIndex: [],    // [{name, common_name, note, taxon_photos, inat_url}] sorted A-Z
   questionNumbers: null, // Map<questionText, number> — stable Q-numbers by DFS order
   simCdPaths: null,    // Map<resultName, [{question, choice}]> — pre-computed by Python
+  idKeyData: null,     // { couplets, leads, species_paths } from id_key.json (C&P key)
   currentNodeId: null,
   history: []          // [{ nodeId, choiceLabel }, ...]
 };
@@ -672,10 +673,11 @@ async function initSpeciesPage() {
   const loadingEl = document.getElementById('loading');
   const appEl = document.getElementById('species-app');
   try {
-    const [treeRes, speciesRes, simCdRes] = await Promise.all([
+    const [treeRes, speciesRes, simCdRes, idKeyRes] = await Promise.all([
       fetch('data/tree.json', { cache: 'no-cache' }),
       fetch('data/species.json', { cache: 'no-cache' }),
-      fetch('data/sim_cd_paths.json', { cache: 'no-cache' })
+      fetch('data/sim_cd_paths.json', { cache: 'no-cache' }),
+      fetch('data/id_key.json', { cache: 'no-cache' }).catch(() => null)
     ]);
     if (!treeRes.ok || !speciesRes.ok) throw new Error('Failed to load data');
     const [treeData, speciesData] = await Promise.all([treeRes.json(), speciesRes.json()]);
@@ -683,6 +685,7 @@ async function initSpeciesPage() {
     state.speciesIndex = buildSpeciesIndex(treeData, speciesData);
     state.questionNumbers = buildQuestionNumbers(treeData);
     state.simCdPaths = simCdRes.ok ? new Map(Object.entries(await simCdRes.json())) : null;
+    state.idKeyData = (idKeyRes && idKeyRes.ok) ? await idKeyRes.json() : null;
     loadingEl.style.display = 'none';
     appEl.style.display = '';
 
@@ -745,6 +748,83 @@ async function initSpeciesPage() {
   }
 }
 
+// Build the C&P (Corbet & Pendlebury) dichotomous-key path for a species,
+// reading species_paths + leads + couplets from data/id_key.json. Replays the
+// stored path through the same serial-decision-node navigation the interactive
+// C&P Key page uses (a couplet-node lead forwards the trunk even when it names a
+// species), and renders each couplet decision with its actual diagnostic key
+// number plus the rejected (false) sibling lead for context.
+function buildCPKeyPath(speciesName) {
+  if (!state.idKeyData) return '';
+  const paths = state.idKeyData.species_paths;
+  const leads = state.idKeyData.leads;
+  const couplets = state.idKeyData.couplets;
+  if (!paths || !leads || !couplets) return '';
+
+  const sp2 = speciesName.split(' ').slice(0, 2).join(' ');
+  let leadNums = null;
+  for (const [key, val] of Object.entries(paths)) {
+    if (key.split(' ').slice(0, 2).join(' ') === sp2) { leadNums = val; break; }
+  }
+  if (!leadNums || leadNums.length === 0) return '';
+
+  // Navigation model (mirrors js/id_keys.js and scripts/build_id_key.js).
+  const present = t => leads[String(t)] !== undefined;
+  const isTerminal = t => (leads[String(t)] || '').includes('Arhopala');
+  const coupletNodes = new Set(couplets.map(c => c.num_a));
+  const cpByNode = new Map(couplets.map(c => [c.num_a, c]));
+  function resolve(t) {
+    let steps = 0;
+    while (present(t)) {
+      if (coupletNodes.has(t)) return { couplet: cpByNode.get(t) };
+      if (isTerminal(t)) return { terminal: t };
+      t += 1;
+      if (++steps > 500) break;
+    }
+    return {};
+  }
+  function choose(cp, lead) {
+    if (lead === cp.num_a) return isTerminal(cp.num_a) ? { terminal: cp.num_a } : resolve(cp.num_a + 1);
+    return resolve(cp.num_b); // B
+  }
+
+  // Replay: each path element is one couplet decision.
+  const decisions = [];
+  let cp = couplets[0];
+  for (const lead of leadNums) {
+    if (!cp) break;
+    const choseA = lead === cp.num_a;
+    const falseNum = choseA ? cp.num_b : cp.num_a;
+    decisions.push({ label: cp.label, chosen: lead, chosenText: leads[String(lead)] || '', falseNum, falseText: leads[String(falseNum)] || '' });
+    const r = choose(cp, lead);
+    if (r.terminal != null || !r.couplet) break;
+    cp = r.couplet;
+  }
+  if (!decisions.length) return '';
+
+  const stepsHTML = decisions.map(d => {
+    const chosenLi = `<li class="path-step">
+      <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(d.chosen))}</span> <span class="path-cplabel">${escapeHtml(d.label)}</span></span>
+      <span class="path-a">${escapeHtml(d.chosenText)}</span>
+    </li>`;
+    const falseLi = `<li class="path-step path-step--false">
+      <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(d.falseNum))}</span></span>
+      <span class="path-a">${escapeHtml(d.falseText)}</span>
+      <span class="path-false-note">✕ Not this — go to Key ${escapeHtml(String(d.chosen))}</span>
+    </li>`;
+    return d.chosen < d.falseNum ? chosenLi + falseLi : falseLi + chosenLi;
+  }).join('');
+
+  return `
+    <details class="path-details path-details--cpkey">
+      <summary class="path-summary">C&amp;P key path — ${decisions.length} step${decisions.length !== 1 ? 's' : ''}</summary>
+      <div class="path-content">
+        <ol class="path-steps">${stepsHTML}</ol>
+      </div>
+    </details>
+  `;
+}
+
 function showSpeciesDetailInline(sp) {
   const appEl = document.getElementById('species-app');
   if (appEl) appEl.classList.add('species-view');
@@ -760,6 +840,7 @@ function showSpeciesDetailInline(sp) {
     ${sp.common_name ? `<p class="species-name">${escapeHtml(sp.name)}</p>` : ''}
     ${noteHTML}
     ${buildPathDisplay(sp.paths, sp.note, sp.resultFeatures, sp.name)}
+    ${buildCPKeyPath(sp.name)}
     <a class="btn-inat" href="${escapeAttr(sp.inat_url)}" target="_blank" rel="noopener noreferrer">
       ${iconExternal()} View on iNaturalist
     </a>
