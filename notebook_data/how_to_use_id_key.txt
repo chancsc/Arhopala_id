@@ -1,31 +1,203 @@
-Identifying a butterfly species involves a hierarchical process of elimination. You start by determining the family, then move through the subfamily, tribe, and genus until you finally reach the specific species. This is achieved through the use of taxonomic identification keys.
+HOW TO USE A NUMBERED-LEAD DICHOTOMOUS IDENTIFICATION KEY
+==========================================================
 
-The Structure of the Key
+WHAT IS A DICHOTOMOUS KEY?
+---------------------------
+A dichotomous key is a tool for identifying an unknown organism by answering
+a series of two-choice questions (dichotomous = "dividing into two"). At each
+step you are presented with exactly two contrasting statements; you choose the
+one that matches your specimen, which then directs you to the next pair of
+statements. You repeat this until you arrive at an identification.
 
-The keys consist of a series of numbered, paired statements. These pairs present contrasting physical characteristics (such as wing venation, antenna shape, or leg structure).
+This type of key is widely used in biology (insects, plants, fungi, birds,
+fish, etc.) and follows an internationally recognised format.
 
-How to Use the Key
 
-To identify a specimen, follow these logical steps:
+THE NUMBERED-LEAD FORMAT
+-------------------------
+Each statement in the key is called a "lead". In the numbered-lead format,
+every lead has a unique number and the key is written as follows:
 
-Read the First Statement: Start at statement #1 of the relevant key.
-Make a Decision:
-If the statement is TRUE for your specimen: Move directly to the next statement immediately below it (e.g., from #1 to #2).
-If the statement is FALSE for your specimen: Look at the number provided in parentheses at the end of that line. Jump to that specific statement number further down the key.
-Continue Drilling Down: Repeat this process of selecting the true characteristic and jumping to the next step as directed.
-Reach the Identification: Continue until the path leads you to a name (in bold italics), which identifies the butterfly’s group or species.
-Example Walkthrough
+    n (m): [descriptive text about the feature to observe]
 
-Imagine you are identifying a butterfly using the "Key to the families." * Step 1: You look at statement #1. It is true. You "drop down" to statement #2. * Step 2: Statement #2 describes a characteristic your specimen lacks. You look at the number in parentheses (for example, #7). * Step 3: You jump to statement #7. If this is true, the text will identify the family (e.g., Lycaenidae).
+    n  = the number of this lead
+    m  = the number of the paired/alternative lead (its sibling)
+    text = a description of the observable character
 
-Diagnostic Importance
+Leads n and m together form one "couplet" — a pair of contrasting statements.
+You will always choose exactly one lead from each couplet.
 
-The characteristics within the keys are listed in order of diagnostic importance. The first character mentioned is usually the primary structural difference (like a specific vein branch), while subsequent characters are supplementary aids, such as color or size.
+The second lead of a couplet (the sibling) generally does NOT carry a
+parenthetical number of its own; its partner is identified by the first
+lead's parenthetical. For example:
 
-Using Measurements as an Aid
+    5 (12): Wings uniform pale yellow.
+    ...
+    12: Wings with dark spots or bands.
 
-Because many species look nearly identical, the keys often include forewing length (fwl). This is measured in millimeters from the base of the wing to the apex. This measurement helps distinguish between "sibling species" that share the same patterns but differ in scale.
+Here lead 5 and lead 12 form a couplet. Lead 5 says "(12)", identifying
+lead 12 as its alternative.
 
-Visual Verification
+A lead that ends with a taxon name (species, genus, etc.) is a TERMINAL
+lead — it is the final identification result, not a pointer forward.
 
-Once a name is reached, you can confirm the identification by referring to the provided plates. These illustrations show both the upperside and underside of males and females.
+A lead that ends without a taxon name is an INTERMEDIATE lead — it directs
+you to continue; the next couplet to evaluate starts immediately after in
+the numbered sequence.
+
+
+HOW TO USE THE KEY — STEP BY STEP
+-----------------------------------
+1. PREPARE YOUR SPECIMEN OR IMAGE
+   Examine your specimen carefully. Good lighting and magnification (a hand
+   lens or microscope where needed) will help you observe fine details.
+
+2. START AT THE FIRST COUPLET
+   Always begin at couplet 1 (the lead numbered "1"). The key is not meant
+   to be entered at a random point.
+
+3. READ BOTH LEADS IN THE COUPLET
+   Never decide on the basis of the first lead alone. Read lead n AND lead m
+   before making your choice.
+
+4. CHOOSE THE MATCHING LEAD
+   Select the lead whose description best matches your specimen. If you are
+   uncertain, note both possibilities and follow each in turn (see the tip
+   on running the key twice below).
+
+5. FOLLOW THE DIRECTION
+   - If the chosen lead is an INTERMEDIATE lead, the next couplet begins at
+     the lead that immediately follows in numerical order within the sub-key
+     you have entered.
+   - If the chosen lead is a TERMINAL lead, you have reached an
+     identification. Verify it against an image or description of that taxon.
+
+6. VERIFY YOUR IDENTIFICATION
+   Always confirm the result. Compare your specimen with a reference image,
+   description, or voucher specimen to ensure it matches the identified taxon
+   in all respects.
+
+
+TIPS FOR ACCURATE RESULTS
+--------------------------
+- Observe the specimen before reading any leads. Let the character of the
+  specimen guide your choice, not wishful matching to a name you already
+  have in mind.
+
+- If a character is ambiguous or damaged, run the key both ways and see
+  which terminal lead produces a plausible match when verified.
+
+- Terminology in older keys may differ from modern usage. Check the glossary
+  or terms section of the publication the key comes from.
+
+- Some characters (colour, size, androconia, etc.) are sex-dependent or
+  population-variable. Note the sex and origin of your specimen before
+  starting.
+
+- Upperside vs. underside: many keys distinguish characters visible only
+  from one surface. Know which surface your photograph or specimen shows.
+
+
+UNDERSTANDING THE STRUCTURE OF THE KEY
+---------------------------------------
+Dichotomous keys have a tree structure. Each couplet splits the remaining
+candidate taxa into two groups. Choosing a lead enters you into one branch
+of that tree and excludes the other.
+
+The full pathway from the start to a terminal lead — the ordered list of
+lead numbers you passed through — is called the IDENTIFICATION PATH or
+KEY PATH for that taxon. For example, a path of "1 · 5 · 12 · 20 · 21"
+means you chose lead 1, then lead 5, then lead 12, then lead 20, and
+reached species identification at lead 21.
+
+To trace the path for a known taxon, look up which lead is terminal for
+that species and work backwards through the parenthetical numbers.
+
+
+WORKED EXAMPLE (generic)
+--------------------------
+Suppose a simplified key reads:
+
+    1 (8):   Legs six.
+    2 (5):   Wings present.
+    3 (4):   Two pairs of wings.
+    4:       One pair of wings. ... Order Diptera (flies)
+    5:       Wings absent.
+    6 (7):   Body divided into head, thorax, abdomen; antennae present. ... Class Insecta (wingless insect)
+    7:       Body not divided into three regions; no antennae. ... Class Arachnida
+    8:       Legs eight. ... Class Arachnida
+
+Step 1 — Couplet {1, 8}
+  Lead 1: "Legs six."
+  Lead 8: "Legs eight."
+  Specimen has SIX legs. → CHOOSE LEAD 1.
+
+Step 2 — Couplet {2, 5}  [sub-key following lead 1]
+  Lead 2: "Wings present."
+  Lead 5: "Wings absent."
+  Specimen has wings. → CHOOSE LEAD 2.
+
+Step 3 — Couplet {3, 4}
+  Lead 3: "Two pairs of wings."
+  Lead 4: "One pair of wings. ... Order Diptera"
+  Specimen has ONE pair of wings. → CHOOSE LEAD 4.
+  → RESULT: Order Diptera (flies)  ✓
+
+Key path followed: leads 1 · 2 · 4
+
+
+COMMON PROBLEMS AND HOW TO HANDLE THEM
+----------------------------------------
+PROBLEM: Both leads in a couplet seem to match (or neither does).
+SOLUTION: The character may be variable, damaged, or sex-dependent. Try
+both branches independently and see which terminal lead verifies correctly
+against a reference image.
+
+PROBLEM: The taxon I think I have is not in the key.
+SOLUTION: The key covers only the taxa in its scope. If your specimen is
+not from that region, time period, or group, the key cannot identify it.
+Check that your specimen falls within the key's stated coverage.
+
+PROBLEM: I do not understand a technical term.
+SOLUTION: Look up the term in the glossary of the source publication, or in
+a standard entomological/botanical/zoological dictionary. Do not substitute
+a common-language interpretation — specialised terms in keys are precise.
+
+PROBLEM: The features needed are not visible from my photograph.
+SOLUTION: Some characters require a physical specimen or a specific view.
+Features marked ♂ (male) or ♀ (female) require knowing the sex of the
+specimen. If a character cannot be assessed, skip that couplet and try
+alternative characters if the key provides them, or seek a more complete
+specimen.
+
+
+GLOSSARY OF COMMON KEY NOTATION
+---------------------------------
+♂  — male specimen
+♀  — female specimen
+cf. — compare with (uncertain resemblance)
+n.sp. — new (undescribed) species
+agg. — aggregate (a group of closely similar taxa treated together)
+s.l. — sensu lato (in the broad sense)
+s.str. — sensu stricto (in the strict sense)
+ssp. / subsp. — subspecies
+fwl — forewing length (tip of wing to base, excluding fringe)
+HW  — hindwing
+FW  — forewing
+→   — "leads to" / "result is"
+...  — descriptive text continues / terminal name follows
+
+
+CITATION AND PROVENANCE
+------------------------
+Always record which key you used (author, title, publication, year, edition)
+alongside your identification. Different keys for the same group may use
+different taxonomic concepts or regional scope, and a key-based identification
+is only as reliable as the key itself.
+
+
+FURTHER READING
+---------------
+- Dichotomous keys — Wikipedia: https://en.wikipedia.org/wiki/Dichotomous_key
+- Voss, R.S. et al. (various): guides to constructing and using biological keys
+- The Biologists' Toolbox series (various publishers)
