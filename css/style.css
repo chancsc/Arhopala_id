@@ -918,31 +918,6 @@ details[open] .path-summary::before { content: '▼ '; }
 
 /* C&P (Corbet & Pendlebury) key path */
 .path-details--cpkey .path-summary { background: #faf4e6; color: var(--accent); }
-.path-step--false {
-  counter-increment: none;
-  opacity: 0.72;
-}
-.path-step--false::before {
-  content: '✕';
-  background: transparent;
-  color: var(--text-muted);
-  font-weight: 700;
-}
-.path-step--false .path-a { color: var(--text-muted); font-weight: 500; }
-.path-false-note {
-  display: block;
-  font-size: 0.68rem;
-  color: var(--text-muted);
-  font-style: italic;
-  margin-top: 0.05rem;
-}
-.path-cplabel {
-  display: inline-block;
-  font-size: 0.6rem;
-  font-weight: 700;
-  color: var(--accent);
-  letter-spacing: 0.02em;
-}
 
 .path-step--group::before { display: none; }
 
