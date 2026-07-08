@@ -918,6 +918,9 @@ details[open] .path-summary::before { content: '▼ '; }
 
 /* C&P (Corbet & Pendlebury) key path */
 .path-details--cpkey .path-summary { background: #faf4e6; color: var(--accent); }
+/* No running step counter — the "Key N" label is the meaningful number. */
+.path-details--cpkey .path-step { counter-increment: none; padding-left: 0; }
+.path-details--cpkey .path-step::before { display: none; }
 
 .path-step--group::before { display: none; }
 
