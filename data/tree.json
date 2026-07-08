@@ -2140,7 +2140,7 @@
       "note": "Tailless; HW tornus very rounded. FW 18–22 mm. Male: rather dull purple-blue with a thread-like black border. Female: purple; HW border unusually variable — purple sometimes reaches termen between veins 2 and 5, other specimens almost confined to cell. Underside FW: markings variable; lower postdiscal band sometimes obsolete; when fully developed, spot in space 1b shifted inward, placed midway between end-cell bar and postdiscal spot in space 2. Underside HW: postdiscal band WIDELY dislocated at vein 2 (diagnostic for subgroup). Forest species, low to moderate elevations.",
       "features": {
         "On the forewing underside, is the basal cell spot absent?": "No — basal cell spot present on FW underside",
-        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "No — no white patch just above the tornal lobe (the small white spot in space 1a may still be present)"
+        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "No — no white patch just above the tornal lobe"
       }
     },
     "q_amph_s2": {
@@ -2170,7 +2170,7 @@
           "next": "r_norda"
         },
         {
-          "label": "No — no white patch just above the tornal lobe (the small white spot in space 1a may still be present)",
+          "label": "No — no white patch just above the tornal lobe",
           "next": "q_amph_geo"
         }
       ]
@@ -2238,23 +2238,23 @@
     "q_amph_cilia_spot1a": {
       "type": "question",
       "id": "q_amph_cilia_spot1a",
-      "question": "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?",
+      "question": "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?",
       "question_link": {
         "text": "weak tooth at vein 2",
         "href": "guide.html#wing-regions"
       },
-      "hint": "[A. moolaiana yajuna](https://www.inaturalist.org/observations?verifiable=true&taxon_id=549326&preferred_place_id=6734), [A. amphimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498183&preferred_place_id=6734) and [A. major](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429756&preferred_place_id=6734) all have a small white spot on the HW cilia near the tornus with a very weak tooth at vein 2 (HW postdiscal band only partially dislocated at vein 2). [A. moolaiana](https://www.inaturalist.org/observations?verifiable=true&taxon_id=549326&preferred_place_id=6734)'s postdiscal spots are less rounded — like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734) — while [A. amphimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498183&preferred_place_id=6734) and [A. major](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429756&preferred_place_id=6734) have more rounded spots and are themselves indistinguishable beneath. [A. zylda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340244&preferred_place_id=6734) and [A. stubbsi](https://www.inaturalist.org/search?q=Arhopala+stubbsi) lack the white cilia spot and tooth altogether and are separated from each other only by upperside characters (border colour and width).",
+      "hint": "[A. moolaiana yajuna](https://www.inaturalist.org/observations?verifiable=true&taxon_id=549326&preferred_place_id=6734), [A. amphimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498183&preferred_place_id=6734) and [A. major](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429756&preferred_place_id=6734) all have a very weak tooth at vein 2 (HW postdiscal band only partially dislocated at vein 2). [A. moolaiana](https://www.inaturalist.org/observations?verifiable=true&taxon_id=549326&preferred_place_id=6734)’s postdiscal spots are less rounded — like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734) — while [A. amphimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498183&preferred_place_id=6734) and [A. major](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429756&preferred_place_id=6734) have more rounded spots and are themselves indistinguishable beneath. The small white spot in space 1a is unreliable here — absent or very obscure in A. major and easily overlooked in the others — so do not rely on it. [A. zylda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340244&preferred_place_id=6734) and [A. stubbsi](https://www.inaturalist.org/search?q=Arhopala+stubbsi) lack the tooth altogether and are separated from each other only by upperside characters (border colour and width).",
       "choices": [
         {
-          "label": "Yes — white cilia spot near the tornus + weak tooth present; postdiscal spots less rounded (more angular), similar to A. norda",
+          "label": "Yes — weak tooth at vein 2 present; postdiscal spots less rounded (more angular), similar to A. norda",
           "next": "r_moolaiana_yajuna"
         },
         {
-          "label": "Yes — white cilia spot near the tornus + weak tooth present; postdiscal spots more rounded, similar to A. amphimuta/A. major",
+          "label": "Yes — weak tooth at vein 2 present; postdiscal spots more rounded, similar to A. amphimuta/A. major",
           "next": "r_moolaiana_yajuna"
         },
         {
-          "label": "No — no white cilia spot or tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)",
+          "label": "No — no weak tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)",
           "next": "r_moolaiana_yajuna"
         }
       ]
@@ -2404,7 +2404,7 @@
       "note": "Tailed — distinct tail at vein 2; the ONLY tailed member of the amphimuta subgroup (all others tailless). Male: deep violet with a narrow, regular black border. Underside: FW postdiscal band nearly completely dislocated at vein 4. HW postdiscal spots in spaces 6 and 7 more or less rounded; spots 5–7 in echelon (centres in straight line).",
       "features": {
         "On the forewing underside, is the basal cell spot absent?": "No — basal cell spot present on FW underside",
-        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "No — no white patch just above the tornal lobe (the small white spot in space 1a may still be present)",
+        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "No — no white patch just above the tornal lobe",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)",
         "Is the forewing postdiscal band nearly completely dislocated at vein 4?": "Yes — FW band nearly completely dislocated at vein 4",
         "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
@@ -2426,9 +2426,9 @@
       "common_name": "",
       "note": "Tailless. Distinguished from [A. major](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429756&preferred_place_id=6734) by the small white patch on the HW cilia just above the tornal lobe, and by less rounded (more angular) postdiscal spots on the underside.",
       "features": {
-        "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes — white cilia spot near the tornus + weak tooth present; postdiscal spots less rounded (more angular), similar to A. norda",
         "Is the specimen from Borneo (not the Malay Peninsula)?": "No — Malay Peninsula specimen",
-        "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2"
+        "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
+        "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes — weak tooth at vein 2 present; postdiscal spots less rounded (more angular), similar to A. norda"
       }
     },
     "r_major_major": {
@@ -2442,7 +2442,7 @@
         "Is the male a warm violet-purple (with a reddish hue rather than blue), and is the FW postdiscal spot in space 3 an oblique oval?": "Distinctly blue (not violet or purple) with a broad border ≥2 mm — may be A. major or A. stubbsi",
         "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?": "No — border regular ~0.5 mm",
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
-        "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes — white cilia spot near the tornus + weak tooth present; postdiscal spots more rounded, similar to A. amphimuta/A. major"
+        "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes — weak tooth at vein 2 present; postdiscal spots more rounded, similar to A. amphimuta/A. major"
       }
     },
     "r_stubbsi": {
@@ -2455,7 +2455,7 @@
       "features": {
         "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?": "No — border regular ~0.5 mm",
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
-        "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "No — no white cilia spot or tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)"
+        "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "No — no weak tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)"
       }
     },
     "r_moolaiana_yajuna": {
@@ -2498,8 +2498,8 @@
       "note": "Tailless. Male: dark bluish-purple with a regular 0.5–1.0 mm black border; FW 20–23 mm. HW cilia often prolonged into a very short tooth at vein 2 (may be inconspicuous in worn specimens). FW underside: postdiscal band slightly dislocated at vein 4; spot in space 3 usually an oblique oval. Female: lighter purple with typical broad black borders. HW postdiscal band only partially dislocated at vein 2 (as in [A. zylda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340244&preferred_place_id=6734)).",
       "features": {
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
-        "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes — white cilia spot near the tornus + weak tooth present; postdiscal spots more rounded, similar to A. amphimuta/A. major",
-        "What is the forewing length, and are the hindwing cilia prolonged into a short tooth at vein 2?": "Larger (FW ~20–23 mm); HW cilia often form a short tooth at vein 2"
+        "What is the forewing length, and are the hindwing cilia prolonged into a short tooth at vein 2?": "Larger (FW ~20–23 mm); HW cilia often form a short tooth at vein 2",
+        "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes — weak tooth at vein 2 present; postdiscal spots more rounded, similar to A. amphimuta/A. major"
       }
     },
     "r_zylda_elioti": {
@@ -2511,8 +2511,8 @@
       "note": "Tailless. Male: shining blue with a slight violet tinge; border 1.0 mm; FW 16–17 mm. HW evenly rounded — no trace of a tooth at vein 2 ([A. amphimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498183&preferred_place_id=6734) has a short tooth). Female: paler blue with exceptionally narrow black borders (the narrowest in the amphimuta subgroup). HW postdiscal band only partially dislocated at vein 2 (as in [A. amphimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498183&preferred_place_id=6734)). Malay Peninsula.",
       "features": {
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
-        "On the hindwing underside, is there a small white spot on the cilia near the tornus together with a very weak tooth at vein 2 — and if present, are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "No — no white cilia spot or tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)",
-        "What is the forewing length, and are the hindwing cilia prolonged into a short tooth at vein 2?": "Smaller (FW ~16–17 mm); HW cilia evenly rounded, no tooth at vein 2"
+        "What is the forewing length, and are the hindwing cilia prolonged into a short tooth at vein 2?": "Smaller (FW ~16–17 mm); HW cilia evenly rounded, no tooth at vein 2",
+        "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "No — no weak tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)"
       }
     },
     "r_dajagaka": {
