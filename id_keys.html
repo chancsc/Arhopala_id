@@ -124,6 +124,19 @@
     .ks-btn.sel .ks-btn-side { opacity: 0.85; }
     .ks-btn-text { flex: 1; }
 
+    /* Couplet statement + Yes/No answers */
+    .ks-cp-statement {
+      padding: 0.1rem 0.85rem 0.5rem;
+      font-size: 0.84rem; color: var(--text); line-height: 1.5;
+    }
+    .ks-btn-row--yesno { flex-direction: row; gap: 0.5rem; }
+    .ks-btn-yes, .ks-btn-no {
+      flex: 1; justify-content: center; text-align: center;
+      font-weight: 700; font-size: 0.9rem; padding: 0.5rem 0.6rem;
+    }
+    .ks-btn-yes:hover { background: #eef5ec; border-color: var(--primary); }
+    .ks-btn-no:hover { background: #faf4e6; border-color: var(--accent); }
+
     /* Guide link inside button text */
     .ks-guide-link { color: inherit; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 2px; }
     .ks-guide-link:hover { color: var(--primary); text-decoration-style: solid; }

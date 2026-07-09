@@ -791,27 +791,24 @@ function buildCPKeyPath(speciesName) {
   }
 
   // Walk the chain: one step per path element, tracking the current couplet.
+  // Each couplet is a single statement (its entry lead num_a) answered Yes (the
+  // specimen matches it → advance) or No (it does not → jump to lead num_b).
   const steps = [];
   let cp = couplets[0];
   for (const lead of leadNums) {
     if (!cp) break;
     const choice = lead === cp.num_a ? 'A' : lead === cp.num_b ? 'B' : null;
     if (!choice) break;
+    steps.push({ num_a: cp.num_a, statement: cp.a_text, yes: choice === 'A' });
     const r = choose(cp, lead);
-    const nextNum = r.couplet ? r.couplet.num_a : null;
-    // Badge: "Key N" (entry) or "Key N → M" (alternate), suppressing the arrow
-    // when M is the next couplet's entry lead.
-    let badge = 'Key ' + cp.num_a;
-    if (choice === 'B' && cp.num_b !== nextNum) badge = 'Key ' + cp.num_a + ' → ' + cp.num_b;
-    steps.push({ badge, question: cp.question, answer: choice === 'A' ? cp.a_text : cp.b_text });
     if (r.terminal != null || !r.couplet) break;
     cp = r.couplet;
   }
   if (!steps.length) return '';
 
   const stepsHTML = steps.map(s => `<li class="path-step">
-      <span class="path-q"><span class="path-qnum">${escapeHtml(s.badge)}</span> ${escapeHtml(s.question)}</span>
-      <span class="path-a">↳ ${escapeHtml(s.answer)}</span>
+      <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(s.num_a))}</span> ${escapeHtml(s.statement)}</span>
+      <span class="path-a">↳ ${s.yes ? 'Yes' : 'No'}</span>
     </li>`).join('');
 
   return `

@@ -265,16 +265,8 @@ function ksRenderHistory() {
     const cp = ks.couplets.find(c => c.id === a.coupletId);
     if (!cp) return '';
     let label;
-    if (a.choice === 'skip') {
-      label = `Key ${cp.num_a} → Skip`;
-    } else if (a.choice === 'A') {
-      label = `Key ${cp.num_a}`;
-    } else {
-      // B (alternate lead M) — suppress "→ M" if M is the next step's couplet entry.
-      const nextA = ks.answers[i + 1];
-      const nextCp = nextA ? ks.couplets.find(c => c.id === nextA.coupletId) : null;
-      label = (nextCp && nextCp.num_a === cp.num_b) ? `Key ${cp.num_a}` : `Key ${cp.num_a} → ${cp.num_b}`;
-    }
+    if (a.choice === 'skip') label = `Key ${cp.num_a}: Skip`;
+    else label = `Key ${cp.num_a}: ${a.choice === 'A' ? 'Yes' : 'No'}`;
     return `<span class="ks-hist-item" data-step="${i}" role="button" tabindex="0" title="Back to Key ${ksEscAttr(String(cp.num_a))}">${ksEsc(label)}</span>`;
   }).filter(Boolean).join('<span class="ks-hist-sep">&#8250;</span>');
 
@@ -312,34 +304,28 @@ function ksRenderCouplet() {
        </details>`
     : '';
 
-  const aHTML = ksRenderText(cp.a_text, cp.guide_phrase, cp.guide_link);
-  const bHTML = ksRenderText(cp.b_text, cp.guide_phrase, cp.guide_link);
+  // Serial-lead key: each couplet is a SINGLE statement (the entry lead num_a).
+  // "Yes" = the specimen matches it → advance to the next lead; "No" = it does
+  // not → jump to lead num_b (shown as the next couplet). The statement is given
+  // in full so the user decides from it alone, the way a printed key is worked.
+  const stmtHTML = ksRenderText(cp.a_text, cp.guide_phrase, cp.guide_link);
 
   // Skip only if upperside and at least one branch is non-terminal
   const canSkip = cp.upperside && ksSkipNext(cp) !== null;
-  const skipBtn = canSkip
-    ? `<button class="ks-btn ks-btn-skip" data-id="${ksEscAttr(cp.id)}" data-v="skip">Skip — upperside feature</button>`
+  const skipRow = canSkip
+    ? `<div class="ks-btn-row"><button class="ks-btn ks-btn-skip" data-id="${ksEscAttr(cp.id)}" data-v="skip">Skip — upperside feature not visible</button></div>`
     : '';
-
-  const qHTML = (cp.question_link && cp.question_phrase)
-    ? ksLinkify(cp.question, cp.question_phrase, cp.question_link, 'ks-q-link')
-    : cp.question_link
-      ? `<a href="${ksEscAttr(cp.question_link)}" class="ks-q-link" target="_blank" rel="noopener">${ksEsc(cp.question)}</a>`
-      : ksEsc(cp.question);
 
   el.innerHTML = `
     <div class="ks-cp" id="ks-cp-current">
-      <p class="ks-cp-label"><span class="ks-label-tag">Key ${ksEsc(String(cp.num_a))}</span> ${qHTML}</p>
+      <p class="ks-cp-label"><span class="ks-label-tag">Key ${ksEsc(String(cp.num_a))}</span></p>
+      <p class="ks-cp-statement">${stmtHTML}</p>
       ${hintHTML}
-      <div class="ks-btn-row">
-        <button class="ks-btn ks-btn-a" data-id="${ksEscAttr(cp.id)}" data-v="A">
-          <span class="ks-btn-side">A</span><span class="ks-btn-text">${aHTML}</span>
-        </button>
-        <button class="ks-btn ks-btn-b" data-id="${ksEscAttr(cp.id)}" data-v="B">
-          <span class="ks-btn-side">B</span><span class="ks-btn-text">${bHTML}</span>
-        </button>
-        ${skipBtn}
+      <div class="ks-btn-row ks-btn-row--yesno">
+        <button class="ks-btn ks-btn-yes" data-id="${ksEscAttr(cp.id)}" data-v="A">Yes</button>
+        <button class="ks-btn ks-btn-no" data-id="${ksEscAttr(cp.id)}" data-v="B">No</button>
       </div>
+      ${skipRow}
     </div>`;
 }
 
