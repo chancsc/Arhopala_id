@@ -749,16 +749,20 @@ async function initSpeciesPage() {
 }
 
 // Build the C&P (Corbet & Pendlebury) dichotomous-key path for a species,
-// reading species_paths + leads from data/id_key.json. Shows only the leads the
-// specimen matches, in order, each with its actual diagnostic key number — the
-// rejected sibling leads are NOT shown (they read as steps to take rather than
-// branches not taken). Consecutive duplicate lead numbers — which arise from the
-// serial-lead key where one couplet's lead forwards into the next — are collapsed.
+// reading species_paths + couplets + leads from data/id_key.json. Walks the
+// couplet chain from Key 1 (tracking the current couplet), so it reads in the
+// same question/answer style as the Direct path and stays identical to the
+// scoring-page breadcrumb. Each step is badged "Key N" when the couplet's entry
+// lead was taken, or "Key N → M" when the alternate lead M was taken — with the
+// "→ M" suppressed when M is itself the next couplet's entry (the arrow would
+// just repeat the following step's number). This navigation mirrors ksChoose in
+// js/id_keys.js — keep the two in sync.
 function buildCPKeyPath(speciesName) {
   if (!state.idKeyData) return '';
   const paths = state.idKeyData.species_paths;
   const leads = state.idKeyData.leads;
-  if (!paths || !leads) return '';
+  const couplets = state.idKeyData.couplets;
+  if (!paths || !leads || !couplets) return '';
 
   const sp2 = speciesName.split(' ').slice(0, 2).join(' ');
   let leadNums = null;
@@ -767,20 +771,52 @@ function buildCPKeyPath(speciesName) {
   }
   if (!leadNums || leadNums.length === 0) return '';
 
-  // Collapse consecutive duplicate lead numbers (serial-lead fall-through).
-  const chosen = leadNums.filter((n, i) => i === 0 || n !== leadNums[i - 1]);
+  // Navigation (mirrors js/id_keys.js resolve model).
+  const present = t => leads[String(t)] !== undefined;
+  const isTerminal = t => (leads[String(t)] || '').includes('Arhopala');
+  const coupletNodes = new Set(couplets.map(c => c.num_a));
+  const cpByNode = new Map(couplets.map(c => [c.num_a, c]));
+  function resolve(t) {
+    let s = 0;
+    while (present(t)) {
+      if (coupletNodes.has(t)) return { couplet: cpByNode.get(t) };
+      if (isTerminal(t)) return { terminal: t };
+      t += 1; if (++s > 500) break;
+    }
+    return {};
+  }
+  function choose(cp, lead) {
+    if (lead === cp.num_a) return isTerminal(cp.num_a) ? { terminal: cp.num_a } : resolve(cp.num_a + 1);
+    return resolve(cp.num_b);
+  }
 
-  const stepsHTML = chosen.map(n => {
-    const text = leads[String(n)] || '';
-    return `<li class="path-step" data-key-num="${escapeHtml(String(n))}">
-      <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(n))}</span></span>
-      <span class="path-a">${escapeHtml(text)}</span>
-    </li>`;
-  }).join('');
+  // Walk the chain: one step per path element, tracking the current couplet.
+  const steps = [];
+  let cp = couplets[0];
+  for (const lead of leadNums) {
+    if (!cp) break;
+    const choice = lead === cp.num_a ? 'A' : lead === cp.num_b ? 'B' : null;
+    if (!choice) break;
+    const r = choose(cp, lead);
+    const nextNum = r.couplet ? r.couplet.num_a : null;
+    // Badge: "Key N" (entry) or "Key N → M" (alternate), suppressing the arrow
+    // when M is the next couplet's entry lead.
+    let badge = 'Key ' + cp.num_a;
+    if (choice === 'B' && cp.num_b !== nextNum) badge = 'Key ' + cp.num_a + ' → ' + cp.num_b;
+    steps.push({ badge, question: cp.question, answer: choice === 'A' ? cp.a_text : cp.b_text });
+    if (r.terminal != null || !r.couplet) break;
+    cp = r.couplet;
+  }
+  if (!steps.length) return '';
+
+  const stepsHTML = steps.map(s => `<li class="path-step">
+      <span class="path-q"><span class="path-qnum">${escapeHtml(s.badge)}</span> ${escapeHtml(s.question)}</span>
+      <span class="path-a">↳ ${escapeHtml(s.answer)}</span>
+    </li>`).join('');
 
   return `
     <details class="path-details path-details--cpkey">
-      <summary class="path-summary">C&amp;P key path — ${chosen.length} step${chosen.length !== 1 ? 's' : ''}</summary>
+      <summary class="path-summary">C&amp;P key path — ${steps.length} step${steps.length !== 1 ? 's' : ''}</summary>
       <div class="path-content">
         <ol class="path-steps">${stepsHTML}</ol>
       </div>

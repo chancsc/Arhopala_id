@@ -264,11 +264,18 @@ function ksRenderHistory() {
   const items = ks.answers.map((a, i) => {
     const cp = ks.couplets.find(c => c.id === a.coupletId);
     if (!cp) return '';
-    const leadNum = a.choice === 'A' ? cp.num_a : a.choice === 'B' ? cp.num_b : null;
-    const label = a.choice === 'skip'
-      ? `${cp.label}: Skip`
-      : `${cp.label}: Key ${leadNum}`;
-    return `<span class="ks-hist-item" data-step="${i}" role="button" tabindex="0" title="Back to ${ksEscAttr(cp.label)}">${ksEsc(label)}</span>`;
+    let label;
+    if (a.choice === 'skip') {
+      label = `Key ${cp.num_a} → Skip`;
+    } else if (a.choice === 'A') {
+      label = `Key ${cp.num_a}`;
+    } else {
+      // B (alternate lead M) — suppress "→ M" if M is the next step's couplet entry.
+      const nextA = ks.answers[i + 1];
+      const nextCp = nextA ? ks.couplets.find(c => c.id === nextA.coupletId) : null;
+      label = (nextCp && nextCp.num_a === cp.num_b) ? `Key ${cp.num_a}` : `Key ${cp.num_a} → ${cp.num_b}`;
+    }
+    return `<span class="ks-hist-item" data-step="${i}" role="button" tabindex="0" title="Back to Key ${ksEscAttr(String(cp.num_a))}">${ksEsc(label)}</span>`;
   }).filter(Boolean).join('<span class="ks-hist-sep">&#8250;</span>');
 
   el.innerHTML = `<div class="ks-hist">${items}</div>`;
@@ -322,7 +329,7 @@ function ksRenderCouplet() {
 
   el.innerHTML = `
     <div class="ks-cp" id="ks-cp-current">
-      <p class="ks-cp-label"><span class="ks-label-tag">${ksEsc(cp.label)}</span> ${qHTML}</p>
+      <p class="ks-cp-label"><span class="ks-label-tag">Key ${ksEsc(String(cp.num_a))}</span> ${qHTML}</p>
       ${hintHTML}
       <div class="ks-btn-row">
         <button class="ks-btn ks-btn-a" data-id="${ksEscAttr(cp.id)}" data-v="A">
@@ -347,7 +354,7 @@ function ksRender() {
     if (ks.result) {
       badge.textContent = 'Done';
     } else if (ks.currentCouplet) {
-      badge.textContent = ks.currentCouplet.label;
+      badge.textContent = 'Key ' + ks.currentCouplet.num_a;
     } else {
       badge.textContent = '';
     }
