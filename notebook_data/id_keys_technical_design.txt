@@ -9,18 +9,58 @@ Purpose: Interactive, sequential C&P-style dichotomous key with real-time
 
 OVERVIEW
 --------
-The tool presents one key couplet at a time. The user selects option A or B;
-the page immediately navigates to the next couplet determined by the key's
-branching structure. In parallel, a candidate ranking panel updates in real
-time using a simple +1/−1 scoring model. When the user reaches a terminal
-lead (a lead whose text names a specific taxon), the page displays the
-identification result.
+The tool presents one key lead at a time as a SINGLE STATEMENT answered
+Yes / No (see "PRESENTATION MODEL" below). Answering advances the page to the
+next lead determined by the key's branching structure. In parallel, a candidate
+ranking panel updates in real time using a simple +1/−1 scoring model. When the
+user reaches a terminal lead (a lead whose text names a specific taxon), the
+page displays the identification result.
 
 Three files define the complete tool:
 
   id_key.json    — the key data: couplets, lead texts, species paths
   id_keys.js     — navigation logic, scoring, rendering (no framework)
   id_keys.html   — page shell, CSS, hamburger menu; loads the two above
+
+
+PRESENTATION MODEL — SINGLE STATEMENT, YES / NO  (serial-lead keys)
+------------------------------------------------------------------
+A numbered-lead key in "N (M)" notation is a SERIAL-LEAD key:
+
+    N (M):  means  "Is statement N true?"
+              Yes → go to the next lead (N+1)
+              No  → jump to lead M   (M is a SEPARATE statement, evaluated next)
+
+So lead M is NOT "the other half of a two-way choice" — it is the next
+statement you consider if statement N does not fit your specimen.
+
+Therefore each lead is shown as ITS OWN statement (the num_a text, in full),
+with two answers:
+
+    [Key N]  <full text of lead num_a>
+      ( Yes )   → the specimen matches → advance to lead num_a+1   (choice "A")
+      ( No  )   → it does not          → jump to lead num_b        (choice "B")
+
+WHY NOT "OPTION A vs OPTION B":
+An earlier build showed lead num_a as button A and lead num_b as button B.
+That was wrong for a serial-lead key: choosing B ("No") jumped to Key M and
+then re-showed what looked like the same question — now with M's fuller text as
+its own option A — because M is the next statement, not the contrast to N.
+Presenting one statement with Yes/No removes that duplication and reads exactly
+like working a printed key. Internally Yes still maps to choice "A" and No to
+choice "B", so navigation and the +1/−1 scoring are unchanged; only the couplet
+card, the history breadcrumb ("Key N: Yes/No/Skip"), and the species-detail
+C&P path (statement + "↳ Yes/No") render this way. The b_text field is retained
+in the data (it is the num_b statement) but is not shown on the couplet card;
+it appears as the num_b lead's own statement when the user answers No.
+
+NAVIGATION NOTE (Arhopala): this key is also a serial key in a second sense — a
+lead can NAME a species AND still forward the trunk when the specimen isn't that
+species (it falls through to lead n+1). js/id_keys.js therefore resolves a jump
+by walking forward until it hits a couplet-node (which wins over a terminal) or
+a terminal — see ksResolve()/ksChoose(), which build_id_key.js and
+validate_id_key.js mirror exactly. This supersedes the simpler "num_b + 1" rule
+described for the original two-option layout in Section 2b below.
 
 
 1. DATA FILE: id_key.json
@@ -55,9 +95,15 @@ Each element of the "couplets" array describes one choice-pair in the key:
   }
 
   FIELD NOTES
+  - RENDERING (Yes/No model, see "PRESENTATION MODEL" above): the couplet card
+    shows a_text (the num_a statement) with Yes/No buttons. The "question" field
+    (an "a vs b" phrasing) and b_text are NOT shown on the card in this model;
+    b_text is retained only as the num_b lead's own statement, shown when the
+    user answers No and lands on that lead. guide_phrase/guide_link still linkify
+    a substring of the displayed a_text statement.
   - num_a / num_b: must match the lead numbers used in the original key text.
     The couplets array must be in the same order as the key's text flow (the
-    sub-key that follows option A always occupies the NEXT position in the array).
+    sub-key that follows "Yes" always occupies the NEXT position in the array).
   - label: use any short string; "K1"–"K19" is the Jamides convention.
   - upperside: set to true for any couplet whose characters require the upperside
     of the specimen. This adds a "Skip" button in the UI.
@@ -276,8 +322,12 @@ id_keys.html
       └── fetches data/species.json (common names, iNat URLs at runtime)
 
 app.js (species detail page) also consumes id_key.json:
-  └── buildCPKeyPath() reads species_paths + leads to render the key
-      path in the species info panel, showing both chosen and false leads.
+  └── buildCPKeyPath() walks the couplet chain for a species (mirroring
+      ksChoose in id_keys.js) and renders the C&P key path in the species info
+      panel as one step per lead — "[Key N] <statement> ↳ Yes/No" — matching the
+      scoring-page breadcrumb. Only the leads the specimen matches are shown; the
+      rejected sibling ("false") leads are NOT rendered (an earlier version showed
+      them greyed-out, which read as steps to take rather than branches skipped).
 
 
 6. KEY CONSTANTS AND CONFIGURATION POINTS
