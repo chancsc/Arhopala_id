@@ -52,7 +52,11 @@ const ROOT = path.resolve(__dirname, '..');
 const KEYS_TXT = path.join(ROOT, 'notebook_data', 'keys.txt');
 const OUT = path.join(ROOT, 'data', 'id_key.json');
 
-const IMPLICIT_PAREN = new Set([7, 80, 143, 189, 124, 76]);
+// NOTE: lead 7 was formerly in this set (it was a terminal, A. amantes, that had
+// to be bridged to lead 8). The source has since been corrected — lead 6 =
+// amantes and lead 7 = the "cell about half or longer" contrast to lead 2, a real
+// intermediate that falls through to lead 8 on its own — so 7 is no longer needed.
+const IMPLICIT_PAREN = new Set([80, 143, 189, 124, 76]);
 const DROP_PAREN = new Set([144]);
 // ELSE_OVERRIDE: a couplet node whose "else" (B) jump target in the source skips over an
 // intermediate sub-key, orphaning it. Redirect the else to the immediate next lead so the
