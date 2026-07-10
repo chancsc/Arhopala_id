@@ -25,6 +25,11 @@ Three files define the complete tool:
 
 PRESENTATION MODEL — SINGLE STATEMENT, YES / NO  (serial-lead keys)
 ------------------------------------------------------------------
+>>> READ THIS BEFORE BUILDING THE COUPLET CARD. <<<
+>>> Each couplet renders ONE statement (a_text) with Yes / No buttons.       <<<
+>>> Do NOT build a two-option "A: a_text  /  B: b_text" card. b_text is the   <<<
+>>> NEXT lead's statement, not the alternative answer to this one.           <<<
+
 A numbered-lead key in "N (M)" notation is a SERIAL-LEAD key:
 
     N (M):  means  "Is statement N true?"
@@ -54,6 +59,24 @@ C&P path (statement + "↳ Yes/No") render this way. The b_text field is retaine
 in the data (it is the num_b statement) but is not shown on the couplet card;
 it appears as the num_b lead's own statement when the user answers No.
 
+CONCRETE RENDER (ksRenderCouplet, the ONLY correct shape):
+
+    <p class="ks-cp-label"><span class="ks-label-tag">Key {num_a}</span></p>
+    <p class="ks-cp-statement">{a_text, linkified}</p>          // the statement
+    <div class="ks-btn-row ks-btn-row--yesno">
+      <button data-id="{id}" data-v="A">Yes</button>          // Yes → choice A
+      <button data-id="{id}" data-v="B">No</button>           // No  → choice B
+    </div>
+    {optional Skip button on upperside couplets}
+
+    DO NOT emit:
+      <button data-v="A">{a_text}</button>
+      <button data-v="B">{b_text}</button>       // WRONG: this is the A/B layout
+
+The click handler is identical either way (data-v "A"/"B"); only the labels and
+the fact that b_text is not on the card change. So a build that renders a_text/
+b_text as two buttons is a PRESENTATION bug, not a data or navigation bug.
+
 NAVIGATION NOTE (Arhopala): this key is also a serial key in a second sense — a
 lead can NAME a species AND still forward the trunk when the specimen isn't that
 species (it falls through to lead n+1). js/id_keys.js therefore resolves a jump
@@ -78,20 +101,21 @@ Each element of the "couplets" array describes one choice-pair in the key:
 
   {
     "id":             "cp_1_21",          // unique string, e.g. "cp_<num_a>_<num_b>"
-    "num_a":          1,                  // lead number of option A
-    "num_b":          21,                 // lead number of option B
-    "label":          "K1",              // display label shown in the UI
-    "question":       "Forewing band…",  // the question posed to the user
-    "a_text":         "Band in line…",   // full text of option A
-    "b_text":         "Band dislocated…",// full text of option B
+    "num_a":          1,                  // THIS lead's number (the statement shown)
+    "num_b":          21,                 // the lead to JUMP TO when answered "No"
+    "label":          "K1",              // legacy label; the UI shows "Key <num_a>", not this
+    "question":       "Forewing band…",  // legacy "a-vs-b" phrasing; NOT rendered in the Yes/No card
+    "a_text":         "Band in line…",   // the STATEMENT shown in full on the card (lead num_a text)
+    "b_text":         "Band dislocated…",// the num_b lead's statement; NOT a second option button —
+                                          //   it is only shown later, as lead num_b's own card, after "No"
     "upperside":      false,             // true if upperside character → shows Skip button
     "hint":           "…",              // optional explanatory text (collapsed by default)
-    "guide_phrase":   "dislocated at vein 6", // substring in a_text or b_text to linkify
+    "guide_phrase":   "dislocated at vein 6", // substring in a_text to linkify (shown on the card)
     "guide_link":     "guide.html#fw-band-vein3-vein6", // href for guide_phrase link
-    "question_phrase":"band at space 3", // optional: substring in question to linkify
-    "question_link":  "guide.html#fw-band-vein3-vein6", // href for question_phrase link
-    "species_a":      [ "Genus sp1", "Genus sp2", ... ], // taxa matching option A
-    "species_b":      [ "Genus sp3", ... ]               // taxa matching option B
+    "question_phrase":"band at space 3", // legacy; question is not rendered, so usually unused
+    "question_link":  "guide.html#fw-band-vein3-vein6", // legacy; unused in the Yes/No card
+    "species_a":      [ "Genus sp1", "Genus sp2", ... ], // taxa reachable when this lead is answered "Yes"
+    "species_b":      [ "Genus sp3", ... ]               // taxa reachable when answered "No" (jump to num_b)
   }
 
   FIELD NOTES
@@ -160,11 +184,16 @@ State variables:
   ks.currentCouplet  — the couplet object currently displayed (null if done)
   ks.result          — {leadNum, text, speciesName} when identification reached
 
-2a. CHOOSING A (option A, lead num_a)
+(The "A"/"B" below are the internal choice codes. In the UI they are the
+"Yes" and "No" buttons respectively — see PRESENTATION MODEL. Arhopala's
+navigation uses the ksResolve() serial model, which supersedes the simple
+num_b+1 rule described here; the rule below documents the original variant.)
+
+2a. ANSWERING "Yes" (choice A — statement num_a is true)
   - If num_a is terminal → set ks.result, clear ks.currentCouplet.
   - Otherwise → next couplet = couplets[currentIndex + 1]  (next in array).
 
-2b. CHOOSING B (option B, lead num_b)
+2b. ANSWERING "No" (choice B — statement num_a is false; jump to lead num_b)
   - If num_b is terminal → set ks.result, clear ks.currentCouplet.
   - Otherwise → find the couplet whose num_a = num_b + 1.
     SPECIAL CASE: if no couplet has num_a = num_b + 1, fall back to
@@ -301,7 +330,12 @@ STEP 7 — Verify the navigation structure
   - Skip (where applicable) advances to the non-terminal branch.
 
 COMMON PITFALLS
-  - Array order matters: couplets must be in key-text order. If A always
+  - #1 MISTAKE — building an A/B two-option card. Each couplet renders ONE
+    statement (a_text) with Yes/No buttons; b_text is the next lead's statement,
+    not a second option. See "PRESENTATION MODEL" and its CONCRETE RENDER block.
+    If picking "No" jumps to Key M and re-shows a near-identical question, you
+    built the A/B layout — switch to the single-statement Yes/No card.
+  - Array order matters: couplets must be in key-text order. If "Yes" always
     goes to the immediately next couplet in the array, ordering is correct.
   - Terminal lead text: the genus name must appear verbatim in the lead text
     for ksIsTerminal() to fire. Check spelling and spacing.
