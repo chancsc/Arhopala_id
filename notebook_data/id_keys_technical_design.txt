@@ -153,7 +153,7 @@ A flat dictionary mapping each lead number (as a string key) to its full text:
   - TERMINAL LEADS: a lead that ends an identification path must contain the
     taxon name in the text. The code detects terminals by checking whether the
     lead text contains the genus name (default: "Jamides"). Change the constant
-    GENUS_MARKER in id_keys.js if the genus differs (see Section 4).
+    GENUS_MARKER in id_keys.js if the genus differs (see Section 5).
   - NON-TERMINAL LEADS: intermediate leads contain descriptive text only.
 
 1c. SPECIES_PATHS OBJECT
@@ -213,7 +213,7 @@ num_b+1 rule described here; the rule below documents the original variant.)
   function ksIsTerminal(leadNum):
     return ks.leads[String(leadNum)].includes(GENUS_MARKER)
   where GENUS_MARKER = "Jamides" by default. Change this string when
-  adapting the tool to another genus (see Section 4).
+  adapting the tool to another genus (see Section 5).
 
 2e. HISTORY AND BACK-NAVIGATION
   ks.answers is an ordered array. Each entry: { coupletId, choice }.
@@ -256,7 +256,49 @@ unaffected by that couplet's answer. Only couplets genuinely relevant to a
 taxon contribute to its score.
 
 
-4. ADAPTING FOR ANOTHER GENUS
+4. SPECIES-DETAIL "C&P KEY PATH" (js/app.js — buildCPKeyPath)
+-------------------------------------------------------------
+The Species Search page (species.html + js/app.js) shows, for each species, the
+numbered route the C&P key takes to reach it — the same trail the interactive
+tool produces, rendered read-only inside the species info panel. It is a
+separate consumer of data/id_key.json; id_keys.js is NOT loaded there.
+
+WHAT IT RENDERS
+  A collapsible block, "C&P key path — N steps", listing one step per lead in
+  the SAME single-statement / Yes-No form as the scoring page (see PRESENTATION
+  MODEL):
+
+      [Key {num_a}]  {a_text — the statement}
+        ↳ Yes        (this species matched the statement → advanced)
+    or
+        ↳ No         (it did not → the key jumped to lead num_b)
+
+  Only the leads on this species' route are shown; the rejected sibling
+  ("false") leads are NOT rendered. The step counter bubble is suppressed — the
+  "Key N" badge is the meaningful number.
+
+HOW IT WORKS
+  1. Look up species_paths for the species. Matching is by the first two words
+     (genus + epithet), so a subspecies name in species.json still matches a
+     species-level path key.
+  2. WALK the couplet chain from couplets[0], tracking the current couplet:
+     for each lead L in the path, choice = (L === cp.num_a ? "Yes/A" : "No/B");
+     record {num_a, a_text, yes}; then advance with the SAME model id_keys.js
+     uses — resolve()/choose() (couplet-node beats terminal; Yes → resolve
+     num_a+1, No → resolve num_b) — until a terminal or the path ends.
+  3. Because it walks the chain (rather than resolving each lead in isolation)
+     and uses each couplet's own a_text, the detail path is BYTE-IDENTICAL in
+     step sequence to the scoring-page history breadcrumb for that species.
+
+  This walk duplicates the navigation model in id_keys.js. If the A/B routing
+  rules change, update BOTH buildCPKeyPath (js/app.js) and ksChoose (id_keys.js).
+
+  species_paths must therefore list the exact chosen-lead sequence, including
+  any repeated fall-through lead numbers, so the walk can reconstruct the couplet
+  chain unambiguously.
+
+
+5. ADAPTING FOR ANOTHER GENUS
 -------------------------------
 To deploy this tool for a different butterfly genus (or any other taxon
 group with a numbered-lead dichotomous key):
@@ -294,6 +336,10 @@ STEP 3 — Edit GENUS_MARKER in id_keys.js
 
   If your key uses a common name or other terminal marker instead of a
   genus name, adjust the pattern accordingly.
+
+  ALSO change the same genus literal in buildCPKeyPath() in js/app.js — its
+  local isTerminal helper (`(leads[String(t)]||'').includes('Arhopala')`) drives
+  the species-detail C&P key path (Section 4) and must match GENUS_MARKER.
 
 STEP 4 — Edit ANSWERS_KEY in id_keys.js
   Change the localStorage key to avoid collisions with other instances:
@@ -347,7 +393,7 @@ COMMON PITFALLS
     by design — the user must choose one.
 
 
-5. FILE DEPENDENCY SUMMARY
+6. FILE DEPENDENCY SUMMARY
 ---------------------------
 id_keys.html
   └── loads css/style.css          (shared site styles)
@@ -362,9 +408,10 @@ app.js (species detail page) also consumes id_key.json:
       scoring-page breadcrumb. Only the leads the specimen matches are shown; the
       rejected sibling ("false") leads are NOT rendered (an earlier version showed
       them greyed-out, which read as steps to take rather than branches skipped).
+      Full description in Section 4.
 
 
-6. KEY CONSTANTS AND CONFIGURATION POINTS
+7. KEY CONSTANTS AND CONFIGURATION POINTS
 ------------------------------------------
 In id_keys.js:
   ANSWERS_KEY     localStorage key (change per deployment)
