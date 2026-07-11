@@ -109,7 +109,9 @@ Each element of the "couplets" array describes one choice-pair in the key:
     "b_text":         "Band dislocated…",// the num_b lead's statement; NOT a second option button —
                                           //   it is only shown later, as lead num_b's own card, after "No"
     "upperside":      false,             // true if upperside character → shows Skip button
-    "hint":           "…",              // optional explanatory text (collapsed by default)
+    "hint":           "…",              // Yes/No decision aid (collapsed "Hint" block);
+                                          //   sourced from data/id_key_hints.json via
+                                          //   scripts/apply_id_key_hints.js (build emits it empty)
     "guide_phrase":   "dislocated at vein 6", // substring in a_text to linkify (shown on the card)
     "guide_link":     "guide.html#fw-band-vein3-vein6", // href for guide_phrase link
     "question_phrase":"band at space 3", // legacy; question is not rendered, so usually unused
