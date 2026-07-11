@@ -131,10 +131,29 @@ const couplets = coupletNodes.map((n, i) => {
     hint: '',
     guide_phrase: '', guide_link: '',
     question_phrase: '', question_link: '',
+    // Display inversion (Section 0 of the design doc): when invert=true the card
+    // shows `statement` instead of a_text and swaps which button is Yes/No, so a
+    // couplet can be phrased the more readable way round. Navigation, paths and
+    // scoring are unchanged (Yes still = choice A only when invert=false).
+    invert: false, statement: '',
     species_a: [],
     species_b: [],
   };
 });
+
+// Per-couplet DISPLAY overrides (presentation only — never affects navigation,
+// species_paths or scoring). Key 1 reads more naturally phrased around the
+// presence of the tail, with Yes = the tailed abseus group.
+const DISPLAY_OVERRIDE = {
+  cp_1_212: {
+    invert: true,
+    statement: 'Hindwing with white-tipped tail at the end of vein 3. Underside hindwing without spot at the base of space 1a.',
+  },
+};
+for (const c of couplets) {
+  const o = DISPLAY_OVERRIDE[c.id];
+  if (o) Object.assign(c, o);
+}
 
 // ---------------------------------------------------------------------------
 // 4. Navigation model (identical logic mirrored in validate_id_key.js).

@@ -799,7 +799,11 @@ function buildCPKeyPath(speciesName) {
     if (!cp) break;
     const choice = lead === cp.num_a ? 'A' : lead === cp.num_b ? 'B' : null;
     if (!choice) break;
-    steps.push({ num_a: cp.num_a, statement: cp.a_text, yes: choice === 'A' });
+    // A display-inverted couplet shows cp.statement and flips Yes/No (Yes = B).
+    const inverted = cp.invert === true;
+    const statement = inverted && cp.statement ? cp.statement : cp.a_text;
+    const yes = inverted ? choice === 'B' : choice === 'A';
+    steps.push({ num_a: cp.num_a, statement, yes });
     const r = choose(cp, lead);
     if (r.terminal != null || !r.couplet) break;
     cp = r.couplet;

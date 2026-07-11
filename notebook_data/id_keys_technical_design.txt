@@ -85,6 +85,19 @@ a terminal — see ksResolve()/ksChoose(), which build_id_key.js and
 validate_id_key.js mirror exactly. This supersedes the simpler "num_b + 1" rule
 described for the original two-option layout in Section 2b below.
 
+OPTIONAL DISPLAY INVERSION (per couplet):
+Sometimes a couplet reads more naturally phrased around the OTHER lead. Set
+`invert: true` (and `statement` to the rephrased text) on that couplet and the
+card shows `statement` instead of a_text, with the Yes button wired to choice B
+and No to choice A — i.e. "Yes" now means "the num_b condition is true → jump".
+This is DISPLAY ONLY: the click still emits data-v A/B, so navigation,
+species_paths and scoring are unchanged, and the badge stays "Key <num_a>".
+ksRenderCouplet, ksRenderHistory (id_keys.js) and buildCPKeyPath (app.js) all
+honour the flag — the history/path label reads Yes when choice B was taken.
+Example: Key 1 (cp_1_212) is inverted so it asks about the presence of the
+white-tipped tail, with Yes = the tailed abseus group. Set in the DISPLAY_OVERRIDE
+map in scripts/build_id_key.js so it survives a rebuild.
+
 
 1. DATA FILE: id_key.json
 --------------------------
@@ -112,6 +125,8 @@ Each element of the "couplets" array describes one choice-pair in the key:
     "hint":           "…",              // Yes/No decision aid (collapsed "Hint" block);
                                           //   sourced from data/id_key_hints.json via
                                           //   scripts/apply_id_key_hints.js (build emits it empty)
+    "invert":         false,             // optional: display this couplet the other way round
+    "statement":      "",                //   (see "OPTIONAL DISPLAY INVERSION" below)
     "guide_phrase":   "dislocated at vein 6", // substring in a_text to linkify (shown on the card)
     "guide_link":     "guide.html#fw-band-vein3-vein6", // href for guide_phrase link
     "question_phrase":"band at space 3", // legacy; question is not rendered, so usually unused

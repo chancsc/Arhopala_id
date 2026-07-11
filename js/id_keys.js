@@ -265,8 +265,13 @@ function ksRenderHistory() {
     const cp = ks.couplets.find(c => c.id === a.coupletId);
     if (!cp) return '';
     let label;
-    if (a.choice === 'skip') label = `Key ${cp.num_a}: Skip`;
-    else label = `Key ${cp.num_a}: ${a.choice === 'A' ? 'Yes' : 'No'}`;
+    if (a.choice === 'skip') {
+      label = `Key ${cp.num_a}: Skip`;
+    } else {
+      // Yes = choice A, unless the couplet is display-inverted (then Yes = B).
+      const displayYes = cp.invert === true ? a.choice === 'B' : a.choice === 'A';
+      label = `Key ${cp.num_a}: ${displayYes ? 'Yes' : 'No'}`;
+    }
     return `<span class="ks-hist-item" data-step="${i}" role="button" tabindex="0" title="Back to Key ${ksEscAttr(String(cp.num_a))}">${ksEsc(label)}</span>`;
   }).filter(Boolean).join('<span class="ks-hist-sep">&#8250;</span>');
 
@@ -308,7 +313,14 @@ function ksRenderCouplet() {
   // "Yes" = the specimen matches it → advance to the next lead; "No" = it does
   // not → jump to lead num_b (shown as the next couplet). The statement is given
   // in full so the user decides from it alone, the way a printed key is worked.
-  const stmtHTML = ksRenderText(cp.a_text, cp.guide_phrase, cp.guide_link);
+  // When cp.invert is set, the couplet is phrased the other way round: it shows
+  // cp.statement and Yes maps to choice B (jump), No to choice A (advance) — a
+  // display-only flip (navigation/scoring read the data-v, so are unchanged).
+  const inverted = cp.invert === true;
+  const stmtText = inverted && cp.statement ? cp.statement : cp.a_text;
+  const stmtHTML = ksRenderText(stmtText, cp.guide_phrase, cp.guide_link);
+  const yesV = inverted ? 'B' : 'A';
+  const noV = inverted ? 'A' : 'B';
 
   // Skip only if upperside and at least one branch is non-terminal
   const canSkip = cp.upperside && ksSkipNext(cp) !== null;
@@ -322,8 +334,8 @@ function ksRenderCouplet() {
       <p class="ks-cp-statement">${stmtHTML}</p>
       ${hintHTML}
       <div class="ks-btn-row ks-btn-row--yesno">
-        <button class="ks-btn ks-btn-yes" data-id="${ksEscAttr(cp.id)}" data-v="A">Yes</button>
-        <button class="ks-btn ks-btn-no" data-id="${ksEscAttr(cp.id)}" data-v="B">No</button>
+        <button class="ks-btn ks-btn-yes" data-id="${ksEscAttr(cp.id)}" data-v="${yesV}">Yes</button>
+        <button class="ks-btn ks-btn-no" data-id="${ksEscAttr(cp.id)}" data-v="${noV}">No</button>
       </div>
       ${skipRow}
     </div>`;

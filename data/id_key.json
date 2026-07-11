@@ -14,6 +14,8 @@
       "guide_link": "guide.html#tail-vein2-vs-vein3",
       "question_phrase": "white tipped tail at vein 3",
       "question_link": "guide.html#tail-vein2-vs-vein3",
+      "invert": true,
+      "statement": "Hindwing with white-tipped tail at the end of vein 3. Underside hindwing without spot at the base of space 1a.",
       "species_a": [
         "Arhopala ace",
         "Arhopala achelous",
@@ -142,6 +144,8 @@
       "guide_link": "guide.html#fw-cell-silver",
       "question_phrase": "cell about half length of wing",
       "question_link": "guide.html#hindwing-cell",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala amantes",
         "Arhopala araxes",
@@ -268,6 +272,8 @@
       "guide_link": "guide.html#fw-spot4-distad",
       "question_phrase": "spot in space 4 shifted outwards",
       "question_link": "guide.html#fw-spot4-distad",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala araxes",
         "Arhopala centaurus"
@@ -290,6 +296,8 @@
       "guide_link": "guide.html#hw-tornus-rounded",
       "question_phrase": "tornus rounded",
       "question_link": "guide.html#hw-tornus-rounded",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala centaurus"
       ],
@@ -311,6 +319,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala ace",
         "Arhopala achelous",
@@ -434,6 +444,8 @@
       "guide_link": "guide.html#hw-spot6-position",
       "question_phrase": "postdiscal spots in spaces 7, 6 and 5",
       "question_link": "guide.html#hw-spot6-position",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala achelous",
         "Arhopala aedias",
@@ -556,6 +568,8 @@
       "guide_link": "guide.html#fw-space10-base-spot",
       "question_phrase": "base of space 10",
       "question_link": "guide.html#fw-space10-base-spot",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala achelous",
         "Arhopala agesias",
@@ -619,6 +633,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala agesias",
         "Arhopala kinabala",
@@ -645,6 +661,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala similis"
       ],
@@ -667,6 +685,8 @@
       "guide_link": "guide.html#fw-space-11",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala agesias"
       ],
@@ -688,6 +708,8 @@
       "guide_link": "guide.html#fw-space10-base-spot",
       "question_phrase": "spot at base of space 10",
       "question_link": "guide.html#fw-space10-base-spot",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala ijanensis"
       ],
@@ -711,6 +733,8 @@
       "guide_link": "guide.html#fw-band-vein4",
       "question_phrase": "postdiscal band completely dislocated at vein 4",
       "question_link": "guide.html#fw-band-vein4",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala achelous",
         "Arhopala anthelus"
@@ -733,6 +757,8 @@
       "guide_link": "guide.html#fw-space-11",
       "question_phrase": "spots in space 11",
       "question_link": "guide.html#fw-space-11",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala anthelus"
       ],
@@ -754,6 +780,8 @@
       "guide_link": "guide.html#hw-spot6-position",
       "question_phrase": "postdiscal spot in space 6",
       "question_link": "guide.html#hw-spot6-position",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala bazaloides",
         "Arhopala belphoebe",
@@ -810,6 +838,8 @@
       "guide_link": "guide.html#hw-space6-basal-spot",
       "question_phrase": "base of space 6",
       "question_link": "guide.html#hw-space6-basal-spot",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala belphoebe",
         "Arhopala camdana",
@@ -840,6 +870,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala camdana",
         "Arhopala dispar",
@@ -867,6 +899,8 @@
       "guide_link": "guide.html#fw-spot4-distad",
       "question_phrase": "postdiscal spot in space 4 shifted distad",
       "question_link": "guide.html#fw-spot4-distad",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala camdana",
         "Arhopala dispar",
@@ -892,6 +926,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala varro"
       ],
@@ -916,6 +952,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala dispar"
       ],
@@ -939,6 +977,8 @@
       "guide_link": "guide.html#hw-spot6-position",
       "question_phrase": "postdiscal spot in space 6",
       "question_link": "guide.html#hw-spot6-position",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala camdana",
         "Arhopala semperi"
@@ -961,6 +1001,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala camdana"
       ],
@@ -982,6 +1024,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala johoreana"
       ],
@@ -1003,6 +1047,8 @@
       "guide_link": "guide.html#hw-space6-basal-spot",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala myrzala",
         "Arhopala myrzalina"
@@ -1025,6 +1071,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala myrzala"
       ],
@@ -1046,6 +1094,8 @@
       "guide_link": "guide.html#fw-spot4-distad",
       "question_phrase": "postdiscal spot in space 4 shifted distad",
       "question_link": "guide.html#fw-spot4-distad",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala aedias",
         "Arhopala atosia",
@@ -1091,6 +1141,8 @@
       "guide_link": "guide.html#hw-spot6-position",
       "question_phrase": "postdiscal spot in space 6",
       "question_link": "guide.html#hw-spot6-position",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala aedias",
         "Arhopala hypomuta"
@@ -1115,6 +1167,8 @@
       "guide_link": "guide.html#hw-space6-basal-spot",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala hypomuta"
       ],
@@ -1136,6 +1190,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala epimuta"
       ],
@@ -1158,6 +1214,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala atosia"
       ],
@@ -1179,6 +1237,8 @@
       "guide_link": "guide.html#hw-spot6-position",
       "question_phrase": "postdiscal spot in space 6",
       "question_link": "guide.html#hw-spot6-position",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala agesilaus",
         "Arhopala avatha"
@@ -1219,6 +1279,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala agesilaus"
       ],
@@ -1240,6 +1302,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala allata",
         "Arhopala delta"
@@ -1278,6 +1342,8 @@
       "guide_link": "guide.html#fw-band-vein4",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala allata"
       ],
@@ -1299,6 +1365,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala dajagaka",
         "Arhopala moolaiana",
@@ -1335,6 +1403,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala dajagaka",
         "Arhopala moolaiana",
@@ -1358,6 +1428,8 @@
       "guide_link": "guide.html#hw-tornus-rounded",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala dajagaka",
         "Arhopala moolaiana"
@@ -1380,6 +1452,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala moolaiana"
       ],
@@ -1401,6 +1475,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala alica",
         "Arhopala amphimuta",
@@ -1432,6 +1508,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala baluensis"
       ],
@@ -1464,6 +1542,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala amphimuta"
       ],
@@ -1495,6 +1575,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala major"
       ],
@@ -1525,6 +1607,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala alica",
         "Arhopala avathina",
@@ -1553,6 +1637,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala zylda"
       ],
@@ -1582,6 +1668,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala alica"
       ],
@@ -1610,6 +1698,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala stubbsi"
       ],
@@ -1637,6 +1727,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala avathina"
       ],
@@ -1663,6 +1755,8 @@
       "guide_link": "guide.html#spot6-end-cell-bar",
       "question_phrase": "tornus rounded",
       "question_link": "guide.html#hw-tornus-rounded",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala kurzi"
       ],
@@ -1688,6 +1782,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala moorei",
         "Arhopala muta",
@@ -1712,6 +1808,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala tropaea"
       ],
@@ -1734,6 +1832,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala muta"
       ],
@@ -1755,6 +1855,8 @@
       "guide_link": "guide.html#wing-regions",
       "question_phrase": "tornal green scales",
       "question_link": "guide.html#wing-regions",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala metamuta"
       ],
@@ -1776,6 +1878,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala ace",
         "Arhopala aenigma",
@@ -1854,6 +1958,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala antimuta",
         "Arhopala inornata"
@@ -1902,6 +2008,8 @@
       "guide_link": "guide.html#wing-regions",
       "question_phrase": "tornal green scales",
       "question_link": "guide.html#wing-regions",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala antimuta"
       ],
@@ -1923,6 +2031,8 @@
       "guide_link": "guide.html#fw-space-11",
       "question_phrase": "space 11",
       "question_link": "guide.html#fw-space-11",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala aida",
         "Arhopala alitaeus",
@@ -1969,6 +2079,8 @@
       "guide_link": "guide.html#hw-spot6-position",
       "question_phrase": "postdiscal spot in space 6",
       "question_link": "guide.html#hw-spot6-position",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala democritus"
       ],
@@ -1998,6 +2110,8 @@
       "guide_link": "guide.html#fw-space10-base-spot",
       "question_phrase": "spot at extreme base of space 10",
       "question_link": "guide.html#fw-space10-base-spot",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala aida",
         "Arhopala ariana",
@@ -2026,6 +2140,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala arianaga",
         "Arhopala elopura",
@@ -2050,6 +2166,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala arianaga",
         "Arhopala elopura"
@@ -2072,6 +2190,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala elopura"
       ],
@@ -2093,6 +2213,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala ariana"
       ],
@@ -2114,6 +2236,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala alitaeus",
         "Arhopala pseudomuta"
@@ -2137,6 +2261,8 @@
       "guide_link": "guide.html#hw-spot6-position",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala pseudomuta"
       ],
@@ -2158,6 +2284,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala sintanga"
       ],
@@ -2179,6 +2307,8 @@
       "guide_link": "guide.html#hw-spot6-position",
       "question_phrase": "dislocated at vein 4",
       "question_link": "guide.html#fw-band-vein4",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala ace"
       ],
@@ -2215,6 +2345,8 @@
       "guide_link": "guide.html#hw-spot6-position",
       "question_phrase": "dislocated at vein 4",
       "question_link": "guide.html#fw-band-vein4",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala azinis"
       ],
@@ -2250,6 +2382,8 @@
       "guide_link": "guide.html#hw-spot6-position",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala agrata"
       ],
@@ -2284,6 +2418,8 @@
       "guide_link": "guide.html#hw-spot6-position",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala aenigma",
         "Arhopala aroa",
@@ -2316,6 +2452,8 @@
       "guide_link": "guide.html#hw-tornus-rounded",
       "question_phrase": "tornal lobe",
       "question_link": "guide.html#hw-tornus-rounded",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala aenigma",
         "Arhopala aroa",
@@ -2349,6 +2487,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala aurelia"
       ],
@@ -2378,6 +2518,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala phaenops",
         "Arhopala selta"
@@ -2406,6 +2548,8 @@
       "guide_link": "guide.html#hw-spot6-position",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala selta"
       ],
@@ -2427,6 +2571,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala milleri",
         "Arhopala sublustris"
@@ -2453,6 +2599,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala sublustris"
       ],
@@ -2474,6 +2622,8 @@
       "guide_link": "guide.html#hw-spot6-position",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala evansi"
       ],
@@ -2498,6 +2648,8 @@
       "guide_link": "guide.html#hw-spot6-position",
       "question_phrase": "postdiscal spot in space 6",
       "question_link": "guide.html#hw-spot6-position",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala aenigma",
         "Arhopala phanda"
@@ -2521,6 +2673,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala phanda"
       ],
@@ -2542,6 +2696,8 @@
       "guide_link": "guide.html#hw-spot6-position",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala normani"
       ],
@@ -2563,6 +2719,8 @@
       "guide_link": "guide.html#fw-band-vein4",
       "question_phrase": "dislocated at vein 4",
       "question_link": "guide.html#fw-band-vein4",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala cleander"
       ],
@@ -2586,6 +2744,8 @@
       "guide_link": "guide.html#spot6-end-cell-bar",
       "question_phrase": "spot in space 6",
       "question_link": "guide.html#hw-spot6-position",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala zambra"
       ],
@@ -2608,6 +2768,8 @@
       "guide_link": "guide.html#hw-spot6-position",
       "question_phrase": "postdiscal spot in space 6",
       "question_link": "guide.html#hw-spot6-position",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala athada"
       ],
@@ -2629,6 +2791,8 @@
       "guide_link": "guide.html#fw-space-11",
       "question_phrase": "spot in space 11",
       "question_link": "guide.html#fw-space-11",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala acta",
         "Arhopala agaba",
@@ -2678,6 +2842,8 @@
       "guide_link": "guide.html#hindwing-cell",
       "question_phrase": "cell not longer than half the wing",
       "question_link": "guide.html#hindwing-cell",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala acta",
         "Arhopala agaba",
@@ -2722,6 +2888,8 @@
       "guide_link": "guide.html#fw-spot4-distad",
       "question_phrase": "postdiscal spot in space 4 shifted distad",
       "question_link": "guide.html#fw-spot4-distad",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala agaba",
         "Arhopala agelastus",
@@ -2760,6 +2928,8 @@
       "guide_link": "guide.html#spot6-end-cell-bar",
       "question_phrase": "end-cell bar",
       "question_link": "guide.html#spot6-end-cell-bar",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala agaba"
       ],
@@ -2791,6 +2961,8 @@
       "guide_link": "guide.html#hw-spot6-position",
       "question_phrase": "dislocated at vein 4",
       "question_link": "guide.html#fw-band-vein4",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala vihara"
       ],
@@ -2821,6 +2993,8 @@
       "guide_link": "guide.html#wing-regions",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala agelastus",
         "Arhopala alaconia",
@@ -2850,6 +3024,8 @@
       "guide_link": "guide.html#hw-spot6-position",
       "question_phrase": "dislocated at vein 4",
       "question_link": "guide.html#fw-band-vein4",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala arvina",
         "Arhopala buddha",
@@ -2878,6 +3054,8 @@
       "guide_link": "guide.html#wing-regions",
       "question_phrase": "tornal green scales",
       "question_link": "guide.html#wing-regions",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala paralea"
       ],
@@ -2900,6 +3078,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala buddha"
       ],
@@ -2921,6 +3101,8 @@
       "guide_link": "guide.html#hw-spot6-position",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala alaconia"
       ],
@@ -2946,6 +3128,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala barami"
       ],
@@ -2970,6 +3154,8 @@
       "guide_link": "guide.html#wing-regions",
       "question_phrase": "tornal green scales",
       "question_link": "guide.html#wing-regions",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala agelastus",
         "Arhopala labuana",
@@ -2993,6 +3179,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala agelastus"
       ],
@@ -3015,6 +3203,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala labuana"
       ],
@@ -3036,6 +3226,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala bazalus"
       ],
@@ -3062,6 +3254,8 @@
       "guide_link": "guide.html#hw-spot6-position",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala acta",
         "Arhopala overdijkinki",
@@ -3087,6 +3281,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala overdijkinki"
       ],
@@ -3109,6 +3305,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala acta"
       ],
@@ -3130,6 +3328,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala horsfieldi"
       ],
@@ -3152,6 +3352,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala eumolphus"
       ],
@@ -3173,6 +3375,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala corinda"
       ],
@@ -3198,6 +3402,8 @@
       "guide_link": "guide.html#hw-central-cell-spot",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala aurea",
         "Arhopala borneensis",
@@ -3222,6 +3428,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala aurea",
         "Arhopala borneensis"
@@ -3245,6 +3453,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala aurea"
       ],
@@ -3266,6 +3476,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala trogon"
       ],
@@ -3287,6 +3499,8 @@
       "guide_link": "guide.html#wing-regions",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala paraganesa"
       ],
@@ -3311,6 +3525,8 @@
       "guide_link": "guide.html#wing-regions",
       "question_phrase": "tornal green scales",
       "question_link": "guide.html#wing-regions",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala ammonides"
       ],
@@ -3334,6 +3550,8 @@
       "guide_link": "guide.html#hw-spot6-position",
       "question_phrase": "postdiscal spot in space 6",
       "question_link": "guide.html#hw-spot6-position",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala ammon"
       ],
@@ -3356,6 +3574,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala ariel"
       ],
@@ -3377,6 +3597,8 @@
       "guide_link": "",
       "question_phrase": "",
       "question_link": "",
+      "invert": false,
+      "statement": "",
       "species_a": [
         "Arhopala anella"
       ],
