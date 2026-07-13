@@ -656,6 +656,13 @@ function iconPending() {
   </svg>`;
 }
 
+function iconCopy() {
+  return `<svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+    <rect x="5.5" y="5.5" width="8" height="8" rx="1.5" stroke="currentColor" stroke-width="1.4"/>
+    <path d="M10.5 3.5H4A1.5 1.5 0 0 0 2.5 5v6.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+  </svg>`;
+}
+
 function iconButterfly() {
   return `<svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
     <ellipse cx="11" cy="16" rx="8" ry="6" fill="#d4e2d0" opacity="0.8"/>
@@ -728,6 +735,18 @@ async function initSpeciesPage() {
       document.getElementById('search-count').style.display = '';
       input.style.display = '';
       backBtn.style.display = 'none';
+    });
+
+    // Copy button in the C&P key path header (delegated; the detail is re-rendered
+    // per species). Stop the click from toggling the <details> it lives in.
+    const detailEl = document.getElementById('species-detail');
+    if (detailEl) detailEl.addEventListener('click', e => {
+      const btn = e.target.closest('.cpkey-copy');
+      if (!btn) return;
+      e.preventDefault();
+      e.stopPropagation();
+      const details = btn.closest('.path-details--cpkey');
+      if (details) copyCPKeyPath(details, btn);
     });
 
     // Wire up menu
@@ -816,13 +835,47 @@ function buildCPKeyPath(speciesName) {
     </li>`).join('');
 
   return `
-    <details class="path-details path-details--cpkey">
-      <summary class="path-summary">C&amp;P key path — ${steps.length} step${steps.length !== 1 ? 's' : ''}</summary>
+    <details class="path-details path-details--cpkey" data-species="${escapeAttr(speciesName)}">
+      <summary class="path-summary">
+        <span class="path-summary-label">C&amp;P key path — ${steps.length} step${steps.length !== 1 ? 's' : ''}</span>
+        <button type="button" class="cpkey-copy" aria-label="Copy key path">${iconCopy()}<span class="cpkey-copy-label">Copy</span></button>
+      </summary>
       <div class="path-content">
         <ol class="path-steps">${stepsHTML}</ol>
       </div>
     </details>
   `;
+}
+
+// Build the plain-text form of a rendered C&P key path panel and copy it to the
+// clipboard. Species name is the header; each step becomes "Key N <statement> — Yes/No".
+function copyCPKeyPath(details, btn) {
+  const species = details.getAttribute('data-species') || '';
+  const lines = [`${species} — C&P key path`, ''];
+  for (const step of details.querySelectorAll('.path-step')) {
+    const q = (step.querySelector('.path-q')?.textContent || '').replace(/\s+/g, ' ').trim();
+    const a = (step.querySelector('.path-a')?.textContent || '').replace(/↳/g, '').replace(/\s+/g, ' ').trim();
+    lines.push(a ? `${q} — ${a}` : q);
+  }
+  const text = lines.join('\n');
+  const done = ok => {
+    const label = btn.querySelector('.cpkey-copy-label');
+    if (!label) return;
+    const prev = label.textContent;
+    label.textContent = ok ? 'Copied!' : 'Press Ctrl+C';
+    btn.classList.toggle('cpkey-copy--done', ok);
+    setTimeout(() => { label.textContent = prev; btn.classList.remove('cpkey-copy--done'); }, 1600);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(() => done(true)).catch(() => done(false));
+  } else {
+    // Fallback for insecure contexts / older browsers.
+    const ta = document.createElement('textarea');
+    ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select();
+    let ok = false; try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+    document.body.removeChild(ta); done(ok);
+  }
 }
 
 function showSpeciesDetailInline(sp) {

@@ -917,10 +917,38 @@ details[open] .path-summary::before { content: '▼ '; }
 }
 
 /* C&P (Corbet & Pendlebury) key path */
-.path-details--cpkey .path-summary { background: #faf4e6; color: var(--accent); }
+.path-details--cpkey .path-summary {
+  background: #faf4e6;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
 /* No running step counter — the "Key N" label is the meaningful number. */
 .path-details--cpkey .path-step { counter-increment: none; padding-left: 0; }
 .path-details--cpkey .path-step::before { display: none; }
+
+/* Copy button — only shown once the panel is opened. */
+.cpkey-copy {
+  display: none;
+  align-items: center;
+  gap: 0.28rem;
+  flex: none;
+  padding: 0.2rem 0.5rem;
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+}
+.path-details--cpkey[open] .path-summary .cpkey-copy { display: inline-flex; }
+.cpkey-copy:hover { background: #f4ecd8; }
+.cpkey-copy svg { display: block; }
+.cpkey-copy--done { color: #2e7d32; border-color: #2e7d32; }
 
 .path-step--group::before { display: none; }
 
