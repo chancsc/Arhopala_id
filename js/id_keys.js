@@ -349,13 +349,10 @@ function ksRender() {
 
   const badge = document.getElementById('ks-answered-count');
   if (badge) {
-    if (ks.result) {
-      badge.textContent = 'Done';
-    } else if (ks.currentCouplet) {
-      badge.textContent = 'Key ' + ks.currentCouplet.num_a;
-    } else {
-      badge.textContent = '';
-    }
+    // Match the Feature Scoring counter: count meaningful answers (Yes/No),
+    // excluding Skips (the C&P equivalent of "Cannot determine").
+    const n = ks.answers.filter(a => a.choice !== 'skip').length;
+    badge.textContent = n > 0 ? `${n} key${n !== 1 ? 's' : ''} answered` : '';
   }
 }
 
