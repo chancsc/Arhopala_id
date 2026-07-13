@@ -350,8 +350,8 @@ function ksRenderCouplet() {
   el.innerHTML = `
     <div class="ks-cp" id="ks-cp-current">
       <p class="ks-cp-label"><span class="ks-label-tag">Key ${ksEsc(String(cp.num_a))}</span></p>
-      <p class="ks-cp-statement">${stmtHTML}</p>
       ${hintHTML}
+      <p class="ks-cp-statement">${stmtHTML}</p>
       <div class="ks-btn-row ks-btn-row--yesno">
         <button class="ks-btn ks-btn-yes" data-id="${ksEscAttr(cp.id)}" data-v="${yesV}">Yes</button>
         <button class="ks-btn ks-btn-no" data-id="${ksEscAttr(cp.id)}" data-v="${noV}">No</button>
