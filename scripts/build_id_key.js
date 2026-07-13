@@ -136,6 +136,10 @@ const couplets = coupletNodes.map((n, i) => {
     // couplet can be phrased the more readable way round. Navigation, paths and
     // scoring are unchanged (Yes still = choice A only when invert=false).
     invert: false, statement: '',
+    // skippable: like `upperside`, offers a Skip button — for underside characters
+    // that are often not visible in a field photo (e.g. forewing space 1a/1b,
+    // usually covered by the hindwing at rest).
+    skippable: false,
     species_a: [],
     species_b: [],
   };
@@ -149,6 +153,10 @@ const DISPLAY_OVERRIDE = {
     invert: true,
     statement: 'Hindwing with white-tipped tail at the end of vein 3.',
   },
+  // Key 24 turns entirely on the forewing space-1b dark area (and the spot at the
+  // base of space 3) — the anal base of the forewing, usually hidden under the
+  // hindwing in a resting photo. Offer Skip so underside-only users can continue.
+  cp_24_45: { skippable: true },
 };
 for (const c of couplets) {
   const o = DISPLAY_OVERRIDE[c.id];

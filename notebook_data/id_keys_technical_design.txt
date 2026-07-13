@@ -122,6 +122,8 @@ Each element of the "couplets" array describes one choice-pair in the key:
     "b_text":         "Band dislocated…",// the num_b lead's statement; NOT a second option button —
                                           //   it is only shown later, as lead num_b's own card, after "No"
     "upperside":      false,             // true if upperside character → shows Skip button
+    "skippable":      false,             // like upperside, but for underside features often
+                                          //   hidden in a photo (FW space 1a/1b) → also shows Skip
     "hint":           "…",              // Yes/No decision aid (collapsed "Hint" block);
                                           //   sourced from data/id_key_hints.json via
                                           //   scripts/apply_id_key_hints.js (build emits it empty)
@@ -219,7 +221,14 @@ num_b+1 rule described here; the rule below documents the original variant.)
     of the next (a quirk in some published keys where an intermediate
     lead is shared — see K5/K6 in the Jamides key, lead 9).
 
-2c. SKIP (upperside couplets only)
+2c. SKIP (couplets flagged upperside OR skippable)
+  - Offered when cp.upperside OR cp.skippable is true AND at least one branch is
+    non-terminal. `upperside` = character needs the specimen's upperside;
+    `skippable` = an underside character often hidden in a field photo (forewing
+    space 1a/1b, usually covered by the hindwing at rest, e.g. Key 24 / cp_24_45).
+    The button label differs ("…upperside feature not visible" vs "…forewing base
+    often hidden by the hindwing"). Both flags are set in the DISPLAY_OVERRIDE map
+    in scripts/build_id_key.js.
   - Advance to the first non-terminal branch. Specifically:
       if num_a is NOT terminal → skip via A (index + 1)
       else if num_b is NOT terminal → skip via B (num_b + 1 search)

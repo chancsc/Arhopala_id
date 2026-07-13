@@ -322,10 +322,14 @@ function ksRenderCouplet() {
   const yesV = inverted ? 'B' : 'A';
   const noV = inverted ? 'A' : 'B';
 
-  // Skip only if upperside and at least one branch is non-terminal
-  const canSkip = cp.upperside && ksSkipNext(cp) !== null;
+  // Skip offered for hard-to-see characters (upperside, or `skippable` underside
+  // features often hidden in a photo) when at least one branch continues.
+  const canSkip = (cp.upperside || cp.skippable) && ksSkipNext(cp) !== null;
+  const skipLabel = cp.upperside
+    ? 'Skip — upperside feature not visible'
+    : 'Skip — forewing base often hidden by the hindwing';
   const skipRow = canSkip
-    ? `<div class="ks-btn-row"><button class="ks-btn ks-btn-skip" data-id="${ksEscAttr(cp.id)}" data-v="skip">Skip — upperside feature not visible</button></div>`
+    ? `<div class="ks-btn-row"><button class="ks-btn ks-btn-skip" data-id="${ksEscAttr(cp.id)}" data-v="skip">${skipLabel}</button></div>`
     : '';
 
   el.innerHTML = `
