@@ -302,10 +302,29 @@ function ksRenderCouplet() {
   }
 
   const cp = ks.currentCouplet;
-  const hintHTML = cp.hint
+  // Optional group species list (cp.hint_group = {side, label}): show every
+  // species reachable on that side of the couplet, each linked to iNaturalist.
+  let groupHTML = '';
+  if (cp.hint_group && (cp.hint_group.side === 'a' || cp.hint_group.side === 'b')) {
+    const names = cp['species_' + cp.hint_group.side] || [];
+    if (names.length) {
+      const items = names.map(n => {
+        const info = ks.speciesInfo.get(n);
+        const href = info && info.inat_url ? info.inat_url : '';
+        const label = `<em>${ksEsc(n)}</em>`;
+        return `<li>${href
+          ? `<a href="${ksEscAttr(href)}" target="_blank" rel="noopener">${label}</a>`
+          : label}</li>`;
+      }).join('');
+      const lbl = cp.hint_group.label ? `<p class="ks-hint-group-label">${ksEsc(cp.hint_group.label)}</p>` : '';
+      groupHTML = `${lbl}<ul class="ks-hint-group">${items}</ul>`;
+    }
+  }
+  const hintHTML = (cp.hint || groupHTML)
     ? `<details class="ks-hint">
          <summary>Hint</summary>
-         <p>${ksEsc(cp.hint)}</p>
+         ${cp.hint ? `<p>${ksEsc(cp.hint)}</p>` : ''}
+         ${groupHTML}
        </details>`
     : '';
 

@@ -775,7 +775,7 @@
       "a_text": "Underside forewing with a dark area under the cell outwardly defined by a pale line normally stretching right across space 1b; often with a spot at extreme base of space 3.",
       "b_text": "Underside hindwing with the postdiscal spot in space 6 overlapping, or closer to, the spot in space 5 than to the end-cell bar.",
       "upperside": false,
-      "hint": "Yes looks for a dark area under the forewing cell bounded outwardly by a pale line that runs right across space 1b, often with a spot at the extreme base of space 3. No routes on the hindwing spot-6 position instead (spot 6 nearer spot 5 than the end-cell bar).",
+      "hint": "Yes routes exclusively into the camdeo group: a dark area under the forewing cell, bounded outwardly by a pale line running right across space 1b, often with a spot at the extreme base of space 3. Every species reachable from Yes belongs to that group (listed below). No takes the other route — keying instead on the hindwing spot-6 position (spot 6 overlapping, or nearer to, spot 5 than the end-cell bar) — and leads to the amphimuta, hypomuta and aedias groups.",
       "guide_phrase": "postdiscal spot in space 6",
       "guide_link": "guide.html#hw-spot6-position",
       "question_phrase": "postdiscal spot in space 6",
@@ -822,7 +822,11 @@
         "Arhopala stubbsi",
         "Arhopala tropaea",
         "Arhopala zylda"
-      ]
+      ],
+      "hint_group": {
+        "side": "a",
+        "label": "camdeo group — species reached by answering Yes"
+      }
     },
     {
       "id": "cp_25_40",
