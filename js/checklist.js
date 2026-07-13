@@ -438,6 +438,13 @@ function onQuestionClick(e) {
     // bottom instead of their natural sorted position.
     cs.questionOrder = null;
   } else {
+    // Changing an EXISTING answer (e.g. Cannot-determine → Yes) switches which
+    // follow-up question is relevant — the old branch's follow-up should drop
+    // and the new branch's should surface. Reset the order for the same reason
+    // as the toggle above, so the new follow-up appears in its natural position
+    // instead of being appended past the display cap (where it looks like it
+    // never showed up until the answer is toggled off and on again).
+    if (cs.answers.has(q)) cs.questionOrder = null;
     cs.answers.set(q, c);
     cs.everAnswered.add(q);
   }
