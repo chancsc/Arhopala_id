@@ -432,22 +432,18 @@ function onQuestionClick(e) {
   // Toggle: clicking the selected choice clears it
   if (cs.answers.get(q) === c) {
     cs.answers.delete(q);
-    // Force a fresh sort: getDisplayQuestionsPure only appends newly-relevant
-    // questions at the tail of the existing order, so questions that were
-    // filtered out while this answer was set would otherwise reappear at the
-    // bottom instead of their natural sorted position.
-    cs.questionOrder = null;
   } else {
-    // Changing an EXISTING answer (e.g. Cannot-determine → Yes) switches which
-    // follow-up question is relevant — the old branch's follow-up should drop
-    // and the new branch's should surface. Reset the order for the same reason
-    // as the toggle above, so the new follow-up appears in its natural position
-    // instead of being appended past the display cap (where it looks like it
-    // never showed up until the answer is toggled off and on again).
-    if (cs.answers.has(q)) cs.questionOrder = null;
     cs.answers.set(q, c);
     cs.everAnswered.add(q);
   }
+  // Re-sort the display on EVERY answer (set, change, or clear). getDisplayQuestionsPure
+  // otherwise appends a newly-relevant question at the tail of the frozen order — past the
+  // 15-question display cap — so a follow-up that becomes relevant when you answer (e.g.
+  // Q12→Q13, or Q114→Q115 on first answer) looks like it never appears until the answer is
+  // toggled off and on. A fresh sort places it in its natural position immediately. Answered
+  // questions are always shown regardless of order, so they stay put; only the unanswered
+  // tail re-orders by current relevance. Display only — scoring/ranking are unaffected.
+  cs.questionOrder = null;
   saveAnswers();
   render();
 }
