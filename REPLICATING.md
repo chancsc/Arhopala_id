@@ -75,6 +75,7 @@ If you have a numbered-lead (Corbet & Pendlebury–style) dichotomous key for yo
    node scripts/build_id_key.js               # parse keys.txt → data/id_key.json
    node scripts/enrich_id_key_guidelinks.js   # add Visual-Guide links to couplets
    node scripts/apply_id_key_hints.js         # fill each couplet's Yes/No hint
+   node scripts/move_fwl_to_hint.js           # move "Fwl … mm" from statement → hint
    node scripts/validate_id_key.js            # replay every species_path; must pass
    ```
    `data/id_key.json` has three parts: `couplets[]` (each `{num_a, num_b, question, a_text, b_text, upperside, species_a, species_b, guide_phrase/guide_link, question_phrase/question_link}`), `leads{}` (lead number → full text), and `species_paths{}` (species → ordered list of chosen lead numbers). `species_a`/`species_b` list the taxa reachable on each side of a couplet — this is what the +1/−1 scoring uses; a taxon absent from a couplet is neutral for it.
@@ -87,7 +88,7 @@ If you have a numbered-lead (Corbet & Pendlebury–style) dichotomous key for yo
 
 4. **Guide links:** `scripts/enrich_id_key_guidelinks.js` maps character phrases → `guide.html#anchor`. Edit its `PHRASE_MAP` for your key's characters (same anchors as section 7). Re-run it after any `build_id_key.js` run, since the build step resets the links (the two together are idempotent).
 
-5. **Hints:** each couplet shows a collapsible "Hint" that helps the user decide Yes/No. The hint text lives in `data/id_key_hints.json` (a flat map couplet-id → hint string) and is applied by `scripts/apply_id_key_hints.js` (the build always emits an empty `hint`, so re-run this after any `build_id_key.js` run). Author hints by synthesising the lead texts with the per-species notes in `notebook_data/arhopala_<epithet>.txt` — a good hint clarifies the character, says which species/group each answer heads toward, and adds one distinguishing detail where a couplet separates named species.
+5. **Hints:** each couplet shows a collapsible "Hint" that helps the user decide Yes/No. The hint text lives in `data/id_key_hints.json` (a flat map couplet-id → hint string) and is applied by `scripts/apply_id_key_hints.js` (the build always emits an empty `hint`, so re-run this after any `build_id_key.js` run). Author hints by synthesising the lead texts with the per-species notes in `notebook_data/arhopala_<epithet>.txt` — a good hint clarifies the character, says which species/group each answer heads toward, and adds one distinguishing detail where a couplet separates named species. Then `scripts/move_fwl_to_hint.js` strips the forewing-length clause ("Fwl … mm") out of each couplet's displayed statement and appends it to the hint, since length can't be judged from a field photo — run it LAST (after the hint text is in place).
 
 6. **Upperside Skip:** set `upperside: true` on any couplet whose character needs the specimen's upperside. `id_keys.js` then offers a *Skip* button (when at least one branch continues) so underside-only photos can proceed; a skipped couplet is neutral in scoring.
 
