@@ -147,7 +147,7 @@ const couplets = coupletNodes.map((n, i) => {
 const DISPLAY_OVERRIDE = {
   cp_1_212: {
     invert: true,
-    statement: 'Hindwing with white-tipped tail at the end of vein 3. Underside hindwing without spot at the base of space 1a.',
+    statement: 'Hindwing with white-tipped tail at the end of vein 3.',
   },
 };
 for (const c of couplets) {
