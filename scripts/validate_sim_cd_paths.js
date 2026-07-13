@@ -143,7 +143,7 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
   }
 
   const answers       = new Map();
-  const questionOrder = [];
+  let   questionOrder = [];
   const simPath       = [];
   const simCdQs       = new Set([...simAnswers.entries()]
     .filter(([, a]) => a.startsWith('Cannot determine')).map(([q]) => q));
@@ -153,6 +153,12 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
   const orphanNoDisplay = new Set();
 
   for (let step = 0; step < 50; step++) {
+    // Re-sort the display on every answer, mirroring the live checklist
+    // (js/checklist.js sets cs.questionOrder = null after each answer, so
+    // getDisplayQuestionsPure rebuilds a fresh sort). A persistent order here
+    // would diverge from what the user actually sees, leaving the stored
+    // Underside-only path out of step with the live Feature Scoring flow.
+    questionOrder = [];
     const scores = scoreAllPure(answers, matrix);
     getDisplayQuestionsPure(answers, scores, matrix, treeNodes, questionOrder);
 
@@ -204,6 +210,7 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
     if (newScores.length > 0 && newScores[0].name === resultName &&
         (newScores.length < 2 || newScores[0].score >= newScores[1].score + 2)) {
       if ([...simCdQs].every(q => answers.has(q))) {
+        questionOrder = [];
         getDisplayQuestionsPure(answers, newScores, matrix, treeNodes, questionOrder);
         const ownLeft = questionOrder
           .filter(q => !answers.has(q)).slice(0, 15)

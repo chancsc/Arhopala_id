@@ -284,6 +284,33 @@ path ran to 17 steps, continuing past its decisive Q79 (subapical → `r_agaba`)
   (verified: full sweep zero changes). Re-run `regen-validate` after any tree edit; the
   stored path count will shift as species move in/out of "divergent".
 
+## The sim scripts must mirror checklist.js's display-order policy
+
+The stored Underside-only path (`sim_cd_paths.json`) is only meaningful if it matches
+the order the user actually sees in live Feature Scoring. Both are driven by
+`getDisplayQuestionsPure`, but **how `questionOrder` is managed across answers** decides
+the order — and the live page and the sim scripts must manage it the **same way**:
+
+- **Live** (`js/checklist.js`, `onQuestionClick`): sets `cs.questionOrder = null` after
+  **every** answer, so the next render passes a fresh `[]` and `getDisplayQuestionsPure`
+  takes its `questionOrder.length === 0` branch — a **pure `newQSort` re-sort** that
+  ignores `positionMemo`/`everAnswered`/CD-followup reinsertion (those only run in the
+  incremental `else` branch). This is the "re-sort on every answer" fix (`774e9fa`).
+- **Sim** (`scripts/compute_sim_cd_paths.js` **and** `scripts/validate_sim_cd_paths.js`):
+  must therefore reset `questionOrder = []` at the top of each simulation step (and
+  before the own-features-left refresh), so it takes the same fresh-sort branch. A
+  *persistent* `questionOrder` (the old code) models the old frozen-order checklist and
+  drifts from what users see — e.g. *A. pseudomuta* live showed Q81 **after** Q80, but the
+  stale stored path showed Q81 right after Q87 (and injected a phantom Q77). Fixed by the
+  per-step reset; `regen-validate` still passes and browser order now matches
+  (pseudomuta / agaba stored = live prefix up to the terminal exit; myrzalina exact).
+
+**Rule:** any change to `checklist.js`'s `questionOrder` policy (freeze vs. re-sort, or
+what extra state it threads into `getDisplayQuestionsPure`) **must** be mirrored in both
+sim scripts, then `regen-validate` re-run and the browser order re-checked for a couple of
+divergent species. The two sim copies stay in sync with each other (byte-identical
+`computeSimCdPath` logic) **and** with the live page.
+
 ## Deprioritizing a usually-CD question without breaking live ID
 
 `newQSort` (in `getDisplayQuestionsPure`, `js/path-utils.js`) orders display questions by

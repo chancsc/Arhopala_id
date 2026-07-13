@@ -166,7 +166,7 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
 
   // Simulate Feature Scoring using the same functions as the browser
   const answers       = new Map();
-  const questionOrder = [];           // mutable state for getDisplayQuestionsPure
+  let   questionOrder = [];           // mutable state for getDisplayQuestionsPure
   const simPath       = [];
   const simCdQs       = new Set([...simAnswers.entries()]
     .filter(([, a]) => a.startsWith('Cannot determine')).map(([q]) => q));
@@ -176,6 +176,12 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
   const orphanNoDisplay = new Set();
 
   for (let step = 0; step < 50; step++) {
+    // Re-sort the display on every answer, mirroring the live checklist
+    // (js/checklist.js sets cs.questionOrder = null after each answer, so
+    // getDisplayQuestionsPure rebuilds a fresh sort). A persistent order here
+    // would diverge from what the user actually sees, leaving the stored
+    // Underside-only path out of step with the live Feature Scoring flow.
+    questionOrder = [];
     const scores = scoreAllPure(answers, matrix);
     getDisplayQuestionsPure(answers, scores, matrix, treeNodes, questionOrder);
 
@@ -247,6 +253,7 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
         (newScores.length < 2 || newScores[0].score >= newScores[1].score + 2)) {
       if ([...simCdQs].every(q => answers.has(q))) {
         // Refresh window so questions unlocked by the last answer are visible.
+        questionOrder = [];
         getDisplayQuestionsPure(answers, newScores, matrix, treeNodes, questionOrder);
         const ownLeft = questionOrder
           .filter(q => !answers.has(q)).slice(0, 15)
