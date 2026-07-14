@@ -185,12 +185,14 @@ function ksScoreAll() {
   }).sort((a, b) => {
     const pA = a.max > 0 ? a.score / a.max : 0;
     const pB = b.max > 0 ? b.score / b.max : 0;
-    // Rank by match rate first, then by how many couplets were actually
-    // confirmed (raw score). Without the raw-score tie-break, species tied at
-    // the same rate — e.g. two candidates both at 100% — fall back to
-    // alphabetical order, so a shallow early-exit species (amphimuta 12/12)
-    // outranks a deeper one that confirmed more (muta 17/17) purely on name.
-    return pB - pA || b.score - a.score || a.name.localeCompare(b.name);
+    // Rank by raw score (net couplets confirmed) first, then by match rate as a
+    // tie-break. Raw score is the amount of evidence for a candidate; match rate
+    // alone punishes species that go deep in the key (more couplets = more
+    // chances for one contradiction to sink the rate), while a species that
+    // exits early simply has fewer characters tested — not a genuinely better
+    // match. e.g. following muta: amphimuta 12/12 (100%, exited early) should
+    // NOT outrank muta 17/19 (89%, confirmed far more). Score first fixes that.
+    return b.score - a.score || pB - pA || a.name.localeCompare(b.name);
   });
 }
 
@@ -229,10 +231,13 @@ function ksRenderCandidates() {
 
   const top = ks.scores.slice(0, 8);
   const medals = ['🥇', '🥈', '🥉'];
+  // Bar length is relative to the leader's raw score, so it tracks the ranking
+  // (score-primary) — the top candidate always shows the fullest bar.
+  const topScore = top.length ? Math.max(1, top[0].score) : 1;
 
   listEl.innerHTML = top.map((s, i) => {
     const info = ks.speciesInfo.get(s.name) || {};
-    const barW = s.max > 0 ? Math.round(Math.max(0, s.score) / s.max * 100) : 0;
+    const barW = Math.round(Math.max(0, s.score) / topScore * 100);
     const isExpanded = ks.expandedName === s.name;
     const inatHref = info.inat_url ? ksEscAttr(info.inat_url) : '';
     return `
