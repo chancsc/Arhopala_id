@@ -814,6 +814,7 @@ function buildCPKeyPath(speciesName) {
   // specimen matches it → advance) or No (it does not → jump to lead num_b).
   const steps = [];
   let cp = couplets[0];
+  let terminalLead = null;
   for (const lead of leadNums) {
     if (!cp) break;
     const choice = lead === cp.num_a ? 'A' : lead === cp.num_b ? 'B' : null;
@@ -824,20 +825,45 @@ function buildCPKeyPath(speciesName) {
     const yes = inverted ? choice === 'B' : choice === 'A';
     steps.push({ num_a: cp.num_a, statement, yes });
     const r = choose(cp, lead);
-    if (r.terminal != null || !r.couplet) break;
+    if (r.terminal != null) { terminalLead = r.terminal; break; }
+    if (!r.couplet) break;
     cp = r.couplet;
   }
   if (!steps.length) return '';
 
-  const stepsHTML = steps.map(s => `<li class="path-step">
+  // Final identifying lead — the terminal couplet-half that names the species.
+  // Showing it makes the path read as complete (it ends on the key that pins the
+  // ID, e.g. Key 214 → A. abseus, not the last branch decision). Strip the
+  // trailing "… Arhopala <sp>" and the Fwl clause so it matches the other
+  // statements; the species is shown in the answer slot instead. Skip it when the
+  // terminal is the same lead we just displayed (a self-naming fall-through) to
+  // avoid repeating that key number.
+  let terminalStep = null;
+  if (terminalLead != null && !(steps.length && steps[steps.length - 1].num_a === terminalLead)) {
+    const raw = leads[String(terminalLead)] || '';
+    const sm = raw.match(/\bArhopala\s+\w+(?:\s+\w+)?/);
+    const text = raw
+      .replace(/\s*\.*\s*\bArhopala\s+\w+(?:\s+\w+)?\s*$/, '')
+      .replace(/\s*Fwl\s+[\d.]+(?:\s*[-–]\s*[\d.]+)?\s*mm\.?/i, '')
+      .replace(/\s{2,}/g, ' ')
+      .trim();
+    if (text) terminalStep = { num: terminalLead, text, species: sm ? sm[0] : speciesName };
+  }
+
+  const totalSteps = steps.length + (terminalStep ? 1 : 0);
+  let stepsHTML = steps.map(s => `<li class="path-step">
       <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(s.num_a))}</span> ${escapeHtml(s.statement)}</span>
       <span class="path-a">↳ ${s.yes ? 'Yes' : 'No'}</span>
     </li>`).join('');
+  if (terminalStep) stepsHTML += `<li class="path-step path-step--final">
+      <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(terminalStep.num))}</span> ${escapeHtml(terminalStep.text)}</span>
+      <span class="path-a path-a--id">↳ <em>${escapeHtml(terminalStep.species)}</em></span>
+    </li>`;
 
   return `
     <details class="path-details path-details--cpkey" data-species="${escapeAttr(speciesName)}">
       <summary class="path-summary">
-        <span class="path-summary-label">C&amp;P key path — ${steps.length} step${steps.length !== 1 ? 's' : ''}</span>
+        <span class="path-summary-label">C&amp;P key path — ${totalSteps} step${totalSteps !== 1 ? 's' : ''}</span>
         <button type="button" class="cpkey-copy" aria-label="Copy key path">${iconCopy()}<span class="cpkey-copy-label">Copy</span></button>
       </summary>
       <div class="path-content">

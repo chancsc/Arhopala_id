@@ -928,6 +928,10 @@ details[open] .path-summary::before { content: '▼ '; }
 /* No running step counter — the "Key N" label is the meaningful number. */
 .path-details--cpkey .path-step { counter-increment: none; padding-left: 0; }
 .path-details--cpkey .path-step::before { display: none; }
+/* Final identifying lead (names the species) — highlighted as the ID point. */
+.path-details--cpkey .path-step--final { background: #eef5ec; border-radius: 6px; }
+.path-a--id { color: var(--primary); font-weight: 600; white-space: nowrap; }
+.path-a--id em { font-style: italic; }
 
 /* Copy button — only shown once the panel is opened. */
 .cpkey-copy {
