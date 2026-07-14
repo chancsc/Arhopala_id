@@ -922,7 +922,7 @@ details[open] .path-summary::before { content: '▼ '; }
   color: var(--accent);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 0.5rem;
 }
 /* No running step counter — the "Key N" label is the meaningful number. */
@@ -935,6 +935,7 @@ details[open] .path-summary::before { content: '▼ '; }
   align-items: center;
   gap: 0.28rem;
   flex: none;
+  margin-left: auto;
   padding: 0.2rem 0.5rem;
   font: inherit;
   font-size: 0.72rem;
