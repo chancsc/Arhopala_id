@@ -362,8 +362,19 @@ function getDisplayQuestionsPure(answers, scores, featureMatrix, treeNodes, ques
   };
 
   if (questionOrder.length === 0) {
-    // First render: establish stable initial order
-    questionOrder.push(...allQ.slice().sort(newQSort));
+    // Fresh sort (the live checklist resets questionOrder after every answer, so
+    // this branch runs each time). Keep the ALREADY-ANSWERED questions in a
+    // stable leading block, in the order they were answered, and (re)sort only
+    // the unanswered tail by coverage. Sorting everything together — the old
+    // behaviour — re-ranked answered questions by their now-changed coverage, so
+    // answering a question (e.g. Q33 → Yes, which shifts the candidate pool)
+    // made that just-answered question jump downward past newly-relevant
+    // unanswered ones. Pinning the answered block keeps answers where the user
+    // left them; the unanswered tail still re-sorts, so follow-ups still surface.
+    const answeredQs = [...answers.keys()].filter(q => allQSet.has(q));
+    const answeredSet = new Set(answeredQs);
+    const unansweredQs = allQ.filter(q => !answeredSet.has(q)).sort(newQSort);
+    questionOrder.push(...answeredQs, ...unansweredQs);
   } else {
     // Remember the position of any question about to be pruned for being
     // irrelevant, so that if it becomes relevant again later in this same

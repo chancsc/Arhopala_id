@@ -311,6 +311,18 @@ sim scripts, then `regen-validate` re-run and the browser order re-checked for a
 divergent species. The two sim copies stay in sync with each other (byte-identical
 `computeSimCdPath` logic) **and** with the live page.
 
+**Answered questions are pinned in the fresh-sort branch.** Within that same
+`questionOrder.length === 0` branch, `getDisplayQuestionsPure` now emits the
+already-answered questions first (in answer order — `[...answers.keys()]`), then the
+unanswered tail sorted by `newQSort`. Sorting everything together re-ranked answered
+questions by their now-changed coverage, so answering one (e.g. *A. aedias* Q33 → Yes,
+which shifts the candidate pool toward camdana) made that just-answered question jump
+*downward* past newly-relevant unanswered ones. Pinning the answered block keeps answers
+where the user left them while the unanswered tail still re-sorts (follow-ups still
+surface). This is **sim-neutral**: the sim skips answered questions when picking the next
+one, so the pick order — and every stored path — is unchanged (`regen-validate` shows zero
+diff). It only affects the live checklist layout.
+
 ## Deprioritizing a usually-CD question without breaking live ID
 
 `newQSort` (in `getDisplayQuestionsPure`, `js/path-utils.js`) orders display questions by
