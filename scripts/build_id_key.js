@@ -128,6 +128,7 @@ const couplets = coupletNodes.map((n, i) => {
     a_text: leads[String(n)],
     b_text: leads[String(b)],
     upperside: false,
+    skippable: false,
     hint: '',
     guide_phrase: '', guide_link: '',
     question_phrase: '', question_link: '',
@@ -230,6 +231,17 @@ const hasUnder = t => /underside/i.test(t);
 for (const cp of couplets) {
   cp.upperside = hasUpper(cp.a_text) && hasUpper(cp.b_text) &&
                  !(hasUnder(cp.a_text) || hasUnder(cp.b_text));
+}
+
+// SKIPPABLE: couplets that rely on a character which can't be assessed from a
+// field photo even though they're not upperside — e.g. genitalia (valva shape).
+// These get a Skip button too (id_keys.js: canSkip = upperside || skippable), so
+// underside-only users aren't forced to guess. Skip is neutral in scoring.
+//   cp_87_92 (Key 87): muta vs perimuta subgroup splits partly on valva
+//   uni-/bilobate — a dissection character, not visible in any photo.
+const SKIPPABLE = new Set(['cp_87_92']);
+for (const cp of couplets) {
+  if (SKIPPABLE.has(cp.id)) cp.skippable = true;
 }
 function firstClause(t) {
   let s = t.replace(/\.\.\.?\s*Arhopala.*$/i, '').replace(/\s*Arhopala\s+\w+.*$/i, '');

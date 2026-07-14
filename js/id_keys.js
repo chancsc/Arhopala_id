@@ -341,10 +341,13 @@ function ksRenderCouplet() {
   const yesV = inverted ? 'B' : 'A';
   const noV = inverted ? 'A' : 'B';
 
-  // Skip only if upperside and at least one branch is non-terminal
-  const canSkip = cp.upperside && ksSkipNext(cp) !== null;
+  // Skip if the character can't be assessed from a photo (upperside, or a
+  // couplet flagged skippable — e.g. a genitalia character) and at least one
+  // branch is non-terminal so the key can still continue.
+  const canSkip = (cp.upperside || cp.skippable) && ksSkipNext(cp) !== null;
+  const skipLabel = cp.upperside ? 'Skip — upperside feature not visible' : 'Skip — cannot determine from photo';
   const skipRow = canSkip
-    ? `<div class="ks-btn-row"><button class="ks-btn ks-btn-skip" data-id="${ksEscAttr(cp.id)}" data-v="skip">Skip — upperside feature not visible</button></div>`
+    ? `<div class="ks-btn-row"><button class="ks-btn ks-btn-skip" data-id="${ksEscAttr(cp.id)}" data-v="skip">${skipLabel}</button></div>`
     : '';
 
   el.innerHTML = `
