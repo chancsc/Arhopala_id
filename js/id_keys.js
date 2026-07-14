@@ -185,7 +185,12 @@ function ksScoreAll() {
   }).sort((a, b) => {
     const pA = a.max > 0 ? a.score / a.max : 0;
     const pB = b.max > 0 ? b.score / b.max : 0;
-    return pB - pA || a.name.localeCompare(b.name);
+    // Rank by match rate first, then by how many couplets were actually
+    // confirmed (raw score). Without the raw-score tie-break, species tied at
+    // the same rate — e.g. two candidates both at 100% — fall back to
+    // alphabetical order, so a shallow early-exit species (amphimuta 12/12)
+    // outranks a deeper one that confirmed more (muta 17/17) purely on name.
+    return pB - pA || b.score - a.score || a.name.localeCompare(b.name);
   });
 }
 
