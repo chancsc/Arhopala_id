@@ -2996,11 +2996,11 @@
       "guide_link": "guide.html#fw-spot4-distad",
       "choices": [
         {
-          "label": "Yes — FW spot 4 shifted distad; male clear violet-blue, thread border",
+          "label": "Yes — FW spot 4 shifted distad, out of line with spots 5 and 6",
           "next": "r_hellada_ozana"
         },
         {
-          "label": "No — FW spot 4 in normal position; small species; male even pale metallic silvery blue",
+          "label": "No — FW spot 4 in line with spots 5 and 6",
           "next": "r_varro_selama"
         }
       ]
