@@ -404,6 +404,10 @@
       "type": "question",
       "id": "q_tailed_cleander",
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
+      "question_link": {
+        "text": "projecting tornal lobe",
+        "href": "guide.html#hw-tornal-lobe"
+      },
       "hint": "First, just decide whether a tornal lobe is present at all: the cleander group has a projecting tornal lobe — a bulge at the anal angle of the hindwing. Count ANY bulge as present, even a small one; answer No only if the anal angle is plain or evenly rounded with no bulge. How large the lobe is (which separates the cleander and alea subgroups) is asked on the next screen — don't try to judge size here.",
       "choices": [
         {
