@@ -219,6 +219,50 @@ function ksRenderText(text, phrase, url) {
   return phrase ? ksLinkify(text, phrase, url) : ksEsc(text);
 }
 
+// epithet (lowercase second word) → iNaturalist URL, built once from speciesInfo.
+let ksEpithetMap = null;
+function ksBuildEpithetMap() {
+  ksEpithetMap = new Map();
+  for (const [name, info] of ks.speciesInfo) {
+    const epithet = (name.split(' ')[1] || '').toLowerCase();
+    if (epithet && info.inat_url && !ksEpithetMap.has(epithet))
+      ksEpithetMap.set(epithet, info.inat_url);
+  }
+}
+
+// Link species mentions in a hint ("A. amantes", "Arhopala hellada ozana") to
+// the species' iNaturalist observations page. Matches "A."/"Arhopala" + a known
+// epithet, plus an immediately following lowercase word when it's a subspecies
+// (not a common English word), so trinomials link in full. Escapes all other text.
+const KS_HINT_STOPWORDS = new Set([
+  'and','by','is','with','the','or','not','but','has','have','its','in','at','on','of',
+  'to','from','than','if','then','so','as','are','was','were','this','that','both','all',
+  'no','yes','may','more','less','very','only','also','group','subgroup','vs','usually',
+  'often','otherwise','while','when','which','a','an','it','he','she','they','same',
+]);
+function ksLinkifyHint(text) {
+  if (!text) return '';
+  if (!ksEpithetMap) ksBuildEpithetMap();
+  const re = /\b(?:A\.|Arhopala)\s+([a-z][a-z-]+)(\s+([a-z][a-z-]+))?/g;
+  let out = '', last = 0, m;
+  while ((m = re.exec(text)) !== null) {
+    const url = ksEpithetMap.get(m[1].toLowerCase());
+    if (!url) continue;
+    // include a following lowercase word only if it's a plausible subspecies
+    let matchText = m[0], end = m.index + m[0].length;
+    if (m[3] && KS_HINT_STOPWORDS.has(m[3].toLowerCase())) {
+      matchText = text.slice(m.index, m.index + m[0].length - m[2].length);
+      end = m.index + matchText.length;
+    }
+    out += ksEsc(text.slice(last, m.index));
+    out += `<a href="${ksEscAttr(url)}" class="ks-hint-sp-link" target="_blank" rel="noopener">${ksEsc(matchText)}</a>`;
+    last = end;
+    re.lastIndex = end;
+  }
+  out += ksEsc(text.slice(last));
+  return out;
+}
+
 // ── Render ───────────────────────────────────────────────────────────────────
 
 function ksRenderCandidates() {
@@ -333,7 +377,7 @@ function ksRenderCouplet() {
   const hintHTML = (cp.hint || groupHTML)
     ? `<details class="ks-hint">
          <summary>Hint</summary>
-         ${cp.hint ? `<p>${ksEsc(cp.hint)}</p>` : ''}
+         ${cp.hint ? `<p>${ksLinkifyHint(cp.hint)}</p>` : ''}
          ${groupHTML}
        </details>`
     : '';
