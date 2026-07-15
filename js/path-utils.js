@@ -461,6 +461,17 @@ function buildQuestionNumbers(treeData) {
   }
 
   dfs(treeData.start);
+
+  // Number any question that exists only as a result-node feature override (no
+  // question node, so the DFS never reached it — e.g. the anthelus/achelous
+  // "spot 6 a quarter the size" scoring-only discriminator). Append after the
+  // DFS numbers so every existing question keeps its number.
+  for (const node of Object.values(nodes)) {
+    if (node.type === 'result' && node.features) {
+      for (const q of Object.keys(node.features))
+        if (!numbers.has(q)) numbers.set(q, ++n);
+    }
+  }
   return numbers;
 }
 
