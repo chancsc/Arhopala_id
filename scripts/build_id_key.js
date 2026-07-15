@@ -233,6 +233,16 @@ for (const cp of couplets) {
                  !(hasUnder(cp.a_text) || hasUnder(cp.b_text));
 }
 
+// UPPERSIDE_OVERRIDE: the deciding statement (a_text) is an upperside character,
+// but the heuristic missed it because the "No" side is underside. Force upperside
+// so id_keys.js offers a Skip (with the "upperside feature not visible" label).
+//   cp_76_77 (Key 76): the A. major side is ♂/♀ upperside colour + border widths;
+//   the "No" side is HW cilia, so both-sides-upperside was false.
+const UPPERSIDE_OVERRIDE = new Set(['cp_76_77']);
+for (const cp of couplets) {
+  if (UPPERSIDE_OVERRIDE.has(cp.id)) cp.upperside = true;
+}
+
 // SKIPPABLE: couplets that rely on a character which can't be assessed from a
 // field photo even though they're not upperside — e.g. genitalia (valva shape).
 // These get a Skip button too (id_keys.js: canSkip = upperside || skippable), so
