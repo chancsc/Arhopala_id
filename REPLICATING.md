@@ -76,8 +76,16 @@ If you have a numbered-lead (Corbet & Pendlebury–style) dichotomous key for yo
    node scripts/enrich_id_key_guidelinks.js   # add Visual-Guide links to couplets
    node scripts/apply_id_key_hints.js         # fill each couplet's Yes/No hint
    node scripts/move_fwl_to_hint.js           # move "Fwl … mm" from statement → hint
-   node scripts/validate_id_key.js            # replay every species_path; must pass
+   node scripts/validate_id_key.js            # replay every species_path; correct terminal
+   node scripts/audit_id_key_scoring.js       # replay + score every path; each species → #1
    ```
+   Or in one step: `npm run build-validate-key` (build → validate → audit). Run the
+   **scoring audit after any change to `data/id_key.json`** — `validate_id_key.js` only
+   checks that each path reaches the right *terminal*; `audit_id_key_scoring.js` also
+   confirms each species ends up ranked **#1** in the +1/−1 scoring, and reports which
+   species fall from #1 when a Skippable/upperside couplet on their path is skipped (a
+   decisive upperside couplet legitimately costs the top spot when skipped — that's not a
+   failure, just surfaced so a change can't silently bury a species).
    `data/id_key.json` has three parts: `couplets[]` (each `{num_a, num_b, question, a_text, b_text, upperside, species_a, species_b, guide_phrase/guide_link, question_phrase/question_link}`), `leads{}` (lead number → full text), and `species_paths{}` (species → ordered list of chosen lead numbers). `species_a`/`species_b` list the taxa reachable on each side of a couplet — this is what the +1/−1 scoring uses; a taxon absent from a couplet is neutral for it.
 
 3. **Set the genus in `js/id_keys.js`:**
