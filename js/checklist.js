@@ -81,6 +81,25 @@ function initData(treeData, speciesData) {
       resultNotes.set(node.name, node.note || '');
   }
 
+  // Some questions exist ONLY as result-node feature overrides — with no question
+  // node anywhere in the tree (e.g. the anthelus/achelous "spot 6 a quarter the
+  // size" discriminator, a scoring-only character). They still surface in Feature
+  // Scoring via the feature matrix, but the loop above reads choices only from
+  // question nodes, so they would render with no answer buttons. Collect their
+  // choices from the distinct feature values, ordered Yes → No → Cannot determine.
+  const choiceRank = l => l.startsWith('Cannot determine') ? 2 : /^No\b/i.test(l) ? 1 : 0;
+  const featureOnly = new Map();
+  for (const node of Object.values(treeData.nodes)) {
+    if (node.type !== 'result' || !node.features) continue;
+    for (const [q, label] of Object.entries(node.features)) {
+      if (qMeta.has(q)) continue; // node-backed question — choices already set
+      if (!featureOnly.has(q)) featureOnly.set(q, new Set());
+      featureOnly.get(q).add(label);
+    }
+  }
+  for (const [q, set] of featureOnly)
+    qMeta.set(q, { choices: [...set].sort((a, b) => choiceRank(a) - choiceRank(b)), hint: '' });
+
   // Build species info lookup
   const sp2Map = new Map();
   for (const s of speciesData.species) {
