@@ -319,7 +319,7 @@
         "text": "spot at the base of FW space 10",
         "href": "guide.html#fw-space10-base-spot"
       },
-      "hint": "The anthelus group (2 spp.) is defined by partial dislocation of the FW postdiscal band at vein 4, a spot at the base of FW space 10, and the absence of a spot at the base of HW space 6. [A. anthelus grahami](https://www.inaturalist.org/observations?verifiable=true&taxon_id=149211&preferred_place_id=6734): ≥3 spots in FW space 11 and 2 subbasal spots in HW space 8; FW 28 mm. [A. achelous achelous](https://www.inaturalist.org/observations?verifiable=true&taxon_id=940963&preferred_place_id=6734): no spots in FW space 11 and only 1 HW space 8 spot; FW 22 mm; HW spot 6 noticeably smaller than spot 7 — roughly a quarter its size; strong purple tinge on underside (nominate); subspecies malu (Kedawi) lacks most of the purple tinge.",
+      "hint": "The anthelus group (2 spp.) is defined by partial dislocation of the FW postdiscal band at vein 4, a spot at the base of FW space 10, and the absence of a spot at the base of HW space 6. [A. anthelus grahami](https://www.inaturalist.org/observations?verifiable=true&taxon_id=149211&preferred_place_id=6734): ≥3 spots in FW space 11 and 2 subbasal spots in HW space 8; FW 28 mm. [A. achelous achelous](https://www.inaturalist.org/observations?verifiable=true&taxon_id=940963&preferred_place_id=6734): no spots in FW space 11 and only 1 HW space 8 spot; FW 22 mm; strong purple tinge on underside (nominate); subspecies malu (Kedawi) lacks most of the purple tinge.",
       "choices": [
         {
           "label": "Yes — FW band partially dislocated at vein 4; spot at base of FW space 10; no spot at base of HW space 6",
@@ -2704,7 +2704,7 @@
         "text": "3 spots in space 11",
         "href": "guide.html#fw-space-11"
       },
-      "hint": "[A. anthelus grahami](https://www.inaturalist.org/observations?verifiable=true&taxon_id=149211&preferred_place_id=6734) (anthelus subgroup): EXTRA spots — ≥3 in FW space 11 and 2 subbasal spots in HW space 8; spots on FW and upper HW half are deep purple-brown; FW 28 mm. [A. achelous achelous](https://www.inaturalist.org/observations?verifiable=true&taxon_id=940963&preferred_place_id=6734) (achelous subgroup): NO spots in FW space 11 and only a single spot at the base of HW space 8; FW 22 mm. Additional diagnostic for achelous: HW postdiscal spot 6 is noticeably smaller than spot 7 — roughly a quarter its size (spots 5, 6 and 7 otherwise in the normal echelon arrangement, spot 6 nearer to spot 5 than to the end-cell bar). The nominate shows a strong purple tinge on the underside; subspecies malu (Kedawi) lacks most of this purple tinge.",
+      "hint": "[A. anthelus grahami](https://www.inaturalist.org/observations?verifiable=true&taxon_id=149211&preferred_place_id=6734) (anthelus subgroup): EXTRA spots — ≥3 in FW space 11 and 2 subbasal spots in HW space 8; spots on FW and upper HW half are deep purple-brown; FW 28 mm. [A. achelous achelous](https://www.inaturalist.org/observations?verifiable=true&taxon_id=940963&preferred_place_id=6734) (achelous subgroup): NO spots in FW space 11 and only a single spot at the base of HW space 8; FW 22 mm. The nominate shows a strong purple tinge on the underside; subspecies malu (Kedawi) lacks most of this purple tinge.",
       "choices": [
         {
           "label": "Yes — ≥3 spots in FW space 11; 2 subbasal spots in HW space 8; spots deep purple-brown",
@@ -2722,10 +2722,7 @@
       "taxon_id": null,
       "name": "Arhopala anthelus grahami",
       "common_name": "",
-      "note": "One of the most beautiful in the genus. FW 28 mm. Underside: ≥3 spots in FW space 11; 2 spots at base of HW space 8; spots on FW and upper HW half deep purple-brown. Male: brilliant shining blue, narrow black border. Female: violet-blue with fairly broad black borders. Anthelus subgroup.",
-      "features": {
-        "Is HW postdiscal spot 6 noticeably smaller than spot 7 — roughly a quarter its size?": "No — HW spot 6 not markedly smaller than spot 7; spots on upper HW half deep purple-brown"
-      }
+      "note": "One of the most beautiful in the genus. FW 28 mm. Underside: ≥3 spots in FW space 11; 2 spots at base of HW space 8; spots on FW and upper HW half deep purple-brown. Male: brilliant shining blue, narrow black border. Female: violet-blue with fairly broad black borders. Anthelus subgroup."
     },
     "r_achelous_achelous": {
       "type": "result",
@@ -2733,10 +2730,7 @@
       "taxon_id": null,
       "name": "Arhopala achelous achelous",
       "common_name": "",
-      "note": "Tailed. FW 22 mm. Underside: strong purple tinge (nominate); no spots in FW space 11; single spot at base of HW space 8. Lacks spots in FW space 11 (cf. [A. anthelus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=149211&preferred_place_id=6734)); single spot at base of HW space 8 (cf. two in [A. anthelus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=149211&preferred_place_id=6734)). HW postdiscal spots 5, 6 and 7 in the normal echelon arrangement, spot 6 nearer to spot 5 than to the end-cell bar — but diagnostically, spot 6 is noticeably smaller than spot 7, roughly a quarter its size. Subspecies [A. achelous malu](https://www.inaturalist.org/observations?verifiable=true&taxon_id=940963&preferred_place_id=6734) (Kedawi: Langkawi, Perlis, north Kedah) lacks most of the purple tinge found in the nominate. Male: shining dark blue, narrow ~0.5 mm black border. Achelous subgroup.",
-      "features": {
-        "Is HW postdiscal spot 6 noticeably smaller than spot 7 — roughly a quarter its size?": "Yes — HW spot 6 noticeably smaller than spot 7, roughly a quarter its size"
-      }
+      "note": "Tailed. FW 22 mm. Underside: strong purple tinge (nominate); no spots in FW space 11; single spot at base of HW space 8. Lacks spots in FW space 11 (cf. [A. anthelus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=149211&preferred_place_id=6734)); single spot at base of HW space 8 (cf. two in [A. anthelus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=149211&preferred_place_id=6734)). HW postdiscal spots 5, 6 and 7 in the normal echelon arrangement, spot 6 nearer to spot 5 than to the end-cell bar. Subspecies [A. achelous malu](https://www.inaturalist.org/observations?verifiable=true&taxon_id=940963&preferred_place_id=6734) (Kedawi: Langkawi, Perlis, north Kedah) lacks most of the purple tinge found in the nominate. Male: shining dark blue, narrow ~0.5 mm black border. Achelous subgroup."
     },
     "q_aurea_s1": {
       "type": "question",
