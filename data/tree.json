@@ -1620,26 +1620,6 @@
         },
         {
           "label": "No — markings larger or not macular",
-          "next": "q_agelastus_hw45"
-        }
-      ]
-    },
-    "q_agelastus_hw45": {
-      "type": "question",
-      "id": "q_agelastus_hw45",
-      "question": "On the hindwing underside, are the inner submarginal spots in spaces 4–5 notably enlarged and darkened?",
-      "question_link": {
-        "text": "inner submarginal spots",
-        "href": "guide.html#wing-regions"
-      },
-      "hint": "This is usually the most field-visible diagnostic character for [Arhopala alaconia media](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880741&preferred_place_id=6734) (alesia subgroup) — the matching FW spaces 2–3 spots are often hidden under the hindwing in field photos, so the HW spaces 4–5 spots alone can usually nail down the species. If the HW spaces 4–5 spots are clearly enlarged and darkened, this is decisive. If unclear or not visible, the next question offers FW spots and HW spot 6 shape as backup characters.",
-      "choices": [
-        {
-          "label": "Yes — HW spaces 4–5 submarginal spots notably enlarged and darkened",
-          "next": "r_alaconia_media"
-        },
-        {
-          "label": "No / cannot determine",
           "next": "q_agelastus_s4"
         }
       ]
