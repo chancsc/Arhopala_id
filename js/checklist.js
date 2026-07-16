@@ -245,6 +245,7 @@ const GUIDE_LINKS = new Map([
   ['cell spots on the forewing underside outlined in greenish silver', 'guide.html#fw-cell-silver'],
   ['spaces 4 and 5, are the submarginal spots prominently black and wedge-shaped (∧)', 'guide.html#hw-spaces45-wedge'],
   ['projecting tornal lobe', 'guide.html#hw-tornal-lobe'],
+  ['a clear gap visible between them', 'guide.html#hw-band-vein2'],
 ]);
 
 const MD_LINK_RE = /\[([^\]]+)\]\((https:\/\/[^)]+)\)/g;

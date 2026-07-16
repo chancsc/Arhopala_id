@@ -906,7 +906,11 @@
           "label": "No — HW postdiscal band continuous or not clearly separated at vein 2",
           "next": "q_tailless_camdeo"
         }
-      ]
+      ],
+      "question_link": {
+        "text": "a clear gap visible between them",
+        "href": "guide.html#hw-band-vein2"
+      }
     },
     "q_tailless_camdeo": {
       "type": "question",
