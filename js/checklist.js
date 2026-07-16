@@ -302,6 +302,7 @@ const CHOICE_LINKS = new Map([
   ['A. baluensis', 'https://www.inaturalist.org/observations?verifiable=true&taxon_id=888417&preferred_place_id=6734'],
   ['central cell spot is band-like, stretching entirely across the cell', 'guide.html#hw-central-cell-spot'],
   ["spot 6 is displaced above spot 5's level toward the end-cell bar", 'guide.html#spot6-upward-endcell'],
+  ['Spots more quadrate/banded', 'guide.html#hw-spots-quadrate-banded'],
 ]);
 
 function linkifyChoice(text) {
