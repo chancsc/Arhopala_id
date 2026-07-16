@@ -725,15 +725,19 @@
     "q_alaconia_wedge_tailless": {
       "type": "question",
       "id": "q_alaconia_wedge_tailless",
-      "question": "Among tailless species: in hindwing underside spaces 4 and 5, are the submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border?",
-      "hint": "(per field-photo review) This combination — bold, blackish wedge-shaped (∧) submarginal spots in HW spaces 4–5, paired with large postdiscal spots bordered by a conspicuously thick pale margin — is unique to [Arhopala alaconia media](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880741&preferred_place_id=6734) among Malaysian Arhopala and is usually clear even in average photos. If present, you can identify the species directly here without checking HW spot 6 position/shape.",
+      "question": "Among tailless species: in the hindwing underside spaces 4–5 (and often 3, sometimes 2), are the submarginal spots prominently black and wedge-shaped (∧)?",
+      "hint": "(per field-photo review) Bold, blackish wedge-shaped (∧) submarginal spots PAIRED WITH large postdiscal spots edged by a conspicuously thick pale border is unique to [Arhopala alaconia media](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880741&preferred_place_id=6734) — pick the first option and you can identify it directly here. [Arhopala wildeyana](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1294323&preferred_place_id=6734) also shows prominently black, wedge-shaped submarginal spots (spaces (2)3–5) but WITHOUT the thick pale postdiscal border — pick the second option. Most other tailless species have uniform (not wedge-shaped) submarginal spots — pick No.",
       "choices": [
         {
-          "label": "Yes — HW spaces 4–5 submarginal spots black, wedge-shaped (∧); postdiscal spots large with a thick pale border",
+          "label": "Yes — submarginal spots wedge-shaped (∧) AND postdiscal spots large with a thick pale border (the combination)",
           "next": "r_alaconia_media"
         },
         {
-          "label": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered",
+          "label": "Yes — submarginal spots wedge-shaped (∧) in spaces (2)3–5, but postdiscal spots NOT edged by a thick pale border",
+          "next": "q_tailless_epimuta"
+        },
+        {
+          "label": "No — HW submarginal spots not wedge-shaped (uniform in size and colour)",
           "next": "q_tailless_epimuta"
         }
       ]
@@ -1785,13 +1789,14 @@
       "taxon_id": null,
       "name": "Arhopala wildeyana wildeyana",
       "common_name": "",
-      "note": "Tailless. Male upperside: violet blue with broader borders than [A. labuana](https://www.inaturalist.org/search?q=Arhopala+labuana) or [A. agelastus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1294319&preferred_place_id=6734) — 2.0 mm at tornus to 5.0 mm at costa. Female: brighter and purer blue. Underside: HW postdiscal spots 5, 6 and 7 widely out of line; the inner edge of spot 6 is in line with, or even further inward (basad) than, the inner edge of spot 7; spot 6 is outwardly convex and typically touches or overlaps the end-cell bar. Agelastus group; HW postdiscal band only partially dislocated at vein 2; FW postdiscal band continuous.",
+      "note": "Tailless. Male upperside: violet blue with broader borders than [A. labuana](https://www.inaturalist.org/search?q=Arhopala+labuana) or [A. agelastus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1294319&preferred_place_id=6734) — 2.0 mm at tornus to 5.0 mm at costa. Female: brighter and purer blue. Underside: HW postdiscal spots 5, 6 and 7 widely out of line; the inner edge of spot 6 is in line with, or even further inward (basad) than, the inner edge of spot 7; spot 6 is outwardly convex and typically touches or overlaps the end-cell bar. In HW underside spaces (2)3–5 the submarginal spots are prominently black and wedge-shaped (∧) — like A. alaconia media, but without that species’ thick pale postdiscal border. Agelastus group; HW postdiscal band only partially dislocated at vein 2; FW postdiscal band continuous.",
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced",
         "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
         "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?": "Yes — FW postdiscal band continuous (agelastus group)",
         "Is the hindwing underside postdiscal spot in space 3 almost in line with the spots in spaces 2 and 4?": "No — spot 3 displaced, not clearly in line",
-        "Roughly how large is the specimen (forewing length)?": "Small — forewing about 16 mm (A. wildeyana)"
+        "Roughly how large is the specimen (forewing length)?": "Small — forewing about 16 mm (A. wildeyana)",
+        "Among tailless species: in the hindwing underside spaces 4–5 (and often 3, sometimes 2), are the submarginal spots prominently black and wedge-shaped (∧)?": "Yes — submarginal spots wedge-shaped (∧) in spaces (2)3–5, but postdiscal spots NOT edged by a thick pale border"
       }
     },
     "r_agelastus_agelastus": {
