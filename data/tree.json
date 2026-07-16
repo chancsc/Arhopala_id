@@ -725,7 +725,7 @@
     "q_alaconia_wedge_tailless": {
       "type": "question",
       "id": "q_alaconia_wedge_tailless",
-      "question": "Among tailless species: in the hindwing underside spaces 4–5 (and often 3, sometimes 2), are the submarginal spots prominently black and wedge-shaped (∧)?",
+      "question": "In the hindwing underside spaces 2 - 5, are the submarginal spots prominently wedge-shaped (∧), black or dark brown?",
       "hint": "(per field-photo review) Bold, blackish wedge-shaped (∧) submarginal spots PAIRED WITH large postdiscal spots edged by a conspicuously thick pale border is unique to [Arhopala alaconia media](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880741&preferred_place_id=6734) — pick the first option and you can identify it directly here. [Arhopala wildeyana](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1294323&preferred_place_id=6734) also shows prominently black, wedge-shaped submarginal spots (spaces (2)3–5) but WITHOUT the thick pale postdiscal border — pick the second option. Most other tailless species have uniform (not wedge-shaped) submarginal spots — pick No.",
       "choices": [
         {
@@ -1776,7 +1776,7 @@
         "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?": "Yes — FW postdiscal band continuous (agelastus group)",
         "Is the hindwing underside postdiscal spot in space 3 almost in line with the spots in spaces 2 and 4?": "No — spot 3 displaced, not clearly in line",
         "Roughly how large is the specimen (forewing length)?": "Small — forewing about 16 mm (A. wildeyana)",
-        "Among tailless species: in the hindwing underside spaces 4–5 (and often 3, sometimes 2), are the submarginal spots prominently black and wedge-shaped (∧)?": "Yes — submarginal spots wedge-shaped (∧) and brown in spaces 2, 3, 4, 5"
+        "In the hindwing underside spaces 2 - 5, are the submarginal spots prominently wedge-shaped (∧), black or dark brown?": "Yes — submarginal spots wedge-shaped (∧) and brown in spaces 2, 3, 4, 5"
       }
     },
     "r_agelastus_agelastus": {
