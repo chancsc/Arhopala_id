@@ -246,6 +246,7 @@ const GUIDE_LINKS = new Map([
   ['spaces 4 and 5, are the submarginal spots prominently black and wedge-shaped (∧)', 'guide.html#hw-spaces45-wedge'],
   ['projecting tornal lobe', 'guide.html#hw-tornal-lobe'],
   ['a clear gap visible between them', 'guide.html#hw-band-vein2'],
+  ['dislocated at vein 2', 'guide.html#hw-band-vein2'],
 ]);
 
 const MD_LINK_RE = /\[([^\]]+)\]\((https:\/\/[^)]+)\)/g;

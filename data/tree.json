@@ -2281,7 +2281,11 @@
           "label": "No — HW band not strongly dislocated at vein 2",
           "next": "q_amph_s7"
         }
-      ]
+      ],
+      "question_link": {
+        "text": "dislocated at vein 2",
+        "href": "guide.html#hw-band-vein2"
+      }
     },
     "q_amph_s7": {
       "type": "question",
