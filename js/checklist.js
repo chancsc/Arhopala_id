@@ -247,6 +247,7 @@ const GUIDE_LINKS = new Map([
   ['projecting tornal lobe', 'guide.html#hw-tornal-lobe'],
   ['a clear gap visible between them', 'guide.html#hw-band-vein2'],
   ['dislocated at vein 2', 'guide.html#hw-band-vein2'],
+  ['postdiscal spots more quadrate/banded', 'guide.html#hw-spots-quadrate-banded'],
 ]);
 
 const MD_LINK_RE = /\[([^\]]+)\]\((https:\/\/[^)]+)\)/g;

@@ -874,7 +874,11 @@
           "label": "No — HW spots more rounded in shape (agelastus or agesilaus group)",
           "next": "q_tailless_agelastus_check"
         }
-      ]
+      ],
+      "question_link": {
+        "text": "postdiscal spots more quadrate/banded",
+        "href": "guide.html#hw-spots-quadrate-banded"
+      }
     },
     "q_tailless_agelastus_check": {
       "type": "question",
