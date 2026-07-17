@@ -419,16 +419,90 @@
       "choice": "No"
     },
     {
-      "question": "Is the hindwing underside postdiscal spot in space 3 almost in line with the spots in spaces 2 and 4?",
-      "choice": "No — spot 3 displaced, not clearly in line"
-    },
-    {
       "question": "Roughly how large is the specimen (forewing length)?",
       "choice": "Larger — forewing about 20–22 mm (A. agelastus / A. labuana)"
     },
     {
+      "question": "Is the hindwing underside postdiscal spot 3 almost in line with postdiscal spots 2 and 4 (forming an even curve)?",
+      "choice": "No — spot 3 displaced, not clearly in line"
+    },
+    {
       "question": "Is the male upperside notably darker violet with narrower black borders than typical for the group?",
       "choice": "Cannot determine — upperside not visible"
+    }
+  ],
+  "Arhopala wildeyana wildeyana": [
+    {
+      "question": "Does the hindwing have a tail?",
+      "choice": "No — hindwing is tailless"
+    },
+    {
+      "question": "Are the underside markings almost entirely suppressed — the postdiscal spots replaced by a faint, obscure streak rather than a series of distinct separate spots, with most other typical markings absent?",
+      "choice": "No — postdiscal spots distinct; typical markings present"
+    },
+    {
+      "question": "Does the hindwing have a very rounded tornus, and are tornal green scales absent?",
+      "choice": "No"
+    },
+    {
+      "question": "Is there a prominent yellowish area in the centre of the hindwing underside, and are the underside markings generally obscure or ill-defined?",
+      "choice": "No — HW discal area not prominently yellowish; markings well-defined"
+    },
+    {
+      "question": "Is there a small spot at the extreme base of hindwing space 6 on the underside?",
+      "choice": "No"
+    },
+    {
+      "question": "Are the underside spots prominent and rounded, with a central spot in FW space 11?",
+      "choice": "No"
+    },
+    {
+      "question": "In the hindwing underside spaces 2 - 5, are the submarginal spots prominently wedge-shaped (∧), black or dark brown?",
+      "choice": "Yes — submarginal spots wedge-shaped (∧) and brown in spaces 2, 3, 4, 5"
+    },
+    {
+      "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
+      "choice": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced"
+    },
+    {
+      "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
+      "choice": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
+    },
+    {
+      "question": "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?",
+      "choice": "No — spot 6 not sinuous/concave, or no FW costal spot in space 10"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
+      "choice": "No — HW spots more rounded in shape (agelastus or agesilaus group)"
+    },
+    {
+      "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
+      "choice": "Yes — FW postdiscal band continuous (agelastus group)"
+    },
+    {
+      "question": "Is there a costal spot in forewing space 10?",
+      "choice": "No — FW space 10 lacks a costal spot"
+    },
+    {
+      "question": "Are the underside markings small and macular (dot-like), and are tornal green scales absent from the hindwing?",
+      "choice": "No — markings larger or not macular"
+    },
+    {
+      "question": "Are the inner submarginal spots in FW spaces 2–3 notably enlarged and darkened, and is HW postdiscal spot 6 outwardly concave or sinuous?",
+      "choice": "No"
+    },
+    {
+      "question": "Roughly how large is the specimen (forewing length)?",
+      "choice": "Small — forewing about 16 mm (A. wildeyana)"
+    },
+    {
+      "question": "How broad is the male forewing black border?",
+      "choice": "Cannot determine — upperside not visible"
+    },
+    {
+      "question": "Is the hindwing underside postdiscal spot 3 almost in line with postdiscal spots 2 and 4 (forming an even curve)?",
+      "choice": "No — spot 3 displaced, not clearly in line"
     }
   ],
   "Arhopala pseudomuta": [

@@ -1759,9 +1759,9 @@
       "note": "Male upperside: much darker violet than [A. agelastus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1294319&preferred_place_id=6734), with narrower black borders. Female: dark blue. Tailless. Underside: HW postdiscal spot in space 3 is usually shifted well basad (inward), placing it significantly out of line with spots 2 and 4 — the primary diagnostic separating it from [A. agelastus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1294319&preferred_place_id=6734), whose spot 3 sits almost in line with spots 2 and 4.",
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced",
-        "Is the hindwing underside postdiscal spot in space 3 almost in line with the spots in spaces 2 and 4?": "No — spot 3 displaced, not clearly in line",
         "Roughly how large is the specimen (forewing length)?": "Larger — forewing about 20–22 mm (A. agelastus / A. labuana)",
-        "In the hindwing underside spaces 2 - 5, are the submarginal spots prominently wedge-shaped (∧), black or dark brown?": "Yes — submarginal spots wedge-shaped (∧) and brown in spaces 2, 3, 4, 5"
+        "In the hindwing underside spaces 2 - 5, are the submarginal spots prominently wedge-shaped (∧), black or dark brown?": "Yes — submarginal spots wedge-shaped (∧) and brown in spaces 2, 3, 4, 5",
+        "Is the hindwing underside postdiscal spot 3 almost in line with postdiscal spots 2 and 4 (forming an even curve)?": "No — spot 3 displaced, not clearly in line"
       }
     },
     "r_wildeyana": {
@@ -1775,9 +1775,9 @@
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced",
         "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
         "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?": "Yes — FW postdiscal band continuous (agelastus group)",
-        "Is the hindwing underside postdiscal spot in space 3 almost in line with the spots in spaces 2 and 4?": "No — spot 3 displaced, not clearly in line",
         "Roughly how large is the specimen (forewing length)?": "Small — forewing about 16 mm (A. wildeyana)",
-        "In the hindwing underside spaces 2 - 5, are the submarginal spots prominently wedge-shaped (∧), black or dark brown?": "Yes — submarginal spots wedge-shaped (∧) and brown in spaces 2, 3, 4, 5"
+        "In the hindwing underside spaces 2 - 5, are the submarginal spots prominently wedge-shaped (∧), black or dark brown?": "Yes — submarginal spots wedge-shaped (∧) and brown in spaces 2, 3, 4, 5",
+        "Is the hindwing underside postdiscal spot 3 almost in line with postdiscal spots 2 and 4 (forming an even curve)?": "No — spot 3 displaced, not clearly in line"
       }
     },
     "r_agelastus_agelastus": {
@@ -1789,9 +1789,9 @@
       "note": "Underside: HW postdiscal spot in space 3 is almost in line with spots in spaces 2 and 4 (distinguishes female from allied species). Male: violet blue with FW border 1.0 mm at tornus to 4.0 mm at apex. Female: brighter blue with broader borders. Tailless.",
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced",
-        "Is the hindwing underside postdiscal spot in space 3 almost in line with the spots in spaces 2 and 4?": "Yes — spot 3 almost in line with spots 2 and 4",
         "Roughly how large is the specimen (forewing length)?": "Larger — forewing about 20–22 mm (A. agelastus / A. labuana)",
-        "In the hindwing underside spaces 2 - 5, are the submarginal spots prominently wedge-shaped (∧), black or dark brown?": "Yes — submarginal spots wedge-shaped (∧) and brown in spaces 2, 3, 4, 5"
+        "In the hindwing underside spaces 2 - 5, are the submarginal spots prominently wedge-shaped (∧), black or dark brown?": "Yes — submarginal spots wedge-shaped (∧) and brown in spaces 2, 3, 4, 5",
+        "Is the hindwing underside postdiscal spot 3 almost in line with postdiscal spots 2 and 4 (forming an even curve)?": "Yes — spot 3 almost in line with spots 2 and 4"
       }
     },
     "q_agesias_s1": {
@@ -4489,8 +4489,8 @@
     "q_agelastus_spot3_align": {
       "id": "q_agelastus_spot3_align",
       "type": "question",
-      "question": "Is the hindwing underside postdiscal spot in space 3 almost in line with the spots in spaces 2 and 4?",
-      "hint": "In [A. agelastus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1294319&preferred_place_id=6734), spot 3 sits nearly level with spots 2 and 4 — it is not displaced outward the way spots 5–7 are. In [A. wildeyana](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1294333&preferred_place_id=6734), spot 3 tends to follow the general outward displacement of the row.",
+      "question": "Is the hindwing underside postdiscal spot 3 almost in line with postdiscal spots 2 and 4 (forming an even curve)?",
+      "hint": "In [A. agelastus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1294319&preferred_place_id=6734), spot 3 sits nearly level with spots 2 and 4 — it is not displaced outward the way spots 5–7 are. In [A. wildeyana](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1294333&preferred_place_id=6734), spot 3 tends to follow the general outward displacement of the row. [A. labuana](https://www.inaturalist.org/search?q=Arhopala+labuana) is like A. wildeyana here (spot 3 shifted basad), so this separates A. agelastus (even curve) from both.",
       "choices": [
         {
           "label": "Yes — spot 3 almost in line with spots 2 and 4",
