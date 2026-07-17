@@ -726,18 +726,18 @@
       "type": "question",
       "id": "q_alaconia_wedge_tailless",
       "question": "In the hindwing underside spaces 2 - 5, are the submarginal spots prominently wedge-shaped (∧), black or dark brown?",
-      "hint": "(per field-photo review) Bold, blackish wedge-shaped (∧) submarginal spots PAIRED WITH large postdiscal spots edged by a conspicuously thick pale border is unique to [Arhopala alaconia media](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880741&preferred_place_id=6734) — pick the first option and you can identify it directly here. [Arhopala wildeyana](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1294333&preferred_place_id=6734) also shows dark brown, wedge-shaped submarginal spots (spaces 2–5) but WITHOUT the thick pale postdiscal border — pick the second option. Most other tailless species have uniform (not wedge-shaped) submarginal spots — pick No.",
+      "hint": "(per field-photo review) Bold, blackish wedge-shaped (∧) submarginal spots PAIRED WITH large postdiscal spots edged by a conspicuously thick pale border is unique to [Arhopala alaconia media](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880741&preferred_place_id=6734) — pick the first option and you can identify it directly here. The agelastus subgroup — [Arhopala wildeyana](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1294333&preferred_place_id=6734), [A. agelastus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1294319&preferred_place_id=6734) and [A. labuana](https://www.inaturalist.org/search?q=Arhopala+labuana) — also shows dark brown, wedge-shaped submarginal spots (spaces 2–5) but WITHOUT the thick pale postdiscal border — pick the second option (they are then separated by later characters). Most other tailless species have uniform (not wedge-shaped) submarginal spots — pick No.",
       "choices": [
         {
           "label": "Yes — HW spaces 4–5 wedge-shaped (∧) AND postdiscal spots large with a thick pale border (the combination)",
           "next": "r_alaconia_media"
         },
         {
-          "label": "Yes — submarginal spots wedge-shaped (∧) and brown in spaces 2, 3, 4, 5",
+          "label": "No — HW submarginal spots not wedge-shaped (uniform in size and colour)",
           "next": "q_tailless_epimuta"
         },
         {
-          "label": "No — HW submarginal spots not wedge-shaped (uniform in size and colour)",
+          "label": "Yes — submarginal spots wedge-shaped (∧) and brown in spaces 2, 3, 4, 5",
           "next": "q_tailless_epimuta"
         }
       ]
@@ -1760,7 +1760,8 @@
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced",
         "Is the hindwing underside postdiscal spot in space 3 almost in line with the spots in spaces 2 and 4?": "No — spot 3 displaced, not clearly in line",
-        "Roughly how large is the specimen (forewing length)?": "Larger — forewing about 20–22 mm (A. agelastus / A. labuana)"
+        "Roughly how large is the specimen (forewing length)?": "Larger — forewing about 20–22 mm (A. agelastus / A. labuana)",
+        "In the hindwing underside spaces 2 - 5, are the submarginal spots prominently wedge-shaped (∧), black or dark brown?": "Yes — submarginal spots wedge-shaped (∧) and brown in spaces 2, 3, 4, 5"
       }
     },
     "r_wildeyana": {
@@ -1789,7 +1790,8 @@
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced",
         "Is the hindwing underside postdiscal spot in space 3 almost in line with the spots in spaces 2 and 4?": "Yes — spot 3 almost in line with spots 2 and 4",
-        "Roughly how large is the specimen (forewing length)?": "Larger — forewing about 20–22 mm (A. agelastus / A. labuana)"
+        "Roughly how large is the specimen (forewing length)?": "Larger — forewing about 20–22 mm (A. agelastus / A. labuana)",
+        "In the hindwing underside spaces 2 - 5, are the submarginal spots prominently wedge-shaped (∧), black or dark brown?": "Yes — submarginal spots wedge-shaped (∧) and brown in spaces 2, 3, 4, 5"
       }
     },
     "q_agesias_s1": {
