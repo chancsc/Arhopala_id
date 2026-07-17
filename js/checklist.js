@@ -209,6 +209,7 @@ function renderHint(str) {
 
 // Phrases in question text that link to Visual Guide sections
 const GUIDE_LINKS = new Map([
+  ['wedge-shaped (∧)', 'guide.html#hw-spaces45-wedge'],
   ['hindwing space 6', 'guide.html#hw-space6-basal-spot'],
   ['extreme base of forewing underside space 10', 'guide.html#fw-space10-base-spot'],
   ['spot at the base of FW space 10', 'guide.html#fw-space10-base-spot'],

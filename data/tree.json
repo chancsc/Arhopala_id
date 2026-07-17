@@ -740,7 +740,11 @@
           "label": "Yes — submarginal spots wedge-shaped (∧) and brown in spaces 2, 3, 4, 5",
           "next": "q_tailless_epimuta"
         }
-      ]
+      ],
+      "question_link": {
+        "text": "wedge-shaped (∧)",
+        "href": "guide.html#hw-spaces45-wedge"
+      }
     },
     "q_tailless_epimuta": {
       "type": "question",
