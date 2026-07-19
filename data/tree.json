@@ -1300,7 +1300,10 @@
       "taxon_id": null,
       "name": "Arhopala azinis azinis",
       "common_name": "",
-      "note": "Underside: FW postdiscal band sinuous or only slightly dislocated at vein 4; HW postdiscal spot 6 outwardly straight or convex. Male: dark blue with broad black borders (2.0 mm at FW mid-termen, 3.0 mm on HW). Female: purple. Strictly montane habitat."
+      "note": "Underside: FW postdiscal band sinuous or only slightly dislocated at vein 4; HW postdiscal spot 6 outwardly straight or convex. Male: dark blue with broad black borders (2.0 mm at FW mid-termen, 3.0 mm on HW). Female: purple. Strictly montane habitat.",
+      "features": {
+        "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
+      }
     },
     "g_agrata_agrata": {
       "type": "group",
@@ -1324,7 +1327,8 @@
       "note": "Underside markings faint. FW: postdiscal spot in space 9 absent or very obscure; no costal spot in space 10. HW: postdiscal spot 6 considerably wider than spot 7. Male: dark purplish blue with black border reduced to a thread. Female: bright blue to purple-blue; HW blue reaches the termen between vein endings.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
-        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter"
+        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter",
+        "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
       }
     },
     "g_cleander": {
@@ -3371,7 +3375,10 @@
       "taxon_id": null,
       "name": "Arhopala cleander aphadantas",
       "common_name": "",
-      "note": "FW postdiscal band NOT dislocated at vein 4 (straight or only sinuous). Male: violet-blue with broad black borders. Large species (FW > 21 mm); conspicuously projecting HW tornal lobe. HW band completely dislocated at vein 2."
+      "note": "FW postdiscal band NOT dislocated at vein 4 (straight or only sinuous). Male: violet-blue with broad black borders. Large species (FW > 21 mm); conspicuously projecting HW tornal lobe. HW band completely dislocated at vein 2.",
+      "features": {
+        "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
+      }
     },
     "r_zambra_zambra": {
       "type": "result",
@@ -3383,7 +3390,8 @@
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
         "Does hindwing postdiscal spot 6 completely fill the gap between spot 5 and the end-cell bar (no gap visible between spot 6 and the bar)?": "Yes — HW spot 6 fills the gap; spot 6 touches or nearly touches the end-cell bar",
-        "Is there a costal spot present in forewing underside space 10?": "Yes — costal spot present in FW space 10 (A. sublustris)"
+        "Is there a costal spot present in forewing underside space 10?": "Yes — costal spot present in FW space 10 (A. sublustris)",
+        "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
       }
     },
     "r_athada_athada": {
@@ -3396,7 +3404,8 @@
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
         "Does hindwing postdiscal spot 6 completely fill the gap between spot 5 and the end-cell bar (no gap visible between spot 6 and the bar)?": "Yes — HW spot 6 fills the gap; spot 6 touches or nearly touches the end-cell bar",
-        "Is there a costal spot present in forewing underside space 10?": "Yes — costal spot present in FW space 10 (A. sublustris)"
+        "Is there a costal spot present in forewing underside space 10?": "Yes — costal spot present in FW space 10 (A. sublustris)",
+        "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
       }
     },
     "r_silhetensis_adorea": {
@@ -3409,7 +3418,8 @@
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "Yes — spot 6 is displaced above spot 5's level toward the end-cell bar (displacement may be subtle in the epimuta group — any upward shift counts)",
         "Does hindwing postdiscal spot 6 completely fill the gap between spot 5 and the end-cell bar (no gap visible between spot 6 and the bar)?": "No — gap between HW spot 6 and end-cell bar is wider than spot 6",
-        "Is there a costal spot present in forewing underside space 10?": "Yes — costal spot present in FW space 10 (A. sublustris)"
+        "Is there a costal spot present in forewing underside space 10?": "Yes — costal spot present in FW space 10 (A. sublustris)",
+        "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
       }
     },
     "q_alea_s1": {
@@ -3608,7 +3618,8 @@
       "common_name": "",
       "note": "Alea subgroup. Distinctive underside: pale slatey purple with conspicuous dark markings outlined by nearly-white striae. HW postdiscal spot 6 displaced past midway, touching or overlapping the end-cell bar (spots 5, 6 and 7 widely out of line). Smaller species (FW < 21 mm); less conspicuous HW tornal lobe.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
+        "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
       }
     },
     "r_evansi": {
@@ -3619,7 +3630,8 @@
       "common_name": "",
       "note": "Alea subgroup. Distinctive underside: slatey pink glaze with striae that are whiter than in other alea subgroup members. Forewing postdiscal spots in spaces 2 and 3 are in echelon, upright, and larger than the spots immediately above them. Smaller species (FW < 21 mm).",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
+        "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
       }
     },
     "r_aroa_aroa": {
@@ -3631,7 +3643,8 @@
       "note": "Alea subgroup. Recognizable by its rounded, elongate wings (distinctive wing shape). Narrow postdiscal bands that are well clear of the submarginal lunules. Smaller species (FW < 21 mm).",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
-        "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "No — HW spot 6 does not widely overlap the end-cell bar"
+        "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "No — HW spot 6 does not widely overlap the end-cell bar",
+        "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
       }
     },
     "r_phanda_phanda": {
@@ -3640,7 +3653,10 @@
       "taxon_id": null,
       "name": "Arhopala phanda phanda",
       "common_name": "",
-      "note": "Alea subgroup. Underside postdiscal band placed very close to the inner submarginal lunules — a trait shared with [A. normani](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340249&preferred_place_id=6734), but A. phanda differs in having HW postdiscal spot 6 quadrate (in normani, spot 6 is not much narrower at the bottom than at the top) and usually lacks a costal spot in FW space 10. Smaller species (FW < 21 mm)."
+      "note": "Alea subgroup. Underside postdiscal band placed very close to the inner submarginal lunules — a trait shared with [A. normani](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340249&preferred_place_id=6734), but A. phanda differs in having HW postdiscal spot 6 quadrate (in normani, spot 6 is not much narrower at the bottom than at the top) and usually lacks a costal spot in FW space 10. Smaller species (FW < 21 mm).",
+      "features": {
+        "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
+      }
     },
     "r_selta_selta": {
       "type": "result",
@@ -3652,7 +3668,8 @@
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
         "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes — HW spot 6 widely overlaps the end-cell bar",
-        "Is there a costal spot present in forewing underside space 10?": "Yes — costal spot present in FW space 10 (A. selta)"
+        "Is there a costal spot present in forewing underside space 10?": "Yes — costal spot present in FW space 10 (A. selta)",
+        "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
       }
     },
     "r_phaenops_sandakani": {
@@ -3664,7 +3681,8 @@
       "note": "Alea subgroup. Similar to [A. selta selta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880747&preferred_place_id=6734) (border expanding toward apex) but HW postdiscal spot 6 usually does NOT overlap the end-cell bar. Smaller species (FW < 21 mm).",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
-        "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "No — HW spot 6 does not widely overlap the end-cell bar"
+        "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "No — HW spot 6 does not widely overlap the end-cell bar",
+        "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
       }
     },
     "r_milleri": {
@@ -3677,7 +3695,8 @@
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
         "Is there a costal spot present in forewing underside space 10?": "No — no costal spot in FW space 10 (A. milleri)",
-        "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes — HW spot 6 widely overlaps the end-cell bar"
+        "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes — HW spot 6 widely overlaps the end-cell bar",
+        "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
       }
     },
     "r_normani": {
@@ -3690,7 +3709,8 @@
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
         "Is the postdiscal band placed very close to the inner submarginal lunules?": "Yes — postdiscal band very close to inner submarginal lunules",
-        "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes — HW spot 6 widely overlaps the end-cell bar"
+        "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes — HW spot 6 widely overlaps the end-cell bar",
+        "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
       }
     },
     "r_sublustris_ridleyi": {
@@ -3703,7 +3723,8 @@
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
         "Is there a costal spot present in forewing underside space 10?": "Yes — costal spot present in FW space 10 (A. sublustris)",
-        "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes — HW spot 6 widely overlaps the end-cell bar"
+        "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes — HW spot 6 widely overlaps the end-cell bar",
+        "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
       }
     },
     "r_corinda_acestes": {
@@ -3717,7 +3738,8 @@
         "What is the underside ground colour and overall appearance?": "Underside sometimes with purple wash; dark patch under FW cell; pointed FW apex, straight termen; smaller (tail ~3.5 mm) — A. corinda",
         "On the hindwing underside, is postdiscal spot 6 convex or almost straight (not concave) and touching or overlapping the end-cell bar, with no costal spot present in forewing space 10?": "Yes — HW spot 6 convex or almost straight, touching/overlapping the end-cell bar; no FW space 10 costal spot",
         "Is the hindwing cell longer than half the length of the wing?": "Yes — HW cell longer than half the wing length",
-        "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?": "Long and filamentous, about 3.5 mm (A. corinda)"
+        "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?": "Long and filamentous, about 3.5 mm (A. corinda)",
+        "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
       }
     },
     "q_democritus_s1": {
@@ -3909,7 +3931,8 @@
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
         "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
-        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
+        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next",
+        "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
       }
     },
     "r_acta": {
@@ -3923,7 +3946,8 @@
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar",
         "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)",
-        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
+        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next",
+        "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
       }
     },
     "r_tameanga": {
@@ -3937,7 +3961,8 @@
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
         "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)",
-        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
+        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next",
+        "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
       }
     },
     "q_eumolphus_green": {
@@ -4004,7 +4029,8 @@
         "On the hindwing underside, is postdiscal spot 6 convex or almost straight (not concave) and touching or overlapping the end-cell bar, with no costal spot present in forewing space 10?": "No — HW spot 6 concave or not overlapping the bar in this way, or a FW space 10 costal spot is present",
         "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)",
-        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
+        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next",
+        "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
       }
     },
     "r_eumolphus_maxwelli": {
@@ -4018,7 +4044,8 @@
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
         "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
+        "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
       }
     },
     "r_hellenore_siroes": {
@@ -4031,7 +4058,8 @@
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
         "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
-        "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)"
+        "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)",
+        "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
       }
     },
     "r_fulla_intaca": {
