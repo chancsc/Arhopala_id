@@ -396,7 +396,7 @@
         },
         {
           "label": "No — no central spot in FW space 11",
-          "next": "q_tailed_cleander"
+          "next": "q_cleander_syndrome"
         }
       ]
     },
@@ -4592,6 +4592,26 @@
         {
           "label": "Cannot determine — forewing length not measured",
           "next": "q_camdeo_c6"
+        }
+      ]
+    },
+    "q_cleander_syndrome": {
+      "type": "question",
+      "id": "q_cleander_syndrome",
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "hint": "Entry character for the large tailed cleander group (C&P couplet 125): bold, clearly-defined markings with FW postdiscal spot 9 well-marked, FW spot 4 in line with spots 5-6 (NOT shifted distad), and HW postdiscal spot 6 fairly regular. The eumolphus group (FW spot 4 shifted distad) and species with a displaced/concave HW spot 6 or faint markings do NOT match — answer No, and the tornal-lobe questions are skipped for them. Only cleander-group species (Yes) go on to the tornal-lobe check.",
+      "choices": [
+        {
+          "label": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)",
+          "next": "q_tailed_cleander"
+        },
+        {
+          "label": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)",
+          "next": "q_tailed_agrata"
+        },
+        {
+          "label": "Cannot determine — underside spot pattern unclear",
+          "next": "q_tailed_agrata"
         }
       ]
     }

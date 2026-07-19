@@ -33,10 +33,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -47,6 +43,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -61,8 +61,8 @@
       "choice": "No — no central spot in FW space 11"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -107,10 +107,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -121,6 +117,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -135,8 +135,8 @@
       "choice": "No — no central spot in FW space 11"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -181,10 +181,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -195,6 +191,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -209,16 +209,12 @@
       "choice": "No — no central spot in FW space 11"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
       "choice": "FW lacks postdiscal spot in space 9; no costal spot in FW space 10 (agrata subgroup)"
-    },
-    {
-      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
-      "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -263,10 +259,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -277,6 +269,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -291,8 +287,8 @@
       "choice": "No — no central spot in FW space 11"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -343,10 +339,6 @@
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
-    },
-    {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
@@ -543,10 +535,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -557,6 +545,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -621,10 +613,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -635,6 +623,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -699,10 +691,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -713,6 +701,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -777,10 +769,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -791,6 +779,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -855,10 +847,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -869,6 +857,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -933,10 +925,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -947,6 +935,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -1003,10 +995,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -1017,6 +1005,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -1077,10 +1069,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -1091,6 +1079,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -1155,10 +1147,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -1169,6 +1157,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -1225,10 +1217,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -1239,6 +1227,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -1253,8 +1245,8 @@
       "choice": "No — no central spot in FW space 11"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -2079,10 +2071,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -2093,6 +2081,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -2141,10 +2133,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -2155,6 +2143,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -2203,10 +2195,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -2217,6 +2205,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -2231,8 +2223,8 @@
       "choice": "No — no central spot in FW space 11"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -2289,10 +2281,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -2303,6 +2291,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -2317,8 +2309,8 @@
       "choice": "No — no central spot in FW space 11"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -2383,10 +2375,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -2397,6 +2385,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -2411,8 +2403,8 @@
       "choice": "No — no central spot in FW space 11"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -2477,10 +2469,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -2491,6 +2479,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -2505,8 +2497,8 @@
       "choice": "No — no central spot in FW space 11"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -2563,10 +2555,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -2577,6 +2565,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -2591,8 +2583,8 @@
       "choice": "No — no central spot in FW space 11"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
       "question": "Is the forewing postdiscal band clearly dislocated at vein 4, and is hindwing postdiscal spot 6 outwardly concave?",
@@ -2637,10 +2629,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -2651,6 +2639,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -2665,8 +2657,8 @@
       "choice": "No — no central spot in FW space 11"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
       "question": "Is the forewing postdiscal band clearly dislocated at vein 4, and is hindwing postdiscal spot 6 outwardly concave?",
@@ -2993,10 +2985,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -3039,10 +3027,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -3055,6 +3039,10 @@
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
     },
     {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
+    },
+    {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
       "choice": "No"
     },
@@ -3065,6 +3053,10 @@
     {
       "question": "Is there a central spot in forewing underside space 11?",
       "choice": "No — no central spot in FW space 11"
+    },
+    {
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -3113,10 +3105,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -3129,6 +3117,10 @@
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
     },
     {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+    },
+    {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
       "choice": "No"
     },
@@ -3139,6 +3131,10 @@
     {
       "question": "Is there a central spot in forewing underside space 11?",
       "choice": "No — no central spot in FW space 11"
+    },
+    {
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -3191,10 +3187,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -3207,6 +3199,10 @@
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
     },
     {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+    },
+    {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
       "choice": "No"
     },
@@ -3217,6 +3213,10 @@
     {
       "question": "Is there a central spot in forewing underside space 11?",
       "choice": "No — no central spot in FW space 11"
+    },
+    {
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -3273,10 +3273,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "Yes — spot 6 is displaced above spot 5's level toward the end-cell bar (displacement may be subtle in the epimuta group — any upward shift counts)"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -3287,6 +3283,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "Yes — spot 6 is displaced above spot 5's level toward the end-cell bar (displacement may be subtle in the epimuta group — any upward shift counts)"
     },
     {
       "question": "Is there a central spot in forewing underside space 11?",
@@ -3303,6 +3303,10 @@
     {
       "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
       "choice": "No"
+    },
+    {
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
     },
     {
       "question": "How large is the tornal lobe (and what size is the specimen)?",
@@ -3355,10 +3359,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -3371,6 +3371,10 @@
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
     },
     {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+    },
+    {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
       "choice": "No"
     },
@@ -3381,6 +3385,10 @@
     {
       "question": "Is there a central spot in forewing underside space 11?",
       "choice": "No — no central spot in FW space 11"
+    },
+    {
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -3429,10 +3437,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -3445,6 +3449,10 @@
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
     },
     {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+    },
+    {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
       "choice": "No"
     },
@@ -3455,6 +3463,10 @@
     {
       "question": "Is there a central spot in forewing underside space 11?",
       "choice": "No — no central spot in FW space 11"
+    },
+    {
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -3507,10 +3519,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -3523,6 +3531,10 @@
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
     },
     {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+    },
+    {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
       "choice": "No"
     },
@@ -3533,6 +3545,10 @@
     {
       "question": "Is there a central spot in forewing underside space 11?",
       "choice": "No — no central spot in FW space 11"
+    },
+    {
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -3589,10 +3605,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -3605,6 +3617,10 @@
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
     },
     {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
+    },
+    {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
       "choice": "No"
     },
@@ -3615,6 +3631,10 @@
     {
       "question": "Is there a central spot in forewing underside space 11?",
       "choice": "No — no central spot in FW space 11"
+    },
+    {
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -3679,10 +3699,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -3695,6 +3711,10 @@
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
     },
     {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+    },
+    {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
       "choice": "No"
     },
@@ -3705,6 +3725,10 @@
     {
       "question": "Is there a central spot in forewing underside space 11?",
       "choice": "No — no central spot in FW space 11"
+    },
+    {
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -3769,10 +3793,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -3785,6 +3805,10 @@
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
     },
     {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+    },
+    {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
       "choice": "No"
     },
@@ -3795,6 +3819,10 @@
     {
       "question": "Is there a central spot in forewing underside space 11?",
       "choice": "No — no central spot in FW space 11"
+    },
+    {
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -3859,10 +3887,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -3875,6 +3899,10 @@
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
     },
     {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+    },
+    {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
       "choice": "No"
     },
@@ -3885,6 +3913,10 @@
     {
       "question": "Is there a central spot in forewing underside space 11?",
       "choice": "No — no central spot in FW space 11"
+    },
+    {
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -3953,10 +3985,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -3969,6 +3997,10 @@
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
     },
     {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+    },
+    {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
       "choice": "No"
     },
@@ -3979,6 +4011,10 @@
     {
       "question": "Is there a central spot in forewing underside space 11?",
       "choice": "No — no central spot in FW space 11"
+    },
+    {
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -4043,10 +4079,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -4059,6 +4091,10 @@
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
     },
     {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+    },
+    {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
       "choice": "No"
     },
@@ -4069,6 +4105,10 @@
     {
       "question": "Is there a central spot in forewing underside space 11?",
       "choice": "No — no central spot in FW space 11"
+    },
+    {
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -4137,10 +4177,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -4151,6 +4187,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -4165,16 +4205,12 @@
       "choice": "No — no central spot in FW space 11"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
       "question": "Is the forewing postdiscal band clearly dislocated at vein 4, and is hindwing postdiscal spot 6 outwardly concave?",
       "choice": "No — FW band sinuous or only slightly dislocated; HW spot 6 straight or convex"
-    },
-    {
-      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
-      "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -4215,10 +4251,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "Yes — spot 6 is displaced above spot 5's level toward the end-cell bar (displacement may be subtle in the epimuta group — any upward shift counts)"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -4229,6 +4261,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "Yes — spot 6 is displaced above spot 5's level toward the end-cell bar (displacement may be subtle in the epimuta group — any upward shift counts)"
     },
     {
       "question": "Is there a central spot in forewing underside space 11?",
@@ -4277,10 +4313,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "Yes — spot 6 is displaced above spot 5's level toward the end-cell bar (displacement may be subtle in the epimuta group — any upward shift counts)"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -4291,6 +4323,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "Yes — spot 6 is displaced above spot 5's level toward the end-cell bar (displacement may be subtle in the epimuta group — any upward shift counts)"
     },
     {
       "question": "Is there a central spot in forewing underside space 11?",
@@ -4339,10 +4375,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -4353,6 +4385,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -4367,32 +4403,32 @@
       "choice": "No — no central spot in FW space 11"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
-    },
-    {
-      "question": "Is the forewing postdiscal band NOT dislocated at vein 4 — straight through or only slightly sinuous?",
-      "choice": "No — FW band partially dislocated at vein 4"
-    },
-    {
-      "question": "Is the forewing postdiscal spot in space 9 as wide as or wider than the spot in space 6?",
-      "choice": "No — FW spot 9 narrower than spot 6, shifted basad"
-    },
-    {
-      "question": "Does hindwing postdiscal spot 6 completely fill the gap between spot 5 and the end-cell bar (no gap visible between spot 6 and the bar)?",
-      "choice": "No — gap between HW spot 6 and end-cell bar is wider than spot 6"
-    },
-    {
-      "question": "Is there a costal spot present in forewing underside space 10?",
-      "choice": "No — no costal spot in FW space 10 (A. milleri)"
-    },
-    {
       "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
       "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
+      "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
+      "choice": "Neither of these"
+    },
+    {
+      "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
+      "choice": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7 (spot 6 not sinuous)"
+    },
+    {
+      "question": "Does the hindwing cell extend considerably longer than half the wing length, combined with an acute or concave FW apex?",
+      "choice": "No — HW cell moderate length (eumolphus or oenea group)"
+    },
+    {
+      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
+      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
+    },
+    {
+      "question": "How long is the hindwing tail?",
+      "choice": "Tail ~3 mm"
+    },
+    {
+      "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
+      "choice": "Yes — purplish-brown underside; FW apex with pale violet powder"
     }
   ],
   "Arhopala acta": [
@@ -4429,10 +4465,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -4443,6 +4475,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -4457,32 +4493,40 @@
       "choice": "No — no central spot in FW space 11"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
-    },
-    {
-      "question": "Is the forewing postdiscal band NOT dislocated at vein 4 — straight through or only slightly sinuous?",
-      "choice": "No — FW band partially dislocated at vein 4"
-    },
-    {
       "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
       "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
-      "question": "Is the forewing postdiscal spot in space 9 as wide as or wider than the spot in space 6?",
-      "choice": "No — FW spot 9 narrower than spot 6, shifted basad"
+      "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
+      "choice": "Neither of these"
     },
     {
-      "question": "Does hindwing postdiscal spot 6 completely fill the gap between spot 5 and the end-cell bar (no gap visible between spot 6 and the bar)?",
-      "choice": "No — gap between HW spot 6 and end-cell bar is wider than spot 6"
+      "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
+      "choice": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7 (spot 6 not sinuous)"
     },
     {
-      "question": "Is there a costal spot present in forewing underside space 10?",
-      "choice": "No — no costal spot in FW space 10 (A. milleri)"
+      "question": "Does the hindwing cell extend considerably longer than half the wing length, combined with an acute or concave FW apex?",
+      "choice": "No — HW cell moderate length (eumolphus or oenea group)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
+      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
+      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
+    },
+    {
+      "question": "How long is the hindwing tail?",
+      "choice": "Tail ~3 mm"
+    },
+    {
+      "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
+      "choice": "No — hair-brown underside; no violet powder at apex"
+    },
+    {
+      "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
+      "choice": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)"
+    },
+    {
+      "question": "Is the forewing termen evenly curved (rounded apex)?",
+      "choice": "Yes — FW apex rounded; termen evenly curved"
     }
   ],
   "Arhopala tameanga": [
@@ -4519,10 +4563,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -4533,6 +4573,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -4547,32 +4591,40 @@
       "choice": "No — no central spot in FW space 11"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
-    },
-    {
-      "question": "Is the forewing postdiscal band NOT dislocated at vein 4 — straight through or only slightly sinuous?",
-      "choice": "No — FW band partially dislocated at vein 4"
-    },
-    {
-      "question": "Is the forewing postdiscal spot in space 9 as wide as or wider than the spot in space 6?",
-      "choice": "No — FW spot 9 narrower than spot 6, shifted basad"
-    },
-    {
-      "question": "Does hindwing postdiscal spot 6 completely fill the gap between spot 5 and the end-cell bar (no gap visible between spot 6 and the bar)?",
-      "choice": "No — gap between HW spot 6 and end-cell bar is wider than spot 6"
-    },
-    {
-      "question": "Is there a costal spot present in forewing underside space 10?",
-      "choice": "No — no costal spot in FW space 10 (A. milleri)"
-    },
-    {
       "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
       "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
+      "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
+      "choice": "Neither of these"
+    },
+    {
+      "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
+      "choice": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7 (spot 6 not sinuous)"
+    },
+    {
+      "question": "Does the hindwing cell extend considerably longer than half the wing length, combined with an acute or concave FW apex?",
+      "choice": "No — HW cell moderate length (eumolphus or oenea group)"
+    },
+    {
+      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
+      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
+    },
+    {
+      "question": "How long is the hindwing tail?",
+      "choice": "Tail ~3 mm"
+    },
+    {
+      "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
+      "choice": "No — hair-brown underside; no violet powder at apex"
+    },
+    {
+      "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
+      "choice": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)"
+    },
+    {
+      "question": "Is the forewing termen evenly curved (rounded apex)?",
+      "choice": "No — FW apex acute; termen straight or slightly concave"
     }
   ],
   "Arhopala horsfieldi basiviridis": [
@@ -4609,10 +4661,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -4623,6 +4671,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -4637,32 +4689,44 @@
       "choice": "No — no central spot in FW space 11"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
-    },
-    {
-      "question": "Is the forewing postdiscal band NOT dislocated at vein 4 — straight through or only slightly sinuous?",
-      "choice": "No — FW band partially dislocated at vein 4"
-    },
-    {
-      "question": "Is the forewing postdiscal spot in space 9 as wide as or wider than the spot in space 6?",
-      "choice": "No — FW spot 9 narrower than spot 6, shifted basad"
-    },
-    {
-      "question": "Does hindwing postdiscal spot 6 completely fill the gap between spot 5 and the end-cell bar (no gap visible between spot 6 and the bar)?",
-      "choice": "No — gap between HW spot 6 and end-cell bar is wider than spot 6"
-    },
-    {
-      "question": "Is there a costal spot present in forewing underside space 10?",
-      "choice": "No — no costal spot in FW space 10 (A. milleri)"
-    },
-    {
       "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
       "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
+      "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
+      "choice": "Neither of these"
+    },
+    {
+      "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
+      "choice": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7 (spot 6 not sinuous)"
+    },
+    {
+      "question": "Does the hindwing cell extend considerably longer than half the wing length, combined with an acute or concave FW apex?",
+      "choice": "No — HW cell moderate length (eumolphus or oenea group)"
+    },
+    {
+      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
+      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
+    },
+    {
+      "question": "How long is the hindwing tail?",
+      "choice": "Tail ~3 mm"
+    },
+    {
+      "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
+      "choice": "No — hair-brown underside; no violet powder at apex"
+    },
+    {
+      "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
+      "choice": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)"
+    },
+    {
+      "question": "Is the forewing termen evenly curved (rounded apex), or straight and slightly concave (acute apex)?",
+      "choice": "FW apex rounded; termen evenly curved"
+    },
+    {
+      "question": "How distinct are the underside markings?",
+      "choice": "Underside markings very dark and broad"
     }
   ],
   "Arhopala eumolphus maxwelli": [
@@ -4699,10 +4763,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -4713,6 +4773,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -4727,8 +4791,8 @@
       "choice": "No — no central spot in FW space 11"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -4801,10 +4865,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -4815,6 +4875,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -4829,8 +4893,8 @@
       "choice": "No — no central spot in FW space 11"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -4903,10 +4967,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -4917,6 +4977,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -4965,10 +5029,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -4979,6 +5039,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -5027,10 +5091,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -5041,6 +5101,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -5093,10 +5157,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -5107,6 +5167,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -5155,10 +5219,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -5169,6 +5229,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -5221,10 +5285,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -5235,6 +5295,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -5287,12 +5351,12 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "Yes — whitish streak present on HW underside from dorsal base to apex"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -5333,10 +5397,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -5347,6 +5407,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -5361,8 +5425,8 @@
       "choice": "No — no central spot in FW space 11"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -5411,10 +5475,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -5425,6 +5485,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -5439,8 +5503,8 @@
       "choice": "No — no central spot in FW space 11"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -5493,10 +5557,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -5507,6 +5567,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -5521,8 +5585,8 @@
       "choice": "No — no central spot in FW space 11"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -5575,10 +5639,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -5589,6 +5649,10 @@
     {
       "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
+    },
+    {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -5603,8 +5667,8 @@
       "choice": "No — no central spot in FW space 11"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "No — not the cleander pattern (e.g. FW spot 4 shifted distad, HW spot 6 displaced/concave, or markings faint)"
     },
     {
       "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
@@ -5653,10 +5717,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -5669,6 +5729,10 @@
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
     },
     {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+    },
+    {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
       "choice": "No"
     },
@@ -5679,6 +5743,10 @@
     {
       "question": "Is there a central spot in forewing underside space 11?",
       "choice": "No — no central spot in FW space 11"
+    },
+    {
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
@@ -5743,10 +5811,6 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
-    },
-    {
       "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
       "choice": "No — no whitish streak"
     },
@@ -5759,6 +5823,10 @@
       "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
     },
     {
+      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
+      "choice": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+    },
+    {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
       "choice": "No"
     },
@@ -5769,6 +5837,10 @@
     {
       "question": "Is there a central spot in forewing underside space 11?",
       "choice": "No — no central spot in FW space 11"
+    },
+    {
+      "question": "Underside overall pattern: are the markings bold and clearly defined in the regular cleander-group style — forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "Yes — bold, regular cleander-group underside pattern (spot 9 well-marked, spot 4 in line, spot 6 regular)"
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
