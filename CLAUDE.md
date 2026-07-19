@@ -14,26 +14,38 @@ the species' underside-only answers and confirms it ranks #1. The scripted simul
 the browser can diverge (window dynamics, CD-followup), so a green script gate is
 necessary but **not sufficient** — finish with the browser sim.
 
-Recipe (reusable harness in the session scratchpad — `pw_aurea.js` driver, generic):
+### Use the committed harness: `npm run fs-regress`
 
-1. Build the answer file from the species' stored underside-only path:
-   ```js
-   const p = require('./data/sim_cd_paths.json')['Arhopala <species>'];
-   const ans = p.filter(s => s.question && s.choice).map(s => ({ q: s.question, c: s.choice }));
-   // write ans.json — {q, c} are the FULL question/choice text (= the button data-q/data-c)
-   ```
-   For a **non-divergent** species (not in `sim_cd_paths.json`), build the answer set by
-   hand: real underside features + `"Cannot determine — …"` for every upperside / FW
-   space 1–3 question.
-2. Serve the repo: `python3 -m http.server 8137` from the repo root.
-3. Drive `http://localhost:8137/checklist.html` with Playwright (`/opt/node22/lib/node_modules/playwright`,
-   Chromium at `/opt/pw-browsers`): click `#cl-show-more`, then for each `{q, c}` click the
-   `button.cl-cbtn` whose `dataset.q === q && dataset.c === c`; read `#cl-candidates`.
-4. **Pass = the target species shows 🥇 #1** with the expected margin. Screenshot for the record.
-   (A trailing `pkill -f "http.server 8137"` exits 144 — harmless, ignore it.)
+This browser check is now a **committed, reusable tool** — `scripts/fs_regress.js`
+(docs: `scripts/README-fs-regress.md`). It builds the full-matrix underside-only
+answer set for each named species (real features truthful + upperside/space-1–3 →
+"Cannot determine", exactly mirroring `checklist.js`'s feature matrix), serves the
+repo on a built-in Node server (no python needed), drives `checklist.html` in
+Chromium as a *thorough* user, and reports rank + margin. Exit code is non-zero if
+any species isn't #1.
+
+```bash
+npm run fs-regress -- "Arhopala eumolphus" "Arhopala silhetensis"   # note the --
+node scripts/fs_regress.js --file species_list.txt                  # one per line
+```
+
+Output is one line per species, e.g.
+`✓ Arhopala silhetensis   🥇 #1 (+6)  [silhetensis adorea +46 | athada athada +40 | …]`.
+Prefer this over the hand-rolled scratchpad drivers (`pw_robust.js` etc.) — same
+robust "apply-when-it-surfaces" logic, but self-contained and version-controlled.
+Playwright is auto-detected at `/opt/node22/lib/node_modules/playwright`, Chromium
+at `/opt/pw-browsers`; override with `PLAYWRIGHT_MODULE` / `PLAYWRIGHT_CHROMIUM` if
+elsewhere.
+
+Under the hood (if you ever need the manual path): the driver clicks `#cl-show-more`,
+then for each `{q, c}` clicks the `button.cl-cbtn` whose `dataset.q === q &&
+dataset.c === c`, and reads the ranking from `.cl-cand` / `#cl-candidates`. **Pass =
+target shows 🥇 #1** with the expected margin.
 
 Precedent: *A. pseudomuta* underside-only convergence — script gates passed **and** the
-browser sim showed 🥇 pseudomuta +36 over alitaeus +33 before commit.
+browser sim showed 🥇 pseudomuta +36 over alitaeus +33 before commit. The
+cleander/eumolphus re-gate was verified with this harness across all 17 species in
+the group (eumolphus +5, silhetensis +6, athada/zambra +3, …), all #1.
 
 ## Reordering a Feature Scoring question (prioritize/deprioritize)
 
