@@ -183,15 +183,15 @@
       "choices": [
         {
           "label": "Yes — HW spot 6 directly below spot 7 (not in echelon with spots 5 and 7)",
-          "next": "q_camdeo_sub"
+          "next": "q_myrzala_spot7"
         },
         {
           "label": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
-          "next": "q_camdeo_sub"
+          "next": "q_myrzala_spot7"
         },
         {
           "label": "Cannot determine — HW spot arrangement unclear",
-          "next": "q_camdeo_sub"
+          "next": "q_myrzala_spot7"
         }
       ]
     },
@@ -4620,6 +4620,30 @@
           "next": "q_tailed_agrata"
         }
       ]
+    },
+    "q_myrzala_spot7": {
+      "type": "question",
+      "id": "q_myrzala_spot7",
+      "question": "On the hindwing underside, is the ground colour crimson-brown with all markings outlined by white striae, a spot present at the extreme base of space 6, and the central and outer postdiscal spots in space 7 conjoined (joined at their upper ends)?",
+      "hint": "Distinctive early exit for [A. myrzala](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498177&preferred_place_id=6734) (myrzala subgroup, C&P couplet 41). The full combination must hold: crimson-brown underside ground colour, every marking outlined by white striae, a spot always present at the extreme base of hindwing space 6, and — the clincher — the central and outer postdiscal spots in space 7 joined at their upper ends (conjoined). This separates it from the other crimson/brown camdeo relatives: [A. bazaloides](https://www.inaturalist.org/search?q=Arhopala+bazaloides) is purple-brown with the space-7 central and outer spots *separate*, and [A. aedias](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498179&preferred_place_id=6734) is hair-brown with buff-outlined spots. The HW central cell spot itself is variable in myrzala (round in some specimens, band-like in others), so rely on this space-7 character rather than the cell spot. If any part of the combination is absent or unclear, answer No and continue.",
+      "choices": [
+        {
+          "label": "Yes — crimson-brown with white striae; spot at base of HW space 6; HW space-7 central & outer spots conjoined at their upper ends (A. myrzala)",
+          "next": "r_myrzala_lammas"
+        },
+        {
+          "label": "No — not this exact combination",
+          "next": "q_camdeo_sub"
+        },
+        {
+          "label": "Cannot determine — underside pattern unclear",
+          "next": "q_camdeo_sub"
+        }
+      ],
+      "question_link": {
+        "text": "central and outer postdiscal spots in space 7 conjoined",
+        "href": "guide.html#hw-spot7-conjoined"
+      }
     }
   }
 }
