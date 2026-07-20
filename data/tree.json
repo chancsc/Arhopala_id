@@ -469,10 +469,10 @@
         "text": "postdiscal spot 4",
         "href": "guide.html#fw-spot4-distad"
       },
-      "hint": "HW spot 6 shape is the decisive character here. If spot 6 is outwardly sinuous (S-curved), choose the sinuous option regardless of FW spot 4 position — [A. buddha](https://www.inaturalist.org/observations?verifiable=true&taxon_id=885913&preferred_place_id=6734) (rama group) has both FW spot 4 out of line AND sinuous spot 6, so it belongs to the sinuous choice. The 'FW spot 4 out of line' option applies only when spot 6 is not sinuous (aurea and eumolphus groups).",
+      "hint": "HW spot 6 shape is the decisive character here. If spot 6 is outwardly sinuous or concave (C&P: rama group, couplet 162), choose that option regardless of FW spot 4 position — [A. buddha](https://www.inaturalist.org/observations?verifiable=true&taxon_id=885913&preferred_place_id=6734) (rama group) has both FW spot 4 out of line AND a sinuous/concave spot 6, so it belongs to the sinuous-or-concave choice. The 'FW spot 4 out of line' option applies only when spot 6 is not sinuous or concave (aurea and eumolphus groups).",
       "choices": [
         {
-          "label": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7 (spot 6 not sinuous)",
+          "label": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7 (spot 6 not sinuous or concave)",
           "next": "q_tailed_aurea_check"
         },
         {
@@ -480,7 +480,7 @@
           "next": "g_vihara"
         },
         {
-          "label": "HW spot 6 is outwardly sinuous; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)",
+          "label": "HW spot 6 is outwardly sinuous or concave; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)",
           "next": "g_rama"
         },
         {
@@ -2838,7 +2838,7 @@
       "note": "Tailed. Tail short and stout, just under 2.0 mm. Underside hair-brown with complete markings. FW postdiscal spot 4 shifted distad, out of line with spots 5 and 6; dark patch in FW space 1b not solid. HW postdiscal band partially dislocated at vein 2; postdiscal spot 6 widely out of line with spots 5 and 7 — inner edge of spot 6 in line with, or inside, the inner edge of spot 7; spot 6 touches or overlaps the end-cell bar. Male: HW cell considerably longer than half the wing; shining green with weak blue suffusion at wing bases; FW border 0.75–1.5 mm at tornus, decreasing to a thread above vein 3 or 4; HW green does not reach the termen. Female: blue to purple-blue with a relatively narrow HW border.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
-        "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7 (spot 6 not sinuous)",
+        "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7 (spot 6 not sinuous or concave)",
         "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?": "Short and stout, just under 2 mm (aurea group or other)"
       }
     },
@@ -4310,7 +4310,7 @@
       "note": "Tailed. Tail very short ~1.0 mm. Underside ground colour hair-brown; tornal green scales present and distinct. HW postdiscal spot 6 outwardly sinuous or concave; widely out of line with spots 5 and 7; touches or overlaps the end-cell bar. Costal spot present in FW underside space 10. FW postdiscal band weakly dislocated at vein 4; no spot at base of FW space 3. Male: shining violet-blue; black borders 1.0 mm wide. Female: may resemble female [A. aurea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429759&preferred_place_id=6734) but differs in narrower HW border and thinner tail.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
-        "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW spot 6 is outwardly sinuous; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)"
+        "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW spot 6 is outwardly sinuous or concave; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)"
       }
     },
     "r_arvina_adalitas": {
