@@ -3,7 +3,8 @@ const state = {
   species: null,       // Map<taxon_id (number), species object>
   speciesIndex: [],    // [{name, common_name, note, taxon_photos, inat_url}] sorted A-Z
   questionNumbers: null, // Map<questionText, number> — stable Q-numbers by DFS order
-  simCdPaths: null,    // Map<resultName, [{question, choice}]> — pre-computed by Python
+  simCdPaths: null,    // Map<resultName, [{question, choice}]> — Underside-only paths, pre-computed
+  fsPaths: null,       // Map<resultName, [{question, choice}]> — faithful live Feature Scoring paths, pre-computed
   idKeyData: null,     // { couplets, leads, species_paths } from id_key.json (C&P key)
   currentNodeId: null,
   history: []          // [{ nodeId, choiceLabel }, ...]
@@ -18,10 +19,11 @@ async function init() {
   const appEl = document.getElementById('app');
 
   try {
-    const [treeRes, speciesRes, simCdRes] = await Promise.all([
+    const [treeRes, speciesRes, simCdRes, fsRes] = await Promise.all([
       fetch('data/tree.json', { cache: 'no-cache' }),
       fetch('data/species.json', { cache: 'no-cache' }),
-      fetch('data/sim_cd_paths.json', { cache: 'no-cache' })
+      fetch('data/sim_cd_paths.json', { cache: 'no-cache' }),
+      fetch('data/feature_scoring_paths.json', { cache: 'no-cache' }).catch(() => null)
     ]);
 
     if (!treeRes.ok || !speciesRes.ok) throw new Error('Failed to load data files');
@@ -36,6 +38,7 @@ async function init() {
     state.speciesIndex = buildSpeciesIndex(treeData, speciesData);
     state.questionNumbers = buildQuestionNumbers(treeData);
     state.simCdPaths = simCdRes.ok ? new Map(Object.entries(await simCdRes.json())) : null;
+    state.fsPaths = (fsRes && fsRes.ok) ? new Map(Object.entries(await fsRes.json())) : null;
     state.currentNodeId = treeData.start;
     state.history = [];
 
@@ -398,7 +401,16 @@ function buildPathDisplay(paths, note, resultFeatures, resultName) {
     });
   };
 
-  const canonicalSteps = dedupeSteps(pathApplyFeatures(canonical, rf));
+  // Feature Scoring path: prefer the pre-computed faithful live-order path
+  // (coverage-sorted, includes off-tree-route feature overrides, matches what
+  // the user actually answers stepping through checklist.html). Fall back to the
+  // canonical tree walk if the pre-computed file is unavailable.
+  const fsStored = (resultName && state.fsPaths && state.fsPaths.has(resultName))
+    ? state.fsPaths.get(resultName)
+    : null;
+  const canonicalSteps = fsStored
+    ? dedupeSteps(fsStored)
+    : dedupeSteps(pathApplyFeatures(canonical, rf));
   const simCdSteps = simCd ? dedupeSteps(simCd) : null;
 
   const renderSteps = steps => steps.map(step => {
@@ -680,10 +692,11 @@ async function initSpeciesPage() {
   const loadingEl = document.getElementById('loading');
   const appEl = document.getElementById('species-app');
   try {
-    const [treeRes, speciesRes, simCdRes, idKeyRes] = await Promise.all([
+    const [treeRes, speciesRes, simCdRes, fsRes, idKeyRes] = await Promise.all([
       fetch('data/tree.json', { cache: 'no-cache' }),
       fetch('data/species.json', { cache: 'no-cache' }),
       fetch('data/sim_cd_paths.json', { cache: 'no-cache' }),
+      fetch('data/feature_scoring_paths.json', { cache: 'no-cache' }).catch(() => null),
       fetch('data/id_key.json', { cache: 'no-cache' }).catch(() => null)
     ]);
     if (!treeRes.ok || !speciesRes.ok) throw new Error('Failed to load data');
@@ -692,6 +705,7 @@ async function initSpeciesPage() {
     state.speciesIndex = buildSpeciesIndex(treeData, speciesData);
     state.questionNumbers = buildQuestionNumbers(treeData);
     state.simCdPaths = simCdRes.ok ? new Map(Object.entries(await simCdRes.json())) : null;
+    state.fsPaths = (fsRes && fsRes.ok) ? new Map(Object.entries(await fsRes.json())) : null;
     state.idKeyData = (idKeyRes && idKeyRes.ok) ? await idKeyRes.json() : null;
     loadingEl.style.display = 'none';
     appEl.style.display = '';

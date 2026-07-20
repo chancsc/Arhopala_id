@@ -1,12 +1,13 @@
 {
   "scripts": {
-    "regen": "node scripts/compute_sim_cd_paths.js",
+    "regen": "node scripts/compute_sim_cd_paths.js && node scripts/compute_feature_scoring_paths.js",
     "validate": "node scripts/validate_sim_cd_paths.js",
-    "regen-validate": "node scripts/compute_sim_cd_paths.js && node scripts/validate_sim_cd_paths.js",
+    "regen-validate": "node scripts/compute_sim_cd_paths.js && node scripts/compute_feature_scoring_paths.js && node scripts/validate_sim_cd_paths.js",
     "build-key": "node scripts/build_id_key.js && node scripts/enrich_id_key_guidelinks.js && node scripts/apply_id_key_hints.js && node scripts/move_fwl_to_hint.js",
     "validate-key": "node scripts/validate_id_key.js",
     "audit-key": "node scripts/audit_id_key_scoring.js",
     "build-validate-key": "npm run build-key && node scripts/validate_id_key.js && node scripts/audit_id_key_scoring.js",
-    "fs-regress": "node scripts/fs_regress.js"
+    "fs-regress": "node scripts/fs_regress.js",
+    "verify-fs-paths": "node scripts/verify_fs_paths.js"
   }
 }
