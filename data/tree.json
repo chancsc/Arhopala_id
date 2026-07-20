@@ -3059,7 +3059,8 @@
       "common_name": "",
       "note": "Tailed. One of the most beautiful and largest species in the genus. Immediately recognized by the central spot in FW underside space 11 (no other camdeo subgroup member has this). Male: shining pale silvery blue overlaid with violet toward the margins. Camdeo subgroup.",
       "features": {
-        "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+        "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)",
+        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
       }
     },
     "r_dispar_pendleburyi": {
@@ -3090,7 +3091,10 @@
       "taxon_id": null,
       "name": "Arhopala johoreana johoreana",
       "common_name": "",
-      "note": "Tailed. Short tail. Similar to [A. belphoebe cowani](https://www.inaturalist.org/search?q=Arhopala+belphoebe) (incomplete FW postdiscal band) but possesses a short tail and is much darker violet-blue. Camdeo subgroup."
+      "note": "Tailed. Short tail. Similar to [A. belphoebe cowani](https://www.inaturalist.org/search?q=Arhopala+belphoebe) (incomplete FW postdiscal band) but possesses a short tail and is much darker violet-blue. Camdeo subgroup.",
+      "features": {
+        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
+      }
     },
     "r_hellada_ozana": {
       "type": "result",
@@ -3175,7 +3179,8 @@
       "note": "Moderately large, tailed species (exact tail length not recorded in key). Underside: crimson-brown with markings outlined by white striae; spot always present at base of HW space 6; central and outer postdiscal spots in space 7 conjoined at their upper ends. Male: shining royal blue with narrow black borders. Myrzala subgroup.",
       "features": {
         "Is the specimen tailed?": "Cannot determine",
-        "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+        "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)",
+        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
       }
     },
     "r_myrzalina": {
@@ -3198,7 +3203,8 @@
       "common_name": "",
       "note": "Tailed. Underside: purple-brown with markings outlined by white striae; extra spot in mid-space 8 on HW underside (diagnostic for subgroup); NO spot at base of HW space 6 (unlike myrzala subgroup). Male: dark violet-blue with regular 2.0 mm black borders. Bazaloides subgroup.",
       "features": {
-        "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+        "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)",
+        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)"
       }
     },
     "q_centaurus_amantes": {
