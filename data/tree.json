@@ -459,7 +459,8 @@
           "label": "Neither of these",
           "next": "q_tailed_spot_arrangement"
         }
-      ]
+      ],
+      "hideOrphanInPath": true
     },
     "q_tailed_spot_arrangement": {
       "type": "question",
@@ -1284,7 +1285,8 @@
           "label": "No — FW band sinuous or only slightly dislocated; HW spot 6 straight or convex",
           "next": "r_azinis_azinis"
         }
-      ]
+      ],
+      "hideOrphanInPath": true
     },
     "r_ace_ace": {
       "type": "result",
@@ -4619,7 +4621,8 @@
           "label": "Cannot determine — underside spot pattern unclear",
           "next": "q_tailed_agrata"
         }
-      ]
+      ],
+      "hideOrphanInPath": true
     }
   }
 }
