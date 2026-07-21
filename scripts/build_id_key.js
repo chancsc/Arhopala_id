@@ -56,15 +56,18 @@ const OUT = path.join(ROOT, 'data', 'id_key.json');
 // to be bridged to lead 8). The source has since been corrected — lead 6 =
 // amantes and lead 7 = the "cell about half or longer" contrast to lead 2, a real
 // intermediate that falls through to lead 8 on its own — so 7 is no longer needed.
-const IMPLICIT_PAREN = new Set([80, 143, 189, 124, 76]);
+const IMPLICIT_PAREN = new Set([80, 143, 189, 76]);
 const DROP_PAREN = new Set([144]);
 // ELSE_OVERRIDE: a couplet node whose "else" (B) jump target in the source skips over an
 // intermediate sub-key, orphaning it. Redirect the else to the immediate next lead so the
 // skipped block becomes reachable (the original far target is still reached by falling
 // through that block).  72 baluensis: else 77 -> 73 (reaches valva block 73-76 amphimuta/
-// major; trunk 77+ still reached via 76 -> 77).  121 ace: else 124 -> 122 (reaches azinis
-// 122; agrata 124 still reached via 123).
-const ELSE_OVERRIDE = { 72: 73, 121: 122 };
+// major; trunk 77+ still reached via 76 -> 77).
+// (The former 121:122 override compensated for a garbled ace/agrata region where leads 120
+// and 121 were merged; the source has since been corrected — 120 = the "spots in line"
+// gate, 121 (124) = the band-like-cell ace-subgroup split — so the proper nested couplets
+// {121,124}/{122,123}/{125,126} parse cleanly without an override.)
+const ELSE_OVERRIDE = { 72: 73 };
 
 // ---------------------------------------------------------------------------
 // 1. Parse keys.txt.
