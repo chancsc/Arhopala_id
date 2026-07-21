@@ -2669,9 +2669,9 @@
       "num_a": 140,
       "num_b": 143,
       "label": "K75",
-      "question": "Underside hindwing postdiscal spot in space 6 quadrate, with its outer edge usually just overlapping, or in line with, the inner edge of the spot in space 5 vs. Wings shaped as in A?",
+      "question": "Underside hindwing postdiscal spot in space 6 quadrate, with its outer edge usually just overlapping, or in line with, the inner edge of the spot in space 5 vs. Underside hindwing postdiscal spot in space 6 narrower at bottom than at top, its outer edge convex or sinuous and placed well inside the inner edge of the spot in space 5?",
       "a_text": "Underside hindwing postdiscal spot in space 6 quadrate, with its outer edge usually just overlapping, or in line with, the inner edge of the spot in space 5; forewing costal spot in space 10 usually absent and postdiscal band not, or only slightly, dislocated at vein 4.",
-      "b_text": "Wings shaped as in A. sublustris and A. phanda. Underside with postdiscal band close to inner submarginal lunules; hindwing postdiscal spot in space 6 usually not much narrower at bottom than at top and widely overlapping the end-cell bar. ♂ upperside violet tinge not very strong. ♀ with forewing borders as in A. phanda. Fwl 17.0–19.0 mm. ... Arhopala normani",
+      "b_text": "Underside hindwing postdiscal spot in space 6 narrower at bottom than at top, its outer edge convex or sinuous and placed well inside the inner edge of the spot in space 5; forewing costal spot in space 10 usually present.",
       "upperside": false,
       "skippable": false,
       "hint": "Yes (HW spot 6 quadrate, its outer edge just meeting or overlapping the inner edge of spot 5; FW costal spot in space 10 usually absent and band barely dislocated at vein 4) advances. No = A. normani: postdiscal band close to the inner submarginal lunules and spot 6 widely overlapping the end-cell bar.",
@@ -2715,16 +2715,16 @@
       ]
     },
     {
-      "id": "cp_143_144",
-      "num_a": 143,
-      "num_b": 144,
+      "id": "cp_144_145",
+      "num_a": 144,
+      "num_b": 145,
       "label": "K77",
-      "question": "Wings shaped as in A vs. Wings rather elongate and forewing termen rounded?",
-      "a_text": "Wings shaped as in A. sublustris and A. phanda. Underside with postdiscal band close to inner submarginal lunules; hindwing postdiscal spot in space 6 usually not much narrower at bottom than at top and widely overlapping the end-cell bar. ♂ upperside violet tinge not very strong. ♀ with forewing borders as in A. phanda. ... Arhopala normani",
-      "b_text": "Wings rather elongate and forewing termen rounded. Underside postdiscal band well separated from the inner submarginal lunules; hindwing postdiscal spot in space 6 much narrower at bottom than at top, and usually barely overlapping the end-cell bar. ♂ upperside deeper violet than in A. aenigma. ♀ forewing border narrow, decreasing towards tornus and not reaching the cell apex. Fwl 18.0–21.0 mm. ... Arhopala aroa",
+      "question": "Wings rather elongate and forewing termen rounded vs. Wings shaped as in A?",
+      "a_text": "Wings rather elongate and forewing termen rounded. Underside postdiscal band well separated from the inner submarginal lunules; hindwing postdiscal spot in space 6 much narrower at bottom than at top, and usually barely overlapping the end-cell bar. ♂ upperside deeper violet than in A. aenigma. ♀ forewing border narrow, decreasing towards tornus and not reaching the cell apex. ... Arhopala aroa",
+      "b_text": "Wings shaped as in A. sublustris and A. phanda. Underside with postdiscal band close to inner submarginal lunules; hindwing postdiscal spot in space 6 usually not much narrower at bottom than at top and widely overlapping the end-cell bar. ♂ upperside violet tinge not very strong. ♀ with forewing borders as in A. phanda. Fwl 17.0–19.0 mm. ... Arhopala normani",
       "upperside": false,
       "skippable": false,
-      "hint": "Compare HW postdiscal spot 6. In A. normani it is scarcely narrower at the bottom than the top and widely overlaps the end-cell bar, with the band close to the lunules. No leads to A. aroa, whose spot 6 tapers sharply at the base and barely touches the end-cell bar, its band well separated and wings more elongate. Forewing length 17.0–19.0 mm — not judgeable from a field photo.",
+      "hint": "Compare HW postdiscal spot 6 (reached via lead 143: spot 6 narrower at bottom, outer edge convex or sinuous, FW costal spot in space 10 usually present). Yes = A. aroa: spot 6 tapers sharply at the base (much narrower at bottom than top) and barely overlaps the end-cell bar, band well separated from the lunules, wings more elongate. No = A. normani: spot 6 scarcely narrower at the bottom, widely overlapping the end-cell bar, band close to the lunules. Forewing length 18.0–21.0 mm — not judgeable from a field photo.",
       "guide_phrase": "postdiscal spot in space 6",
       "guide_link": "guide.html#hw-spot6-position",
       "question_phrase": "",
@@ -2732,10 +2732,10 @@
       "invert": false,
       "statement": "",
       "species_a": [
-        "Arhopala normani"
+        "Arhopala aroa"
       ],
       "species_b": [
-        "Arhopala aroa"
+        "Arhopala normani"
       ]
     },
     {
@@ -3816,8 +3816,9 @@
     "140": "Underside hindwing postdiscal spot in space 6 quadrate, with its outer edge usually just overlapping, or in line with, the inner edge of the spot in space 5; forewing costal spot in space 10 usually absent and postdiscal band not, or only slightly, dislocated at vein 4.",
     "141": "Underside postdiscal band close to the inner submarginal lunules on both wings. ♂ upperside darker and more violet than in A. evansi. Fwl 17.0-19.0 mm. ... Arhopala phanda",
     "142": "Underside postdiscal band well separated from the inner submarginal lunules, the interval in spaces 3, 4 and 5 of the hindwing being as wide as the postdiscal spots. Wings rather elongate, forewing termen slightly more oblique than in other species of subgroup. ♂ upperside rather pale violet. ♀ unknown. Fwl 14.5 mm. Borneo. ... Arhopala aenigma",
-    "143": "Wings shaped as in A. sublustris and A. phanda. Underside with postdiscal band close to inner submarginal lunules; hindwing postdiscal spot in space 6 usually not much narrower at bottom than at top and widely overlapping the end-cell bar. ♂ upperside violet tinge not very strong. ♀ with forewing borders as in A. phanda. Fwl 17.0–19.0 mm. ... Arhopala normani",
+    "143": "Underside hindwing postdiscal spot in space 6 narrower at bottom than at top, its outer edge convex or sinuous and placed well inside the inner edge of the spot in space 5; forewing costal spot in space 10 usually present.",
     "144": "Wings rather elongate and forewing termen rounded. Underside postdiscal band well separated from the inner submarginal lunules; hindwing postdiscal spot in space 6 much narrower at bottom than at top, and usually barely overlapping the end-cell bar. ♂ upperside deeper violet than in A. aenigma. ♀ forewing border narrow, decreasing towards tornus and not reaching the cell apex. Fwl 18.0–21.0 mm. ... Arhopala aroa",
+    "145": "Wings shaped as in A. sublustris and A. phanda. Underside with postdiscal band close to inner submarginal lunules; hindwing postdiscal spot in space 6 usually not much narrower at bottom than at top and widely overlapping the end-cell bar. ♂ upperside violet tinge not very strong. ♀ with forewing borders as in A. phanda. Fwl 17.0–19.0 mm. ... Arhopala normani",
     "146": "Hindwing with a conspicuously projecting tornal lobe. Larger, fwl more than 21.0 mm. (cleander group, cleander subgroup).",
     "147": "Underside forewing postdiscal band not dislocated at vein 4, though it may be sinuous there. ♂ upperside violet blue with forewing border 1.0–2.0 mm at tornus increasing to 2.0–3.0 mm at apex. Fwl 23.0–24.0 mm. ... Arhopala cleander",
     "148": "Underside forewing postdiscal band partially dislocated at vein 4. ♂ forewing border not more than 1.0 mm.",
@@ -4979,7 +4980,7 @@
       137,
       139,
       143,
-      143
+      145
     ],
     "Arhopala opalina": [
       1,

@@ -26,22 +26,21 @@
  * ---------------------------------------------------------------------------
  * SOURCE IRREGULARITIES (minimal, documented overrides):
  *
- *  IMPLICIT_PAREN = {7, 80, 143, 189}
- *      Four TERMINAL leads whose contrasting "(m)" was dropped in this text, leaving
+ *  IMPLICIT_PAREN = {80, 189}  (76 is a separate case)
+ *      TERMINAL leads whose contrasting "(m)" was dropped in this text, leaving
  *      them blocking the fall-through to a real sub-key. Restored as couplets
  *      {n, n+1} (match -> the species, else -> node n+1):
- *        7  amantes  -> node 8  (the entire main tailless trunk hangs off here)
  *        80 alica    -> node 81 (polytomy "79 (80)(81)"; reaches stubbsi 81 -> 82)
- *        143 normani -> node 144 (reaches aroa 144)
  *        189 eumolphus -> node 190 (polytomy "188 (189, 190)"; reaches hellenore 190)
+ *      (143 normani was formerly here; the source now has a proper 143 connector +
+ *      144 (145) aroa/normani couplet, so it is no longer needed.)
  *
- *  DROP_PAREN = {144}
- *      Lead 144 is written "144 (145)" but lead 145 DOES NOT EXIST (source jumps
- *      144 -> 146). The real contrast is 143 normani vs 144 aroa (restored above via
- *      IMPLICIT_PAREN 143), so lead 144 is treated as a plain terminal (its bogus
- *      "(145)" is ignored).
+ *  DROP_PAREN = {} (empty)
+ *      Formerly {144}: lead 144 was written "144 (145)" when lead 145 did not exist.
+ *      The corrected source adds lead 145 (A. normani), so 144 (145) is now a real
+ *      couplet and no paren is dropped.
  *
- * All four IMPLICIT_PAREN targets are n+1, so every affected species is reached by a
+ * The IMPLICIT_PAREN targets are n+1, so every affected species is reached by a
  * clean, non-repeating chosen-lead path, and build + validate share this exact model.
  * ---------------------------------------------------------------------------
  */
@@ -56,8 +55,13 @@ const OUT = path.join(ROOT, 'data', 'id_key.json');
 // to be bridged to lead 8). The source has since been corrected — lead 6 =
 // amantes and lead 7 = the "cell about half or longer" contrast to lead 2, a real
 // intermediate that falls through to lead 8 on its own — so 7 is no longer needed.
-const IMPLICIT_PAREN = new Set([80, 143, 189, 76]);
-const DROP_PAREN = new Set([144]);
+const IMPLICIT_PAREN = new Set([80, 189, 76]);
+// (143/144 were formerly band-aids: the source crammed A. normani into lead 143
+// with no contrasting "(m)", and wrote "144 (145)" for A. aroa when lead 145 did
+// not exist. The source is now corrected — 143 = a connector (HW spot-6 shape),
+// 144 (145) = a real aroa-vs-normani couplet, 145 = A. normani — so no override
+// is needed for this region.)
+const DROP_PAREN = new Set([]);
 // ELSE_OVERRIDE: a couplet node whose "else" (B) jump target in the source skips over an
 // intermediate sub-key, orphaning it. Redirect the else to the immediate next lead so the
 // skipped block becomes reachable (the original far target is still reached by falling
