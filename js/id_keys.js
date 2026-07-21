@@ -424,11 +424,23 @@ function ksRender() {
   ksRenderCandidates();
 
   const badge = document.getElementById('ks-answered-count');
+  const n = ks.answers.filter(a => a.choice !== 'skip').length;
   if (badge) {
     // Match the Feature Scoring counter: count meaningful answers (Yes/No),
     // excluding Skips (the C&P equivalent of "Cannot determine").
-    const n = ks.answers.filter(a => a.choice !== 'skip').length;
     badge.textContent = n > 0 ? `${n} key${n !== 1 ? 's' : ''} answered` : '';
+  }
+
+  // "Species left" — species still consistent with the answers. In the scoring
+  // model a species is only ever penalised (score < max) when an answered couplet
+  // contradicts it; a species with no contradiction has score === max (including
+  // untested species, score 0 / max 0). So remaining = species where score === max.
+  const remainingEl = document.getElementById('ks-remaining-count');
+  if (remainingEl) {
+    const remaining = (n === 0)
+      ? (ks.scores ? ks.scores.length : 0)
+      : ks.scores.filter(s => s.score === s.max).length;
+    remainingEl.textContent = `${remaining} species left`;
   }
 }
 

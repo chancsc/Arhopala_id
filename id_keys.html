@@ -19,6 +19,11 @@
     }
     .ks-title { font-size: 0.92rem; font-weight: 600; flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .ks-answered { font-size: 0.75rem; color: rgba(255,255,255,0.7); flex-shrink: 0; }
+    .ks-remaining {
+      font-size: 0.78rem; font-weight: 700; flex-shrink: 0;
+      background: rgba(255,255,255,0.18); color: #fff;
+      padding: 0.15rem 0.55rem; border-radius: 999px; white-space: nowrap;
+    }
     .ks-reset-btn {
       background: none; border: 1px solid rgba(255,255,255,0.45);
       color: #fff; border-radius: 5px;
@@ -199,6 +204,7 @@
       <button class="menu-btn ks-menu-btn" id="ks-menu-btn" aria-label="Open menu">&#9776;</button>
       <span class="ks-title">C&amp;P Key Scoring</span>
       <span class="ks-answered" id="ks-answered-count"></span>
+      <span class="ks-remaining" id="ks-remaining-count" title="Species still consistent with your answers"></span>
       <button id="ks-reset" class="ks-reset-btn">Reset</button>
     </div>
 

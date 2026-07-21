@@ -438,6 +438,26 @@ function render() {
   if (badge) badge.textContent = meaningful > 0
     ? `${meaningful} feature${meaningful !== 1 ? 's' : ''} marked`
     : '';
+
+  // Update "species left" badge — species still consistent with the definite
+  // answers (a species is eliminated once an answered feature contradicts it).
+  const remainingEl = document.getElementById('cl-remaining-count');
+  if (remainingEl && cs.featureMatrix) {
+    const total = cs.featureMatrix.size;
+    let remaining = total;
+    if (meaningful > 0) {
+      remaining = 0;
+      for (const features of cs.featureMatrix.values()) {
+        let consistent = true;
+        for (const [q, ans] of cs.answers) {
+          if (ans.startsWith('Cannot determine')) continue;
+          if (features.has(q) && features.get(q) !== ans) { consistent = false; break; }
+        }
+        if (consistent) remaining++;
+      }
+    }
+    remainingEl.textContent = `${remaining} species left`;
+  }
 }
 
 // ── Event handlers ───────────────────────────────────────────────────────────

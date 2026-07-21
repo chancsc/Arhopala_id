@@ -28,6 +28,11 @@
       white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     }
     .cl-answered { font-size: 0.75rem; color: rgba(255,255,255,0.7); flex-shrink: 0; }
+    .cl-remaining {
+      font-size: 0.78rem; font-weight: 700; flex-shrink: 0;
+      background: rgba(255,255,255,0.18); color: #fff;
+      padding: 0.15rem 0.55rem; border-radius: 999px; white-space: nowrap;
+    }
     .cl-reset-btn {
       background: none; border: 1px solid rgba(255,255,255,0.45);
       color: #fff; border-radius: 5px;
@@ -229,6 +234,7 @@
       <button class="menu-btn cl-menu-btn" id="cl-menu-btn" aria-label="Open menu">&#9776;</button>
       <span class="cl-title">Feature Scoring</span>
       <span class="cl-answered" id="cl-answered-count"></span>
+      <span class="cl-remaining" id="cl-remaining-count" title="Species still consistent with your answers"></span>
       <button id="cl-reset" class="cl-reset-btn">Reset</button>
     </div>
 

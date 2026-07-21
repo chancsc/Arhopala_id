@@ -921,13 +921,16 @@ function buildCPKeyPath(speciesName) {
 // clipboard. Species name is the header; each step becomes "Key N <statement> — Yes/No".
 function copyCPKeyPath(details, btn) {
   const species = details.getAttribute('data-species') || '';
-  const lines = [`${species} — C&P key path`, ''];
+  // One block per key — the statement line, then its answer line keeping the
+  // on-screen symbol (↳ Yes/No/species, or ↓ for a connector) — with a blank
+  // line between keys.
+  const blocks = [];
   for (const step of details.querySelectorAll('.path-step')) {
     const q = (step.querySelector('.path-q')?.textContent || '').replace(/\s+/g, ' ').trim();
-    const a = (step.querySelector('.path-a')?.textContent || '').replace(/[↳↓]/g, '').replace(/\s+/g, ' ').trim();
-    lines.push(a ? `${q} — ${a}` : q);
+    const a = (step.querySelector('.path-a')?.textContent || '').replace(/\s+/g, ' ').trim();
+    blocks.push(a ? `${q}\n${a}` : q);
   }
-  const text = lines.join('\n');
+  const text = `${species} — C&P key path\n\n${blocks.join('\n\n')}`;
   const done = ok => {
     const label = btn.querySelector('.cpkey-copy-label');
     if (!label) return;
