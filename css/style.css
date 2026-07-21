@@ -931,6 +931,10 @@ details[open] .path-summary::before { content: '▼ '; }
 /* Final identifying lead (names the species) — highlighted as the ID point. */
 .path-details--cpkey .path-step--final { background: #eef5ec; border-radius: 6px; }
 .path-a--id { color: var(--primary); font-weight: 600; white-space: nowrap; }
+/* Connector lead — a group-entry the branch passes through (no Yes/No decision).
+   Muted so it reads as context, not a choice. */
+.path-details--cpkey .path-step--connector { opacity: 0.72; font-style: italic; }
+.path-a--connector { color: var(--text-muted, #888); font-weight: 600; }
 .path-a--id em { font-style: italic; }
 
 /* Copy button — only shown once the panel is opened. */

@@ -809,23 +809,37 @@ function buildCPKeyPath(speciesName) {
   const isTerminal = t => (leads[String(t)] || '').includes('Arhopala');
   const coupletNodes = new Set(couplets.map(c => c.num_a));
   const cpByNode = new Map(couplets.map(c => [c.num_a, c]));
+  // resolve() walks forward through "connector" leads — present nodes that are
+  // neither a couplet (a decision) nor a terminal (a species) — to the next
+  // decision couplet or terminal. It returns the connector leads it passed
+  // through so the caller can show them as context steps: e.g. lead 120
+  // ("…spots in line; band-like cell — agrata ace subgroup"), the group-entry
+  // the "No" branch of couplet 101/120 lands on before Key 121.
   function resolve(t) {
-    let s = 0;
+    let s = 0; const connectors = [];
     while (present(t)) {
-      if (coupletNodes.has(t)) return { couplet: cpByNode.get(t) };
-      if (isTerminal(t)) return { terminal: t };
+      if (coupletNodes.has(t)) return { couplet: cpByNode.get(t), connectors };
+      if (isTerminal(t)) return { terminal: t, connectors };
+      connectors.push(t);
       t += 1; if (++s > 500) break;
     }
-    return {};
+    return { connectors };
   }
   function choose(cp, lead) {
-    if (lead === cp.num_a) return isTerminal(cp.num_a) ? { terminal: cp.num_a } : resolve(cp.num_a + 1);
+    if (lead === cp.num_a) return isTerminal(cp.num_a) ? { terminal: cp.num_a, connectors: [] } : resolve(cp.num_a + 1);
     return resolve(cp.num_b);
   }
 
   // Walk the chain: one step per path element, tracking the current couplet.
   // Each couplet is a single statement (its entry lead num_a) answered Yes (the
   // specimen matches it → advance) or No (it does not → jump to lead num_b).
+  // Strip a trailing "… Arhopala <sp>" and collapse whitespace for a connector's
+  // display text (connectors are non-terminal, so this is normally a no-op).
+  const connectorText = n => (leads[String(n)] || '')
+    .replace(/\s*\.*\s*\bArhopala\s+\w+(?:\s+\w+)?\s*$/, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+
   const steps = [];
   let cp = couplets[0];
   let terminalLead = null;
@@ -839,6 +853,12 @@ function buildCPKeyPath(speciesName) {
     const yes = inverted ? choice === 'B' : choice === 'A';
     steps.push({ num_a: cp.num_a, statement, yes });
     const r = choose(cp, lead);
+    // Show the connector leads this branch passes through before the next
+    // decision (e.g. lead 120 — the group-entry the No branch lands on).
+    for (const cn of (r.connectors || [])) {
+      const text = connectorText(cn);
+      if (text) steps.push({ connector: true, num: cn, text });
+    }
     if (r.terminal != null) { terminalLead = r.terminal; break; }
     if (!r.couplet) break;
     cp = r.couplet;
@@ -865,10 +885,20 @@ function buildCPKeyPath(speciesName) {
   }
 
   const totalSteps = steps.length + (terminalStep ? 1 : 0);
-  let stepsHTML = steps.map(s => `<li class="path-step">
+  let stepsHTML = steps.map(s => {
+    if (s.connector) {
+      // Context step: the group-entry lead the previous branch lands on. No
+      // Yes/No — it is a description, not a decision.
+      return `<li class="path-step path-step--connector">
+      <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(s.num))}</span> ${escapeHtml(s.text)}</span>
+      <span class="path-a path-a--connector">↓</span>
+    </li>`;
+    }
+    return `<li class="path-step">
       <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(s.num_a))}</span> ${escapeHtml(s.statement)}</span>
       <span class="path-a">↳ ${s.yes ? 'Yes' : 'No'}</span>
-    </li>`).join('');
+    </li>`;
+  }).join('');
   if (terminalStep) stepsHTML += `<li class="path-step path-step--final">
       <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(terminalStep.num))}</span> ${escapeHtml(terminalStep.text)}</span>
       <span class="path-a path-a--id">↳ <em>${escapeHtml(terminalStep.species)}</em></span>
@@ -894,7 +924,7 @@ function copyCPKeyPath(details, btn) {
   const lines = [`${species} — C&P key path`, ''];
   for (const step of details.querySelectorAll('.path-step')) {
     const q = (step.querySelector('.path-q')?.textContent || '').replace(/\s+/g, ' ').trim();
-    const a = (step.querySelector('.path-a')?.textContent || '').replace(/↳/g, '').replace(/\s+/g, ' ').trim();
+    const a = (step.querySelector('.path-a')?.textContent || '').replace(/[↳↓]/g, '').replace(/\s+/g, ' ').trim();
     lines.push(a ? `${q} — ${a}` : q);
   }
   const text = lines.join('\n');
