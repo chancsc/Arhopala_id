@@ -132,37 +132,14 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
     }
   }
 
-  // Augment simAnswers with inferred answers for CD-followup questions.
-  // When a sim-CD question Q has canonical answer C → node X, and Q's CD branch
-  // leads to followup question F whose non-CD choice also → X, add that choice
-  // for F.  This handles cases like Q88[CD] → Q89 (FW apex check): non-corinda
-  // species answer Q88 "No" → Q80, so when Q88 is answered CD, we can infer
-  // Q89 "No" (also → Q80) and include it in the sim path.
-  for (const node of Object.values(treeNodes)) {
-    if (node.type !== 'question') continue;
-    const qText = node.question;
-    if (!simAnswers.has(qText)) continue;
-    if (!simAnswers.get(qText).startsWith('Cannot determine')) continue;
-    const canonicalAns = canonicalAnswers.get(qText);
-    if (!canonicalAns || canonicalAns.startsWith('Cannot determine')) continue;
-    const canonicalChoice = (node.choices || []).find(c => c.label === canonicalAns);
-    if (!canonicalChoice || !canonicalChoice.next) continue;
-    const canonicalNext = canonicalChoice.next;
-    const cdChoice = (node.choices || []).find(c => c.label && c.label.startsWith('Cannot determine'));
-    if (!cdChoice || !cdChoice.next) continue;
-    const followNode = treeNodes[cdChoice.next];
-    if (!followNode || followNode.type !== 'question') continue;
-    const followQText = followNode.question;
-    if (simAnswers.has(followQText)) continue;
-    // Don't pre-fill answers for follow questions that are themselves sim-CD
-    if (isSimCdQuestion(followQText, followNode.choices || [])) continue;
-    for (const fc of (followNode.choices || [])) {
-      if (fc.next === canonicalNext && !(fc.label && fc.label.startsWith('Cannot determine'))) {
-        simAnswers.set(followQText, fc.label);
-        break;
-      }
-    }
-  }
+  // NOTE: no CD-followup answer inference here. Pre-filling a followup question's
+  // answer (because its sim-CD parent was CD'd) made the stored path SKIP that
+  // followup, but the live checklist still presents it — the underside-only user
+  // can see the followup character and answers it in order. Inferring it ahead of
+  // time desynced the stored path from the live flow (the systematic step-9
+  // Q79/Q80 divergence). Instead, followup questions surface naturally in the
+  // step loop below: on the species' own feature (simAnswers) or via the orphan
+  // "doesn't-apply / No" default — matching exactly what the live user clicks.
 
   // Simulate Feature Scoring using the same functions as the browser
   const answers       = new Map();
@@ -216,9 +193,28 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
       // the displayed path.
       const choices = qChoicesMap.get(q) || [];
       if (choices.length >= 2) {
-        const noChoice = choices.find(c => /^(No|None)\b/i.test(c.label)) || choices[0];
-        nextQ = q; nextAns = noChoice.label;
-        if (!/^(No|None)\b/i.test(noChoice.label) || hideOrphanQs.has(nextQ)) orphanNoDisplay.add(nextQ);
+        // Orphan default = the answer a specimen with none of the listed
+        // characters gives live, and SHOW it (the live checklist shows it too):
+        //   1. a "No"/"None" choice (genuinely binary), else
+        //   2. the multi-way "none of these apply" choice that CONTINUES the key
+        //      (its next is another question, not a result/group peel-off) — e.g.
+        //      Q62 "Neither of these" continues the trunk, exactly what a live
+        //      underside-only user with none of the listed characters clicks, else
+        //   3. choices[0] as a last resort.
+        // The live checklist SHOWS every question in the window, so to stay
+        // faithful we show whatever we pick here too (the earlier attempt to
+        // suppress the case-3 classification fallback desynced A. major, whose
+        // window genuinely includes such a question). Preference:
+        //   1. a "No"/"None" choice (genuinely binary),
+        //   2. the "none of these apply" choice that CONTINUES the trunk (its
+        //      next is another question) — e.g. Q62 "Neither of these", exactly
+        //      what a live underside-only user with none of the characters clicks,
+        //   3. choices[0] as a last resort for a pure classification orphan.
+        let chosen = choices.find(c => /^(No|None)\b/i.test(c.label));
+        if (!chosen) chosen = choices.find(c => { const nx = treeNodes[c.next]; return nx && nx.type === 'question'; });
+        if (!chosen) chosen = choices[0];
+        nextQ = q; nextAns = chosen.label;
+        if (hideOrphanQs.has(nextQ)) orphanNoDisplay.add(nextQ);
         break;
       }
     }

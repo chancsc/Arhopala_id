@@ -8,6 +8,7 @@
     "audit-key": "node scripts/audit_id_key_scoring.js",
     "build-validate-key": "npm run build-key && node scripts/validate_id_key.js && node scripts/audit_id_key_scoring.js",
     "fs-regress": "node scripts/fs_regress.js",
-    "verify-fs-paths": "node scripts/verify_fs_paths.js"
+    "verify-fs-paths": "node scripts/verify_fs_paths.js",
+    "verify-sim-cd-paths": "node scripts/verify_sim_cd_paths.js"
   }
 }

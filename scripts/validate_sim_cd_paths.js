@@ -117,30 +117,10 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
     }
   }
 
-  for (const node of Object.values(treeNodes)) {
-    if (node.type !== 'question') continue;
-    const qText = node.question;
-    if (!simAnswers.has(qText)) continue;
-    if (!simAnswers.get(qText).startsWith('Cannot determine')) continue;
-    const canonicalAns = canonicalAnswers.get(qText);
-    if (!canonicalAns || canonicalAns.startsWith('Cannot determine')) continue;
-    const canonicalChoice = (node.choices || []).find(c => c.label === canonicalAns);
-    if (!canonicalChoice || !canonicalChoice.next) continue;
-    const canonicalNext = canonicalChoice.next;
-    const cdChoice = (node.choices || []).find(c => c.label && c.label.startsWith('Cannot determine'));
-    if (!cdChoice || !cdChoice.next) continue;
-    const followNode = treeNodes[cdChoice.next];
-    if (!followNode || followNode.type !== 'question') continue;
-    const followQText = followNode.question;
-    if (simAnswers.has(followQText)) continue;
-    if (isSimCdQuestion(followQText, followNode.choices || [])) continue;
-    for (const fc of (followNode.choices || [])) {
-      if (fc.next === canonicalNext && !(fc.label && fc.label.startsWith('Cannot determine'))) {
-        simAnswers.set(followQText, fc.label);
-        break;
-      }
-    }
-  }
+  // NOTE: no CD-followup answer inference here — kept in sync with
+  // compute_sim_cd_paths.js. Pre-filling a followup's answer skipped it from the
+  // stored path while the live checklist still presents it (the step-9 Q79/Q80
+  // divergence). Followups now surface naturally in the step loop below.
 
   const answers       = new Map();
   let   questionOrder = [];
@@ -181,9 +161,13 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
       // answer unrelated to the species' real morphology.
       const choices = qChoicesMap.get(q) || [];
       if (choices.length >= 2) {
-        const noChoice = choices.find(c => /^(No|None)\b/i.test(c.label)) || choices[0];
-        nextQ = q; nextAns = noChoice.label;
-        if (!/^(No|None)\b/i.test(noChoice.label) || hideOrphanQs.has(nextQ)) orphanNoDisplay.add(nextQ);
+        // Show whatever we pick (the live checklist shows every window question).
+        //   1. "No"/"None", 2. trunk-continuing "none of these", 3. choices[0].
+        let chosen = choices.find(c => /^(No|None)\b/i.test(c.label));
+        if (!chosen) chosen = choices.find(c => { const nx = treeNodes[c.next]; return nx && nx.type === 'question'; });
+        if (!chosen) chosen = choices[0];
+        nextQ = q; nextAns = chosen.label;
+        if (hideOrphanQs.has(nextQ)) orphanNoDisplay.add(nextQ);
         break;
       }
     }

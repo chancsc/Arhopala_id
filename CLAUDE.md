@@ -380,6 +380,56 @@ which is a real feature only for *A. corinda*).
   presented there. Deduplicating them in the live flow is a separate, riskier change
   (merging questions can break convergence — see the Q46/Q47 merge attempt).
 
+## Underside-only path faithfulness: the multi-way orphan "Neither", and the show-more artifact
+
+The Underside-only path must present **exactly** what a user encounters answering the live
+checklist question-by-question. Two things were desyncing it. Both are now fixed; verify with
+the committed browser tool **`npm run verify-sim-cd-paths`** (`scripts/verify_sim_cd_paths.js`,
+the underside counterpart to `verify-fs-paths`) — a green run means every stored
+`sim_cd_paths.json` path == the live sequence. Reported case: *A. bazaloides* showing
+different questions after Q46 than its stored path.
+
+### 1. Multi-way orphan → show the trunk-continuing "Neither", don't suppress it
+
+For a question the species has **no real feature for** (an orphan), the sim picks a default
+answer to keep moving. The old code picked a clear `No/None`, else `choices[0]`, and
+**suppressed** anything that wasn't a clear `No/None`. That hid the multi-way "none of these
+apply" choice (e.g. Q62/Q63 "Neither of these") — but the **live checklist shows that
+question and the user clicks exactly that "Neither" choice**, so suppressing it truncated the
+path (bazaloides & the camdeo subgroup stopped at Q46/Q47). Fix (in the orphan branch of
+`computeSimCdPath`, both `compute_sim_cd_paths.js` and `validate_sim_cd_paths.js`): prefer
+(1) a `No/None` choice, else (2) the "none of these" choice **that continues the trunk** (its
+`next` is another question, not a result/group peel-off) — and **show it**; only (3) fall back
+to `choices[0]` for a pure classification orphan (all choices → results). **Show case-3 too** —
+an attempt to suppress it (as "fabricated") desynced *A. major*, whose window genuinely
+includes such a question. The live checklist shows *every* window question, so faithfulness
+wins over the fabrication concern.
+
+### 2. The CD-followup INSERTION only fires on show-more — never during normal answering
+
+`getDisplayQuestionsPure` has a CD-followup **insertion** (else branch, when `questionOrder`
+is non-empty): after a question is answered "Cannot determine", it jumps that question's
+tree-followup up next to it. This looks like a step-9 `Q79`-before-`Q80` reorder. **But the
+live checklist nulls `cs.questionOrder` after every answer** (`onQuestionClick`), so each
+answer renders through the **fresh-sort branch**, which does *not* run the insertion — the
+followup surfaces later by coverage. The else branch only runs on a bare `renderQuestions()`
+with no reset, i.e. **only when the user toggles "Show all features"**. So a normal
+question-by-question user never sees the reorder; the stored fresh-branch path (Q80 first)
+is faithful to them.
+
+- **Verifier gotcha:** do **not** click `#cl-show-more` before reading the display order — it
+  triggers the else-branch insertion and reports false divergences. `verify_sim_cd_paths.js`
+  reads the order from the post-answer render and only expands when a target button is beyond
+  the 15-cap. (`verify_fs_paths.js` didn't hit this because FS paths have no CD answers, so
+  the insertion never fires there.)
+- Consequently the old **CD-followup INFERENCE** in the sim (pre-filling a followup's answer
+  because its sim-CD parent was CD'd) was **removed** — it modelled the else-branch behaviour
+  the normal user never sees, so it desynced the path from the fresh-branch live flow. Removing
+  it changed no stored paths (it was effectively inert) and left `regen-validate` at 116/116.
+
+Result: `npm run regen-validate` 116/116, `npm run verify-sim-cd-paths` 81/81, and the 9
+changed paths (camdeo subgroup + major + Muta-unresolved) all still rank #1 (`fs-regress`).
+
 ## A question added only for the key's branching is invisible in Feature Scoring
 
 The two modes consume `tree.json` differently. The **decision-tree key** (`app.js`,
