@@ -2945,15 +2945,15 @@
     "q_camdeo_incomplete": {
       "type": "question",
       "id": "q_camdeo_incomplete",
-      "question": "Does the hindwing have a tail?",
+      "question": "Within this camdeo group (forewing postdiscal band incomplete, ending at vein 7), does the hindwing have a tail — separating A. johoreana (tailed) from A. belphoebe cowani (tailless)?",
       "hint": "Tail presence alone separates these two species — no upperside needed. [A. belphoebe cowani](https://www.inaturalist.org/search?q=Arhopala+belphoebe) is completely tailless; both sexes have broad dark borders and pale violet-blue upperside. [A. johoreana johoreana](https://www.inaturalist.org/search?q=Arhopala+johoreana) has a short hindwing tail and is much darker violet-blue.",
       "choices": [
         {
-          "label": "Yes — hindwing is tailed",
+          "label": "Yes — hindwing tailed (A. johoreana)",
           "next": "r_johoreana_johoreana"
         },
         {
-          "label": "No — hindwing is tailless",
+          "label": "No — hindwing tailless (A. belphoebe cowani)",
           "next": "q_belphoebe_cell_spots_check"
         }
       ]
