@@ -4634,15 +4634,7 @@
     },
     {
       "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "Yes — spot 6 is displaced above spot 5's level toward the end-cell bar (displacement may be subtle in the epimuta group — any upward shift counts)"
-    },
-    {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
+      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
     },
     {
       "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
@@ -4653,8 +4645,16 @@
       "choice": "No"
     },
     {
+      "question": "Is there a central spot in forewing underside space 11?",
+      "choice": "No — no central spot in FW space 11"
+    },
+    {
       "question": "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
       "choice": "Yes"
+    },
+    {
+      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
     },
     {
       "question": "How large is the tornal lobe (and what size is the specimen)?",
@@ -5631,10 +5631,6 @@
       "choice": "No — no central spot in FW space 11"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
-    },
-    {
       "question": "How do the underside markings contrast with the ground colour?",
       "choice": "Markings contrast feebly/weakly — pattern blends into ground colour"
     }
@@ -5691,10 +5687,6 @@
     {
       "question": "Is there a central spot in forewing underside space 11?",
       "choice": "No — no central spot in FW space 11"
-    },
-    {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
     {
       "question": "How do the underside markings contrast with the ground colour?",
