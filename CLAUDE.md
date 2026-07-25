@@ -352,6 +352,42 @@ answered "Cannot determine" 99% of the time) can therefore dominate the early or
   question from scoring entirely should break nothing (it did not), proving it's
   redundant-for-convergence before demoting it.
 
+### Gate-followup: deprioritized questions surface after their tree gate
+
+Deprioritizing pushes a question to the back regardless of coverage. When a deprioritized
+question is also the tree's **direct next** after some non-CD choice (a gate), it would
+stay buried below the 15-question window even after its gate is answered — creating a
+chicken-and-egg: the group-signal question requires a "Yes" the user can only give if they
+can see the question, which only surfaces after the group is signalled.
+
+`getDisplayQuestionsPure` solves this with `applyGateFollowups`: after building the
+question order (fresh-sort branch or else-branch), it checks every answered question's
+non-CD choice for a tree-next that is deprioritized and unanswered, then **injects it
+immediately after its gate** in the display order. Only fires when all question-nodes with
+the same text agree on the same destination (same ambiguity guard as the CD-followup).
+
+Real example (commit `XXX`): Q89 "basal half of FW space 1b completely dark?" has its
+"No" choice pointing directly to Q22 "restricted dark patch in FW space 1b" (Q22 is
+deprioritized as usually unanswerable — its natural position without the gate is ~4 but
+sits at 111 after deprioritize). After answering Q89=No, Q22 is injected right after Q89.
+For a *camdeo-group* specimen (Q22=Yes), this narrows candidates from ~116 to ~9 at step 9,
+and the full group is resolved within the 15-question window. Zero regressions (113/113
+baseline, 90/90 browser-verified, 6/6 camdeo group fs-regress).
+
+**The gate-followup is sim-neutral for the Underside-only path**: the sim scripts call
+`getDisplayQuestionsPure` directly from `path-utils.js` and automatically inherit the
+injection. Regenerating `sim_cd_paths.json` after this change produced 9 new divergent
+paths (Q22 now appears earlier in the stored order for species where Q89 is on their
+sim path), all validated 116/116 by `validate_sim_cd_paths.js` and 90/90 by the browser
+verifier.
+
+**When to use `deprioritize` + gate-followup together**: if a question is both (a)
+usually-CD but occasionally diagnostic, and (b) appears in the tree immediately after a
+gating question, then `deprioritize` keeps it out of the way for the common case and the
+gate-followup resurfaces it for the diagnostic case. If either condition is absent (the
+question is always assessable, or it has no tree gate), deprioritize alone is sufficient
+and no gate-followup adjustment is needed.
+
 ## Orphan-defaulted question shows a contradictory answer in the Underside-only path
 
 The sim-CD/Underside-only path runs the Feature Scoring simulation; for questions the
