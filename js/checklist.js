@@ -249,6 +249,7 @@ const GUIDE_LINKS = new Map([
   ['a clear gap visible between them', 'guide.html#hw-band-vein2'],
   ['dislocated at vein 2', 'guide.html#hw-band-vein2'],
   ['postdiscal spots more quadrate/banded', 'guide.html#hw-spots-quadrate-banded'],
+  ['from the base of the dorsum to the apex', 'guide.html#hw-whitish-streak'],
 ]);
 
 const MD_LINK_RE = /\[([^\]]+)\]\((https:\/\/[^)]+)\)/g;
