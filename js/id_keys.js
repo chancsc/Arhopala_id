@@ -1,4 +1,10 @@
 // id_keys.js — C&P Dichotomous Key sequential navigation for Arhopala ID
+
+function sciDisplay(name) {
+  if (!name || !name.startsWith('Arhopala ')) return name;
+  const w = name.split(' ');
+  return w.length > 2 ? w[0] + ' ' + w[1] : name;
+}
 // Adapted from the generic sequential-key tool (see notebook_data key design).
 // Presents one couplet at a time; A/B choices navigate the key while a
 // feature-scoring (+1/-1) model ranks candidates in real time. Upperside
@@ -289,7 +295,7 @@ function ksRenderCandidates() {
         <div class="ks-cand-row" role="button" tabindex="0" aria-expanded="${isExpanded}">
           <span class="ks-rank">${medals[i] || i + 1}</span>
           <span class="ks-cname">
-            <em class="ks-sci">${ksEsc(s.name)}</em>
+            <em class="ks-sci">${ksEsc(sciDisplay(s.name))}</em>
             ${info.common_name ? `<span class="ks-common">${ksEsc(info.common_name)}</span>` : ''}
           </span>
           <span class="ks-bar-wrap">
@@ -342,7 +348,7 @@ function ksRenderCouplet() {
     el.innerHTML = `
       <div class="ks-result-card">
         <p class="ks-result-label">&#9658; Identification</p>
-        <p class="ks-result-species">Key ${ksEsc(String(ks.result.leadNum))}: <em>${ksEsc(ks.result.speciesName)}</em></p>
+        <p class="ks-result-species">Key ${ksEsc(String(ks.result.leadNum))}: <em>${ksEsc(sciDisplay(ks.result.speciesName))}</em></p>
         ${info.common_name ? `<p class="ks-result-common">${ksEsc(info.common_name)}</p>` : ''}
         <p class="ks-result-text">${ksEsc(ks.result.text)}</p>
         ${inatHref ? `<a class="ks-inat-link" href="${inatHref}" target="_blank" rel="noopener">View on iNaturalist &#8594;</a>` : ''}

@@ -1,5 +1,11 @@
 // checklist.js — Feature scoring mode for Arhopala ID
 
+function sciDisplay(name) {
+  if (!name.startsWith('Arhopala ')) return name;
+  const w = name.split(' ');
+  return w.length > 2 ? w[0] + ' ' + w[1] : name;
+}
+
 const cs = {
   featureMatrix: null,    // Map<name, Map<questionText, choiceLabel>>
   questionMeta: null,     // Map<questionText, {choices: string[], hint: string}>
@@ -341,7 +347,7 @@ function renderCandidates() {
         <div class="cl-cand-row" role="button" tabindex="0" aria-expanded="${isExpanded}">
           <span class="cl-rank">${medals[i] || i + 1}</span>
           <span class="cl-cname">
-            <em class="cl-sci">${esc(s.name)}</em>
+            <em class="cl-sci">${esc(sciDisplay(s.name))}</em>
             ${info.common_name ? `<span class="cl-common">${esc(info.common_name)}</span>` : ''}
           </span>
           <span class="cl-bar-wrap">
@@ -350,7 +356,7 @@ function renderCandidates() {
             </span>
             <span class="cl-score-num${s.score < 0 ? ' neg' : ''}">${s.score > 0 ? '+' : ''}${s.score}</span>
           </span>
-          ${inatHref ? `<a class="cl-inat-icon" href="${inatHref}" target="_blank" rel="noopener" title="View on iNaturalist" aria-label="View ${esc(s.name)} on iNaturalist">🔗</a>` : ''}
+          ${inatHref ? `<a class="cl-inat-icon" href="${inatHref}" target="_blank" rel="noopener" title="View on iNaturalist" aria-label="View ${esc(sciDisplay(s.name))} on iNaturalist">🔗</a>` : ''}
         </div>
         ${isExpanded ? renderCandidateDetail(s.name) : ''}
       </div>`;
