@@ -1,7 +1,23 @@
+let multiSp2 = new Set();
+
+function buildMultiSp2(nodes) {
+  const counts = new Map();
+  for (const node of Object.values(nodes)) {
+    if (!node || node.type !== 'result' || !node.name || !node.name.startsWith('Arhopala ')) continue;
+    const w = node.name.split(' ');
+    if (w.length < 3) continue;
+    const sp2 = w[0] + ' ' + w[1];
+    counts.set(sp2, (counts.get(sp2) || 0) + 1);
+  }
+  return new Set([...counts.entries()].filter(([, v]) => v > 1).map(([k]) => k));
+}
+
 function sciDisplay(name) {
   if (!name || !name.startsWith('Arhopala ')) return name;
   const w = name.split(' ');
-  return w.length > 2 ? w[0] + ' ' + w[1] : name;
+  if (w.length <= 2) return name;
+  const sp2 = w[0] + ' ' + w[1];
+  return multiSp2.has(sp2) ? name : sp2;
 }
 
 const state = {
@@ -40,6 +56,7 @@ async function init() {
     ]);
 
     state.tree = treeData;
+    multiSp2 = buildMultiSp2(treeData.nodes);
     state.species = new Map(speciesData.species.map(s => [s.id, s]));
     state.speciesIndex = buildSpeciesIndex(treeData, speciesData);
     state.questionNumbers = buildQuestionNumbers(treeData);
