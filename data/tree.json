@@ -1940,32 +1940,20 @@
     "q_alitaeus_s2_color": {
       "type": "question",
       "id": "q_alitaeus_s2_color",
-      "question": "Is the underside ground colour overall pale — slatey-purple with strongly contrasting reddish-brown markings?",
-      "hint": "[A. havilandi](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1168050&preferred_place_id=6734) has a pale slatey-purple ground colour with strongly contrasting reddish-brown markings and a thread-like black border on the male upperside. If the underside is hair-brown or dark brownish, choose No.",
+      "question": "Which best describes the underside ground colour?",
+      "hint": "[A. havilandi](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1168050&preferred_place_id=6734): pale slatey-purple with strongly contrasting reddish-brown markings; male upperside has a thread-like black border. [A. ariana](https://www.inaturalist.org/observations?verifiable=true&taxon_id=816304&preferred_place_id=6734): dark brown with a faint purplish wash. [A. aida](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880740&preferred_place_id=6734): brown with a slatey to purplish glaze and a slightly produced FW apex. [A. elopura](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880746&preferred_place_id=6734) and [A. arianaga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1556287&preferred_place_id=6734): hair-brown with markings barely darker than the ground colour.",
       "choices": [
         {
-          "label": "Yes — pale slatey purple with contrasting reddish-brown markings",
+          "label": "Pale slatey-purple with strongly contrasting reddish-brown markings",
           "next": "r_havilandi"
         },
         {
-          "label": "No — ground colour not pale slatey-purple",
-          "next": "q_alitaeus_s2_glaze"
-        }
-      ]
-    },
-    "q_alitaeus_s2_glaze": {
-      "type": "question",
-      "id": "q_alitaeus_s2_glaze",
-      "question": "Is the underside ground colour overall dark brownish (not hair-brown), with only a subtle slatey or purplish glaze over the dark brown — not an overall pale ground colour?",
-      "hint": "[A. ariana](https://www.inaturalist.org/observations?verifiable=true&taxon_id=816304&preferred_place_id=6734) is dark brown with a faint purplish wash; [A. aida](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880740&preferred_place_id=6734) is brown with a slatey to purplish glaze and a slightly produced FW apex. [A. elopura](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880746&preferred_place_id=6734) and [A. arianaga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1556287&preferred_place_id=6734) are hair-brown with markings barely darker than the ground colour.",
-      "choices": [
-        {
-          "label": "No — hair-brown, markings barely darker than ground colour",
-          "next": "q_elopura_arianaga_size"
+          "label": "Dark brownish with a slatey or purplish glaze",
+          "next": "q_alitaeus_s2_term"
         },
         {
-          "label": "Yes — dark brownish with a slatey or purplish glaze",
-          "next": "q_alitaeus_s2_term"
+          "label": "Hair-brown — markings barely darker than ground colour",
+          "next": "q_elopura_arianaga_size"
         }
       ]
     },
