@@ -2894,15 +2894,19 @@
     },
     {
       "question": "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?",
-      "choice": "No — no spot at extreme base of FW space 10"
+      "choice": "Yes — spot present at extreme base of FW space 10"
     },
     {
-      "question": "Which best describes the underside ground colour?",
-      "choice": "Dark brownish with a slatey or purplish glaze"
+      "question": "Is the hindwing tail notably short, approximately 2.5 mm (rather than the typical 3.5–4.0 mm for the group)?",
+      "choice": "No — tail of normal length, 3.5–4.0 mm"
     },
     {
-      "question": "Is the forewing termen notably straight and the apex more produced (pointed) than other group members?",
-      "choice": "No — FW shape more normal; apex less produced; male border 1.0–1.5 mm"
+      "question": "Are the underside markings distinctly reddish-brown and strongly contrasting with the ground colour?",
+      "choice": "No — markings purple-brown, faint, or not strongly reddish-brown"
+    },
+    {
+      "question": "Are the underside markings clearly visible and annular (ring-like), strongly contrasting with the ground colour?",
+      "choice": "No — markings faint, barely darker than ground colour"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
