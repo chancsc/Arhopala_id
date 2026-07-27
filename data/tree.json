@@ -1291,8 +1291,11 @@
       "id": "r_ace_ace",
       "taxon_id": null,
       "name": "Arhopala ace ace",
-      "common_name": "",
-      "note": "Underside: all markings relatively wide; FW postdiscal band dislocated at vein 4; HW postdiscal spot 6 outwardly concave. Male: deep cobalt blue with black border reduced to a thread. Female: purple."
+      "common_name": "Tytler's Dull Oakblue",
+      "note": "Underside: all markings relatively wide; FW postdiscal band dislocated at vein 4; HW postdiscal spot 6 outwardly concave. Male: deep cobalt blue with black border reduced to a thread. Female: purple.",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "r_azinis_azinis": {
       "type": "result",
@@ -1302,7 +1305,8 @@
       "common_name": "",
       "note": "Underside: FW postdiscal band sinuous or only slightly dislocated at vein 4; HW postdiscal spot 6 outwardly straight or convex. Male: dark blue with broad black borders (2.0 mm at FW mid-termen, 3.0 mm on HW). Female: purple. Strictly montane habitat.",
       "features": {
-        "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No"
+        "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
       }
     },
     "g_agrata_agrata": {
@@ -1323,7 +1327,7 @@
       "id": "r_agrata_agrata",
       "taxon_id": null,
       "name": "Arhopala agrata agrata",
-      "common_name": "de Nicéville's Dull Oakblue",
+      "common_name": "De Nicéville's Oakblue",
       "note": "Underside markings faint. FW: postdiscal spot in space 9 absent or very obscure; no costal spot in space 10. HW: postdiscal spot 6 considerably wider than spot 7. Male: dark purplish blue with black border reduced to a thread. Female: bright blue to purple-blue; HW blue reaches the termen between vein endings.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
@@ -1533,7 +1537,7 @@
       "id": "r_abseus_abseus",
       "taxon_id": null,
       "name": "Arhopala abseus",
-      "common_name": "Aberrant Bushblue",
+      "common_name": "Aberrant Oakblue",
       "note": "Underside markings much darkened — most spots blackish brown. Forewing underside: costal spot in space 12; two spots each in spaces 9, 10, and 11. Hindwing: spot in middle of space 7 outlined in whitish. Male upperside: deep lustrous violet blue; FW black border expands from 2.0 mm at tornus to 4.0 mm at apex. Female: shining blue with wider borders."
     },
     "r_anella": {
@@ -1708,7 +1712,7 @@
       "id": "r_barami_penanga",
       "taxon_id": null,
       "name": "Arhopala barami penanga",
-      "common_name": "",
+      "common_name": "Wood's Oakblue",
       "note": "One of two tailed exceptions in the otherwise-tailless agelastus group; relatively large for the group (FW 22.0–23.0 mm). Underside: HW postdiscal spot 6 widely out of line with spots 5 and 7 — inner edge of spot 6 in line with, or even further inward (basad) than, the inner edge of spot 7; spot 6 outwardly convex and typically touches or overlaps the end-cell bar. FW postdiscal band continuous; no costal spot in space 10; small spot often present at base of space 3; inner submarginal spots uniform in size and colour. [A. alesia sacharja](https://www.inaturalist.org/search?q=Arhopala+alesia) shares this exact spot-6/submarginal-spot pattern (per field-photo review, correcting older literature) — separate by size and border width: A. barami penanga is larger (FW 22.0–23.0 mm) with an exceptionally broad male border expanding from 2.5 mm at the tornus to 8.0 mm at the costa, vs. A. alesia sacharja's smaller size and more moderate border. Female: paler blue with similarly broad borders.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
@@ -1731,7 +1735,7 @@
       "id": "r_alaconia_media",
       "taxon_id": null,
       "name": "Arhopala alaconia media",
-      "common_name": "",
+      "common_name": "Patchy Oakblue",
       "note": "Alesia subgroup (agelastus group) — the long-established Malayan member of this subgroup, and (per field-photo review) the only Malayan agelastus-group species that genuinely has a concave/sinuous HW spot 6 paired with enlarged submarginal spots; [A. alesia sacharja](https://www.inaturalist.org/search?q=Arhopala+alesia), despite older literature placing it in the same subgroup, actually has a convex spot 6 touching the end-cell bar and uniform (not enlarged) submarginal spots — see notebook correction. Distinctive early-exit character (per field-photo review): hindwing underside spaces 4–5 submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border — unique to this species among Malaysian Arhopala. Underside: inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened; HW postdiscal spot 6 outwardly concave or sinuous; tornal green scales present on the hindwing; small spot often at base of FW space 3. This is the normal tailless form (slightly toothed); see Arhopala alaconia media f. kempi for the rarer tailed form (~2.5 mm tail at vein 2), which is reached directly in the tailed branch via this same wedge-shaped submarginal-spot character. Both sexes alike: violet blue with FW border 3.0 mm at tornus expanding to mid-costa.",
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced"
@@ -1742,7 +1746,7 @@
       "id": "r_alaconia_kempi",
       "taxon_id": null,
       "name": "Arhopala alaconia media f. kempi",
-      "common_name": "",
+      "common_name": "Patchy Oakblue",
       "note": "Alesia subgroup (agelastus group) — the rarer tailed form (f. kempi, ~2.5 mm tail at vein 2) of Arhopala alaconia media; though described as rare in the literature, it is reportedly encountered fairly often in the field. Same diagnostic characters as the tailless form: hindwing underside spaces 4–5 submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border — unique to this species among Malaysian Arhopala; inner submarginal spots in FW spaces 2–3 and HW spaces 4–5 notably enlarged and darkened; HW postdiscal spot 6 outwardly concave or sinuous; tornal green scales present on the hindwing; small spot often at base of FW space 3. Both sexes alike: violet blue with FW border 3.0 mm at tornus expanding to mid-costa.",
       "features": {}
     },
@@ -1793,7 +1797,7 @@
       "id": "r_agelastus_agelastus",
       "taxon_id": null,
       "name": "Arhopala agelastus agelastus",
-      "common_name": "",
+      "common_name": "Green-edged Tailess Oakblue",
       "note": "Underside: HW postdiscal spot in space 3 is almost in line with spots in spaces 2 and 4 (distinguishes female from allied species). Male: violet blue with FW border 1.0 mm at tornus to 4.0 mm at apex. Female: brighter blue with broader borders. Tailless.",
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced",
@@ -1843,7 +1847,7 @@
       "id": "r_kinabala",
       "taxon_id": null,
       "name": "Arhopala kinabala",
-      "common_name": "",
+      "common_name": "Golden-spotted Oakblue",
       "note": "Tailless. Underside ground colour dark brown with large, blackish-brown markings. FW space 11 has two spots; FW space 3 spot is elongate and touches the end-cell bar. HW postdiscal spot 6 is oval, significantly enlarged, and overlaps the end-cell bar. Rare; seldom found below 450 m elevation."
     },
     "r_similis": {
@@ -1851,7 +1855,7 @@
       "id": "r_similis",
       "taxon_id": null,
       "name": "Arhopala similis",
-      "common_name": "",
+      "common_name": "Druce's Oakblue",
       "note": "Tailless. Superficially identical to [A. agesias](https://www.inaturalist.org/observations?verifiable=true&taxon_id=149210&preferred_place_id=6734) but uniquely lacks the postdiscal band on the FW underside. Status as a separate species (vs. dimorph of [A. agesias](https://www.inaturalist.org/observations?verifiable=true&taxon_id=149210&preferred_place_id=6734)) has been questioned, though female genitalia differ slightly.",
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar"
@@ -1925,7 +1929,7 @@
       "type": "question",
       "id": "q_alitaeus_s1_marks",
       "question": "Are the underside markings clearly visible and annular (ring-like), strongly contrasting with the ground colour?",
-      "hint": "(per field-photo review) HW postdiscal spot 6 is touching/overlapping the end-cell bar in both species and is no longer a useful discriminator here — use the markings instead.\n[A. alitaeus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=528441&preferred_place_id=6734): markings purple-brown, annular/macular, clearly contrasting with the pale slatey-purple ground colour; HW postdiscal spot 6 rounded, touching/overlapping the end-cell bar; spots 5, 6 and 7 widely out of line; HW postdiscal band completely dislocated at vein 2.\n[A. pseudomuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498185&preferred_place_id=6734): markings faint, hair-brown, barely darker than the ground colour; HW postdiscal spot 6 directly below spot 7, also touching/overlapping the end-cell bar, outer edge curved outward (convex); spots 5, 6 and 7 also widely out of line; HW postdiscal band completely dislocated at vein 2.",
+      "hint": "[A. alitaeus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=528441&preferred_place_id=6734): markings purple-brown, annular/macular, clearly contrasting with the pale slatey-purple ground colour; HW postdiscal spot 6 rounded, touching/overlapping the end-cell bar; spots 5, 6 and 7 widely out of line; HW postdiscal band completely dislocated at vein 2.\n[A. pseudomuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498185&preferred_place_id=6734): markings faint, hair-brown, barely darker than the ground colour; HW postdiscal spot 6 directly below spot 7, also touching/overlapping the end-cell bar, outer edge curved outward (convex); spots 5, 6 and 7 also widely out of line; HW postdiscal band completely dislocated at vein 2.",
       "choices": [
         {
           "label": "Yes — markings annular and clearly contrasting with the ground colour",
@@ -1940,32 +1944,20 @@
     "q_alitaeus_s2_color": {
       "type": "question",
       "id": "q_alitaeus_s2_color",
-      "question": "Is the underside ground colour overall pale — slatey-purple with strongly contrasting reddish-brown markings?",
-      "hint": "[A. havilandi](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1168050&preferred_place_id=6734) has a pale slatey-purple ground colour with strongly contrasting reddish-brown markings and a thread-like black border on the male upperside. If the underside is hair-brown or dark brownish, choose No.",
+      "question": "Which best describes the underside ground colour?",
+      "hint": "[A. havilandi](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1168050&preferred_place_id=6734): pale slatey-purple with strongly contrasting reddish-brown markings; male upperside has a thread-like black border. [A. ariana](https://www.inaturalist.org/observations?verifiable=true&taxon_id=816304&preferred_place_id=6734): dark brown with a faint purplish wash. [A. aida](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880740&preferred_place_id=6734): brown with a slatey to purplish glaze and a slightly produced FW apex. [A. elopura](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880746&preferred_place_id=6734) and [A. arianaga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1556287&preferred_place_id=6734): hair-brown with markings barely darker than the ground colour.",
       "choices": [
         {
-          "label": "Yes — pale slatey purple with contrasting reddish-brown markings",
+          "label": "Pale slatey-purple with strongly contrasting reddish-brown markings",
           "next": "r_havilandi"
         },
         {
-          "label": "No — hair-brown or dark brownish underside",
-          "next": "q_alitaeus_s2_glaze"
-        }
-      ]
-    },
-    "q_alitaeus_s2_glaze": {
-      "type": "question",
-      "id": "q_alitaeus_s2_glaze",
-      "question": "Is the underside ground colour overall dark brownish (not hair-brown), with only a subtle slatey or purplish glaze over the dark brown — not an overall pale ground colour?",
-      "hint": "[A. ariana](https://www.inaturalist.org/observations?verifiable=true&taxon_id=816304&preferred_place_id=6734) is dark brown with a faint purplish wash; [A. aida](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880740&preferred_place_id=6734) is brown with a slatey to purplish glaze and a slightly produced FW apex. [A. elopura](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880746&preferred_place_id=6734) and [A. arianaga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1556287&preferred_place_id=6734) are hair-brown with markings barely darker than the ground colour.",
-      "choices": [
-        {
-          "label": "No — hair-brown, markings barely darker than ground colour",
-          "next": "q_elopura_arianaga_size"
+          "label": "Dark brownish with a slatey or purplish glaze",
+          "next": "q_alitaeus_s2_term"
         },
         {
-          "label": "Yes — dark brownish with a slatey or purplish glaze",
-          "next": "q_alitaeus_s2_term"
+          "label": "Hair-brown — markings barely darker than ground colour",
+          "next": "q_elopura_arianaga_size"
         }
       ]
     },
@@ -2041,7 +2033,7 @@
       "id": "r_elopura",
       "taxon_id": null,
       "name": "Arhopala elopura",
-      "common_name": "",
+      "common_name": "Yellow Tailed Oakblue",
       "note": "Underside ground colour uniform hair brown; markings notably faint, barely darker than the ground colour (less contrasting than [A. pseudomuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498185&preferred_place_id=6734)). FW: costal spot in mid-space 11 above the central cell spot; postdiscal spot 4 shifted distad, out of line with spots 5 and 6; no spot at extreme base of space 10. HW: postdiscal band completely dislocated at vein 2; postdiscal space 6 partly fuscous; postdiscal spot 6 outwardly straight or convex — inner edge in line with or inside the inner edge of spot 7, touching or overlapping the end-cell bar; centres of spots 5, 6 and 7 widely out of line. Tail ~3.5–4.0 mm; FW 17.0–19.0 mm (smaller than A. arianaga, FW 21.0–22.0 mm). Male: shining blue; black border very narrow, thread-like to just under 0.5 mm at apex. Female: broader black borders; blue areas often a purer shade than in related species.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
@@ -2081,7 +2073,7 @@
       "id": "r_ariana",
       "taxon_id": null,
       "name": "Arhopala ariana",
-      "common_name": "",
+      "common_name": "Pinkish-washed Oakblue",
       "note": "Underside dark brown with a faint purplish wash. FW: no basal spot in space 10; postdiscal spot in space 4 shifted distad out of line. Male: border 1.0–1.5 mm, slightly wider at apex. Tail ~3.5–4.0 mm.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
@@ -2092,7 +2084,7 @@
       "id": "r_aida",
       "taxon_id": null,
       "name": "Arhopala aida",
-      "common_name": "",
+      "common_name": "White-stained Oakblue",
       "note": "Underside paler brown. Nominate subspecies ([A. aida aida](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880740&preferred_place_id=6734)): slatey grey glaze — strong in Langkawi specimens, weaker through the rest of the Malay Peninsula. [A. aida ophir](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880740&preferred_place_id=6734) (Mt. Ophir): pale purple glaze instead.\n\nFW: no basal spot in space 10; costal spot in mid-space 11; postdiscal spot 4 shifted distad out of line with spots 5 and 6; termen straight and more produced than other alitaeus-group members. HW: postdiscal spot 6 outwardly straight or convex; postdiscal band completely dislocated at vein 2. Male: black borders relatively broad, expanding from ~1.25 mm at tornus to ~2.0 mm at apex. Tail ~3.5–4.0 mm. FW 16.0–19.0 mm.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
@@ -2125,7 +2117,7 @@
       "id": "r_alitaeus",
       "taxon_id": null,
       "name": "Arhopala alitaeus",
-      "common_name": "",
+      "common_name": "Purple Broken-band Oakblue",
       "note": "Underside markings notably annular (ring-like); FW postdiscal spot in space 1b often dislocated outward from spot in space 2. FW: basal spot present in space 10. Male: regular black borders ≥1.0 mm wide. Tail ~3.5–4.0 mm.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
@@ -2415,7 +2407,7 @@
       "id": "r_delta",
       "taxon_id": null,
       "name": "Arhopala delta",
-      "common_name": "",
+      "common_name": "Deltal Dull Oakblue",
       "note": "Tailed — distinct tail at vein 2; the ONLY tailed member of the amphimuta subgroup (all others tailless). Male: deep violet with a narrow, regular black border. Underside: FW postdiscal band nearly completely dislocated at vein 4. HW postdiscal spots in spaces 6 and 7 more or less rounded; spots 5–7 in echelon (centres in straight line).",
       "features": {
         "On the forewing underside, is the basal cell spot absent?": "No — basal cell spot present on FW underside",
@@ -2430,7 +2422,7 @@
       "id": "r_avathina_avathina",
       "taxon_id": null,
       "name": "Arhopala avathina avathina",
-      "common_name": "",
+      "common_name": "Lunulate Yellow Oakblue",
       "note": "Tailless. Distinctive: FW underside lacks a basal cell spot (absent, not obscure). HW postdiscal band completely dislocated at vein 2. Otherwise similar to other amphimuta subgroup members."
     },
     "r_norda": {
@@ -2438,7 +2430,7 @@
       "id": "r_norda",
       "taxon_id": null,
       "name": "Arhopala norda",
-      "common_name": "",
+      "common_name": "Langkawi Yellow Oakblue",
       "note": "Tailless. Distinguished from [A. major](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429756&preferred_place_id=6734) by the small white patch on the HW cilia just above the tornal lobe, and by less rounded (more angular) postdiscal spots on the underside Underside markings are essentially identical to [A. moolaiana yajuna](https://www.inaturalist.org/observations?verifiable=true&taxon_id=549326&preferred_place_id=6734); the two are separated only by the male upperside forewing border — broad and expanding to ~2–3 mm in norda, but reduced to a thread in moolaiana — so from an underside photo alone they cannot be reliably told apart.",
       "features": {
         "Is the specimen from Borneo (not the Malay Peninsula)?": "No — Malay Peninsula specimen",
@@ -2452,7 +2444,7 @@
       "id": "r_major_major",
       "taxon_id": null,
       "name": "Arhopala major major",
-      "common_name": "",
+      "common_name": "Major Yellow Oakblue",
       "note": "Tailless. Both sexes bluer than [A. amphimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498183&preferred_place_id=6734) above. Male: FW black border expands from 2.0 mm at tornus to 3.0 mm at apex. Underside similar to [A. amphimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498183&preferred_place_id=6734). HW cilia often prolonged into a short tooth at vein 2.",
       "features": {
         "Is the male a warm violet-purple (with a reddish hue rather than blue), and is the FW postdiscal spot in space 3 an oblique oval?": "Distinctly blue (not violet or purple) with a broad border ≥2 mm — may be A. major or A. stubbsi",
@@ -2479,7 +2471,7 @@
       "id": "r_moolaiana_yajuna",
       "taxon_id": null,
       "name": "Arhopala moolaiana yajuna",
-      "common_name": "",
+      "common_name": "Pale Yellow Oakblue",
       "note": "Tailless. Male: bright shining violet-blue with a thread-like black border; FW 18–22 mm. Female: blue colour reaches the HW termen or very nearly so — black border is extremely narrow or absent at the termen (diagnostic; unique in the amphimuta group). Underside markings very similar to [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734). HW postdiscal band only partially dislocated at vein 2. Range: Malay Peninsula and south Myanmar. (Feature Scoring: Q102 = 'No — HW band not strongly dislocated at vein 2'; the key tree reaches this species via Q101 'Yes — border thread-like' as a routing shortcut, bypassing Q102.)",
       "features": {
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
@@ -2503,14 +2495,17 @@
       "taxon_id": null,
       "name": "Arhopala sceva indra",
       "common_name": "",
-      "note": "Tailless. A smaller species. HW underside postdiscal series is dislocated at vein 2 (distinctive within the amphimuta subgroup). Male: dark violet-blue."
+      "note": "Tailless. A smaller species. HW underside postdiscal series is dislocated at vein 2 (distinctive within the amphimuta subgroup). Male: dark violet-blue.",
+      "features": {
+        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded"
+      }
     },
     "r_amphimuta_amphimuta": {
       "type": "result",
       "id": "r_amphimuta_amphimuta",
       "taxon_id": null,
       "name": "Arhopala amphimuta amphimuta",
-      "common_name": "Common Oakblue",
+      "common_name": "Broad Yellow Oakblue",
       "note": "Tailless. Male: dark bluish-purple with a regular 0.5–1.0 mm black border; FW 20–23 mm. HW cilia often prolonged into a very short tooth at vein 2 (may be inconspicuous in worn specimens). FW underside: postdiscal band slightly dislocated at vein 4; spot in space 3 usually an oblique oval. Female: lighter purple with typical broad black borders. HW postdiscal band only partially dislocated at vein 2 (as in [A. zylda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340244&preferred_place_id=6734)).",
       "features": {
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
@@ -2537,7 +2532,10 @@
       "taxon_id": null,
       "name": "Arhopala dajagaka",
       "common_name": "",
-      "note": "Tailless. Bornean endemic. Larger Bornean species (FW 21–25 mm). Male: dark bluish-purple with a thin black border. Female: THICK black borders and noticeably darker venation across the wings (diagnostic). Male valva unilobate; certain identification may require genitalia dissection."
+      "note": "Tailless. Bornean endemic. Larger Bornean species (FW 21–25 mm). Male: dark bluish-purple with a thin black border. Female: THICK black borders and noticeably darker venation across the wings (diagnostic). Male valva unilobate; certain identification may require genitalia dissection.",
+      "features": {
+        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded"
+      }
     },
     "r_baluensis": {
       "type": "result",
@@ -2626,7 +2624,7 @@
       "id": "r_moorei_busa",
       "taxon_id": null,
       "name": "Arhopala moorei busa",
-      "common_name": "",
+      "common_name": "Moore's Oakblue",
       "note": "Tailless. Male: both wings the same shade of blue in all lights — key distinction from [A. muta maranda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780491&preferred_place_id=6734), whose HW is slightly paler and brighter (FW 16.0–18.0 mm). Female: bluish purple with broad black borders (duller and more purple than [A. muta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780491&preferred_place_id=6734)'s female). Underside: spots quadrate/banded; FW space 2 spot stepped toward termen; HW postdiscal band dislocated — inner edge of spot in space 2 in line with, or only slightly outside, the outer edge of spot 1b. HW cilia: white spot in space 1a absent (very rarely present but extremely obscure).",
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line",
@@ -2640,7 +2638,7 @@
       "id": "r_muta_maranda",
       "taxon_id": null,
       "name": "Arhopala muta maranda",
-      "common_name": "Raffles's Oakblue",
+      "common_name": "Mutal Oakblue",
       "note": "Tailless. Male: FW rather dark bright blue; HW slightly paler and more glistening — the two wings are NOT the same shade in all lights (FW 17.0–19.0 mm). FW black border expands from 1.0–1.5 mm at tornus to 1.5–2.0 mm at apex. Female: shining blue with only a slight purple tint, broad black borders. Underside: spots quadrate/banded; FW space 2 spot stepped toward termen; HW postdiscal band dislocated — inner edge of spot in space 2 in line with, or only slightly outside, the outer edge of spot 1b. HW cilia: white spot in space 1a absent.",
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line",
@@ -2690,7 +2688,7 @@
       "id": "r_perimuta_regina",
       "taxon_id": null,
       "name": "Arhopala perimuta regina",
-      "common_name": "",
+      "common_name": "Yellowdisc Oakblue",
       "note": "Tailless; evenly rounded HW tornus with no tooth or tail at vein 2. Easily recognized: HW underside has a prominent central yellowish discal area; markings generally obscure or ill-defined; tornal green scales completely absent. HW postdiscal spots 5, 6, and 7 in echelon (centres overlapping, in a straight line); spot 6 positioned nearer to spot 5 than to the end-cell bar. FW: postdiscal spots 2 and 3 in line (may be oblique); spot 4 shifted distad out of line with spots 5 and 6; dark area under the FW cell obscure, ill-defined, or absent; no spot at the extreme base of space 3."
     },
     "r_metamuta_metamuta": {
@@ -2706,7 +2704,7 @@
       "id": "r_antimuta_antimuta",
       "taxon_id": null,
       "name": "Arhopala antimuta antimuta",
-      "common_name": "",
+      "common_name": "Small Tailless Oakblue",
       "note": "The most abundant species in the amphimuta group. Tailless. FW ~16.0 mm. Male: deep violet-blue; black border reduced to a thread. HW underside: postdiscal band completely dislocated at vein 2 (though this character can sometimes be inconstant — cf. [A. arvina adalitas](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1294761&preferred_place_id=6734), in which it is only partially dislocated); postdiscal spot 6 positioned directly below spot 7, displaced well past the postdiscal row — touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line. FW postdiscal spots 2 and 3 are in line (perimuta subgroup). Confirmatory: male upperside uniformly coloured — no contrasting wing colour as in [A. metamuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340245&preferred_place_id=6734).",
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced"
@@ -2737,7 +2735,7 @@
       "id": "r_anthelus_grahami",
       "taxon_id": null,
       "name": "Arhopala anthelus grahami",
-      "common_name": "",
+      "common_name": "Magnificent Oakblue",
       "note": "One of the most beautiful in the genus. FW 28 mm. Underside: ≥3 spots in FW space 11; 2 spots at base of HW space 8; spots on FW and upper HW half deep purple-brown. Male: brilliant shining blue, narrow black border. Female: violet-blue with fairly broad black borders. Anthelus subgroup."
     },
     "r_achelous_achelous": {
@@ -2838,7 +2836,7 @@
       "id": "r_aurea",
       "taxon_id": null,
       "name": "Arhopala aurea",
-      "common_name": "",
+      "common_name": "Long-celled Oakblue",
       "note": "Tailed. Tail short and stout, just under 2.0 mm. Underside hair-brown with complete markings. FW postdiscal spot 4 shifted distad, out of line with spots 5 and 6; dark patch in FW space 1b not solid. HW postdiscal band partially dislocated at vein 2; postdiscal spot 6 widely out of line with spots 5 and 7 — inner edge of spot 6 in line with, or inside, the inner edge of spot 7; spot 6 touches or overlaps the end-cell bar. Male: HW cell considerably longer than half the wing; shining green with weak blue suffusion at wing bases; FW border 0.75–1.5 mm at tornus, decreasing to a thread above vein 3 or 4; HW green does not reach the termen. Female: blue to purple-blue with a relatively narrow HW border.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
@@ -2851,7 +2849,7 @@
       "id": "r_trogon",
       "taxon_id": null,
       "name": "Arhopala trogon",
-      "common_name": "",
+      "common_name": "Green-suffused Oakblue",
       "note": "Underside glazed with a purple wash. Male: brilliant brassy green with a strong blue suffusion at the wing bases; FW border a thread throughout; HW green usually reaches the termen in spaces 3, 4, or 5. Short stumpy HW tail (~2 mm). HW end-cell bar notably long; postdiscal spot 6 touches or overlaps the end-cell bar. Distribution: occurs throughout Peninsular Malaysia, including Johor. [A. stinga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1394352&preferred_place_id=6734) is restricted to Johor forest — outside Johor, A. trogon is far more likely; within Johor, both remain possible and upperside characters are needed to confirm.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
@@ -3065,7 +3063,10 @@
       "features": {
         "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)",
         "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
-        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
+        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
+        "Is there a central spot in forewing underside space 11?": "Yes — central spot present in FW space 11",
+        "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)",
+        "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?": "Yes — spot present at extreme base of FW space 10"
       }
     },
     "r_dispar_pendleburyi": {
@@ -3087,7 +3088,8 @@
       "common_name": "",
       "note": "Tailless. FW postdiscal band incomplete, ending at vein 7. Underside hair-brown with markings narrowly outlined by pale buff lines; lacks a spot in the middle of HW space 8 and at the extreme base of HW space 6. Both sexes alike (monomorphic): broad dark borders (~5.0 mm at FW costa) and pale violet-blue upperside with a violet tinge. Camdeo subgroup. Very rare — no verified iNaturalist sightings; identify from this text key, not photos.",
       "features": {
-        "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?": "Large — spots large, almost touching the end-cell bar"
+        "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?": "Large — spots large, almost touching the end-cell bar",
+        "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)"
       }
     },
     "r_johoreana_johoreana": {
@@ -3099,7 +3101,8 @@
       "note": "Tailed. Short tail. Similar to [A. belphoebe cowani](https://www.inaturalist.org/search?q=Arhopala+belphoebe) (incomplete FW postdiscal band) but possesses a short tail and is much darker violet-blue. Camdeo subgroup.",
       "features": {
         "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
-        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
+        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
+        "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
       }
     },
     "r_hellada_ozana": {
@@ -3107,12 +3110,13 @@
       "id": "r_hellada_ozana",
       "taxon_id": null,
       "name": "Arhopala hellada ozana",
-      "common_name": "",
+      "common_name": "long-banded Oakblue",
       "note": "Tailed. Short tail ~2.5 mm. Underside spots indistinct. FW postdiscal spot in space 4 shifted distad (out of line with spots 5 and 6). Male: clear violet-blue with thread-like border. Camdeo subgroup.",
       "features": {
         "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
         "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)",
-        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
+        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
+        "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
       }
     },
     "r_varro_selama": {
@@ -3125,7 +3129,8 @@
       "features": {
         "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
         "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)",
-        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
+        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
+        "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
       }
     },
     "r_semperi_russelli": {
@@ -3153,7 +3158,7 @@
       "id": "r_opalina_azata",
       "taxon_id": null,
       "name": "Arhopala opalina azata",
-      "common_name": "",
+      "common_name": "Opal Oakblue",
       "note": "Tailed. Long tail ~4–6 mm. FW postdiscal band complete, partially dislocated at vein 4 (spot 4 slightly shifted outward). Male: pale greyish-blue with a violet tinge, very narrow thread-like black border. Female: slightly deeper blue with broader borders. Underside: uniform grey-brown to hair brown; HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5; spot 6 as large as or larger than spot 7. Restricted dark patch in FW space 1b bounded by a pale line; central spot in space 1b not unusually elongate (cf. [A. semperi russelli](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1148362&preferred_place_id=6734)). End-cell bar not often enlarged outwards at its lower end (cf. [A. semperi russelli](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1148362&preferred_place_id=6734)). HW cell approximately half the wing length or longer. FW 22–26 mm. Camdeo subgroup.",
       "features": {
         "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?": "No — HW spot 6 not smaller than spot 7; male pale greyish-blue with violet tinge",
@@ -3181,13 +3186,14 @@
       "id": "r_myrzala_lammas",
       "taxon_id": null,
       "name": "Arhopala myrzala lammas",
-      "common_name": "",
+      "common_name": "Malayan Oakblue",
       "note": "Moderately large, tailed species (exact tail length not recorded in key). Underside: crimson-brown with markings outlined by white striae; spot always present at base of HW space 6; central and outer postdiscal spots in space 7 conjoined at their upper ends. Male: shining royal blue with narrow black borders. Myrzala subgroup.",
       "features": {
         "Is the specimen tailed?": "Cannot determine",
         "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)",
         "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
-        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
+        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
+        "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
       }
     },
     "r_myrzalina": {
@@ -3212,7 +3218,8 @@
       "features": {
         "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)",
         "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
-        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
+        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
+        "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
       }
     },
     "q_centaurus_amantes": {
@@ -3284,7 +3291,7 @@
       "id": "r_centaurus_nakula",
       "taxon_id": null,
       "name": "Arhopala centaurus nakula",
-      "common_name": "Centaur Oakblue",
+      "common_name": "Dull Oak-blue",
       "features": {
         "Is there a costal spot present in forewing underside space 10, above the end-cell bar?": "Yes — costal spot present in FW space 10"
       },
@@ -3317,7 +3324,7 @@
       "id": "r_agaba",
       "taxon_id": null,
       "name": "Arhopala agaba",
-      "common_name": "",
+      "common_name": "Purple-glazed Oakblue",
       "note": "Agaba subgroup of the cleander group — distinctive and unique. Underside pale purple-brown with dark markings; the subapical area of both wings is irrorated (sprinkled) with whitish scales, appearing noticeably paler than the rest of the wing. HW postdiscal spots 7, 6 and 5 widely out of line: the inner edge of spot 6 is in line with or inside the inner edge of spot 7, and spot 6 touches or overlaps the end-cell bar; spot 5 is almost always contiguous or amalgamated with the end-cell bar. The HW postdiscal band is only PARTIALLY dislocated at vein 2 — all other cleander group members have it completely dislocated. Tail filamentous at vein 2. Male: shining violet-blue with a black border ~1.0 mm wide. Female: brighter blue with broader black borders.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
@@ -3388,10 +3395,11 @@
       "id": "r_cleander_aphadantas",
       "taxon_id": null,
       "name": "Arhopala cleander aphadantas",
-      "common_name": "",
+      "common_name": "Large Mergui Oakblue",
       "note": "FW postdiscal band NOT dislocated at vein 4 (straight or only sinuous). Male: violet-blue with broad black borders. Large species (FW > 21 mm); conspicuously projecting HW tornal lobe. HW band completely dislocated at vein 2.",
       "features": {
-        "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes"
+        "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
       }
     },
     "r_zambra_zambra": {
@@ -3399,7 +3407,7 @@
       "id": "r_zambra_zambra",
       "taxon_id": null,
       "name": "Arhopala zambra zambra",
-      "common_name": "",
+      "common_name": "Zambra Oakblue",
       "note": "FW postdiscal band partially dislocated at vein 4. FW postdiscal spot 9 as wide as or wider than spot 6. Male: typically deep blue. Large species (FW > 21 mm); conspicuously projecting HW tornal lobe.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
@@ -3413,7 +3421,7 @@
       "id": "r_athada_athada",
       "taxon_id": null,
       "name": "Arhopala athada athada",
-      "common_name": "",
+      "common_name": "Vinous Oakblue",
       "note": "FW postdiscal spot 9 narrower than spot 6, shifted basad. HW postdiscal spot 6 fills the gap between spot 5 and the end-cell bar. Large species (FW > 21 mm); conspicuously projecting HW tornal lobe.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
@@ -3427,7 +3435,7 @@
       "id": "r_silhetensis_adorea",
       "taxon_id": null,
       "name": "Arhopala silhetensis adorea",
-      "common_name": "",
+      "common_name": "Sylhet Oakblue",
       "note": "Tailed. Large species — FW 23–26 mm. Conspicuously projecting HW tornal lobe. HW postdiscal band completely dislocated at vein 2. HW postdiscal spots 6 and 7 are oblique — inner edge of spot 7 is well inside outer edge of spot 6. Spot 6 is displaced from the postdiscal row toward the end-cell bar — shifted past midway and touching (or overlapping) the end-cell bar; spots 5, 6 and 7 are widely out of line. Outer edge of spot 6 is sinuous and placed well inside the inner edge of spot 5. FW postdiscal band partially dislocated at vein 4; costal spot in space 10 usually present. Male: blue with FW black border just under 1.0 mm. Range: NE India and Myanmar south through Sundaland to the Philippines; throughout the Malay Peninsula and Singapore.",
       "features": {
         "Does hindwing postdiscal spot 6 completely fill the gap between spot 5 and the end-cell bar (no gap visible between spot 6 and the bar)?": "No — gap between HW spot 6 and end-cell bar is wider than spot 6",
@@ -3456,7 +3464,7 @@
       "type": "question",
       "id": "q_alea_s2",
       "question": "Does the underside have a slatey pink glaze with striae that are whiter than in other species?",
-      "hint": "[A. evansi](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1296657&preferred_place_id=6734) has a slatey pink glaze on the underside and the striae are noticeably whiter than other alea subgroup members. If the underside is predominantly brown (not pink-glazed), choose No.",
+      "hint": "[A. evansi](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1296657&preferred_place_id=6734) has a slatey pink glaze on the underside and the striae are noticeably whiter than other alea subgroup members. [A. agaba](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880736&preferred_place_id=6734) can appear brownish-purple but lacks the pink glaze — choose No for agaba.",
       "choices": [
         {
           "label": "Yes — slatey pink glaze; striae noticeably white",
@@ -3667,12 +3675,13 @@
       "id": "r_phanda_phanda",
       "taxon_id": null,
       "name": "Arhopala phanda phanda",
-      "common_name": "",
+      "common_name": "Golden Oakblue",
       "note": "Alea subgroup. Underside postdiscal band placed very close to the inner submarginal lunules — a trait shared with [A. normani](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340249&preferred_place_id=6734), but A. phanda differs in having HW postdiscal spot 6 quadrate (in normani, spot 6 is not much narrower at the bottom than at the top) and usually lacks a costal spot in FW space 10. Smaller species (FW < 21 mm).",
       "features": {
         "Is there a costal spot present in forewing underside space 10?": "No — no costal spot in FW space 10 (A. milleri)",
         "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes — HW spot 6 widely overlaps the end-cell bar",
-        "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes"
+        "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
       }
     },
     "r_selta_selta": {
@@ -3680,7 +3689,7 @@
       "id": "r_selta_selta",
       "taxon_id": null,
       "name": "Arhopala selta selta",
-      "common_name": "",
+      "common_name": "Reddish-brown Oakblue",
       "note": "Alea subgroup. FW termen rounded. HW postdiscal spot 6 widely overlaps the end-cell bar — separates it from [A. phaenops](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887006&preferred_place_id=6734), whose spot 6 usually does not, or only just, overlaps the end-cell bar. Costal spot present in FW underside space 10, matching A. sublustris ridleyi (absent in A. milleri). Male: violet-blue with border expanding toward the apex. Smaller species (FW < 21 mm).",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
@@ -3694,7 +3703,7 @@
       "id": "r_phaenops_sandakani",
       "taxon_id": null,
       "name": "Arhopala phaenops sandakani",
-      "common_name": "",
+      "common_name": "Sumatran Oakblue",
       "note": "Alea subgroup. Similar to [A. selta selta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880747&preferred_place_id=6734) (border expanding toward apex) but HW postdiscal spot 6 usually does NOT overlap the end-cell bar. Smaller species (FW < 21 mm).",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
@@ -3735,7 +3744,7 @@
       "id": "r_sublustris_ridleyi",
       "taxon_id": null,
       "name": "Arhopala sublustris ridleyi",
-      "common_name": "",
+      "common_name": "Bright Oakblue",
       "note": "Alea subgroup. Male: bright glistening blue with a regular, thread-like border under 0.5 mm, lacking a violet tinge. Brighter and more glistening than [A. normani](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340249&preferred_place_id=6734). Costal spot present in FW underside space 10 (absent in A. milleri — per field photo/plate review). Smaller species (FW < 21 mm).",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
@@ -3749,7 +3758,7 @@
       "id": "r_corinda_acestes",
       "taxon_id": null,
       "name": "Arhopala corinda acestes",
-      "common_name": "",
+      "common_name": "Ultramarine Oakblue",
       "note": "Monotypic group. Filamentous HW tail ~3.5 mm. FW: pointed apex, straight termen. Underside: large purple-brown patch under FW cell (basal half of space 1b completely darkened); FW spot 4 shifted distad; no costal spot in FW space 10; ground colour sometimes glazed with purple wash. HW spot 6 outwardly convex or almost straight; band partially dislocated at vein 2. Male: deep violet or dark purple, very narrow border. Female: purple-blue. Subspecies: acestes (Malay Peninsula and Singapore), corestes (Langkawi).",
       "features": {
         "What is the underside ground colour and overall appearance?": "Underside sometimes with purple wash; dark patch under FW cell; pointed FW apex, straight termen; smaller (tail ~3.5 mm) — A. corinda",
@@ -3780,7 +3789,7 @@
       "id": "r_democritus_democritus",
       "taxon_id": null,
       "name": "Arhopala democritus democritus",
-      "common_name": "",
+      "common_name": "White-dot Oakblue",
       "note": "Underside: dark chocolate-brown ground colour; markings outlined by prominent silvery-white striae and dots (more contrast than lycaenaria). Upperside: both male and female lighter and more silvery blue. Short HW tail ~1.5–2.0 mm. Distribution: central Myanmar to Kedawi; also recorded at Fraser's Hill."
     },
     "r_democritus_lycaenaria": {
@@ -3788,7 +3797,7 @@
       "id": "r_democritus_lycaenaria",
       "taxon_id": null,
       "name": "Arhopala democritus lycaenaria",
-      "common_name": "",
+      "common_name": "White-dot Oakblue",
       "note": "Standard subspecies representing the democritus group in the Malay Peninsula proper. Underside: hair-brown ground colour; all markings outlined by pale buff striae (less contrast than democritus ssp., which has silvery-white striae and dots). Short HW tail 1.5–2.0 mm. Macular underside markings; FW spot 4 shifted distad; HW spot 6 outwardly concave; HW band widely dislocated at vein 2."
     },
     "q_epimuta_s1": {
@@ -3839,7 +3848,7 @@
       "id": "r_lurida",
       "taxon_id": null,
       "name": "Arhopala lurida",
-      "common_name": "",
+      "common_name": "Lesser Disc Oakblue",
       "note": "HW tail ~2.5 mm. Male FW upperside: border slightly expanding toward apex; discal patch smaller than in [A. atosia](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498181&preferred_place_id=6734), almost entirely confined to bases of spaces 2 and 3. Underside markings darker and more clearly defined than [A. atosia](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498181&preferred_place_id=6734).",
       "features": {
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
@@ -3865,7 +3874,7 @@
       "id": "r_epimuta_epiala",
       "taxon_id": null,
       "name": "Arhopala epimuta epiala",
-      "common_name": "",
+      "common_name": "Tailess Disc Oakblue",
       "note": "Tailless. Male FW upperside: large circular discal patch similar to [A. atosia](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498181&preferred_place_id=6734), but distinguished by the complete absence of a hindwing tail.",
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar"
@@ -3943,7 +3952,7 @@
       "id": "r_bazalus_zalinda",
       "taxon_id": null,
       "name": "Arhopala bazalus zalinda",
-      "common_name": "",
+      "common_name": "Powdered Oakblue",
       "note": "HW tail ~3 mm. Male: deep purple; FW black border 1.0 mm at apex decreasing to 1.5 mm at tornus. Underside purplish-brown with very dark markings; FW apex powdered with pale violet scales. Female: usually purple-blue.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
@@ -3958,9 +3967,9 @@
       "taxon_id": null,
       "name": "Arhopala acta",
       "common_name": "",
-      "note": "HW tail ~3 mm. Spot 6 not displaced (in the postdiscal row, level with spot 5). Spot 6 outer edge outwardly straight. Underside markings very faint. No costal spot in FW space 10. FW apex rounded. Male: blue/violet (not green).",
+      "note": "HW tail ~3 mm. Spot 6 displaced past midway, touching or overlapping end-cell bar; spots 5, 6 and 7 widely out of line. Spot 6 outer edge outwardly straight. Underside markings very faint. No costal spot in FW space 10. FW apex rounded. Male: blue/violet (not green).",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
         "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)",
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next",
@@ -4039,7 +4048,7 @@
       "id": "r_horsfieldi_basiviridis",
       "taxon_id": null,
       "name": "Arhopala horsfieldi basiviridis",
-      "common_name": "",
+      "common_name": "Peacock Oakblue",
       "note": "Spot 6 outer edge outwardly concave. Underside markings very broad. FW apex rounded. Male: brassy green; very broad black borders reaching cell on both wings.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
@@ -4070,7 +4079,7 @@
       "id": "r_hellenore_siroes",
       "taxon_id": null,
       "name": "Arhopala hellenore siroes",
-      "common_name": "",
+      "common_name": "Doherty's Green Oakblue",
       "note": "Spot 6 outer edge outwardly concave. FW apex acute; termen straight or slightly concave. Male: brassy green; black border thread-width above vein 4. Malay Peninsula.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
@@ -4084,7 +4093,7 @@
       "id": "r_fulla_intaca",
       "taxon_id": 880792,
       "name": "Arhopala fulla intaca",
-      "common_name": "",
+      "common_name": "Spotless Oakblue",
       "note": "Tailless. FW ~18 mm. Instantly recognizable by the near-total absence of underside markings: postdiscal spots on both wings replaced by an obscure, diffuse streak; rectangular mark at the end of the forewing discal cell absent (may also be absent on HW); only a few obscure basal spots near HW base. Male: shining violet-blue with thread-width border. Female: deeper violet with broader borders. Wide distribution: Myanmar to Sundaland, Philippines, Moluccas, New Guinea."
     },
     "q_ganesa_s7_gap": {
@@ -4168,7 +4177,7 @@
       "id": "r_paraganesa_mendava",
       "taxon_id": null,
       "name": "Arhopala paraganesa mendava",
-      "common_name": "",
+      "common_name": "Dusky Bushblue",
       "note": "Montane species on the Malay Peninsula. Underside HW: roughly quadrate whitish area from mid-cell to costa; no tornal green scales. Upperside: bright pale blue with broad borders; male HW mostly fuscous; female with obscure whitish patch at FW end-cell.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
@@ -4179,7 +4188,7 @@
       "id": "r_ammonides_chunsu",
       "taxon_id": null,
       "name": "Arhopala ammonides chunsu",
-      "common_name": "",
+      "common_name": "Little Cerulean Oakblue",
       "note": "No tornal green scales. Underside HW: gap between outer and central spots in space 7 completely whitened (no quadrate mid-cell white patch). Upperside: powdery blue with very broad borders on all wings; female with dark bar at FW end-cell.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
@@ -4190,7 +4199,7 @@
       "id": "r_ammon_ammon",
       "taxon_id": null,
       "name": "Arhopala ammon ammon",
-      "common_name": "",
+      "common_name": "Malayan oakblue",
       "note": "Tornal green scales present. Underside HW: spot 6 extended to base of space; outer and central spots in space 7 separate, gap whitened. Upperside male: dark blue, narrow borders (1.5 mm at FW apex). Female: narrow borders (2.0 mm at FW tornus and HW).",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
@@ -4201,7 +4210,7 @@
       "id": "r_ariel",
       "taxon_id": null,
       "name": "Arhopala ariel",
-      "common_name": "",
+      "common_name": "Chocolate Oakblue",
       "note": "No whitened gap between HW space 7 spots; no mid-cell whitish patch. Tornal green scales present; HW spot 6 normal. Upperside male: bluish-purple, hardly shining; FW border 1.5 mm at tornus expanding to 4.0 mm at apex. Female: bluer shade with broader borders.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
@@ -4238,7 +4247,7 @@
       "id": "r_hypomuta_hypomuta",
       "taxon_id": null,
       "name": "Arhopala hypomuta hypomuta",
-      "common_name": "",
+      "common_name": "Violet Oakblue",
       "note": "Tailless. FW ~19 mm. Key character: small spot at the extreme base of HW space 6 on the underside (usually present in Malayan specimens; often absent in Bornean/Sumatran material). Similar to amphimuta group but separated by this basal spot. Male: deep shining violet-blue with very narrow borders. Female: more purple-blue with broader borders."
     },
     "r_ijanensis": {
@@ -4246,7 +4255,7 @@
       "id": "r_ijanensis",
       "taxon_id": null,
       "name": "Arhopala ijanensis",
-      "common_name": "",
+      "common_name": "White-banded Oakblue",
       "note": "Tailed. FW ~23 mm. HW cell about half wing length or longer. Underside: markings rather variegated; whitish streak from base of dorsum to apex on HW. Male: pale blue; FW costal border runs narrowly along costa to wing base (unique). Female: same but costal border much broader. More common in Kedah than elsewhere in the Peninsula.",
       "features": {
         "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?": "Yes — whitish streak present on HW underside from dorsal base to apex",
@@ -4266,7 +4275,7 @@
       "id": "r_allata_pandora",
       "taxon_id": null,
       "name": "Arhopala allata pandora",
-      "common_name": "",
+      "common_name": "Rosy Oakblue",
       "note": "Tailed at vein 2. FW ~22 mm. FW apex acute; termen straight between veins 2–4. Underside postdiscal band sinuous or only slightly dislocated at vein 4; HW postdiscal spots narrow, regular, rectangular. Male: dark purple; FW border 0.5 mm at tornus expanding to 1.5 mm at apex. Female: dark shining blue. Rare; recorded from NE India to Neomalaya and Philippines. HW postdiscal spots 5, 6 and 7 in echelon, spot 6 nearer to spot 5 than the end-cell bar. (2026-06-19 fix: the echelon question previously routed here only via a false 'spot 6 directly below spot 7' shortcut, which would have misidentified a truthfully-answered specimen by sending it toward A. delta / A. atosia. The tree now checks FW apex/termen shape and HW spot 6–7 shape right after the echelon answer, so the canonical path matches the true echelon answer above.)",
       "features": {
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
@@ -4320,7 +4329,7 @@
       "id": "r_buddha_cooperi",
       "taxon_id": null,
       "name": "Arhopala buddha cooperi",
-      "common_name": "",
+      "common_name": "Buddha Oakblue",
       "note": "Tailed. Tail very short ~1.0 mm. Underside ground colour hair-brown; tornal green scales present and distinct. HW postdiscal spot 6 outwardly sinuous or concave; widely out of line with spots 5 and 7; touches or overlaps the end-cell bar. Costal spot present in FW underside space 10. FW postdiscal band weakly dislocated at vein 4; no spot at base of FW space 3. Male: shining violet-blue; black borders 1.0 mm wide. Female: may resemble female [A. aurea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429759&preferred_place_id=6734) but differs in narrower HW border and thinner tail.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line",
@@ -4344,8 +4353,11 @@
       "id": "r_vihara",
       "taxon_id": null,
       "name": "Arhopala vihara",
-      "common_name": "",
-      "note": "Tailed. FW 20–22 mm. FW underside spot 4 in line with spots 5–6 (distinguishes from eumolphus group where spot 4 is out of line); no costal spot in FW space 10. HW spot 6 rounded, more or less separated; HW band only partially dislocated at vein 2. Male: dark violet-blue; border slightly less than 1.0 mm. Female: bluer shade. Two ssp.: vihara on the peninsular mainland; hirava on Langkawi."
+      "common_name": "Large Spotted Oakblue",
+      "note": "Tailed. FW 20–22 mm. FW underside spot 4 in line with spots 5–6 (distinguishes from eumolphus group where spot 4 is out of line); no costal spot in FW space 10. HW spot 6 rounded, more or less separated; HW band only partially dislocated at vein 2. Male: dark violet-blue; border slightly less than 1.0 mm. Female: bluer shade. Two ssp.: vihara on the peninsular mainland; hirava on Langkawi.",
+      "features": {
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spot 6 displaced past midway; touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line"
+      }
     },
     "g_needs_more_info": {
       "type": "group",

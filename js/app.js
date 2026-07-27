@@ -1,3 +1,25 @@
+let multiSp2 = new Set();
+
+function buildMultiSp2(nodes) {
+  const counts = new Map();
+  for (const node of Object.values(nodes)) {
+    if (!node || node.type !== 'result' || !node.name || !node.name.startsWith('Arhopala ')) continue;
+    const w = node.name.split(' ');
+    if (w.length < 3) continue;
+    const sp2 = w[0] + ' ' + w[1];
+    counts.set(sp2, (counts.get(sp2) || 0) + 1);
+  }
+  return new Set([...counts.entries()].filter(([, v]) => v > 1).map(([k]) => k));
+}
+
+function sciDisplay(name) {
+  if (!name || !name.startsWith('Arhopala ')) return name;
+  const w = name.split(' ');
+  if (w.length <= 2) return name;
+  const sp2 = w[0] + ' ' + w[1];
+  return multiSp2.has(sp2) ? name : sp2;
+}
+
 const state = {
   tree: null,
   species: null,       // Map<taxon_id (number), species object>
@@ -34,6 +56,7 @@ async function init() {
     ]);
 
     state.tree = treeData;
+    multiSp2 = buildMultiSp2(treeData.nodes);
     state.species = new Map(speciesData.species.map(s => [s.id, s]));
     state.speciesIndex = buildSpeciesIndex(treeData, speciesData);
     state.questionNumbers = buildQuestionNumbers(treeData);
@@ -217,7 +240,7 @@ function renderResult(node) {
 
   const commonName = (species && species.common_name) || node.common_name
     || (species && species.name) || node.name || 'Unknown Species';
-  const sciName = (species && species.name) || node.name || '';
+  const sciName = sciDisplay((species && species.name) || node.name || '');
   const inatUrl = (species && species.inat_url)
     || (node.taxon_id ? `https://www.inaturalist.org/taxa/${node.taxon_id}` : null)
     || `https://www.inaturalist.org/search?q=${encodeURIComponent(sciName || 'Arhopala')}`;
@@ -337,7 +360,7 @@ function renderSearchList(query) {
 
   resultsEl.innerHTML = matches.map(s => `
     <button class="search-item" role="listitem" data-name="${escapeAttr(s.name)}">
-      <span class="search-item-sci">${escapeHtml(s.name)}</span>
+      <span class="search-item-sci">${escapeHtml(sciDisplay(s.name))}</span>
       ${s.common_name ? `<span class="search-item-common">${escapeHtml(s.common_name)}</span>` : ''}
     </button>
   `).join('');
@@ -360,8 +383,8 @@ function showSpeciesDetail(sp) {
 
   detailEl.innerHTML = `
     <span class="result-badge">Species Info</span>
-    <h2 class="species-common">${escapeHtml(sp.common_name || sp.name)}</h2>
-    ${sp.common_name ? `<p class="species-name">${escapeHtml(sp.name)}</p>` : ''}
+    <h2 class="species-common">${escapeHtml(sp.common_name || sciDisplay(sp.name))}</h2>
+    ${sp.common_name ? `<p class="species-name">${escapeHtml(sciDisplay(sp.name))}</p>` : ''}
     ${noteHTML}
     ${pathHTML}
     ${galleryHTML}
@@ -962,8 +985,8 @@ function showSpeciesDetailInline(sp) {
   const noteHTML = sp.note ? `<div class="id-note">${renderHint(sp.note)}</div>` : '';
   detailEl.innerHTML = `
     <span class="result-badge">Species Info</span>
-    <h2 class="species-common">${escapeHtml(sp.common_name || sp.name)}</h2>
-    ${sp.common_name ? `<p class="species-name">${escapeHtml(sp.name)}</p>` : ''}
+    <h2 class="species-common">${escapeHtml(sp.common_name || sciDisplay(sp.name))}</h2>
+    ${sp.common_name ? `<p class="species-name">${escapeHtml(sciDisplay(sp.name))}</p>` : ''}
     ${noteHTML}
     ${buildPathDisplay(sp.paths, sp.note, sp.resultFeatures, sp.name)}
     ${buildCPKeyPath(sp.name)}

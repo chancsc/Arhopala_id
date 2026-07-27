@@ -1,5 +1,27 @@
 // checklist.js — Feature scoring mode for Arhopala ID
 
+let multiSp2 = new Set();
+
+function buildMultiSp2(nodes) {
+  const counts = new Map();
+  for (const node of Object.values(nodes)) {
+    if (!node || node.type !== 'result' || !node.name || !node.name.startsWith('Arhopala ')) continue;
+    const w = node.name.split(' ');
+    if (w.length < 3) continue;
+    const sp2 = w[0] + ' ' + w[1];
+    counts.set(sp2, (counts.get(sp2) || 0) + 1);
+  }
+  return new Set([...counts.entries()].filter(([, v]) => v > 1).map(([k]) => k));
+}
+
+function sciDisplay(name) {
+  if (!name || !name.startsWith('Arhopala ')) return name;
+  const w = name.split(' ');
+  if (w.length <= 2) return name;
+  const sp2 = w[0] + ' ' + w[1];
+  return multiSp2.has(sp2) ? name : sp2;
+}
+
 const cs = {
   featureMatrix: null,    // Map<name, Map<questionText, choiceLabel>>
   questionMeta: null,     // Map<questionText, {choices: string[], hint: string}>
@@ -58,6 +80,7 @@ function clearSavedAnswers() {
 
 function initData(treeData, speciesData) {
   cs.treeNodes = treeData.nodes;
+  multiSp2 = buildMultiSp2(treeData.nodes);
   const pathsMap = buildTreePaths(treeData);
   const matrix = new Map();
   const qMeta = new Map();
@@ -249,6 +272,7 @@ const GUIDE_LINKS = new Map([
   ['a clear gap visible between them', 'guide.html#hw-band-vein2'],
   ['dislocated at vein 2', 'guide.html#hw-band-vein2'],
   ['postdiscal spots more quadrate/banded', 'guide.html#hw-spots-quadrate-banded'],
+  ['from the base of the dorsum to the apex', 'guide.html#hw-whitish-streak'],
 ]);
 
 const MD_LINK_RE = /\[([^\]]+)\]\((https:\/\/[^)]+)\)/g;
@@ -340,7 +364,7 @@ function renderCandidates() {
         <div class="cl-cand-row" role="button" tabindex="0" aria-expanded="${isExpanded}">
           <span class="cl-rank">${medals[i] || i + 1}</span>
           <span class="cl-cname">
-            <em class="cl-sci">${esc(s.name)}</em>
+            <em class="cl-sci">${esc(sciDisplay(s.name))}</em>
             ${info.common_name ? `<span class="cl-common">${esc(info.common_name)}</span>` : ''}
           </span>
           <span class="cl-bar-wrap">
@@ -349,7 +373,7 @@ function renderCandidates() {
             </span>
             <span class="cl-score-num${s.score < 0 ? ' neg' : ''}">${s.score > 0 ? '+' : ''}${s.score}</span>
           </span>
-          ${inatHref ? `<a class="cl-inat-icon" href="${inatHref}" target="_blank" rel="noopener" title="View on iNaturalist" aria-label="View ${esc(s.name)} on iNaturalist">🔗</a>` : ''}
+          ${inatHref ? `<a class="cl-inat-icon" href="${inatHref}" target="_blank" rel="noopener" title="View on iNaturalist" aria-label="View ${esc(sciDisplay(s.name))} on iNaturalist">🔗</a>` : ''}
         </div>
         ${isExpanded ? renderCandidateDetail(s.name) : ''}
       </div>`;

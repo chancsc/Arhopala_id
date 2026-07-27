@@ -1,4 +1,26 @@
 // id_keys.js — C&P Dichotomous Key sequential navigation for Arhopala ID
+
+let multiSp2 = new Set();
+
+function buildMultiSp2FromNames(names) {
+  const counts = new Map();
+  for (const name of names) {
+    if (!name || !name.startsWith('Arhopala ')) continue;
+    const w = name.split(' ');
+    if (w.length < 3) continue;
+    const sp2 = w[0] + ' ' + w[1];
+    counts.set(sp2, (counts.get(sp2) || 0) + 1);
+  }
+  return new Set([...counts.entries()].filter(([, v]) => v > 1).map(([k]) => k));
+}
+
+function sciDisplay(name) {
+  if (!name || !name.startsWith('Arhopala ')) return name;
+  const w = name.split(' ');
+  if (w.length <= 2) return name;
+  const sp2 = w[0] + ' ' + w[1];
+  return multiSp2.has(sp2) ? name : sp2;
+}
 // Adapted from the generic sequential-key tool (see notebook_data key design).
 // Presents one couplet at a time; A/B choices navigate the key while a
 // feature-scoring (+1/-1) model ranks candidates in real time. Upperside
@@ -53,6 +75,7 @@ function ksInitData(keyData, speciesData) {
     for (const n of cp.species_a) allNames.add(n);
     for (const n of cp.species_b) allNames.add(n);
   }
+  multiSp2 = buildMultiSp2FromNames(allNames);
   for (const name of allNames) {
     const sp2 = name.split(' ').slice(0, 2).join(' ');
     const sp = sp2Map.get(sp2);
@@ -289,7 +312,7 @@ function ksRenderCandidates() {
         <div class="ks-cand-row" role="button" tabindex="0" aria-expanded="${isExpanded}">
           <span class="ks-rank">${medals[i] || i + 1}</span>
           <span class="ks-cname">
-            <em class="ks-sci">${ksEsc(s.name)}</em>
+            <em class="ks-sci">${ksEsc(sciDisplay(s.name))}</em>
             ${info.common_name ? `<span class="ks-common">${ksEsc(info.common_name)}</span>` : ''}
           </span>
           <span class="ks-bar-wrap">
@@ -342,7 +365,7 @@ function ksRenderCouplet() {
     el.innerHTML = `
       <div class="ks-result-card">
         <p class="ks-result-label">&#9658; Identification</p>
-        <p class="ks-result-species">Key ${ksEsc(String(ks.result.leadNum))}: <em>${ksEsc(ks.result.speciesName)}</em></p>
+        <p class="ks-result-species">Key ${ksEsc(String(ks.result.leadNum))}: <em>${ksEsc(sciDisplay(ks.result.speciesName))}</em></p>
         ${info.common_name ? `<p class="ks-result-common">${ksEsc(info.common_name)}</p>` : ''}
         <p class="ks-result-text">${ksEsc(ks.result.text)}</p>
         ${inatHref ? `<a class="ks-inat-link" href="${inatHref}" target="_blank" rel="noopener">View on iNaturalist &#8594;</a>` : ''}

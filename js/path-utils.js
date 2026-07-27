@@ -361,6 +361,40 @@ function getDisplayQuestionsPure(answers, scores, featureMatrix, treeNodes, ques
     return (filteredCov.get(b) || 0) - (filteredCov.get(a) || 0);
   };
 
+  // Gate-followup: when a non-CD answer routes directly to a deprioritized question
+  // in the tree, inject that question right after its gate in the display order.
+  // Deprioritized questions sink to the back regardless of coverage, so without this
+  // they stay buried below the 15-question cap even after their gate is answered.
+  // Example: Q89=No leads directly to Q22 (restricted FW-space-1b dark patch, which is
+  // the camdeo group's key diagnostic but is deprioritized as normally hard to assess).
+  // Only fires when all question-nodes sharing the same text agree on the same followup
+  // (ambiguous multi-destination cases are left unsurfaced, same as the CD-followup rule).
+  function applyGateFollowups(orderedQs) {
+    if (!treeNodes || deprioritized.size === 0) return;
+    for (const q of [...answers.keys()]) {
+      const choice = answers.get(q);
+      if (!choice || choice.startsWith('Cannot determine')) continue;
+      const candidates = new Set();
+      for (const node of Object.values(treeNodes)) {
+        if (node.type !== 'question' || node.question !== q) continue;
+        const cho = node.choices.find(c => c.label === choice);
+        if (!cho || !cho.next) continue;
+        const followNode = treeNodes[cho.next];
+        if (followNode && followNode.type === 'question' && deprioritized.has(followNode.question))
+          candidates.add(followNode.question);
+      }
+      if (candidates.size !== 1) continue;
+      const followQ = [...candidates][0];
+      if (answers.has(followQ) || !allQSet.has(followQ)) continue;
+      const gatingIdx = orderedQs.indexOf(q);
+      const followIdx = orderedQs.indexOf(followQ);
+      if (gatingIdx !== -1 && followIdx !== gatingIdx + 1) {
+        if (followIdx !== -1) orderedQs.splice(followIdx, 1);
+        orderedQs.splice(gatingIdx + 1, 0, followQ);
+      }
+    }
+  }
+
   if (questionOrder.length === 0) {
     // Fresh sort (the live checklist resets questionOrder after every answer, so
     // this branch runs each time). Keep the ALREADY-ANSWERED questions in a
@@ -375,6 +409,7 @@ function getDisplayQuestionsPure(answers, scores, featureMatrix, treeNodes, ques
     const answeredSet = new Set(answeredQs);
     const unansweredQs = allQ.filter(q => !answeredSet.has(q)).sort(newQSort);
     questionOrder.push(...answeredQs, ...unansweredQs);
+    applyGateFollowups(questionOrder);
   } else {
     // Remember the position of any question about to be pruned for being
     // irrelevant, so that if it becomes relevant again later in this same
@@ -435,6 +470,7 @@ function getDisplayQuestionsPure(answers, scores, featureMatrix, treeNodes, ques
       }
       existing.add(q);
     }
+    applyGateFollowups(questionOrder);
   }
 
   return cdFollowups;
