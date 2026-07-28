@@ -725,6 +725,7 @@ async function initSpeciesPage() {
     if (!treeRes.ok || !speciesRes.ok) throw new Error('Failed to load data');
     const [treeData, speciesData] = await Promise.all([treeRes.json(), speciesRes.json()]);
     state.tree = treeData;
+    multiSp2 = buildMultiSp2(treeData.nodes);
     state.speciesIndex = buildSpeciesIndex(treeData, speciesData);
     state.questionNumbers = buildQuestionNumbers(treeData);
     state.simCdPaths = simCdRes.ok ? new Map(Object.entries(await simCdRes.json())) : null;
