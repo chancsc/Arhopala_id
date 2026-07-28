@@ -807,7 +807,7 @@
         },
         {
           "label": "No — spot 6 not sinuous/concave, or no FW costal spot in space 10",
-          "next": "q_tailless_partial_muta_check"
+          "next": "q_tailless_agelastus_check"
         }
       ]
     },
@@ -868,35 +868,19 @@
         }
       ]
     },
-    "q_tailless_partial_muta_check": {
-      "type": "question",
-      "id": "q_tailless_partial_muta_check",
-      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
-      "hint": "In the muta subgroup ([A. moorei busa](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780493&preferred_place_id=6734), [A. muta maranda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780491&preferred_place_id=6734), [A. tropaea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780493&preferred_place_id=6734)), the HW postdiscal spots are noticeably rectangular or banded rather than round. In the agelastus and agesilaus groups, the spots are more rounded or oval. Check the HW underside only — FW visibility is not required. Note: a few agelastus-group species — e.g. [A. wildeyana](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1294333&preferred_place_id=6734) — can look somewhat squarish on field photos; if the specimen is otherwise agelastus-group (FW postdiscal band continuous, HW spot 6 touching/overlapping the end-cell bar), choose the more-rounded option here.",
-      "choices": [
-        {
-          "label": "Yes — HW spots more quadrate or banded in shape (muta subgroup)",
-          "next": "g_amphimuta_muta"
-        },
-        {
-          "label": "No — HW spots more rounded in shape (agelastus or agesilaus group)",
-          "next": "q_tailless_agelastus_check"
-        }
-      ],
-      "question_link": {
-        "text": "postdiscal spots more quadrate/banded",
-        "href": "guide.html#hw-spots-quadrate-banded"
-      }
-    },
     "q_tailless_agelastus_check": {
       "type": "question",
       "id": "q_tailless_agelastus_check",
       "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
-      "hint": "The agelastus group has a continuous (non-dislocated) FW postdiscal band, often with a small spot at the base of FW space 3; most species lack a costal spot in FW space 10 (exception: epimete suedas). The agesilaus group ([A. agesilaus gesa](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1278725&preferred_place_id=6734), [A. avatha](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1062607&preferred_place_id=6734)) has a dislocated FW postdiscal band — spots shift at a vein, breaking the smooth row.",
+      "hint": "The agelastus group and muta subgroup both have a continuous (non-dislocated) FW postdiscal band, often with a small spot at the base of FW space 3; most species lack a costal spot in FW space 10 (exception: epimete suedas). The muta subgroup ([A. moorei busa](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780493&preferred_place_id=6734), [A. muta maranda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780491&preferred_place_id=6734), [A. tropaea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780493&preferred_place_id=6734)) is smaller and has more banded postdiscal spots. The agesilaus group ([A. agesilaus gesa](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1278725&preferred_place_id=6734), [A. avatha](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1062607&preferred_place_id=6734)) has a dislocated FW postdiscal band — spots shift at a vein, breaking the smooth row.",
       "choices": [
         {
           "label": "Yes — FW postdiscal band continuous (agelastus group)",
           "next": "g_agelastus"
+        },
+        {
+          "label": "Yes — FW postdiscal band continuous (muta subgroup: A. moorei, A. muta, A. tropaea)",
+          "next": "g_amphimuta_muta"
         },
         {
           "label": "No — FW postdiscal band dislocated or broken (agesilaus group)",
