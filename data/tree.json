@@ -1294,7 +1294,8 @@
       "common_name": "Tytler's Dull Oakblue",
       "note": "Underside: all markings relatively wide; FW postdiscal band dislocated at vein 4; HW postdiscal spot 6 outwardly concave. Male: deep cobalt blue with black border reduced to a thread. Female: purple.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7 (usually also touching or overlapping the end-cell bar, but not always — e.g. A. ace, A. azinis)"
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7 (usually also touching or overlapping the end-cell bar, but not always — e.g. A. ace, A. azinis)",
+        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter"
       }
     },
     "r_azinis_azinis": {
@@ -1306,7 +1307,8 @@
       "note": "Underside: FW postdiscal band sinuous or only slightly dislocated at vein 4; HW postdiscal spot 6 outwardly straight or convex. Male: dark blue with broad black borders (2.0 mm at FW mid-termen, 3.0 mm on HW). Female: purple. Strictly montane habitat.",
       "features": {
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No",
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7 (usually also touching or overlapping the end-cell bar, but not always — e.g. A. ace, A. azinis)"
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7 (usually also touching or overlapping the end-cell bar, but not always — e.g. A. ace, A. azinis)",
+        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter"
       }
     },
     "g_agrata_agrata": {
@@ -4508,7 +4510,7 @@
         },
         {
           "label": "No — no dark patch present in FW space 1b",
-          "next": "g_aedias"
+          "next": "q_long_tail_length"
         },
         {
           "label": "Cannot determine — FW space 1b obscured by hindwing",

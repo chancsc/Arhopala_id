@@ -183,6 +183,10 @@
     {
       "question": "Is the forewing postdiscal band clearly dislocated at vein 4, and is hindwing postdiscal spot 6 outwardly concave?",
       "choice": "Yes — FW band clearly dislocated at vein 4; HW spot 6 outwardly concave"
+    },
+    {
+      "question": "Is the hindwing cell longer than half the length of the wing?",
+      "choice": "No — HW cell about half the wing length or shorter"
     }
   ],
   "Arhopala azinis azinis": [
@@ -261,6 +265,10 @@
     {
       "question": "Is the forewing postdiscal band clearly dislocated at vein 4, and is hindwing postdiscal spot 6 outwardly concave?",
       "choice": "No — FW band sinuous or only slightly dislocated; HW spot 6 straight or convex"
+    },
+    {
+      "question": "Is the hindwing cell longer than half the length of the wing?",
+      "choice": "No — HW cell about half the wing length or shorter"
     }
   ],
   "Arhopala agrata agrata": [
@@ -431,12 +439,12 @@
       "choice": "No — no dark patch present in FW space 1b"
     },
     {
-      "question": "Is the forewing postdiscal spot in space 4 shifted distad (outward, out of line with spots 5 and 6)?",
-      "choice": "Yes — FW spot 4 shifted distad, out of line with spots 5 and 6"
-    },
-    {
       "question": "What is the underside ground colour and overall appearance?",
       "choice": "Hair brown; spots narrowly buff-outlined; large (FW 20–29 mm); rounded FW apex; tail ~6 mm — A. aedias"
+    },
+    {
+      "question": "Is the forewing postdiscal spot in space 4 shifted distad (outward, out of line with spots 5 and 6)?",
+      "choice": "Yes — FW spot 4 shifted distad, out of line with spots 5 and 6"
     },
     {
       "question": "What does the hindwing underside look like?",
