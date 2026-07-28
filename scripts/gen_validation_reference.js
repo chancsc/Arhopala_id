@@ -36,15 +36,15 @@ for (const [name, paths] of pathsMap) {
   const note = resultNode.note || '';
   const rf   = resultNode.features || {};
 
-  const canonical = pickCanonicalPath(paths, note, rf) || [];
-
-  // Canonical path features (before overrides)
+  // Build raw canonical map WITHOUT rf guidance, so overrides that happen to agree
+  // with the guided canonical path are still tagged correctly as "override".
+  const canonicalRaw = pickCanonicalPath(paths, note, {}) || [];
   const canonicalMap = new Map();
-  for (const { question: q, choice: c } of canonical) {
+  for (const { question: q, choice: c } of canonicalRaw) {
     if (q && c && !c.startsWith('Cannot determine')) canonicalMap.set(q, c);
   }
 
-  // Final feature matrix: canonical merged with overrides
+  // Final feature matrix: raw canonical merged with overrides (rf wins)
   const finalMap = new Map(canonicalMap);
   for (const [q, c] of Object.entries(rf)) {
     if (c.startsWith('Cannot determine')) {
@@ -59,7 +59,8 @@ for (const [name, paths] of pathsMap) {
   for (const [q, c] of finalMap) {
     const qn  = qNums.get(q) || 9999;
     const isOverride = Object.prototype.hasOwnProperty.call(rf, q) &&
-                       (canonicalMap.get(q) !== rf[q]);
+                       !rf[q].startsWith('Cannot determine') &&
+                       canonicalMap.get(q) !== rf[q];
     rows.push({ qn, q, c, src: isOverride ? 'override' : 'canonical' });
   }
   rows.sort((a, b) => a.qn - b.qn);
