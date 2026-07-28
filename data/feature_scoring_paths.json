@@ -1861,6 +1861,10 @@
     {
       "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
       "choice": "No — no white patch just above the tornal lobe"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
+      "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
     }
   ],
   "Arhopala delta": [
@@ -1959,6 +1963,10 @@
     {
       "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
       "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
+      "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
     }
   ],
   "Arhopala avathina avathina": [
@@ -2017,6 +2025,10 @@
     {
       "question": "On the forewing underside, is the basal cell spot absent?",
       "choice": "Yes — no basal cell spot on FW underside (HW postdiscal band also completely dislocated at vein 2)"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
+      "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
     }
   ],
   "Arhopala norda": [
@@ -2095,6 +2107,10 @@
     {
       "question": "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?",
       "choice": "Yes — weak tooth at vein 2 present; postdiscal spots less rounded (more angular), similar to A. norda"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
+      "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
     }
   ],
   "Arhopala major major": [
@@ -2187,6 +2203,10 @@
       "choice": "Yes — distinctly blue; border expands 2.0→3.0 mm from tornus to apex"
     },
     {
+      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
+      "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
+    },
+    {
       "question": "What is the male's overall upperside colour?",
       "choice": "Distinctly blue or bluish-purple — cool tone, no warm reddish-violet hue (A. major / A. stubbsi)"
     }
@@ -2267,6 +2287,10 @@
     {
       "question": "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?",
       "choice": "No — no weak tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
+      "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
     },
     {
       "question": "Is the male's black border broad, 1.5 mm or wider?",
@@ -2359,6 +2383,10 @@
       "choice": "No — HW band not strongly dislocated at vein 2"
     },
     {
+      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
+      "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
+    },
+    {
       "question": "What is the male's overall upperside colour?",
       "choice": "Violet-blue or violet-purple — clear warm or violet tone (A. amphimuta / A. zylda / A. moolaiana / A. sceva)"
     }
@@ -2371,6 +2399,10 @@
     {
       "question": "Are the underside markings almost entirely suppressed — the postdiscal spots replaced by a faint, obscure streak rather than a series of distinct separate spots, with most other typical markings absent?",
       "choice": "Underside markings almost entirely absent — only a faint trace of HW postdiscal marking visible; no postdiscal streak or band (A. alica)"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
+      "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
     }
   ],
   "Arhopala sceva indra": [
@@ -2445,6 +2477,10 @@
     {
       "question": "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?",
       "choice": "Yes — HW postdiscal series dislocated at vein 2; smaller species; male dark violet-blue"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
+      "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
     },
     {
       "question": "What is the male's overall upperside colour?",
@@ -2537,6 +2573,10 @@
       "choice": "Larger (FW ~20–23 mm); HW cilia often form a short tooth at vein 2"
     },
     {
+      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
+      "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
+    },
+    {
       "question": "What is the male's overall upperside colour?",
       "choice": "Violet-blue or violet-purple — clear warm or violet tone (A. amphimuta / A. zylda / A. moolaiana / A. sceva)"
     }
@@ -2617,6 +2657,10 @@
     {
       "question": "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?",
       "choice": "No — no weak tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
+      "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
     },
     {
       "question": "Is the male's black border broad, 1.5 mm or wider?",
@@ -2711,6 +2755,10 @@
     {
       "question": "Is the specimen large (FW approximately 21–25 mm), or does the female have thick black borders with darker venation?",
       "choice": "Larger (FW 21–25 mm); female with thick black borders and darker venation"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
+      "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
     }
   ],
   "Arhopala baluensis": [
@@ -2785,6 +2833,10 @@
     {
       "question": "Is the specimen large (FW approximately 21–25 mm), or does the female have thick black borders with darker venation?",
       "choice": "Smaller (FW 18–20 mm); female with narrower borders; HW cilia space 1a lacks white spot"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
+      "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
     }
   ],
   "Arhopala tropaea": [
@@ -3021,6 +3073,10 @@
     {
       "question": "Is there a prominent yellowish area in the centre of the hindwing underside, and are the underside markings generally obscure or ill-defined?",
       "choice": "Yes — prominent yellowish HW central discal area; markings obscure or ill-defined; no tornal green scales"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
+      "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
     }
   ],
   "Arhopala metamuta metamuta": [
@@ -3067,6 +3123,10 @@
     {
       "question": "Are HW postdiscal spots 5, 6 and 7 widely out of line — with the inner edge of spot 6 in line with or inside the inner edge of spot 7, and spot 6 touching or overlapping the end-cell bar?",
       "choice": "No — spots broadly in line; spot 6 only slightly displaced, nearer to spot 5"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
+      "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
     }
   ],
   "Arhopala antimuta antimuta": [
@@ -3113,6 +3173,10 @@
     {
       "question": "Are HW postdiscal spots 5, 6 and 7 widely out of line — with the inner edge of spot 6 in line with or inside the inner edge of spot 7, and spot 6 touching or overlapping the end-cell bar?",
       "choice": "Yes — spots 5, 6 and 7 widely out of line; inner edge of spot 6 in line with or inside inner edge of spot 7; spot 6 touches or overlaps end-cell bar"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
+      "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
     }
   ],
   "Arhopala anthelus grahami": [
@@ -7215,6 +7279,10 @@
     {
       "question": "Is the underside crimson-brown with markings outlined by white striae, with a restricted dark patch in FW space 1b bounded by a pale line?",
       "choice": "No — underside not crimson-brown, or no FW space-1b dark patch (true hypomuta-group character)"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
+      "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
     }
   ],
   "Arhopala ijanensis": [

@@ -2129,7 +2129,8 @@
       "note": "Tailless; HW tornus very rounded. FW 18–22 mm. Male: rather dull purple-blue with a thread-like black border. Female: purple; HW border unusually variable — purple sometimes reaches termen between veins 2 and 5, other specimens almost confined to cell. Underside FW: markings variable; lower postdiscal band sometimes obsolete; when fully developed, spot in space 1b shifted inward, placed midway between end-cell bar and postdiscal spot in space 2. Underside HW: postdiscal band WIDELY dislocated at vein 2 (diagnostic for subgroup). Forest species, low to moderate elevations.",
       "features": {
         "On the forewing underside, is the basal cell spot absent?": "No — basal cell spot present on FW underside",
-        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "No — no white patch just above the tornal lobe"
+        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "No — no white patch just above the tornal lobe",
+        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No — HW postdiscal spots rounded (not quadrate/banded)"
       }
     },
     "q_amph_s2": {
@@ -2400,7 +2401,8 @@
         "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "No — no white patch just above the tornal lobe",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)",
         "Is the forewing postdiscal band nearly completely dislocated at vein 4?": "Yes — FW band nearly completely dislocated at vein 4",
-        "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
+        "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)",
+        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No — HW postdiscal spots rounded (not quadrate/banded)"
       }
     },
     "r_avathina_avathina": {
@@ -2409,7 +2411,10 @@
       "taxon_id": null,
       "name": "Arhopala avathina avathina",
       "common_name": "Lunulate Yellow Oakblue",
-      "note": "Tailless. Distinctive: FW underside lacks a basal cell spot (absent, not obscure). HW postdiscal band completely dislocated at vein 2. Otherwise similar to other amphimuta subgroup members."
+      "note": "Tailless. Distinctive: FW underside lacks a basal cell spot (absent, not obscure). HW postdiscal band completely dislocated at vein 2. Otherwise similar to other amphimuta subgroup members.",
+      "features": {
+        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No — HW postdiscal spots rounded (not quadrate/banded)"
+      }
     },
     "r_norda": {
       "type": "result",
@@ -2422,7 +2427,8 @@
         "Is the specimen from Borneo (not the Malay Peninsula)?": "No — Malay Peninsula specimen",
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
         "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes — weak tooth at vein 2 present; postdiscal spots less rounded (more angular), similar to A. norda",
-        "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?": "No — border regular ~0.5 mm"
+        "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?": "No — border regular ~0.5 mm",
+        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No — HW postdiscal spots rounded (not quadrate/banded)"
       }
     },
     "r_major_major": {
@@ -2436,7 +2442,8 @@
         "Is the male a warm violet-purple (with a reddish hue rather than blue), and is the FW postdiscal spot in space 3 an oblique oval?": "Distinctly blue (not violet or purple) with a broad border ≥2 mm — may be A. major or A. stubbsi",
         "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?": "No — border regular ~0.5 mm",
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
-        "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes — weak tooth at vein 2 present; postdiscal spots more rounded, similar to A. amphimuta/A. major"
+        "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes — weak tooth at vein 2 present; postdiscal spots more rounded, similar to A. amphimuta/A. major",
+        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No — HW postdiscal spots rounded (not quadrate/banded)"
       }
     },
     "r_stubbsi": {
@@ -2449,7 +2456,8 @@
       "features": {
         "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?": "No — border regular ~0.5 mm",
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
-        "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "No — no weak tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)"
+        "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "No — no weak tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)",
+        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No — HW postdiscal spots rounded (not quadrate/banded)"
       }
     },
     "r_moolaiana_yajuna": {
@@ -2461,7 +2469,8 @@
       "note": "Tailless. Male: bright shining violet-blue with a thread-like black border; FW 18–22 mm. Female: blue colour reaches the HW termen or very nearly so — black border is extremely narrow or absent at the termen (diagnostic; unique in the amphimuta group). Underside markings very similar to [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734). HW postdiscal band only partially dislocated at vein 2. Range: Malay Peninsula and south Myanmar. (Feature Scoring: Q102 = 'No — HW band not strongly dislocated at vein 2'; the key tree reaches this species via Q101 'Yes — border thread-like' as a routing shortcut, bypassing Q102.)",
       "features": {
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
-        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded"
+        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded",
+        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No — HW postdiscal spots rounded (not quadrate/banded)"
       }
     },
     "r_alica": {
@@ -2472,7 +2481,8 @@
       "common_name": "",
       "note": "Tailless. Bornean endemic. Male: dark, dull purple with a thread-like black border; FW ~17 mm. Female: purple with broad black borders (contrasts sharply with [A. moolaiana](https://www.inaturalist.org/observations?verifiable=true&taxon_id=549326&preferred_place_id=6734) female). HW postdiscal band only partially dislocated at vein 2. Distinguished from [A. moolaiana](https://www.inaturalist.org/observations?verifiable=true&taxon_id=549326&preferred_place_id=6734) by: darker/duller male colour, smaller size, broader female borders, and Bornean range.",
       "features": {
-        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Cannot determine — HW spot 6 position unclear"
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Cannot determine — HW spot 6 position unclear",
+        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No — HW postdiscal spots rounded (not quadrate/banded)"
       }
     },
     "r_sceva_indra": {
@@ -2483,7 +2493,8 @@
       "common_name": "",
       "note": "Tailless. A smaller species. HW underside postdiscal series is dislocated at vein 2 (distinctive within the amphimuta subgroup). Male: dark violet-blue.",
       "features": {
-        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded"
+        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded",
+        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No — HW postdiscal spots rounded (not quadrate/banded)"
       }
     },
     "r_amphimuta_amphimuta": {
@@ -2496,7 +2507,8 @@
       "features": {
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
         "What is the forewing length, and are the hindwing cilia prolonged into a short tooth at vein 2?": "Larger (FW ~20–23 mm); HW cilia often form a short tooth at vein 2",
-        "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes — weak tooth at vein 2 present; postdiscal spots more rounded, similar to A. amphimuta/A. major"
+        "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes — weak tooth at vein 2 present; postdiscal spots more rounded, similar to A. amphimuta/A. major",
+        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No — HW postdiscal spots rounded (not quadrate/banded)"
       }
     },
     "r_zylda_elioti": {
@@ -2509,7 +2521,8 @@
       "features": {
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
         "What is the forewing length, and are the hindwing cilia prolonged into a short tooth at vein 2?": "Smaller (FW ~16–17 mm); HW cilia evenly rounded, no tooth at vein 2",
-        "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "No — no weak tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)"
+        "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "No — no weak tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)",
+        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No — HW postdiscal spots rounded (not quadrate/banded)"
       }
     },
     "r_dajagaka": {
@@ -2520,7 +2533,8 @@
       "common_name": "",
       "note": "Tailless. Bornean endemic. Larger Bornean species (FW 21–25 mm). Male: dark bluish-purple with a thin black border. Female: THICK black borders and noticeably darker venation across the wings (diagnostic). Male valva unilobate; certain identification may require genitalia dissection.",
       "features": {
-        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded"
+        "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded",
+        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No — HW postdiscal spots rounded (not quadrate/banded)"
       }
     },
     "r_baluensis": {
@@ -2529,7 +2543,10 @@
       "taxon_id": null,
       "name": "Arhopala baluensis",
       "common_name": "",
-      "note": "Tailless. Bornean endemic. Smaller Bornean species (FW 18–20 mm). Male: dark purple-blue with a regular 0.5 mm border. Female: purple-blue with narrower-than-typical black borders. HW cilia in space 1a lacks a white spot (may be rarely present but obscure). Male valva unilobate; certain identification may require genitalia dissection."
+      "note": "Tailless. Bornean endemic. Smaller Bornean species (FW 18–20 mm). Male: dark purple-blue with a regular 0.5 mm border. Female: purple-blue with narrower-than-typical black borders. HW cilia in space 1a lacks a white spot (may be rarely present but obscure). Male valva unilobate; certain identification may require genitalia dissection.",
+      "features": {
+        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No — HW postdiscal spots rounded (not quadrate/banded)"
+      }
     },
     "q_muta_size": {
       "type": "question",
@@ -2675,7 +2692,10 @@
       "taxon_id": null,
       "name": "Arhopala perimuta regina",
       "common_name": "Yellowdisc Oakblue",
-      "note": "Tailless; evenly rounded HW tornus with no tooth or tail at vein 2. Easily recognized: HW underside has a prominent central yellowish discal area; markings generally obscure or ill-defined; tornal green scales completely absent. HW postdiscal spots 5, 6, and 7 in echelon (centres overlapping, in a straight line); spot 6 positioned nearer to spot 5 than to the end-cell bar. FW: postdiscal spots 2 and 3 in line (may be oblique); spot 4 shifted distad out of line with spots 5 and 6; dark area under the FW cell obscure, ill-defined, or absent; no spot at the extreme base of space 3."
+      "note": "Tailless; evenly rounded HW tornus with no tooth or tail at vein 2. Easily recognized: HW underside has a prominent central yellowish discal area; markings generally obscure or ill-defined; tornal green scales completely absent. HW postdiscal spots 5, 6, and 7 in echelon (centres overlapping, in a straight line); spot 6 positioned nearer to spot 5 than to the end-cell bar. FW: postdiscal spots 2 and 3 in line (may be oblique); spot 4 shifted distad out of line with spots 5 and 6; dark area under the FW cell obscure, ill-defined, or absent; no spot at the extreme base of space 3.",
+      "features": {
+        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No — HW postdiscal spots rounded (not quadrate/banded)"
+      }
     },
     "r_metamuta_metamuta": {
       "type": "result",
@@ -2683,7 +2703,10 @@
       "taxon_id": null,
       "name": "Arhopala metamuta metamuta",
       "common_name": "",
-      "note": "⚠ Extremely rare — verify carefully before confirming this identification.\n\nTailless; evenly rounded HW tornus with no tooth or tail at vein 2. Striking upperside: male has a brilliant greenish-blue HW that contrasts strongly with the dark, shining violet-blue FW (1.5 mm border). FW postdiscal spots 2 and 3 are in line (perimuta subgroup). If any doubt remains about the contrasting HW colour, reconsider [A. antimuta antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734) (the far more abundant perimuta-subgroup species)."
+      "note": "⚠ Extremely rare — verify carefully before confirming this identification.\n\nTailless; evenly rounded HW tornus with no tooth or tail at vein 2. Striking upperside: male has a brilliant greenish-blue HW that contrasts strongly with the dark, shining violet-blue FW (1.5 mm border). FW postdiscal spots 2 and 3 are in line (perimuta subgroup). If any doubt remains about the contrasting HW colour, reconsider [A. antimuta antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734) (the far more abundant perimuta-subgroup species).",
+      "features": {
+        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No — HW postdiscal spots rounded (not quadrate/banded)"
+      }
     },
     "r_antimuta_antimuta": {
       "type": "result",
@@ -2693,7 +2716,8 @@
       "common_name": "Small Tailless Oakblue",
       "note": "The most abundant species in the amphimuta group. Tailless. FW ~16.0 mm. Male: deep violet-blue; black border reduced to a thread. HW underside: postdiscal band completely dislocated at vein 2 (though this character can sometimes be inconstant — cf. [A. arvina adalitas](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1294761&preferred_place_id=6734), in which it is only partially dislocated); postdiscal spot 6 positioned directly below spot 7, displaced well past the postdiscal row — touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line. FW postdiscal spots 2 and 3 are in line (perimuta subgroup). Confirmatory: male upperside uniformly coloured — no contrasting wing colour as in [A. metamuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340245&preferred_place_id=6734).",
       "features": {
-        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced"
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced",
+        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No — HW postdiscal spots rounded (not quadrate/banded)"
       }
     },
     "q_anthelus_s1": {
@@ -4234,7 +4258,10 @@
       "taxon_id": null,
       "name": "Arhopala hypomuta hypomuta",
       "common_name": "Violet Oakblue",
-      "note": "Tailless. FW ~19 mm. Key character: small spot at the extreme base of HW space 6 on the underside (usually present in Malayan specimens; often absent in Bornean/Sumatran material). Similar to amphimuta group but separated by this basal spot. Male: deep shining violet-blue with very narrow borders. Female: more purple-blue with broader borders."
+      "note": "Tailless. FW ~19 mm. Key character: small spot at the extreme base of HW space 6 on the underside (usually present in Malayan specimens; often absent in Bornean/Sumatran material). Similar to amphimuta group but separated by this basal spot. Male: deep shining violet-blue with very narrow borders. Female: more purple-blue with broader borders.",
+      "features": {
+        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No — HW postdiscal spots rounded (not quadrate/banded)"
+      }
     },
     "r_ijanensis": {
       "type": "result",
