@@ -1503,16 +1503,16 @@
       ]
     },
     {
-      "id": "cp_72_73",
+      "id": "cp_72_77",
       "num_a": 72,
-      "num_b": 73,
+      "num_b": 77,
       "label": "K38",
-      "question": "Hindwing cilia very weakly toothed at vein 2 vs. ♂ valva unilobate?",
+      "question": "Hindwing cilia very weakly toothed at vein 2 vs. Hindwing cilia without a trace of a tooth at vein 2?",
       "a_text": "Hindwing cilia very weakly toothed at vein 2; postdiscal band partially dislocated at vein 2.",
-      "b_text": "♂ valva unilobate. ♂ upperside very dark purple blue, border 0.5 mm. ♀ purple blue, borders narrower than usual. Fwl 18.0-20.0 mm. Very difficult to separate from small individuals of A. amphimuta without dissection of male genitalia. Borneo. ... Arhopala baluensis",
+      "b_text": "Hindwing cilia without a trace of a tooth at vein 2.",
       "upperside": false,
       "skippable": false,
-      "hint": "All species in this section continue on the A side (lead 72); the A text 'very weakly toothed' is a broad group descriptor that covers the full range from weakly toothed to untoothed — the finer cilia distinction (trace of tooth vs. none at all) is made later at K41. The B side (lead 73) identifies A. baluensis, a Bornean species very difficult to separate from small A. amphimuta without dissecting the male genitalia (unilobate valva).",
+      "hint": "Yes (lead 72, weakly toothed) routes to baluensis / amphimuta / major — continue at K39 to distinguish them. No (lead 77, no tooth at all) routes to the remaining species; the next question (K42) splits them by the degree of band dislocation. The cilia character is assessed at vein 2 near the tornus.",
       "guide_phrase": "",
       "guide_link": "",
       "question_phrase": "",
@@ -1520,12 +1520,14 @@
       "invert": false,
       "statement": "",
       "species_a": [
-        "Arhopala alica",
         "Arhopala amphimuta",
-        "Arhopala avathina",
         "Arhopala baluensis",
+        "Arhopala major"
+      ],
+      "species_b": [
+        "Arhopala alica",
+        "Arhopala avathina",
         "Arhopala kurzi",
-        "Arhopala major",
         "Arhopala metamuta",
         "Arhopala moorei",
         "Arhopala muta",
@@ -1533,8 +1535,7 @@
         "Arhopala stubbsi",
         "Arhopala tropaea",
         "Arhopala zylda"
-      ],
-      "species_b": []
+      ]
     },
     {
       "id": "cp_73_74",
@@ -1596,39 +1597,6 @@
         "Arhopala avathina",
         "Arhopala kurzi",
         "Arhopala major",
-        "Arhopala metamuta",
-        "Arhopala moorei",
-        "Arhopala muta",
-        "Arhopala perimuta",
-        "Arhopala stubbsi",
-        "Arhopala tropaea",
-        "Arhopala zylda"
-      ]
-    },
-    {
-      "id": "cp_76_77",
-      "num_a": 76,
-      "num_b": 77,
-      "label": "K41",
-      "question": "♂ upperside violet blue, forewing border 2.0 mm at tornus expanding to 3.0 mm at apex vs. Hindwing cilia without a trace of a tooth at vein 2?",
-      "a_text": "♂ upperside violet blue, forewing border 2.0 mm at tornus expanding to 3.0 mm at apex. ♀ bluer than amphimuta. ... Arhopala major",
-      "b_text": "Hindwing cilia without a trace of a tooth at vein 2.",
-      "upperside": true,
-      "skippable": false,
-      "hint": "Yes identifies A. major (Major Yellow Oakblue) — violet-blue above with a border widening from 2 mm at the tornus to 3 mm at the apex. The character is a weak hindwing tooth at vein 2 (inconspicuous when worn); No, with no trace of a tooth, moves to the rounded-hindwing species. Forewing length 20.0-21.0 mm — not judgeable from a field photo.",
-      "guide_phrase": "",
-      "guide_link": "",
-      "question_phrase": "",
-      "question_link": "",
-      "invert": false,
-      "statement": "",
-      "species_a": [
-        "Arhopala major"
-      ],
-      "species_b": [
-        "Arhopala alica",
-        "Arhopala avathina",
-        "Arhopala kurzi",
         "Arhopala metamuta",
         "Arhopala moorei",
         "Arhopala muta",
@@ -4061,6 +4029,7 @@
       71,
       77,
       78,
+      80,
       80
     ],
     "Arhopala alitaeus": [
@@ -5168,6 +5137,8 @@
       71,
       77,
       78,
+      80,
+      81,
       81
     ],
     "Arhopala sublustris": [
