@@ -1832,26 +1832,18 @@
     },
     {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "No — not the metamuta-type separation: spots 2 and 3 not in echelon, or band partially/differently dislocated at vein 2"
+      "choice": "Yes — HW postdiscal band fully separated at vein 2 (two distinct portions with a clear gap)"
     },
     {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
-      "choice": "No — no dark patch present in FW space 1b"
+      "question": "Are green tornal scales present on the HW underside?",
+      "choice": "Yes — green tornal scales present"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+      "question": "Are HW postdiscal spots 5, 6 and 7 widely out of line — with the inner edge of spot 6 in line with or inside the inner edge of spot 7, and spot 6 touching or overlapping the end-cell bar?",
+      "choice": "No — spots broadly in line; spot 6 only slightly displaced, nearer to spot 5"
     },
     {
-      "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
-      "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
-    },
-    {
-      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
-      "choice": "HW postdiscal band fully dislocated at vein 2 — two clearly separate portions with a visible gap (kurzi or perimuta subgroup)"
-    },
-    {
-      "question": "On the hindwing underside, are postdiscal spots 4 and 5 in a precise, straight (vertical) alignment with each other, distinct from the broader 5-6-7 echelon?",
+      "question": "Do HW postdiscal spots 4 and 5 precisely align in a straight vertical line — distinct from the broader 5-6-7 echelon?",
       "choice": "Yes — HW spots 4 and 5 precisely aligned in a straight vertical line (A. kurzi)"
     },
     {
@@ -1865,10 +1857,6 @@
     {
       "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
       "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
-    },
-    {
-      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — completely dislocated (metamuta type)?",
-      "choice": "No — HW postdiscal band widely dislocated at vein 2, but NOT in the metamuta echelon pattern (spots 2–3 not in echelon; kurzi subgroup)"
     }
   ],
   "Arhopala delta": [
@@ -2008,7 +1996,7 @@
     },
     {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "No — not the metamuta-type separation: spots 2 and 3 not in echelon, or band partially/differently dislocated at vein 2"
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -2070,7 +2058,7 @@
     },
     {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "No — not the metamuta-type separation: spots 2 and 3 not in echelon, or band partially/differently dislocated at vein 2"
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -2152,7 +2140,7 @@
     },
     {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "No — not the metamuta-type separation: spots 2 and 3 not in echelon, or band partially/differently dislocated at vein 2"
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -2250,7 +2238,7 @@
     },
     {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "No — not the metamuta-type separation: spots 2 and 3 not in echelon, or band partially/differently dislocated at vein 2"
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -2344,7 +2332,7 @@
     },
     {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "No — not the metamuta-type separation: spots 2 and 3 not in echelon, or band partially/differently dislocated at vein 2"
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -2444,7 +2432,7 @@
     },
     {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "No — not the metamuta-type separation: spots 2 and 3 not in echelon, or band partially/differently dislocated at vein 2"
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -2526,7 +2514,7 @@
     },
     {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "No — not the metamuta-type separation: spots 2 and 3 not in echelon, or band partially/differently dislocated at vein 2"
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -2620,7 +2608,7 @@
     },
     {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "No — not the metamuta-type separation: spots 2 and 3 not in echelon, or band partially/differently dislocated at vein 2"
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -2722,7 +2710,7 @@
     },
     {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "No — not the metamuta-type separation: spots 2 and 3 not in echelon, or band partially/differently dislocated at vein 2"
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -2800,7 +2788,7 @@
     },
     {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "No — not the metamuta-type separation: spots 2 and 3 not in echelon, or band partially/differently dislocated at vein 2"
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -2878,7 +2866,7 @@
     },
     {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "No — not the metamuta-type separation: spots 2 and 3 not in echelon, or band partially/differently dislocated at vein 2"
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -2948,7 +2936,7 @@
     },
     {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "No — not the metamuta-type separation: spots 2 and 3 not in echelon, or band partially/differently dislocated at vein 2"
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -3022,7 +3010,7 @@
     },
     {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "No — not the metamuta-type separation: spots 2 and 3 not in echelon, or band partially/differently dislocated at vein 2"
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -3118,7 +3106,7 @@
     },
     {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "Yes — HW postdiscal band fully separated at vein 2 (two distinct portions with a clear gap; metamuta type)"
+      "choice": "Yes — HW postdiscal band fully separated at vein 2 (two distinct portions with a clear gap)"
     },
     {
       "question": "Are green tornal scales present on the HW underside?",
@@ -3127,6 +3115,10 @@
     {
       "question": "Are HW postdiscal spots 5, 6 and 7 widely out of line — with the inner edge of spot 6 in line with or inside the inner edge of spot 7, and spot 6 touching or overlapping the end-cell bar?",
       "choice": "No — spots broadly in line; spot 6 only slightly displaced, nearer to spot 5"
+    },
+    {
+      "question": "Do HW postdiscal spots 4 and 5 precisely align in a straight vertical line — distinct from the broader 5-6-7 echelon?",
+      "choice": "No — spots 4 and 5 not in tight vertical alignment (A. metamuta)"
     },
     {
       "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
@@ -3864,7 +3856,7 @@
     },
     {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "No — not the metamuta-type separation: spots 2 and 3 not in echelon, or band partially/differently dislocated at vein 2"
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -4416,7 +4408,7 @@
     },
     {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "No — not the metamuta-type separation: spots 2 and 3 not in echelon, or band partially/differently dislocated at vein 2"
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",

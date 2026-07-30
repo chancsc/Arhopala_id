@@ -856,7 +856,7 @@
         "href": "guide.html#hw-spot6-position"
       },
       "guide_link": "guide.html#hw-spot6-position",
-      "hint": "At this point only two groups remain: the epimuta group ([A. atosia](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498181&preferred_place_id=6734), [A. lurida](https://www.inaturalist.org/observations?verifiable=true&taxon_id=475784&preferred_place_id=6734)) and [A. metamuta metamuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340245&preferred_place_id=6734). Both have full dislocation at vein 2 and green tornal scales, and spots 5, 6 and 7 are broadly in line (not widely out of line). The only distinguishing character is spot 6 position: equidistant/midway (epimuta) vs still clearly nearer to spot 5 (metamuta).",
+      "hint": "At this point three species remain: [A. kurzi](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1149928&preferred_place_id=6734), [A. metamuta metamuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340245&preferred_place_id=6734), and the epimuta group ([A. atosia](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498181&preferred_place_id=6734), [A. lurida](https://www.inaturalist.org/observations?verifiable=true&taxon_id=475784&preferred_place_id=6734)). All have full dislocation at vein 2, green tornal scales, and spots 5–7 broadly in line. Epimuta: spot 6 equidistant/midway. Kurzi and metamuta: spot 6 not displaced or only slightly displaced — separated by the alignment of spots 4 and 5.",
       "choices": [
         {
           "label": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar",
@@ -864,7 +864,7 @@
         },
         {
           "label": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line",
-          "next": "r_metamuta_metamuta"
+          "next": "q_kurzi_metamuta_check"
         }
       ]
     },
@@ -893,13 +893,14 @@
       "id": "q_tailless_not_slightly_check",
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
       "hint": "In [A. metamuta metamuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340245&preferred_place_id=6734), even though spot 6 is only slightly displaced, the HW postdiscal band at vein 2 is fully broken into two distinct portions with a clear gap. In the camdeo, amphimuta and most other non-displaced tailless groups, the band is continuous across vein 2 with no such gap.",
+      "hint": "The HW postdiscal band at vein 2 is fully broken into two distinct portions with a clear gap in [A. kurzi](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1149928&preferred_place_id=6734) (band widely dislocated — diagnostic for the kurzi subgroup) and in [A. metamuta metamuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340245&preferred_place_id=6734) (even though spot 6 is only slightly displaced, the band still shows a clear break). In the camdeo, amphimuta and most other non-displaced tailless groups, the band is continuous across vein 2 with no such gap.",
       "choices": [
         {
-          "label": "Yes — HW postdiscal band fully separated at vein 2 (two distinct portions with a clear gap; metamuta type)",
+          "label": "Yes — HW postdiscal band fully separated at vein 2 (two distinct portions with a clear gap)",
           "next": "q_tailless_epimuta_tornal"
         },
         {
-          "label": "No — not the metamuta-type separation: spots 2 and 3 not in echelon, or band partially/differently dislocated at vein 2",
+          "label": "No — HW postdiscal band continuous or not clearly separated at vein 2",
           "next": "q_tailless_camdeo"
         }
       ],
@@ -2130,8 +2131,7 @@
       "features": {
         "On the forewing underside, is the basal cell spot absent?": "No — basal cell spot present on FW underside",
         "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "No — no white patch just above the tornal lobe",
-        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No — HW postdiscal spots rounded (not quadrate/banded)",
-        "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — completely dislocated (metamuta type)?": "No — HW postdiscal band widely dislocated at vein 2, but NOT in the metamuta echelon pattern (spots 2–3 not in echelon; kurzi subgroup)"
+        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No — HW postdiscal spots rounded (not quadrate/banded)"
       }
     },
     "q_amph_s2": {
@@ -2697,6 +2697,22 @@
       "features": {
         "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No — HW postdiscal spots rounded (not quadrate/banded)"
       }
+    },
+    "q_kurzi_metamuta_check": {
+      "type": "question",
+      "id": "q_kurzi_metamuta_check",
+      "question": "Do HW postdiscal spots 4 and 5 precisely align in a straight vertical line — distinct from the broader 5-6-7 echelon?",
+      "hint": "In [A. kurzi](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1149928&preferred_place_id=6734) (sole member of the kurzi subgroup, tailless with a very rounded HW tornus): spots 5, 6 and 7 are roughly in echelon, and specifically spots 4 and 5 line up in a tight, straight vertical alignment — a reliable distinguishing cue. In [A. metamuta metamuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340245&preferred_place_id=6734), spots 4 and 5 are not in this precise alignment.",
+      "choices": [
+        {
+          "label": "Yes — HW spots 4 and 5 precisely aligned in a straight vertical line (A. kurzi)",
+          "next": "r_kurzi"
+        },
+        {
+          "label": "No — spots 4 and 5 not in tight vertical alignment (A. metamuta)",
+          "next": "r_metamuta_metamuta"
+        }
+      ]
     },
     "r_metamuta_metamuta": {
       "type": "result",
