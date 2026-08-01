@@ -40,19 +40,19 @@
     "q_tailed_long_tail": {
       "type": "question",
       "id": "q_tailed_long_tail",
-      "question": "Is the tail very long and thread-like — approximately 5 mm or longer?",
-      "hint": "Species with tails clearly reaching 5 mm or longer belong to three groups: [A. overdijkinki](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1390509&preferred_place_id=6734) (eumolphus group, ~5 mm), [A. aedias](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498179&preferred_place_id=6734) (aedias group, ~6 mm), and the camdeo subgroup species [A. opalina](https://www.inaturalist.org/observations?verifiable=true&taxon_id=994269&preferred_place_id=6734), [A. opalina azata](https://www.inaturalist.org/observations?verifiable=true&taxon_id=994269&preferred_place_id=6734), [A. camdana camdana](https://www.inaturalist.org/search?q=Arhopala+camdana), [A. semperi russelli](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1148362&preferred_place_id=6734), and [A. dispar pendleburyi](https://www.inaturalist.org/search?q=Arhopala+dispar) (all ~4–6 mm — the upper end of this range clears 5 mm). [A. corinda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=793494&preferred_place_id=6734) has a moderate tail (~3.5 mm); all other tailed species are ≤4 mm. Answer Yes only if the tail clearly exceeds 5 mm; answer No for tails up to ~4 mm.",
+      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
+      "hint": "Most tailed Arhopala have modest tails of 1.5–4 mm. A conspicuously long tail is found in just a few species: [A. aedias](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498179&preferred_place_id=6734) (the longest of any Malayan Arhopala, ~6 mm), [A. overdijkinki](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1390509&preferred_place_id=6734) (~5 mm), and the long-tailed camdeo subgroup ([A. opalina](https://www.inaturalist.org/observations?verifiable=true&taxon_id=994269&preferred_place_id=6734), [A. camdana camdana](https://www.inaturalist.org/search?q=Arhopala+camdana), [A. semperi russelli](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1148362&preferred_place_id=6734), [A. dispar pendleburyi](https://www.inaturalist.org/search?q=Arhopala+dispar), ~4–6 mm). [A. corinda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=793494&preferred_place_id=6734) has a moderate tail (~3.5 mm) — slender and filamentous but not conspicuously long. If the tail clearly stands out as very prominent (typically ≥5 mm), answer Yes. If there is any doubt, answer No.",
       "choices": [
         {
-          "label": "Yes — tail very long, approximately 5 mm or longer (eumolphus or aedias group)",
+          "label": "Yes — tail conspicuously long and thread-like, clearly longer than on most Arhopala",
           "next": "q_long_tail_spot4"
         },
         {
-          "label": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
+          "label": "No — tail moderate or typical for Arhopala",
           "next": "q_tailed_long_dark"
         },
         {
-          "label": "Cannot determine — tail length unclear or broken",
+          "label": "Cannot determine — tail unclear or broken",
           "next": "q_long_tail_length"
         }
       ]
@@ -227,7 +227,7 @@
         "text": "not in echelon with spots 5 and 7",
         "href": "guide.html#hw-spot6-position"
       },
-      "hint": "This separates [A. overdijkinki](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1390509&preferred_place_id=6734) (eumolphus group, tail ~5 mm) from the echelon-spot species. In [A. overdijkinki](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1390509&preferred_place_id=6734), HW postdiscal spot 6 sits directly below spot 7, breaking the diagonal row. Note: [A. eumolphus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498188&preferred_place_id=6734) also has spot 6 directly below spot 7, but its tail is only ~3 mm — if the tail is not clearly ~5 mm, go back and answer No at the previous question. In [A. aedias](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498179&preferred_place_id=6734) (aedias group, tail ~6 mm) and [A. opalina](https://www.inaturalist.org/observations?verifiable=true&taxon_id=994269&preferred_place_id=6734) (camdeo group, tail 4–6 mm), spots 5, 6, and 7 are arranged in echelon — with spot 6 sitting closer to spot 5 than to spot 7. If echelon is confirmed, a follow-up question checks for the camdeo-group dark area under the FW cell.",
+      "hint": "This separates [A. overdijkinki](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1390509&preferred_place_id=6734) (eumolphus group, conspicuously long tail ~5 mm) from the echelon-spot species. In [A. overdijkinki](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1390509&preferred_place_id=6734), HW postdiscal spot 6 sits directly below spot 7, breaking the diagonal row. Note: [A. eumolphus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498188&preferred_place_id=6734) also has spot 6 directly below spot 7, but its tail is only ~3 mm and not conspicuously long — if the tail did not look conspicuously long, go back and answer No at the previous question. In [A. aedias](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498179&preferred_place_id=6734) (aedias group, ~6 mm) and [A. opalina](https://www.inaturalist.org/observations?verifiable=true&taxon_id=994269&preferred_place_id=6734) (camdeo group, ~4–6 mm), spots 5, 6, and 7 are arranged in echelon — with spot 6 sitting closer to spot 5 than to spot 7. If echelon is confirmed, a follow-up question checks for the camdeo-group dark area under the FW cell.",
       "choices": [
         {
           "label": "Yes — HW spot 6 directly below spot 7 (not in echelon with spots 5 and 7)",
@@ -3106,7 +3106,7 @@
       "note": "Tailed. One of the most beautiful and largest species in the genus. Immediately recognized by the central spot in FW underside space 11 (no other camdeo subgroup member has this). Male: shining pale silvery blue overlaid with violet toward the margins. Camdeo subgroup.",
       "features": {
         "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)",
-        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
+        "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?": "No — tail moderate or typical for Arhopala",
         "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
         "Is there a central spot in forewing underside space 11?": "Yes — central spot present in FW space 11",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)",
@@ -3145,7 +3145,7 @@
       "common_name": "",
       "note": "Tailed. Short tail. Similar to [A. belphoebe cowani](https://www.inaturalist.org/search?q=Arhopala+belphoebe) (incomplete FW postdiscal band) but possesses a short tail and is much darker violet-blue. Camdeo subgroup.",
       "features": {
-        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
+        "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?": "No — tail moderate or typical for Arhopala",
         "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
       }
@@ -3158,7 +3158,7 @@
       "common_name": "long-banded Oakblue",
       "note": "Tailed. Short tail ~2.5 mm. Underside spots indistinct. FW postdiscal spot in space 4 shifted distad (out of line with spots 5 and 6). Male: clear violet-blue with thread-like border. Camdeo subgroup.",
       "features": {
-        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
+        "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?": "No — tail moderate or typical for Arhopala",
         "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)",
         "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
@@ -3172,7 +3172,7 @@
       "common_name": "",
       "note": "Tailed. Small species. Very short HW tail (~1.5 mm). Male: even, pale metallic silvery blue upperside. FW spot 4 in normal position (not shifted). Camdeo subgroup.",
       "features": {
-        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
+        "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?": "No — tail moderate or typical for Arhopala",
         "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)",
         "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
@@ -3236,7 +3236,7 @@
       "features": {
         "Is the specimen tailed?": "Cannot determine",
         "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)",
-        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
+        "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?": "No — tail moderate or typical for Arhopala",
         "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
       }
@@ -3262,7 +3262,7 @@
       "note": "Tailed. Underside: purple-brown with markings outlined by white striae; extra spot in mid-space 8 on HW underside (diagnostic for subgroup); NO spot at base of HW space 6 (unlike myrzala subgroup). Male: dark violet-blue with regular 2.0 mm black borders. Bazaloides subgroup.",
       "features": {
         "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)",
-        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
+        "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?": "No — tail moderate or typical for Arhopala",
         "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
       }
@@ -4001,7 +4001,7 @@
       "note": "HW tail ~3 mm. Male: deep purple; FW black border 1.0 mm at apex decreasing to 1.5 mm at tornus. Underside purplish-brown with very dark markings; FW apex powdered with pale violet scales. Female: usually purple-blue.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
-        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
+        "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?": "No — tail moderate or typical for Arhopala",
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No"
       }
@@ -4015,7 +4015,7 @@
       "note": "HW tail ~3 mm. Spot 6 displaced past midway, touching or overlapping end-cell bar; spots 5, 6 and 7 widely out of line. Spot 6 outer edge outwardly straight. Underside markings very faint. No costal spot in FW space 10. FW apex rounded. Male: blue/violet (not green).",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
-        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
+        "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?": "No — tail moderate or typical for Arhopala",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)",
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No"
@@ -4030,7 +4030,7 @@
       "note": "HW tail ~3 mm. Spot 6 outer edge outwardly straight. Underside markings clearly defined. FW apex acute; termen straight. FW 27 mm. Male: blue/violet (not green).",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
-        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
+        "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?": "No — tail moderate or typical for Arhopala",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)",
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No"
@@ -4098,7 +4098,7 @@
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
         "On the hindwing underside, is postdiscal spot 6 convex or almost straight (not concave) and touching or overlapping the end-cell bar, with no costal spot present in forewing space 10?": "No — HW spot 6 concave or not overlapping the bar in this way, or a FW space 10 costal spot is present",
-        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
+        "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?": "No — tail moderate or typical for Arhopala",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW spot 6 is outwardly sinuous or concave; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)",
         "Is forewing postdiscal spot 4 in continuation with spots 5 and 6 (not shifted distad out of line)?": "No — FW spot 4 shifted distad, out of line with spots 5 and 6 (eumolphus group)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)",
@@ -4115,7 +4115,7 @@
       "note": "HW tail ~3 mm. Outer edge of HW postdiscal spot 6 outwardly concave (contrast: straight in [A. overdijkinki](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1390509&preferred_place_id=6734)). Markings broad. FW 21–23 mm. Male: brassy green; FW rounded; black border 2.0 mm at tornus decreasing to 1.0 mm at apex. Female: purple-blue; black border usually reaches apex of FW cell.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
-        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
+        "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?": "No — tail moderate or typical for Arhopala",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW spot 6 is outwardly sinuous or concave; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)",
         "Is forewing postdiscal spot 4 in continuation with spots 5 and 6 (not shifted distad out of line)?": "No — FW spot 4 shifted distad, out of line with spots 5 and 6 (eumolphus group)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)",
@@ -4132,7 +4132,7 @@
       "note": "Spot 6 outer edge outwardly concave. FW apex acute; termen straight or slightly concave. Male: brassy green; black border thread-width above vein 4. Malay Peninsula.",
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
-        "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
+        "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?": "No — tail moderate or typical for Arhopala",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW spot 6 is outwardly sinuous or concave; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)",
         "Is forewing postdiscal spot 4 in continuation with spots 5 and 6 (not shifted distad out of line)?": "No — FW spot 4 shifted distad, out of line with spots 5 and 6 (eumolphus group)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)",
@@ -4554,7 +4554,7 @@
       "id": "q_long_tail_echelon_check",
       "deprioritize": true,
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
-      "hint": "For long-tailed species (tail ≥5 mm) with HW spots 5, 6, and 7 in echelon: [A. aedias](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498179&preferred_place_id=6734) has NO dark area under the forewing cell (characteristic of the aedias group). [A. opalina](https://www.inaturalist.org/observations?verifiable=true&taxon_id=994269&preferred_place_id=6734) has a restricted dark patch in FW underside space 1b bounded by a clearly defined pale bordering line — the same camdeo-group feature visible in shorter-tailed camdeo species.",
+      "hint": "For conspicuously long-tailed species with HW spots 5, 6, and 7 in echelon: [A. aedias](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498179&preferred_place_id=6734) has NO dark area under the forewing cell (characteristic of the aedias group). [A. opalina](https://www.inaturalist.org/observations?verifiable=true&taxon_id=994269&preferred_place_id=6734) and the other long-tailed camdeo subgroup species have a restricted dark patch in FW underside space 1b bounded by a clearly defined pale bordering line.",
       "choices": [
         {
           "label": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)",
