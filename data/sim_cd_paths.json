@@ -25,8 +25,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -99,8 +99,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -173,8 +173,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -225,72 +225,6 @@
       "choice": "No — HW cell about half the wing length or shorter"
     }
   ],
-  "Arhopala aedias": [
-    {
-      "question": "Does the hindwing have a tail?",
-      "choice": "Yes — hindwing is tailed"
-    },
-    {
-      "question": "Are the underside markings incomplete — lacking basal/central cell spots on the forewing and various basal/discal spots on the hindwing, with a narrow postdiscal band?",
-      "choice": "No — complete underside markings"
-    },
-    {
-      "question": "Are the cell spots on the forewing underside outlined in greenish silver?",
-      "choice": "No — no silver outlines"
-    },
-    {
-      "question": "Are the underside markings macular — composed of separated lines and dots rather than continuous solid bands?",
-      "choice": "No — markings form more continuous bands"
-    },
-    {
-      "question": "Is the tail located at vein 3 and short?",
-      "choice": "No — tail at the usual vein 2 (typical position)"
-    },
-    {
-      "question": "In hindwing underside spaces 4 and 5, are the submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border?",
-      "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
-    },
-    {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "Yes — tail conspicuously long and thread-like, clearly longer than on most Arhopala"
-    },
-    {
-      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
-      "choice": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
-    },
-    {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
-    },
-    {
-      "question": "What does the hindwing underside look like?",
-      "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
-    },
-    {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
-      "question": "Is there a central spot in forewing underside space 11? (camdeo group)",
-      "choice": "No — no spot in FW space 11"
-    },
-    {
-      "question": "Is the underside ground colour extensively whitened?",
-      "choice": "No — underside ground colour normal (not whitened)"
-    },
-    {
-      "question": "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?",
-      "choice": "No — HW spot 6 not smaller than spot 7; male pale greyish-blue with violet tinge"
-    },
-    {
-      "question": "What is the underside ground colour and overall appearance?",
-      "choice": "Hair brown; spots narrowly buff-outlined; HW spots 5–6–7 in echelon; large (FW 20–29 mm); rounded FW apex; tail ~6 mm — A. aedias"
-    },
-    {
-      "question": "Is the forewing postdiscal spot in space 4 shifted distad (outward, out of line with spots 5 and 6)?",
-      "choice": "Yes — FW spot 4 shifted distad, out of line with spots 5 and 6"
-    }
-  ],
   "Arhopala barami penanga": [
     {
       "question": "Does the hindwing have a tail?",
@@ -317,8 +251,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -399,8 +333,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -585,8 +519,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -663,8 +597,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -737,8 +671,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -811,8 +745,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -885,8 +819,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -959,8 +893,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -1029,8 +963,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -1103,8 +1037,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -1181,8 +1115,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -1251,8 +1185,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -2331,8 +2265,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -2393,8 +2327,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -2455,8 +2389,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -2541,8 +2475,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -2635,8 +2569,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -2729,8 +2663,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -2789,88 +2723,6 @@
       "choice": "Borneo (Sabah, Sarawak, Brunei, or Kalimantan)"
     }
   ],
-  "Arhopala anarte": [
-    {
-      "question": "Does the hindwing have a tail?",
-      "choice": "Yes — hindwing is tailed"
-    },
-    {
-      "question": "Are the underside markings incomplete — lacking basal/central cell spots on the forewing and various basal/discal spots on the hindwing, with a narrow postdiscal band?",
-      "choice": "No — complete underside markings"
-    },
-    {
-      "question": "Are the cell spots on the forewing underside outlined in greenish silver?",
-      "choice": "No — no silver outlines"
-    },
-    {
-      "question": "Are the underside markings macular — composed of separated lines and dots rather than continuous solid bands?",
-      "choice": "No — markings form more continuous bands"
-    },
-    {
-      "question": "Is the tail located at vein 3 and short?",
-      "choice": "No — tail at the usual vein 2 (typical position)"
-    },
-    {
-      "question": "In hindwing underside spaces 4 and 5, are the submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border?",
-      "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
-    },
-    {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
-    },
-    {
-      "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
-    },
-    {
-      "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
-      "choice": "No — no whitish streak"
-    },
-    {
-      "question": "Do both the forewing and hindwing have a distinctly paler subapical area, irrorated (sprinkled) with whitish scales?",
-      "choice": "No — subapical area not distinctly paler on both wings"
-    },
-    {
-      "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
-      "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
-    },
-    {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
-    },
-    {
-      "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
-      "choice": "No"
-    },
-    {
-      "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
-      "choice": "No"
-    },
-    {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "Yes — central spot present in FW space 11"
-    },
-    {
-      "question": "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?",
-      "choice": "Yes — spot present at extreme base of FW space 10"
-    },
-    {
-      "question": "Is the hindwing tail notably short, approximately 2.5 mm (rather than the typical 3.5–4.0 mm for the group)?",
-      "choice": "No — tail of normal length, 3.5–4.0 mm"
-    },
-    {
-      "question": "Are the underside markings distinctly reddish-brown and strongly contrasting with the ground colour?",
-      "choice": "No — markings purple-brown, faint, or not strongly reddish-brown"
-    },
-    {
-      "question": "Are the underside markings clearly visible and annular (ring-like), strongly contrasting with the ground colour?",
-      "choice": "Yes — markings annular and clearly contrasting with the ground colour"
-    },
-    {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
-    }
-  ],
   "Arhopala dispar pendleburyi": [
     {
       "question": "Does the hindwing have a tail?",
@@ -2897,12 +2749,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "Yes — tail conspicuously long and thread-like, clearly longer than on most Arhopala"
-    },
-    {
       "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
-      "choice": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
+      "choice": "No — HW spots 5, 6 and 7 in diagonal echelon; spot 6 closer to spot 5 than to the end-cell bar (aedias/camdeo characteristic)"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -2911,10 +2759,6 @@
     {
       "question": "What does the hindwing underside look like?",
       "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
-    },
-    {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
       "question": "Is there a central spot in forewing underside space 11? (camdeo group)",
@@ -2971,300 +2815,6 @@
       "choice": "Yes — FW postdiscal band incomplete, ending at vein 7"
     }
   ],
-  "Arhopala johoreana johoreana": [
-    {
-      "question": "Does the hindwing have a tail?",
-      "choice": "Yes — hindwing is tailed"
-    },
-    {
-      "question": "Are the underside markings incomplete — lacking basal/central cell spots on the forewing and various basal/discal spots on the hindwing, with a narrow postdiscal band?",
-      "choice": "No — complete underside markings"
-    },
-    {
-      "question": "Are the cell spots on the forewing underside outlined in greenish silver?",
-      "choice": "No — no silver outlines"
-    },
-    {
-      "question": "Are the underside markings macular — composed of separated lines and dots rather than continuous solid bands?",
-      "choice": "No — markings form more continuous bands"
-    },
-    {
-      "question": "Is the tail located at vein 3 and short?",
-      "choice": "No — tail at the usual vein 2 (typical position)"
-    },
-    {
-      "question": "In hindwing underside spaces 4 and 5, are the submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border?",
-      "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
-    },
-    {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
-    },
-    {
-      "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
-    },
-    {
-      "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
-      "choice": "No — no whitish streak"
-    },
-    {
-      "question": "Do both the forewing and hindwing have a distinctly paler subapical area, irrorated (sprinkled) with whitish scales?",
-      "choice": "No — subapical area not distinctly paler on both wings"
-    },
-    {
-      "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
-      "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
-    },
-    {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
-    },
-    {
-      "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
-      "choice": "No"
-    },
-    {
-      "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
-      "choice": "No"
-    },
-    {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
-      "question": "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
-      "choice": "No"
-    },
-    {
-      "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
-      "choice": "Neither of these"
-    },
-    {
-      "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
-      "choice": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
-    },
-    {
-      "question": "Is the forewing apex acute with the termen nearly straight between veins 2 and 4, combined with hindwing postdiscal spots 6 and 7 distinctly narrow and rectangular (rather than rounded)?",
-      "choice": "No — wing shape or spot shape does not match this combination"
-    },
-    {
-      "question": "Is the forewing postdiscal band nearly completely dislocated at vein 4?",
-      "choice": "No — FW band not dislocated at vein 4; or spot 6 displaced midway toward the end-cell bar (wider echelon)"
-    },
-    {
-      "question": "On the forewing underside, is the basal cell spot absent?",
-      "choice": "No — basal cell spot present on FW underside"
-    },
-    {
-      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch just above the tornal lobe"
-    },
-    {
-      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
-      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
-    },
-    {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
-    }
-  ],
-  "Arhopala hellada ozana": [
-    {
-      "question": "Does the hindwing have a tail?",
-      "choice": "Yes — hindwing is tailed"
-    },
-    {
-      "question": "Are the underside markings incomplete — lacking basal/central cell spots on the forewing and various basal/discal spots on the hindwing, with a narrow postdiscal band?",
-      "choice": "No — complete underside markings"
-    },
-    {
-      "question": "Are the cell spots on the forewing underside outlined in greenish silver?",
-      "choice": "No — no silver outlines"
-    },
-    {
-      "question": "Are the underside markings macular — composed of separated lines and dots rather than continuous solid bands?",
-      "choice": "No — markings form more continuous bands"
-    },
-    {
-      "question": "Is the tail located at vein 3 and short?",
-      "choice": "No — tail at the usual vein 2 (typical position)"
-    },
-    {
-      "question": "In hindwing underside spaces 4 and 5, are the submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border?",
-      "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
-    },
-    {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
-    },
-    {
-      "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
-    },
-    {
-      "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
-      "choice": "No — no whitish streak"
-    },
-    {
-      "question": "Do both the forewing and hindwing have a distinctly paler subapical area, irrorated (sprinkled) with whitish scales?",
-      "choice": "No — subapical area not distinctly paler on both wings"
-    },
-    {
-      "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
-      "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
-    },
-    {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
-    },
-    {
-      "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
-      "choice": "No"
-    },
-    {
-      "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
-      "choice": "No"
-    },
-    {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
-      "question": "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
-      "choice": "No"
-    },
-    {
-      "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
-      "choice": "Neither of these"
-    },
-    {
-      "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
-      "choice": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
-    },
-    {
-      "question": "Is the forewing apex acute with the termen nearly straight between veins 2 and 4, combined with hindwing postdiscal spots 6 and 7 distinctly narrow and rectangular (rather than rounded)?",
-      "choice": "No — wing shape or spot shape does not match this combination"
-    },
-    {
-      "question": "Is the forewing postdiscal band nearly completely dislocated at vein 4?",
-      "choice": "No — FW band not dislocated at vein 4; or spot 6 displaced midway toward the end-cell bar (wider echelon)"
-    },
-    {
-      "question": "On the forewing underside, is the basal cell spot absent?",
-      "choice": "No — basal cell spot present on FW underside"
-    },
-    {
-      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch just above the tornal lobe"
-    },
-    {
-      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
-      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
-    },
-    {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
-    }
-  ],
-  "Arhopala varro selama": [
-    {
-      "question": "Does the hindwing have a tail?",
-      "choice": "Yes — hindwing is tailed"
-    },
-    {
-      "question": "Are the underside markings incomplete — lacking basal/central cell spots on the forewing and various basal/discal spots on the hindwing, with a narrow postdiscal band?",
-      "choice": "No — complete underside markings"
-    },
-    {
-      "question": "Are the cell spots on the forewing underside outlined in greenish silver?",
-      "choice": "No — no silver outlines"
-    },
-    {
-      "question": "Are the underside markings macular — composed of separated lines and dots rather than continuous solid bands?",
-      "choice": "No — markings form more continuous bands"
-    },
-    {
-      "question": "Is the tail located at vein 3 and short?",
-      "choice": "No — tail at the usual vein 2 (typical position)"
-    },
-    {
-      "question": "In hindwing underside spaces 4 and 5, are the submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border?",
-      "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
-    },
-    {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
-    },
-    {
-      "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
-    },
-    {
-      "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
-      "choice": "No — no whitish streak"
-    },
-    {
-      "question": "Do both the forewing and hindwing have a distinctly paler subapical area, irrorated (sprinkled) with whitish scales?",
-      "choice": "No — subapical area not distinctly paler on both wings"
-    },
-    {
-      "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
-      "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
-    },
-    {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
-    },
-    {
-      "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
-      "choice": "No"
-    },
-    {
-      "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
-      "choice": "No"
-    },
-    {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
-      "question": "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
-      "choice": "No"
-    },
-    {
-      "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
-      "choice": "Neither of these"
-    },
-    {
-      "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
-      "choice": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
-    },
-    {
-      "question": "Is the forewing apex acute with the termen nearly straight between veins 2 and 4, combined with hindwing postdiscal spots 6 and 7 distinctly narrow and rectangular (rather than rounded)?",
-      "choice": "No — wing shape or spot shape does not match this combination"
-    },
-    {
-      "question": "Is the forewing postdiscal band nearly completely dislocated at vein 4?",
-      "choice": "No — FW band not dislocated at vein 4; or spot 6 displaced midway toward the end-cell bar (wider echelon)"
-    },
-    {
-      "question": "On the forewing underside, is the basal cell spot absent?",
-      "choice": "No — basal cell spot present on FW underside"
-    },
-    {
-      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch just above the tornal lobe"
-    },
-    {
-      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
-      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
-    },
-    {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
-    }
-  ],
   "Arhopala semperi russelli": [
     {
       "question": "Does the hindwing have a tail?",
@@ -3291,12 +2841,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "Yes — tail conspicuously long and thread-like, clearly longer than on most Arhopala"
-    },
-    {
       "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
-      "choice": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
+      "choice": "No — HW spots 5, 6 and 7 in diagonal echelon; spot 6 closer to spot 5 than to the end-cell bar (aedias/camdeo characteristic)"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -3307,10 +2853,6 @@
       "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "Is there a central spot in forewing underside space 11? (camdeo group)",
       "choice": "No — no spot in FW space 11"
     },
@@ -3319,8 +2861,8 @@
       "choice": "No — underside ground colour normal (not whitened)"
     },
     {
-      "question": "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?",
-      "choice": "Yes — HW spot 6 smaller than spot 7; male clear violet-blue"
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
       "question": "Is a very short hindwing tail (≤2 mm) present AND are the underside spots indistinct?",
@@ -3361,12 +2903,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "Yes — tail conspicuously long and thread-like, clearly longer than on most Arhopala"
-    },
-    {
       "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
-      "choice": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
+      "choice": "No — HW spots 5, 6 and 7 in diagonal echelon; spot 6 closer to spot 5 than to the end-cell bar (aedias/camdeo characteristic)"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -3377,16 +2915,28 @@
       "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "Is there a central spot in forewing underside space 11? (camdeo group)",
       "choice": "No — no spot in FW space 11"
     },
     {
       "question": "Is the underside ground colour extensively whitened?",
       "choice": "No — underside ground colour normal (not whitened)"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+    },
+    {
+      "question": "Is a very short hindwing tail (≤2 mm) present AND are the underside spots indistinct?",
+      "choice": "No — no tail, or tail longer than 2 mm; underside spots distinct"
+    },
+    {
+      "question": "Is the male a deep, dull bluish-purple with a forewing border expanding to 1.25 mm at the apex?",
+      "choice": "Cannot determine — upperside not visible (note: may miss semperi russelli)"
+    },
+    {
+      "question": "What is the forewing length (base to apex)?",
+      "choice": "Smaller — FW approximately 21.0 mm or less"
     },
     {
       "question": "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?",
@@ -3419,12 +2969,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "Yes — tail conspicuously long and thread-like, clearly longer than on most Arhopala"
-    },
-    {
       "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
-      "choice": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
+      "choice": "No — HW spots 5, 6 and 7 in diagonal echelon; spot 6 closer to spot 5 than to the end-cell bar (aedias/camdeo characteristic)"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -3435,16 +2981,28 @@
       "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "Is there a central spot in forewing underside space 11? (camdeo group)",
       "choice": "No — no spot in FW space 11"
     },
     {
       "question": "Is the underside ground colour extensively whitened?",
       "choice": "No — underside ground colour normal (not whitened)"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+    },
+    {
+      "question": "Is a very short hindwing tail (≤2 mm) present AND are the underside spots indistinct?",
+      "choice": "No — no tail, or tail longer than 2 mm; underside spots distinct"
+    },
+    {
+      "question": "Is the male a deep, dull bluish-purple with a forewing border expanding to 1.25 mm at the apex?",
+      "choice": "Cannot determine — upperside not visible (note: may miss semperi russelli)"
+    },
+    {
+      "question": "What is the forewing length (base to apex)?",
+      "choice": "Smaller — FW approximately 21.0 mm or less"
     },
     {
       "question": "On the hindwing underside, is postdiscal spot 6 smaller than postdiscal spot 7?",
@@ -3454,99 +3012,63 @@
   "Arhopala myrzala lammas": [
     {
       "question": "Does the hindwing have a tail?",
-      "choice": "Yes — hindwing is tailed"
+      "choice": "No — hindwing is tailless"
     },
     {
-      "question": "Are the underside markings incomplete — lacking basal/central cell spots on the forewing and various basal/discal spots on the hindwing, with a narrow postdiscal band?",
-      "choice": "No — complete underside markings"
+      "question": "Are the underside markings almost entirely suppressed — the postdiscal spots replaced by a faint, obscure streak rather than a series of distinct separate spots, with most other typical markings absent?",
+      "choice": "No — postdiscal spots distinct; typical markings present"
     },
     {
-      "question": "Are the cell spots on the forewing underside outlined in greenish silver?",
-      "choice": "No — no silver outlines"
-    },
-    {
-      "question": "Are the underside markings macular — composed of separated lines and dots rather than continuous solid bands?",
-      "choice": "No — markings form more continuous bands"
-    },
-    {
-      "question": "Is the tail located at vein 3 and short?",
-      "choice": "No — tail at the usual vein 2 (typical position)"
-    },
-    {
-      "question": "In hindwing underside spaces 4 and 5, are the submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border?",
-      "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
-    },
-    {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
-    },
-    {
-      "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
-    },
-    {
-      "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
-      "choice": "No — no whitish streak"
-    },
-    {
-      "question": "Do both the forewing and hindwing have a distinctly paler subapical area, irrorated (sprinkled) with whitish scales?",
-      "choice": "No — subapical area not distinctly paler on both wings"
-    },
-    {
-      "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
-      "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
-    },
-    {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
-    },
-    {
-      "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
+      "question": "Does the hindwing have a very rounded tornus, and are tornal green scales absent?",
       "choice": "No"
     },
     {
-      "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
+      "question": "Is there a prominent yellowish area in the centre of the hindwing underside, and are the underside markings generally obscure or ill-defined?",
+      "choice": "No — HW discal area not prominently yellowish; markings well-defined"
+    },
+    {
+      "question": "Is there a small spot at the extreme base of hindwing space 6 on the underside?",
       "choice": "No"
     },
     {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
-      "question": "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "question": "Are the underside spots prominent and rounded, with a central spot in FW space 11?",
       "choice": "No"
     },
     {
-      "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
-      "choice": "Neither of these"
+      "question": "In the hindwing underside spaces 2 - 5, are the submarginal spots prominently wedge-shaped (∧), black or dark brown?",
+      "choice": "No — HW submarginal spots not wedge-shaped (uniform in size and colour)"
     },
     {
-      "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
-      "choice": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
+      "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
     },
     {
-      "question": "Is the forewing apex acute with the termen nearly straight between veins 2 and 4, combined with hindwing postdiscal spots 6 and 7 distinctly narrow and rectangular (rather than rounded)?",
-      "choice": "No — wing shape or spot shape does not match this combination"
-    },
-    {
-      "question": "Is the forewing postdiscal band nearly completely dislocated at vein 4?",
-      "choice": "No — FW band not dislocated at vein 4; or spot 6 displaced midway toward the end-cell bar (wider echelon)"
-    },
-    {
-      "question": "On the forewing underside, is the basal cell spot absent?",
-      "choice": "No — basal cell spot present on FW underside"
-    },
-    {
-      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch just above the tornal lobe"
-    },
-    {
-      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
-      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+    },
+    {
+      "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
+      "choice": "No — spots not in echelon"
+    },
+    {
+      "question": "What does the hindwing underside look like?",
+      "choice": "Crimson-brown ground colour with markings outlined in white striae; spot at the base of HW space 6"
+    },
+    {
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
+    },
+    {
+      "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
+      "choice": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
     }
   ],
   "Arhopala myrzalina": [
@@ -3625,72 +3147,20 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5"
     },
     {
-      "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
+      "question": "What does the hindwing underside look like?",
+      "choice": "Purple-brown ground colour with whitish striae; extra spot visible mid-space 8 adjoining the central spot in space 7"
     },
     {
-      "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
-      "choice": "No — no whitish streak"
-    },
-    {
-      "question": "Do both the forewing and hindwing have a distinctly paler subapical area, irrorated (sprinkled) with whitish scales?",
-      "choice": "No — subapical area not distinctly paler on both wings"
-    },
-    {
-      "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
-      "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
-    },
-    {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spot 6 not displaced; in the postdiscal row at the same level as spot 5, with no upward shift toward the end-cell bar"
-    },
-    {
-      "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
-      "choice": "No"
-    },
-    {
-      "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
-      "choice": "No"
-    },
-    {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
-      "question": "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
-      "choice": "No"
-    },
-    {
-      "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
-      "choice": "Neither of these"
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
       "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
       "choice": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
-    },
-    {
-      "question": "Is the forewing apex acute with the termen nearly straight between veins 2 and 4, combined with hindwing postdiscal spots 6 and 7 distinctly narrow and rectangular (rather than rounded)?",
-      "choice": "No — wing shape or spot shape does not match this combination"
-    },
-    {
-      "question": "Is the forewing postdiscal band nearly completely dislocated at vein 4?",
-      "choice": "No — FW band not dislocated at vein 4; or spot 6 displaced midway toward the end-cell bar (wider echelon)"
-    },
-    {
-      "question": "On the forewing underside, is the basal cell spot absent?",
-      "choice": "No — basal cell spot present on FW underside"
-    },
-    {
-      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch just above the tornal lobe"
-    },
-    {
-      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
-      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -3797,8 +3267,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -3839,8 +3309,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -3917,8 +3387,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -3999,8 +3469,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -4085,8 +3555,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -4171,8 +3641,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -4249,8 +3719,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -4331,8 +3801,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -4417,8 +3887,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -4511,8 +3981,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -4605,8 +4075,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -4699,8 +4169,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -4797,8 +4267,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -4891,8 +4361,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -4989,8 +4459,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -5053,14 +4523,6 @@
       "choice": "No — hair-brown underside; no violet powder at apex"
     },
     {
-      "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
-      "choice": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)"
-    },
-    {
-      "question": "Is the forewing termen evenly curved (rounded apex)?",
-      "choice": "No — FW apex acute; termen straight or slightly concave"
-    },
-    {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
       "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
     },
@@ -5095,8 +4557,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -5153,8 +4615,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -5211,8 +4673,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -5275,520 +4737,6 @@
       "choice": "Yes — purplish-brown underside; FW apex with pale violet powder"
     }
   ],
-  "Arhopala acta": [
-    {
-      "question": "Does the hindwing have a tail?",
-      "choice": "Yes — hindwing is tailed"
-    },
-    {
-      "question": "Are the underside markings incomplete — lacking basal/central cell spots on the forewing and various basal/discal spots on the hindwing, with a narrow postdiscal band?",
-      "choice": "No — complete underside markings"
-    },
-    {
-      "question": "Are the cell spots on the forewing underside outlined in greenish silver?",
-      "choice": "No — no silver outlines"
-    },
-    {
-      "question": "Are the underside markings macular — composed of separated lines and dots rather than continuous solid bands?",
-      "choice": "No — markings form more continuous bands"
-    },
-    {
-      "question": "Is the tail located at vein 3 and short?",
-      "choice": "No — tail at the usual vein 2 (typical position)"
-    },
-    {
-      "question": "In hindwing underside spaces 4 and 5, are the submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border?",
-      "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
-    },
-    {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
-    },
-    {
-      "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
-    },
-    {
-      "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
-      "choice": "No — no whitish streak"
-    },
-    {
-      "question": "Do both the forewing and hindwing have a distinctly paler subapical area, irrorated (sprinkled) with whitish scales?",
-      "choice": "No — subapical area not distinctly paler on both wings"
-    },
-    {
-      "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
-      "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
-    },
-    {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
-    },
-    {
-      "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
-      "choice": "No"
-    },
-    {
-      "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
-      "choice": "No"
-    },
-    {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
-      "question": "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
-      "choice": "No"
-    },
-    {
-      "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
-      "choice": "Neither of these"
-    },
-    {
-      "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
-      "choice": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7 (no costal spot in FW space 10)"
-    },
-    {
-      "question": "Does the hindwing cell extend considerably longer than half the wing length, combined with an acute or concave FW apex?",
-      "choice": "No — HW cell moderate length (eumolphus or oenea group)"
-    },
-    {
-      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
-      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
-    },
-    {
-      "question": "How long is the hindwing tail?",
-      "choice": "Tail ~3 mm"
-    },
-    {
-      "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
-      "choice": "No — hair-brown underside; no violet powder at apex"
-    },
-    {
-      "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
-      "choice": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)"
-    },
-    {
-      "question": "Is the forewing termen evenly curved (rounded apex)?",
-      "choice": "Yes — FW apex rounded; termen evenly curved"
-    }
-  ],
-  "Arhopala tameanga": [
-    {
-      "question": "Does the hindwing have a tail?",
-      "choice": "Yes — hindwing is tailed"
-    },
-    {
-      "question": "Are the underside markings incomplete — lacking basal/central cell spots on the forewing and various basal/discal spots on the hindwing, with a narrow postdiscal band?",
-      "choice": "No — complete underside markings"
-    },
-    {
-      "question": "Are the cell spots on the forewing underside outlined in greenish silver?",
-      "choice": "No — no silver outlines"
-    },
-    {
-      "question": "Are the underside markings macular — composed of separated lines and dots rather than continuous solid bands?",
-      "choice": "No — markings form more continuous bands"
-    },
-    {
-      "question": "Is the tail located at vein 3 and short?",
-      "choice": "No — tail at the usual vein 2 (typical position)"
-    },
-    {
-      "question": "In hindwing underside spaces 4 and 5, are the submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border?",
-      "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
-    },
-    {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
-    },
-    {
-      "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
-    },
-    {
-      "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
-      "choice": "No — no whitish streak"
-    },
-    {
-      "question": "Do both the forewing and hindwing have a distinctly paler subapical area, irrorated (sprinkled) with whitish scales?",
-      "choice": "No — subapical area not distinctly paler on both wings"
-    },
-    {
-      "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
-      "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
-    },
-    {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
-    },
-    {
-      "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
-      "choice": "No"
-    },
-    {
-      "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
-      "choice": "No"
-    },
-    {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
-      "question": "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
-      "choice": "No"
-    },
-    {
-      "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
-      "choice": "Neither of these"
-    },
-    {
-      "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
-      "choice": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7 (no costal spot in FW space 10)"
-    },
-    {
-      "question": "Does the hindwing cell extend considerably longer than half the wing length, combined with an acute or concave FW apex?",
-      "choice": "No — HW cell moderate length (eumolphus or oenea group)"
-    },
-    {
-      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
-      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
-    },
-    {
-      "question": "How long is the hindwing tail?",
-      "choice": "Tail ~3 mm"
-    },
-    {
-      "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
-      "choice": "No — hair-brown underside; no violet powder at apex"
-    },
-    {
-      "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
-      "choice": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)"
-    },
-    {
-      "question": "Is the forewing termen evenly curved (rounded apex)?",
-      "choice": "No — FW apex acute; termen straight or slightly concave"
-    }
-  ],
-  "Arhopala horsfieldi basiviridis": [
-    {
-      "question": "Does the hindwing have a tail?",
-      "choice": "Yes — hindwing is tailed"
-    },
-    {
-      "question": "Are the underside markings incomplete — lacking basal/central cell spots on the forewing and various basal/discal spots on the hindwing, with a narrow postdiscal band?",
-      "choice": "No — complete underside markings"
-    },
-    {
-      "question": "Are the cell spots on the forewing underside outlined in greenish silver?",
-      "choice": "No — no silver outlines"
-    },
-    {
-      "question": "Are the underside markings macular — composed of separated lines and dots rather than continuous solid bands?",
-      "choice": "No — markings form more continuous bands"
-    },
-    {
-      "question": "Is the tail located at vein 3 and short?",
-      "choice": "No — tail at the usual vein 2 (typical position)"
-    },
-    {
-      "question": "In hindwing underside spaces 4 and 5, are the submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border?",
-      "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
-    },
-    {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
-    },
-    {
-      "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
-    },
-    {
-      "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
-      "choice": "No — no whitish streak"
-    },
-    {
-      "question": "Do both the forewing and hindwing have a distinctly paler subapical area, irrorated (sprinkled) with whitish scales?",
-      "choice": "No — subapical area not distinctly paler on both wings"
-    },
-    {
-      "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
-      "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
-    },
-    {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
-    },
-    {
-      "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
-      "choice": "No"
-    },
-    {
-      "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
-      "choice": "No"
-    },
-    {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
-      "question": "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
-      "choice": "No"
-    },
-    {
-      "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
-      "choice": "Neither of these"
-    },
-    {
-      "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
-      "choice": "HW spot 6 is outwardly sinuous or concave; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)"
-    },
-    {
-      "question": "Is forewing postdiscal spot 4 in continuation with spots 5 and 6 (not shifted distad out of line)?",
-      "choice": "No — FW spot 4 shifted distad, out of line with spots 5 and 6 (eumolphus group)"
-    },
-    {
-      "question": "Does the hindwing cell extend considerably longer than half the wing length, combined with an acute or concave FW apex?",
-      "choice": "No — HW cell moderate length (eumolphus or oenea group)"
-    },
-    {
-      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
-      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
-    },
-    {
-      "question": "How long is the hindwing tail?",
-      "choice": "Tail ~3 mm"
-    },
-    {
-      "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
-      "choice": "No — hair-brown underside; no violet powder at apex"
-    },
-    {
-      "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
-      "choice": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)"
-    },
-    {
-      "question": "Is the forewing termen evenly curved (rounded apex), or straight and slightly concave (acute apex)?",
-      "choice": "FW apex rounded; termen evenly curved"
-    },
-    {
-      "question": "How distinct are the underside markings?",
-      "choice": "Underside markings very dark and broad"
-    }
-  ],
-  "Arhopala eumolphus maxwelli": [
-    {
-      "question": "Does the hindwing have a tail?",
-      "choice": "Yes — hindwing is tailed"
-    },
-    {
-      "question": "Are the underside markings incomplete — lacking basal/central cell spots on the forewing and various basal/discal spots on the hindwing, with a narrow postdiscal band?",
-      "choice": "No — complete underside markings"
-    },
-    {
-      "question": "Are the cell spots on the forewing underside outlined in greenish silver?",
-      "choice": "No — no silver outlines"
-    },
-    {
-      "question": "Are the underside markings macular — composed of separated lines and dots rather than continuous solid bands?",
-      "choice": "No — markings form more continuous bands"
-    },
-    {
-      "question": "Is the tail located at vein 3 and short?",
-      "choice": "No — tail at the usual vein 2 (typical position)"
-    },
-    {
-      "question": "In hindwing underside spaces 4 and 5, are the submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border?",
-      "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
-    },
-    {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
-    },
-    {
-      "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
-    },
-    {
-      "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
-      "choice": "No — no whitish streak"
-    },
-    {
-      "question": "Do both the forewing and hindwing have a distinctly paler subapical area, irrorated (sprinkled) with whitish scales?",
-      "choice": "No — subapical area not distinctly paler on both wings"
-    },
-    {
-      "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
-      "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
-    },
-    {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
-    },
-    {
-      "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
-      "choice": "No"
-    },
-    {
-      "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
-      "choice": "No"
-    },
-    {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
-      "question": "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
-      "choice": "No"
-    },
-    {
-      "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
-      "choice": "Neither of these"
-    },
-    {
-      "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
-      "choice": "HW spot 6 is outwardly sinuous or concave; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)"
-    },
-    {
-      "question": "Is forewing postdiscal spot 4 in continuation with spots 5 and 6 (not shifted distad out of line)?",
-      "choice": "No — FW spot 4 shifted distad, out of line with spots 5 and 6 (eumolphus group)"
-    },
-    {
-      "question": "Does the hindwing cell extend considerably longer than half the wing length, combined with an acute or concave FW apex?",
-      "choice": "No — HW cell moderate length (eumolphus or oenea group)"
-    },
-    {
-      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
-      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
-    },
-    {
-      "question": "How long is the hindwing tail?",
-      "choice": "Tail ~3 mm"
-    },
-    {
-      "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
-      "choice": "No — hair-brown underside; no violet powder at apex"
-    },
-    {
-      "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
-      "choice": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)"
-    },
-    {
-      "question": "Is the forewing termen evenly curved (rounded apex), or straight and slightly concave (acute apex)?",
-      "choice": "FW apex rounded; termen evenly curved"
-    },
-    {
-      "question": "How distinct are the underside markings?",
-      "choice": "Underside markings standard contrast"
-    }
-  ],
-  "Arhopala hellenore siroes": [
-    {
-      "question": "Does the hindwing have a tail?",
-      "choice": "Yes — hindwing is tailed"
-    },
-    {
-      "question": "Are the underside markings incomplete — lacking basal/central cell spots on the forewing and various basal/discal spots on the hindwing, with a narrow postdiscal band?",
-      "choice": "No — complete underside markings"
-    },
-    {
-      "question": "Are the cell spots on the forewing underside outlined in greenish silver?",
-      "choice": "No — no silver outlines"
-    },
-    {
-      "question": "Are the underside markings macular — composed of separated lines and dots rather than continuous solid bands?",
-      "choice": "No — markings form more continuous bands"
-    },
-    {
-      "question": "Is the tail located at vein 3 and short?",
-      "choice": "No — tail at the usual vein 2 (typical position)"
-    },
-    {
-      "question": "In hindwing underside spaces 4 and 5, are the submarginal spots prominently black and wedge-shaped (∧), with the postdiscal spots large and edged by a thick, pale border?",
-      "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
-    },
-    {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
-    },
-    {
-      "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
-    },
-    {
-      "question": "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?",
-      "choice": "No — no whitish streak"
-    },
-    {
-      "question": "Do both the forewing and hindwing have a distinctly paler subapical area, irrorated (sprinkled) with whitish scales?",
-      "choice": "No — subapical area not distinctly paler on both wings"
-    },
-    {
-      "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
-      "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
-    },
-    {
-      "question": "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?",
-      "choice": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
-    },
-    {
-      "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
-      "choice": "No"
-    },
-    {
-      "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
-      "choice": "No"
-    },
-    {
-      "question": "Is there a central spot in forewing underside space 11?",
-      "choice": "No — no central spot in FW space 11"
-    },
-    {
-      "question": "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
-      "choice": "No"
-    },
-    {
-      "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
-      "choice": "Neither of these"
-    },
-    {
-      "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
-      "choice": "HW spot 6 is outwardly sinuous or concave; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)"
-    },
-    {
-      "question": "Is forewing postdiscal spot 4 in continuation with spots 5 and 6 (not shifted distad out of line)?",
-      "choice": "No — FW spot 4 shifted distad, out of line with spots 5 and 6 (eumolphus group)"
-    },
-    {
-      "question": "Does the hindwing cell extend considerably longer than half the wing length, combined with an acute or concave FW apex?",
-      "choice": "No — HW cell moderate length (eumolphus or oenea group)"
-    },
-    {
-      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
-      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
-    },
-    {
-      "question": "How long is the hindwing tail?",
-      "choice": "Tail ~3 mm"
-    },
-    {
-      "question": "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?",
-      "choice": "No — hair-brown underside; no violet powder at apex"
-    },
-    {
-      "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?",
-      "choice": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)"
-    },
-    {
-      "question": "Is the forewing termen evenly curved (rounded apex), or straight and slightly concave (acute apex)?",
-      "choice": "FW apex acute; termen straight or slightly concave"
-    },
-    {
-      "question": "Where was this specimen found?",
-      "choice": "Malay Peninsula (or unknown locality)"
-    }
-  ],
   "Arhopala paraganesa mendava": [
     {
       "question": "Does the hindwing have a tail?",
@@ -5815,8 +4763,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -5877,8 +4825,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -5939,8 +4887,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -6005,8 +4953,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -6067,8 +5015,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -6133,8 +5081,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -6199,8 +5147,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -6245,8 +5193,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -6323,8 +5271,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -6409,8 +5357,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -6495,8 +5443,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -6623,8 +5571,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -6725,8 +5673,8 @@
       "choice": "No — HW spaces 4–5 submarginal spots not wedge-shaped, or postdiscal spots not thickly pale-bordered"
     },
     {
-      "question": "Does the tail look conspicuously long — clearly standing out as much longer than on most Arhopala?",
-      "choice": "No — tail moderate or typical for Arhopala"
+      "question": "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?",
+      "choice": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
