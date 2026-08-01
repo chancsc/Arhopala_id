@@ -784,16 +784,16 @@
       "num_a": 24,
       "num_b": 45,
       "label": "K14",
-      "question": "Underside forewing with a dark area under the cell outwardly defined by a pale line normally stretching right across space 1b vs. Underside forewing dark area under cell obscure and ill-defined or absent; without spot at extreme base of space 3?",
+      "question": "Underside forewing with a dark area under the cell outwardly defined by a pale line normally stretching right across space 1b vs. Underside forewing dark area under cell obscure and ill-defined or absent?",
       "a_text": "Underside forewing with a dark area under the cell outwardly defined by a pale line normally stretching right across space 1b; often with a spot at extreme base of space 3.",
       "b_text": "Underside forewing dark area under cell obscure and ill-defined or absent; without spot at extreme base of space 3.",
       "upperside": false,
       "skippable": false,
-      "hint": "Yes routes exclusively into the camdeo group: a dark area under the forewing cell, bounded outwardly by a pale line running right across space 1b, often with a spot at the extreme base of space 3. Every species reachable from Yes belongs to that group (listed below). No takes the other route — for species where the dark area under the forewing cell is obscure or absent, and without a spot at the extreme base of space 3 — and leads to the amphimuta, agesilaus, hypomuta and aedias groups.",
-      "guide_phrase": "dark area under forewing cell",
-      "guide_link": "guide.html#fw-spots",
-      "question_phrase": "dark area under forewing cell",
-      "question_link": "guide.html#fw-spots",
+      "hint": "Yes routes exclusively into the camdeo group: a dark area under the forewing cell, bounded outwardly by a pale line running right across space 1b, often with a spot at the extreme base of space 3. Every species reachable from Yes belongs to that group (listed below). No takes the other route — keying instead on the hindwing spot-6 position (spot 6 overlapping, or nearer to, spot 5 than the end-cell bar) — and leads to the amphimuta, hypomuta and aedias groups.",
+      "guide_phrase": "",
+      "guide_link": "",
+      "question_phrase": "",
+      "question_link": "",
       "invert": false,
       "statement": "",
       "species_a": [
@@ -1503,16 +1503,16 @@
       ]
     },
     {
-      "id": "cp_72_77",
+      "id": "cp_72_73",
       "num_a": 72,
-      "num_b": 77,
+      "num_b": 73,
       "label": "K38",
-      "question": "Hindwing cilia very weakly toothed at vein 2 vs. Hindwing cilia without a trace of a tooth at vein 2?",
+      "question": "Hindwing cilia very weakly toothed at vein 2 vs. ♂ valva unilobate?",
       "a_text": "Hindwing cilia very weakly toothed at vein 2; postdiscal band partially dislocated at vein 2.",
-      "b_text": "Hindwing cilia without a trace of a tooth at vein 2.",
+      "b_text": "♂ valva unilobate. ♂ upperside very dark purple blue, border 0.5 mm. ♀ purple blue, borders narrower than usual. Fwl 18.0-20.0 mm. Very difficult to separate from small individuals of A. amphimuta without dissection of male genitalia. Borneo. ... Arhopala baluensis",
       "upperside": false,
       "skippable": false,
-      "hint": "Yes (lead 72, weakly toothed) routes to baluensis / amphimuta / major — continue at K39 to distinguish them. No (lead 77, no tooth at all) routes to the remaining species; the next question (K42) splits them by the degree of band dislocation. The cilia character is assessed at vein 2 near the tornus.",
+      "hint": "Both leads continue to key 73; the No lead describes A. baluensis, a Bornean insect very hard to separate from small A. amphimuta without dissecting the male genitalia (unilobate valva). Its cilia usually lack the white spot in space 1a and are only weakly toothed at vein 2.",
       "guide_phrase": "",
       "guide_link": "",
       "question_phrase": "",
@@ -1520,14 +1520,12 @@
       "invert": false,
       "statement": "",
       "species_a": [
-        "Arhopala amphimuta",
-        "Arhopala baluensis",
-        "Arhopala major"
-      ],
-      "species_b": [
         "Arhopala alica",
+        "Arhopala amphimuta",
         "Arhopala avathina",
+        "Arhopala baluensis",
         "Arhopala kurzi",
+        "Arhopala major",
         "Arhopala metamuta",
         "Arhopala moorei",
         "Arhopala muta",
@@ -1535,7 +1533,8 @@
         "Arhopala stubbsi",
         "Arhopala tropaea",
         "Arhopala zylda"
-      ]
+      ],
+      "species_b": []
     },
     {
       "id": "cp_73_74",
@@ -1607,16 +1606,16 @@
       ]
     },
     {
-      "id": "cp_78_82",
-      "num_a": 78,
-      "num_b": 82,
-      "label": "K42",
-      "question": "Underside hindwing postdiscal band partially dislocated at vein 2 (but character not absolutely constant in A vs. Underside hindwing postdiscal band completely dislocated at vein 2?",
-      "a_text": "Underside hindwing postdiscal band partially dislocated at vein 2 (but character not absolutely constant in A. alica).",
-      "b_text": "Underside hindwing postdiscal band completely dislocated at vein 2.",
-      "upperside": false,
+      "id": "cp_76_77",
+      "num_a": 76,
+      "num_b": 77,
+      "label": "K41",
+      "question": "♂ upperside violet blue, forewing border 2.0 mm at tornus expanding to 3.0 mm at apex vs. Hindwing cilia without a trace of a tooth at vein 2?",
+      "a_text": "♂ upperside violet blue, forewing border 2.0 mm at tornus expanding to 3.0 mm at apex. ♀ bluer than amphimuta. ... Arhopala major",
+      "b_text": "Hindwing cilia without a trace of a tooth at vein 2.",
+      "upperside": true,
       "skippable": false,
-      "hint": "Within the no-tooth (lead 77) arm of the key. Partially dislocated (A=78) routes to zylda, alica and stubbsi — the spot in space 2 is only slightly stepped from spot in space 1b. Completely dislocated (B=82) routes to avathina, kurzi, and the muta/metamuta/moorei/perimuta/tropaea group — the band is fully broken into two offset portions at vein 2. Not absolutely constant in A. alica.",
+      "hint": "Yes identifies A. major (Major Yellow Oakblue) — violet-blue above with a border widening from 2 mm at the tornus to 3 mm at the apex. The character is a weak hindwing tooth at vein 2 (inconspicuous when worn); No, with no trace of a tooth, moves to the rounded-hindwing species. Forewing length 20.0-21.0 mm — not judgeable from a field photo.",
       "guide_phrase": "",
       "guide_link": "",
       "question_phrase": "",
@@ -1624,6 +1623,9 @@
       "invert": false,
       "statement": "",
       "species_a": [
+        "Arhopala major"
+      ],
+      "species_b": [
         "Arhopala alica",
         "Arhopala avathina",
         "Arhopala kurzi",
@@ -1634,8 +1636,39 @@
         "Arhopala stubbsi",
         "Arhopala tropaea",
         "Arhopala zylda"
+      ]
+    },
+    {
+      "id": "cp_78_82",
+      "num_a": 78,
+      "num_b": 82,
+      "label": "K42",
+      "question": "Underside hindwing postdiscal band partially dislocated at vein 2 (but character not absolutely constant in A vs. Underside hindwing postdiscal band completely dislocated at vein 2?",
+      "a_text": "Underside hindwing postdiscal band partially dislocated at vein 2 (but character not absolutely constant in A. alica).",
+      "b_text": "Underside hindwing postdiscal band completely dislocated at vein 2.",
+      "upperside": false,
+      "skippable": false,
+      "hint": "Splits the tailless amphimuta group by the hindwing postdiscal band. Partially dislocated (Yes) = the spot in space 2 is only slightly stepped from the spot in space 1b; completely dislocated (No) = the band is fully broken into two offset portions at vein 2. Not absolutely constant in A. alica.",
+      "guide_phrase": "",
+      "guide_link": "",
+      "question_phrase": "",
+      "question_link": "",
+      "invert": false,
+      "statement": "",
+      "species_a": [
+        "Arhopala alica",
+        "Arhopala stubbsi",
+        "Arhopala zylda"
       ],
-      "species_b": []
+      "species_b": [
+        "Arhopala avathina",
+        "Arhopala kurzi",
+        "Arhopala metamuta",
+        "Arhopala moorei",
+        "Arhopala muta",
+        "Arhopala perimuta",
+        "Arhopala tropaea"
+      ]
     },
     {
       "id": "cp_79_80",
@@ -1659,14 +1692,7 @@
       ],
       "species_b": [
         "Arhopala alica",
-        "Arhopala avathina",
-        "Arhopala kurzi",
-        "Arhopala metamuta",
-        "Arhopala moorei",
-        "Arhopala muta",
-        "Arhopala perimuta",
-        "Arhopala stubbsi",
-        "Arhopala tropaea"
+        "Arhopala stubbsi"
       ]
     },
     {
@@ -1690,14 +1716,7 @@
         "Arhopala alica"
       ],
       "species_b": [
-        "Arhopala avathina",
-        "Arhopala kurzi",
-        "Arhopala metamuta",
-        "Arhopala moorei",
-        "Arhopala muta",
-        "Arhopala perimuta",
-        "Arhopala stubbsi",
-        "Arhopala tropaea"
+        "Arhopala stubbsi"
       ]
     },
     {
@@ -1720,15 +1739,7 @@
       "species_a": [
         "Arhopala stubbsi"
       ],
-      "species_b": [
-        "Arhopala avathina",
-        "Arhopala kurzi",
-        "Arhopala metamuta",
-        "Arhopala moorei",
-        "Arhopala muta",
-        "Arhopala perimuta",
-        "Arhopala tropaea"
-      ]
+      "species_b": []
     },
     {
       "id": "cp_83_84",
@@ -4027,6 +4038,9 @@
       59,
       63,
       71,
+      72,
+      74,
+      76,
       77,
       78,
       80,
@@ -4286,6 +4300,9 @@
       59,
       63,
       71,
+      72,
+      74,
+      76,
       77,
       82,
       83
@@ -4724,6 +4741,9 @@
       59,
       63,
       71,
+      72,
+      74,
+      76,
       77,
       82,
       84,
@@ -4773,6 +4793,7 @@
       71,
       72,
       74,
+      76,
       76
     ],
     "Arhopala metamuta": [
@@ -4786,6 +4807,9 @@
       59,
       63,
       71,
+      72,
+      74,
+      76,
       77,
       82,
       84,
@@ -4835,6 +4859,9 @@
       59,
       63,
       71,
+      72,
+      74,
+      76,
       77,
       82,
       84,
@@ -4854,6 +4881,9 @@
       59,
       63,
       71,
+      72,
+      74,
+      76,
       77,
       82,
       84,
@@ -4978,6 +5008,9 @@
       59,
       63,
       71,
+      72,
+      74,
+      76,
       77,
       82,
       84,
@@ -5135,6 +5168,9 @@
       59,
       63,
       71,
+      72,
+      74,
+      76,
       77,
       78,
       80,
@@ -5195,6 +5231,9 @@
       59,
       63,
       71,
+      72,
+      74,
+      76,
       77,
       82,
       84,
@@ -5270,6 +5309,9 @@
       59,
       63,
       71,
+      72,
+      74,
+      76,
       77,
       78,
       79

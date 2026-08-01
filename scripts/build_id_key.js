@@ -199,7 +199,10 @@ function dfs(node, chosenLeads, trace, onPath) {
     const nextTrace = trace.concat({ coupletId: cp.id, choice });
     const r = choice === 'a' ? chooseA(node) : chooseB(node);
     if (r.terminal) {
-      if (speciesPaths[r.terminal] === undefined) {
+      if (speciesPaths[r.terminal] === undefined || nextLeads.length < speciesPaths[r.terminal].length) {
+        if (speciesPaths[r.terminal] !== undefined) {
+          duplicates.push({ name: r.terminal, path: speciesPaths[r.terminal] });
+        }
         speciesPaths[r.terminal] = nextLeads;
         speciesTrace[r.terminal] = nextTrace;
       } else {
