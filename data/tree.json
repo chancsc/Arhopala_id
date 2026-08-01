@@ -481,7 +481,7 @@
         },
         {
           "label": "HW spot 6 is outwardly sinuous or concave; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)",
-          "next": "g_rama"
+          "next": "q_rama_eumolphus_gate"
         },
         {
           "label": "FW postdiscal band is continuous and unbroken; no costal spot in FW space 10",
@@ -1388,6 +1388,22 @@
         "HW band partially dislocated at vein 2"
       ],
       "next": "r_vihara"
+    },
+    "q_rama_eumolphus_gate": {
+      "type": "question",
+      "id": "q_rama_eumolphus_gate",
+      "question": "Is forewing postdiscal spot 4 in continuation with spots 5 and 6 (not shifted distad out of line)?",
+      "hint": "The rama group (A. paralea ~2.5 mm tail, A. buddha ~1 mm tail) has spot 4 continuous with spots 5 and 6 — the postdiscal band is unbroken or nearly so. In the eumolphus/horsfieldi group spot 4 is shifted distad, clearly out of line with spots 5 and 6.",
+      "choices": [
+        {
+          "label": "Yes — FW spot 4 in continuation with spots 5 and 6 (rama group)",
+          "next": "g_rama"
+        },
+        {
+          "label": "No — FW spot 4 shifted distad, out of line with spots 5 and 6 (eumolphus group)",
+          "next": "q_tailed_aurea_check"
+        }
+      ]
     },
     "g_rama": {
       "type": "group",
@@ -4083,6 +4099,8 @@
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
         "On the hindwing underside, is postdiscal spot 6 convex or almost straight (not concave) and touching or overlapping the end-cell bar, with no costal spot present in forewing space 10?": "No — HW spot 6 concave or not overlapping the bar in this way, or a FW space 10 costal spot is present",
         "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
+        "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW spot 6 is outwardly sinuous or concave; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)",
+        "Is forewing postdiscal spot 4 in continuation with spots 5 and 6 (not shifted distad out of line)?": "No — FW spot 4 shifted distad, out of line with spots 5 and 6 (eumolphus group)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)",
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No"
@@ -4098,6 +4116,8 @@
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
         "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
+        "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW spot 6 is outwardly sinuous or concave; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)",
+        "Is forewing postdiscal spot 4 in continuation with spots 5 and 6 (not shifted distad out of line)?": "No — FW spot 4 shifted distad, out of line with spots 5 and 6 (eumolphus group)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)",
         "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No"
@@ -4113,6 +4133,8 @@
       "features": {
         "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
         "Is the tail very long and thread-like — approximately 5 mm or longer?": "No — tail moderate or typical for Arhopala (up to ~4 mm)",
+        "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW spot 6 is outwardly sinuous or concave; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)",
+        "Is forewing postdiscal spot 4 in continuation with spots 5 and 6 (not shifted distad out of line)?": "No — FW spot 4 shifted distad, out of line with spots 5 and 6 (eumolphus group)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No"
       }
