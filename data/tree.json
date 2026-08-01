@@ -934,7 +934,7 @@
       "type": "question",
       "id": "q_tailless_band_early",
       "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "hint": "[A. belphoebe cowani](https://www.inaturalist.org/search?q=Arhopala+belphoebe) is the only tailless species with an incomplete FW postdiscal band — decisive on its own, no further questions needed. All other tailless species have a complete (or only partially dislocated) band. Note: A. belphoebe cowani is very rarely encountered — it currently has no research-grade sightings on iNaturalist — so answer Yes only if the incomplete band (ending at vein 7, no spot 9) is clearly visible.",
+      "hint": "[A. belphoebe cowani](https://www.inaturalist.org/search?q=Arhopala+belphoebe) (tailless) and [A. johoreana johoreana](https://www.inaturalist.org/search?q=Arhopala+johoreana) (short-tailed) are the only species with an incomplete FW postdiscal band ending at vein 7 — all other species have a complete (or only partially dislocated) band. Note: both are very rarely encountered with no research-grade iNaturalist sightings, so answer Yes only if the incomplete band is clearly visible.",
       "choices": [
         {
           "label": "Yes — FW postdiscal band incomplete, ending at vein 7",
