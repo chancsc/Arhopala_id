@@ -170,6 +170,10 @@
           "next": "q_myrzala_spot7"
         },
         {
+          "label": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5",
+          "next": "q_myrzala_spot7"
+        },
+        {
           "label": "Cannot determine — HW spot arrangement unclear",
           "next": "q_myrzala_spot7"
         }
@@ -218,7 +222,7 @@
           "next": "q_tailed_long_dark"
         },
         {
-          "label": "No — HW spots 5, 6 and 7 in diagonal echelon; spot 6 closer to spot 5 than to the end-cell bar (aedias/camdeo characteristic)",
+          "label": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
           "next": "q_long_tail_echelon_check"
         },
         {
