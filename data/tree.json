@@ -166,11 +166,11 @@
           "next": "q_myrzala_spot7"
         },
         {
-          "label": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
+          "label": "No — HW spots 5, 6 and 7 in marked echelon; spot 6 clearly closer to spot 5 than to the end-cell bar (aedias/camdeo type)",
           "next": "q_myrzala_spot7"
         },
         {
-          "label": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5",
+          "label": "No — HW spot 6 in the normal row; roughly equidistant from spot 5 and end-cell bar (most tailed Arhopala)",
           "next": "q_myrzala_spot7"
         },
         {
@@ -211,18 +211,18 @@
         "text": "not in echelon with spots 5 and 7",
         "href": "guide.html#hw-spot6-position"
       },
-      "hint": "Three arrangements to distinguish: (1) **Directly below spot 7** — spot 6 is displaced well out of the postdiscal row, sitting directly below spot 7 with its inner edge level with or inside spot 7's inner edge. This characterises the eumolphus group ([A. overdijkinki](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1390509&preferred_place_id=6734), [A. eumolphus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498188&preferred_place_id=6734), [A. horsfieldi](https://www.inaturalist.org/observations?verifiable=true&taxon_id=888216&preferred_place_id=6734), [A. hellenore](https://www.inaturalist.org/observations?verifiable=true&taxon_id=883689&preferred_place_id=6734), and related species). (2) **In echelon (nearer to spot 5)** — spots 5, 6, and 7 form a diagonal stepping row with spot 6 sitting closer to spot 5 than to the end-cell bar. This is characteristic of [A. aedias](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498179&preferred_place_id=6734) (aedias group) and the long-tailed camdeo subgroup. (3) **Normal postdiscal row** — spot 6 is at roughly the same level as spot 5 with no strong echelon or strong displacement; this covers the majority of tailed Arhopala.",
+      "hint": "Three arrangements to distinguish: (1) **Directly below spot 7** — spot 6 is displaced well out of the postdiscal row, sitting directly below spot 7 with its inner edge level with or inside spot 7's inner edge. This characterises the eumolphus group ([A. overdijkinki](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1390509&preferred_place_id=6734), [A. eumolphus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498188&preferred_place_id=6734), [A. horsfieldi](https://www.inaturalist.org/observations?verifiable=true&taxon_id=888216&preferred_place_id=6734), [A. hellenore](https://www.inaturalist.org/observations?verifiable=true&taxon_id=883689&preferred_place_id=6734), and related species). (2) **Marked echelon (spot 6 clearly closer to spot 5 than to end-cell bar)** — the three spots form a pronounced diagonal; spot 6 is clearly nearer to spot 5 than to the end-cell bar. This is characteristic of [A. aedias](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498179&preferred_place_id=6734) (aedias group) and the long-tailed camdeo subgroup. (3) **Normal row** — spot 6 is roughly equidistant from spot 5 and the end-cell bar. Most tailed Arhopala fall here; a very mild echelon is normal and still picks this option — only the pronounced aedias/camdeo staircase picks (2).",
       "choices": [
         {
           "label": "Yes — HW spot 6 directly below spot 7 (not in echelon with spots 5 and 7)",
           "next": "q_eumolphus_spot6_shape"
         },
         {
-          "label": "No — HW spot 6 in the normal postdiscal row; not displaced toward spot 7, not in strong echelon with spot 5",
+          "label": "No — HW spot 6 in the normal row; roughly equidistant from spot 5 and end-cell bar (most tailed Arhopala)",
           "next": "q_tailed_long_dark"
         },
         {
-          "label": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
+          "label": "No — HW spots 5, 6 and 7 in marked echelon; spot 6 clearly closer to spot 5 than to the end-cell bar (aedias/camdeo type)",
           "next": "q_long_tail_echelon_check"
         },
         {
@@ -1581,7 +1581,7 @@
       "common_name": "Large Metallic Oakblue",
       "note": "Underside ground colour hair brown; spots narrowly outlined in pale buff lines. Male upperside: lustrous violet blue with black border reduced to a thread. Female upperside: purple blue with typical broad black borders. Two size forms occur: large (FW 25–29 mm) and small (FW 20–22 mm; small form has more rounded, darker spots beneath). Two subspecies: [A. aedias agnis](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498179&preferred_place_id=6734) (forest at low to moderate elevations, standard) and [A. aedias meritatas](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498179&preferred_place_id=6734) (Langkawi Islands — paler and brighter blue upperside in both sexes).",
       "features": {
-        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
+        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in marked echelon; spot 6 clearly closer to spot 5 than to the end-cell bar (aedias/camdeo type)",
         "What is the underside ground colour and overall appearance?": "Hair brown; spots narrowly buff-outlined; HW spots 5–6–7 in echelon; large (FW 20–29 mm); rounded FW apex; tail ~6 mm — A. aedias",
         "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?": "No — no dark patch present in FW space 1b",
         "What does the hindwing underside look like?": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8",
@@ -3095,7 +3095,7 @@
       "note": "Tailed. One of the most beautiful and largest species in the genus. Immediately recognized by the central spot in FW underside space 11 (no other camdeo subgroup member has this). Male: shining pale silvery blue overlaid with violet toward the margins. Camdeo subgroup.",
       "features": {
         "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)",
-        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
+        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in marked echelon; spot 6 clearly closer to spot 5 than to the end-cell bar (aedias/camdeo type)",
         "Is there a central spot in forewing underside space 11?": "Yes — central spot present in FW space 11",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)",
         "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?": "Yes — spot present at extreme base of FW space 10",
@@ -3133,7 +3133,7 @@
       "common_name": "",
       "note": "Tailed. Short tail. Similar to [A. belphoebe cowani](https://www.inaturalist.org/search?q=Arhopala+belphoebe) (incomplete FW postdiscal band) but possesses a short tail and is much darker violet-blue. Camdeo subgroup.",
       "features": {
-        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
+        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in marked echelon; spot 6 clearly closer to spot 5 than to the end-cell bar (aedias/camdeo type)",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
       }
     },
@@ -3146,7 +3146,7 @@
       "note": "Tailed. Short tail ~2.5 mm. Underside spots indistinct. FW postdiscal spot in space 4 shifted distad (out of line with spots 5 and 6). Male: clear violet-blue with thread-like border. Camdeo subgroup.",
       "features": {
         "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)",
-        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
+        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in marked echelon; spot 6 clearly closer to spot 5 than to the end-cell bar (aedias/camdeo type)",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
       }
     },
@@ -3159,7 +3159,7 @@
       "note": "Tailed. Small species. Very short HW tail (~1.5 mm). Male: even, pale metallic silvery blue upperside. FW spot 4 in normal position (not shifted). Camdeo subgroup.",
       "features": {
         "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)",
-        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
+        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in marked echelon; spot 6 clearly closer to spot 5 than to the end-cell bar (aedias/camdeo type)",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
       }
     },
@@ -3221,7 +3221,7 @@
       "features": {
         "Is the specimen tailed?": "Cannot determine",
         "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)",
-        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
+        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in marked echelon; spot 6 clearly closer to spot 5 than to the end-cell bar (aedias/camdeo type)",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
       }
     },
@@ -3246,7 +3246,7 @@
       "note": "Tailed. Underside: purple-brown with markings outlined by white striae; extra spot in mid-space 8 on HW underside (diagnostic for subgroup); NO spot at base of HW space 6 (unlike myrzala subgroup). Male: dark violet-blue with regular 2.0 mm black borders. Bazaloides subgroup.",
       "features": {
         "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)",
-        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in echelon; spot 6 nearer to spot 5",
+        "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "No — HW spots 5, 6 and 7 in marked echelon; spot 6 clearly closer to spot 5 than to the end-cell bar (aedias/camdeo type)",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
       }
     },
