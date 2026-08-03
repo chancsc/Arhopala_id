@@ -77,10 +77,10 @@
         "text": "postdiscal spot in space 6",
         "href": "guide.html#spot6-end-cell-bar"
       },
-      "hint": "Two groups have spot 6 displaced above spot 5’s level toward the end-cell bar: the epimuta group ([A. atosia](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498181&preferred_place_id=6734), [A. lurida](https://www.inaturalist.org/observations?verifiable=true&taxon_id=475784&preferred_place_id=6734)) and the alitaeus group (including [A. pseudomuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498185&preferred_place_id=6734) and [A. alitaeus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=528441&preferred_place_id=6734)). The degree of displacement differs: in the epimuta group it is modest and spot 6 may appear close to spot 5’s level in some views; in the alitaeus group it is more pronounced — spot 6 is clearly above spot 5’s level and, in both pseudomuta and alitaeus, actually touches/overlaps the end-cell bar. Answer Yes for any upward displacement, even up to a full overlap, AS LONG AS the FW space 11 spot (checked next) or markings still point to the alitaeus group — don't be misled into the third 'No' option below just because spot 6 touches the bar. If Yes, a spot in FW space 11 will be checked next to tell pseudomuta/alitaeus apart from the epimuta group.\n\nAnswer No in all of these cases:\n• Spot 6 is at the same level as spot 5 with no upward displacement (most tailed species). Select the first No option.\n• Spot 6 is displaced toward the end-cell bar but clearly less than midway — the gap between spot 6 and the bar is distinctly wider than the displacement from the postdiscal row (e.g., [A. silhetensis adorea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498186&preferred_place_id=6734): spots 6 and 7 are oblique, outer edge of spot 6 well inside inner edge of spot 5, but spot 6 does not approach midway).\n• Spot 6 is displaced well past midway — touching or overlapping the end-cell bar, with spots 5, 6 and 7 widely out of line — in groups OTHER than alitaeus/pseudomuta ([A. agrata](https://www.inaturalist.org/observations?verifiable=true&taxon_id=859032&preferred_place_id=6734) and related species; also the eumolphus group: spot 6 inner edge is in line with or inside the inner edge of spot 7). Select the second No option.",
+      "hint": "Use the inner edge of spot 7 as the upper boundary to distinguish the three arrangements:\n\n**Yes — roughly midway**: spot 6 has shifted above spot 5’s level but has NOT reached spot 7’s inner edge. This is the epimuta group — [A. atosia](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498181&preferred_place_id=6734) and [A. lurida](https://www.inaturalist.org/observations?verifiable=true&taxon_id=475784&preferred_place_id=6734) — where the displacement is moderate. If Yes, a spot in FW space 11 will be checked next.\n\n**No (first option — same level)**: spot 6 is not displaced upward at all; it sits at the same level as spot 5 in the postdiscal row. Typical for the anthelus group and most other tailed species.\n\n**No (second option — widely out of line)**: spot 6 inner edge has reached or passed spot 7’s inner edge, usually overlapping the end-cell bar. This is the more extreme displacement of the alitaeus group ([A. pseudomuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498185&preferred_place_id=6734), [A. alitaeus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=528441&preferred_place_id=6734) and relatives), the eumolphus group, the cleander group, and the ganesa group. If in doubt between Yes and this option, check the inner edge of spot 6: if it is level with or inside spot 7’s inner edge, pick this No.",
       "choices": [
         {
-          "label": "Yes — spot 6 is displaced above spot 5's level toward the end-cell bar (displacement may be subtle in the epimuta group — any upward shift counts)",
+          "label": "Yes — spot 6 displaced above spot 5's level toward the end-cell bar, but not reaching spot 7's inner edge (epimuta group: A. atosia, A. lurida)",
           "next": "q_epimuta_alitaeus_split"
         },
         {
@@ -88,7 +88,7 @@
           "next": "q_tailed_ganesa"
         },
         {
-          "label": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+          "label": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
           "next": "q_tailed_ganesa"
         }
       ]
@@ -170,7 +170,7 @@
           "next": "q_myrzala_spot7"
         },
         {
-          "label": "No — HW spot 6 in the normal row; roughly equidistant from spot 5 and end-cell bar (most tailed Arhopala)",
+          "label": "No — HW spot 6 roughly equidistant from spot 5 and end-cell bar (most tailed Arhopala)",
           "next": "q_myrzala_spot7"
         },
         {
@@ -218,7 +218,7 @@
           "next": "q_eumolphus_spot6_shape"
         },
         {
-          "label": "No — HW spot 6 in the normal row; roughly equidistant from spot 5 and end-cell bar (most tailed Arhopala)",
+          "label": "No — HW spot 6 roughly equidistant from spot 5 and end-cell bar (most tailed Arhopala)",
           "next": "q_tailed_long_dark"
         },
         {
@@ -1268,7 +1268,7 @@
       "common_name": "Tytler's Dull Oakblue",
       "note": "Underside: all markings relatively wide; FW postdiscal band dislocated at vein 4; HW postdiscal spot 6 outwardly concave. Male: deep cobalt blue with black border reduced to a thread. Female: purple.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter"
       }
     },
@@ -1281,7 +1281,7 @@
       "note": "Underside: FW postdiscal band sinuous or only slightly dislocated at vein 4; HW postdiscal spot 6 outwardly straight or convex. Male: dark blue with broad black borders (2.0 mm at FW mid-termen, 3.0 mm on HW). Female: purple. Strictly montane habitat.",
       "features": {
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No",
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter"
       }
     },
@@ -1306,7 +1306,7 @@
       "common_name": "De Nicéville's Oakblue",
       "note": "Underside markings faint. FW: postdiscal spot in space 9 absent or very obscure; no costal spot in space 10. HW: postdiscal spot 6 considerably wider than spot 7. Male: dark purplish blue with black border reduced to a thread. Female: bright blue to purple-blue; HW blue reaches the termen between vein endings.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No"
       }
@@ -1707,7 +1707,7 @@
       "common_name": "Wood's Oakblue",
       "note": "One of two tailed exceptions in the otherwise-tailless agelastus group; relatively large for the group (FW 22.0–23.0 mm). Underside: HW postdiscal spot 6 widely out of line with spots 5 and 7 — inner edge of spot 6 in line with, or even further inward (basad) than, the inner edge of spot 7; spot 6 outwardly convex and typically touches or overlaps the end-cell bar. FW postdiscal band continuous; no costal spot in space 10; small spot often present at base of space 3; inner submarginal spots uniform in size and colour. [A. alesia sacharja](https://www.inaturalist.org/search?q=Arhopala+alesia) shares this exact spot-6/submarginal-spot pattern (per field-photo review, correcting older literature) — separate by size and border width: A. barami penanga is larger (FW 22.0–23.0 mm) with an exceptionally broad male border expanding from 2.5 mm at the tornus to 8.0 mm at the costa, vs. A. alesia sacharja's smaller size and more moderate border. Female: paler blue with similarly broad borders.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter"
       }
     },
@@ -1750,7 +1750,7 @@
       "common_name": "",
       "note": "Agelastus group, alongside [A. barami penanga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=958932&preferred_place_id=6734) one of only two tailed exceptions in the otherwise-tailless group. Tail at the usual vein 2 position (not the unusual short white-tipped vein-3 tail of the abseus group). A very rare, late Malayan record (first found in Langkawi in 1994; also distributed across NE India, Myanmar, Thailand, Laos, and Vietnam). Underside (per field-photo review, correcting older literature that described a concave spot 6 and enlarged submarginal spots — see notebook correction): ground colour pale grey-brown, distinctly paler than the typical hair-brown Arhopala underside — a useful early-exit character, since its only close rival A. barami penanga has a typical hair-brown underside with solid spots darker than the ground colour; FW postdiscal band almost entirely dark/black, strongly contrasting against the pale ground colour, continuous, often with a small spot at the base of FW space 3; HW postdiscal band only slightly dislocated at vein 2 (shifted but still touching); inner submarginal spots in HW spaces 4–5 and the end-cell bar very pale, close to the ground colour with little contrast, each ringed by a black border and then a white outer ring; HW postdiscal spot 6 outwardly convex, touching or overlapping the end-cell bar, spots 5/6/7 widely out of line — effectively identical to A. barami penanga here. Separated from A. barami penanga by being smaller, with a more moderate male FW border (~3.0 mm at tornus, not reaching barami's extreme 8.0 mm at costa). Sexes alike: violet blue.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter"
       }
     },
@@ -2017,7 +2017,7 @@
       "common_name": "Raffles's Oakblue",
       "note": "Underside hair-brown; markings hardly darker than ground colour. FW: basal spot in space 10 usually present but VARIABLE — may be absent in some specimens (per notebook); scored 'Yes' (present) here to match the common form. HW: postdiscal spot 6 directly below spot 7, touching/overlapping the end-cell bar; outer edge curved outward (convex) (per field-photo review — supersedes the earlier 'slightly oblique, does not overlap' literature description). Male: violet-blue with black border ~1.0 mm. Tail ~3.5–4.0 mm.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)"
       }
     },
     "r_elopura": {
@@ -2028,7 +2028,7 @@
       "common_name": "Yellow Tailed Oakblue",
       "note": "Underside ground colour uniform hair brown; markings notably faint, barely darker than the ground colour (less contrasting than [A. pseudomuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498185&preferred_place_id=6734)). FW: costal spot in mid-space 11 above the central cell spot; postdiscal spot 4 shifted distad, out of line with spots 5 and 6; no spot at extreme base of space 10. HW: postdiscal band completely dislocated at vein 2; postdiscal space 6 partly fuscous; postdiscal spot 6 outwardly straight or convex — inner edge in line with or inside the inner edge of spot 7, touching or overlapping the end-cell bar; centres of spots 5, 6 and 7 widely out of line. Tail ~3.5–4.0 mm; FW 17.0–19.0 mm (smaller than A. arianaga, FW 21.0–22.0 mm). Male: shining blue; black border very narrow, thread-like to just under 0.5 mm at apex. Female: broader black borders; blue areas often a purer shade than in related species.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "What is the forewing length (base to apex, excluding the tail)?": "17.0–19.0 mm — smaller"
       }
     },
@@ -2040,7 +2040,7 @@
       "common_name": "",
       "note": "Underside markings slightly darker than ground colour with a very faint pinkish glaze. FW: no basal spot in space 10; FW length 21.0–22.0 mm (distinctly larger than A. elopura, FW 17.0–19.0 mm). HW: postdiscal space 6 entirely blue. Male: black border reduced to a thread. Tail ~3.5–4.0 mm.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "What is the forewing length (base to apex, excluding the tail)?": "21.0–22.0 mm — larger"
       }
     },
@@ -2068,7 +2068,7 @@
       "common_name": "Pinkish-washed Oakblue",
       "note": "Underside dark brown with a faint purplish wash. FW: no basal spot in space 10; postdiscal spot in space 4 shifted distad out of line. Male: border 1.0–1.5 mm, slightly wider at apex. Tail ~3.5–4.0 mm.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)"
       }
     },
     "r_aida": {
@@ -2079,7 +2079,7 @@
       "common_name": "White-stained Oakblue",
       "note": "Underside paler brown. Nominate subspecies ([A. aida aida](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880740&preferred_place_id=6734)): slatey grey glaze — strong in Langkawi specimens, weaker through the rest of the Malay Peninsula. [A. aida ophir](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880740&preferred_place_id=6734) (Mt. Ophir): pale purple glaze instead.\n\nFW: no basal spot in space 10; costal spot in mid-space 11; postdiscal spot 4 shifted distad out of line with spots 5 and 6; termen straight and more produced than other alitaeus-group members. HW: postdiscal spot 6 outwardly straight or convex; postdiscal band completely dislocated at vein 2. Male: black borders relatively broad, expanding from ~1.25 mm at tornus to ~2.0 mm at apex. Tail ~3.5–4.0 mm. FW 16.0–19.0 mm.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)"
       }
     },
     "r_havilandi": {
@@ -2090,7 +2090,7 @@
       "common_name": "",
       "note": "Underside pale slatey purple with contrasting reddish-brown markings. FW: no basal spot in space 10. Male: violet-blue, black border reduced to a thread. Tail ~3.5–4.0 mm.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)"
       }
     },
     "r_sintanga": {
@@ -2101,7 +2101,7 @@
       "common_name": "",
       "note": "⚠ Extremely rare — no confirmed iNaturalist records. Verify carefully before confirming this identification.\n\nTwo subspecies:\n• [A. sintanga tani](https://www.inaturalist.org/search?q=Arhopala+sintanga) (Malay Peninsula): pale slatey purple underside with contrasting reddish-brown markings; deeper violet upperside. Distinguished from the similar [A. havilandi kota](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1168050&preferred_place_id=6734) by the spot at the extreme base of FW space 10 (havilandi lacks this spot).\n• [A. sintanga sintanga](https://www.inaturalist.org/search?q=Arhopala+sintanga) (Borneo): nominate subspecies; underside ground colour crimson (highly distinctive); wider black borders on upperside.\n\nUnderside characters (both subspecies): spot at extreme base of FW space 10; central spot in FW space 11; FW postdiscal spot 4 shifted distad; HW spot 6 touches or overlaps the end-cell bar; spots 5, 6 and 7 widely out of line; HW postdiscal band completely dislocated at vein 2. Tail 3.5–4.0 mm.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)"
       }
     },
     "r_alitaeus": {
@@ -2112,7 +2112,7 @@
       "common_name": "Purple Broken-band Oakblue",
       "note": "Underside markings notably annular (ring-like); FW postdiscal spot in space 1b often dislocated outward from spot in space 2. FW: basal spot present in space 10. Male: regular black borders ≥1.0 mm wide. Tail ~3.5–4.0 mm.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)"
       }
     },
     "r_denta": {
@@ -2123,7 +2123,7 @@
       "common_name": "",
       "note": "Distinctive SHORT tail — only ~2.5 mm (others in the group have 3.5–4.0 mm). FW: basal spot present in space 10. Underside hair-brown with at most a slight pinkish glaze. Male: brilliant blue, black border reduced to a thread.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)"
       }
     },
     "r_kurzi": {
@@ -2872,7 +2872,7 @@
       "common_name": "Long-celled Oakblue",
       "note": "Tailed. Tail short and stout, just under 2.0 mm. Underside hair-brown with complete markings. FW postdiscal spot 4 shifted distad, out of line with spots 5 and 6; dark patch in FW space 1b not solid. HW postdiscal band partially dislocated at vein 2; postdiscal spot 6 widely out of line with spots 5 and 7 — inner edge of spot 6 in line with, or inside, the inner edge of spot 7; spot 6 touches or overlaps the end-cell bar. Male: HW cell considerably longer than half the wing; shining green with weak blue suffusion at wing bases; FW border 0.75–1.5 mm at tornus, decreasing to a thread above vein 3 or 4; HW green does not reach the termen. Female: blue to purple-blue with a relatively narrow HW border.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7 (no costal spot in FW space 10)",
         "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?": "Short and stout, just under 2 mm (aurea group or other)"
       }
@@ -2885,7 +2885,7 @@
       "common_name": "Green-suffused Oakblue",
       "note": "Underside glazed with a purple wash. Male: brilliant brassy green with a strong blue suffusion at the wing bases; FW border a thread throughout; HW green usually reaches the termen in spaces 3, 4, or 5. Short stumpy HW tail (~2 mm). HW end-cell bar notably long; postdiscal spot 6 touches or overlaps the end-cell bar. Distribution: occurs throughout Peninsular Malaysia, including Johor. [A. stinga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1394352&preferred_place_id=6734) is restricted to Johor forest — outside Johor, A. trogon is far more likely; within Johor, both remain possible and upperside characters are needed to confirm.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?": "Short and stout, just under 2 mm (aurea group or other)"
       }
     },
@@ -2897,7 +2897,7 @@
       "common_name": "",
       "note": "Underside glazed with a purple wash (exactly as in [A. trogon](https://www.inaturalist.org/observations?verifiable=true&taxon_id=447353&preferred_place_id=6734)). Male: green WITHOUT any basal blue suffusion (no blue at wing bases); FW border distinctively wide — 2.5–3.0 mm at tornus, decreasing to a thread near the apex (widest border in the group). Short stumpy HW tail just under 2 mm. HW cell notably long — exceeding half the total wing length. HW end-cell bar notably long; postdiscal spot 6 touches or overlaps the end-cell bar (spot 6 inner edge at or inside the inner edge of spot 7). Distribution: restricted to forest in Johor. Outside Johor, [A. trogon](https://www.inaturalist.org/observations?verifiable=true&taxon_id=447353&preferred_place_id=6734) (which occurs throughout the Peninsula) is far more likely; within Johor, both remain possible and upperside characters are needed to confirm.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?": "Short and stout, just under 2 mm (aurea group or other)"
       }
     },
@@ -2917,7 +2917,7 @@
       "common_name": "",
       "note": "Bornean taxon; underside pattern essentially matches [A. aurea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429759&preferred_place_id=6734). Underside hair-brown with complete markings; HW cell exceptionally long (more than half the wing length); FW postdiscal spots in spaces 2 and 3 wider than those above vein 4 (spot 3 especially wide); dark patch in FW space 1b not solid; HW postdiscal band only partially dislocated at vein 2. HW postdiscal spot 6 widely out of line with spots 5 and 7 — inner edge of spot 6 in line with, or even further inward (basad) than, the inner edge of spot 7; spot 6 touches or overlaps the end-cell bar. Short and stout tail at vein 2, just under 2.0 mm. Male: brassy green with strong blue suffusion at base; FW border thread throughout, widening almost imperceptibly toward tornus; HW green reaches termen narrowly in spaces 5 and 6 (unlike [A. aurea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429759&preferred_place_id=6734) where green does not reach termen). Female: blue with a black HW border reaching at least halfway to the end of the cell.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?": "Short and stout, just under 2 mm (aurea group or other)"
       }
     },
@@ -3355,7 +3355,7 @@
       "common_name": "Purple-glazed Oakblue",
       "note": "Agaba subgroup of the cleander group — distinctive and unique. Underside pale purple-brown with dark markings; the subapical area of both wings is irrorated (sprinkled) with whitish scales, appearing noticeably paler than the rest of the wing. HW postdiscal spots 7, 6 and 5 widely out of line: the inner edge of spot 6 is in line with or inside the inner edge of spot 7, and spot 6 touches or overlaps the end-cell bar; spot 5 is almost always contiguous or amalgamated with the end-cell bar. The HW postdiscal band is only PARTIALLY dislocated at vein 2 — all other cleander group members have it completely dislocated. Tail filamentous at vein 2. Male: shining violet-blue with a black border ~1.0 mm wide. Female: brighter blue with broader black borders.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "Is the underside pale slatey purple with conspicuous dark markings outlined by nearly-white striae?": "No",
         "Does the underside have a slatey pink glaze with striae that are whiter than in other species?": "No — no slatey pink glaze",
         "Are the wings notably rounded and elongate in shape?": "No — typical wing shape",
@@ -3427,7 +3427,7 @@
       "note": "FW postdiscal band NOT dislocated at vein 4 (straight or only sinuous). Male: violet-blue with broad black borders. Large species (FW > 21 mm); conspicuously projecting HW tornal lobe. HW band completely dislocated at vein 2.",
       "features": {
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes",
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)"
       }
     },
     "r_zambra_zambra": {
@@ -3438,7 +3438,7 @@
       "common_name": "Zambra Oakblue",
       "note": "FW postdiscal band partially dislocated at vein 4. FW postdiscal spot 9 as wide as or wider than spot 6. Male: typically deep blue. Large species (FW > 21 mm); conspicuously projecting HW tornal lobe.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "Does hindwing postdiscal spot 6 completely fill the gap between spot 5 and the end-cell bar (no gap visible between spot 6 and the bar)?": "Yes — HW spot 6 fills the gap; spot 6 touches or nearly touches the end-cell bar",
         "Is there a costal spot present in forewing underside space 10?": "Yes — costal spot present in FW space 10 (A. sublustris)",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes"
@@ -3452,7 +3452,7 @@
       "common_name": "Vinous Oakblue",
       "note": "FW postdiscal spot 9 narrower than spot 6, shifted basad. HW postdiscal spot 6 fills the gap between spot 5 and the end-cell bar. Large species (FW > 21 mm); conspicuously projecting HW tornal lobe.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "Does hindwing postdiscal spot 6 completely fill the gap between spot 5 and the end-cell bar (no gap visible between spot 6 and the bar)?": "Yes — HW spot 6 fills the gap; spot 6 touches or nearly touches the end-cell bar",
         "Is there a costal spot present in forewing underside space 10?": "Yes — costal spot present in FW space 10 (A. sublustris)",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes"
@@ -3469,7 +3469,7 @@
         "Does hindwing postdiscal spot 6 completely fill the gap between spot 5 and the end-cell bar (no gap visible between spot 6 and the bar)?": "No — gap between HW spot 6 and end-cell bar is wider than spot 6",
         "Is there a costal spot present in forewing underside space 10?": "Yes — costal spot present in FW space 10 (A. sublustris)",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes",
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)"
       }
     },
     "q_alea_s1": {
@@ -3668,7 +3668,7 @@
       "common_name": "",
       "note": "Alea subgroup. Distinctive underside: pale slatey purple with conspicuous dark markings outlined by nearly-white striae. HW postdiscal spot 6 displaced past midway, touching or overlapping the end-cell bar (spots 5, 6 and 7 widely out of line). Smaller species (FW < 21 mm); less conspicuous HW tornal lobe.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes"
       }
     },
@@ -3680,7 +3680,7 @@
       "common_name": "",
       "note": "Alea subgroup. Distinctive underside: slatey pink glaze with striae that are whiter than in other alea subgroup members. Forewing postdiscal spots in spaces 2 and 3 are in echelon, upright, and larger than the spots immediately above them. Smaller species (FW < 21 mm).",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes — HW spot 6 widely overlaps the end-cell bar",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes"
       }
@@ -3693,7 +3693,7 @@
       "common_name": "",
       "note": "Alea subgroup. Recognizable by its rounded, elongate wings (distinctive wing shape). Narrow postdiscal bands that are well clear of the submarginal lunules. Smaller species (FW < 21 mm).",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "No — HW spot 6 does not widely overlap the end-cell bar",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes"
       }
@@ -3709,7 +3709,7 @@
         "Is there a costal spot present in forewing underside space 10?": "No — no costal spot in FW space 10 (A. milleri)",
         "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes — HW spot 6 widely overlaps the end-cell bar",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes",
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)"
       }
     },
     "r_selta_selta": {
@@ -3720,7 +3720,7 @@
       "common_name": "Reddish-brown Oakblue",
       "note": "Alea subgroup. FW termen rounded. HW postdiscal spot 6 widely overlaps the end-cell bar — separates it from [A. phaenops](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887006&preferred_place_id=6734), whose spot 6 usually does not, or only just, overlaps the end-cell bar. Costal spot present in FW underside space 10, matching A. sublustris ridleyi (absent in A. milleri). Male: violet-blue with border expanding toward the apex. Smaller species (FW < 21 mm).",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes — HW spot 6 widely overlaps the end-cell bar",
         "Is there a costal spot present in forewing underside space 10?": "Yes — costal spot present in FW space 10 (A. selta)",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes"
@@ -3734,7 +3734,7 @@
       "common_name": "Sumatran Oakblue",
       "note": "Alea subgroup. Similar to [A. selta selta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=880747&preferred_place_id=6734) (border expanding toward apex) but HW postdiscal spot 6 usually does NOT overlap the end-cell bar. Smaller species (FW < 21 mm).",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "No — HW spot 6 does not widely overlap the end-cell bar",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes"
       }
@@ -3747,7 +3747,7 @@
       "common_name": "",
       "note": "Alea subgroup. Larger than [A. sublustris](https://www.inaturalist.org/observations?verifiable=true&taxon_id=475916&preferred_place_id=6734) (but still FW < 21 mm). No costal spot in FW underside space 10 (present in A. sublustris — per field photo/plate review). Male: more matt indigo blue (not bright glistening) with a regular, thread-like border under 0.5 mm; blue upperside lacks a violet tinge, like [A. sublustris](https://www.inaturalist.org/observations?verifiable=true&taxon_id=475916&preferred_place_id=6734). Genitalia often needed for certain identification.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "Is there a costal spot present in forewing underside space 10?": "No — no costal spot in FW space 10 (A. milleri)",
         "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes — HW spot 6 widely overlaps the end-cell bar",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes"
@@ -3761,7 +3761,7 @@
       "common_name": "",
       "note": "Alea subgroup. Wings shaped similarly to [A. sublustris](https://www.inaturalist.org/observations?verifiable=true&taxon_id=475916&preferred_place_id=6734) and [A. phanda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=940969&preferred_place_id=6734). Underside postdiscal band placed close to the inner submarginal lunules on both wings (also seen in [A. phanda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=940969&preferred_place_id=6734) — see Feature Scoring note below). Superficially similar to [A. sublustris ridleyi](https://www.inaturalist.org/observations?verifiable=true&taxon_id=475916&preferred_place_id=6734) but male is less shining and more violet, lacking the pure bright blue (no violet tinge) of [A. sublustris](https://www.inaturalist.org/observations?verifiable=true&taxon_id=475916&preferred_place_id=6734) and [A. milleri](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340247&preferred_place_id=6734). Borders narrow. Genitalia often needed for certain identification. HW postdiscal spot 6 is usually not much narrower at the bottom than at the top and widely overlaps the end-cell bar (cf. [A. phaenops](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887006&preferred_place_id=6734), where spot 6 usually does not overlap the bar; cf. [A. phanda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=940969&preferred_place_id=6734), whose spot 6 is quadrate). (2026-06-24 fix: band-closeness and spot-6-vs-spot-5-placement are both underside-only characters and, together, uniquely identify normani at this point in the key — the spot-6-vs-spot-5 'No' branch now resolves directly here instead of falling through to the upperside border/colour questions, which previously made normani indistinguishable from sublustris/milleri without seeing the male upperside.)",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "Is the postdiscal band placed very close to the inner submarginal lunules?": "Yes — postdiscal band very close to inner submarginal lunules",
         "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes — HW spot 6 widely overlaps the end-cell bar",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes"
@@ -3775,7 +3775,7 @@
       "common_name": "Bright Oakblue",
       "note": "Alea subgroup. Male: bright glistening blue with a regular, thread-like border under 0.5 mm, lacking a violet tinge. Brighter and more glistening than [A. normani](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340249&preferred_place_id=6734). Costal spot present in FW underside space 10 (absent in A. milleri — per field photo/plate review). Smaller species (FW < 21 mm).",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "Is there a costal spot present in forewing underside space 10?": "Yes — costal spot present in FW space 10 (A. sublustris)",
         "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes — HW spot 6 widely overlaps the end-cell bar",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes"
@@ -3969,7 +3969,7 @@
       "common_name": "",
       "note": "HW tail 5.0 mm (longest in group). Outer edge of HW postdiscal spot 6 outwardly straight (contrast: concave in [A. eumolphus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498188&preferred_place_id=6734)). FW 22 mm. Male: rich violet; FW black border 2.5 mm at tornus, expanding strongly to 7.0 mm at costa. Female: shining blue with evenly curved FW border.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "On the hindwing underside, is postdiscal spot 6 placed directly below spot 7 — not in echelon with spots 5 and 7?": "Yes — HW spot 6 directly below spot 7 (not in echelon with spots 5 and 7)",
         "What is the underside ground colour and overall appearance?": "Hair brown; HW spot 6 directly below spot 7 (not echelon); tail ~5 mm — A. overdijkinki",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly straight?": "Yes — outer edge of spot 6 outwardly straight"
@@ -3983,7 +3983,7 @@
       "common_name": "Powdered Oakblue",
       "note": "HW tail ~3 mm. Male: deep purple; FW black border 1.0 mm at apex decreasing to 1.5 mm at tornus. Underside purplish-brown with very dark markings; FW apex powdered with pale violet scales. Female: usually purple-blue.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No"
       }
@@ -3996,7 +3996,7 @@
       "common_name": "",
       "note": "HW tail ~3 mm. Spot 6 displaced past midway, touching or overlapping end-cell bar; spots 5, 6 and 7 widely out of line. Spot 6 outer edge outwardly straight. Underside markings very faint. No costal spot in FW space 10. FW apex rounded. Male: blue/violet (not green).",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)",
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No"
@@ -4010,7 +4010,7 @@
       "common_name": "",
       "note": "HW tail ~3 mm. Spot 6 outer edge outwardly straight. Underside markings clearly defined. FW apex acute; termen straight. FW 27 mm. Male: blue/violet (not green).",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)",
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No"
@@ -4076,7 +4076,7 @@
       "common_name": "Peacock Oakblue",
       "note": "Spot 6 outer edge outwardly concave. Underside markings very broad. FW apex rounded. Male: brassy green; very broad black borders reaching cell on both wings.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "On the hindwing underside, is postdiscal spot 6 convex or almost straight (not concave) and touching or overlapping the end-cell bar, with no costal spot present in forewing space 10?": "No — HW spot 6 concave or not overlapping the bar in this way, or a FW space 10 costal spot is present",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW spot 6 is outwardly sinuous or concave; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)",
         "Is forewing postdiscal spot 4 in continuation with spots 5 and 6 (not shifted distad out of line)?": "No — FW spot 4 shifted distad, out of line with spots 5 and 6 (eumolphus group)",
@@ -4093,7 +4093,7 @@
       "common_name": "Green Oakblue",
       "note": "HW tail ~3 mm. Outer edge of HW postdiscal spot 6 outwardly concave (contrast: straight in [A. overdijkinki](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1390509&preferred_place_id=6734)). Markings broad. FW 21–23 mm. Male: brassy green; FW rounded; black border 2.0 mm at tornus decreasing to 1.0 mm at apex. Female: purple-blue; black border usually reaches apex of FW cell.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW spot 6 is outwardly sinuous or concave; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)",
         "Is forewing postdiscal spot 4 in continuation with spots 5 and 6 (not shifted distad out of line)?": "No — FW spot 4 shifted distad, out of line with spots 5 and 6 (eumolphus group)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)",
@@ -4109,7 +4109,7 @@
       "common_name": "Doherty's Green Oakblue",
       "note": "Spot 6 outer edge outwardly concave. FW apex acute; termen straight or slightly concave. Male: brassy green; black border thread-width above vein 4. Malay Peninsula.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW spot 6 is outwardly sinuous or concave; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)",
         "Is forewing postdiscal spot 4 in continuation with spots 5 and 6 (not shifted distad out of line)?": "No — FW spot 4 shifted distad, out of line with spots 5 and 6 (eumolphus group)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)",
@@ -4208,7 +4208,7 @@
       "common_name": "Dusky Bushblue",
       "note": "Montane species on the Malay Peninsula. Underside HW: roughly quadrate whitish area from mid-cell to costa; no tornal green scales. Upperside: bright pale blue with broad borders; male HW mostly fuscous; female with obscure whitish patch at FW end-cell.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)"
       }
     },
     "r_ammonides_chunsu": {
@@ -4219,7 +4219,7 @@
       "common_name": "Little Cerulean Oakblue",
       "note": "No tornal green scales. Underside HW: gap between outer and central spots in space 7 completely whitened (no quadrate mid-cell white patch). Upperside: powdery blue with very broad borders on all wings; female with dark bar at FW end-cell.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)"
       }
     },
     "r_ammon_ammon": {
@@ -4230,7 +4230,7 @@
       "common_name": "Malayan oakblue",
       "note": "Tornal green scales present. Underside HW: spot 6 extended to base of space; outer and central spots in space 7 separate, gap whitened. Upperside male: dark blue, narrow borders (1.5 mm at FW apex). Female: narrow borders (2.0 mm at FW tornus and HW).",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)"
       }
     },
     "r_ariel": {
@@ -4241,7 +4241,7 @@
       "common_name": "Chocolate Oakblue",
       "note": "No whitened gap between HW space 7 spots; no mid-cell whitish patch. Tornal green scales present; HW spot 6 normal. Upperside male: bluish-purple, hardly shining; FW border 1.5 mm at tornus expanding to 4.0 mm at apex. Female: bluer shade with broader borders.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)"
       }
     },
     "r_elizabethae": {
@@ -4252,7 +4252,7 @@
       "common_name": "",
       "note": "Gap between outer and central spots in HW space 7 conspicuously whitened. Tornal green scales present; HW spot 6 normal (not reaching base of space). Upperside male: shining deep blue with borders slightly wider than [A. ariel](https://www.inaturalist.org/observations?verifiable=true&taxon_id=885911&preferred_place_id=6734); female similar to male.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)"
       }
     },
     "r_ariel_or_elizabethae": {
@@ -4267,7 +4267,7 @@
         "r_elizabethae"
       ],
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)"
       }
     },
     "r_hypomuta_hypomuta": {
@@ -4352,7 +4352,7 @@
       "common_name": "",
       "note": "Tail 2.5 mm. Underside ground colour pale purplish-brown; tornal green scales absent or vestigial. Male: violet-blue; FW border 2.0 mm at mid-costa, slightly increasing toward tornus and apex; HW border 2.5 mm. Montane on the Malay Peninsula.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)"
       }
     },
     "r_buddha_cooperi": {
@@ -4363,7 +4363,7 @@
       "common_name": "Buddha Oakblue",
       "note": "Tailed. Tail very short ~1.0 mm. Underside ground colour hair-brown; tornal green scales present and distinct. HW postdiscal spot 6 outwardly sinuous or concave; widely out of line with spots 5 and 7; touches or overlaps the end-cell bar. Costal spot present in FW underside space 10. FW postdiscal band weakly dislocated at vein 4; no spot at base of FW space 3. Male: shining violet-blue; black borders 1.0 mm wide. Female: may resemble female [A. aurea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429759&preferred_place_id=6734) but differs in narrower HW border and thinner tail.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis).",
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW spot 6 is outwardly sinuous or concave; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)"
       }
     },
@@ -4387,7 +4387,7 @@
       "common_name": "Large Spotted Oakblue",
       "note": "Tailed. FW 20–22 mm. FW underside spot 4 in line with spots 5–6 (distinguishes from eumolphus group where spot 4 is out of line); no costal spot in FW space 10. HW spot 6 rounded, more or less separated; HW band only partially dislocated at vein 2. Male: dark violet-blue; border slightly less than 1.0 mm. Female: bluer shade. Two ssp.: vihara on the peninsular mainland; hirava on Langkawi.",
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)"
       }
     },
     "g_needs_more_info": {
@@ -4442,7 +4442,7 @@
         "r_alea_glist_unclear"
       ],
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)"
       }
     },
     "r_alea_glist_unclear": {
@@ -4457,7 +4457,7 @@
         "r_sublustris_ridleyi"
       ],
       "features": {
-        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 centres widely out of line; spot 6 inner edge level with or inside the inner edge of spot 7, usually also touching or overlapping the end-cell bar (except in A. ace and A. azinis)."
+        "On the hindwing underside, is the postdiscal spot in space 6 positioned roughly midway between the postdiscal spot in space 5 and the end-cell bar?": "No — spots 5, 6 and 7 widely out of line; spot 6 inner edge at or inside spot 7's inner edge, usually overlapping the end-cell bar (alitaeus/eumolphus groups; except A. ace and A. azinis)"
       }
     },
     "q_tailed_corinda_apex": {
