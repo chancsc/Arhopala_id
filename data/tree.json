@@ -3365,14 +3365,14 @@
       "type": "question",
       "id": "q_cleander_s1",
       "question": "Is the forewing postdiscal band NOT dislocated at vein 4 — straight through or only slightly sinuous?",
-      "hint": "[A. cleander aphadantas](https://www.inaturalist.org/observations?verifiable=true&taxon_id=149214&preferred_place_id=6734): FW band not dislocated at vein 4 (straight or only sinuous); male violet-blue with broad black borders. All other cleander subgroup members have the FW band dislocated at vein 4 (partially in most species; fully in [A. zambra zambra](https://www.inaturalist.org/observations?verifiable=true&taxon_id=706582&preferred_place_id=6734)).",
+      "hint": "[A. cleander aphadantas](https://www.inaturalist.org/observations?verifiable=true&taxon_id=149214&preferred_place_id=6734): FW band not dislocated at vein 4 (straight or only sinuous); male violet-blue with broad black borders. All other cleander subgroup members have the FW band partially dislocated at vein 4.",
       "choices": [
         {
           "label": "Yes — FW band not dislocated at vein 4 (straight/sinuous); male violet-blue, broad borders",
           "next": "r_cleander_aphadantas"
         },
         {
-          "label": "No — FW band dislocated at vein 4 (partially or fully)",
+          "label": "No — FW band partially dislocated at vein 4",
           "next": "q_cleander_s2"
         }
       ]
