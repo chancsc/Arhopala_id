@@ -23,18 +23,36 @@
  * We therefore read the order from the post-answer render and only expand when a
  * target button sits beyond the 15-question cap (order already captured).
  *
- * Prereq: serve the repo on http://localhost:8137 (e.g. `python3 -m http.server
- * 8137` from the repo root, or the built-in server in scripts/fs_regress.js).
- *
  * Usage: node scripts/verify_sim_cd_paths.js
  *
  * Env: PLAYWRIGHT_MODULE (default /opt/node22/lib/node_modules/playwright),
  *      FS_VERIFY_PORT (default 8137).
  */
-const fs = require('fs');
+const fs   = require('fs');
+const http = require('http');
 const path = require('path');
 const REPO = path.resolve(__dirname, '..');
 const pu = require(path.join(REPO, 'js', 'path-utils.js'));
+
+const MIME = {
+  '.html': 'text/html', '.js': 'text/javascript', '.json': 'application/json',
+  '.css': 'text/css', '.png': 'image/png', '.jpg': 'image/jpeg',
+  '.jpeg': 'image/jpeg', '.svg': 'image/svg+xml', '.webp': 'image/webp',
+};
+function startServer(port) {
+  const server = http.createServer((req, res) => {
+    let p = decodeURIComponent(req.url.split('?')[0]);
+    if (p === '/') p = '/index.html';
+    const file = path.join(REPO, p);
+    if (!file.startsWith(REPO)) { res.writeHead(403); res.end(); return; }
+    fs.readFile(file, (err, data) => {
+      if (err) { res.writeHead(404); res.end('not found'); return; }
+      res.writeHead(200, { 'Content-Type': MIME[path.extname(file)] || 'application/octet-stream' });
+      res.end(data);
+    });
+  });
+  return new Promise((resolve) => server.listen(port, () => resolve(server)));
+}
 
 function loadPlaywright() {
   for (const c of [process.env.PLAYWRIGHT_MODULE, 'playwright',
@@ -47,6 +65,7 @@ function loadPlaywright() {
 (async () => {
   const { chromium } = loadPlaywright();
   const port = process.env.FS_VERIFY_PORT || '8137';
+  const server = await startServer(parseInt(port, 10));
   const tree = JSON.parse(fs.readFileSync(path.join(REPO, 'data', 'tree.json')));
   const nums = pu.buildQuestionNumbers(tree);
   const paths = JSON.parse(fs.readFileSync(path.join(REPO, 'data', 'sim_cd_paths.json')));
@@ -93,6 +112,7 @@ function loadPlaywright() {
     else { fails.push({ name, failAt }); const g = failAt.got ? 'Q' + (nums.get(failAt.got) || '?') : (failAt.note || '?'); console.log(`✗ ${name}  @step ${failAt.step}: expected Q${nums.get(failAt.expected) || '?'}, live top = ${g}`); }
   }
   await b.close();
+  server.close();
 
   console.log(`\n${pass}/${names.length} species: card Underside-only path == live browser flow`);
   if (fails.length) { console.log('Diverged: ' + fails.map(f => f.name.replace('Arhopala ', '')).join(', ')); process.exit(1); }

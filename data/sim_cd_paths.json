@@ -5853,6 +5853,10 @@
       "choice": "Yes — FW spot 4 in continuation with spots 5 and 6 (rama group)"
     },
     {
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
+      "choice": "Cannot determine — FW space 1b obscured by hindwing"
+    },
+    {
       "question": "Does the butterfly have a hindwing tail?",
       "choice": "Tailed"
     },
@@ -5933,6 +5937,10 @@
     {
       "question": "Is forewing postdiscal spot 4 in continuation with spots 5 and 6 (not shifted distad out of line)?",
       "choice": "Yes — FW spot 4 in continuation with spots 5 and 6 (rama group)"
+    },
+    {
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
+      "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
       "question": "Does the butterfly have a hindwing tail?",

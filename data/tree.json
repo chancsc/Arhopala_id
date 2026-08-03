@@ -4316,6 +4316,7 @@
       "question": "Does the butterfly have a hindwing tail?",
       "hint": "One of the three Malayan rama species (arvina) is tailless. The other two are tailed with different tail lengths.",
       "hideOrphanInPath": true,
+      "deprioritize": true,
       "choices": [
         {
           "label": "Tailless — re-check first question",
@@ -4333,6 +4334,7 @@
       "question": "How long is the hindwing tail, and are tornal green scales present?",
       "hint": "paralea has a longer tail (2.5 mm), pale purplish-brown underside, and no or vestigial tornal green scales; it is montane on the Peninsula. buddha has a very short tail (~1.0 mm), hair-brown underside, and distinct tornal green scales.",
       "hideOrphanInPath": true,
+      "deprioritize": true,
       "choices": [
         {
           "label": "Tail ~2.5 mm; underside pale purplish-brown; no/vestigial tornal green scales (montane)",
