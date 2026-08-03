@@ -87,6 +87,11 @@ for (const node of Object.values(treeNodes)) {
     questionChoicesMap.set(node.question, node.choices || []);
 }
 
+// Questions flagged to suppress from the displayed orphan path (mirrors compute_sim_cd_paths.js)
+const hideOrphanQs = new Set();
+for (const node of Object.values(treeNodes))
+  if (node && node.type === 'question' && node.hideOrphanInPath && node.question) hideOrphanQs.add(node.question);
+
 // Find species (case-insensitive partial match)
 const targetName = [...matrix.keys()].find(n => n.toLowerCase().includes(targetArg.toLowerCase()));
 if (!targetName) {
@@ -127,6 +132,7 @@ const orphanNoDisplay = new Set();
 
 for (let step = 0; step < 50; step++) {
   const scores = scoreAllPure(answers, matrix);
+  questionOrder.length = 0; // reset each step, mirroring checklist.js + compute_sim_cd_paths.js
   getDisplayQuestionsPure(answers, scores, matrix, treeNodes, questionOrder);
 
   // Stop once species is uniquely #1 AND all sim-CD questions have been answered
@@ -172,7 +178,7 @@ for (let step = 0; step < 50; step++) {
     if (choices.length >= 2) {
       const noChoice = choices.find(c => /^(No|None)\b/i.test(c.label)) || choices[0];
       nextQ = q; nextAns = noChoice.label;
-      if (!/^(No|None)\b/i.test(noChoice.label)) orphanNoDisplay.add(nextQ);
+      if (!/^(No|None)\b/i.test(noChoice.label) || hideOrphanQs.has(nextQ)) orphanNoDisplay.add(nextQ);
       break;
     }
   }
