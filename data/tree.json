@@ -3911,6 +3911,7 @@
     "q_eumolphus_spot6_shape": {
       "type": "question",
       "id": "q_eumolphus_spot6_shape",
+      "deprioritize": true,
       "question": "Is the outer edge of hindwing postdiscal spot 6 outwardly straight?",
       "hint": "This is the key underside character separating [A. overdijkinki](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1390509&preferred_place_id=6734) from [A. eumolphus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498188&preferred_place_id=6734) — both share hair-brown underside and spot 6 placed directly below spot 7. In [A. overdijkinki](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1390509&preferred_place_id=6734) the outer edge of spot 6 is characteristically outwardly straight. In [A. eumolphus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498188&preferred_place_id=6734) (and other species in the group) it is outwardly concave — the edge curves inward. If the shape is unclear, use the tail length question instead.",
       "choices": [
