@@ -148,7 +148,7 @@
       "choices": [
         {
           "label": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)",
-          "next": "q_tailed_moderate_spot4"
+          "next": "q_myrzala_spot7"
         },
         {
           "label": "No — no dark patch present in FW space 1b",
@@ -157,26 +157,6 @@
         {
           "label": "Cannot determine — FW space 1b obscured by hindwing",
           "next": "q_agaba_subapical"
-        }
-      ]
-    },
-    "q_tailed_moderate_spot4": {
-      "type": "question",
-      "id": "q_tailed_moderate_spot4",
-      "question": "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?",
-      "hint": "See main hint above. All routes here continue to the camdeo-subgroup questions.",
-      "choices": [
-        {
-          "label": "Widely out of line — spot 6 inner edge at or inside spot 7’s inner edge; spot 6 usually overlapping the end-cell bar (except A. ace and A. azinis)",
-          "next": "q_myrzala_spot7"
-        },
-        {
-          "label": "In or near the postdiscal row — spot 6 at spot 5’s level, or slightly closer to spot 5; inner edge of spot 6 does not reach spot 7’s inner edge",
-          "next": "q_myrzala_spot7"
-        },
-        {
-          "label": "Cannot determine — spot arrangement unclear or hindwing obscures spots 5–7",
-          "next": "q_myrzala_spot7"
         }
       ]
     },
