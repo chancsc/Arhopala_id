@@ -20,19 +20,19 @@
     "q_tailed_vein3": {
       "type": "question",
       "id": "q_tailed_vein3",
-      "question": "Is the tail located at vein 3 and short?",
+      "question": "Does the hindwing have tails at BOTH vein 2 and vein 3 — a normal vein 2 tail plus an additional short white-tipped tail at vein 3?",
       "question_link": {
-        "text": "tail located at vein 3",
+        "text": "additional tail at vein 3",
         "href": "guide.html#tail-vein2-vs-vein3"
       },
-      "hint": "In the vast majority of Arhopala the tail (when present) is at vein 2. Only 2 species in the entire genus have a tail at vein 3 — both in the abseus group: [A. abseus abseus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=333427&preferred_place_id=6734) (small, deep violet-blue male) and [A. anella](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1294316&preferred_place_id=6734) (larger, very wide fuscous borders). The vein 3 tail is one vein closer to the forewing than usual, and is distinctively short and white-tipped. Also check for a spot at the base of hindwing space 1a.",
+      "hint": "In the vast majority of Arhopala the tail (when present) is at vein 2 only. Only 2 species in the entire genus bear a second tail at vein 3 — both in the abseus group: [A. abseus abseus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=333427&preferred_place_id=6734) (small, deep violet-blue male) and [A. anella](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1294316&preferred_place_id=6734) (larger, very wide fuscous borders). Both species retain the normal vein 2 tail AND have this extra vein 3 tail, which is distinctively short and white-tipped — one vein closer to the forewing than the main tail. Also check for a spot at the base of hindwing space 1a.",
       "choices": [
         {
-          "label": "Yes — short white-tipped tail at vein 3 (only 3 spp. in entire genus)",
+          "label": "Yes — tails at both vein 2 and vein 3; the vein 3 tail is short and white-tipped (only 2 spp. in entire genus)",
           "next": "g_abseus"
         },
         {
-          "label": "No — tail at the usual vein 2 (typical position)",
+          "label": "No — tail at vein 2 only (typical position)",
           "next": "q_alaconia_wedge_tailed"
         }
       ]
