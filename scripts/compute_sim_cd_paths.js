@@ -120,6 +120,27 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
     if (node.type === 'question' && !qChoicesMap.has(node.question))
       qChoicesMap.set(node.question, node.choices || []);
   }
+  // Second pass: features-only questions (in the scoring matrix but with no tree
+  // question node) get synthetic choices derived from their distinct feature values —
+  // mirroring checklist.js's second-pass approach. Without this, the orphan handler's
+  // choices.length >= 2 guard fails and the sim skips the question, picking the next
+  // one (often a deprioritized sim-CD question) instead of matching the browser which
+  // renders these questions with feature-value-derived buttons.
+  function _featureChoiceRank(c) {
+    if (/^Yes\b/i.test(c)) return 0;
+    if (/^No\b/i.test(c))  return 1;
+    if (/^Cannot determine/i.test(c)) return 2;
+    return 3;
+  }
+  for (const [, features] of matrix) {
+    for (const q of features.keys()) {
+      if (qChoicesMap.has(q)) continue;
+      const vals = new Set();
+      for (const [, f2] of matrix) if (f2.has(q)) vals.add(f2.get(q));
+      if (vals.size > 0)
+        qChoicesMap.set(q, [...vals].sort((a, b) => _featureChoiceRank(a) - _featureChoiceRank(b)).map(label => ({ label })));
+    }
+  }
 
   // Build sim-CD answers: replace sim-CD questions with their CD label
   const simAnswers = new Map();
