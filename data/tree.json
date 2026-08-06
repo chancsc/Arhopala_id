@@ -81,7 +81,7 @@
       "choices": [
         {
           "label": "Widely out of line — spot 6 inner edge at or inside spot 7’s inner edge; spot 6 usually overlapping the end-cell bar (except A. ace and A. azinis)",
-          "next": "q_tailed_ganesa"
+          "next": "q_ganesa_basal_s11"
         },
         {
           "label": "Midway displaced — spot 6 shifted above spot 5 toward spot 7, but not yet reaching spot 7’s inner edge (epimuta group: A. atosia, A. lurida)",
@@ -89,11 +89,11 @@
         },
         {
           "label": "In or near the postdiscal row — spot 6 at spot 5’s level, or slightly closer to spot 5; inner edge of spot 6 does not reach spot 7’s inner edge",
-          "next": "q_tailed_ganesa"
+          "next": "q_ganesa_basal_s11"
         },
         {
           "label": "Cannot determine — spot arrangement unclear or hindwing obscures spots 5–7",
-          "next": "q_tailed_ganesa"
+          "next": "q_ganesa_basal_s11"
         }
       ]
     },
@@ -232,22 +232,22 @@
         }
       ]
     },
-    "q_tailed_ganesa": {
+    "q_ganesa_basal_s11": {
       "type": "question",
-      "id": "q_tailed_ganesa",
-      "question": "Is this a small species with spots above the forewing cell and a spot at the base of forewing space 3?",
+      "id": "q_ganesa_basal_s11",
+      "question": "Is there a spot at the base of forewing underside space 11, between the basal and central cell spots?",
       "question_link": {
-        "text": "spots above the forewing cell",
-        "href": "guide.html#fw-spots-above-cell"
+        "text": "spot at the base of forewing underside space 11",
+        "href": "guide.html#fw-space-11"
       },
-      "hint": "The ganesa group is characteristically small, with spots visible above the FW cell on the underside, a spot at the base of FW space 3, and short tails. The spot at the base of FW space 3 is usually hidden under the hindwing in resting photographs — use small size and spots above the FW cell as the primary characters; if both are clearly present, answer Yes. Three of the five Peninsular species ([A. ammon](https://www.inaturalist.org/observations?verifiable=true&taxon_id=506221&preferred_place_id=6734), [A. ammonides](https://www.inaturalist.org/observations?verifiable=true&taxon_id=470744&preferred_place_id=6734), [A. elizabethae](https://www.inaturalist.org/search?q=Arhopala+elizabethae)) also show a conspicuously whitened gap between the outer and central spots in HW space 7.",
+      "hint": "The ganesa group is characterised by a distinct spot sitting at the very base of FW space 11, wedged between the basal cell bar and the central cell spot — visible on the forewing underside between the cell bars. All five Peninsular ganesa-group species ([A. ammon](https://www.inaturalist.org/observations?verifiable=true&taxon_id=506221&preferred_place_id=6734), [A. ammonides](https://www.inaturalist.org/observations?verifiable=true&taxon_id=470744&preferred_place_id=6734), [A. elizabethae](https://www.inaturalist.org/search?q=Arhopala+elizabethae), [A. ariel](https://www.inaturalist.org/observations?verifiable=true&taxon_id=885911&preferred_place_id=6734), [A. paraganesa](https://www.inaturalist.org/observations?verifiable=true&taxon_id=333568&preferred_place_id=6734)) are also small, with short tails, spots visible above the FW cell, and a spot at the base of FW space 3.",
       "choices": [
         {
-          "label": "Yes — small; spots above FW cell; spot at base of FW space 3 (if visible)",
+          "label": "Yes — basal spot present in FW space 11, between the basal and central cell spots",
           "next": "g_ganesa"
         },
         {
-          "label": "No",
+          "label": "No — no spot at the base of FW space 11",
           "next": "q_tailed_anthelus"
         }
       ]

@@ -92,6 +92,14 @@ const hideOrphanQs = new Set();
 for (const node of Object.values(treeNodes))
   if (node && node.type === 'question' && node.hideOrphanInPath && node.question) hideOrphanQs.add(node.question);
 
+// Result node id(s) for the target species — used to detect a terminal direct exit
+// (mirrors compute_sim_cd_paths.js).
+const targetResultIds = new Set();
+for (const [id, node] of Object.entries(treeNodes))
+  if (node && node.type === 'result' && node.name &&
+      node.name.toLowerCase().includes(targetArg.toLowerCase()))
+    targetResultIds.add(id);
+
 // Find species (case-insensitive partial match)
 const targetName = [...matrix.keys()].find(n => n.toLowerCase().includes(targetArg.toLowerCase()));
 if (!targetName) {
@@ -99,6 +107,11 @@ if (!targetName) {
   console.error('Available:', [...matrix.keys()].filter(n => n.toLowerCase().includes('arho')).slice(0,5));
   process.exit(1);
 }
+
+// Now that we have the exact targetName, rebuild targetResultIds precisely.
+targetResultIds.clear();
+for (const [id, node] of Object.entries(treeNodes))
+  if (node && node.type === 'result' && node.name === targetName) targetResultIds.add(id);
 
 const canonicalAnswers = matrix.get(targetName);
 console.log(`\n=== Tracing Feature Scoring for: ${targetName} ===`);
@@ -187,6 +200,24 @@ for (let step = 0; step < 50; step++) {
   answers.set(nextQ, nextAns);
   if (orphanNoDisplay.has(nextQ)) continue;
   simPath.push({ question: nextQ, choice: nextAns });
+
+  // Terminal direct exit: when the species' own real answer to this question
+  // routes straight to its result node, stop here (mirrors compute_sim_cd_paths.js).
+  if (targetResultIds.size > 0 && canonicalAnswers.get(nextQ) === nextAns) {
+    let hitTargetResult = false;
+    for (const node of Object.values(treeNodes)) {
+      if (node.type === 'question' && node.question === nextQ) {
+        const ch = (node.choices || []).find(c => c.label === nextAns);
+        if (ch && targetResultIds.has(ch.next)) { hitTargetResult = true; break; }
+      }
+    }
+    if (hitTargetResult) {
+      const newScores2 = scoreAllPure(answers, matrix);
+      const rank2b = newScores2[1] ? `  #2: ${newScores2[1].name.replace('Arhopala ','')} ${newScores2[1].score}/${newScores2[1].max}` : '';
+      console.log(`  → STOP (terminal exit): ${targetName.replace('Arhopala ','')} is #${newScores2.findIndex(s=>s.name===targetName)+1} (${newScores2[0]?.score}/${newScores2[0]?.max})${rank2b}`);
+      break;
+    }
+  }
 
   const rank = scores.findIndex(s => s.name === targetName) + 1;
   const qn   = qNumbers.get(nextQ) || '?';
