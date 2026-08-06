@@ -65,13 +65,17 @@ const DROP_PAREN = new Set([]);
 // ELSE_OVERRIDE: a couplet node whose "else" (B) jump target in the source skips over an
 // intermediate sub-key, orphaning it. Redirect the else to the immediate next lead so the
 // skipped block becomes reachable (the original far target is still reached by falling
-// through that block).  72 baluensis: else 77 -> 73 (reaches valva block 73-76 amphimuta/
-// major; trunk 77+ still reached via 76 -> 77).
+// through that block).
+// (The former 72:73 override redirected lead 72's "else 77" → 73 to force all species
+// through the valva block 73–76. This was wrong: it made num_b=73 for the couplet, so
+// ksResolve(73) resolved to K39 for *both* the A and B choices — clicking Yes or No at
+// K38 both led to K39. Lead 72 (77) in keys.txt is correct as-is; removing the override
+// restores num_b=77, making K38 No → ksResolve(77) → K42 (the no-tooth branch).)
 // (The former 121:122 override compensated for a garbled ace/agrata region where leads 120
 // and 121 were merged; the source has since been corrected — 120 = the "spots in line"
 // gate, 121 (124) = the band-like-cell ace-subgroup split — so the proper nested couplets
 // {121,124}/{122,123}/{125,126} parse cleanly without an override.)
-const ELSE_OVERRIDE = { 72: 73 };
+const ELSE_OVERRIDE = {};
 
 // ---------------------------------------------------------------------------
 // 1. Parse keys.txt.
