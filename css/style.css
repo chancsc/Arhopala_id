@@ -2,6 +2,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
+  /* === Core palette === */
   --bg: #f5f0e8;
   --primary: #2d5a27;
   --primary-light: #3d7a35;
@@ -13,6 +14,105 @@
   --shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
   --radius: 12px;
   --transition: 0.18s ease;
+
+  /* === Semantic surface tokens (dark-mode-aware) === */
+  --surface-tint: #f0f5ef;        /* light green tint: id-note, feature items, path headers */
+  --surface-warm: #fdf8ef;        /* warm cream: pending info, about-note, path-group, skip summary */
+  --surface-blue: #eef4fb;        /* cool blue: underside-only path summary */
+  --cpkey-surface: #faf4e6;       /* warm cream: C&P key path summary */
+  --cpkey-final: #eef5ec;         /* light green: C&P final step */
+  --amber-border: #e0c87a;        /* pending species dashed border */
+  --group-tag-border: #f0d89a;    /* path group tag border */
+  --blue-text: #2a5a8a;           /* simcd / underside-only text */
+  --skip-text: #9e6c00;           /* skip-step answer color */
+  --search-sep: #f0f0ee;          /* search item separator */
+  --search-hover-bg: #f5f9f4;     /* search item hover */
+  --copy-btn-bg: #ffffff;         /* cpkey copy button bg */
+  --copy-btn-hover: #f4ecd8;      /* cpkey copy button hover */
+  --path-q-color: #555555;        /* path question text */
+  --nav-active-bg: rgba(45, 90, 39, 0.10); /* active menu nav item */
+  --tooltip-bg: #1a1a1a;          /* choice tooltip background */
+  --tooltip-text: #f0ede6;        /* choice tooltip text */
+  --cand-sep: #f0ece4;            /* candidate list separator */
+  --cand-expanded: #faf7f2;       /* expanded candidate bg */
+  --cand-row-expanded: #f0ece4;   /* expanded candidate row bg */
+  --cand-hover: #f5f1ea;          /* candidate row hover bg */
+  --score-track: #e8e0d0;         /* score bar track */
+  --guide-inset: #f8f6f2;         /* guide inset panel bg */
+}
+
+/* === Dark mode: system preference === */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141a14;
+    --primary: #58a84e;
+    --primary-light: #6dc462;
+    --accent: #d4930f;
+    --card: #1d261d;
+    --text: #e4e0d8;
+    --text-muted: #8aa88a;
+    --border: #2e4230;
+    --shadow: 0 4px 16px rgba(0, 0, 0, 0.50);
+    --surface-tint: #1e2d1e;
+    --surface-warm: #271f0e;
+    --surface-blue: #162030;
+    --cpkey-surface: #22190d;
+    --cpkey-final: #192e19;
+    --amber-border: #5c4010;
+    --group-tag-border: #4a3208;
+    --blue-text: #6898c8;
+    --skip-text: #c88c20;
+    --search-sep: #252e25;
+    --search-hover-bg: #1e2b1e;
+    --copy-btn-bg: #1d261d;
+    --copy-btn-hover: #2a1e0e;
+    --path-q-color: #a0b0a0;
+    --nav-active-bg: rgba(88, 168, 78, 0.15);
+    --tooltip-bg: #e8e4dc;
+    --tooltip-text: #1a1a1a;
+    --cand-sep: #2a2e28;
+    --cand-expanded: #1d2218;
+    --cand-row-expanded: #22281c;
+    --cand-hover: #1b2018;
+    --score-track: #2e2c28;
+    --guide-inset: #1c1e1a;
+  }
+}
+
+/* === Dark mode: explicit toggle === */
+[data-theme="dark"] {
+  --bg: #141a14;
+  --primary: #58a84e;
+  --primary-light: #6dc462;
+  --accent: #d4930f;
+  --card: #1d261d;
+  --text: #e4e0d8;
+  --text-muted: #8aa88a;
+  --border: #2e4230;
+  --shadow: 0 4px 16px rgba(0, 0, 0, 0.50);
+  --surface-tint: #1e2d1e;
+  --surface-warm: #271f0e;
+  --surface-blue: #162030;
+  --cpkey-surface: #22190d;
+  --cpkey-final: #192e19;
+  --amber-border: #5c4010;
+  --group-tag-border: #4a3208;
+  --blue-text: #6898c8;
+  --skip-text: #c88c20;
+  --search-sep: #252e25;
+  --search-hover-bg: #1e2b1e;
+  --copy-btn-bg: #1d261d;
+  --copy-btn-hover: #2a1e0e;
+  --path-q-color: #a0b0a0;
+  --nav-active-bg: rgba(88, 168, 78, 0.15);
+  --tooltip-bg: #e8e4dc;
+  --tooltip-text: #1a1a1a;
+  --cand-sep: #2a2e28;
+  --cand-expanded: #1d2218;
+  --cand-row-expanded: #22281c;
+  --cand-hover: #1b2018;
+  --score-track: #2e2c28;
+  --guide-inset: #1c1e1a;
 }
 
 html { font-size: 16px; -webkit-text-size-adjust: 100%; }
@@ -243,8 +343,8 @@ body {
 #choice-tooltip-popup {
   position: fixed;
   z-index: 9999;
-  background: #1a1a1a;
-  color: #f0ede6;
+  background: var(--tooltip-bg);
+  color: var(--tooltip-text);
   font-size: 0.82rem;
   line-height: 1.45;
   padding: 0.55rem 0.8rem;
@@ -294,7 +394,7 @@ body {
 
 .id-note {
   font-size: 0.87rem;
-  background: #f0f5ef;
+  background: var(--surface-tint);
   border-left: 4px solid var(--primary);
   padding: 0.6rem 0.85rem;
   border-radius: 0 6px 6px 0;
@@ -428,7 +528,7 @@ body {
 .key-features li {
   font-size: 0.85rem;
   padding: 0.35rem 0.6rem 0.35rem 1.5rem;
-  background: #f0f5ef;
+  background: var(--surface-tint);
   border-radius: 5px;
   position: relative;
   color: var(--text);
@@ -466,8 +566,8 @@ body {
 .species-pending {
   font-size: 0.8rem;
   color: var(--text-muted);
-  background: #fdf8ef;
-  border: 1.5px dashed #e0c87a;
+  background: var(--surface-warm);
+  border: 1.5px dashed var(--amber-border);
   border-radius: 6px;
   padding: 0.5rem 0.75rem;
   margin-bottom: 1.25rem;
@@ -647,13 +747,13 @@ body {
   text-align: left;
   background: none;
   border: none;
-  border-bottom: 1px solid #f0f0ee;
+  border-bottom: 1px solid var(--search-sep);
   padding: 0.65rem 1.25rem;
   cursor: pointer;
   transition: background var(--transition);
 }
 
-.search-item:hover { background: #f5f9f4; }
+.search-item:hover { background: var(--search-hover-bg); }
 .search-item:active { background: var(--border); }
 
 .search-item-sci {
@@ -717,7 +817,7 @@ body {
 }
 
 .menu-nav-item:hover { background: var(--border); }
-.menu-nav-item.active { background: rgba(45, 90, 39, 0.1); }
+.menu-nav-item.active { background: var(--nav-active-bg); }
 
 .menu-nav-item-label {
   font-size: 0.93rem;
@@ -791,7 +891,7 @@ body {
 .about-note {
   font-size: 0.8rem !important;
   color: var(--text-muted) !important;
-  background: #fdf8ef;
+  background: var(--surface-warm);
   border-left: 3px solid var(--accent);
   padding: 0.4rem 0.6rem;
   border-radius: 0 4px 4px 0;
@@ -829,7 +929,7 @@ body {
   font-size: 0.78rem;
   font-weight: 600;
   color: var(--primary);
-  background: #f0f6ee;
+  background: var(--surface-tint);
   user-select: none;
   list-style: none;
 }
@@ -884,7 +984,7 @@ details[open] .path-summary::before { content: '▼ '; }
 .path-q {
   display: block;
   font-size: 0.77rem;
-  color: #555;
+  color: var(--path-q-color);
   line-height: 1.35;
 }
 
@@ -918,7 +1018,7 @@ details[open] .path-summary::before { content: '▼ '; }
 
 /* C&P (Corbet & Pendlebury) key path */
 .path-details--cpkey .path-summary {
-  background: #faf4e6;
+  background: var(--cpkey-surface);
   color: var(--accent);
   display: flex;
   align-items: center;
@@ -929,7 +1029,7 @@ details[open] .path-summary::before { content: '▼ '; }
 .path-details--cpkey .path-step { counter-increment: none; padding-left: 0; }
 .path-details--cpkey .path-step::before { display: none; }
 /* Final identifying lead (names the species) — highlighted as the ID point. */
-.path-details--cpkey .path-step--final { background: #eef5ec; border-radius: 6px; }
+.path-details--cpkey .path-step--final { background: var(--cpkey-final); border-radius: 6px; }
 .path-a--id { color: var(--primary); font-weight: 600; white-space: nowrap; }
 /* Connector lead — a group-entry the branch passes through (no Yes/No decision).
    Muted so it reads as context, not a choice. */
@@ -949,13 +1049,13 @@ details[open] .path-summary::before { content: '▼ '; }
   font-size: 0.72rem;
   font-weight: 600;
   color: var(--accent);
-  background: #fff;
+  background: var(--copy-btn-bg);
   border: 1px solid var(--border);
   border-radius: 6px;
   cursor: pointer;
 }
 .path-details--cpkey[open] .path-summary .cpkey-copy { display: inline-flex; }
-.cpkey-copy:hover { background: #f4ecd8; }
+.cpkey-copy:hover { background: var(--copy-btn-hover); }
 .cpkey-copy svg { display: block; }
 .cpkey-copy--done { color: #2e7d32; border-color: #2e7d32; }
 
@@ -966,8 +1066,8 @@ details[open] .path-summary::before { content: '▼ '; }
   font-size: 0.74rem;
   font-style: italic;
   color: var(--accent);
-  background: #fdf8ef;
-  border: 1px solid #f0d89a;
+  background: var(--surface-warm);
+  border: 1px solid var(--group-tag-border);
   padding: 0.1rem 0.45rem;
   border-radius: 4px;
 }
@@ -995,17 +1095,17 @@ details[open] .path-summary::before { content: '▼ '; }
 }
 
 .path-details--skip .path-summary {
-  background: #fdf8ef;
+  background: var(--surface-warm);
   color: var(--accent);
 }
 
 .path-details--simcd .path-summary {
-  background: #eef4fb;
-  color: #2a5a8a;
+  background: var(--surface-blue);
+  color: var(--blue-text);
 }
 
 .path-details--simcd .path-step--skip .path-a {
-  color: #2a5a8a;
+  color: var(--blue-text);
 }
 
 .path-skip-note {
@@ -1016,7 +1116,7 @@ details[open] .path-summary::before { content: '▼ '; }
 }
 
 .path-step--skip .path-a {
-  color: #9e6c00;
+  color: var(--skip-text);
   font-style: italic;
 }
 
@@ -1081,3 +1181,35 @@ details[open] .path-summary::before { content: '▼ '; }
 #species-app.species-view .path-variant-note { font-size: 0.82rem; }
 #species-app.species-view .path-skip-note { font-size: 0.82rem; }
 #species-app.species-view .species-detail .id-note { font-size: 0.92rem; }
+
+/* ===== Night mode toggle (in menu panel) ===== */
+.menu-theme-row {
+  padding: 0.5rem 0.75rem 0.85rem;
+  border-top: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.theme-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color var(--transition), color var(--transition), background var(--transition);
+  text-align: left;
+}
+
+.theme-toggle-btn:hover {
+  border-color: var(--primary);
+  color: var(--text);
+  background: var(--surface-tint);
+}
+
+.theme-icon { font-size: 1rem; line-height: 1; flex-shrink: 0; }

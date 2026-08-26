@@ -7,6 +7,7 @@
   <meta name="theme-color" content="#2d5a27">
   <title>Arhopala ID — C&amp;P Key Scoring</title>
   <link rel="stylesheet" href="css/style.css?v=20260717a">
+  <script src="js/theme.js?v=20260717a"></script>
   <style>
     /* ── Page layout ── */
     .ks-topbar {
@@ -44,25 +45,25 @@
     .ks-section-label { font-size: 0.72rem; font-weight: 700; color: var(--primary); letter-spacing: 0.07em; text-transform: uppercase; margin: 1.25rem 0 0.6rem; }
 
     /* Candidate rows */
-    .ks-cand { border-bottom: 1px solid #f0ece4; }
+    .ks-cand { border-bottom: 1px solid var(--cand-sep); }
     .ks-cand:last-child { border-bottom: none; }
-    .ks-cand.expanded { background: #faf7f2; }
+    .ks-cand.expanded { background: var(--cand-expanded); }
     .ks-cand-row { display: flex; align-items: center; gap: 0.5rem; padding: 0.45rem 0.85rem; cursor: pointer; transition: background var(--transition); }
-    .ks-cand-row:hover { background: #f5f1ea; }
-    .ks-cand.expanded .ks-cand-row { background: #f0ece4; }
+    .ks-cand-row:hover { background: var(--cand-hover); }
+    .ks-cand.expanded .ks-cand-row { background: var(--cand-row-expanded); }
     .ks-rank { font-size: 0.85rem; width: 1.6rem; flex-shrink: 0; text-align: center; }
     .ks-cname { flex: 1; min-width: 0; display: flex; flex-direction: column; }
     .ks-sci { font-style: italic; font-size: 0.87rem; color: var(--text); }
     .ks-common { font-size: 0.72rem; color: var(--text-muted); }
     .ks-bar-wrap { display: flex; align-items: center; gap: 0.35rem; flex-shrink: 0; }
-    .ks-bar-bg { width: 64px; height: 6px; background: #e8e0d0; border-radius: 3px; }
+    .ks-bar-bg { width: 64px; height: 6px; background: var(--score-track); border-radius: 3px; }
     .ks-bar { height: 6px; border-radius: 3px; background: var(--primary); transition: width 0.3s ease; min-width: 0; }
     .ks-bar.neg { background: #c0392b; }
     .ks-score-num { font-size: 0.72rem; color: var(--text-muted); width: 2.2rem; text-align: right; }
     .ks-score-num.neg { color: #c0392b; }
     .ks-inat-icon { flex-shrink: 0; font-size: 0.85rem; line-height: 1; text-decoration: none; opacity: 0.55; padding: 0.15rem 0.1rem; border-radius: 3px; transition: opacity 0.15s; }
     .ks-inat-icon:hover { opacity: 1; }
-    .ks-cand-detail { padding: 0.6rem 0.85rem 0.85rem 2.95rem; border-top: 1px solid #e8e0d0; }
+    .ks-cand-detail { padding: 0.6rem 0.85rem 0.85rem 2.95rem; border-top: 1px solid var(--score-track); }
     .ks-inat-link { font-size: 0.78rem; color: var(--primary); text-decoration: none; font-weight: 500; }
     .ks-inat-link:hover { text-decoration: underline; }
 
@@ -119,14 +120,14 @@
       text-align: left; transition: background var(--transition), border-color var(--transition);
       width: 100%;
     }
-    .ks-btn:hover { background: #f0ece4; border-color: var(--primary); }
+    .ks-btn:hover { background: var(--cand-sep); border-color: var(--primary); }
     .ks-btn.sel { background: var(--primary); border-color: var(--primary); color: #fff; }
     .ks-btn-skip {
       border-style: dashed; color: var(--text-muted); font-style: italic;
       font-size: 0.75rem; justify-content: center;
       padding: 0.22rem 0.6rem;
     }
-    .ks-btn-skip.sel { background: #e8e0d0; border-color: var(--accent); color: var(--accent); border-style: dashed; }
+    .ks-btn-skip.sel { background: var(--score-track); border-color: var(--accent); color: var(--accent); border-style: dashed; }
     .ks-btn-side {
       flex-shrink: 0;
       font-weight: 700; font-size: 0.75rem;
@@ -146,8 +147,8 @@
       flex: 1; justify-content: center; text-align: center;
       font-weight: 700; font-size: 0.9rem; padding: 0.5rem 0.6rem;
     }
-    .ks-btn-yes:hover { background: #eef5ec; border-color: var(--primary); }
-    .ks-btn-no:hover { background: #faf4e6; border-color: var(--accent); }
+    .ks-btn-yes:hover { background: var(--cpkey-final); border-color: var(--primary); }
+    .ks-btn-no:hover { background: var(--cpkey-surface); border-color: var(--accent); }
 
     /* Guide link inside button text */
     .ks-guide-link { color: inherit; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 2px; }
@@ -268,6 +269,12 @@
           <span class="menu-nav-item-desc">How to use this app</span>
         </a>
       </nav>
+      <div class="menu-theme-row">
+        <button class="theme-toggle-btn" onclick="ArTheme.toggle()" aria-label="Switch to dark mode">
+          <span class="theme-icon">🌙</span>
+          <span class="theme-label">Dark mode</span>
+        </button>
+      </div>
 
     </div>
   </div>

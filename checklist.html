@@ -7,6 +7,7 @@
   <meta name="theme-color" content="#2d5a27">
   <title>Arhopala ID — Feature Scoring</title>
   <link rel="stylesheet" href="css/style.css?v=20260717a">
+  <script src="js/theme.js?v=20260717a"></script>
   <style>
     /* ── Checklist page layout ── */
     .cl-topbar {
@@ -65,22 +66,22 @@
     }
 
     /* Candidate rows */
-    .cl-cand { border-bottom: 1px solid #f0ece4; }
+    .cl-cand { border-bottom: 1px solid var(--cand-sep); }
     .cl-cand:last-child { border-bottom: none; }
-    .cl-cand.expanded { background: #faf7f2; }
+    .cl-cand.expanded { background: var(--cand-expanded); }
     .cl-cand-row {
       display: flex; align-items: center; gap: 0.5rem;
       padding: 0.45rem 0.85rem; cursor: pointer;
       transition: background var(--transition);
     }
-    .cl-cand-row:hover { background: #f5f1ea; }
-    .cl-cand.expanded .cl-cand-row { background: #f0ece4; }
+    .cl-cand-row:hover { background: var(--cand-hover); }
+    .cl-cand.expanded .cl-cand-row { background: var(--cand-row-expanded); }
     .cl-rank { font-size: 0.85rem; width: 1.6rem; flex-shrink: 0; text-align: center; }
     .cl-cname { flex: 1; min-width: 0; display: flex; flex-direction: column; }
     .cl-sci { font-style: italic; font-size: 0.87rem; color: var(--text); }
     .cl-common { font-size: 0.72rem; color: var(--text-muted); }
     .cl-bar-wrap { display: flex; align-items: center; gap: 0.35rem; flex-shrink: 0; }
-    .cl-bar-bg { width: 64px; height: 6px; background: #e8e0d0; border-radius: 3px; }
+    .cl-bar-bg { width: 64px; height: 6px; background: var(--score-track); border-radius: 3px; }
     .cl-bar {
       height: 6px; border-radius: 3px;
       background: var(--primary); transition: width 0.3s ease;
@@ -93,7 +94,7 @@
     /* Expanded candidate detail */
     .cl-cand-detail {
       padding: 0.6rem 0.85rem 0.85rem 2.95rem;
-      border-top: 1px solid #e8e0d0;
+      border-top: 1px solid var(--score-track);
     }
     .cl-note {
       font-size: 0.78rem; color: var(--text); line-height: 1.5;
@@ -159,7 +160,7 @@
       font-size: 0.78rem; cursor: pointer; line-height: 1.35;
       text-align: left; transition: background var(--transition), border-color var(--transition);
     }
-    .cl-cbtn:hover { background: #f0ece4; border-color: var(--primary); }
+    .cl-cbtn:hover { background: var(--cand-sep); border-color: var(--primary); }
     .cl-cbtn.sel {
       background: var(--primary); border-color: var(--primary);
       color: #fff;
@@ -170,7 +171,7 @@
       font-style: italic;
     }
     .cl-cbtn.cd.sel {
-      background: #e8e0d0; border-color: var(--accent);
+      background: var(--score-track); border-color: var(--accent);
       color: var(--accent); border-style: dashed;
     }
 
@@ -303,6 +304,12 @@
           <span class="menu-nav-item-desc">How to use this app</span>
         </a>
       </nav>
+      <div class="menu-theme-row">
+        <button class="theme-toggle-btn" onclick="ArTheme.toggle()" aria-label="Switch to dark mode">
+          <span class="theme-icon">🌙</span>
+          <span class="theme-label">Dark mode</span>
+        </button>
+      </div>
 
     </div>
   </div>
