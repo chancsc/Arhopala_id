@@ -84,7 +84,7 @@
           "next": "q_ganesa_basal_s11"
         },
         {
-          "label": "Midway displaced — spot 6 shifted above spot 5 toward spot 7, but not yet reaching spot 7’s inner edge (epimuta group: A. atosia, A. lurida)",
+          "label": "Postdiscal spot in space 6 placed about midway between the spot in space 5 and the end-cell bar (epimuta group)",
           "next": "q_epimuta_alitaeus_split"
         },
         {
@@ -3792,7 +3792,7 @@
         "Is the hindwing cell longer than half the length of the wing?": "Yes — HW cell longer than half the wing length",
         "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?": "Long and filamentous, about 3.5 mm (A. corinda)",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No",
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Widely out of line — spot 6 inner edge at or inside spot 7's inner edge; spot 6 usually overlapping the end-cell bar (except A. ace and A. azinis)"
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)"
       }
     },
     "q_democritus_s1": {
@@ -3868,7 +3868,7 @@
       "note": "Underside ground colour uniform hair brown; markings less defined and paler than the closely related [A. lurida](https://www.inaturalist.org/observations?verifiable=true&taxon_id=475784&preferred_place_id=6734) (whose markings are darker and more sharply defined), contrasting feebly/weakly with the ground colour. HW postdiscal spot 6 positioned roughly midway between spot 5 and the end-cell bar; spots 5, 6 and 7 in echelon, their centres broadly in line. Filamentous tail at vein 2, ~2.5 mm — distinguishing it from the tailless [A. epimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429757&preferred_place_id=6734). FW ~22.0 mm. Male FW upperside: thread-width black border; discal patch large and circular, extending widely into the cell and space 1b.",
       "features": {
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — anal angle plain or rounded; no tornal lobe (bulge) at all",
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Midway displaced — spot 6 shifted above spot 5 toward spot 7, but not yet reaching spot 7’s inner edge (epimuta group: A. atosia, A. lurida)",
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spot in space 6 placed about midway between the spot in space 5 and the end-cell bar (epimuta group)",
         "Does the hindwing have a tail?": "Yes — hindwing is tailed"
       }
     },
@@ -3881,7 +3881,7 @@
       "note": "HW tail ~2.5 mm. Male FW upperside: border slightly expanding toward apex; discal patch smaller than in [A. atosia](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498181&preferred_place_id=6734), almost entirely confined to bases of spaces 2 and 3. Underside markings darker and more clearly defined than [A. atosia](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498181&preferred_place_id=6734).",
       "features": {
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — anal angle plain or rounded; no tornal lobe (bulge) at all",
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Midway displaced — spot 6 shifted above spot 5 toward spot 7, but not yet reaching spot 7’s inner edge (epimuta group: A. atosia, A. lurida)",
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spot in space 6 placed about midway between the spot in space 5 and the end-cell bar (epimuta group)",
         "Does the hindwing have a tail?": "Yes — hindwing is tailed"
       }
     },
@@ -4318,7 +4318,7 @@
       "note": "Tailed at vein 2. FW ~22 mm. FW apex acute; termen straight between veins 2–4. Underside postdiscal band sinuous or only slightly dislocated at vein 4; HW postdiscal spots narrow, regular, rectangular. Male: dark purple; FW border 0.5 mm at tornus expanding to 1.5 mm at apex. Female: dark shining blue. Rare; recorded from NE India to Neomalaya and Philippines. HW postdiscal spots 5, 6 and 7 in echelon, spot 6 nearer to spot 5 than the end-cell bar. (2026-06-19 fix: the echelon question previously routed here only via a false 'spot 6 directly below spot 7' shortcut, which would have misidentified a truthfully-answered specimen by sending it toward A. delta / A. atosia. The tree now checks FW apex/termen shape and HW spot 6–7 shape right after the echelon answer, so the canonical path matches the true echelon answer above.)",
       "features": {
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)",
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 nearer to spot 5 than to the end-cell bar; inner edge of spot 6 does not reach spot 7's inner edge"
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 in echelon, and with their centres more or less in line; the spot in space 6 nearer the spot in space 5 than the end-cell bar"
       }
     },
     "q_rama_s1": {
