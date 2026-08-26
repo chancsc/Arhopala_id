@@ -1327,6 +1327,22 @@
         },
         {
           "label": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)",
+          "next": "q_eumolphus_vs_alea"
+        }
+      ]
+    },
+    "q_eumolphus_vs_alea": {
+      "type": "question",
+      "id": "q_eumolphus_vs_alea",
+      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
+      "hint": "Separates the eumolphus group (no tornal lobe; FW spot 4 shifted basad) from the cleander/alea group (small but distinct tornal lobe; FW spot 4 in line). Even a subtle tornal lobe counts as 'Yes'.",
+      "choices": [
+        {
+          "label": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next",
+          "next": "q_cleander_sub"
+        },
+        {
+          "label": "No — anal angle plain or rounded; no tornal lobe (bulge) at all",
           "next": "g_eumolphus"
         }
       ]
@@ -3660,7 +3676,11 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Widely out of line — spot 6 inner edge at or inside spot 7’s inner edge; spot 6 usually overlapping the end-cell bar (except A. ace and A. azinis)",
         "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes — HW spot 6 widely overlaps the end-cell bar",
-        "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes"
+        "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes",
+        "Do both the forewing and hindwing have a distinctly paler subapical area, irrorated (sprinkled) with whitish scales?": "No — subapical area not distinctly paler on both wings",
+        "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?": "No — typical hair-brown underside; spots solid, darker than the ground colour",
+        "Is there a spot in forewing underside space 11?": "No — no spot in FW space 11",
+        "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?": "No"
       }
     },
     "r_aroa_aroa": {
