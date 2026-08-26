@@ -3834,7 +3834,7 @@
       "choices": [
         {
           "label": "Yes — short tail present (~2.5 mm)",
-          "next": "q_epimuta_s2"
+          "next": "r_epimuta_tailed_unclear"
         },
         {
           "label": "No tail — hindwing untailed",
@@ -3867,7 +3867,8 @@
       "note": "Underside ground colour uniform hair brown; markings less defined and paler than the closely related [A. lurida](https://www.inaturalist.org/observations?verifiable=true&taxon_id=475784&preferred_place_id=6734) (whose markings are darker and more sharply defined), contrasting feebly/weakly with the ground colour. HW postdiscal spot 6 positioned roughly midway between spot 5 and the end-cell bar; spots 5, 6 and 7 in echelon, their centres broadly in line. Filamentous tail at vein 2, ~2.5 mm — distinguishing it from the tailless [A. epimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429757&preferred_place_id=6734). FW ~22.0 mm. Male FW upperside: thread-width black border; discal patch large and circular, extending widely into the cell and space 1b.",
       "features": {
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — anal angle plain or rounded; no tornal lobe (bulge) at all",
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 at spot 5’s level, or slightly closer to spot 5; inner edge of spot 6 does not reach spot 7’s inner edge"
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Midway displaced — spot 6 shifted above spot 5 toward spot 7, but not yet reaching spot 7’s inner edge (epimuta group: A. atosia, A. lurida)",
+        "Does the hindwing have a tail?": "Yes — hindwing is tailed"
       }
     },
     "r_lurida": {
@@ -3879,7 +3880,8 @@
       "note": "HW tail ~2.5 mm. Male FW upperside: border slightly expanding toward apex; discal patch smaller than in [A. atosia](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498181&preferred_place_id=6734), almost entirely confined to bases of spaces 2 and 3. Underside markings darker and more clearly defined than [A. atosia](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498181&preferred_place_id=6734).",
       "features": {
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — anal angle plain or rounded; no tornal lobe (bulge) at all",
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 at spot 5’s level, or slightly closer to spot 5; inner edge of spot 6 does not reach spot 7’s inner edge"
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Midway displaced — spot 6 shifted above spot 5 toward spot 7, but not yet reaching spot 7’s inner edge (epimuta group: A. atosia, A. lurida)",
+        "Does the hindwing have a tail?": "Yes — hindwing is tailed"
       }
     },
     "r_epimuta_tailed_unclear": {
