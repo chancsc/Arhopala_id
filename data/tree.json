@@ -100,9 +100,9 @@
     "q_epimuta_alitaeus_split": {
       "type": "question",
       "id": "q_epimuta_alitaeus_split",
-      "question": "Is there a central spot in forewing underside space 11?",
+      "question": "Is there a spot in forewing underside space 11?",
       "question_link": {
-        "text": "central spot in forewing underside space 11",
+        "text": "spot in forewing underside space 11",
         "href": "guide.html#fw-space-11"
       },
       "guide_link": "guide.html#fw-space-11",
@@ -113,7 +113,7 @@
           "next": "g_alitaeus"
         },
         {
-          "label": "No — no central spot in FW space 11",
+          "label": "No — no spot in FW space 11",
           "next": "q_epimuta_s2"
         }
       ]
@@ -215,9 +215,9 @@
     "q_ganesa_basal_s11": {
       "type": "question",
       "id": "q_ganesa_basal_s11",
-      "question": "Is there a spot at the base of forewing underside space 11, between the basal and central cell spots?",
+      "question": "Is there a spot in forewing underside space 11?",
       "question_link": {
-        "text": "spot at the base of forewing underside space 11",
+        "text": "spot in forewing underside space 11",
         "href": "guide.html#fw-space-11"
       },
       "hint": "The ganesa group is characterised by a distinct spot sitting at the very base of FW space 11, wedged between the basal cell bar and the central cell spot — visible on the forewing underside between the cell bars. All five Peninsular ganesa-group species ([A. ammon](https://www.inaturalist.org/observations?verifiable=true&taxon_id=506221&preferred_place_id=6734), [A. ammonides](https://www.inaturalist.org/observations?verifiable=true&taxon_id=470744&preferred_place_id=6734), [A. elizabethae](https://www.inaturalist.org/search?q=Arhopala+elizabethae), [A. ariel](https://www.inaturalist.org/observations?verifiable=true&taxon_id=885911&preferred_place_id=6734), [A. paraganesa](https://www.inaturalist.org/observations?verifiable=true&taxon_id=333568&preferred_place_id=6734)) are also small, with short tails, spots visible above the FW cell, and a spot at the base of FW space 3.",
@@ -227,7 +227,7 @@
           "next": "g_ganesa"
         },
         {
-          "label": "No — no spot at the base of FW space 11",
+          "label": "No — no spot in FW space 11",
           "next": "q_tailed_anthelus"
         }
       ]
@@ -351,9 +351,9 @@
     "q_tailed_alitaeus": {
       "type": "question",
       "id": "q_tailed_alitaeus",
-      "question": "Is there a central spot in forewing underside space 11?",
+      "question": "Is there a spot in forewing underside space 11?",
       "question_link": {
-        "text": "central spot in forewing underside space 11",
+        "text": "spot in forewing underside space 11",
         "href": "guide.html#fw-space-11"
       },
       "guide_link": "guide.html#fw-space-11",
@@ -364,7 +364,7 @@
           "next": "g_alitaeus"
         },
         {
-          "label": "No — no central spot in FW space 11",
+          "label": "No — no spot in FW space 11",
           "next": "q_cleander_syndrome"
         }
       ]
@@ -3074,7 +3074,7 @@
       "features": {
         "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)",
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 at spot 5’s level, or slightly closer to spot 5; inner edge of spot 6 does not reach spot 7’s inner edge",
-        "Is there a central spot in forewing underside space 11?": "Yes — central spot present in FW space 11",
+        "Is there a spot in forewing underside space 11?": "Yes — central spot present in FW space 11",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)",
         "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?": "Yes — spot present at extreme base of FW space 10",
         "Are the underside markings clearly visible and annular (ring-like), strongly contrasting with the ground colour?": "Yes — markings annular and clearly contrasting with the ground colour"
