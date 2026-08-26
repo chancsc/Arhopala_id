@@ -3791,7 +3791,8 @@
         "On the hindwing underside, is postdiscal spot 6 convex or almost straight (not concave) and touching or overlapping the end-cell bar, with no costal spot present in forewing space 10?": "Yes — HW spot 6 convex or almost straight, touching/overlapping the end-cell bar; no FW space 10 costal spot",
         "Is the hindwing cell longer than half the length of the wing?": "Yes — HW cell longer than half the wing length",
         "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?": "Long and filamentous, about 3.5 mm (A. corinda)",
-        "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No"
+        "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No",
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Widely out of line — spot 6 inner edge at or inside spot 7's inner edge; spot 6 usually overlapping the end-cell bar (except A. ace and A. azinis)"
       }
     },
     "q_democritus_s1": {
@@ -4316,7 +4317,8 @@
       "common_name": "Rosy Oakblue",
       "note": "Tailed at vein 2. FW ~22 mm. FW apex acute; termen straight between veins 2–4. Underside postdiscal band sinuous or only slightly dislocated at vein 4; HW postdiscal spots narrow, regular, rectangular. Male: dark purple; FW border 0.5 mm at tornus expanding to 1.5 mm at apex. Female: dark shining blue. Rare; recorded from NE India to Neomalaya and Philippines. HW postdiscal spots 5, 6 and 7 in echelon, spot 6 nearer to spot 5 than the end-cell bar. (2026-06-19 fix: the echelon question previously routed here only via a false 'spot 6 directly below spot 7' shortcut, which would have misidentified a truthfully-answered specimen by sending it toward A. delta / A. atosia. The tree now checks FW apex/termen shape and HW spot 6–7 shape right after the echelon answer, so the canonical path matches the true echelon answer above.)",
       "features": {
-        "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
+        "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)",
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 nearer to spot 5 than to the end-cell bar; inner edge of spot 6 does not reach spot 7's inner edge"
       }
     },
     "q_rama_s1": {
