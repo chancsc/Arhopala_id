@@ -71,12 +71,13 @@ function loadPlaywright() {
   const paths = JSON.parse(fs.readFileSync(path.join(REPO, 'data', 'sim_cd_paths.json')));
 
   const b = await chromium.launch({ headless: true });
-  const pg = await b.newPage();
   const names = Object.keys(paths);
   let pass = 0; const fails = [];
 
   for (const name of names) {
     const p = paths[name];
+    // Fresh page per species — prevents memory/state accumulation over 70+ species
+    const pg = await b.newPage();
     await pg.goto(`http://localhost:${port}/checklist.html`, { waitUntil: 'networkidle' });
     await pg.evaluate(() => localStorage.clear());
     await pg.reload({ waitUntil: 'networkidle' });
@@ -110,6 +111,7 @@ function loadPlaywright() {
     }
     if (ok) { pass++; console.log(`✓ ${name}  (${p.length} steps)`); }
     else { fails.push({ name, failAt }); const g = failAt.got ? 'Q' + (nums.get(failAt.got) || '?') : (failAt.note || '?'); console.log(`✗ ${name}  @step ${failAt.step}: expected Q${nums.get(failAt.expected) || '?'}, live top = ${g}`); }
+    await pg.close();
   }
   await b.close();
   server.close();
