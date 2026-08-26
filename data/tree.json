@@ -88,7 +88,7 @@
           "next": "q_epimuta_alitaeus_split"
         },
         {
-          "label": "In or near the postdiscal row — spot 6 at spot 5’s level, or slightly closer to spot 5; inner edge of spot 6 does not reach spot 7’s inner edge",
+          "label": "In or near the postdiscal row — spot 6 nearer to spot 5 than to the end-cell bar; inner edge of spot 6 does not reach spot 7’s inner edge",
           "next": "q_ganesa_basal_s11"
         },
         {
@@ -199,11 +199,11 @@
           "next": "q_tailed_aurea_check"
         },
         {
-          "label": "In or near the postdiscal row — spot 6 at spot 5’s level, or slightly closer to spot 5; inner edge of spot 6 does not reach spot 7’s inner edge",
+          "label": "In or near the postdiscal row — spot 6 nearer to spot 5 than to the end-cell bar; inner edge of spot 6 does not reach spot 7’s inner edge",
           "next": "q_long_tail_echelon_check"
         },
         {
-          "label": "In or near the postdiscal row — spot 6 at spot 5’s level, or slightly closer to spot 5; inner edge of spot 6 does not reach spot 7’s inner edge",
+          "label": "In or near the postdiscal row — spot 6 nearer to spot 5 than to the end-cell bar; inner edge of spot 6 does not reach spot 7’s inner edge",
           "next": "q_tailed_long_dark"
         },
         {
@@ -1577,7 +1577,7 @@
       "common_name": "Large Metallic Oakblue",
       "note": "Underside ground colour hair brown; spots narrowly outlined in pale buff lines. Male upperside: lustrous violet blue with black border reduced to a thread. Female upperside: purple blue with typical broad black borders. Two size forms occur: large (FW 25–29 mm) and small (FW 20–22 mm; small form has more rounded, darker spots beneath). Two subspecies: [A. aedias agnis](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498179&preferred_place_id=6734) (forest at low to moderate elevations, standard) and [A. aedias meritatas](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498179&preferred_place_id=6734) (Langkawi Islands — paler and brighter blue upperside in both sexes).",
       "features": {
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 at spot 5’s level, or slightly closer to spot 5; inner edge of spot 6 does not reach spot 7’s inner edge",
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 nearer to spot 5 than to the end-cell bar; inner edge of spot 6 does not reach spot 7’s inner edge",
         "What is the underside ground colour and overall appearance?": "Hair brown; spots narrowly buff-outlined; HW spots 5–6–7 in echelon; large (FW 20–29 mm); rounded FW apex; tail ~6 mm — A. aedias",
         "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?": "No — no dark patch present in FW space 1b",
         "What does the hindwing underside look like?": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8",
@@ -2406,7 +2406,7 @@
         "Is the forewing postdiscal band nearly completely dislocated at vein 4?": "Yes — FW band nearly completely dislocated at vein 4",
         "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)",
         "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No — HW postdiscal spots rounded (not quadrate/banded)",
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 at spot 5’s level, or slightly closer to spot 5; inner edge of spot 6 does not reach spot 7’s inner edge"
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 nearer to spot 5 than to the end-cell bar; inner edge of spot 6 does not reach spot 7’s inner edge"
       }
     },
     "r_avathina_avathina": {
@@ -2759,7 +2759,7 @@
       "common_name": "Magnificent Oakblue",
       "note": "One of the most beautiful in the genus. FW 28 mm. Underside: ≥3 spots in FW space 11; 2 spots at base of HW space 8; spots on FW and upper HW half deep purple-brown. Male: brilliant shining blue, narrow black border. Female: violet-blue with fairly broad black borders. Anthelus subgroup.",
       "features": {
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 at spot 5’s level, or slightly closer to spot 5; inner edge of spot 6 does not reach spot 7’s inner edge"
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 nearer to spot 5 than to the end-cell bar; inner edge of spot 6 does not reach spot 7’s inner edge"
       }
     },
     "r_achelous_achelous": {
@@ -2770,7 +2770,7 @@
       "common_name": "",
       "note": "Tailed. FW 22 mm. Underside: strong purple tinge (nominate); lacks spots in FW space 11 (cf. [A. anthelus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=149211&preferred_place_id=6734)); single spot at base of HW space 8 (cf. two in [A. anthelus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=149211&preferred_place_id=6734)). HW postdiscal spots 5, 6 and 7 in the normal echelon arrangement, spot 6 nearer to spot 5 than to the end-cell bar. Subspecies [A. achelous malu](https://www.inaturalist.org/observations?verifiable=true&taxon_id=940963&preferred_place_id=6734) (Kedawi: Langkawi, Perlis, north Kedah) lacks most of the purple tinge found in the nominate. Male: shining dark blue, narrow ~0.5 mm black border. Achelous subgroup.",
       "features": {
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 at spot 5’s level, or slightly closer to spot 5; inner edge of spot 6 does not reach spot 7’s inner edge"
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 nearer to spot 5 than to the end-cell bar; inner edge of spot 6 does not reach spot 7’s inner edge"
       }
     },
     "q_aurea_s1": {
@@ -3089,7 +3089,7 @@
       "note": "Tailed. One of the most beautiful and largest species in the genus. Immediately recognized by the central spot in FW underside space 11 (no other camdeo subgroup member has this). Male: shining pale silvery blue overlaid with violet toward the margins. Camdeo subgroup.",
       "features": {
         "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)",
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 at spot 5’s level, or slightly closer to spot 5; inner edge of spot 6 does not reach spot 7’s inner edge",
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 nearer to spot 5 than to the end-cell bar; inner edge of spot 6 does not reach spot 7’s inner edge",
         "Is there a spot in forewing underside space 11?": "Yes — spot present in FW space 11",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)",
         "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?": "Yes — spot present at extreme base of FW space 10",
@@ -3127,7 +3127,7 @@
       "common_name": "",
       "note": "Tailed. Short tail. Similar to [A. belphoebe cowani](https://www.inaturalist.org/search?q=Arhopala+belphoebe) (incomplete FW postdiscal band) but possesses a short tail and is much darker violet-blue. Camdeo subgroup.",
       "features": {
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 at spot 5’s level, or slightly closer to spot 5; inner edge of spot 6 does not reach spot 7’s inner edge",
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 nearer to spot 5 than to the end-cell bar; inner edge of spot 6 does not reach spot 7’s inner edge",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
       }
     },
@@ -3140,7 +3140,7 @@
       "note": "Tailed. Short tail ~2.5 mm. Underside spots indistinct. FW postdiscal spot in space 4 shifted distad (out of line with spots 5 and 6). Male: clear violet-blue with thread-like border. Camdeo subgroup.",
       "features": {
         "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)",
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 at spot 5’s level, or slightly closer to spot 5; inner edge of spot 6 does not reach spot 7’s inner edge",
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 nearer to spot 5 than to the end-cell bar; inner edge of spot 6 does not reach spot 7’s inner edge",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
       }
     },
@@ -3153,7 +3153,7 @@
       "note": "Tailed. Small species. Very short HW tail (~1.5 mm). Male: even, pale metallic silvery blue upperside. FW spot 4 in normal position (not shifted). Camdeo subgroup.",
       "features": {
         "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)",
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 at spot 5’s level, or slightly closer to spot 5; inner edge of spot 6 does not reach spot 7’s inner edge",
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 nearer to spot 5 than to the end-cell bar; inner edge of spot 6 does not reach spot 7’s inner edge",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
       }
     },
@@ -3215,7 +3215,7 @@
       "features": {
         "Is the specimen tailed?": "Cannot determine",
         "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)",
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 at spot 5’s level, or slightly closer to spot 5; inner edge of spot 6 does not reach spot 7’s inner edge",
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 nearer to spot 5 than to the end-cell bar; inner edge of spot 6 does not reach spot 7’s inner edge",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
       }
     },
@@ -3240,7 +3240,7 @@
       "note": "Tailed. Underside: purple-brown with markings outlined by white striae; extra spot in mid-space 8 on HW underside (diagnostic for subgroup); NO spot at base of HW space 6 (unlike myrzala subgroup). Male: dark violet-blue with regular 2.0 mm black borders. Bazaloides subgroup.",
       "features": {
         "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?": "No — FW postdiscal band complete (or only partially dislocated at vein 4)",
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 at spot 5’s level, or slightly closer to spot 5; inner edge of spot 6 does not reach spot 7’s inner edge",
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 nearer to spot 5 than to the end-cell bar; inner edge of spot 6 does not reach spot 7’s inner edge",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
       }
     },
@@ -4297,7 +4297,7 @@
       "note": "Tailed. FW ~23 mm. HW cell about half wing length or longer. Underside: markings rather variegated; whitish streak from base of dorsum to apex on HW. Male: pale blue; FW costal border runs narrowly along costa to wing base (unique). Female: same but costal border much broader. More common in Kedah than elsewhere in the Peninsula.",
       "features": {
         "Is there a whitish streak on the hindwing underside running from the base of the dorsum to the apex?": "Yes — whitish streak present on HW underside from dorsal base to apex",
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 at spot 5’s level, or slightly closer to spot 5; inner edge of spot 6 does not reach spot 7’s inner edge"
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "In or near the postdiscal row — spot 6 nearer to spot 5 than to the end-cell bar; inner edge of spot 6 does not reach spot 7’s inner edge"
       }
     },
     "r_inornata_inornata": {
