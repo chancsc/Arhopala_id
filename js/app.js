@@ -412,14 +412,13 @@ function buildPathDisplay(paths, note, resultFeatures, resultName) {
 
   // Two distinct tree nodes can deliberately share question text (so Feature
   // Scoring treats them as one question) yet both land on the same species'
-  // canonical path — drop the repeat rather than showing the same Q+answer twice.
+  // canonical path — keep only the first occurrence of each question.
   const dedupeSteps = path => {
     const seen = new Set();
     return path.filter(step => {
       if (step.group) return true;
-      const key = step.question + ' ' + step.choice;
-      if (seen.has(key)) return false;
-      seen.add(key);
+      if (seen.has(step.question)) return false;
+      seen.add(step.question);
       return true;
     });
   };
