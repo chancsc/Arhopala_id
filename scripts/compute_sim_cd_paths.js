@@ -239,7 +239,17 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
         break;
       }
     }
-    if (nextQ === null) break;
+    // Second pass: when the 15-cap window yielded nothing, scan ALL remaining
+    // questions for real (simAnswers) features — models a user who clicks
+    // "Show all features" to see the full list. CD/orphan answers are NOT
+    // extended beyond the cap; only real own-features are added here.
+    if (nextQ === null) {
+      for (const q of questionOrder) {
+        if (answers.has(q)) continue;
+        if (simAnswers.has(q)) { nextQ = q; nextAns = simAnswers.get(q); break; }
+      }
+      if (nextQ === null) break;
+    }
 
     answers.set(nextQ, nextAns);
     if (!orphanNoDisplay.has(nextQ)) simPath.push({ question: nextQ, choice: nextAns });
