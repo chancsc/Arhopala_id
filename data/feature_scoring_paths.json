@@ -1126,7 +1126,7 @@
     },
     {
       "question": "Is there a spot in forewing underside space 11?",
-      "choice": "Yes — central spot present in FW space 11"
+      "choice": "Yes — spot present in FW space 11"
     },
     {
       "question": "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?",
@@ -1196,7 +1196,7 @@
     },
     {
       "question": "Is there a spot in forewing underside space 11?",
-      "choice": "Yes — central spot present in FW space 11"
+      "choice": "Yes — spot present in FW space 11"
     },
     {
       "question": "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?",
@@ -1262,7 +1262,7 @@
     },
     {
       "question": "Is there a spot in forewing underside space 11?",
-      "choice": "Yes — central spot present in FW space 11"
+      "choice": "Yes — spot present in FW space 11"
     },
     {
       "question": "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?",
@@ -1328,7 +1328,7 @@
     },
     {
       "question": "Is there a spot in forewing underside space 11?",
-      "choice": "Yes — central spot present in FW space 11"
+      "choice": "Yes — spot present in FW space 11"
     },
     {
       "question": "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?",
@@ -1394,7 +1394,7 @@
     },
     {
       "question": "Is there a spot in forewing underside space 11?",
-      "choice": "Yes — central spot present in FW space 11"
+      "choice": "Yes — spot present in FW space 11"
     },
     {
       "question": "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?",
@@ -1460,7 +1460,7 @@
     },
     {
       "question": "Is there a spot in forewing underside space 11?",
-      "choice": "Yes — central spot present in FW space 11"
+      "choice": "Yes — spot present in FW space 11"
     },
     {
       "question": "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?",
@@ -1522,7 +1522,7 @@
     },
     {
       "question": "Is there a spot in forewing underside space 11?",
-      "choice": "Yes — central spot present in FW space 11"
+      "choice": "Yes — spot present in FW space 11"
     },
     {
       "question": "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?",
@@ -1588,7 +1588,7 @@
     },
     {
       "question": "Is there a spot in forewing underside space 11?",
-      "choice": "Yes — central spot present in FW space 11"
+      "choice": "Yes — spot present in FW space 11"
     },
     {
       "question": "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?",
@@ -1658,7 +1658,7 @@
     },
     {
       "question": "Is there a spot in forewing underside space 11?",
-      "choice": "Yes — central spot present in FW space 11"
+      "choice": "Yes — spot present in FW space 11"
     },
     {
       "question": "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?",
@@ -3516,7 +3516,7 @@
     },
     {
       "question": "Is there a spot in forewing underside space 11?",
-      "choice": "Yes — central spot present in FW space 11"
+      "choice": "Yes — spot present in FW space 11"
     },
     {
       "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
@@ -6382,15 +6382,19 @@
     },
     {
       "question": "Is there a spot in forewing underside space 11?",
-      "choice": "Yes — basal spot present in FW space 11, between the basal and central cell spots"
+      "choice": "Yes — spot present in FW space 11"
     },
     {
-      "question": "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?",
-      "choice": "No — no whitened gap between HW space 7 spots"
+      "question": "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?",
+      "choice": "No — no spot at extreme base of FW space 10"
     },
     {
-      "question": "Is there a roughly quadrate whitish area on the hindwing underside extending from mid-cell to the costa?",
-      "choice": "Yes — roughly quadrate whitish area from mid-cell to costa"
+      "question": "Which best describes the underside ground colour?",
+      "choice": "Brownish with a slatey or purplish glaze — A. ariana (darker brown, faint purplish wash) or A. aida (paler brown; slatey glaze in subsp. aida, purplish in subsp. ophir)"
+    },
+    {
+      "question": "Is the forewing termen notably straight and the apex more produced (pointed) than other group members?",
+      "choice": "No — FW shape more normal; apex less produced; male border 1.0–1.5 mm"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -6444,15 +6448,19 @@
     },
     {
       "question": "Is there a spot in forewing underside space 11?",
-      "choice": "Yes — basal spot present in FW space 11, between the basal and central cell spots"
+      "choice": "Yes — spot present in FW space 11"
     },
     {
-      "question": "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?",
-      "choice": "Yes — gap between HW space 7 spots conspicuously whitened"
+      "question": "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?",
+      "choice": "No — no spot at extreme base of FW space 10"
     },
     {
-      "question": "Are tornal green scales present on the hindwing underside?",
-      "choice": "No tornal green scales"
+      "question": "Which best describes the underside ground colour?",
+      "choice": "Brownish with a slatey or purplish glaze — A. ariana (darker brown, faint purplish wash) or A. aida (paler brown; slatey glaze in subsp. aida, purplish in subsp. ophir)"
+    },
+    {
+      "question": "Is the forewing termen notably straight and the apex more produced (pointed) than other group members?",
+      "choice": "No — FW shape more normal; apex less produced; male border 1.0–1.5 mm"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -6506,19 +6514,19 @@
     },
     {
       "question": "Is there a spot in forewing underside space 11?",
-      "choice": "Yes — basal spot present in FW space 11, between the basal and central cell spots"
+      "choice": "Yes — spot present in FW space 11"
     },
     {
-      "question": "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?",
-      "choice": "Yes — gap between HW space 7 spots conspicuously whitened"
+      "question": "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?",
+      "choice": "No — no spot at extreme base of FW space 10"
     },
     {
-      "question": "Are tornal green scales present on the hindwing underside?",
-      "choice": "Tornal green scales present"
+      "question": "Which best describes the underside ground colour?",
+      "choice": "Brownish with a slatey or purplish glaze — A. ariana (darker brown, faint purplish wash) or A. aida (paler brown; slatey glaze in subsp. aida, purplish in subsp. ophir)"
     },
     {
-      "question": "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?",
-      "choice": "Yes — HW spot 6 extended to base of space"
+      "question": "Is the forewing termen notably straight and the apex more produced (pointed) than other group members?",
+      "choice": "No — FW shape more normal; apex less produced; male border 1.0–1.5 mm"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -6572,15 +6580,19 @@
     },
     {
       "question": "Is there a spot in forewing underside space 11?",
-      "choice": "Yes — basal spot present in FW space 11, between the basal and central cell spots"
+      "choice": "Yes — spot present in FW space 11"
     },
     {
-      "question": "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?",
-      "choice": "No — no whitened gap between HW space 7 spots"
+      "question": "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?",
+      "choice": "No — no spot at extreme base of FW space 10"
     },
     {
-      "question": "Is there a roughly quadrate whitish area on the hindwing underside extending from mid-cell to the costa?",
-      "choice": "No — no mid-cell whitish patch"
+      "question": "Which best describes the underside ground colour?",
+      "choice": "Brownish with a slatey or purplish glaze — A. ariana (darker brown, faint purplish wash) or A. aida (paler brown; slatey glaze in subsp. aida, purplish in subsp. ophir)"
+    },
+    {
+      "question": "Is the forewing termen notably straight and the apex more produced (pointed) than other group members?",
+      "choice": "No — FW shape more normal; apex less produced; male border 1.0–1.5 mm"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -6634,19 +6646,19 @@
     },
     {
       "question": "Is there a spot in forewing underside space 11?",
-      "choice": "Yes — basal spot present in FW space 11, between the basal and central cell spots"
+      "choice": "Yes — spot present in FW space 11"
     },
     {
-      "question": "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?",
-      "choice": "Yes — gap between HW space 7 spots conspicuously whitened"
+      "question": "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?",
+      "choice": "No — no spot at extreme base of FW space 10"
     },
     {
-      "question": "Are tornal green scales present on the hindwing underside?",
-      "choice": "Tornal green scales present"
+      "question": "Which best describes the underside ground colour?",
+      "choice": "Brownish with a slatey or purplish glaze — A. ariana (darker brown, faint purplish wash) or A. aida (paler brown; slatey glaze in subsp. aida, purplish in subsp. ophir)"
     },
     {
-      "question": "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?",
-      "choice": "No — HW spot 6 normal, not reaching base"
+      "question": "Is the forewing termen notably straight and the apex more produced (pointed) than other group members?",
+      "choice": "No — FW shape more normal; apex less produced; male border 1.0–1.5 mm"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
@@ -6700,15 +6712,19 @@
     },
     {
       "question": "Is there a spot in forewing underside space 11?",
-      "choice": "Yes — basal spot present in FW space 11, between the basal and central cell spots"
+      "choice": "Yes — spot present in FW space 11"
     },
     {
-      "question": "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?",
-      "choice": "No — no whitened gap between HW space 7 spots"
+      "question": "Is there a spot at the extreme base of forewing underside space 10 (just above vein 10, near the cell-end)?",
+      "choice": "No — no spot at extreme base of FW space 10"
     },
     {
-      "question": "Is there a roughly quadrate whitish area on the hindwing underside extending from mid-cell to the costa?",
-      "choice": "No — no mid-cell whitish patch"
+      "question": "Which best describes the underside ground colour?",
+      "choice": "Brownish with a slatey or purplish glaze — A. ariana (darker brown, faint purplish wash) or A. aida (paler brown; slatey glaze in subsp. aida, purplish in subsp. ophir)"
+    },
+    {
+      "question": "Is the forewing termen notably straight and the apex more produced (pointed) than other group members?",
+      "choice": "No — FW shape more normal; apex less produced; male border 1.0–1.5 mm"
     },
     {
       "question": "On the forewing underside, is the basal half of space 1b completely darkened?",
