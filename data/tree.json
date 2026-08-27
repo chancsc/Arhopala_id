@@ -1774,7 +1774,8 @@
         "Roughly how large is the specimen (forewing length)?": "Larger — forewing about 20–22 mm (A. agelastus / A. labuana)",
         "In the hindwing underside spaces 2 - 5, are the submarginal spots prominently wedge-shaped (∧), black or dark brown?": "Yes — submarginal spots wedge-shaped (∧) and brown in spaces 2, 3, 4, 5",
         "Is the hindwing underside postdiscal spot 3 almost in line with postdiscal spots 2 and 4 (forming an even curve)?": "No — spot 3 displaced, not clearly in line",
-        "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?": "No — HW spot 6 not sinuous/concave, or no FW costal spot in space 10"
+        "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?": "No — HW spot 6 not sinuous/concave, or no FW costal spot in space 10",
+        "What is the shape and position of the hindwing postdiscal spot 6, and are the inner submarginal spots notably enlarged and darkened?": "Spot 6 outwardly convex ⌢; touches or overlaps the end-cell bar; spots 5, 6 and 7 widely out of line; submarginal spots uniform (not enlarged)"
       }
     },
     "r_wildeyana": {
@@ -1852,7 +1853,10 @@
       "taxon_id": null,
       "name": "Arhopala kinabala",
       "common_name": "Golden-spotted Oakblue",
-      "note": "Tailless. Underside ground colour dark brown with large, blackish-brown markings. FW space 11 has two spots; FW space 3 spot is elongate and touches the end-cell bar. HW postdiscal spot 6 is oval, significantly enlarged, and overlaps the end-cell bar. Rare; seldom found below 450 m elevation."
+      "note": "Tailless. Underside ground colour dark brown with large, blackish-brown markings. FW space 11 has two spots; FW space 3 spot is elongate and touches the end-cell bar. HW postdiscal spot 6 is oval, significantly enlarged, and overlaps the end-cell bar. Rare; seldom found below 450 m elevation.",
+      "features": {
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced"
+      }
     },
     "r_similis": {
       "type": "result",
@@ -3784,7 +3788,8 @@
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is there a costal spot present in forewing underside space 10?": "No — no costal spot in FW space 10 (A. milleri)",
         "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes — HW spot 6 widely overlaps the end-cell bar",
-        "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes"
+        "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes",
+        "Is hindwing postdiscal spot 6 considerably wider than spot 7?": "No — HW spot 6 similar in width to spot 7 (cleander group)"
       }
     },
     "r_normani": {
