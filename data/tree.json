@@ -1119,7 +1119,7 @@
       "common_name": "",
       "note": "Tailless. Uniquely lacks the basal cell spot on FW underside. Male: very dark bluish violet; FW black border 1.0 mm at tornus increasing to 2.0 mm at apex (narrow borders). Female: purple. Similar to [Arhopala antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734) but distinguished by wider borders in the male.",
       "features": {
-        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced",
+        "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar",
         "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?": "No — HW spot 6 not sinuous/concave, or no FW costal spot in space 10"
       }
     },
@@ -1251,7 +1251,8 @@
       "note": "Underside: all markings relatively wide; FW postdiscal band dislocated at vein 4; HW postdiscal spot 6 outwardly concave. Male: deep cobalt blue with black border reduced to a thread. Female: purple.",
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
-        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter"
+        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter",
+        "Is the forewing postdiscal band clearly dislocated at vein 4, and is hindwing postdiscal spot 6 outwardly concave?": "Yes — FW band clearly dislocated at vein 4; HW spot 6 outwardly concave"
       }
     },
     "r_azinis_azinis": {
@@ -1264,7 +1265,8 @@
       "features": {
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No",
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
-        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter"
+        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter",
+        "Is the forewing postdiscal band clearly dislocated at vein 4, and is hindwing postdiscal spot 6 outwardly concave?": "No — FW band sinuous or only slightly dislocated; HW spot 6 straight or convex"
       }
     },
     "g_agrata_agrata": {
@@ -1708,7 +1710,8 @@
       "note": "One of two tailed exceptions in the otherwise-tailless agelastus group; relatively large for the group (FW 22.0–23.0 mm). Underside: HW postdiscal spot 6 widely out of line with spots 5 and 7 — inner edge of spot 6 in line with, or even further inward (basad) than, the inner edge of spot 7; spot 6 outwardly convex and typically touches or overlaps the end-cell bar. FW postdiscal band continuous; no costal spot in space 10; small spot often present at base of space 3; inner submarginal spots uniform in size and colour. [A. alesia sacharja](https://www.inaturalist.org/search?q=Arhopala+alesia) shares this exact spot-6/submarginal-spot pattern (per field-photo review, correcting older literature) — separate by size and border width: A. barami penanga is larger (FW 22.0–23.0 mm) with an exceptionally broad male border expanding from 2.5 mm at the tornus to 8.0 mm at the costa, vs. A. alesia sacharja's smaller size and more moderate border. Female: paler blue with similarly broad borders.",
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
-        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter"
+        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter",
+        "What is the shape and position of the hindwing postdiscal spot 6, and are the inner submarginal spots notably enlarged and darkened?": "Spot 6 outwardly convex ⌢; touches or overlaps the end-cell bar; spots 5, 6 and 7 widely out of line; submarginal spots uniform (not enlarged)"
       }
     },
     "r_cardoni": {
