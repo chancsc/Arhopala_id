@@ -1191,34 +1191,17 @@ details[open] .path-summary::before { content: '▼ '; }
 #species-app.species-view .path-skip-note { font-size: 0.82rem; }
 #species-app.species-view .species-detail .id-note { font-size: 0.92rem; }
 
-/* ===== Night mode toggle (in menu panel) ===== */
-.menu-theme-row {
-  padding: 0.5rem 0.75rem 0.85rem;
-  border-top: 1px solid var(--border);
+/* ===== Night mode toggle icon (in menu header) ===== */
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 0.25rem 0.35rem;
+  border-radius: 4px;
+  transition: background var(--transition);
   flex-shrink: 0;
 }
 
-.theme-toggle-btn {
-  display: flex;
-  align-items: center;
-  gap: 0.55rem;
-  width: 100%;
-  padding: 0.55rem 0.75rem;
-  border: 1.5px solid var(--border);
-  border-radius: 8px;
-  background: transparent;
-  color: var(--text-muted);
-  font-size: 0.88rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: border-color var(--transition), color var(--transition), background var(--transition);
-  text-align: left;
-}
-
-.theme-toggle-btn:hover {
-  border-color: var(--primary);
-  color: var(--text);
-  background: var(--surface-tint);
-}
-
-.theme-icon { font-size: 1rem; line-height: 1; flex-shrink: 0; }
+.theme-toggle-btn:hover { background: var(--border); }
