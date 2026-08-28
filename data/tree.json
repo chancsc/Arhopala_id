@@ -3585,19 +3585,19 @@
     "q_alea_phanda_check": {
       "type": "question",
       "id": "q_alea_phanda_check",
-      "question": "Does the outer edge of hindwing postdiscal spot 6 just overlap, or align with, the inner edge of spot 5 (rather than sitting well inside it)?",
-      "hint": "[A. phanda phanda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=940969&preferred_place_id=6734): outer edge of spot 6 just overlaps or is in line with the inner edge of spot 5 — this is the character that actually separates it from the rest of the alea subgroup, since the close band placement alone is shared with [A. normani](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340249&preferred_place_id=6734). In normani and other subgroup members, the outer edge of spot 6 sits well inside the inner edge of spot 5.",
+      "question": "Is hindwing postdiscal spot 6 quadrate (roughly as wide at the bottom as at the top), with its outer edge just overlapping or in line with the inner edge of spot 5?",
+      "hint": "[A. phanda phanda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=940969&preferred_place_id=6734): spot 6 is quadrate — roughly as wide at the bottom as at the top — and its outer edge just overlaps or aligns with the inner edge of spot 5 (C&P couplet 140). [A. normani](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340249&preferred_place_id=6734): spot 6 is narrower at the bottom than the top, with a convex or sinuous outer edge placed well inside the inner edge of spot 5 (C&P couplet 143). Note: [A. aroa aroa](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340248&preferred_place_id=6734) also has spot 6 narrowing below, but was already separated earlier by its distinctively elongate, rounded wings.",
       "choices": [
         {
-          "label": "Yes — outer edge of spot 6 overlaps or aligns with inner edge of spot 5 (A. phanda)",
+          "label": "Yes — spot 6 quadrate; outer edge just overlapping or in line with inner edge of spot 5 (A. phanda)",
           "next": "r_phanda_phanda"
         },
         {
-          "label": "No — outer edge of spot 6 well inside the inner edge of spot 5",
+          "label": "No — spot 6 narrower at the bottom than the top; outer edge convex or sinuous; placed well inside inner edge of spot 5 (A. normani)",
           "next": "r_normani"
         },
         {
-          "label": "Cannot determine",
+          "label": "Cannot determine — spot 6 shape or position unclear",
           "next": "r_alea_s6_unclear"
         }
       ]
