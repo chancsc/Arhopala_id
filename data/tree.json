@@ -380,7 +380,7 @@
       "hint": "First, just decide whether a tornal lobe is present at all: the cleander group has a projecting tornal lobe — a bulge at the anal angle of the hindwing. Count ANY bulge as present, even a small one; answer No only if the anal angle is plain or evenly rounded with no bulge. How large the lobe is (which separates the cleander and alea subgroups) is asked on the next screen — don't try to judge size here.",
       "choices": [
         {
-          "label": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next",
+          "label": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small",
           "next": "q_cleander_sub"
         },
         {
@@ -1347,7 +1347,7 @@
       "hint": "Separates the eumolphus group (no tornal lobe; FW spot 4 shifted basad) from the cleander/alea group (small but distinct tornal lobe; FW spot 4 in line). Even a subtle tornal lobe counts as 'Yes'.",
       "choices": [
         {
-          "label": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next",
+          "label": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small",
           "next": "q_cleander_sub"
         },
         {
@@ -3884,7 +3884,7 @@
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No",
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
-        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
+        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small"
       }
     },
     "q_democritus_s1": {
@@ -4088,7 +4088,7 @@
       "note": "HW tail ~3 mm. Male: deep purple; FW black border 1.0 mm at apex decreasing to 1.5 mm at tornus. Underside purplish-brown with very dark markings; FW apex powdered with pale violet scales. Female: usually purple-blue.",
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
-        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next",
+        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No"
       }
     },
@@ -4102,7 +4102,7 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)",
-        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next",
+        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No",
         "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
         "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter"
@@ -4118,7 +4118,7 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)",
-        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next",
+        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No",
         "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
         "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter"
@@ -4189,7 +4189,7 @@
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW spot 6 is outwardly sinuous or concave; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)",
         "Is forewing postdiscal spot 4 in continuation with spots 5 and 6 (not shifted distad out of line)?": "No — FW spot 4 shifted distad, out of line with spots 5 and 6 (eumolphus group)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "Yes — outer edge of spot 6 outwardly concave (green-male subgroup)",
-        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next",
+        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No"
       }
     },
