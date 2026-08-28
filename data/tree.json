@@ -1342,6 +1342,7 @@
     "q_eumolphus_vs_alea": {
       "type": "question",
       "id": "q_eumolphus_vs_alea",
+      "hideOrphanInPath": true,
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
       "hint": "Separates the eumolphus group (no tornal lobe; FW spot 4 shifted basad) from the cleander/alea group (small but distinct tornal lobe; FW spot 4 in line). Even a subtle tornal lobe counts as 'Yes'.",
       "choices": [
