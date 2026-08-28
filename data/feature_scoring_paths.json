@@ -399,12 +399,12 @@
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "What does the hindwing underside look like?",
       "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
       "question": "Is there a central spot in forewing underside space 11? (camdeo group)",
@@ -1663,10 +1663,6 @@
       "choice": "Yes — green tornal scales present"
     },
     {
-      "question": "Are HW postdiscal spots 5, 6 and 7 widely out of line — with the inner edge of spot 6 in line with or inside the inner edge of spot 7, and spot 6 touching or overlapping the end-cell bar?",
-      "choice": "No — spots broadly in line; spot 6 only slightly displaced, nearer to spot 5"
-    },
-    {
       "question": "Do HW postdiscal spots 4 and 5 precisely align in a straight vertical line — distinct from the broader 5-6-7 echelon?",
       "choice": "Yes — HW spots 4 and 5 precisely aligned in a straight vertical line (A. kurzi)"
     }
@@ -2785,10 +2781,6 @@
       "choice": "Yes — green tornal scales present"
     },
     {
-      "question": "Are HW postdiscal spots 5, 6 and 7 widely out of line — with the inner edge of spot 6 in line with or inside the inner edge of spot 7, and spot 6 touching or overlapping the end-cell bar?",
-      "choice": "No — spots broadly in line; spot 6 only slightly displaced, nearer to spot 5"
-    },
-    {
       "question": "Do HW postdiscal spots 4 and 5 precisely align in a straight vertical line — distinct from the broader 5-6-7 echelon?",
       "choice": "No — spots 4 and 5 not in tight vertical alignment (A. metamuta)"
     }
@@ -2825,22 +2817,6 @@
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
       "choice": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced"
-    },
-    {
-      "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
-      "choice": "No — band fully dislocated at vein 2 (completely separated)"
-    },
-    {
-      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "Yes — HW postdiscal band fully separated at vein 2 (two distinct portions with a clear gap)"
-    },
-    {
-      "question": "Are green tornal scales present on the HW underside?",
-      "choice": "Yes — green tornal scales present"
-    },
-    {
-      "question": "Are HW postdiscal spots 5, 6 and 7 widely out of line — with the inner edge of spot 6 in line with or inside the inner edge of spot 7, and spot 6 touching or overlapping the end-cell bar?",
-      "choice": "Yes — spots 5, 6 and 7 widely out of line; inner edge of spot 6 in line with or inside inner edge of spot 7; spot 6 touches or overlaps end-cell bar"
     }
   ],
   "Arhopala anthelus grahami": [
@@ -3207,10 +3183,6 @@
       "choice": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "What does the hindwing underside look like?",
       "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
     },
@@ -3255,10 +3227,6 @@
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)"
-    },
-    {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
       "question": "What does the hindwing underside look like?",
@@ -3349,10 +3317,6 @@
       "choice": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "Yes — FW postdiscal band incomplete, ending at vein 7"
-    },
-    {
       "question": "What does the hindwing underside look like?",
       "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
     },
@@ -3363,6 +3327,10 @@
     {
       "question": "Is the underside ground colour extensively whitened?",
       "choice": "No — underside ground colour normal (not whitened)"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "Yes — FW postdiscal band incomplete, ending at vein 7"
     },
     {
       "question": "Within this camdeo group (forewing postdiscal band incomplete, ending at vein 7), does the hindwing have a tail — separating A. johoreana (tailed) from A. belphoebe cowani (tailless)?",
@@ -3407,10 +3375,6 @@
       "choice": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "What does the hindwing underside look like?",
       "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
     },
@@ -3421,6 +3385,10 @@
     {
       "question": "Is the underside ground colour extensively whitened?",
       "choice": "No — underside ground colour normal (not whitened)"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
       "question": "Is a very short hindwing tail (≤2 mm) present AND are the underside spots indistinct?",
@@ -3469,10 +3437,6 @@
       "choice": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "What does the hindwing underside look like?",
       "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
     },
@@ -3483,6 +3447,10 @@
     {
       "question": "Is the underside ground colour extensively whitened?",
       "choice": "No — underside ground colour normal (not whitened)"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
       "question": "Is a very short hindwing tail (≤2 mm) present AND are the underside spots indistinct?",
@@ -3531,10 +3499,6 @@
       "choice": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "What does the hindwing underside look like?",
       "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
     },
@@ -3545,6 +3509,10 @@
     {
       "question": "Is the underside ground colour extensively whitened?",
       "choice": "No — underside ground colour normal (not whitened)"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
       "question": "Is a very short hindwing tail (≤2 mm) present AND are the underside spots indistinct?",
@@ -3593,10 +3561,6 @@
       "choice": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "What does the hindwing underside look like?",
       "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
     },
@@ -3607,6 +3571,10 @@
     {
       "question": "Is the underside ground colour extensively whitened?",
       "choice": "No — underside ground colour normal (not whitened)"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
       "question": "Is a very short hindwing tail (≤2 mm) present AND are the underside spots indistinct?",
@@ -3663,10 +3631,6 @@
       "choice": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "What does the hindwing underside look like?",
       "choice": "Brown or grey-brown underside; HW spot 6 clearly nearer to spot 5 than to the end-cell bar — no crimson colouring and no extra spot in space 8"
     },
@@ -3677,6 +3641,10 @@
     {
       "question": "Is the underside ground colour extensively whitened?",
       "choice": "No — underside ground colour normal (not whitened)"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
       "question": "Is a very short hindwing tail (≤2 mm) present AND are the underside spots indistinct?",
@@ -3733,12 +3701,8 @@
       "choice": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "What does the hindwing underside look like?",
-      "choice": "HW spot 6 appears midway between spot 5 and the end-cell bar, or the underside does not match any of the above — may not be the right group"
+      "choice": "Crimson-brown ground colour with markings outlined in white striae; spot at the base of HW space 6"
     },
     {
       "question": "On the hindwing underside, is the ground colour crimson-brown with all markings outlined by white striae, a spot present at the extreme base of space 6, and the central and outer postdiscal spots in space 7 conjoined (joined at their upper ends)?",
@@ -3833,12 +3797,12 @@
       "choice": "Yes — restricted dark patch present in FW space 1b with pale bordering line (camdeo group)"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "What does the hindwing underside look like?",
       "choice": "Purple-brown ground colour with whitish striae; extra spot visible mid-space 8 adjoining the central spot in space 7"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
       "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
@@ -4000,7 +3964,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small"
     },
     {
       "question": "How large is the tornal lobe (and what size is the specimen)?",
@@ -4062,7 +4026,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small"
     },
     {
       "question": "How large is the tornal lobe (and what size is the specimen)?",
@@ -4128,7 +4092,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small"
     },
     {
       "question": "How large is the tornal lobe (and what size is the specimen)?",
@@ -4198,7 +4162,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small"
     },
     {
       "question": "How large is the tornal lobe (and what size is the specimen)?",
@@ -4268,7 +4232,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small"
     },
     {
       "question": "How large is the tornal lobe (and what size is the specimen)?",
@@ -4330,7 +4294,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small"
     },
     {
       "question": "How large is the tornal lobe (and what size is the specimen)?",
@@ -4396,7 +4360,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small"
     },
     {
       "question": "How large is the tornal lobe (and what size is the specimen)?",
@@ -4466,7 +4430,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small"
     },
     {
       "question": "How large is the tornal lobe (and what size is the specimen)?",
@@ -4544,7 +4508,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small"
     },
     {
       "question": "How large is the tornal lobe (and what size is the specimen)?",
@@ -4622,7 +4586,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small"
     },
     {
       "question": "How large is the tornal lobe (and what size is the specimen)?",
@@ -4700,7 +4664,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small"
     },
     {
       "question": "How large is the tornal lobe (and what size is the specimen)?",
@@ -4782,7 +4746,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small"
     },
     {
       "question": "How large is the tornal lobe (and what size is the specimen)?",
@@ -4860,7 +4824,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small"
     },
     {
       "question": "How large is the tornal lobe (and what size is the specimen)?",
@@ -4938,7 +4902,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small"
     },
     {
       "question": "How long is the hindwing tail?",
@@ -4953,12 +4917,16 @@
       "choice": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)"
     },
     {
+      "question": "Is the forewing termen evenly curved (rounded apex)?",
+      "choice": "No — FW apex acute; termen straight or slightly concave"
+    },
+    {
       "question": "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
       "choice": "No"
     },
     {
-      "question": "Is the forewing termen evenly curved (rounded apex)?",
-      "choice": "No — FW apex acute; termen straight or slightly concave"
+      "question": "Is the hindwing cell longer than half the length of the wing?",
+      "choice": "Yes — HW cell longer than half the wing length"
     }
   ],
   "Arhopala democritus democritus": [
@@ -5147,10 +5115,6 @@
       "choice": "Yes — green tornal scales present"
     },
     {
-      "question": "Are HW postdiscal spots 5, 6 and 7 widely out of line — with the inner edge of spot 6 in line with or inside the inner edge of spot 7, and spot 6 touching or overlapping the end-cell bar?",
-      "choice": "No — spots broadly in line; spot 6 only slightly displaced, nearer to spot 5"
-    },
-    {
       "question": "Does the hindwing have a short tail (~2.5 mm)?",
       "choice": "Yes — short tail present (~2.5 mm)"
     }
@@ -5195,10 +5159,6 @@
     {
       "question": "Are green tornal scales present on the HW underside?",
       "choice": "Yes — green tornal scales present"
-    },
-    {
-      "question": "Are HW postdiscal spots 5, 6 and 7 widely out of line — with the inner edge of spot 6 in line with or inside the inner edge of spot 7, and spot 6 touching or overlapping the end-cell bar?",
-      "choice": "No — spots broadly in line; spot 6 only slightly displaced, nearer to spot 5"
     },
     {
       "question": "Does the hindwing have a short tail (~2.5 mm)?",
@@ -5416,7 +5376,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small"
     },
     {
       "question": "How long is the hindwing tail?",
@@ -5482,7 +5442,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small"
     },
     {
       "question": "How long is the hindwing tail?",
@@ -5580,7 +5540,7 @@
     },
     {
       "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small"
     },
     {
       "question": "How long is the hindwing tail?",

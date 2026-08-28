@@ -792,26 +792,6 @@
         },
         {
           "label": "Yes — green tornal scales present",
-          "next": "q_tailless_epimuta_spot6_pos"
-        }
-      ]
-    },
-    "q_tailless_epimuta_spot6_pos": {
-      "type": "question",
-      "id": "q_tailless_epimuta_spot6_pos",
-      "question": "Are HW postdiscal spots 5, 6 and 7 widely out of line — with the inner edge of spot 6 in line with or inside the inner edge of spot 7, and spot 6 touching or overlapping the end-cell bar?",
-      "question_link": {
-        "text": "widely out of line — with the inner edge of spot 6 in line with or inside the inner edge of spot 7, and spot 6 touching or overlapping the end-cell bar",
-        "href": "guide.html#hw-spot6-position"
-      },
-      "hint": "In [A. antimuta antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734), spot 6 is displaced well past the postdiscal row — its inner edge reaches or passes the inner edge of spot 7, and it typically touches or overlaps the end-cell bar; spots 5, 6 and 7 are widely out of line. In [A. metamuta metamuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340245&preferred_place_id=6734), spot 6 is only slightly displaced — nearer to spot 5 than to the end-cell bar; spots 5, 6 and 7 are broadly in line.",
-      "choices": [
-        {
-          "label": "Yes — spots 5, 6 and 7 widely out of line; inner edge of spot 6 in line with or inside inner edge of spot 7; spot 6 touches or overlaps end-cell bar",
-          "next": "r_antimuta_antimuta"
-        },
-        {
-          "label": "No — spots broadly in line; spot 6 only slightly displaced, nearer to spot 5",
           "next": "q_tailless_epimuta_midway"
         }
       ]
@@ -825,8 +805,12 @@
         "href": "guide.html#hw-spot6-position"
       },
       "guide_link": "guide.html#hw-spot6-position",
-      "hint": "At this point three species remain: [A. kurzi](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1149928&preferred_place_id=6734), [A. metamuta metamuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340245&preferred_place_id=6734), and the epimuta group ([A. atosia](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498181&preferred_place_id=6734), [A. lurida](https://www.inaturalist.org/observations?verifiable=true&taxon_id=475784&preferred_place_id=6734)). All have full dislocation at vein 2, green tornal scales, and spots 5–7 broadly in line. Epimuta: spot 6 equidistant/midway. Kurzi and metamuta: spot 6 not displaced or only slightly displaced — separated by the alignment of spots 4 and 5.",
+      "hint": "Four groups reach this point, all with full dislocation at vein 2 and green tornal scales. [A. antimuta antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734): spot 6 displaced past midway, touching or overlapping the end-cell bar; spots 5, 6 and 7 widely out of line. The epimuta group ([A. atosia](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498181&preferred_place_id=6734), [A. lurida](https://www.inaturalist.org/observations?verifiable=true&taxon_id=475784&preferred_place_id=6734), [A. epimuta epiala](https://www.inaturalist.org/observations?verifiable=true&taxon_id=478196&preferred_place_id=6734)): spot 6 equidistant/midway. [A. kurzi](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1149928&preferred_place_id=6734) and [A. metamuta metamuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340245&preferred_place_id=6734): spot 6 not displaced or only slightly displaced — separated by the alignment of spots 4 and 5.",
       "choices": [
+        {
+          "label": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced",
+          "next": "r_antimuta_antimuta"
+        },
         {
           "label": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar",
           "next": "g_epimuta"
