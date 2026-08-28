@@ -3143,6 +3143,10 @@
       "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
     },
     {
+      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
+      "choice": "Yes — a tornal lobe (bulge at the anal angle) is present, even if small — size is checked next"
+    },
+    {
       "question": "How long is the hindwing tail?",
       "choice": "Tail ~3 mm"
     },
@@ -3155,12 +3159,16 @@
       "choice": "No — outer edge of spot 6 outwardly straight (blue/violet-male subgroup)"
     },
     {
+      "question": "Is the forewing termen evenly curved (rounded apex)?",
+      "choice": "No — FW apex acute; termen straight or slightly concave"
+    },
+    {
       "question": "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
       "choice": "No"
     },
     {
-      "question": "Is the forewing termen evenly curved (rounded apex)?",
-      "choice": "No — FW apex acute; termen straight or slightly concave"
+      "question": "Is the hindwing cell longer than half the length of the wing?",
+      "choice": "Yes — HW cell longer than half the wing length"
     }
   ],
   "Epimuta group — tailed species (unresolved)": [
