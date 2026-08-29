@@ -213,9 +213,14 @@ for (let step = 0; step < 50; step++) {
     }
     if (hitTargetResult) {
       const newScores2 = scoreAllPure(answers, matrix);
-      const rank2b = newScores2[1] ? `  #2: ${newScores2[1].name.replace('Arhopala ','')} ${newScores2[1].score}/${newScores2[1].max}` : '';
-      console.log(`  → STOP (terminal exit): ${targetName.replace('Arhopala ','')} is #${newScores2.findIndex(s=>s.name===targetName)+1} (${newScores2[0]?.score}/${newScores2[0]?.max})${rank2b}`);
-      break;
+      const isUnique = newScores2[0]?.name === targetName &&
+                       (newScores2.length < 2 || newScores2[0].score >= newScores2[1].score + 2);
+      if (isUnique) {
+        const rank2b = newScores2[1] ? `  #2: ${newScores2[1].name.replace('Arhopala ','')} ${newScores2[1].score}/${newScores2[1].max}` : '';
+        console.log(`  → STOP (terminal exit): ${targetName.replace('Arhopala ','')} is #${newScores2.findIndex(s=>s.name===targetName)+1} (${newScores2[0]?.score}/${newScores2[0]?.max})${rank2b}`);
+        break;
+      }
+      // Still tied — continue past the tree exit until convergence.
     }
   }
 

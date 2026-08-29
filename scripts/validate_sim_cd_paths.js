@@ -214,7 +214,16 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
           if (ch && targetResultIds.has(ch.next)) { hitTargetResult = true; break; }
         }
       }
-      if (hitTargetResult) break;
+      if (hitTargetResult) {
+        // Only stop at the tree's terminal exit when the species is already
+        // uniquely #1 by ≥2. If still tied (e.g. opalina/aedias), let the
+        // convergence check below continue to separate them.
+        const exitScores = scoreAllPure(answers, matrix);
+        if (exitScores[0]?.name === resultName &&
+            (exitScores.length < 2 || exitScores[0].score >= exitScores[1].score + 2)) {
+          break;
+        }
+      }
     }
 
     const newScores = scoreAllPure(answers, matrix);
