@@ -4626,10 +4626,6 @@
         {
           "label": "No — HW cell about half the wing length or shorter",
           "next": "q_long_tail_spot4"
-        },
-        {
-          "label": "Cannot determine — HW cell length not assessable",
-          "next": "q_long_tail_spot4"
         }
       ]
     },
