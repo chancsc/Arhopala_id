@@ -402,12 +402,26 @@ function buildPathDisplay(paths, note, resultFeatures, resultName) {
   if (!canonical) return '';
   const simCd = (() => {
     if (!resultName) return null;
-    if (state.simCdPaths && state.simCdPaths.has(resultName)) {
-      return state.simCdPaths.get(resultName);
+    const treePath = (() => {
+      if (state.simCdPaths && state.simCdPaths.has(resultName)) {
+        return state.simCdPaths.get(resultName);
+      }
+      return state.tree
+        ? buildSimulationCdPath(state.tree, pathApplyFeatures(canonical, rf), resultName)
+        : null;
+    })();
+    // Append result-node features not already in the path (tree walk or canonical).
+    // These are confirmatory questions visible in live FS after score-convergence
+    // but absent from the sim-CD tree walk (e.g. Q46/Q16/Q17 for A. evansi).
+    const basePath = treePath || canonical;
+    if (rf && Object.keys(rf).length > 0) {
+      const coveredQs = new Set(basePath.map(s => s.question).filter(Boolean));
+      const extras = Object.entries(rf)
+        .filter(([q, ans]) => !coveredQs.has(q) && ans && !ans.startsWith('Cannot determine'))
+        .map(([q, ans]) => ({ question: q, choice: ans }));
+      if (extras.length > 0) return [...basePath, ...extras];
     }
-    return state.tree
-      ? buildSimulationCdPath(state.tree, pathApplyFeatures(canonical, rf), resultName)
-      : null;
+    return treePath;
   })();
 
   // Two distinct tree nodes can deliberately share question text (so Feature
