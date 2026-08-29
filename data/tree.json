@@ -2939,7 +2939,12 @@
       "taxon_id": null,
       "name": "Arhopala caeca",
       "common_name": "",
-      "note": "Underside hair-brown with INCOMPLETE markings: FW lacks basal and central cell spots; HW lacks various basal and discal spots; postdiscal band narrow. Male: brilliant green turning to violet-blue at the tornus of both wings (diagnostic — unique in the group); FW border a thread. Short stumpy HW tail (~2 mm)."
+      "note": "Underside hair-brown with INCOMPLETE markings: FW lacks basal and central cell spots; HW lacks various basal and discal spots; postdiscal band narrow. Male: brilliant green turning to violet-blue at the tornus of both wings (diagnostic — unique in the group); FW border a thread. Short stumpy HW tail (~2 mm).",
+      "features": {
+        "Is the hindwing cell longer than half the length of the wing?": "Yes — HW cell longer than half the wing length",
+        "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?": "Short and stout, just under 2 mm (aurea group)",
+        "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
+      }
     },
     "r_borneensis": {
       "type": "result",
