@@ -10,6 +10,7 @@
     "fs-regress": "node scripts/fs_regress.js",
     "verify-fs-paths": "node scripts/verify_fs_paths.js",
     "verify-sim-cd-paths": "node scripts/verify_sim_cd_paths.js",
-    "gen-validation-ref": "node scripts/gen_validation_reference.js"
+    "gen-validation-ref": "node scripts/gen_validation_reference.js",
+    "walk-sim-cd": "node scripts/walk_sim_cd_paths.js"
   }
 }
