@@ -1049,6 +1049,14 @@
       "choice": "Normal — spots normal-sized, with a clear gap from the end-cell bar"
     },
     {
+      "question": "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?",
+      "choice": "No — spot 6 not sinuous/concave, or no FW costal spot in space 10"
+    },
+    {
+      "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
+      "choice": "Yes — FW postdiscal band continuous (muta subgroup: A. moorei, A. muta, A. tropaea)"
+    },
+    {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "Cannot determine — FW space 1b obscured by hindwing"
     },
@@ -1117,6 +1125,14 @@
     {
       "question": "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?",
       "choice": "Normal — spots normal-sized, with a clear gap from the end-cell bar"
+    },
+    {
+      "question": "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?",
+      "choice": "No — spot 6 not sinuous/concave, or no FW costal spot in space 10"
+    },
+    {
+      "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
+      "choice": "Yes — FW postdiscal band continuous (muta subgroup: A. moorei, A. muta, A. tropaea)"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",

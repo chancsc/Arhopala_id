@@ -2665,7 +2665,9 @@
         "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "No — band fully dislocated at vein 2 (two separate portions)",
         "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?": "Normal — spots normal-sized, with a clear gap from the end-cell bar",
         "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?": "Cannot determine — band dislocation at vein 2 not assessable from this view",
-        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "Yes — HW spots more quadrate or banded in shape (muta subgroup)"
+        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "Yes — HW spots more quadrate or banded in shape (muta subgroup)",
+        "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?": "No — spot 6 not sinuous/concave, or no FW costal spot in space 10",
+        "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?": "Yes — FW postdiscal band continuous (muta subgroup: A. moorei, A. muta, A. tropaea)"
       }
     },
     "r_muta_maranda": {
@@ -2680,7 +2682,9 @@
         "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?": "Normal — spots normal-sized, with a clear gap from the end-cell bar",
         "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "No — band fully dislocated at vein 2 (two separate portions)",
         "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?": "Cannot determine — band dislocation at vein 2 not assessable from this view",
-        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "Yes — HW spots more quadrate or banded in shape (muta subgroup)"
+        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "Yes — HW spots more quadrate or banded in shape (muta subgroup)",
+        "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?": "No — spot 6 not sinuous/concave, or no FW costal spot in space 10",
+        "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?": "Yes — FW postdiscal band continuous (muta subgroup: A. moorei, A. muta, A. tropaea)"
       }
     },
     "q_perimuta_s1": {
@@ -4318,7 +4322,8 @@
       "common_name": "Dusky Bushblue",
       "note": "Montane species on the Malay Peninsula. Underside HW: roughly quadrate whitish area from mid-cell to costa; no tornal green scales. Upperside: bright pale blue with broad borders; male HW mostly fuscous; female with obscure whitish patch at FW end-cell.",
       "features": {
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)"
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
+        "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?": "No — no whitened gap between HW space 7 spots"
       }
     },
     "r_ammonides_chunsu": {
@@ -4329,7 +4334,8 @@
       "common_name": "Little Cerulean Oakblue",
       "note": "No tornal green scales. Underside HW: gap between outer and central spots in space 7 completely whitened (no quadrate mid-cell white patch). Upperside: powdery blue with very broad borders on all wings; female with dark bar at FW end-cell.",
       "features": {
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)"
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
+        "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?": "Yes — gap between HW space 7 spots conspicuously whitened"
       }
     },
     "r_ammon_ammon": {
@@ -4341,7 +4347,8 @@
       "note": "Tornal green scales present. Underside HW: spot 6 extended to base of space; outer and central spots in space 7 separate, gap whitened. Upperside male: dark blue, narrow borders (1.5 mm at FW apex). Female: narrow borders (2.0 mm at FW tornus and HW).",
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
-        "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?": "Yes — HW spot 6 extended to base of space"
+        "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?": "Yes — HW spot 6 extended to base of space",
+        "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?": "Yes — gap between HW space 7 spots conspicuously whitened"
       }
     },
     "r_ariel": {
@@ -4353,7 +4360,8 @@
       "note": "No whitened gap between HW space 7 spots; no mid-cell whitish patch. Tornal green scales present; HW spot 6 normal. Upperside male: bluish-purple, hardly shining; FW border 1.5 mm at tornus expanding to 4.0 mm at apex. Female: bluer shade with broader borders.",
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
-        "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?": "No — HW spot 6 normal, not reaching base"
+        "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?": "No — HW spot 6 normal, not reaching base",
+        "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?": "No — no whitened gap between HW space 7 spots"
       }
     },
     "r_elizabethae": {
@@ -4365,7 +4373,8 @@
       "note": "Gap between outer and central spots in HW space 7 conspicuously whitened. Tornal green scales present; HW spot 6 normal (not reaching base of space). Upperside male: shining deep blue with borders slightly wider than [A. ariel](https://www.inaturalist.org/observations?verifiable=true&taxon_id=885911&preferred_place_id=6734); female similar to male.",
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
-        "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?": "No — HW spot 6 normal, not reaching base"
+        "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?": "No — HW spot 6 normal, not reaching base",
+        "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?": "Yes — gap between HW space 7 spots conspicuously whitened"
       }
     },
     "r_ariel_or_elizabethae": {
