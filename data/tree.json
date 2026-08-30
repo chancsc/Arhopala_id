@@ -3868,7 +3868,7 @@
       "features": {
         "What is the underside ground colour and overall appearance?": "Underside sometimes with purple wash; dark patch under FW cell; pointed FW apex, straight termen; smaller (tail ~3.5 mm) — A. corinda",
         "On the hindwing underside, is postdiscal spot 6 convex or almost straight (not concave) and touching or overlapping the end-cell bar, with no costal spot present in forewing space 10?": "Yes — HW spot 6 convex or almost straight, touching/overlapping the end-cell bar; no FW space 10 costal spot",
-        "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?": "Long and filamentous, about 3.5 mm (A. corinda)",
+        "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?": "Long and filamentous, about 3.5 mm",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No",
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
@@ -4602,7 +4602,7 @@
       "hint": "Among the long-celled species reaching this point, [A. corinda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=793494&preferred_place_id=6734) has a long, filamentous tail (~3.5 mm). The aurea group ([A. aurea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429759&preferred_place_id=6734), [A. borneensis](https://www.inaturalist.org/search?q=Arhopala+borneensis), [A. trogon](https://www.inaturalist.org/observations?verifiable=true&taxon_id=447353&preferred_place_id=6734), [A. stinga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1394352&preferred_place_id=6734)) all have a short, stout tail just under 2 mm. This separates corinda from the aurea group when the forewing space-1b patch cannot be seen.",
       "choices": [
         {
-          "label": "Long and filamentous, about 3.5 mm (A. corinda)",
+          "label": "Long and filamentous, about 3.5 mm",
           "next": "q_tailed_corinda_apex"
         },
         {
