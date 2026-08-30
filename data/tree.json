@@ -215,19 +215,19 @@
     "q_ganesa_basal_s11": {
       "type": "question",
       "id": "q_ganesa_basal_s11",
-      "question": "Is there a spot in forewing underside space 11?",
+      "question": "Is there a spot at the very base of forewing underside space 11, wedged between the basal cell bar and the central cell spot?",
       "question_link": {
-        "text": "spot in forewing underside space 11",
+        "text": "spot at base of FW space 11",
         "href": "guide.html#fw-space-11"
       },
       "hint": "The ganesa group is characterised by a distinct spot sitting at the very base of FW space 11, wedged between the basal cell bar and the central cell spot — visible on the forewing underside between the cell bars. All five Peninsular ganesa-group species ([A. ammon](https://www.inaturalist.org/observations?verifiable=true&taxon_id=506221&preferred_place_id=6734), [A. ammonides](https://www.inaturalist.org/observations?verifiable=true&taxon_id=470744&preferred_place_id=6734), [A. elizabethae](https://www.inaturalist.org/search?q=Arhopala+elizabethae), [A. ariel](https://www.inaturalist.org/observations?verifiable=true&taxon_id=885911&preferred_place_id=6734), [A. paraganesa](https://www.inaturalist.org/observations?verifiable=true&taxon_id=333568&preferred_place_id=6734)) are also small, with short tails, spots visible above the FW cell, and a spot at the base of FW space 3.",
       "choices": [
         {
-          "label": "Yes — spot present in FW space 11",
+          "label": "Yes — basal spot present in FW space 11 (between cell bars, ganesa group)",
           "next": "g_ganesa"
         },
         {
-          "label": "No — no spot in FW space 11",
+          "label": "No — no basal spot at base of FW space 11",
           "next": "q_tailed_anthelus"
         }
       ]
