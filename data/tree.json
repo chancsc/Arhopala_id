@@ -81,7 +81,7 @@
       "choices": [
         {
           "label": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
-          "next": "q_ganesa_basal_s11"
+          "next": "q_tailed_hw_band_partial_vein2"
         },
         {
           "label": "Postdiscal spot in space 6 placed about midway between the spot in space 5 and the end-cell bar (epimuta group)",
@@ -89,7 +89,7 @@
         },
         {
           "label": "Postdiscal spots in spaces 7, 6 and 5 in echelon, and with their centres more or less in line; the spot in space 6 nearer the spot in space 5 than the end-cell bar",
-          "next": "q_ganesa_basal_s11"
+          "next": "q_tailed_anthelus"
         },
         {
           "label": "Cannot determine — spot arrangement unclear or hindwing obscures spots 5–7",
@@ -4330,7 +4330,8 @@
       "note": "Montane species on the Malay Peninsula. Underside HW: roughly quadrate whitish area from mid-cell to costa; no tornal green scales. Upperside: bright pale blue with broad borders; male HW mostly fuscous; female with obscure whitish patch at FW end-cell.",
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
-        "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?": "No — no whitened gap between HW space 7 spots"
+        "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?": "No — no whitened gap between HW space 7 spots",
+        "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
       }
     },
     "r_ammonides_chunsu": {
@@ -4342,7 +4343,8 @@
       "note": "No tornal green scales. Underside HW: gap between outer and central spots in space 7 completely whitened (no quadrate mid-cell white patch). Upperside: powdery blue with very broad borders on all wings; female with dark bar at FW end-cell.",
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
-        "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?": "Yes — gap between HW space 7 spots conspicuously whitened"
+        "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?": "Yes — gap between HW space 7 spots conspicuously whitened",
+        "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
       }
     },
     "r_ammon_ammon": {
@@ -4355,7 +4357,8 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?": "Yes — HW spot 6 extended to base of space",
-        "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?": "Yes — gap between HW space 7 spots conspicuously whitened"
+        "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?": "Yes — gap between HW space 7 spots conspicuously whitened",
+        "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
       }
     },
     "r_ariel": {
@@ -4368,7 +4371,8 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?": "No — HW spot 6 normal, not reaching base",
-        "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?": "No — no whitened gap between HW space 7 spots"
+        "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?": "No — no whitened gap between HW space 7 spots",
+        "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
       }
     },
     "r_elizabethae": {
@@ -4381,7 +4385,8 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?": "No — HW spot 6 normal, not reaching base",
-        "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?": "Yes — gap between HW space 7 spots conspicuously whitened"
+        "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?": "Yes — gap between HW space 7 spots conspicuously whitened",
+        "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
       }
     },
     "r_ariel_or_elizabethae": {
@@ -4396,7 +4401,8 @@
         "r_elizabethae"
       ],
       "features": {
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)"
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
+        "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
       }
     },
     "r_hypomuta_hypomuta": {
@@ -4830,6 +4836,26 @@
         "text": "central and outer postdiscal spots in space 7 conjoined",
         "href": "guide.html#hw-spot7-conjoined"
       }
+    },
+    "q_tailed_hw_band_partial_vein2": {
+      "type": "question",
+      "id": "q_tailed_hw_band_partial_vein2",
+      "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
+      "question_link": {
+        "text": "HW band dislocation at vein 2",
+        "href": "guide.html#hw-band-vein2"
+      },
+      "hint": "The **ganesa group** ([A. ammon](https://www.inaturalist.org/observations?verifiable=true&taxon_id=506221&preferred_place_id=6734), [A. ammonides](https://www.inaturalist.org/observations?verifiable=true&taxon_id=470744&preferred_place_id=6734), [A. ariel](https://www.inaturalist.org/observations?verifiable=true&taxon_id=885911&preferred_place_id=6734) etc.) has the HW postdiscal band only *partially* dislocated at vein 2 — it shifts inward but the two portions remain connected (C&P couplet 153). The **alitaeus, cleander, and eumolphus groups** have the band *completely* dislocated at vein 2 — two separate portions with a visible gap (C&P couplet 96). Answer Yes if the band is shifted but continuous at vein 2; No if there is a clear gap.",
+      "choices": [
+        {
+          "label": "Yes — band only partially dislocated at vein 2 (shifted but connected; ganesa group)",
+          "next": "q_ganesa_basal_s11"
+        },
+        {
+          "label": "No — band fully dislocated at vein 2 (two separate portions; alitaeus/cleander/eumolphus)",
+          "next": "q_tailed_anthelus"
+        }
+      ]
     }
   }
 }
