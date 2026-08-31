@@ -1421,7 +1421,7 @@
     "q_corinda_hw_cell_length": {
       "type": "question",
       "id": "q_corinda_hw_cell_length",
-      "question": "Is the hindwing cell longer than half the length of the wing?",
+      "question": "Is the hindwing cell about half the length of the wing or longer?",
       "question_link": {
         "text": "hindwing cell longer",
         "href": "guide.html#hindwing-cell"
@@ -1429,11 +1429,11 @@
       "hint": "A longer HW cell (extending beyond half the wing length) characterises [A. corinda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=793494&preferred_place_id=6734), the aurea group ([A. stinga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=122023&preferred_place_id=6734), [A. trogon](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429757&preferred_place_id=6734), [A. aurea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429759&preferred_place_id=6734)), and several other long-tailed groups (alitaeus, ganesa, lurida). Long-tailed species in the eumolphus, oenea, camdeo and aedias groups have a cell about half the wing length or shorter.",
       "choices": [
         {
-          "label": "Yes — HW cell longer than half the wing length",
+          "label": "Yes — HW cell about half the wing length or longer",
           "next": "r_corinda_acestes"
         },
         {
-          "label": "No — HW cell about half the wing length or shorter",
+          "label": "No — HW cell clearly shorter than half the wing length",
           "next": "r_corinda_acestes"
         },
         {
@@ -2912,11 +2912,11 @@
       "common_name": "Long-celled Oakblue",
       "note": "Tailed. Tail short and stout, just under 2.0 mm. Underside hair-brown with complete markings. FW postdiscal spot 4 shifted distad, out of line with spots 5 and 6; dark patch in FW space 1b not solid. HW postdiscal band partially dislocated at vein 2; postdiscal spot 6 widely out of line with spots 5 and 7 — inner edge of spot 6 in line with, or inside, the inner edge of spot 7; spot 6 touches or overlaps the end-cell bar. Male: HW cell considerably longer than half the wing; shining green with weak blue suffusion at wing bases; FW border 0.75–1.5 mm at tornus, decreasing to a thread above vein 3 or 4; HW green does not reach the termen. Female: blue to purple-blue with a relatively narrow HW border.",
       "features": {
-        "Is the hindwing cell longer than half the length of the wing?": "Yes — HW cell longer than half the wing length",
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?": "Short and stout, just under 2 mm (aurea group)",
         "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
-        "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7 (no costal spot in FW space 10)"
+        "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7 (no costal spot in FW space 10)",
+        "Is the hindwing cell about half the length of the wing or longer?": "Yes — HW cell about half the wing length or longer"
       }
     },
     "r_trogon": {
@@ -2927,10 +2927,10 @@
       "common_name": "Green-suffused Oakblue",
       "note": "Underside glazed with a purple wash. Male: brilliant brassy green with a strong blue suffusion at the wing bases; FW border a thread throughout; HW green usually reaches the termen in spaces 3, 4, or 5. Short stumpy HW tail (~2 mm). HW end-cell bar notably long; postdiscal spot 6 touches or overlaps the end-cell bar. Distribution: occurs throughout Peninsular Malaysia, including Johor. [A. stinga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1394352&preferred_place_id=6734) is restricted to Johor forest — outside Johor, A. trogon is far more likely; within Johor, both remain possible and upperside characters are needed to confirm.",
       "features": {
-        "Is the hindwing cell longer than half the length of the wing?": "Yes — HW cell longer than half the wing length",
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?": "Short and stout, just under 2 mm (aurea group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
+        "Is the hindwing cell about half the length of the wing or longer?": "Yes — HW cell about half the wing length or longer"
       }
     },
     "r_stinga": {
@@ -2941,10 +2941,10 @@
       "common_name": "",
       "note": "Underside glazed with a purple wash (exactly as in [A. trogon](https://www.inaturalist.org/observations?verifiable=true&taxon_id=447353&preferred_place_id=6734)). Male: green WITHOUT any basal blue suffusion (no blue at wing bases); FW border distinctively wide — 2.5–3.0 mm at tornus, decreasing to a thread near the apex (widest border in the group). Short stumpy HW tail just under 2 mm. HW cell notably long — exceeding half the total wing length. HW end-cell bar notably long; postdiscal spot 6 touches or overlaps the end-cell bar (spot 6 inner edge at or inside the inner edge of spot 7). Distribution: restricted to forest in Johor. Outside Johor, [A. trogon](https://www.inaturalist.org/observations?verifiable=true&taxon_id=447353&preferred_place_id=6734) (which occurs throughout the Peninsula) is far more likely; within Johor, both remain possible and upperside characters are needed to confirm.",
       "features": {
-        "Is the hindwing cell longer than half the length of the wing?": "Yes — HW cell longer than half the wing length",
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?": "Short and stout, just under 2 mm (aurea group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
+        "Is the hindwing cell about half the length of the wing or longer?": "Yes — HW cell about half the wing length or longer"
       }
     },
     "r_caeca": {
@@ -2955,9 +2955,9 @@
       "common_name": "",
       "note": "Underside hair-brown with INCOMPLETE markings: FW lacks basal and central cell spots; HW lacks various basal and discal spots; postdiscal band narrow. Male: brilliant green turning to violet-blue at the tornus of both wings (diagnostic — unique in the group); FW border a thread. Short stumpy HW tail (~2 mm).",
       "features": {
-        "Is the hindwing cell longer than half the length of the wing?": "Yes — HW cell longer than half the wing length",
         "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?": "Short and stout, just under 2 mm (aurea group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
+        "Is the hindwing cell about half the length of the wing or longer?": "Yes — HW cell about half the wing length or longer"
       }
     },
     "r_borneensis": {
@@ -2968,10 +2968,10 @@
       "common_name": "",
       "note": "Bornean taxon; underside pattern essentially matches [A. aurea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429759&preferred_place_id=6734). Underside hair-brown with complete markings; HW cell exceptionally long (more than half the wing length); FW postdiscal spots in spaces 2 and 3 wider than those above vein 4 (spot 3 especially wide); dark patch in FW space 1b not solid; HW postdiscal band only partially dislocated at vein 2. HW postdiscal spot 6 widely out of line with spots 5 and 7 — inner edge of spot 6 in line with, or even further inward (basad) than, the inner edge of spot 7; spot 6 touches or overlaps the end-cell bar. Short and stout tail at vein 2, just under 2.0 mm. Male: brassy green with strong blue suffusion at base; FW border thread throughout, widening almost imperceptibly toward tornus; HW green reaches termen narrowly in spaces 5 and 6 (unlike [A. aurea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429759&preferred_place_id=6734) where green does not reach termen). Female: blue with a black HW border reaching at least halfway to the end of the cell.",
       "features": {
-        "Is the hindwing cell longer than half the length of the wing?": "Yes — HW cell longer than half the wing length",
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?": "Short and stout, just under 2 mm (aurea group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
+        "Is the hindwing cell about half the length of the wing or longer?": "Yes — HW cell about half the wing length or longer"
       }
     },
     "q_camdeo_c1": {
@@ -4650,7 +4650,7 @@
     "q_corinda_cell_gate_apex": {
       "type": "question",
       "id": "q_corinda_cell_gate_apex",
-      "question": "Is the hindwing cell longer than half the length of the wing?",
+      "question": "Is the hindwing cell about half the length of the wing or longer?",
       "question_link": {
         "text": "hindwing cell longer",
         "href": "guide.html#hindwing-cell"
@@ -4658,11 +4658,11 @@
       "hint": "Following C&P couplet 191: [A. corinda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=793494&preferred_place_id=6734) and the aurea group ([A. aurea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429759&preferred_place_id=6734), [A. horsfieldi](https://www.inaturalist.org/observations?verifiable=true&taxon_id=888216&preferred_place_id=6734)) all have a HW cell longer than half the wing length. All other long-tailed species (eumolphus, oenea, camdeo, aedias groups) have a cell about half the wing or shorter. Male aurea and horsfieldi are also shining green; their tails are short and stout (~2 mm). Corinda's tail is long and filamentous (~3.5 mm).",
       "choices": [
         {
-          "label": "Yes — HW cell longer than half the wing length",
+          "label": "Yes — HW cell about half the wing length or longer",
           "next": "q_corinda_tail_check"
         },
         {
-          "label": "No — HW cell about half the wing length or shorter",
+          "label": "No — HW cell clearly shorter than half the wing length",
           "next": "q_long_tail_spot4"
         }
       ]
