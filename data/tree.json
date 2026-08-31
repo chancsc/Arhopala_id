@@ -1318,7 +1318,7 @@
         },
         {
           "label": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)",
-          "next": "q_eumolphus_vs_alea"
+          "next": "q_agaba_eumolphus_exit"
         }
       ]
     },
@@ -1350,7 +1350,7 @@
         "HW postdiscal spot 6 placed directly below spot 7",
         "Some males: shining green upperside"
       ],
-      "next": "q_agaba_eumolphus_exit"
+      "next": "q_eumolphus_s1"
     },
     "g_vihara": {
       "type": "group",
@@ -4865,7 +4865,7 @@
       "type": "question",
       "id": "q_agaba_eumolphus_exit",
       "question": "Do both wings have a distinctly paler, whitish-irrorated (sprinkled) subapical area — unique to A. agaba within this group?",
-      "hint": "A. agaba (agaba subgroup) is uniquely identified in this branch by a paler subapical area on BOTH wings, sprinkled with whitish scales. No other species in the eumolphus/agaba group shows this on both wings.",
+      "hint": "A. agaba is uniquely identified by a paler subapical area on BOTH wings, sprinkled with whitish scales. No other tailed Malaysian Arhopala shows this on both wings.",
       "choices": [
         {
           "label": "Yes — paler whitish-irrorated subapical on both wings (A. agaba)",
@@ -4873,7 +4873,7 @@
         },
         {
           "label": "No — subapical not distinctly paler or whitish-irrorated on both wings",
-          "next": "q_eumolphus_s1"
+          "next": "q_eumolphus_vs_alea"
         }
       ]
     }

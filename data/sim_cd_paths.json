@@ -2375,28 +2375,52 @@
       "choice": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)"
     },
     {
-      "question": "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?",
-      "choice": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
-    },
-    {
       "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
       "choice": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
+    },
+    {
+      "question": "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "No"
     },
     {
       "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
       "choice": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7 (no costal spot in FW space 10)"
     },
     {
-      "question": "Does the hindwing cell extend considerably longer than half the wing length, combined with an acute or concave FW apex?",
-      "choice": "No — HW cell not considerably longer than half the wing"
+      "question": "Do both the forewing and hindwing have a distinctly paler subapical area, irrorated (sprinkled) with whitish scales?",
+      "choice": "No — subapical area not distinctly paler on both wings"
     },
     {
-      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
-      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
+      "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
+      "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
     },
     {
-      "question": "Do both wings have a distinctly paler, whitish-irrorated (sprinkled) subapical area — unique to A. agaba within this group?",
-      "choice": "Yes — paler whitish-irrorated subapical on both wings (A. agaba)"
+      "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
+      "choice": "No"
+    },
+    {
+      "question": "Is there a spot in forewing underside space 11?",
+      "choice": "No — no spot in FW space 11"
+    },
+    {
+      "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
+      "choice": "Neither of these"
+    },
+    {
+      "question": "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?",
+      "choice": "Long and filamentous, about 3.5 mm"
+    },
+    {
+      "question": "On the hindwing underside, is postdiscal spot 6 convex or almost straight (not concave) and touching or overlapping the end-cell bar, with no costal spot present in forewing space 10?",
+      "choice": "No — HW spot 6 concave or not overlapping the bar in this way, or a FW space 10 costal spot is present"
+    },
+    {
+      "question": "What is the shape and position of the hindwing postdiscal spot 6, and are the inner submarginal spots notably enlarged and darkened?",
+      "choice": "Spot 6 outwardly convex ⌢; touches or overlaps the end-cell bar; spots 5, 6 and 7 widely out of line; submarginal spots uniform (not enlarged)"
+    },
+    {
+      "question": "Is this a relatively large specimen, with a forewing length of approximately 22.0–23.0 mm?",
+      "choice": "No — smaller"
     }
   ],
   "Arhopala selta selta": [
@@ -2447,6 +2471,10 @@
     {
       "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
       "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
+    },
+    {
+      "question": "Do both wings have a distinctly paler, whitish-irrorated (sprinkled) subapical area — unique to A. agaba within this group?",
+      "choice": "No — subapical not distinctly paler or whitish-irrorated on both wings"
     },
     {
       "question": "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
@@ -2547,6 +2575,10 @@
       "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
     },
     {
+      "question": "Do both wings have a distinctly paler, whitish-irrorated (sprinkled) subapical area — unique to A. agaba within this group?",
+      "choice": "No — subapical not distinctly paler or whitish-irrorated on both wings"
+    },
+    {
       "question": "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
       "choice": "Yes"
     },
@@ -2641,24 +2673,48 @@
       "choice": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
     },
     {
+      "question": "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "No"
+    },
+    {
       "question": "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?",
       "choice": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7 (no costal spot in FW space 10)"
     },
     {
-      "question": "Does the hindwing cell extend considerably longer than half the wing length, combined with an acute or concave FW apex?",
-      "choice": "No — HW cell not considerably longer than half the wing"
+      "question": "Do both the forewing and hindwing have a distinctly paler subapical area, irrorated (sprinkled) with whitish scales?",
+      "choice": "No — subapical area not distinctly paler on both wings"
     },
     {
-      "question": "Are the underside postdiscal spots uniformly narrow and rectangular throughout the band, combined with an acute FW apex and nearly straight termen (between veins 2–4)?",
-      "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
+      "question": "Is the underside ground colour pale grey-brown — distinctly paler than the typical hair-brown Arhopala underside — with the hindwing spaces 4–5 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?",
+      "choice": "No — typical hair-brown underside; spots solid, darker than the ground colour"
     },
     {
-      "question": "Do both wings have a distinctly paler, whitish-irrorated (sprinkled) subapical area — unique to A. agaba within this group?",
-      "choice": "No — subapical not distinctly paler or whitish-irrorated on both wings"
+      "question": "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?",
+      "choice": "No"
     },
     {
-      "question": "How long is the hindwing tail?",
-      "choice": "Tail ~5 mm (markedly long)"
+      "question": "Is there a spot in forewing underside space 11?",
+      "choice": "No — no spot in FW space 11"
+    },
+    {
+      "question": "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?",
+      "choice": "Neither of these"
+    },
+    {
+      "question": "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?",
+      "choice": "Long and filamentous, about 3.5 mm"
+    },
+    {
+      "question": "On the hindwing underside, is postdiscal spot 6 convex or almost straight (not concave) and touching or overlapping the end-cell bar, with no costal spot present in forewing space 10?",
+      "choice": "No — HW spot 6 concave or not overlapping the bar in this way, or a FW space 10 costal spot is present"
+    },
+    {
+      "question": "What is the shape and position of the hindwing postdiscal spot 6, and are the inner submarginal spots notably enlarged and darkened?",
+      "choice": "Spot 6 outwardly convex ⌢; touches or overlaps the end-cell bar; spots 5, 6 and 7 widely out of line; submarginal spots uniform (not enlarged)"
+    },
+    {
+      "question": "Is this a relatively large specimen, with a forewing length of approximately 22.0–23.0 mm?",
+      "choice": "No — smaller"
     }
   ],
   "Ganesa group — ariel or elizabethae (unresolved)": [
@@ -2851,12 +2907,12 @@
       "choice": "No — underside spots not uniformly narrow rectangular (eumolphus group, rounded or acute apex)"
     },
     {
-      "question": "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
-      "choice": "No"
-    },
-    {
       "question": "Do both wings have a distinctly paler, whitish-irrorated (sprinkled) subapical area — unique to A. agaba within this group?",
       "choice": "No — subapical not distinctly paler or whitish-irrorated on both wings"
+    },
+    {
+      "question": "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?",
+      "choice": "No"
     },
     {
       "question": "How long is the hindwing tail?",
