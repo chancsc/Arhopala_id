@@ -1348,7 +1348,7 @@
         "HW postdiscal spot 6 placed directly below spot 7",
         "Some males: shining green upperside"
       ],
-      "next": "q_eumolphus_s1"
+      "next": "q_agaba_eumolphus_exit"
     },
     "g_vihara": {
       "type": "group",
@@ -1696,9 +1696,10 @@
       "common_name": "Wood's Oakblue",
       "note": "One of two tailed exceptions in the otherwise-tailless agelastus group; relatively large for the group (FW 22.0–23.0 mm). Underside: HW postdiscal spot 6 widely out of line with spots 5 and 7 — inner edge of spot 6 in line with, or even further inward (basad) than, the inner edge of spot 7; spot 6 outwardly convex and typically touches or overlaps the end-cell bar. FW postdiscal band continuous; no costal spot in space 10; small spot often present at base of space 3; inner submarginal spots uniform in size and colour. [A. alesia sacharja](https://www.inaturalist.org/search?q=Arhopala+alesia) shares this exact spot-6/submarginal-spot pattern (per field-photo review, correcting older literature) — separate by size and border width: A. barami penanga is larger (FW 22.0–23.0 mm) with an exceptionally broad male border expanding from 2.5 mm at the tornus to 8.0 mm at the costa, vs. A. alesia sacharja's smaller size and more moderate border. Female: paler blue with similarly broad borders.",
       "features": {
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 in echelon, and with their centres more or less in line; the spot in space 6 nearer the spot in space 5 than the end-cell bar",
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "What is the shape and position of the hindwing postdiscal spot 6, and are the inner submarginal spots notably enlarged and darkened?": "Spot 6 outwardly convex ⌢; touches or overlaps the end-cell bar; spots 5, 6 and 7 widely out of line; submarginal spots uniform (not enlarged)",
-        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter"
+        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter",
+        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
       }
     },
     "r_cardoni": {
@@ -3416,12 +3417,13 @@
       "common_name": "Purple-glazed Oakblue",
       "note": "Agaba subgroup of the cleander group — distinctive and unique. Underside pale purple-brown with dark markings; the subapical area of both wings is irrorated (sprinkled) with whitish scales, appearing noticeably paler than the rest of the wing. HW postdiscal spots 7, 6 and 5 widely out of line: the inner edge of spot 6 is in line with or inside the inner edge of spot 7, and spot 6 touches or overlaps the end-cell bar; spot 5 is almost always contiguous or amalgamated with the end-cell bar. The HW postdiscal band is only PARTIALLY dislocated at vein 2 — all other cleander group members have it completely dislocated. Tail filamentous at vein 2. Male: shining violet-blue with a black border ~1.0 mm wide. Female: brighter blue with broader black borders.",
       "features": {
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 in echelon, and with their centres more or less in line; the spot in space 6 nearer the spot in space 5 than the end-cell bar",
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the underside pale slatey purple with conspicuous dark markings outlined by nearly-white striae?": "No",
         "Does the underside have a slatey pink glaze with striae that are whiter than in other species?": "No — no slatey pink glaze",
         "Are the wings notably rounded and elongate in shape?": "No — typical wing shape",
         "Is the postdiscal band placed very close to the inner submarginal lunules?": "No — postdiscal band not especially close to submarginal lunules",
-        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter"
+        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter",
+        "Do both wings have a distinctly paler, whitish-irrorated (sprinkled) subapical area — unique to A. agaba within this group?": "Yes — paler whitish-irrorated subapical on both wings (A. agaba)"
       }
     },
     "q_cleander_s1": {
@@ -4503,9 +4505,10 @@
       "common_name": "",
       "note": "Tail 2.5 mm. Underside ground colour pale purplish-brown; tornal green scales absent or vestigial. Male: violet-blue; FW border 2.0 mm at mid-costa, slightly increasing toward tornus and apex; HW border 2.5 mm. Montane on the Malay Peninsula.",
       "features": {
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 in echelon, and with their centres more or less in line; the spot in space 6 nearer the spot in space 5 than the end-cell bar",
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?": "Yes — HW spot 6 outwardly sinuous or concave; costal spot in FW space 10 above the end-cell bar",
-        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter"
+        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter",
+        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
       }
     },
     "r_buddha_cooperi": {
@@ -4516,9 +4519,10 @@
       "common_name": "Buddha Oakblue",
       "note": "Tailed. Tail very short ~1.0 mm. Underside ground colour hair-brown; tornal green scales present and distinct. HW postdiscal spot 6 outwardly sinuous or concave; widely out of line with spots 5 and 7; touches or overlaps the end-cell bar. Costal spot present in FW underside space 10. FW postdiscal band weakly dislocated at vein 4; no spot at base of FW space 3. Male: shining violet-blue; black borders 1.0 mm wide. Female: may resemble female [A. aurea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429759&preferred_place_id=6734) but differs in narrower HW border and thinner tail.",
       "features": {
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 in echelon, and with their centres more or less in line; the spot in space 6 nearer the spot in space 5 than the end-cell bar",
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW spot 6 is outwardly sinuous or concave; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)",
-        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter"
+        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter",
+        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
       }
     },
     "r_arvina_adalitas": {
@@ -4542,8 +4546,9 @@
       "common_name": "Large Spotted Oakblue",
       "note": "Tailed. FW 20–22 mm. FW underside spot 4 in line with spots 5–6 (distinguishes from eumolphus group where spot 4 is out of line); no costal spot in FW space 10. HW spot 6 rounded, more or less separated; HW band only partially dislocated at vein 2. Male: dark violet-blue; border slightly less than 1.0 mm. Female: bluer shade. Two ssp.: vihara on the peninsular mainland; hirava on Langkawi.",
       "features": {
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 in echelon, and with their centres more or less in line; the spot in space 6 nearer the spot in space 5 than the end-cell bar",
-        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter"
+        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
+        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter",
+        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — anal angle plain or rounded; no tornal lobe (bulge) at all"
       }
     },
     "g_needs_more_info": {
@@ -4857,12 +4862,28 @@
       "hint": "The **ganesa group** ([A. ammon](https://www.inaturalist.org/observations?verifiable=true&taxon_id=506221&preferred_place_id=6734), [A. ammonides](https://www.inaturalist.org/observations?verifiable=true&taxon_id=470744&preferred_place_id=6734), [A. ariel](https://www.inaturalist.org/observations?verifiable=true&taxon_id=885911&preferred_place_id=6734) etc.) has the HW postdiscal band only *partially* dislocated at vein 2 — it shifts inward but the two portions remain connected (C&P couplet 153). The **alitaeus, cleander, and eumolphus groups** have the band *completely* dislocated at vein 2 — two separate portions with a visible gap (C&P couplet 96). Answer Yes if the band is shifted but continuous at vein 2; No if there is a clear gap.",
       "choices": [
         {
-          "label": "Yes — band only partially dislocated at vein 2 (shifted but connected; ganesa group)",
+          "label": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
           "next": "q_ganesa_basal_s11"
         },
         {
-          "label": "No — band fully dislocated at vein 2 (two separate portions; alitaeus/cleander/eumolphus)",
+          "label": "No — band fully dislocated at vein 2 (two separate portions)",
           "next": "q_tailed_anthelus"
+        }
+      ]
+    },
+    "q_agaba_eumolphus_exit": {
+      "type": "question",
+      "id": "q_agaba_eumolphus_exit",
+      "question": "Do both wings have a distinctly paler, whitish-irrorated (sprinkled) subapical area — unique to A. agaba within this group?",
+      "hint": "A. agaba (agaba subgroup) is uniquely identified in this branch by a paler subapical area on BOTH wings, sprinkled with whitish scales. No other species in the eumolphus/agaba group shows this on both wings.",
+      "choices": [
+        {
+          "label": "Yes — paler whitish-irrorated subapical on both wings (A. agaba)",
+          "next": "r_agaba"
+        },
+        {
+          "label": "No — subapical not distinctly paler or whitish-irrorated on both wings",
+          "next": "q_eumolphus_s1"
         }
       ]
     }
