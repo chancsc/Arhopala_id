@@ -2642,7 +2642,7 @@
         },
         {
           "label": "Cannot determine — upperside not visible",
-          "next": "r_muta_s2_unclear"
+          "next": "r_muta_all_unclear"
         }
       ]
     },
@@ -3738,7 +3738,7 @@
         },
         {
           "label": "Cannot determine — upperside not visible",
-          "next": "r_alea_glist_unclear"
+          "next": "r_alea_s6_unclear"
         }
       ]
     },
@@ -4591,22 +4591,6 @@
       "covers_results": [
         "r_tropaea",
         "r_moorei_busa",
-        "r_muta_maranda",
-        "r_muta_s2_unclear"
-      ]
-    },
-    "r_muta_s2_unclear": {
-      "type": "result",
-      "id": "r_muta_s2_unclear",
-      "taxon_id": null,
-      "name": "Muta subgroup — moorei or muta maranda (unresolved)",
-      "common_name": "Cannot determine to species",
-      "note": "⚠ Cannot distinguish to species without male upperside.\n\n[A. moorei busa](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780493&preferred_place_id=6734): FW and HW exactly the same shade of bright blue in all lights; female more purple with broader borders.\n\n[A. muta maranda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780491&preferred_place_id=6734): FW dark bright blue, HW slightly paler and more glistening; borders slightly broader than moorei.\n\nInspect the male upperside in multiple light angles to confirm species.",
-      "features": {
-        "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "No — band fully dislocated at vein 2 (two separate portions)"
-      },
-      "covers_results": [
-        "r_moorei_busa",
         "r_muta_maranda"
       ]
     },
@@ -4621,23 +4605,7 @@
         "r_normani",
         "r_phaenops_sandakani",
         "r_sublustris_ridleyi",
-        "r_milleri",
-        "r_alea_glist_unclear"
-      ],
-      "features": {
-        "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)"
-      }
-    },
-    "r_alea_glist_unclear": {
-      "type": "result",
-      "id": "r_alea_glist_unclear",
-      "taxon_id": null,
-      "name": "Alea subgroup — normani or sublustris (unresolved)",
-      "common_name": "Cannot determine to species",
-      "note": "⚠ Cannot distinguish to species without male upperside sheen and colour.\n\n[A. normani](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340249&preferred_place_id=6734): male less shining, more violet than bright blue.\n\n[A. sublustris ridleyi](https://www.inaturalist.org/observations?verifiable=true&taxon_id=475916&preferred_place_id=6734) (Ridley's Oakblue): male bright glistening blue; borders under 0.5 mm.\n\n⚠ Note: both species may also require male genitalia dissection for definitive identification. Inspect male upperside sheen to differentiate.",
-      "covers_results": [
-        "r_normani",
-        "r_sublustris_ridleyi"
+        "r_milleri"
       ],
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)"
