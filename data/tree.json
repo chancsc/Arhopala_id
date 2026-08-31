@@ -2806,7 +2806,7 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 in echelon, and with their centres more or less in line; the spot in space 6 nearer the spot in space 5 than the end-cell bar",
         "Is there a spot in forewing underside space 11?": "Yes — spot present in FW space 11",
-        "Is the hindwing cell longer than half the length of the wing?": "About half — HW cell approximately half the wing length (borderline; e.g. anthelus group)"
+        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter"
       }
     },
     "r_achelous_achelous": {
@@ -2820,7 +2820,7 @@
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 in echelon, and with their centres more or less in line; the spot in space 6 nearer the spot in space 5 than the end-cell bar",
         "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?": "Yes — FW band partially dislocated at vein 4; spot at base of FW space 10; no spot at base of HW space 6",
         "Is there a spot in forewing underside space 11?": "No — no spot in FW space 11",
-        "Is the hindwing cell longer than half the length of the wing?": "About half — HW cell approximately half the wing length (borderline; e.g. anthelus group)"
+        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter"
       }
     },
     "q_aurea_s1": {
@@ -4663,10 +4663,6 @@
       "choices": [
         {
           "label": "Yes — HW cell longer than half the wing length",
-          "next": "q_corinda_tail_check"
-        },
-        {
-          "label": "About half — HW cell approximately half the wing length (borderline; e.g. anthelus group)",
           "next": "q_corinda_tail_check"
         },
         {
