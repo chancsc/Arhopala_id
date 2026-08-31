@@ -1799,8 +1799,16 @@
       "choice": "No — band fully dislocated at vein 2 (two separate portions)"
     },
     {
-      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
-      "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+    },
+    {
+      "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
+      "choice": "No — spots not in echelon"
+    },
+    {
+      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
+      "choice": "HW postdiscal band fully dislocated at vein 2 — two clearly separate portions with a visible gap (kurzi or perimuta subgroup)"
     },
     {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
@@ -2753,10 +2761,6 @@
       "choice": "No — band fully dislocated at vein 2 (two separate portions)"
     },
     {
-      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
-      "choice": "Yes — HW spots more quadrate or banded in shape (muta subgroup)"
-    },
-    {
       "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
       "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
@@ -2811,10 +2815,6 @@
       "choice": "No — band fully dislocated at vein 2 (two separate portions)"
     },
     {
-      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
-      "choice": "Yes — HW spots more quadrate or banded in shape (muta subgroup)"
-    },
-    {
       "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
       "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
@@ -2833,6 +2833,10 @@
     {
       "question": "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?",
       "choice": "Normal — spots normal-sized, with a clear gap from the end-cell bar"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
+      "choice": "Yes — HW spots more quadrate or banded in shape (muta subgroup)"
     },
     {
       "question": "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?",
@@ -2889,10 +2893,6 @@
       "choice": "No — band fully dislocated at vein 2 (two separate portions)"
     },
     {
-      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
-      "choice": "Yes — HW spots more quadrate or banded in shape (muta subgroup)"
-    },
-    {
       "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
       "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
@@ -2911,6 +2911,10 @@
     {
       "question": "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?",
       "choice": "Normal — spots normal-sized, with a clear gap from the end-cell bar"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
+      "choice": "Yes — HW spots more quadrate or banded in shape (muta subgroup)"
     },
     {
       "question": "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?",
@@ -2985,8 +2989,16 @@
       "choice": "No — band fully dislocated at vein 2 (two separate portions)"
     },
     {
-      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
-      "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+    },
+    {
+      "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
+      "choice": "No — spots not in echelon"
+    },
+    {
+      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
+      "choice": "HW postdiscal band fully dislocated at vein 2 — two clearly separate portions with a visible gap (kurzi or perimuta subgroup)"
     },
     {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
@@ -6904,23 +6916,39 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar"
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
     },
     {
       "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
-      "choice": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
+      "choice": "No — band fully dislocated at vein 2 (two separate portions)"
     },
     {
-      "question": "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?",
-      "choice": "No — spot 6 not sinuous/concave, or no FW costal spot in space 10"
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
-      "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
-      "choice": "Yes — FW postdiscal band continuous (muta subgroup: A. moorei, A. muta, A. tropaea)"
+      "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
+      "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
+    },
+    {
+      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
+      "choice": "HW underside postdiscal spots more quadrate/banded (muta subgroup)"
     },
     {
       "question": "What is the forewing length?",
       "choice": "Larger — FW 16.0–19.0 mm"
+    },
+    {
+      "question": "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?",
+      "choice": "Large — spots large, almost touching the end-cell bar"
+    },
+    {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
+    },
+    {
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
+      "choice": "No — no dark patch present in FW space 1b"
     }
   ],
   "Muta subgroup — moorei or muta maranda (unresolved)": [
@@ -6954,23 +6982,39 @@
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar"
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
     },
     {
       "question": "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?",
-      "choice": "Yes — band only partially dislocated at vein 2 (shifted but connected)"
+      "choice": "No — band fully dislocated at vein 2 (two separate portions)"
     },
     {
-      "question": "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?",
-      "choice": "No — spot 6 not sinuous/concave, or no FW costal spot in space 10"
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
-      "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
-      "choice": "Yes — FW postdiscal band continuous (muta subgroup: A. moorei, A. muta, A. tropaea)"
+      "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
+      "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
+    },
+    {
+      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
+      "choice": "HW underside postdiscal spots more quadrate/banded (muta subgroup)"
     },
     {
       "question": "What is the forewing length?",
       "choice": "Larger — FW 16.0–19.0 mm"
+    },
+    {
+      "question": "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?",
+      "choice": "Large — spots large, almost touching the end-cell bar"
+    },
+    {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
+    },
+    {
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
+      "choice": "No — no dark patch present in FW space 1b"
     }
   ],
   "Alea subgroup — phaenops / normani / sublustris (unresolved)": [
