@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="How Feature Scoring works — methodology, comparison with the C&P Key, and how to use them together for Arhopala identification.">
+  <meta name="theme-color" content="#2d5a27">
+  <title>Arhopala ID — Feature Scoring</title>
+  <link rel="stylesheet" href="css/style.css?v=20260717a">
+  <script src="js/theme.js?v=20260717a"></script>
+  <style>
+    /* ── Page-local layout helpers only; all colours via CSS vars ── */
+
+    .fs-formula {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 0.6rem 0 0.8rem;
+    }
+    .fs-formula-item {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
+      background: var(--surface-tint);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.5rem 0.75rem;
+      flex: 1;
+      min-width: 9rem;
+    }
+    .fs-formula-val {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--primary);
+      font-variant-numeric: tabular-nums;
+      flex-shrink: 0;
+    }
+    .fs-formula-val.neg  { color: var(--text-muted); }
+    .fs-formula-val.zero { color: var(--border); }
+    .fs-formula-desc {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    .fs-compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 0.6rem 0 0.8rem;
+    }
+    .fs-compare-panel {
+      padding: 0.9rem 1rem;
+    }
+    .fs-compare-panel:first-child {
+      background: var(--surface-tint);
+      border-right: 1px solid var(--border);
+    }
+    .fs-compare-panel:last-child {
+      background: var(--card);
+    }
+    .fs-compare-head {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--primary);
+      margin-bottom: 0.55rem;
+    }
+    .fs-key-step {
+      font-size: 0.8rem;
+      color: var(--text);
+      line-height: 1.5;
+      margin-bottom: 0.3rem;
+    }
+    .fs-key-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-right: 0.3rem;
+    }
+    .fs-key-chosen { color: var(--primary); }
+    .fs-key-dead   { color: var(--text-muted); text-decoration: line-through; }
+    .fs-key-result { color: var(--primary); font-style: italic; }
+    .fs-rank-list  { list-style: none; padding: 0; }
+    .fs-rank-item  {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.3rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.8rem;
+    }
+    .fs-rank-item:last-child { border-bottom: none; }
+    .fs-rank-num  { color: var(--text-muted); font-size: 0.7rem; width: 1.4rem; text-align: right; flex-shrink: 0; }
+    .fs-rank-name { flex: 1; color: var(--text); }
+    .fs-rank-name.top { color: var(--primary); font-weight: 600; }
+    .fs-rank-bar  { width: 50px; flex-shrink: 0; }
+    .fs-rank-bg   { background: var(--score-track); height: 5px; border-radius: 3px; overflow: hidden; }
+    .fs-rank-fill { height: 100%; border-radius: 3px; background: var(--primary); }
+    .fs-compare-caption {
+      font-size: 0.73rem;
+      color: var(--text-muted);
+      margin-top: 0.5rem;
+      line-height: 1.45;
+    }
+
+    .fs-workflow {
+      display: flex;
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 0.6rem 0 0.8rem;
+    }
+    .fs-wf-step {
+      flex: 1;
+      padding: 0.75rem 0.9rem;
+      background: var(--surface-tint);
+    }
+    .fs-wf-step + .fs-wf-step {
+      border-left: 1px solid var(--border);
+      background: var(--card);
+    }
+    .fs-wf-num {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--text-muted);
+      margin-bottom: 0.25rem;
+    }
+    .fs-wf-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.3rem;
+    }
+    .fs-wf-desc {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .fs-procon {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin: 0.6rem 0 0.8rem;
+    }
+    .fs-procon-head {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--primary);
+      margin-bottom: 0.4rem;
+    }
+    .fs-procon-list {
+      list-style: none;
+      padding: 0;
+    }
+    .fs-procon-list li {
+      font-size: 0.8rem;
+      color: var(--text);
+      line-height: 1.5;
+      padding: 0.35rem 0 0.35rem 0.8rem;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+    .fs-procon-list li:last-child { border-bottom: none; }
+    .fs-procon-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.65rem;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--border);
+    }
+    .fs-procon-list.pro li::before { background: var(--primary); }
+
+    @media (max-width: 520px) {
+      .fs-compare   { grid-template-columns: 1fr; }
+      .fs-compare-panel:first-child { border-right: none; border-bottom: 1px solid var(--border); }
+      .fs-procon    { grid-template-columns: 1fr; }
+      .fs-workflow  { flex-direction: column; }
+      .fs-wf-step + .fs-wf-step { border-left: none; border-top: 1px solid var(--border); }
+      .fs-formula   { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="app-topbar">
+    <button class="menu-btn app-topbar-menu-btn" id="menu-btn" aria-label="Open menu">&#9776;</button>
+    <span class="app-topbar-title">Feature Scoring</span>
+  </div>
+
+  <div class="about-content" style="max-width:680px;margin:0 auto;padding:1rem 1rem 3rem;">
+
+    <div class="about-hero">
+      <div class="about-hero-icon" aria-hidden="true">
+        <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+          <rect x="8"  y="10" width="36" height="5"  rx="2.5" fill="#d4e2d0"/>
+          <rect x="8"  y="20" width="28" height="5"  rx="2.5" fill="#d4e2d0"/>
+          <rect x="8"  y="30" width="32" height="5"  rx="2.5" fill="#2d5a27" opacity="0.8"/>
+          <rect x="8"  y="40" width="20" height="5"  rx="2.5" fill="#d4e2d0"/>
+          <rect x="38" y="10" width="7"  height="5"  rx="2.5" fill="#c8860a" opacity="0.6"/>
+          <rect x="38" y="20" width="7"  height="5"  rx="2.5" fill="#c8860a" opacity="0.6"/>
+          <rect x="42" y="30" width="3"  height="5"  rx="1.5" fill="#2d5a27"/>
+          <rect x="38" y="40" width="7"  height="5"  rx="2.5" fill="#c8860a" opacity="0.6"/>
+        </svg>
+      </div>
+      <h3 class="about-app-name">Feature Scoring</h3>
+      <p class="about-tagline">A probabilistic, evidence-accumulating approach to species identification</p>
+    </div>
+
+    <!-- ── Background ── -->
+    <section class="about-section">
+      <h4 class="about-section-title">Why a new approach?</h4>
+      <p><em>Arhopala</em> is one of the most species-rich lycaenid genera in the world, with over 200 species across South and Southeast Asia. Many look strikingly similar in the field — similar size, similar iridescent blue upperside, and subtle differences in the underside spot pattern that require careful, feature-by-feature comparison.</p>
+      <p>The traditional approach relies on a dichotomous identification key. This works well in ideal conditions, but specimens rarely present themselves ideally: upperside markings may be obscured by a closed wing, a marginal detail worn or damaged, or the observer simply uncertain about a specific character. A single wrong turn in a dichotomous key sends the user entirely off-track.</p>
+      <p>Feature Scoring was developed to address these limitations — accumulating evidence from whatever is visible, tolerating uncertainty, and narrowing toward the correct species even when some characters cannot be assessed.</p>
+    </section>
+
+    <!-- ── C&P Key ── -->
+    <section class="about-section">
+      <h4 class="about-section-title">How the C&amp;P Key works</h4>
+      <p>The Corbet &amp; Pendlebury key (1992, 4th edition) is a dichotomous key — a sequence of binary choices that branches toward a species. At each step the user chooses between two contrasting character states; the chosen branch determines the next question, and so on until a species is named.</p>
+
+      <div class="fs-compare">
+        <div class="fs-compare-panel">
+          <div class="fs-compare-head">C&amp;P Key — sequential path</div>
+          <div class="fs-key-step"><span class="fs-key-label">Q1</span> HW tornal lobe present?</div>
+          <div class="fs-key-step fs-key-chosen">&nbsp;&nbsp;→ Yes — proceed to Q2</div>
+          <div class="fs-key-step fs-key-dead">&nbsp;&nbsp;→ No — proceed to Q14</div>
+          <div class="fs-key-step" style="margin-top:0.3rem"><span class="fs-key-label">Q2</span> Underside pale slatey purple?</div>
+          <div class="fs-key-step fs-key-dead">&nbsp;&nbsp;→ Yes — proceed to Q3</div>
+          <div class="fs-key-step fs-key-chosen">&nbsp;&nbsp;→ No — proceed to Q8</div>
+          <div class="fs-key-step" style="margin-top:0.3rem"><span class="fs-key-label">Q8</span> HW postdiscal band position…</div>
+          <div class="fs-key-step fs-key-chosen">&nbsp;&nbsp;→ Close to submarginal lunules</div>
+          <div class="fs-key-step fs-key-result" style="margin-top:0.3rem">&nbsp;&nbsp;&nbsp;&nbsp;→ <em>A. horsfieldi</em></div>
+          <div class="fs-compare-caption">One wrong answer routes the user to a wrong branch with no path back.</div>
+        </div>
+        <div class="fs-compare-panel">
+          <div class="fs-compare-head">Feature Scoring — live ranking</div>
+          <div class="fs-compare-caption" style="margin-bottom:0.5rem;margin-top:0">After 4 answers — ranked by accumulated evidence.</div>
+          <ul class="fs-rank-list">
+            <li class="fs-rank-item">
+              <span class="fs-rank-num">#1</span>
+              <span class="fs-rank-name top">horsfieldi</span>
+              <span class="fs-rank-bar"><div class="fs-rank-bg"><div class="fs-rank-fill" style="width:90%"></div></div></span>
+            </li>
+            <li class="fs-rank-item">
+              <span class="fs-rank-num">#2</span>
+              <span class="fs-rank-name">eumolphus</span>
+              <span class="fs-rank-bar"><div class="fs-rank-bg"><div class="fs-rank-fill" style="width:65%"></div></div></span>
+            </li>
+            <li class="fs-rank-item">
+              <span class="fs-rank-num">#3</span>
+              <span class="fs-rank-name">hellenore</span>
+              <span class="fs-rank-bar"><div class="fs-rank-bg"><div class="fs-rank-fill" style="width:60%"></div></div></span>
+            </li>
+            <li class="fs-rank-item">
+              <span class="fs-rank-num">#4</span>
+              <span class="fs-rank-name">amphimuta</span>
+              <span class="fs-rank-bar"><div class="fs-rank-bg"><div class="fs-rank-fill" style="width:50%"></div></div></span>
+            </li>
+            <li class="fs-rank-item">
+              <span class="fs-rank-num">#5</span>
+              <span class="fs-rank-name">corinda</span>
+              <span class="fs-rank-bar"><div class="fs-rank-bg"><div class="fs-rank-fill" style="width:30%"></div></div></span>
+            </li>
+          </ul>
+          <div class="fs-compare-caption" style="margin-top:0.5rem">Any question can be skipped. The ranking updates after every answer.</div>
+        </div>
+      </div>
+
+      <p>The key's branching structure encodes decades of morphological expertise. When a specimen is complete, fresh, and the observer is confident in each character, the key delivers a precise identification path quickly. Its limitation is structural: a misidentified character, a worn detail, or honest uncertainty propagates irrecoverably through every subsequent step.</p>
+    </section>
+
+    <!-- ── Feature Scoring ── -->
+    <section class="about-section">
+      <h4 class="about-section-title">How Feature Scoring works</h4>
+      <p>Feature Scoring treats identification as a <em>scoring problem</em> rather than a routing problem. Every species carries a feature matrix — a set of (question, expected answer) pairs drawn from the identification key and supplementary morphological data. As you answer questions, each species accumulates a score based on how well its known features match your answers.</p>
+
+      <p class="about-note">
+        <strong>Scoring rule — applied per answer, per species:</strong><br>
+        A confirmed match earns the species two points; a mismatch costs it one point; the absence of that character in a species' feature matrix is neutral.
+      </p>
+
+      <div class="fs-formula">
+        <div class="fs-formula-item">
+          <div class="fs-formula-val">+2</div>
+          <div class="fs-formula-desc">Answer matches the species' known feature</div>
+        </div>
+        <div class="fs-formula-item">
+          <div class="fs-formula-val neg">−1</div>
+          <div class="fs-formula-desc">Answer contradicts the species' known feature</div>
+        </div>
+        <div class="fs-formula-item">
+          <div class="fs-formula-val zero">0</div>
+          <div class="fs-formula-desc">Species has no entry for this character</div>
+        </div>
+      </div>
+
+      <p>Candidates are ranked at all times by their score-to-maximum ratio — how much of the available evidence each species has confirmed relative to how much has been presented. This ratio is used rather than raw score so that species with fewer features in their matrix are not systematically disadvantaged.</p>
+
+      <h4 class="about-section-title" style="margin-top:0.9rem">Adaptive question ordering</h4>
+      <p>Rather than presenting questions in a fixed sequence, Feature Scoring dynamically ranks the next question to ask. The priority criterion is <em>coverage</em> — how many of the current top-ranked candidates have this question as a feature — combined with <em>diversity</em> — how many different answers those candidates give for it. A question that distinguishes many still-plausible candidates ranks earlier than one that applies to only a few.</p>
+      <p>This ordering updates after every answer. As the pool of plausible candidates narrows, the question order shifts to reflect what is most diagnostic among those that remain.</p>
+
+      <h4 class="about-section-title" style="margin-top:0.9rem">Tolerating uncertainty</h4>
+      <p>Any question can be skipped by selecting "Cannot determine." This carries no penalty — it means that question contributes nothing for or against any species' score, and identification continues from the next most informative question. A worn upperside, an obscured forewing space, or genuine observer uncertainty is handled gracefully rather than halting the process.</p>
+
+      <h4 class="about-section-title" style="margin-top:0.9rem">The underside-only path</h4>
+      <p>A practical consequence of the skip mechanism is that Feature Scoring can operate on underside features alone. Upperside markings and certain forewing space characters are marked "Cannot determine," and the system routes through questions whose answers remain assessable from the underside. For many species pairs, the underside carries sufficient discriminating information to reach a confident identification without ever assessing the upperside.</p>
+      <p>Each species page shows both the full canonical identification path (upperside included) and the underside-only path, so you can compare what the full and partial-evidence routes look like.</p>
+    </section>
+
+    <!-- ── Advantages and limitations ── -->
+    <section class="about-section">
+      <h4 class="about-section-title">Advantages and limitations</h4>
+
+      <div class="fs-procon">
+        <div>
+          <div class="fs-procon-head">Feature Scoring — strengths</div>
+          <ul class="fs-procon-list pro">
+            <li>Works with partial specimens — any unanswerable question is skipped without consequence</li>
+            <li>All species ranked simultaneously; you always see where every candidate stands</li>
+            <li>A wrong answer is recoverable — it penalises the wrong candidate rather than misdirecting the whole search</li>
+            <li>Underside-only path provides confident identification without upperside assessment</li>
+            <li>Question order adapts as the candidate pool narrows</li>
+            <li>Accessible to observers not yet fluent in the key's couplet logic</li>
+          </ul>
+        </div>
+        <div>
+          <div class="fs-procon-head">Feature Scoring — limitations</div>
+          <ul class="fs-procon-list">
+            <li>Quality depends on completeness and accuracy of each species' feature matrix</li>
+            <li>Species with very few distinguishing features may remain poorly separated until late in the sequence</li>
+            <li>Does not surface the underlying morphological reasoning the way a key couplet does</li>
+            <li>Closely related species may score similarly throughout if they share most features</li>
+            <li>Recently described or poorly documented species may be underrepresented in the feature matrix</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="fs-procon" style="margin-top:0.25rem">
+        <div>
+          <div class="fs-procon-head">C&amp;P Key — strengths</div>
+          <ul class="fs-procon-list pro">
+            <li>Encodes explicit taxonomic reasoning — each couplet reflects a morphologically meaningful character</li>
+            <li>Short, decisive paths for species with unique early-branching characters</li>
+            <li>Transparent: the user follows an auditable chain of decisions</li>
+            <li>Works well for complete, fresh specimens with all characters visible</li>
+          </ul>
+        </div>
+        <div>
+          <div class="fs-procon-head">C&amp;P Key — limitations</div>
+          <ul class="fs-procon-list">
+            <li>One incorrect answer routes to a wrong branch with no recovery mechanism</li>
+            <li>Cannot proceed past a question the observer is unable to answer</li>
+            <li>Order of questions is fixed, regardless of which characters are clearest on the specimen</li>
+            <li>Provides no ranked alternatives if the user suspects the primary identification</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── How they complement each other ── -->
+    <section class="about-section">
+      <h4 class="about-section-title">How they complement each other</h4>
+      <p>The two methods are most powerful used together. Feature Scoring is structured around the same morphological characters and species groupings as the C&amp;P key — the feature matrix was assembled from the key's couplet text and supplementary literature, so both are built on the same biological foundation.</p>
+
+      <div class="fs-workflow">
+        <div class="fs-wf-step">
+          <div class="fs-wf-num">Step 1</div>
+          <div class="fs-wf-title">Feature Scoring</div>
+          <div class="fs-wf-desc">Answer whatever is assessable on the specimen. The ranking narrows the field to a small set of strong candidates, often to a single top match, without requiring every character to be visible.</div>
+        </div>
+        <div class="fs-wf-step">
+          <div class="fs-wf-num">Step 2</div>
+          <div class="fs-wf-title">C&amp;P Confirmation</div>
+          <div class="fs-wf-desc">Take the top candidate from Feature Scoring into the key. The key's couplet chain confirms the identification, exposes the explicit morphological reasoning, and catches any scoring artefact.</div>
+        </div>
+        <div class="fs-wf-step">
+          <div class="fs-wf-num">Step 3</div>
+          <div class="fs-wf-title">Check the margin</div>
+          <div class="fs-wf-desc">A wide margin between #1 and #2 means high confidence. A narrow margin signals the two candidates share most features — inspect the specimen's distinguishing characters more carefully.</div>
+        </div>
+      </div>
+
+      <p>The key's branching structure also underpins Feature Scoring's question sequencing: the identification tree defines which species encounter which questions, determining each question's coverage across the candidate pool. Changes to the key propagate through the Feature Scoring order automatically — the two systems share a single data source.</p>
+      <p>In practice, Feature Scoring handles the common case — a specimen with some characters visible, some obscured — while the C&amp;P key provides authoritative confirmation and an independent verification route. Neither replaces the other; both are weaker used in isolation than used in sequence.</p>
+
+      <p class="about-note">
+        <strong>Scope:</strong> This implementation covers <em>Arhopala</em> species recorded in Peninsular Malaysia and Singapore — the geographic scope of Corbet &amp; Pendlebury (1992). Species from adjacent regions not treated in that key are outside the current feature matrix.
+      </p>
+    </section>
+
+    <!-- ── Source ── -->
+    <section class="about-section">
+      <h4 class="about-section-title">Source</h4>
+      <p>Feature matrix derived from: Corbet A.S. &amp; Pendlebury H.M. (1992). <em>The Butterflies of the Malay Peninsula</em>, 4th ed. (revised by J.N. Eliot). Malayan Nature Society, Kuala Lumpur. Supplemented by examination of type specimens and published plate material.</p>
+      <p>Found an error or missing species? Please <a class="about-link" href="https://github.com/chancsc/Arhopala_id/issues" target="_blank" rel="noopener noreferrer">open an issue on GitHub</a>.</p>
+    </section>
+
+  </div>
+
+  <!-- Hamburger menu overlay -->
+  <div id="menu-overlay" class="menu-overlay" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="menu-panel">
+      <div class="menu-header">
+        <h2 class="menu-title">Arhopala ID</h2>
+        <button class="theme-toggle-btn" onclick="ArTheme.toggle()" aria-label="Switch to dark mode"><span class="theme-icon">🌙</span></button>
+        <button id="menu-close" class="menu-close" aria-label="Close menu">✕</button>
+      </div>
+      <nav class="menu-nav" aria-label="Navigation">
+        <a href="index.html" class="menu-nav-item" id="nav-home" aria-label="Home — where to start">
+          <span class="menu-nav-item-label">Home</span>
+          <span class="menu-nav-item-desc">Where to start</span>
+        </a>
+        <a href="checklist.html" class="menu-nav-item" id="nav-scoring" aria-label="Feature Scoring — score multiple features at once">
+          <span class="menu-nav-item-label">Feature Scoring</span>
+          <span class="menu-nav-item-desc">Score multiple features at once</span>
+        </a>
+        <a href="id_keys.html" class="menu-nav-item" id="nav-cpkey" aria-label="C&amp;P Key — score couplets from the dichotomous key">
+          <span class="menu-nav-item-label">C&amp;P Key</span>
+          <span class="menu-nav-item-desc">Score couplets from the dichotomous key</span>
+        </a>
+        <a href="species.html" class="menu-nav-item" id="nav-species" aria-label="Species Search — browse all covered taxa">
+          <span class="menu-nav-item-label">Species Search</span>
+          <span class="menu-nav-item-desc">Browse all covered taxa</span>
+        </a>
+        <a href="guide.html" class="menu-nav-item" id="nav-guide" aria-label="Visual Guide — wing diagrams and terminology">
+          <span class="menu-nav-item-label">Visual Guide</span>
+          <span class="menu-nav-item-desc">Wing diagrams &amp; terminology</span>
+        </a>
+        <a href="about.html" class="menu-nav-item" id="nav-about" aria-label="About — how to use this app">
+          <span class="menu-nav-item-label">About</span>
+          <span class="menu-nav-item-desc">How to use this app</span>
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const overlay  = document.getElementById('menu-overlay');
+      const openBtn  = document.getElementById('menu-btn');
+      const closeBtn = document.getElementById('menu-close');
+      function open()  { overlay.classList.add('open');    document.body.style.overflow = 'hidden'; }
+      function close() { overlay.classList.remove('open'); document.body.style.overflow = ''; }
+      openBtn.addEventListener('click', open);
+      closeBtn.addEventListener('click', close);
+      overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape' && overlay.classList.contains('open')) close(); });
+    })();
+  </script>
+
+</body>
+</html>
