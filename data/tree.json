@@ -49,7 +49,7 @@
         },
         {
           "label": "No \u2014 no whitish streak",
-          "next": "q_band_disc_gate_initial"
+          "next": "q_corinda_cell_gate_apex"
         }
       ]
     },
@@ -751,15 +751,15 @@
     "q_tailless_epimuta_vein2": {
       "type": "question",
       "id": "q_tailless_epimuta_vein2",
-      "question": "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?",
-      "hint": "Both the agesilaus group ([A. agesilaus gesa](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1278725&preferred_place_id=6734), [A. avatha](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1062607&preferred_place_id=6734)) and the agelastus group ([A. wildeyana](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1294333&preferred_place_id=6734), [A. labuana](https://www.inaturalist.org/search?q=Arhopala+labuana), etc.) have the HW postdiscal band only partially dislocated at vein 2 \u2014 it shifts inward but the two portions remain connected. In the epimuta group and in [A. antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734), [A. metamuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340245&preferred_place_id=6734), and [A. perimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=448212&preferred_place_id=6734), the band is fully dislocated at vein 2 \u2014 two clearly separate portions with a visible gap. Answer Yes if the band appears continuous or only slightly offset at vein 2; a follow-up question about the FW postdiscal band will then separate agelastus from agesilaus. Answer No if there is a clear gap.",
+      "question": "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?",
+      "hint": "In the **alitaeus group** (ariana, arianaga, aida, havilandi, sintanga, alitaeus, denta, elopura, kurzi, avathina, pseudomuta, cleander, zambra, evansi, milleri, normani, sublustris, athada, silhetensis, aurelia, aroa, phanda, selta, phaenops, democritus, muta group, etc.) the band is **completely dislocated** \u2014 two entirely separate portions with a visible gap (C&P couplet 96). In the **agesilaus, agelastus, ganesa, eumolphus, corinda, aurea, and related groups** the band is **only partially dislocated** \u2014 it shifts inward but the two portions remain connected (C&P couplet 153).",
       "choices": [
         {
-          "label": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)",
+          "label": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2",
           "next": "q_tailless_vein2_rama_check"
         },
         {
-          "label": "No \u2014 band fully dislocated at vein 2 (two separate portions)",
+          "label": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2",
           "next": "q_tailless_epimuta_tornal"
         }
       ]
@@ -1093,7 +1093,7 @@
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Equidistant \u2014 spot 6 roughly midway between spot 5 and the end-cell bar",
         "In the hindwing underside spaces 2 - 5, are the submarginal spots prominently wedge-shaped (\u2227), black or dark brown?": "Yes \u2014 submarginal spots wedge-shaped (\u2227) and brown in spaces 2, 3, 4, 5",
         "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?": "No \u2014 spot 6 not sinuous/concave, or no FW costal spot in space 10",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_avatha": {
@@ -1106,7 +1106,7 @@
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Equidistant \u2014 spot 6 roughly midway between spot 5 and the end-cell bar",
         "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?": "No \u2014 spot 6 not sinuous/concave, or no FW costal spot in space 10",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "g_oenea": {
@@ -1238,7 +1238,7 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the forewing postdiscal band clearly dislocated at vein 4, and is hindwing postdiscal spot 6 outwardly concave?": "Yes \u2014 FW band clearly dislocated at vein 4; HW spot 6 outwardly concave",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_azinis_azinis": {
@@ -1252,7 +1252,7 @@
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No",
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the forewing postdiscal band clearly dislocated at vein 4, and is hindwing postdiscal spot 6 outwardly concave?": "No \u2014 FW band sinuous or only slightly dislocated; HW spot 6 straight or convex",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "g_agrata_agrata": {
@@ -1279,7 +1279,7 @@
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No",
         "Is hindwing postdiscal spot 6 considerably wider than spot 7?": "Yes \u2014 HW spot 6 considerably wider than spot 7 (agrata group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "g_cleander": {
@@ -1701,9 +1701,9 @@
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "What is the shape and position of the hindwing postdiscal spot 6, and are the inner submarginal spots notably enlarged and darkened?": "Spot 6 outwardly convex \u2322; touches or overlaps the end-cell bar; spots 5, 6 and 7 widely out of line; submarginal spots uniform (not enlarged)",
         "Is the hindwing cell longer than half the length of the wing?": "No \u2014 HW cell about half the wing length (not as extended as corinda or the aurea group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)",
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No \u2014 anal angle plain or rounded; no tornal lobe (bulge) at all",
-        "Do both wings have a distinctly paler, whitish-irrorated (sprinkled) subapical area \u2014 unique to A. agaba within this group?": "No \u2014 subapical not distinctly paler or whitish-irrorated on both wings"
+        "Do both wings have a distinctly paler, whitish-irrorated (sprinkled) subapical area \u2014 unique to A. agaba within this group?": "No \u2014 subapical not distinctly paler or whitish-irrorated on both wings",
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_cardoni": {
@@ -1729,7 +1729,7 @@
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced",
         "What is the shape and position of the hindwing postdiscal spot 6, and are the inner submarginal spots notably enlarged and darkened?": "Spot 6 outwardly concave \u2323 or sinuous \u223f, positioned below spot 7 (in the normal row, not displaced); inner submarginal spots in HW spaces 4\u20135 notably enlarged and darkened",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_alaconia_kempi": {
@@ -1741,7 +1741,7 @@
       "note": "Alesia subgroup (agelastus group) \u2014 the rarer tailed form (f. kempi, ~2.5 mm tail at vein 2) of Arhopala alaconia media; though described as rare in the literature, it is reportedly encountered fairly often in the field. Same diagnostic characters as the tailless form: hindwing underside spaces 4\u20135 submarginal spots prominently black and wedge-shaped (\u2227), with the postdiscal spots large and edged by a thick, pale border \u2014 unique to this species among Malaysian Arhopala; inner submarginal spots in FW spaces 2\u20133 and HW spaces 4\u20135 notably enlarged and darkened; HW postdiscal spot 6 outwardly concave or sinuous; tornal green scales present on the hindwing; small spot often at base of FW space 3. Both sexes alike: violet blue with FW border 3.0 mm at tornus expanding to mid-costa.",
       "features": {
         "What is the shape and position of the hindwing postdiscal spot 6, and are the inner submarginal spots notably enlarged and darkened?": "Spot 6 outwardly concave \u2323 or sinuous \u223f, positioned below spot 7 (in the normal row, not displaced); inner submarginal spots in HW spaces 4\u20135 notably enlarged and darkened",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_alesia_sacharja": {
@@ -1780,12 +1780,12 @@
       "note": "Tailless. Male upperside: violet blue with broader borders than [A. labuana](https://www.inaturalist.org/search?q=Arhopala+labuana) or [A. agelastus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1294319&preferred_place_id=6734) \u2014 2.0 mm at tornus to 5.0 mm at costa. Female: brighter and purer blue. Underside: HW postdiscal spots 5, 6 and 7 widely out of line; the inner edge of spot 6 is in line with, or even further inward (basad) than, the inner edge of spot 7; spot 6 is outwardly convex and typically touches or overlaps the end-cell bar. In HW underside spaces (2)3\u20135 the submarginal spots are prominently black and wedge-shaped (\u2227) \u2014 like A. alaconia media, but without that species\u2019 thick pale postdiscal border. Agelastus group; HW postdiscal band only partially dislocated at vein 2; FW postdiscal band continuous.",
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)",
         "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?": "Yes \u2014 FW postdiscal band continuous (agelastus group)",
         "Roughly how large is the specimen (forewing length)?": "Small \u2014 forewing about 16 mm (A. wildeyana)",
         "In the hindwing underside spaces 2 - 5, are the submarginal spots prominently wedge-shaped (\u2227), black or dark brown?": "Yes \u2014 submarginal spots wedge-shaped (\u2227) and brown in spaces 2, 3, 4, 5",
         "Is the hindwing underside postdiscal spot 3 almost in line with postdiscal spots 2 and 4 (forming an even curve)?": "No \u2014 spot 3 displaced, not clearly in line",
-        "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?": "No \u2014 spot 6 not sinuous/concave, or no FW costal spot in space 10"
+        "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?": "No \u2014 spot 6 not sinuous/concave, or no FW costal spot in space 10",
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_agelastus_agelastus": {
@@ -2029,7 +2029,7 @@
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curving inward \u2323), or straight/convex (\u2322)?": "No \u2014 HW spot 6 outer edge outwardly straight or convex \u2322 (alitaeus group)",
         "Does hindwing postdiscal spot 6 overlap the end-cell bar \u2014 is the spot rounded (not oblique)?": "No \u2014 HW spot 6 slightly oblique and not overlapping end-cell bar (A. pseudomuta)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_elopura": {
@@ -2043,7 +2043,7 @@
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "What is the forewing length (base to apex, excluding the tail)?": "17.0\u201319.0 mm \u2014 smaller",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curving inward \u2323), or straight/convex (\u2322)?": "No \u2014 HW spot 6 outer edge outwardly straight or convex \u2322 (alitaeus group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_arianaga": {
@@ -2057,7 +2057,7 @@
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "What is the forewing length (base to apex, excluding the tail)?": "21.0\u201322.0 mm \u2014 larger",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curving inward \u2323), or straight/convex (\u2322)?": "No \u2014 HW spot 6 outer edge outwardly straight or convex \u2322 (alitaeus group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "g_elopura_arianaga_cd": {
@@ -2086,7 +2086,7 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curving inward \u2323), or straight/convex (\u2322)?": "No \u2014 HW spot 6 outer edge outwardly straight or convex \u2322 (alitaeus group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_aida": {
@@ -2099,7 +2099,7 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curving inward \u2323), or straight/convex (\u2322)?": "No \u2014 HW spot 6 outer edge outwardly straight or convex \u2322 (alitaeus group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_havilandi": {
@@ -2112,7 +2112,7 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curving inward \u2323), or straight/convex (\u2322)?": "No \u2014 HW spot 6 outer edge outwardly straight or convex \u2322 (alitaeus group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_sintanga": {
@@ -2125,7 +2125,7 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curving inward \u2323), or straight/convex (\u2322)?": "No \u2014 HW spot 6 outer edge outwardly straight or convex \u2322 (alitaeus group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_alitaeus": {
@@ -2139,7 +2139,7 @@
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curving inward \u2323), or straight/convex (\u2322)?": "No \u2014 HW spot 6 outer edge outwardly straight or convex \u2322 (alitaeus group)",
         "Does hindwing postdiscal spot 6 overlap the end-cell bar \u2014 is the spot rounded (not oblique)?": "Yes \u2014 HW spot 6 rounded and overlapping end-cell bar (A. alitaeus)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_denta": {
@@ -2152,7 +2152,7 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curving inward \u2323), or straight/convex (\u2322)?": "No \u2014 HW spot 6 outer edge outwardly straight or convex \u2322 (alitaeus group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_kurzi": {
@@ -2167,7 +2167,7 @@
         "On the forewing underside, is the basal cell spot absent?": "No \u2014 basal cell spot present on FW underside",
         "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "No \u2014 no white patch just above the tornal lobe",
         "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No \u2014 HW postdiscal spots rounded (not quadrate/banded)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "q_amph_s2": {
@@ -2451,7 +2451,7 @@
       "common_name": "Lunulate Yellow Oakblue",
       "note": "Tailless. Distinctive: FW underside lacks a basal cell spot (absent, not obscure). HW postdiscal band completely dislocated at vein 2. Otherwise similar to other amphimuta subgroup members.",
       "features": {
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_norda": {
@@ -2466,7 +2466,7 @@
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No \u2014 HW band not strongly dislocated at vein 2",
         "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes \u2014 weak tooth at vein 2 present; postdiscal spots less rounded (more angular), similar to A. norda",
         "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?": "No \u2014 border regular ~0.5 mm",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_major_major": {
@@ -2481,7 +2481,7 @@
         "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?": "No \u2014 border regular ~0.5 mm",
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No \u2014 HW band not strongly dislocated at vein 2",
         "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes \u2014 weak tooth at vein 2 present; postdiscal spots more rounded, similar to A. amphimuta/A. major",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_stubbsi": {
@@ -2495,7 +2495,7 @@
         "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?": "No \u2014 border regular ~0.5 mm",
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No \u2014 HW band not strongly dislocated at vein 2",
         "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "No \u2014 no weak tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_moolaiana_yajuna": {
@@ -2508,7 +2508,7 @@
       "features": {
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No \u2014 HW band not strongly dislocated at vein 2",
         "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Yes \u2014 white patch on HW cilia above tornal lobe; postdiscal spots less rounded",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_alica": {
@@ -2521,7 +2521,7 @@
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Not displaced / Slightly displaced \u2014 spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line",
         "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No \u2014 HW postdiscal spots rounded (not quadrate/banded)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_sceva_indra": {
@@ -2533,7 +2533,7 @@
       "note": "Tailless. A smaller species. HW underside postdiscal series is dislocated at vein 2 (distinctive within the amphimuta subgroup). Male: dark violet-blue.",
       "features": {
         "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Yes \u2014 white patch on HW cilia above tornal lobe; postdiscal spots less rounded",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_amphimuta_amphimuta": {
@@ -2547,7 +2547,7 @@
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No \u2014 HW band not strongly dislocated at vein 2",
         "What is the forewing length, and are the hindwing cilia prolonged into a short tooth at vein 2?": "Larger (FW ~20\u201323 mm); HW cilia often form a short tooth at vein 2",
         "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes \u2014 weak tooth at vein 2 present; postdiscal spots more rounded, similar to A. amphimuta/A. major",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_zylda_elioti": {
@@ -2561,7 +2561,7 @@
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No \u2014 HW band not strongly dislocated at vein 2",
         "What is the forewing length, and are the hindwing cilia prolonged into a short tooth at vein 2?": "Smaller (FW ~16\u201317 mm); HW cilia evenly rounded, no tooth at vein 2",
         "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "No \u2014 no weak tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_dajagaka": {
@@ -2573,7 +2573,7 @@
       "note": "Tailless. Bornean endemic. Larger Bornean species (FW 21\u201325 mm). Male: dark bluish-purple with a thin black border. Female: THICK black borders and noticeably darker venation across the wings (diagnostic). Male valva unilobate; certain identification may require genitalia dissection.",
       "features": {
         "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Yes \u2014 white patch on HW cilia above tornal lobe; postdiscal spots less rounded",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_baluensis": {
@@ -2584,7 +2584,7 @@
       "common_name": "",
       "note": "Tailless. Bornean endemic. Smaller Bornean species (FW 18\u201320 mm). Male: dark purple-blue with a regular 0.5 mm border. Female: purple-blue with narrower-than-typical black borders. HW cilia in space 1a lacks a white spot (may be rarely present but obscure). Male valva unilobate; certain identification may require genitalia dissection.",
       "features": {
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "q_muta_size": {
@@ -2657,9 +2657,9 @@
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Not displaced / Slightly displaced \u2014 spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line",
         "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?": "Very small \u2014 spots noticeably small",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)",
         "Is the HW postdiscal band at vein 2 fully separated into two distinct portions \u2014 a clear gap visible between them?": "Cannot determine \u2014 band dislocation at vein 2 not assessable from this view",
-        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "Yes \u2014 HW spots more quadrate or banded in shape (muta subgroup)"
+        "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "Yes \u2014 HW spots more quadrate or banded in shape (muta subgroup)",
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_moorei_busa": {
@@ -2671,12 +2671,12 @@
       "note": "Tailless. Male: both wings the same shade of blue in all lights \u2014 key distinction from [A. muta maranda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780491&preferred_place_id=6734), whose HW is slightly paler and brighter (FW 16.0\u201318.0 mm). Female: bluish purple with broad black borders (duller and more purple than [A. muta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780491&preferred_place_id=6734)'s female). Underside: spots quadrate/banded; FW space 2 spot stepped toward termen; HW postdiscal band dislocated \u2014 inner edge of spot in space 2 in line with, or only slightly outside, the outer edge of spot 1b. HW cilia: white spot in space 1a absent (very rarely present but extremely obscure).",
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Not displaced / Slightly displaced \u2014 spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)",
         "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?": "Normal \u2014 spots normal-sized, with a clear gap from the end-cell bar",
         "Is the HW postdiscal band at vein 2 fully separated into two distinct portions \u2014 a clear gap visible between them?": "Cannot determine \u2014 band dislocation at vein 2 not assessable from this view",
         "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "Yes \u2014 HW spots more quadrate or banded in shape (muta subgroup)",
         "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?": "No \u2014 spot 6 not sinuous/concave, or no FW costal spot in space 10",
-        "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?": "Yes \u2014 FW postdiscal band continuous (muta subgroup: A. moorei, A. muta, A. tropaea)"
+        "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?": "Yes \u2014 FW postdiscal band continuous (muta subgroup: A. moorei, A. muta, A. tropaea)",
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_muta_maranda": {
@@ -2689,11 +2689,11 @@
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Not displaced / Slightly displaced \u2014 spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line",
         "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?": "Normal \u2014 spots normal-sized, with a clear gap from the end-cell bar",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)",
         "Is the HW postdiscal band at vein 2 fully separated into two distinct portions \u2014 a clear gap visible between them?": "Cannot determine \u2014 band dislocation at vein 2 not assessable from this view",
         "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "Yes \u2014 HW spots more quadrate or banded in shape (muta subgroup)",
         "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?": "No \u2014 spot 6 not sinuous/concave, or no FW costal spot in space 10",
-        "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?": "Yes \u2014 FW postdiscal band continuous (muta subgroup: A. moorei, A. muta, A. tropaea)"
+        "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?": "Yes \u2014 FW postdiscal band continuous (muta subgroup: A. moorei, A. muta, A. tropaea)",
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "q_perimuta_s1": {
@@ -2741,7 +2741,7 @@
       "note": "Tailless; evenly rounded HW tornus with no tooth or tail at vein 2. Easily recognized: HW underside has a prominent central yellowish discal area; markings generally obscure or ill-defined; tornal green scales completely absent. HW postdiscal spots 5, 6, and 7 in echelon (centres overlapping, in a straight line); spot 6 positioned nearer to spot 5 than to the end-cell bar. FW: postdiscal spots 2 and 3 in line (may be oblique); spot 4 shifted distad out of line with spots 5 and 6; dark area under the FW cell obscure, ill-defined, or absent; no spot at the extreme base of space 3.",
       "features": {
         "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No \u2014 HW postdiscal spots rounded (not quadrate/banded)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "q_kurzi_metamuta_check": {
@@ -2769,7 +2769,7 @@
       "note": "\u26a0 Extremely rare \u2014 verify carefully before confirming this identification.\n\nTailless; evenly rounded HW tornus with no tooth or tail at vein 2. Striking upperside: male has a brilliant greenish-blue HW that contrasts strongly with the dark, shining violet-blue FW (1.5 mm border). FW postdiscal spots 2 and 3 are in line (perimuta subgroup). If any doubt remains about the contrasting HW colour, reconsider [A. antimuta antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734) (the far more abundant perimuta-subgroup species).",
       "features": {
         "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No \u2014 HW postdiscal spots rounded (not quadrate/banded)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_antimuta_antimuta": {
@@ -2782,7 +2782,7 @@
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced",
         "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "No \u2014 HW postdiscal spots rounded (not quadrate/banded)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "q_anthelus_s1": {
@@ -2927,9 +2927,9 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?": "Short and stout, just under 2 mm (aurea group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "FW spot 4 out of line with others; HW spot 6 placed directly below spot 7 (no costal spot in FW space 10)",
-        "Is the hindwing cell longer than half the length of the wing?": "Yes \u2014 HW cell longer than half the wing length"
+        "Is the hindwing cell longer than half the length of the wing?": "Yes \u2014 HW cell longer than half the wing length",
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_trogon": {
@@ -2942,8 +2942,8 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?": "Short and stout, just under 2 mm (aurea group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)",
-        "Is the hindwing cell longer than half the length of the wing?": "Yes \u2014 HW cell longer than half the wing length"
+        "Is the hindwing cell longer than half the length of the wing?": "Yes \u2014 HW cell longer than half the wing length",
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_stinga": {
@@ -2956,8 +2956,8 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?": "Short and stout, just under 2 mm (aurea group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)",
-        "Is the hindwing cell longer than half the length of the wing?": "Yes \u2014 HW cell longer than half the wing length"
+        "Is the hindwing cell longer than half the length of the wing?": "Yes \u2014 HW cell longer than half the wing length",
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_caeca": {
@@ -2969,8 +2969,8 @@
       "note": "Underside hair-brown with INCOMPLETE markings: FW lacks basal and central cell spots; HW lacks various basal and discal spots; postdiscal band narrow. Male: brilliant green turning to violet-blue at the tornus of both wings (diagnostic \u2014 unique in the group); FW border a thread. Short stumpy HW tail (~2 mm).",
       "features": {
         "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?": "Short and stout, just under 2 mm (aurea group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)",
-        "Is the hindwing cell longer than half the length of the wing?": "Yes \u2014 HW cell longer than half the wing length"
+        "Is the hindwing cell longer than half the length of the wing?": "Yes \u2014 HW cell longer than half the wing length",
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_borneensis": {
@@ -2983,8 +2983,8 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?": "Short and stout, just under 2 mm (aurea group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)",
-        "Is the hindwing cell longer than half the length of the wing?": "Yes \u2014 HW cell longer than half the wing length"
+        "Is the hindwing cell longer than half the length of the wing?": "Yes \u2014 HW cell longer than half the wing length",
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "q_camdeo_c1": {
@@ -3189,7 +3189,7 @@
       "features": {
         "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?": "Large \u2014 spots large, almost touching the end-cell bar",
         "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?": "Yes \u2014 restricted dark patch present in FW space 1b with pale bordering line (camdeo group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_johoreana_johoreana": {
@@ -3431,8 +3431,8 @@
         "Are the wings notably rounded and elongate in shape?": "No \u2014 typical wing shape",
         "Is the postdiscal band placed very close to the inner submarginal lunules?": "No \u2014 postdiscal band not especially close to submarginal lunules",
         "Is the hindwing cell longer than half the length of the wing?": "No \u2014 HW cell about half the wing length (not as extended as corinda or the aurea group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)",
-        "Do both wings have a distinctly paler, whitish-irrorated (sprinkled) subapical area \u2014 unique to A. agaba within this group?": "Yes \u2014 paler whitish-irrorated subapical on both wings (A. agaba)"
+        "Do both wings have a distinctly paler, whitish-irrorated (sprinkled) subapical area \u2014 unique to A. agaba within this group?": "Yes \u2014 paler whitish-irrorated subapical on both wings (A. agaba)",
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "q_cleander_s1": {
@@ -3502,7 +3502,7 @@
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes",
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is hindwing postdiscal spot 6 considerably wider than spot 7?": "No \u2014 HW spot 6 similar in width to spot 7 (cleander group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_zambra_zambra": {
@@ -3518,7 +3518,7 @@
         "Is there a costal spot present in forewing underside space 10?": "Yes \u2014 costal spot present in FW space 10 (A. sublustris)",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes",
         "Is hindwing postdiscal spot 6 considerably wider than spot 7?": "No \u2014 HW spot 6 similar in width to spot 7 (cleander group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_athada_athada": {
@@ -3535,7 +3535,7 @@
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes",
         "Are hindwing postdiscal spots 6 and 7 more or less upright, with their outer edges in line, and spot 6 roughly quadrate?": "Yes \u2014 spots 6 & 7 upright, outer edges in line; spot 6 roughly quadrate (A. athada)",
         "Is hindwing postdiscal spot 6 considerably wider than spot 7?": "No \u2014 HW spot 6 similar in width to spot 7 (cleander group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_silhetensis_adorea": {
@@ -3552,7 +3552,7 @@
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Are hindwing postdiscal spots 6 and 7 more or less upright, with their outer edges in line, and spot 6 roughly quadrate?": "No \u2014 spots 6 & 7 more oblique; spot 6 sinuous outer edge, narrower at bottom than top (A. silhetensis)",
         "Is hindwing postdiscal spot 6 considerably wider than spot 7?": "No \u2014 HW spot 6 similar in width to spot 7 (cleander group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "q_alea_s1": {
@@ -3753,7 +3753,7 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_evansi": {
@@ -3772,7 +3772,7 @@
         "Is there a spot in forewing underside space 11?": "No \u2014 no spot in FW space 11",
         "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?": "No",
         "Is hindwing postdiscal spot 6 considerably wider than spot 7?": "No \u2014 HW spot 6 similar in width to spot 7 (cleander group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_aroa_aroa": {
@@ -3787,7 +3787,7 @@
         "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "No \u2014 HW spot 6 does not widely overlap the end-cell bar",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes",
         "Is hindwing postdiscal spot 6 considerably narrower at the bottom than the top (tapering or wedge-shaped, not uniformly wide)?": "Yes \u2014 HW spot 6 considerably narrower at bottom than top (aroa group; barely overlapping bar)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_phanda_phanda": {
@@ -3804,7 +3804,7 @@
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is hindwing postdiscal spot 6 considerably wider than spot 7?": "No \u2014 HW spot 6 similar in width to spot 7 (cleander group)",
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_selta_selta": {
@@ -3821,7 +3821,7 @@
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes",
         "Is hindwing postdiscal spot 6 considerably wider than spot 7?": "No \u2014 HW spot 6 similar in width to spot 7 (cleander group)",
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_phaenops_sandakani": {
@@ -3838,7 +3838,7 @@
         "Is hindwing postdiscal spot 6 considerably narrower at the bottom than the top (tapering or wedge-shaped, not uniformly wide)?": "No \u2014 HW spot 6 similar in width from top to bottom; widely overlapping bar (normani / cleander group)",
         "Is hindwing postdiscal spot 6 considerably wider than spot 7?": "No \u2014 HW spot 6 similar in width to spot 7 (cleander group)",
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_milleri": {
@@ -3854,7 +3854,7 @@
         "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes \u2014 HW spot 6 widely overlaps the end-cell bar",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes",
         "Is hindwing postdiscal spot 6 considerably wider than spot 7?": "No \u2014 HW spot 6 similar in width to spot 7 (cleander group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_normani": {
@@ -3871,7 +3871,7 @@
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes",
         "Is hindwing postdiscal spot 6 considerably narrower at the bottom than the top (tapering or wedge-shaped, not uniformly wide)?": "No \u2014 HW spot 6 similar in width from top to bottom; widely overlapping bar (normani / cleander group)",
         "Is hindwing postdiscal spot 6 considerably wider than spot 7?": "No \u2014 HW spot 6 similar in width to spot 7 (cleander group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_sublustris_ridleyi": {
@@ -3887,7 +3887,7 @@
         "Does hindwing postdiscal spot 6 widely overlap the end-cell bar?": "Yes \u2014 HW spot 6 widely overlaps the end-cell bar",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes",
         "Is hindwing postdiscal spot 6 considerably narrower at the bottom than the top (tapering or wedge-shaped, not uniformly wide)?": "No \u2014 HW spot 6 similar in width from top to bottom; widely overlapping bar (normani / cleander group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_corinda_acestes": {
@@ -3903,8 +3903,8 @@
         "Is the hindwing tail long and filamentous (about 3.5 mm), or short and stout (just under 2 mm)?": "Long and filamentous, about 3.5 mm",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No",
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)",
-        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes \u2014 a tornal lobe (bulge at the anal angle) is present, even if small"
+        "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes \u2014 a tornal lobe (bulge at the anal angle) is present, even if small",
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "q_democritus_s1": {
@@ -3932,7 +3932,7 @@
       "note": "Underside: dark chocolate-brown ground colour; markings outlined by prominent silvery-white striae and dots (more contrast than lycaenaria). Upperside: both male and female lighter and more silvery blue. Short HW tail ~1.5\u20132.0 mm. Distribution: central Myanmar to Kedawi; also recorded at Fraser's Hill.",
       "features": {
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curving inward \u2323), or straight/convex (\u2322)?": "Yes \u2014 HW spot 6 outer edge outwardly concave \u2323 (democritus group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_democritus_lycaenaria": {
@@ -3944,7 +3944,7 @@
       "note": "Standard subspecies representing the democritus group in the Malay Peninsula proper. Underside: hair-brown ground colour; all markings outlined by pale buff striae (less contrast than democritus ssp., which has silvery-white striae and dots). Short HW tail 1.5\u20132.0 mm. Macular underside markings; FW spot 4 shifted distad; HW spot 6 outwardly concave; HW band widely dislocated at vein 2.",
       "features": {
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curving inward \u2323), or straight/convex (\u2322)?": "Yes \u2014 HW spot 6 outer edge outwardly concave \u2323 (democritus group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "q_epimuta_s1": {
@@ -4014,7 +4014,7 @@
       "note": "\u26a0 Neither underside nor upperside visible. Both candidates have HW tail ~2.5 mm.\n\nPrimary character (underside): [A. atosia malayana](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498181&preferred_place_id=6734) \u2014 markings contrast feebly/weakly with ground colour. [A. lurida](https://www.inaturalist.org/observations?verifiable=true&taxon_id=475784&preferred_place_id=6734) \u2014 markings darker and more clearly defined.\n\nConfirmatory character (upperside, male): [A. atosia](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498181&preferred_place_id=6734) \u2014 FW discal patch large and circular, extending widely into cell and space 1b; border a thread. [A. lurida](https://www.inaturalist.org/observations?verifiable=true&taxon_id=475784&preferred_place_id=6734) \u2014 patch smaller, almost confined to bases of spaces 2\u20133; border slightly expanding toward apex.\n\nCheck the underside contrast first; inspect upperside if still uncertain.",
       "features": {
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No \u2014 anal angle plain or rounded; no tornal lobe (bulge) at all",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       },
       "covers_results": [
         "r_atosia_malayana",
@@ -4030,7 +4030,7 @@
       "note": "Tailless. Male FW upperside: large circular discal patch similar to [A. atosia](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498181&preferred_place_id=6734), but distinguished by the complete absence of a hindwing tail.",
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Equidistant \u2014 spot 6 roughly midway between spot 5 and the end-cell bar",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "q_eumolphus_spot6_shape": {
@@ -4099,7 +4099,7 @@
         "What is the underside ground colour and overall appearance?": "Hair brown; HW spot 6 directly below spot 7 (not echelon); tail ~5 mm \u2014 A. overdijkinki",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly straight?": "Yes \u2014 outer edge of spot 6 outwardly straight",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "No \u2014 outer edge of spot 6 outwardly straight (blue/violet-male subgroup)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_bazalus_zalinda": {
@@ -4113,8 +4113,8 @@
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes \u2014 a tornal lobe (bulge at the anal angle) is present, even if small",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)",
-        "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?": "Yes \u2014 purplish-brown underside; FW apex with pale violet powder"
+        "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?": "Yes \u2014 purplish-brown underside; FW apex with pale violet powder",
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_acta": {
@@ -4129,8 +4129,8 @@
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "No \u2014 outer edge of spot 6 outwardly straight (blue/violet-male subgroup)",
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes \u2014 a tornal lobe (bulge at the anal angle) is present, even if small",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)",
-        "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?": "No \u2014 hair-brown underside; no violet powder at apex"
+        "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?": "No \u2014 hair-brown underside; no violet powder at apex",
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_tameanga": {
@@ -4145,8 +4145,8 @@
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "No \u2014 outer edge of spot 6 outwardly straight (blue/violet-male subgroup)",
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "Yes \u2014 a tornal lobe (bulge at the anal angle) is present, even if small",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)",
-        "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?": "No \u2014 hair-brown underside; no violet powder at apex"
+        "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?": "No \u2014 hair-brown underside; no violet powder at apex",
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "q_eumolphus_green": {
@@ -4215,8 +4215,8 @@
         "Is forewing postdiscal spot 4 in continuation with spots 5 and 6 (not shifted distad out of line)?": "No \u2014 FW spot 4 shifted distad, out of line with spots 5 and 6 (eumolphus group)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "Yes \u2014 outer edge of spot 6 outwardly concave (green-male subgroup)",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)",
-        "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?": "No \u2014 hair-brown underside; no violet powder at apex"
+        "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?": "No \u2014 hair-brown underside; no violet powder at apex",
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_eumolphus_maxwelli": {
@@ -4231,14 +4231,14 @@
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW spot 6 is outwardly sinuous or concave; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)",
         "Is forewing postdiscal spot 4 in continuation with spots 5 and 6 (not shifted distad out of line)?": "No \u2014 FW spot 4 shifted distad, out of line with spots 5 and 6 (eumolphus group)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "Yes \u2014 outer edge of spot 6 outwardly concave (green-male subgroup)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No",
         "Do both the forewing and hindwing have a distinctly paler subapical area, irrorated (sprinkled) with whitish scales?": "No \u2014 subapical area not distinctly paler on both wings",
         "Is the underside ground colour pale grey-brown \u2014 distinctly paler than the typical hair-brown Arhopala underside \u2014 with the hindwing spaces 4\u20135 spots and end-cell bar pale and low-contrast (each ringed by a black border, then a white outer ring), while the forewing postdiscal band remains strongly dark and contrasts sharply against the pale ground?": "No \u2014 typical hair-brown underside; spots solid, darker than the ground colour",
         "Is there a spot in forewing underside space 11?": "No \u2014 no spot in FW space 11",
         "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?": "No",
         "What is the shape of the hindwing underside central cell spot, and are there specific absences on the forewing underside?": "Neither of these",
-        "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?": "No \u2014 hair-brown underside; no violet powder at apex"
+        "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?": "No \u2014 hair-brown underside; no violet powder at apex",
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_hellenore_siroes": {
@@ -4254,8 +4254,8 @@
         "Is forewing postdiscal spot 4 in continuation with spots 5 and 6 (not shifted distad out of line)?": "No \u2014 FW spot 4 shifted distad, out of line with spots 5 and 6 (eumolphus group)",
         "Is the outer edge of hindwing postdiscal spot 6 outwardly concave (curves inward)?": "Yes \u2014 outer edge of spot 6 outwardly concave (green-male subgroup)",
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "No",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)",
-        "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?": "No \u2014 hair-brown underside; no violet powder at apex"
+        "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?": "No \u2014 hair-brown underside; no violet powder at apex",
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_fulla_intaca": {
@@ -4352,7 +4352,7 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?": "No \u2014 no whitened gap between HW space 7 spots",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_ammonides_chunsu": {
@@ -4365,7 +4365,7 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?": "Yes \u2014 gap between HW space 7 spots conspicuously whitened",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_ammon_ammon": {
@@ -4379,7 +4379,7 @@
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?": "Yes \u2014 HW spot 6 extended to base of space",
         "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?": "Yes \u2014 gap between HW space 7 spots conspicuously whitened",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_ariel": {
@@ -4393,7 +4393,7 @@
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?": "No \u2014 HW spot 6 normal, not reaching base",
         "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?": "No \u2014 no whitened gap between HW space 7 spots",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_elizabethae": {
@@ -4407,7 +4407,7 @@
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Does the postdiscal spot in hindwing space 6 extend all the way to the base of the space?": "No \u2014 HW spot 6 normal, not reaching base",
         "Is the gap between the outer and central spots in hindwing space 7 conspicuously whitened?": "Yes \u2014 gap between HW space 7 spots conspicuously whitened",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_ariel_or_elizabethae": {
@@ -4423,7 +4423,7 @@
       ],
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_hypomuta_hypomuta": {
@@ -4458,7 +4458,7 @@
       "common_name": "",
       "note": "Tailless. FW ~21 mm. Very rounded HW tornus. Underside: no tornal green scales; HW postdiscal spot 6 placed immediately below spot 7. Male: bright violet-blue with border reduced to a thread. Female: bluer than male with exceptionally narrow borders (0.5 mm on HW).",
       "features": {
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
     "r_allata_pandora": {
@@ -4521,10 +4521,9 @@
       "features": {
         "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?": "Yes \u2014 HW spot 6 outwardly sinuous or concave; costal spot in FW space 10 above the end-cell bar",
         "Is the hindwing cell longer than half the length of the wing?": "No \u2014 HW cell about half the wing length (not as extended as corinda or the aurea group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)",
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No \u2014 anal angle plain or rounded; no tornal lobe (bulge) at all",
         "Do both wings have a distinctly paler, whitish-irrorated (sprinkled) subapical area \u2014 unique to A. agaba within this group?": "No \u2014 subapical not distinctly paler or whitish-irrorated on both wings",
-        "Is the hindwing postdiscal band completely dislocated at vein 2 \u2014 forming two entirely separate portions (not merely shifted or partially connected)?": "No \u2014 band not completely dislocated (partially shifted, connected, or a different arrangement)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_buddha_cooperi": {
@@ -4537,10 +4536,9 @@
       "features": {
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW spot 6 is outwardly sinuous or concave; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)",
         "Is the hindwing cell longer than half the length of the wing?": "No \u2014 HW cell about half the wing length (not as extended as corinda or the aurea group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)",
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No \u2014 anal angle plain or rounded; no tornal lobe (bulge) at all",
         "Do both wings have a distinctly paler, whitish-irrorated (sprinkled) subapical area \u2014 unique to A. agaba within this group?": "No \u2014 subapical not distinctly paler or whitish-irrorated on both wings",
-        "Is the hindwing postdiscal band completely dislocated at vein 2 \u2014 forming two entirely separate portions (not merely shifted or partially connected)?": "No \u2014 band not completely dislocated (partially shifted, connected, or a different arrangement)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_arvina_adalitas": {
@@ -4552,8 +4550,8 @@
       "note": "Tailless. FW ~18.0 mm \u2014 slightly larger than [A. antimuta antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734) (FW ~16.0 mm). Underside ground colour hair-brown; tornal green scales present. Male: darker blue than [A. buddha](https://www.inaturalist.org/observations?verifiable=true&taxon_id=885913&preferred_place_id=6734); black border reduced to a thread. Female: purple-blue. HW postdiscal band only partially dislocated at vein 2 (cf. [A. antimuta antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734), where it is completely dislocated at vein 2, though that character can sometimes be inconstant). HW postdiscal spots 5, 6 and 7 widely out of line; inner edge of spot 6 in line with or inside the inner edge of spot 7; spot 6 touches or overlaps the end-cell bar; outer edge of spot 6 outwardly sinuous or concave. Normally has a costal spot in FW space 10, above the end-cell bar. (2026-06-20 fix: the spot-6-displacement and vein-2-dislocation questions previously routed here only via false answers that contradicted these true features, which would have misidentified a truthfully-answered specimen into the muta/agelastus/agesilaus groups instead. The tree now checks for arvina adalitas's sinuous/concave spot 6 + FW space 10 costal spot right after the true 'touching/overlapping' and 'partially dislocated' answers, so the canonical path matches the true answers above.)",
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)",
-        "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?": "Yes \u2014 HW spot 6 outwardly sinuous or concave; costal spot in FW space 10 above the end-cell bar"
+        "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?": "Yes \u2014 HW spot 6 outwardly sinuous or concave; costal spot in FW space 10 above the end-cell bar",
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "r_vihara": {
@@ -4565,10 +4563,9 @@
       "note": "Tailed. FW 20\u201322 mm. FW underside spot 4 in line with spots 5\u20136 (distinguishes from eumolphus group where spot 4 is out of line); no costal spot in FW space 10. HW spot 6 rounded, more or less separated; HW band only partially dislocated at vein 2. Male: dark violet-blue; border slightly less than 1.0 mm. Female: bluer shade. Two ssp.: vihara on the peninsular mainland; hirava on Langkawi.",
       "features": {
         "Is the hindwing cell longer than half the length of the wing?": "No \u2014 HW cell about half the wing length (not as extended as corinda or the aurea group)",
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)",
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No \u2014 anal angle plain or rounded; no tornal lobe (bulge) at all",
         "Do both wings have a distinctly paler, whitish-irrorated (sprinkled) subapical area \u2014 unique to A. agaba within this group?": "No \u2014 subapical not distinctly paler or whitish-irrorated on both wings",
-        "Is the hindwing postdiscal band completely dislocated at vein 2 \u2014 forming two entirely separate portions (not merely shifted or partially connected)?": "No \u2014 band not completely dislocated (partially shifted, connected, or a different arrangement)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2"
       }
     },
     "g_needs_more_info": {
@@ -4590,7 +4587,7 @@
       "common_name": "Cannot determine to species",
       "note": "\u26a0 Cannot distinguish to species without male upperside colour and size.\n\n[A. tropaea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=785409&preferred_place_id=6734): notably small (FW 13.0\u201314.0 mm); male duller bluish-purple. Underside markings more quadrate.\n\n[A. moorei busa](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780493&preferred_place_id=6734): larger (FW 16.0\u201318.0 mm); male bright blue; FW and HW same shade of blue in all lights.\n\n[A. muta maranda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780491&preferred_place_id=6734): larger (FW 17.0\u201319.0 mm); male bright blue; FW dark bright blue, HW slightly paler and more glistening; border slightly broader.\n\nInspect the male upperside to confirm species.",
       "features": {
-        "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?": "No \u2014 band fully dislocated at vein 2 (two separate portions)"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       },
       "covers_results": [
         "r_tropaea",
@@ -4848,20 +4845,20 @@
     "q_tailed_hw_band_partial_vein2": {
       "type": "question",
       "id": "q_tailed_hw_band_partial_vein2",
-      "question": "Is the HW postdiscal band only partially dislocated at vein 2 \u2014 the band is shifted but still connected, not fully separated into two distinct portions?",
+      "question": "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?",
       "question_link": {
         "text": "HW band dislocation at vein 2",
         "href": "guide.html#hw-band-vein2"
       },
-      "hint": "The **ganesa group** ([A. ammon](https://www.inaturalist.org/observations?verifiable=true&taxon_id=506221&preferred_place_id=6734), [A. ammonides](https://www.inaturalist.org/observations?verifiable=true&taxon_id=470744&preferred_place_id=6734), [A. ariel](https://www.inaturalist.org/observations?verifiable=true&taxon_id=885911&preferred_place_id=6734) etc.) has the HW postdiscal band only *partially* dislocated at vein 2 \u2014 it shifts inward but the two portions remain connected (C&P couplet 153). The **alitaeus, cleander, and eumolphus groups** have the band *completely* dislocated at vein 2 \u2014 two separate portions with a visible gap (C&P couplet 96). Answer Yes if the band is shifted but continuous at vein 2; No if there is a clear gap.",
+      "hint": "In the **alitaeus group** (ariana, arianaga, aida, havilandi, sintanga, alitaeus, denta, elopura, kurzi, avathina, pseudomuta, cleander, zambra, evansi, milleri, normani, sublustris, athada, silhetensis, aurelia, aroa, phanda, selta, phaenops, democritus, muta group, etc.) the band is **completely dislocated** \u2014 two entirely separate portions with a visible gap (C&P couplet 96). In the **ganesa, eumolphus, corinda, aurea, and related groups** the band is **only partially dislocated** \u2014 it shifts inward but the two portions remain connected (C&P couplet 153).",
       "choices": [
         {
-          "label": "Yes \u2014 band only partially dislocated at vein 2 (shifted but connected)",
-          "next": "q_ganesa_basal_s11"
+          "label": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2",
+          "next": "q_tailed_anthelus"
         },
         {
-          "label": "No \u2014 band fully dislocated at vein 2 (two separate portions)",
-          "next": "q_tailed_anthelus"
+          "label": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2",
+          "next": "q_ganesa_basal_s11"
         }
       ]
     },
@@ -4878,30 +4875,6 @@
         {
           "label": "No \u2014 subapical not distinctly paler or whitish-irrorated on both wings",
           "next": "q_eumolphus_vs_alea"
-        }
-      ]
-    },
-    "q_band_disc_gate_initial": {
-      "type": "question",
-      "id": "q_band_disc_gate_initial",
-      "question": "Is the hindwing postdiscal band completely dislocated at vein 2 \u2014 forming two entirely separate portions (not merely shifted or partially connected)?",
-      "hint": "In the **alitaeus group** (ariana, arianaga, aida, havilandi, sintanga, alitaeus, denta, etc.) the hindwing postdiscal band is split into two fully separate halves at vein 2 (C&P couplet 96). In eumolphus, oenea, ganesa, and corinda/aurea groups the band is only partially shifted or runs continuous \u2014 select **No** for these. If you cannot assess the band at vein 2, select **Cannot determine**.",
-      "question_link": {
-        "text": "HW postdiscal band at vein 2",
-        "href": "guide.html#hw-band"
-      },
-      "choices": [
-        {
-          "label": "Yes \u2014 band completely dislocated at vein 2: two entirely separate portions",
-          "next": "q_tailed_anthelus"
-        },
-        {
-          "label": "No \u2014 band not completely dislocated (partially shifted, connected, or a different arrangement)",
-          "next": "q_corinda_cell_gate_apex"
-        },
-        {
-          "label": "Cannot determine \u2014 band at vein 2 not assessable",
-          "next": "q_corinda_cell_gate_apex"
         }
       ]
     }
