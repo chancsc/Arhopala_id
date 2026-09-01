@@ -1428,14 +1428,14 @@
         "text": "hindwing cell longer",
         "href": "guide.html#hindwing-cell"
       },
-      "hint": "A longer HW cell (extending beyond half the wing length) characterises [A. corinda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=793494&preferred_place_id=6734), the aurea group ([A. stinga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=122023&preferred_place_id=6734), [A. trogon](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429757&preferred_place_id=6734), [A. aurea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429759&preferred_place_id=6734)), and several other long-tailed groups (alitaeus, ganesa, lurida). Long-tailed species in the eumolphus, oenea, camdeo and aedias groups have a cell about half the wing length or shorter.",
+      "hint": "A longer HW cell (extending beyond half the wing length) characterises [A. corinda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=793494&preferred_place_id=6734), the aurea group ([A. stinga](https://www.inaturalist.org/observations?verifiable=true&taxon_id=122023&preferred_place_id=6734), [A. trogon](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429757&preferred_place_id=6734), [A. aurea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429759&preferred_place_id=6734)), and several other long-tailed groups (alitaeus, ganesa, lurida). Long-tailed species in the eumolphus, oenea, camdeo and aedias groups have a cell about half the wing length.",
       "choices": [
         {
           "label": "Yes — HW cell longer than half the wing length",
           "next": "r_corinda_acestes"
         },
         {
-          "label": "No — HW cell about half the wing length or shorter",
+          "label": "No — HW cell about half the wing length (not as extended as corinda or the aurea group)",
           "next": "r_corinda_acestes"
         },
         {
@@ -1700,7 +1700,7 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "What is the shape and position of the hindwing postdiscal spot 6, and are the inner submarginal spots notably enlarged and darkened?": "Spot 6 outwardly convex ⌢; touches or overlaps the end-cell bar; spots 5, 6 and 7 widely out of line; submarginal spots uniform (not enlarged)",
-        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter",
+        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length (not as extended as corinda or the aurea group)",
         "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — anal angle plain or rounded; no tornal lobe (bulge) at all",
         "Do both wings have a distinctly paler, whitish-irrorated (sprinkled) subapical area — unique to A. agaba within this group?": "No — subapical not distinctly paler or whitish-irrorated on both wings"
@@ -2815,7 +2815,7 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 in echelon, and with their centres more or less in line; the spot in space 6 nearer the spot in space 5 than the end-cell bar",
         "Is there a spot in forewing underside space 11?": "Yes — spot present in FW space 11",
-        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter"
+        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length (not as extended as corinda or the aurea group)"
       }
     },
     "r_achelous_achelous": {
@@ -2829,7 +2829,7 @@
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 in echelon, and with their centres more or less in line; the spot in space 6 nearer the spot in space 5 than the end-cell bar",
         "Is the forewing postdiscal band only partially dislocated at vein 4, with a spot at the base of FW space 10 but NO spot at the base of HW space 6?": "Yes — FW band partially dislocated at vein 4; spot at base of FW space 10; no spot at base of HW space 6",
         "Is there a spot in forewing underside space 11?": "No — no spot in FW space 11",
-        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter"
+        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length (not as extended as corinda or the aurea group)"
       }
     },
     "q_aurea_s1": {
@@ -3430,7 +3430,7 @@
         "Does the underside have a slatey pink glaze with striae that are whiter than in other species?": "No — no slatey pink glaze",
         "Are the wings notably rounded and elongate in shape?": "No — typical wing shape",
         "Is the postdiscal band placed very close to the inner submarginal lunules?": "No — postdiscal band not especially close to submarginal lunules",
-        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter",
+        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length (not as extended as corinda or the aurea group)",
         "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
         "Do both wings have a distinctly paler, whitish-irrorated (sprinkled) subapical area — unique to A. agaba within this group?": "Yes — paler whitish-irrorated subapical on both wings (A. agaba)"
       }
@@ -4521,7 +4521,7 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?": "Yes — HW spot 6 outwardly sinuous or concave; costal spot in FW space 10 above the end-cell bar",
-        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter",
+        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length (not as extended as corinda or the aurea group)",
         "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — anal angle plain or rounded; no tornal lobe (bulge) at all",
         "Do both wings have a distinctly paler, whitish-irrorated (sprinkled) subapical area — unique to A. agaba within this group?": "No — subapical not distinctly paler or whitish-irrorated on both wings"
@@ -4537,7 +4537,7 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW spot 6 is outwardly sinuous or concave; costal spot present in FW space 10 (select this even if FW spot 4 is also out of line)",
-        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter",
+        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length (not as extended as corinda or the aurea group)",
         "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — anal angle plain or rounded; no tornal lobe (bulge) at all",
         "Do both wings have a distinctly paler, whitish-irrorated (sprinkled) subapical area — unique to A. agaba within this group?": "No — subapical not distinctly paler or whitish-irrorated on both wings"
@@ -4565,7 +4565,7 @@
       "note": "Tailed. FW 20–22 mm. FW underside spot 4 in line with spots 5–6 (distinguishes from eumolphus group where spot 4 is out of line); no costal spot in FW space 10. HW spot 6 rounded, more or less separated; HW band only partially dislocated at vein 2. Male: dark violet-blue; border slightly less than 1.0 mm. Female: bluer shade. Two ssp.: vihara on the peninsular mainland; hirava on Langkawi.",
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)",
-        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length or shorter",
+        "Is the hindwing cell longer than half the length of the wing?": "No — HW cell about half the wing length (not as extended as corinda or the aurea group)",
         "Is the HW postdiscal band only partially dislocated at vein 2 — the band is shifted but still connected, not fully separated into two distinct portions?": "Yes — band only partially dislocated at vein 2 (shifted but connected)",
         "Does the hindwing have a projecting tornal lobe (a bulge at the anal angle)?": "No — anal angle plain or rounded; no tornal lobe (bulge) at all",
         "Do both wings have a distinctly paler, whitish-irrorated (sprinkled) subapical area — unique to A. agaba within this group?": "No — subapical not distinctly paler or whitish-irrorated on both wings"
@@ -4663,14 +4663,14 @@
         "text": "hindwing cell longer",
         "href": "guide.html#hindwing-cell"
       },
-      "hint": "Following C&P couplet 191: [A. corinda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=793494&preferred_place_id=6734) and the aurea group ([A. aurea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429759&preferred_place_id=6734), [A. horsfieldi](https://www.inaturalist.org/observations?verifiable=true&taxon_id=888216&preferred_place_id=6734)) all have a HW cell longer than half the wing length. All other long-tailed species (eumolphus, oenea, camdeo, aedias groups) have a cell about half the wing or shorter. Male aurea and horsfieldi are also shining green; their tails are short and stout (~2 mm). Corinda's tail is long and filamentous (~3.5 mm).",
+      "hint": "Following C&P couplet 191: [A. corinda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=793494&preferred_place_id=6734) and the aurea group ([A. aurea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=429759&preferred_place_id=6734), [A. horsfieldi](https://www.inaturalist.org/observations?verifiable=true&taxon_id=888216&preferred_place_id=6734)) all have a HW cell longer than half the wing length. All other long-tailed species (eumolphus, oenea, camdeo, aedias groups) have a cell about half the wing length. Male aurea and horsfieldi are also shining green; their tails are short and stout (~2 mm). Corinda's tail is long and filamentous (~3.5 mm).",
       "choices": [
         {
           "label": "Yes — HW cell longer than half the wing length",
           "next": "q_corinda_tail_check"
         },
         {
-          "label": "No — HW cell about half the wing length or shorter",
+          "label": "No — HW cell about half the wing length (not as extended as corinda or the aurea group)",
           "next": "q_long_tail_spot4"
         }
       ]
