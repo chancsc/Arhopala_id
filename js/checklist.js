@@ -37,6 +37,7 @@ const cs = {
   expandedName: null,     // species name currently expanded in detail panel
   questionOrder: null,    // stable display order; null = not yet initialised
   positionMemo: new Map(), // Map<questionText, number> — last known index before a question was pruned for irrelevance, so it can be restored near its old spot if it becomes relevant again
+  hardFilterQs: new Set(), // Set<questionText> — questions where a non-CD answer hard-excludes non-matching species
 };
 
 // buildTreePaths, buildQuestionNumbers, pathScore, pickCanonicalPath etc. live in path-utils.js
@@ -80,6 +81,11 @@ function clearSavedAnswers() {
 
 function initData(treeData, speciesData) {
   cs.treeNodes = treeData.nodes;
+  cs.hardFilterQs = new Set(
+    Object.values(treeData.nodes)
+      .filter(n => n.type === 'question' && n.hardFilter)
+      .map(n => n.question)
+  );
   multiSp2 = buildMultiSp2(treeData.nodes);
   const pathsMap = buildTreePaths(treeData);
   const matrix = new Map();
@@ -351,7 +357,24 @@ function renderCandidates() {
     return;
   }
 
-  const top = cs.scores.slice(0, 8);
+  // Hard-filter: when a decisive question is answered (non-CD), keep only
+  // species whose recorded feature matches — regardless of overall score.
+  let displayScores = cs.scores;
+  for (const [q, ans] of cs.answers) {
+    if (ans.startsWith('Cannot determine')) continue;
+    if (!cs.hardFilterQs.has(q)) continue;
+    displayScores = displayScores.filter(s => {
+      const feat = cs.featureMatrix.get(s.name);
+      return feat && feat.get(q) === ans;
+    });
+  }
+
+  if (displayScores.length === 0) {
+    listEl.innerHTML = '<p class="cl-empty">No species match this combination of answers — try re-checking the dislocation answer.</p>';
+    return;
+  }
+
+  const top = displayScores.slice(0, 8);
   const medals = ['🥇', '🥈', '🥉'];
 
   listEl.innerHTML = top.map((s, i) => {

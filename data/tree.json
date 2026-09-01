@@ -762,7 +762,8 @@
           "label": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2",
           "next": "q_tailless_epimuta_tornal"
         }
-      ]
+      ],
+      "hardFilter": true
     },
     "q_tailless_vein2_rama_check": {
       "type": "question",
@@ -4860,7 +4861,8 @@
           "label": "Partially dislocated \u2014 band is shifted but the two portions remain connected at vein 2",
           "next": "q_ganesa_basal_s11"
         }
-      ]
+      ],
+      "hardFilter": true
     },
     "q_agaba_eumolphus_exit": {
       "type": "question",
