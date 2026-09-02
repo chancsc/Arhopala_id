@@ -50,7 +50,8 @@ function buildFeatureMatrix(treeData, pathsMap) {
     }
   }
 
-  const matrix = new Map();
+  const matrix    = new Map();
+  const rawMatrix = new Map(); // canonical-path answers BEFORE result-node feature overrides
   for (const [name, paths] of pathsMap) {
     const note = resultNotes.get(name) || '';
     const rf   = resultFeatures.get(name) || {};
@@ -64,6 +65,8 @@ function buildFeatureMatrix(treeData, pathsMap) {
         if (!covSeen.has(q)) { covSeen.add(q); qCov.set(q, (qCov.get(q) || 0) + 1); }
       }
     }
+    // Snapshot raw (pre-override) answers — used for divergence detection below.
+    rawMatrix.set(name, new Map(features));
     for (const [q, c] of Object.entries(rf)) {
       if (c.startsWith('Cannot determine')) { features.delete(q); }
       else {
@@ -73,7 +76,7 @@ function buildFeatureMatrix(treeData, pathsMap) {
     }
     matrix.set(name, features);
   }
-  return { matrix, qMeta, qCov, resultNotes };
+  return { matrix, rawMatrix, qMeta, qCov, resultNotes };
 }
 
 function getCdLabel(nodes, questionText) {
@@ -86,7 +89,7 @@ function getCdLabel(nodes, questionText) {
   return null;
 }
 
-function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
+function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers, rawCanonicalAnswers) {
   if (!canonicalAnswers || canonicalAnswers.size === 0) return null;
 
   // Result node id(s) for this species — used to detect a terminal direct exit.
@@ -242,10 +245,11 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
 
   if (simPath.length === 0) return null;
 
-  const canonicalPath = simPath
-    .filter(s => canonicalAnswers.has(s.question))
-    .map(s => ({ question: s.question, choice: canonicalAnswers.get(s.question) }));
-  if (JSON.stringify(simPath) === JSON.stringify(canonicalPath)) return null;
+  const refAnswers = rawCanonicalAnswers || canonicalAnswers;
+  const referencePath = simPath
+    .filter(s => refAnswers.has(s.question))
+    .map(s => ({ question: s.question, choice: refAnswers.get(s.question) }));
+  if (JSON.stringify(simPath) === JSON.stringify(referencePath)) return null;
 
   return simPath;
 }
@@ -258,7 +262,7 @@ function main() {
   const qNumbers = buildQuestionNumbers(treeData);
 
   const pathsMap   = buildTreePaths(treeData);
-  const { matrix } = buildFeatureMatrix(treeData, pathsMap);
+  const { matrix, rawMatrix } = buildFeatureMatrix(treeData, pathsMap);
   const treeNodes  = treeData.nodes;
 
   let pass = 0, fail = 0;
@@ -268,9 +272,10 @@ function main() {
   const allNames = new Set([...matrix.keys(), ...Object.keys(stored)]);
 
   for (const name of allNames) {
-    const canonicalAnswers = matrix.get(name);
+    const canonicalAnswers    = matrix.get(name);
+    const rawCanonicalAnswers = rawMatrix.get(name);
     const live = canonicalAnswers
-      ? computeSimCdPath(name, matrix, treeNodes, canonicalAnswers)
+      ? computeSimCdPath(name, matrix, treeNodes, canonicalAnswers, rawCanonicalAnswers)
       : null;
     const storedPath = stored[name] || null;
 

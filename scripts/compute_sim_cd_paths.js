@@ -56,7 +56,8 @@ function buildFeatureMatrix(treeData, pathsMap) {
     }
   }
 
-  const matrix = new Map();
+  const matrix    = new Map();
+  const rawMatrix = new Map(); // canonical-path answers BEFORE result-node feature overrides
   for (const [name, paths] of pathsMap) {
     const note = resultNotes.get(name) || '';
     const rf   = resultFeatures.get(name) || {};
@@ -71,6 +72,8 @@ function buildFeatureMatrix(treeData, pathsMap) {
         if (!covSeen.has(q)) { covSeen.add(q); qCov.set(q, (qCov.get(q) || 0) + 1); }
       }
     }
+    // Snapshot raw (pre-override) answers — used for divergence detection below.
+    rawMatrix.set(name, new Map(features));
     // Apply explicit features override from result node
     for (const [q, c] of Object.entries(rf)) {
       if (c.startsWith('Cannot determine')) {
@@ -83,7 +86,7 @@ function buildFeatureMatrix(treeData, pathsMap) {
     matrix.set(name, features);
   }
 
-  return { matrix, qMeta, qCov, resultNotes };
+  return { matrix, rawMatrix, qMeta, qCov, resultNotes };
 }
 
 // ── Sim-CD path computation ───────────────────────────────────────────────────
@@ -98,7 +101,7 @@ function getCdLabel(nodes, questionText) {
   return null;
 }
 
-function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
+function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers, rawCanonicalAnswers) {
   if (!canonicalAnswers || canonicalAnswers.size === 0) return null;
 
   // Result node id(s) for this species — used to detect a terminal direct exit.
@@ -301,11 +304,19 @@ function computeSimCdPath(resultName, matrix, treeNodes, canonicalAnswers) {
 
   if (simPath.length === 0) return null;
 
-  // If identical to the direct canonical path, nothing to show
-  const canonicalPath = simPath
-    .filter(s => canonicalAnswers.has(s.question))
-    .map(s => ({ question: s.question, choice: canonicalAnswers.get(s.question) }));
-  if (JSON.stringify(simPath) === JSON.stringify(canonicalPath)) return null;
+  // If identical to what the browser's tree walk (buildSimulationCdPath) would show,
+  // nothing to store — the browser will reproduce it without a stored path.
+  // We compare against RAW canonical answers (canonical path before result-node feature
+  // overrides), since that's what buildSimulationCdPath uses when constructing the
+  // Underside-only path for non-divergent species. Using the feature matrix here
+  // (canonicalAnswers) would miss species like paralea/barami where result-node overrides
+  // conflict with the raw canonical path: the sim correctly answers "centres widely" but
+  // the browser tree walk uses "echelon" from the raw path — those must be stored.
+  const refAnswers = rawCanonicalAnswers || canonicalAnswers;
+  const referencePath = simPath
+    .filter(s => refAnswers.has(s.question))
+    .map(s => ({ question: s.question, choice: refAnswers.get(s.question) }));
+  if (JSON.stringify(simPath) === JSON.stringify(referencePath)) return null;
 
   return simPath;
 }
@@ -317,7 +328,7 @@ function main() {
 
   console.log('Building tree paths and feature matrix...');
   const pathsMap = buildTreePaths(treeData);
-  const { matrix, qMeta, resultNotes } = buildFeatureMatrix(treeData, pathsMap);
+  const { matrix, rawMatrix, qMeta, resultNotes } = buildFeatureMatrix(treeData, pathsMap);
   console.log(`  ${matrix.size} species, ${qMeta.size} questions`);
 
   const treeNodes = treeData.nodes;
@@ -332,10 +343,11 @@ function main() {
     if (node.type !== 'result' || !node.name || seenNames.has(node.name)) continue;
     seenNames.add(node.name);
 
-    const canonicalAnswers = matrix.get(node.name);
+    const canonicalAnswers    = matrix.get(node.name);
     if (!canonicalAnswers) continue;
+    const rawCanonicalAnswers = rawMatrix.get(node.name);
 
-    const p = computeSimCdPath(node.name, matrix, treeNodes, canonicalAnswers);
+    const p = computeSimCdPath(node.name, matrix, treeNodes, canonicalAnswers, rawCanonicalAnswers);
     if (p) { simCdPaths[node.name] = p; hasPath++; }
   }
 
