@@ -459,6 +459,10 @@
         {
           "label": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)",
           "next": "q_echelon_oenea_check"
+        },
+        {
+          "label": "HW postdiscal band completely dislocated at vein 2 (two entirely separate portions, no connection); HW spot 6 outwardly straight or convex; central spot present in FW space 11",
+          "next": "g_alitaeus"
         }
       ]
     },
