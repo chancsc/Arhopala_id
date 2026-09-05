@@ -463,6 +463,10 @@
         {
           "label": "HW postdiscal band completely dislocated at vein 2 (two entirely separate portions, no connection); HW spot 6 outwardly straight or convex; central spot present in FW space 11",
           "next": "g_alitaeus"
+        },
+        {
+          "label": "HW postdiscal band completely dislocated at vein 2; FW postdiscal spots 4, 5, and 6 in line (spot 4 not shifted distad); no spot in FW space 11 (cleander group)",
+          "next": "q_cleander_syndrome"
         }
       ]
     },
