@@ -42,7 +42,7 @@
     },
     {
       "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
-      "choice": "No — FW postdiscal band dislocated or broken (agesilaus group)"
+      "choice": "No — FW postdiscal band dislocated or broken"
     },
     {
       "question": "Is a basal cell spot present on the forewing underside?",
@@ -92,7 +92,7 @@
     },
     {
       "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
-      "choice": "No — FW postdiscal band dislocated or broken (agesilaus group)"
+      "choice": "No — FW postdiscal band dislocated or broken"
     },
     {
       "question": "Is a basal cell spot present on the forewing underside?",
@@ -430,7 +430,11 @@
     },
     {
       "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
-      "choice": "Yes — FW postdiscal band continuous (agelastus group)"
+      "choice": "Yes — FW postdiscal band continuous and unbroken"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate (squarish or banded) rather than rounded, with the forewing postdiscal spot in space 2 stepped outward toward the termen?",
+      "choice": "No — HW spots more rounded/macular; FW space 2 not stepped outward"
     },
     {
       "question": "Is there a costal spot in forewing space 10?",
@@ -530,7 +534,11 @@
     },
     {
       "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
-      "choice": "Yes — FW postdiscal band continuous (agelastus group)"
+      "choice": "Yes — FW postdiscal band continuous and unbroken"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate (squarish or banded) rather than rounded, with the forewing postdiscal spot in space 2 stepped outward toward the termen?",
+      "choice": "No — HW spots more rounded/macular; FW space 2 not stepped outward"
     },
     {
       "question": "Is there a costal spot in forewing space 10?",
@@ -690,7 +698,11 @@
     },
     {
       "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
-      "choice": "Yes — FW postdiscal band continuous (agelastus group)"
+      "choice": "Yes — FW postdiscal band continuous and unbroken"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate (squarish or banded) rather than rounded, with the forewing postdiscal spot in space 2 stepped outward toward the termen?",
+      "choice": "No — HW spots more rounded/macular; FW space 2 not stepped outward"
     },
     {
       "question": "Is there a costal spot in forewing space 10?",
@@ -764,7 +776,11 @@
     },
     {
       "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
-      "choice": "Yes — FW postdiscal band continuous (agelastus group)"
+      "choice": "Yes — FW postdiscal band continuous and unbroken"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate (squarish or banded) rather than rounded, with the forewing postdiscal spot in space 2 stepped outward toward the termen?",
+      "choice": "No — HW spots more rounded/macular; FW space 2 not stepped outward"
     },
     {
       "question": "Is there a costal spot in forewing space 10?",
@@ -830,7 +846,11 @@
     },
     {
       "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
-      "choice": "Yes — FW postdiscal band continuous (agelastus group)"
+      "choice": "Yes — FW postdiscal band continuous and unbroken"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate (squarish or banded) rather than rounded, with the forewing postdiscal spot in space 2 stepped outward toward the termen?",
+      "choice": "No — HW spots more rounded/macular; FW space 2 not stepped outward"
     },
     {
       "question": "Is there a costal spot in forewing space 10?",
@@ -2524,7 +2544,11 @@
     },
     {
       "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
-      "choice": "Yes — FW postdiscal band continuous (muta subgroup: A. moorei, A. muta, A. tropaea)"
+      "choice": "Yes — FW postdiscal band continuous and unbroken"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate (squarish or banded) rather than rounded, with the forewing postdiscal spot in space 2 stepped outward toward the termen?",
+      "choice": "Yes — HW spots more quadrate/banded; FW space 2 stepped outward toward the termen"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
@@ -2602,7 +2626,11 @@
     },
     {
       "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
-      "choice": "Yes — FW postdiscal band continuous (muta subgroup: A. moorei, A. muta, A. tropaea)"
+      "choice": "Yes — FW postdiscal band continuous and unbroken"
+    },
+    {
+      "question": "Are the hindwing underside postdiscal spots more quadrate (squarish or banded) rather than rounded, with the forewing postdiscal spot in space 2 stepped outward toward the termen?",
+      "choice": "Yes — HW spots more quadrate/banded; FW space 2 stepped outward toward the termen"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",

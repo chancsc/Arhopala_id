@@ -834,19 +834,31 @@
       "type": "question",
       "id": "q_tailless_agelastus_check",
       "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
-      "hint": "The agelastus group and muta subgroup both have a continuous (non-dislocated) FW postdiscal band, often with a small spot at the base of FW space 3; most species lack a costal spot in FW space 10 (exception: epimete suedas). The muta subgroup ([A. moorei busa](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780493&preferred_place_id=6734), [A. muta maranda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780491&preferred_place_id=6734), [A. tropaea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780493&preferred_place_id=6734)) is smaller and has more banded postdiscal spots. The agesilaus group ([A. agesilaus gesa](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1278725&preferred_place_id=6734), [A. avatha](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1062607&preferred_place_id=6734)) has a dislocated FW postdiscal band \u2014 spots shift at a vein, breaking the smooth row.",
+      "hint": "A continuous (non-dislocated) FW postdiscal band \u2014 spots form a smooth, unbroken row \u2014 is shared by both the agelastus group and the muta subgroup ([A. moorei busa](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780493&preferred_place_id=6734), [A. muta maranda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780491&preferred_place_id=6734), [A. tropaea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780493&preferred_place_id=6734)); the next question separates them. The agesilaus group ([A. agesilaus gesa](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1278725&preferred_place_id=6734), [A. avatha](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1062607&preferred_place_id=6734)) has a dislocated FW postdiscal band \u2014 spots shift at a vein, breaking the smooth row.",
       "choices": [
         {
-          "label": "Yes \u2014 FW postdiscal band continuous (agelastus group)",
-          "next": "g_agelastus"
+          "label": "Yes \u2014 FW postdiscal band continuous and unbroken",
+          "next": "q_agelastus_vs_muta"
         },
         {
-          "label": "Yes \u2014 FW postdiscal band continuous (muta subgroup: A. moorei, A. muta, A. tropaea)",
+          "label": "No \u2014 FW postdiscal band dislocated or broken",
+          "next": "g_agesilaus"
+        }
+      ]
+    },
+    "q_agelastus_vs_muta": {
+      "type": "question",
+      "id": "q_agelastus_vs_muta",
+      "question": "Are the hindwing underside postdiscal spots more quadrate (squarish or banded) rather than rounded, with the forewing postdiscal spot in space 2 stepped outward toward the termen?",
+      "hint": "In the muta subgroup ([A. moorei busa](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780493&preferred_place_id=6734), [A. muta maranda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780491&preferred_place_id=6734), [A. tropaea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780493&preferred_place_id=6734)) the postdiscal spots are more quadrate or banded, and the FW postdiscal spot in space 2 is stepped outward (displaced toward the termen) relative to the main band. The agelastus group has more rounded, macular spots and FW space 2 is not stepped outward.",
+      "choices": [
+        {
+          "label": "Yes \u2014 HW spots more quadrate/banded; FW space 2 stepped outward toward the termen",
           "next": "g_amphimuta_muta"
         },
         {
-          "label": "No \u2014 FW postdiscal band dislocated or broken (agesilaus group)",
-          "next": "g_agesilaus"
+          "label": "No \u2014 HW spots more rounded/macular; FW space 2 not stepped outward",
+          "next": "g_agelastus"
         }
       ]
     },
@@ -1789,7 +1801,8 @@
       "note": "Tailless. Male upperside: violet blue with broader borders than [A. labuana](https://www.inaturalist.org/search?q=Arhopala+labuana) or [A. agelastus](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1294319&preferred_place_id=6734) \u2014 2.0 mm at tornus to 5.0 mm at costa. Female: brighter and purer blue. Underside: HW postdiscal spots 5, 6 and 7 widely out of line; the inner edge of spot 6 is in line with, or even further inward (basad) than, the inner edge of spot 7; spot 6 is outwardly convex and typically touches or overlaps the end-cell bar. In HW underside spaces (2)3\u20135 the submarginal spots are prominently black and wedge-shaped (\u2227) \u2014 like A. alaconia media, but without that species\u2019 thick pale postdiscal border. Agelastus group; HW postdiscal band only partially dislocated at vein 2; FW postdiscal band continuous.",
       "features": {
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced",
-        "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?": "Yes \u2014 FW postdiscal band continuous (agelastus group)",
+        "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?": "Yes \u2014 FW postdiscal band continuous and unbroken",
+        "Are the hindwing underside postdiscal spots more quadrate (squarish or banded) rather than rounded, with the forewing postdiscal spot in space 2 stepped outward toward the termen?": "No \u2014 HW spots more rounded/macular; FW space 2 not stepped outward",
         "Roughly how large is the specimen (forewing length)?": "Small \u2014 forewing about 16 mm (A. wildeyana)",
         "In the hindwing underside spaces 2 - 5, are the submarginal spots prominently wedge-shaped (\u2227), black or dark brown?": "Yes \u2014 submarginal spots wedge-shaped (\u2227) and brown in spaces 2, 3, 4, 5",
         "Is the hindwing underside postdiscal spot 3 almost in line with postdiscal spots 2 and 4 (forming an even curve)?": "No \u2014 spot 3 displaced, not clearly in line",
@@ -2668,6 +2681,8 @@
         "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?": "Very small \u2014 spots noticeably small",
         "Is the HW postdiscal band at vein 2 fully separated into two distinct portions \u2014 a clear gap visible between them?": "Cannot determine \u2014 band dislocation at vein 2 not assessable from this view",
         "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "Yes \u2014 HW spots more quadrate or banded in shape (muta subgroup)",
+        "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?": "Yes \u2014 FW postdiscal band continuous and unbroken",
+        "Are the hindwing underside postdiscal spots more quadrate (squarish or banded) rather than rounded, with the forewing postdiscal spot in space 2 stepped outward toward the termen?": "Yes \u2014 HW spots more quadrate/banded; FW space 2 stepped outward toward the termen",
         "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
@@ -2684,7 +2699,8 @@
         "Is the HW postdiscal band at vein 2 fully separated into two distinct portions \u2014 a clear gap visible between them?": "Cannot determine \u2014 band dislocation at vein 2 not assessable from this view",
         "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "Yes \u2014 HW spots more quadrate or banded in shape (muta subgroup)",
         "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?": "No \u2014 spot 6 not sinuous/concave, or no FW costal spot in space 10",
-        "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?": "Yes \u2014 FW postdiscal band continuous (muta subgroup: A. moorei, A. muta, A. tropaea)",
+        "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?": "Yes \u2014 FW postdiscal band continuous and unbroken",
+        "Are the hindwing underside postdiscal spots more quadrate (squarish or banded) rather than rounded, with the forewing postdiscal spot in space 2 stepped outward toward the termen?": "Yes \u2014 HW spots more quadrate/banded; FW space 2 stepped outward toward the termen",
         "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
@@ -2701,7 +2717,8 @@
         "Is the HW postdiscal band at vein 2 fully separated into two distinct portions \u2014 a clear gap visible between them?": "Cannot determine \u2014 band dislocation at vein 2 not assessable from this view",
         "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?": "Yes \u2014 HW spots more quadrate or banded in shape (muta subgroup)",
         "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?": "No \u2014 spot 6 not sinuous/concave, or no FW costal spot in space 10",
-        "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?": "Yes \u2014 FW postdiscal band continuous (muta subgroup: A. moorei, A. muta, A. tropaea)",
+        "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?": "Yes \u2014 FW postdiscal band continuous and unbroken",
+        "Are the hindwing underside postdiscal spots more quadrate (squarish or banded) rather than rounded, with the forewing postdiscal spot in space 2 stepped outward toward the termen?": "Yes \u2014 HW spots more quadrate/banded; FW space 2 stepped outward toward the termen",
         "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated \u2014 band splits into two entirely separate portions at vein 2"
       }
     },
