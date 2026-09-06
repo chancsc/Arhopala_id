@@ -399,10 +399,6 @@
       "choice": "HW postdiscal band fully dislocated at vein 2 — two clearly separate portions with a visible gap (kurzi or perimuta subgroup)"
     },
     {
-      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
-      "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
-    },
-    {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
       "choice": "Yes — HW postdiscal band fully separated at vein 2 (two distinct portions with a clear gap)"
     },
@@ -1367,10 +1363,6 @@
       "choice": "Normal — spots normal-sized, with a clear gap from the end-cell bar"
     },
     {
-      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
-      "choice": "Yes — HW spots more quadrate or banded in shape (muta subgroup)"
-    },
-    {
       "question": "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?",
       "choice": "No — spot 6 not sinuous/concave, or no FW costal spot in space 10"
     },
@@ -1449,10 +1441,6 @@
       "choice": "Normal — spots normal-sized, with a clear gap from the end-cell bar"
     },
     {
-      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
-      "choice": "Yes — HW spots more quadrate or banded in shape (muta subgroup)"
-    },
-    {
       "question": "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?",
       "choice": "No — spot 6 not sinuous/concave, or no FW costal spot in space 10"
     },
@@ -1523,10 +1511,6 @@
       "choice": "HW postdiscal band fully dislocated at vein 2 — two clearly separate portions with a visible gap (kurzi or perimuta subgroup)"
     },
     {
-      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
-      "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
-    },
-    {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
       "choice": "Yes — HW postdiscal band fully separated at vein 2 (two distinct portions with a clear gap)"
     },
@@ -1537,52 +1521,6 @@
     {
       "question": "Do HW postdiscal spots 4 and 5 precisely align in a straight vertical line — distinct from the broader 5-6-7 echelon?",
       "choice": "No — spots 4 and 5 not in tight vertical alignment (A. metamuta)"
-    }
-  ],
-  "Arhopala antimuta antimuta": [
-    {
-      "question": "Does the hindwing have a tail?",
-      "choice": "No — hindwing is tailless"
-    },
-    {
-      "question": "Are the underside markings almost entirely suppressed — the postdiscal spots replaced by a faint, obscure streak rather than a series of distinct separate spots, with most other typical markings absent?",
-      "choice": "No — postdiscal spots distinct; typical markings present"
-    },
-    {
-      "question": "Does the hindwing have a very rounded tornus, and are tornal green scales absent?",
-      "choice": "No"
-    },
-    {
-      "question": "Is there a prominent yellowish area in the centre of the hindwing underside, and are the underside markings generally obscure or ill-defined?",
-      "choice": "No — HW discal area not prominently yellowish; markings well-defined"
-    },
-    {
-      "question": "Is there a small spot at the extreme base of hindwing space 6 on the underside?",
-      "choice": "No"
-    },
-    {
-      "question": "Are the underside spots prominent and rounded, with a central spot in FW space 11?",
-      "choice": "No"
-    },
-    {
-      "question": "In the hindwing underside spaces 2 - 5, are the submarginal spots prominently wedge-shaped (∧), black or dark brown?",
-      "choice": "No — HW submarginal spots not wedge-shaped (uniform in size and colour)"
-    },
-    {
-      "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced"
-    },
-    {
-      "question": "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?",
-      "choice": "Completely dislocated — band splits into two entirely separate portions at vein 2"
-    },
-    {
-      "question": "Are green tornal scales present on the HW underside?",
-      "choice": "Yes — green tornal scales present"
-    },
-    {
-      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
-      "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
     }
   ],
   "Arhopala anthelus grahami": [
@@ -3291,10 +3229,6 @@
     {
       "question": "Is the underside crimson-brown with markings outlined by white striae, with a restricted dark patch in FW space 1b bounded by a pale line?",
       "choice": "No — underside not crimson-brown, or no FW space-1b dark patch (true hypomuta-group character)"
-    },
-    {
-      "question": "Are the hindwing underside postdiscal spots more quadrate/banded in shape, rather than rounded?",
-      "choice": "No — HW postdiscal spots rounded (not quadrate/banded)"
     },
     {
       "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
