@@ -870,7 +870,7 @@
       "choices": [
         {
           "label": "Yes — HW postdiscal band fully separated at vein 2 (two distinct portions with a clear gap)",
-          "next": "q_tailless_epimuta_tornal"
+          "next": "q_echelon_sep_check"
         },
         {
           "label": "No — HW postdiscal band continuous or not clearly separated at vein 2",
@@ -2188,7 +2188,8 @@
         "In the hindwing underside spaces 2 - 5, are the submarginal spots prominently wedge-shaped (∧), black or dark brown?": "No — HW submarginal spots not wedge-shaped (uniform in size and colour)",
         "On the forewing underside, is the basal cell spot absent?": "No — basal cell spot present on FW underside",
         "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "No — no white patch just above the tornal lobe",
-        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated — band splits into two entirely separate portions at vein 2"
+        "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated — band splits into two entirely separate portions at vein 2",
+        "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?": "No — spots not in echelon"
       }
     },
     "q_amph_s2": {
@@ -4882,6 +4883,38 @@
         {
           "label": "No — subapical not distinctly paler or whitish-irrorated on both wings",
           "next": "q_eumolphus_vs_alea"
+        }
+      ]
+    },
+    "q_fully_sep_echelon": {
+      "id": "q_fully_sep_echelon",
+      "type": "question",
+      "question": "On the forewing underside, is the basal cell spot absent?",
+      "hint": "Reached only when the HW postdiscal band is completely separated at vein 2 (Q101=Yes). A. avathina has no basal cell spot on FW; A. sceva has one.",
+      "choices": [
+        {
+          "label": "Yes — no basal cell spot on FW underside (HW postdiscal band also completely dislocated at vein 2)",
+          "next": "r_avathina_avathina"
+        },
+        {
+          "label": "No — basal cell spot present on FW underside",
+          "next": "r_sceva_indra"
+        }
+      ]
+    },
+    "q_echelon_sep_check": {
+      "id": "q_echelon_sep_check",
+      "type": "question",
+      "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
+      "hint": "The amphimuta group (muta, perimuta, kurzi, and amphimuta subgroups) is defined by HW spots 5, 6, and 7 having their centres in a straight line — an 'echelon'. Most amphimuta-group species are tailless. If present, this character routes to a subgroup choice.",
+      "choices": [
+        {
+          "label": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)",
+          "next": "q_fully_sep_echelon"
+        },
+        {
+          "label": "No — spots not in echelon",
+          "next": "q_tailless_epimuta_tornal"
         }
       ]
     }

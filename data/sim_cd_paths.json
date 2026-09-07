@@ -383,20 +383,12 @@
       "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
       "choice": "No — spots not in echelon"
     },
     {
-      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
-      "choice": "HW postdiscal band fully dislocated at vein 2 — two clearly separate portions with a visible gap (kurzi or perimuta subgroup)"
-    },
-    {
-      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "Yes — HW postdiscal band fully separated at vein 2 (two distinct portions with a clear gap)"
+      "question": "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?",
+      "choice": "Completely dislocated — band splits into two entirely separate portions at vein 2"
     },
     {
       "question": "Are green tornal scales present on the HW underside?",
@@ -441,24 +433,20 @@
       "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+    },
+    {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
-      "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
+      "choice": "HW postdiscal band fully dislocated at vein 2 — two clearly separate portions with a visible gap (kurzi or perimuta subgroup)"
     },
     {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
-    },
-    {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
+      "choice": "Yes — HW postdiscal band fully separated at vein 2 (two distinct portions with a clear gap)"
     },
     {
       "question": "On the forewing underside, is the basal cell spot absent?",
@@ -499,12 +487,12 @@
       "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
@@ -535,12 +523,12 @@
       "choice": "Cannot determine — upperside not visible"
     },
     {
-      "question": "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?",
-      "choice": "No — HW band not strongly dislocated at vein 2"
-    },
-    {
       "question": "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?",
       "choice": "Yes — weak tooth at vein 2 present; postdiscal spots less rounded (more angular), similar to A. norda"
+    },
+    {
+      "question": "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?",
+      "choice": "No — HW band not strongly dislocated at vein 2"
     },
     {
       "question": "What is the male's overall upperside colour?",
@@ -581,12 +569,12 @@
       "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
@@ -671,12 +659,12 @@
       "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
@@ -761,12 +749,12 @@
       "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
@@ -797,12 +785,12 @@
       "choice": "Cannot determine — upperside not visible"
     },
     {
-      "question": "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?",
-      "choice": "No — HW band not strongly dislocated at vein 2"
-    },
-    {
       "question": "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?",
       "choice": "Yes — weak tooth at vein 2 present; postdiscal spots less rounded (more angular), similar to A. norda"
+    },
+    {
+      "question": "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?",
+      "choice": "No — HW band not strongly dislocated at vein 2"
     },
     {
       "question": "What is the male's overall upperside colour?",
@@ -843,44 +831,24 @@
       "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+    },
+    {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
-      "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
+      "choice": "HW postdiscal band fully dislocated at vein 2 — two clearly separate portions with a visible gap (kurzi or perimuta subgroup)"
     },
     {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
-    },
-    {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
+      "choice": "Yes — HW postdiscal band fully separated at vein 2 (two distinct portions with a clear gap)"
     },
     {
       "question": "On the forewing underside, is the basal cell spot absent?",
       "choice": "No — basal cell spot present on FW underside"
-    },
-    {
-      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded"
-    },
-    {
-      "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
-      "choice": "No — Malay Peninsula specimen"
-    },
-    {
-      "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
-      "choice": "Cannot determine — upperside not visible"
-    },
-    {
-      "question": "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?",
-      "choice": "Yes — HW postdiscal series dislocated at vein 2; smaller species; male dark violet-blue"
     }
   ],
   "Arhopala amphimuta amphimuta": [
@@ -917,12 +885,12 @@
       "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
@@ -1003,12 +971,12 @@
       "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
@@ -1093,12 +1061,12 @@
       "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
@@ -1167,12 +1135,12 @@
       "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
@@ -1241,12 +1209,12 @@
       "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
@@ -1319,12 +1287,12 @@
       "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
@@ -1397,20 +1365,12 @@
       "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
       "choice": "No — spots not in echelon"
     },
     {
-      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
-      "choice": "HW postdiscal band fully dislocated at vein 2 — two clearly separate portions with a visible gap (kurzi or perimuta subgroup)"
-    },
-    {
-      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "Yes — HW postdiscal band fully separated at vein 2 (two distinct portions with a clear gap)"
+      "question": "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?",
+      "choice": "Completely dislocated — band splits into two entirely separate portions at vein 2"
     },
     {
       "question": "Are green tornal scales present on the HW underside?",
@@ -1795,6 +1755,56 @@
     {
       "question": "Is the underside ground colour extensively whitened?",
       "choice": "Yes — underside extensively whitened; male pale blue, thread border, whitened FW cell-end"
+    }
+  ],
+  "Arhopala belphoebe cowani": [
+    {
+      "question": "Does the hindwing have a tail?",
+      "choice": "No — hindwing is tailless"
+    },
+    {
+      "question": "Are the underside markings almost entirely suppressed — the postdiscal spots replaced by a faint, obscure streak rather than a series of distinct separate spots, with most other typical markings absent?",
+      "choice": "No — postdiscal spots distinct; typical markings present"
+    },
+    {
+      "question": "Does the hindwing have a very rounded tornus, and are tornal green scales absent?",
+      "choice": "No"
+    },
+    {
+      "question": "Is there a prominent yellowish area in the centre of the hindwing underside, and are the underside markings generally obscure or ill-defined?",
+      "choice": "No — HW discal area not prominently yellowish; markings well-defined"
+    },
+    {
+      "question": "Is there a small spot at the extreme base of hindwing space 6 on the underside?",
+      "choice": "No"
+    },
+    {
+      "question": "Are the underside spots prominent and rounded, with a central spot in FW space 11?",
+      "choice": "No"
+    },
+    {
+      "question": "In the hindwing underside spaces 2 - 5, are the submarginal spots prominently wedge-shaped (∧), black or dark brown?",
+      "choice": "No — HW submarginal spots not wedge-shaped (uniform in size and colour)"
+    },
+    {
+      "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
+      "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
+    },
+    {
+      "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
+      "choice": "No — spots not in echelon"
+    },
+    {
+      "question": "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?",
+      "choice": "Completely dislocated — band splits into two entirely separate portions at vein 2"
+    },
+    {
+      "question": "Are green tornal scales present on the HW underside?",
+      "choice": "No — green tornal scales absent; HW has yellowish discal area; markings obscure or almost absent"
+    },
+    {
+      "question": "Do HW postdiscal spots 4 and 5 precisely align in a straight vertical line — distinct from the broader 5-6-7 echelon?",
+      "choice": "No — spots 4 and 5 not in tight vertical alignment (A. metamuta)"
     }
   ],
   "Arhopala johoreana johoreana": [
@@ -2727,52 +2737,6 @@
       "choice": "Cannot determine — upperside not visible"
     }
   ],
-  "Epimuta group — tailed species (unresolved)": [
-    {
-      "question": "Does the hindwing have a tail?",
-      "choice": "No — hindwing is tailless"
-    },
-    {
-      "question": "Are the underside markings almost entirely suppressed — the postdiscal spots replaced by a faint, obscure streak rather than a series of distinct separate spots, with most other typical markings absent?",
-      "choice": "No — postdiscal spots distinct; typical markings present"
-    },
-    {
-      "question": "Does the hindwing have a very rounded tornus, and are tornal green scales absent?",
-      "choice": "No"
-    },
-    {
-      "question": "Is there a prominent yellowish area in the centre of the hindwing underside, and are the underside markings generally obscure or ill-defined?",
-      "choice": "No — HW discal area not prominently yellowish; markings well-defined"
-    },
-    {
-      "question": "Is there a small spot at the extreme base of hindwing space 6 on the underside?",
-      "choice": "No"
-    },
-    {
-      "question": "Are the underside spots prominent and rounded, with a central spot in FW space 11?",
-      "choice": "No"
-    },
-    {
-      "question": "In the hindwing underside spaces 2 - 5, are the submarginal spots prominently wedge-shaped (∧), black or dark brown?",
-      "choice": "No — HW submarginal spots not wedge-shaped (uniform in size and colour)"
-    },
-    {
-      "question": "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?",
-      "choice": "Equidistant — spot 6 roughly midway between spot 5 and the end-cell bar"
-    },
-    {
-      "question": "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?",
-      "choice": "Completely dislocated — band splits into two entirely separate portions at vein 2"
-    },
-    {
-      "question": "Are green tornal scales present on the HW underside?",
-      "choice": "Yes — green tornal scales present"
-    },
-    {
-      "question": "Does the hindwing have a short tail (~2.5 mm)?",
-      "choice": "Yes — short tail present (~2.5 mm)"
-    }
-  ],
   "Arhopala bazalus zalinda": [
     {
       "question": "Does the hindwing have a tail?",
@@ -3367,12 +3331,12 @@
       "choice": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?",
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
     {
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
