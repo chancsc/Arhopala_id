@@ -535,15 +535,15 @@
         "text": "echelon HW spots 5–7",
         "href": "guide.html#hw-tail-spots-fw-spaces"
       },
-      "hint": "Four subgroups. Muta: spots more quadrate/banded, FW space 2 stepped toward termen. Kurzi and perimuta subgroups: HW postdiscal band fully dislocated at vein 2 — two clearly separate portions with a visible gap; a follow-up question separates [A. kurzi](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1149928&preferred_place_id=6734) from the perimuta subgroup ([A. perimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=448212&preferred_place_id=6734), [A. metamuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340245&preferred_place_id=6734), [A. antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734)). Amphimuta (largest, 12 spp.): spots rounded, cilia often prolonged into a short tooth at vein 2.\n\nIf you cannot judge the spot shape (quadrate/banded vs rounded) or whether the HW postdiscal band is dislocated at vein 2, choose 'Cannot determine' — [A. antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734) (perimuta subgroup) is by far the most abundant species in this group and can still be recognized by its own characters (spot 6 positioned directly below spot 7, touching or overlapping the end-cell bar, with a thread-like male border), while [A. perimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=448212&preferred_place_id=6734) and [A. metamuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340245&preferred_place_id=6734) have their own distinctive HW colours.",
+      "hint": "Four subgroups. **Muta subgroup** ([A. muta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780491&preferred_place_id=6734), [A. moorei](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780493&preferred_place_id=6734), [A. tropaea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=785409&preferred_place_id=6734)): HW postdiscal band **completely dislocated** at vein 2 (like kurzi/perimuta), but FW postdiscal spots 2 and 3 are in echelon — spot 3 shifted outward toward the termen. **Kurzi and perimuta subgroups**: HW postdiscal band also completely dislocated at vein 2 — two clearly separate portions with a visible gap; FW spots 2 and 3 are roughly in line (not echelon). A follow-up question separates [A. kurzi](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1149928&preferred_place_id=6734) from the perimuta subgroup ([A. perimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=448212&preferred_place_id=6734), [A. metamuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340245&preferred_place_id=6734), [A. antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734)). **Amphimuta subgroup** (largest, 12 spp.): spots rounded, band **partially** dislocated — the two portions remain connected at vein 2; cilia often prolonged into a short tooth at vein 2.\n\nIf you cannot judge the spot shape (quadrate/banded vs rounded) or whether the HW postdiscal band is dislocated at vein 2, choose 'Cannot determine' — [A. antimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=498184&preferred_place_id=6734) (perimuta subgroup) is by far the most abundant species in this group and can still be recognized by its own characters (spot 6 positioned directly below spot 7, touching or overlapping the end-cell bar, with a thread-like male border), while [A. perimuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=448212&preferred_place_id=6734) and [A. metamuta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340245&preferred_place_id=6734) have their own distinctive HW colours.",
       "choices": [
         {
           "label": "HW underside postdiscal spots more quadrate/banded (muta subgroup)",
           "next": "g_amphimuta_muta"
         },
         {
-          "label": "HW postdiscal band fully dislocated at vein 2 — two clearly separate portions with a visible gap (kurzi or perimuta subgroup)",
-          "next": "q_amphimuta_dislocated_split"
+          "label": "HW postdiscal band completely dislocated at vein 2 — clear visible gap between the two separate portions (kurzi, muta, or perimuta subgroup)",
+          "next": "q_amphimuta_fw_spaces"
         },
         {
           "label": "Spots rounded; tailed — a distinct tail present at vein 2 (A. delta)",
@@ -584,6 +584,26 @@
         {
           "label": "Cannot determine — spot alignment not clearly visible",
           "next": "g_amphimuta_perimuta"
+        }
+      ]
+    },
+    "q_amphimuta_fw_spaces": {
+      "type": "question",
+      "id": "q_amphimuta_fw_spaces",
+      "question": "On the forewing underside, are postdiscal spots in spaces 2 and 3 in echelon — spot 3 displaced outward toward the termen relative to spot 2?",
+      "hint": "**Muta subgroup** ([A. muta](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780491&preferred_place_id=6734), [A. moorei](https://www.inaturalist.org/observations?verifiable=true&taxon_id=780493&preferred_place_id=6734), [A. tropaea](https://www.inaturalist.org/observations?verifiable=true&taxon_id=785409&preferred_place_id=6734)): FW postdiscal spots in spaces 2 and 3 are in echelon — spot 3 shifted outward toward the termen relative to spot 2; FW space 2 itself is also stepped toward the termen. This is the key character separating muta from kurzi/perimuta in C&P couplet 87.\n\n**Perimuta subgroup and A. kurzi**: FW postdiscal spots 2 and 3 are roughly in line with each other — not stepped.",
+      "choices": [
+        {
+          "label": "Yes — FW spots 2 and 3 in echelon; spot 3 displaced outward toward termen (muta subgroup)",
+          "next": "g_amphimuta_muta"
+        },
+        {
+          "label": "No — FW spots 2 and 3 roughly in line with each other; not stepped (perimuta subgroup or A. kurzi)",
+          "next": "q_amphimuta_dislocated_split"
+        },
+        {
+          "label": "Cannot determine — FW spot arrangement not clearly visible",
+          "next": "q_amphimuta_dislocated_split"
         }
       ]
     },
