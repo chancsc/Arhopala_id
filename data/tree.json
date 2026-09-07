@@ -529,6 +529,7 @@
     "q_amphimuta_sub": {
       "type": "question",
       "id": "q_amphimuta_sub",
+      "hideOrphanInPath": true,
       "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
       "question_link": {
         "text": "echelon HW spots 5–7",
