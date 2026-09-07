@@ -2,7 +2,8 @@
 // ─────────────────────────────────────────────────────────────────────────────
 // Feature-consistency checker
 //
-// Detects two classes of bug that cause script-vs-browser divergence:
+// Detects three classes of bug that cause script-vs-browser divergence or
+// biologically incorrect features:
 //
 //  [ORPHAN]  A question appears in a species' FS sim path (feature_scoring_paths.json)
 //            answered as a default (not a real feature). The script converges, but
@@ -13,11 +14,19 @@
 //                species' canonical tree path for the same question text.
 //                Fix: verify which answer is biologically correct and reconcile.
 //
+//  [FLOATING]  A result-node feature where the question text appears on ZERO of
+//              the tree paths to that result node — no structural backing.
+//              These may be biologically wrong (e.g. a wrong Q19 override added
+//              without a C&P check). Many are intentional features-only discriminators
+//              added by /space6-check; verify each against C&P before acting.
+//              Fix: confirm C&P supports the answer, or remove the feature.
+//
 // Usage:
 //   node scripts/check_feature_consistency.js          # all species
 //   node scripts/check_feature_consistency.js kurzi    # filter by name fragment
 //   node scripts/check_feature_consistency.js --orphans-only
 //   node scripts/check_feature_consistency.js --contradictions-only
+//   node scripts/check_feature_consistency.js --floating-only
 //
 // Exit code 0 always (advisory only — does not block CI).
 // ─────────────────────────────────────────────────────────────────────────────
@@ -48,6 +57,7 @@ for (const node of Object.values(nodes)) {
 const args = process.argv.slice(2);
 const orphansOnly       = args.includes('--orphans-only');
 const contradictOnly    = args.includes('--contradictions-only');
+const floatingOnly      = args.includes('--floating-only');
 const filterFragments   = args.filter(a => !a.startsWith('--'));
 
 // ── Build real feature matrix for a species (mirrors buildAnswers in fs_regress) ─
@@ -90,8 +100,18 @@ const names = filterFragments.length
   ? allNames.filter(n => filterFragments.some(f => n.toLowerCase().includes(f.toLowerCase())))
   : allNames;
 
-let orphanCount = 0, contradictCount = 0;
-const orphanFindings = [], contradictFindings = [];
+// ── Build set of all question texts on any tree path to a result node ─────────
+function buildQuestionsOnAnyPath(name) {
+  const allPaths = pathsMap.get(name) || [];
+  const qs = new Set();
+  for (const pathSteps of allPaths)
+    for (const step of pathSteps)
+      if (step.question) qs.add(step.question);
+  return qs;
+}
+
+let orphanCount = 0, contradictCount = 0, floatCount = 0;
+const orphanFindings = [], contradictFindings = [], floatFindings = [];
 
 for (const name of names) {
   const simPath = simPaths[name];
@@ -107,7 +127,7 @@ for (const name of names) {
   // ── [ORPHAN] check ──────────────────────────────────────────────────────────
   // Each step in the FS sim path should have a real feature backing it.
   // If not, it was answered as an orphan default → browser won't answer it.
-  if (!orphansOnly || !contradictOnly) {
+  if (!contradictOnly && !floatingOnly) {
     for (const step of simPath) {
       const q = step.question;
       const c = step.choice;
@@ -122,7 +142,7 @@ for (const name of names) {
   // ── [CONTRADICT] check ──────────────────────────────────────────────────────
   // A result-node feature that contradicts the canonical tree path answer for
   // the same question text.
-  if (!orphansOnly) {
+  if (!orphansOnly && !floatingOnly) {
     for (const [q, rfAnswer] of Object.entries(rf)) {
       if (rfAnswer.startsWith('Cannot determine')) continue;
       const pathAnswer = pathAnswers.get(q);
@@ -132,11 +152,29 @@ for (const name of names) {
       }
     }
   }
+
+  // ── [FLOATING] check ────────────────────────────────────────────────────────
+  // A result-node feature whose question text appears on NONE of the tree paths
+  // to this result node — no structural backing at all.
+  // High risk of being biologically wrong (e.g. a Q19 override added without
+  // C&P verification). Many are intentional features-only discriminators from
+  // /space6-check; verify each against C&P before acting.
+  if (!orphansOnly && !contradictOnly) {
+    const qsOnAnyPath = buildQuestionsOnAnyPath(name);
+    for (const [q, rfAnswer] of Object.entries(rf)) {
+      if (rfAnswer.startsWith('Cannot determine')) continue;
+      if (!qsOnAnyPath.has(q)) {
+        floatCount++;
+        floatFindings.push({ name, question: q, featureAnswer: rfAnswer });
+      }
+    }
+  }
 }
 
 // ── Report ────────────────────────────────────────────────────────────────────
-const showOrphans      = !contradictOnly;
-const showContradicts  = !orphansOnly;
+const showOrphans      = !contradictOnly && !floatingOnly;
+const showContradicts  = !orphansOnly    && !floatingOnly;
+const showFloating     = !orphansOnly    && !contradictOnly;
 
 if (showOrphans) {
   console.log(`\n${'═'.repeat(72)}`);
@@ -181,6 +219,33 @@ if (showContradicts) {
     }
   }
   console.log(`\n  Total contradiction findings: ${contradictCount}`);
+}
+
+if (showFloating) {
+  console.log(`\n${'═'.repeat(72)}`);
+  console.log(`[FLOATING] Result-node feature with NO structural backing in tree`);
+  console.log(`           Question appears on 0 tree paths to this result node.`);
+  console.log(`           Many are intentional /space6-check features-only discriminators.`);
+  console.log(`           Verify each against C&P before acting.`);
+  console.log(`${'═'.repeat(72)}`);
+  if (floatFindings.length === 0) {
+    console.log('  ✓ None found.');
+  } else {
+    // Group by question text for easy scanning
+    const byQ = new Map();
+    for (const f of floatFindings) {
+      if (!byQ.has(f.question)) byQ.set(f.question, []);
+      byQ.get(f.question).push(f);
+    }
+    for (const [q, entries] of byQ) {
+      console.log(`\n  Q: ${q.substring(0, 90)}`);
+      for (const e of entries) {
+        console.log(`     ${e.name.replace('Arhopala ', '')}`);
+        console.log(`       feature says: "${e.featureAnswer.substring(0, 70)}"`);
+      }
+    }
+  }
+  console.log(`\n  Total floating-feature findings: ${floatCount}`);
 }
 
 console.log('');
