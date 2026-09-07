@@ -1703,6 +1703,26 @@
     {
       "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
       "choice": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded"
+    },
+    {
+      "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
+      "choice": "No — Malay Peninsula specimen"
+    },
+    {
+      "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
+      "choice": "No — border regular ~0.5 mm"
+    },
+    {
+      "question": "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?",
+      "choice": "No — HW band not strongly dislocated at vein 2"
+    },
+    {
+      "question": "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?",
+      "choice": "Yes — weak tooth at vein 2 present; postdiscal spots less rounded (more angular), similar to A. norda"
+    },
+    {
+      "question": "On the male upperside, is the forewing border broad and expanding, widening from about 2.0 mm at the tornus to about 3.0 mm at the apex?",
+      "choice": "Yes — forewing border broad and expanding, ~2.0 mm at tornus to ~3.0 mm at apex (A. norda)"
     }
   ],
   "Arhopala major major": [

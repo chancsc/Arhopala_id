@@ -2216,7 +2216,7 @@
       "choices": [
         {
           "label": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded",
-          "next": "r_norda"
+          "next": "q_norda_border"
         },
         {
           "label": "No — no white patch just above the tornal lobe",
@@ -4912,6 +4912,26 @@
         {
           "label": "No — spots not in echelon",
           "next": "q_tailless_epimuta_tornal"
+        }
+      ]
+    },
+    "q_norda_border": {
+      "id": "q_norda_border",
+      "type": "question",
+      "question": "On the male upperside, is the forewing border broad and expanding, widening from about 2.0 mm at the tornus to about 3.0 mm at the apex?",
+      "hint": "Reached when a white patch on HW cilia (space 1a) is present. A. norda has a distinctly broad, expanding border (~2–3 mm). A. moolaiana has a thread-like border; A. dajagaka (Borneo) has a regular ~0.5 mm border.",
+      "choices": [
+        {
+          "label": "Yes — forewing border broad and expanding, ~2.0 mm at tornus to ~3.0 mm at apex (A. norda)",
+          "next": "r_norda"
+        },
+        {
+          "label": "No — forewing border narrow (thread-like or ≤0.5 mm at tornus)",
+          "next": "q_amph_geo"
+        },
+        {
+          "label": "Cannot determine — upperside not visible",
+          "next": "q_amph_geo"
         }
       ]
     }
