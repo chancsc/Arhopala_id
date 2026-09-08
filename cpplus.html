@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Work through the Corbet &amp; Pendlebury dichotomous key one couplet at a time to rank Arhopala candidates in real time.">
   <meta name="theme-color" content="#2d5a27">
-  <title>Arhopala ID — C&amp;P Key Scoring</title>
+  <title>Arhopala ID — C&amp;P+</title>
   <link rel="stylesheet" href="css/style.css?v=20260717a">
   <script src="js/theme.js?v=20260717a"></script>
   <style>
@@ -203,7 +203,7 @@
   <div id="ks-app" style="display:none;">
     <div class="ks-topbar">
       <button class="menu-btn ks-menu-btn" id="ks-menu-btn" aria-label="Open menu">&#9776;</button>
-      <span class="ks-title">C&amp;P Key Scoring</span>
+      <span class="ks-title">C&amp;P+</span>
       <span class="ks-answered" id="ks-answered-count"></span>
       <span class="ks-remaining" id="ks-remaining-count" title="Species still consistent with your answers"></span>
       <button id="ks-reset" class="ks-reset-btn">Reset</button>
@@ -249,14 +249,14 @@
           <span class="menu-nav-item-label">Home</span>
           <span class="menu-nav-item-desc">Where to start</span>
         </a>
-<button class="menu-nav-item active" id="ks-nav-cpkey" aria-label="C&amp;P Key — original C&amp;P dichotomous key">
+<a href="id_keys.html" class="menu-nav-item" id="ks-nav-cpkey-link" aria-label="C&amp;P Key — original dichotomous key">
           <span class="menu-nav-item-label">C&amp;P Key</span>
           <span class="menu-nav-item-desc">Original C&amp;P dichotomous key</span>
-        </button>
-        <a href="cpplus.html" class="menu-nav-item" aria-label="C&amp;P+ — enhanced C&amp;P key with Cannot-determine skips">
+        </a>
+        <button class="menu-nav-item active" id="ks-nav-cpplus" aria-label="C&amp;P+ — enhanced C&amp;P key with Cannot-determine skips">
           <span class="menu-nav-item-label">C&amp;P+</span>
           <span class="menu-nav-item-desc">Enhanced key with Cannot-determine skips</span>
-        </a>
+        </button>
         <a href="species.html" class="menu-nav-item" aria-label="Species Search — browse all covered taxa">
           <span class="menu-nav-item-label">Species Search</span>
           <span class="menu-nav-item-desc">Browse all covered taxa</span>
@@ -274,6 +274,7 @@
     </div>
   </div>
 
+  <script>window.cpPlusMode = true;</script>
   <script src="js/id_keys.js?v=20260717a"></script>
   <script>
     (function () {
