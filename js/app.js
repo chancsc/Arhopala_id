@@ -395,6 +395,9 @@ function showSpeciesDetail(sp) {
 }
 
 function buildPathDisplay(paths, note, resultFeatures, resultName) {
+  // Feature Scoring path and Underside-only path removed from display.
+  // Data files (feature_scoring_paths.json, sim_cd_paths.json) are preserved.
+  return '';
   if (!paths || paths.length === 0) return '';
 
   const rf = resultFeatures || {};
