@@ -418,18 +418,16 @@ function ksRenderCouplet() {
   const yesV = inverted ? 'B' : 'A';
   const noV = inverted ? 'A' : 'B';
 
-  // Skip if the character can't be assessed from a photo (upperside, or a
-  // couplet flagged skippable — e.g. a genitalia character) and at least one
-  // branch is non-terminal so the key can still continue.
+  // C&P+ only: Cannot-determine skips for upperside, FW-space, and genital
+  // couplets. The original C&P Key has no skip option — every couplet must
+  // be answered, faithful to the published key.
   const cpPlus = typeof window !== 'undefined' && window.cpPlusMode;
-  const canSkip = (cp.upperside || cp.skippable || (cpPlus && cp.cd_type)) && ksSkipNext(cp) !== null;
-  const skipLabel = cpPlus
-    ? (cp.cd_type === 'fw_spaces'
-        ? 'Cannot determine — FW spaces 2–3 hard to assess in resting photos'
-      : cp.cd_type === 'genital'
-        ? 'Cannot determine — genital character, not assessable from photos'
-      : 'Cannot determine — upperside not visible in photo')
-    : (cp.upperside ? 'Skip — upperside feature not visible' : 'Skip — cannot determine from photo');
+  const canSkip = cpPlus && (cp.upperside || cp.skippable || cp.cd_type) && ksSkipNext(cp) !== null;
+  const skipLabel = cp.cd_type === 'fw_spaces'
+    ? 'Cannot determine — FW spaces 2–3 hard to assess in resting photos'
+    : cp.cd_type === 'genital'
+      ? 'Cannot determine — genital character, not assessable from photos'
+      : 'Cannot determine — upperside not visible in photo';
   const skipRow = canSkip
     ? `<div class="ks-btn-row"><button class="ks-btn ks-btn-skip" data-id="${ksEscAttr(cp.id)}" data-v="skip">${skipLabel}</button></div>`
     : '';
