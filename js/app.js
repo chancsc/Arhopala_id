@@ -957,6 +957,115 @@ function buildCPKeyPath(speciesName) {
   `;
 }
 
+// Build the C&P+ underside-only path: same walk as buildCPKeyPath but couplets
+// flagged with cd_type (upperside / fw_spaces / genital) are shown as "Cannot
+// determine" skips rather than Yes/No answers. Returns '' when the species has
+// no cd_type couplets on its path (path would be identical to the full C&P path).
+function buildCPPlusUndersidePath(speciesName) {
+  if (!state.idKeyData) return '';
+  const paths = state.idKeyData.species_paths;
+  const leads = state.idKeyData.leads;
+  const couplets = state.idKeyData.couplets;
+  if (!paths || !leads || !couplets) return '';
+
+  const sp2 = speciesName.split(' ').slice(0, 2).join(' ');
+  let leadNums = null;
+  for (const [key, val] of Object.entries(paths)) {
+    if (key.split(' ').slice(0, 2).join(' ') === sp2) { leadNums = val; break; }
+  }
+  if (!leadNums || leadNums.length === 0) return '';
+
+  const present = t => leads[String(t)] !== undefined;
+  const isTerminal = t => (leads[String(t)] || '').includes('Arhopala');
+  const coupletNodes = new Set(couplets.map(c => c.num_a));
+  const cpByNode = new Map(couplets.map(c => [c.num_a, c]));
+  function resolve(t) {
+    let s = 0; const connectors = [];
+    while (present(t)) {
+      if (coupletNodes.has(t)) return { couplet: cpByNode.get(t), connectors };
+      if (isTerminal(t)) return { terminal: t, connectors };
+      connectors.push(t);
+      t += 1; if (++s > 500) break;
+    }
+    return { connectors };
+  }
+  function choose(cp, lead) {
+    if (lead === cp.num_a) return isTerminal(cp.num_a) ? { terminal: cp.num_a, connectors: [] } : resolve(cp.num_a + 1);
+    return resolve(cp.num_b);
+  }
+  const connectorText = n => (leads[String(n)] || '')
+    .replace(/\s*\.*\s*\bArhopala\s+\w+(?:\s+\w+)?\s*$/, '')
+    .replace(/\s{2,}/g, ' ').trim();
+
+  const steps = []; let cp = couplets[0]; let terminalLead = null; let skippedCount = 0;
+  for (const lead of leadNums) {
+    if (!cp) break;
+    const choice = lead === cp.num_a ? 'A' : lead === cp.num_b ? 'B' : null;
+    if (!choice) break;
+    const inverted = cp.invert === true;
+    const statement = inverted && cp.statement ? cp.statement : cp.a_text;
+    if (cp.cd_type) {
+      const cdLabel = cp.cd_type === 'fw_spaces'
+        ? 'Cannot determine — FW spaces 2–3 not assessable'
+        : cp.cd_type === 'genital'
+          ? 'Cannot determine — genital character'
+          : 'Cannot determine — upperside not visible';
+      steps.push({ num_a: cp.num_a, statement, skipped: true, cdLabel });
+      skippedCount++;
+    } else {
+      const yes = inverted ? choice === 'B' : choice === 'A';
+      steps.push({ num_a: cp.num_a, statement, yes });
+    }
+    const r = choose(cp, lead);
+    for (const cn of (r.connectors || [])) {
+      const text = connectorText(cn);
+      if (text) steps.push({ connector: true, num: cn, text });
+    }
+    if (r.terminal != null) { terminalLead = r.terminal; break; }
+    if (!r.couplet) break;
+    cp = r.couplet;
+  }
+  if (!steps.length || skippedCount === 0) return '';
+
+  let terminalStep = null;
+  if (terminalLead != null && !(steps.length && steps[steps.length - 1].num_a === terminalLead)) {
+    const raw = leads[String(terminalLead)] || '';
+    const sm = raw.match(/\bArhopala\s+\w+(?:\s+\w+)?/);
+    const text = raw
+      .replace(/\s*\.*\s*\bArhopala\s+\w+(?:\s+\w+)?\s*$/, '')
+      .replace(/\s*Fwl\s+[\d.]+(?:\s*[-–]\s*[\d.]+)?\s*mm\.?/i, '')
+      .replace(/\s{2,}/g, ' ').trim();
+    if (text) terminalStep = { num: terminalLead, text, species: sm ? sm[0] : speciesName };
+  }
+
+  const totalSteps = steps.length + (terminalStep ? 1 : 0);
+  let stepsHTML = steps.map(s => {
+    if (s.connector) return `<li class="path-step path-step--connector">
+      <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(s.num))}</span> ${escapeHtml(s.text)}</span>
+      <span class="path-a path-a--connector">↓</span></li>`;
+    if (s.skipped) return `<li class="path-step path-step--skip">
+      <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(s.num_a))}</span> ${escapeHtml(s.statement)}</span>
+      <span class="path-a">↳ ${escapeHtml(s.cdLabel)}</span></li>`;
+    return `<li class="path-step">
+      <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(s.num_a))}</span> ${escapeHtml(s.statement)}</span>
+      <span class="path-a">↳ ${s.yes ? 'Yes' : 'No'}</span></li>`;
+  }).join('');
+  if (terminalStep) stepsHTML += `<li class="path-step path-step--final">
+      <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(terminalStep.num))}</span> ${escapeHtml(terminalStep.text)}</span>
+      <span class="path-a path-a--id">↳ <em>${escapeHtml(terminalStep.species)}</em></span></li>`;
+
+  return `
+    <details class="path-details path-details--cpkey path-details--cpkey-cd" data-species="${escapeAttr(speciesName)}">
+      <summary class="path-summary">
+        <span class="path-summary-label">C&amp;P+ underside-only path — ${totalSteps} step${totalSteps !== 1 ? 's' : ''}, ${skippedCount} skipped</span>
+      </summary>
+      <div class="path-content">
+        <p class="path-skip-note">Path through C&amp;P+ with upperside, forewing space 2–3, and genital couplets answered "Cannot determine".</p>
+        <ol class="path-steps">${stepsHTML}</ol>
+      </div>
+    </details>`;
+}
+
 // Build the plain-text form of a rendered C&P key path panel and copy it to the
 // clipboard. Species name is the header; each step becomes "Key N <statement> — Yes/No".
 function copyCPKeyPath(details, btn) {
@@ -1007,6 +1116,7 @@ function showSpeciesDetailInline(sp) {
     ${noteHTML}
     ${buildPathDisplay(sp.paths, sp.note, sp.resultFeatures, sp.name)}
     ${buildCPKeyPath(sp.name)}
+    ${buildCPPlusUndersidePath(sp.name)}
     <a class="btn-inat" href="${escapeAttr(sp.inat_url)}" target="_blank" rel="noopener noreferrer">
       ${iconExternal()} View on iNaturalist
     </a>
