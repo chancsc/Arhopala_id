@@ -1060,7 +1060,6 @@ function buildCPPlusUndersidePath(speciesName) {
         <span class="path-summary-label">C&amp;P+ underside-only path — ${totalSteps} step${totalSteps !== 1 ? 's' : ''}, ${skippedCount} skipped</span>
       </summary>
       <div class="path-content">
-        <p class="path-skip-note">Path through C&amp;P+ with upperside, forewing space 2–3, and genital couplets answered "Cannot determine".</p>
         <ol class="path-steps">${stepsHTML}</ol>
       </div>
     </details>`;
