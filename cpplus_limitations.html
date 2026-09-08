@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="11 Arhopala species that require an upperside, forewing-space, or genital character to be uniquely separated in C&P+.">
+  <meta name="theme-color" content="#2d5a27">
+  <title>Arhopala ID — C&P+ Limitations</title>
+  <link rel="stylesheet" href="css/style.css?v=20260717a">
+  <script src="js/theme.js?v=20260717a"></script>
+  <style>
+    /* Badge tokens — defined in root for all three theme states */
+    :root {
+      --badge-up-bg:   #dde8f4;
+      --badge-up-text: #1e4a78;
+      --badge-fw-bg:   #f5e7cc;
+      --badge-fw-text: #7a5000;
+      --badge-gn-bg:   #e6eae6;
+      --badge-gn-text: #3a4c3a;
+      --lim-surface:   #eef3ed;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --badge-up-bg:   #162840;
+        --badge-up-text: #7ab0e0;
+        --badge-fw-bg:   #3a2000;
+        --badge-fw-text: #d49840;
+        --badge-gn-bg:   #1e2a1e;
+        --badge-gn-text: #8aaa8a;
+        --lim-surface:   #1c261c;
+      }
+    }
+    :root[data-theme="dark"] {
+      --badge-up-bg:   #162840;
+      --badge-up-text: #7ab0e0;
+      --badge-fw-bg:   #3a2000;
+      --badge-fw-text: #d49840;
+      --badge-gn-bg:   #1e2a1e;
+      --badge-gn-text: #8aaa8a;
+      --lim-surface:   #1c261c;
+    }
+
+    .lim-content {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 1rem 1rem 3rem;
+    }
+
+    .lim-hero {
+      margin: 1.5rem 0 2rem;
+    }
+    .lim-hero h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 0 0 0.35rem;
+      color: var(--text);
+      text-wrap: balance;
+    }
+    .lim-hero p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin: 0;
+      line-height: 1.55;
+    }
+
+    .lim-stat {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.35rem;
+      background: var(--lim-surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.5rem 0.9rem;
+      margin: 1rem 0 1.5rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .lim-stat strong {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .lim-section-title {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin: 2rem 0 0.75rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .lim-note {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+      margin: 0.5rem 0 1.5rem;
+      padding: 0.65rem 0.9rem;
+      border-left: 3px solid var(--border);
+    }
+
+    /* Species entries */
+    .lim-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .lim-entry {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0.3rem 0.75rem;
+      padding: 0.85rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .lim-entry:first-child {
+      border-top: 1px solid var(--border);
+    }
+
+    .lim-entry-name {
+      font-style: italic;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+      grid-column: 1;
+      grid-row: 1;
+      align-self: start;
+    }
+    .lim-entry-name span {
+      font-weight: 400;
+      font-style: normal;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-left: 0.4rem;
+    }
+
+    .lim-badges {
+      grid-column: 2;
+      grid-row: 1;
+      display: flex;
+      gap: 0.35rem;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .lim-badge {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      padding: 0.2rem 0.5rem;
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+    .lim-badge--up {
+      background: var(--badge-up-bg);
+      color: var(--badge-up-text);
+    }
+    .lim-badge--fw {
+      background: var(--badge-fw-bg);
+      color: var(--badge-fw-text);
+    }
+    .lim-badge--gn {
+      background: var(--badge-gn-bg);
+      color: var(--badge-gn-text);
+    }
+
+    .lim-entry-keys {
+      grid-column: 1 / -1;
+      grid-row: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .lim-key-row {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      display: flex;
+      gap: 0.5rem;
+      align-items: baseline;
+    }
+    .lim-key-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: var(--lim-surface);
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 0.1rem 0.4rem;
+      white-space: nowrap;
+      flex-shrink: 0;
+      font-variant-numeric: tabular-nums;
+    }
+    .lim-key-text {
+      color: var(--text);
+      font-size: 0.82rem;
+      flex: 1;
+    }
+
+    .lim-paired {
+      grid-column: 1 / -1;
+      grid-row: 3;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 0.1rem;
+    }
+    .lim-paired em {
+      font-style: italic;
+    }
+
+    .lim-explainer {
+      margin-top: 2rem;
+      padding: 1rem 1.1rem;
+      background: var(--lim-surface);
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .lim-explainer strong {
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="app-topbar">
+    <button class="menu-btn app-topbar-menu-btn" id="menu-btn" aria-label="Open menu">&#9776;</button>
+    <span class="app-topbar-title">C&amp;P+ Limitations</span>
+  </div>
+
+  <div class="lim-content">
+
+    <div class="lim-hero">
+      <h3>Species requiring an unassessable character</h3>
+      <p>In C&amp;P+, couplets involving the <strong>upperside</strong>, <strong>forewing spaces 2–3</strong>, or <strong>genital</strong> characters offer a <em>Cannot determine</em> option. For most species this makes no difference — enough underside characters remain to rank them uniquely. But 11 species rely on at least one of these skippable couplets as their sole distinguishing step. When those couplets are skipped, they tie with a sibling species rather than reaching a unique rank&#nbsp;#1.</p>
+    </div>
+
+    <div class="lim-stat">
+      <strong>98 / 109</strong> species reach rank #1 from underside characters alone
+    </div>
+
+    <p class="lim-note">These are genuine taxonomic limitations of the C&amp;P key, not tool errors. The key itself states that certain pairs require the male upperside or a genitalia dissection to separate. C&amp;P+ is transparent about this: when the decisive character cannot be observed, the two candidates share the top rank.</p>
+
+    <h4 class="lim-section-title">The 11 affected species</h4>
+
+    <div class="lim-list">
+
+      <div class="lim-entry">
+        <div class="lim-entry-name"><em>A.</em> avatha<span>tailed</span></div>
+        <div class="lim-badges"><span class="lim-badge lim-badge--up">Upperside</span></div>
+        <div class="lim-entry-keys">
+          <div class="lim-key-row">
+            <span class="lim-key-label">K31</span>
+            <span class="lim-key-text">Underside forewing without basal cell spot. ♂ upperside very dark bluish violet; border ~1.0–2.0 mm. ♀ purple. Fwl 16.0 mm.</span>
+          </div>
+        </div>
+        <div class="lim-paired">Tied with: <em>A. agesilaus</em></div>
+      </div>
+
+      <div class="lim-entry">
+        <div class="lim-entry-name"><em>A.</em> baluensis<span>tailed</span></div>
+        <div class="lim-badges"><span class="lim-badge lim-badge--gn">Genital</span></div>
+        <div class="lim-entry-keys">
+          <div class="lim-key-row">
+            <span class="lim-key-label">K39</span>
+            <span class="lim-key-text">♂ valva unilobate. ♂ upperside very dark purple blue, border 0.5 mm. Very difficult to separate from small <em>A. amphimuta</em> without dissection. Fwl 18.0–20.0 mm.</span>
+          </div>
+        </div>
+        <div class="lim-paired">Tied with: <em>A. amphimuta</em>, <em>A. major</em></div>
+      </div>
+
+      <div class="lim-entry">
+        <div class="lim-entry-name"><em>A.</em> epimete<span>tailless</span></div>
+        <div class="lim-badges"><span class="lim-badge lim-badge--fw">FW spaces</span></div>
+        <div class="lim-entry-keys">
+          <div class="lim-key-row">
+            <span class="lim-key-label">K82</span>
+            <span class="lim-key-text">♂ hindwing cell not longer than half the wing. FW postdiscal spots in spaces 2–3 not wider than those above vein 4 (except tailless <em>A. epimete</em>).</span>
+          </div>
+          <div class="lim-key-row">
+            <span class="lim-key-label">K86</span>
+            <span class="lim-key-text">Underside forewing lower part of postdiscal band much wider than the upper part; costal spot in space 10 present. Hindwing tailless. ♂ upperside bright blue, forewing border 2.0 mm.</span>
+          </div>
+        </div>
+        <div class="lim-paired">Tied with: <em>A. agelastus</em> and allies</div>
+      </div>
+
+      <div class="lim-entry">
+        <div class="lim-entry-name"><em>A.</em> evansi<span>tailed</span></div>
+        <div class="lim-badges"><span class="lim-badge lim-badge--fw">FW spaces</span></div>
+        <div class="lim-entry-keys">
+          <div class="lim-key-row">
+            <span class="lim-key-label">K74</span>
+            <span class="lim-key-text">Underside with a slatey glaze; FW postdiscal spots in spaces 2–3 in echelon and upright, larger than spots above; HW postdiscal spot 6 outwardly convex with inner edge sinuous.</span>
+          </div>
+        </div>
+        <div class="lim-paired">Tied with: <em>A. aenigma</em>, <em>A. aroa</em>, <em>A. normani</em>, <em>A. phanda</em></div>
+      </div>
+
+      <div class="lim-entry">
+        <div class="lim-entry-name"><em>A.</em> horsfieldi<span>tailed</span></div>
+        <div class="lim-badges"><span class="lim-badge lim-badge--fw">FW spaces</span><span class="lim-badge lim-badge--up">Upperside</span></div>
+        <div class="lim-entry-keys">
+          <div class="lim-key-row">
+            <span class="lim-key-label">K82</span>
+            <span class="lim-key-text">♂ hindwing cell not longer than half the wing. FW postdiscal spots in spaces 2–3 not wider than those above vein 4.</span>
+          </div>
+          <div class="lim-key-row">
+            <span class="lim-key-label">K96</span>
+            <span class="lim-key-text">♂ upperside green. Underside HW postdiscal spot 6 usually outwardly concave.</span>
+          </div>
+          <div class="lim-key-row">
+            <span class="lim-key-label">K99</span>
+            <span class="lim-key-text">♂ upperside with very broad black borders, reaching the cell on both wings. Underside markings broad. Fwl 21.0–23.0 mm.</span>
+          </div>
+        </div>
+        <div class="lim-paired">Tied with: <em>A. eumolphus</em>, <em>A. hellenore</em></div>
+      </div>
+
+      <div class="lim-entry">
+        <div class="lim-entry-name"><em>A.</em> inornata<span>tailed</span></div>
+        <div class="lim-badges"><span class="lim-badge lim-badge--up">Upperside</span></div>
+        <div class="lim-entry-keys">
+          <div class="lim-key-row">
+            <span class="lim-key-label">K54</span>
+            <span class="lim-key-text">Underside HW without tornal green scales; tornus very rounded. ♂ upperside bright violet blue, border a thread. ♀ bluer with narrow borders, only 0.5 mm on HW. Fwl 21.0 mm.</span>
+          </div>
+        </div>
+        <div class="lim-paired">Tied with: <em>A. antimuta</em></div>
+      </div>
+
+      <div class="lim-entry">
+        <div class="lim-entry-name"><em>A.</em> lurida<span>tailed</span></div>
+        <div class="lim-badges"><span class="lim-badge lim-badge--up">Upperside</span></div>
+        <div class="lim-entry-keys">
+          <div class="lim-key-row">
+            <span class="lim-key-label">K29</span>
+            <span class="lim-key-text">♂ upperside FW discal patch smaller, almost confined to bases of spaces 2–3; border increasing to ~1.0 mm at apex. Underside markings better defined and darker than in <em>A. atosia</em>.</span>
+          </div>
+        </div>
+        <div class="lim-paired">Tied with: <em>A. atosia</em></div>
+      </div>
+
+      <div class="lim-entry">
+        <div class="lim-entry-name"><em>A.</em> perimuta<span>tailed</span></div>
+        <div class="lim-badges"><span class="lim-badge lim-badge--up">Upperside</span></div>
+        <div class="lim-entry-keys">
+          <div class="lim-key-row">
+            <span class="lim-key-label">K51</span>
+            <span class="lim-key-text">Underside HW with a central yellowish area and no tornal green scales. ♂ upperside shining blue, forewing border 1.5 mm. Fwl 17.0 mm.</span>
+          </div>
+        </div>
+        <div class="lim-paired">Tied with: <em>A. metamuta</em></div>
+      </div>
+
+      <div class="lim-entry">
+        <div class="lim-entry-name"><em>A.</em> phanda<span>tailed</span></div>
+        <div class="lim-badges"><span class="lim-badge lim-badge--fw">FW spaces</span><span class="lim-badge lim-badge--up">Upperside</span></div>
+        <div class="lim-entry-keys">
+          <div class="lim-key-row">
+            <span class="lim-key-label">K74</span>
+            <span class="lim-key-text">Underside without a glaze; occasionally with a faint rosy wash in <em>A. phanda</em>.</span>
+          </div>
+          <div class="lim-key-row">
+            <span class="lim-key-label">K76</span>
+            <span class="lim-key-text">Underside postdiscal band close to the inner submarginal lunules on both wings. ♂ upperside darker and more violet than in <em>A. evansi</em>. Fwl 17.0–19.0 mm.</span>
+          </div>
+        </div>
+        <div class="lim-paired">Tied with: <em>A. aenigma</em></div>
+      </div>
+
+      <div class="lim-entry">
+        <div class="lim-entry-name"><em>A.</em> selta<span>tailed</span></div>
+        <div class="lim-badges"><span class="lim-badge lim-badge--up">Upperside</span></div>
+        <div class="lim-entry-keys">
+          <div class="lim-key-row">
+            <span class="lim-key-label">K71</span>
+            <span class="lim-key-text">♂ FW termen rounded; upperside violet blue, FW border 0.75 mm expanding to ~1.5 mm at apex, HW border 1.25 mm. ♀ purplish blue. Underside HW postdiscal band markings.</span>
+          </div>
+        </div>
+        <div class="lim-paired">Tied with: <em>A. phaenops</em></div>
+      </div>
+
+      <div class="lim-entry">
+        <div class="lim-entry-name"><em>A.</em> tameanga<span>tailed</span></div>
+        <div class="lim-badges"><span class="lim-badge lim-badge--fw">FW spaces</span><span class="lim-badge lim-badge--up">Upperside</span></div>
+        <div class="lim-entry-keys">
+          <div class="lim-key-row">
+            <span class="lim-key-label">K82</span>
+            <span class="lim-key-text">♂ hindwing cell not longer than half the wing. FW postdiscal spots in spaces 2–3 not wider than those above vein 4.</span>
+          </div>
+          <div class="lim-key-row">
+            <span class="lim-key-label">K96</span>
+            <span class="lim-key-text">♂ upperside not green. Underside HW postdiscal spot 6 usually outwardly straight.</span>
+          </div>
+          <div class="lim-key-row">
+            <span class="lim-key-label">K98</span>
+            <span class="lim-key-text">♂ FW with apex rather acute and termen nearly straight. Underside markings clearly defined. ♂ upperside dark violet blue. ♀ purple blue, HW border at least 2.0 mm. Borneo.</span>
+          </div>
+        </div>
+        <div class="lim-paired">Tied with: <em>A. acta</em></div>
+      </div>
+
+    </div><!-- .lim-list -->
+
+    <div class="lim-explainer">
+      <strong>Why this happens.</strong> These species pairs are separated in the C&amp;P key by a couplet that requires observing the male upperside, measuring forewing spaces 2–3, or examining genital structure. C&amp;P+ marks those couplets with a <em>Cannot determine</em> option rather than forcing an answer. When the option is used, the scoring system treats the couplet as neutral and both candidates remain tied. The affected pairs are <strong>genuinely indistinguishable from underside photographs alone</strong> — the tool is reflecting reality, not failing to identify them.
+    </div>
+
+  </div><!-- .lim-content -->
+
+  <!-- Hamburger menu overlay -->
+  <div id="menu-overlay" class="menu-overlay" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="menu-panel">
+      <div class="menu-header">
+        <h2 class="menu-title">Arhopala ID</h2>
+        <button class="theme-toggle-btn" onclick="ArTheme.toggle()" aria-label="Switch to dark mode"><span class="theme-icon">🌙</span></button>
+        <button id="menu-close" class="menu-close" aria-label="Close menu">✕</button>
+      </div>
+      <nav class="menu-nav" aria-label="Navigation">
+        <a href="index.html" class="menu-nav-item" id="nav-home" aria-label="Home — where to start">
+          <span class="menu-nav-item-label">Home</span>
+          <span class="menu-nav-item-desc">Where to start</span>
+        </a>
+        <a href="id_keys.html" class="menu-nav-item" id="nav-cpkey" aria-label="C&amp;P Key — original C&amp;P dichotomous key">
+          <span class="menu-nav-item-label">C&amp;P Key</span>
+          <span class="menu-nav-item-desc">Original C&amp;P dichotomous key</span>
+        </a>
+        <a href="cpplus.html" class="menu-nav-item" aria-label="C&amp;P+ — enhanced C&amp;P key with Cannot-determine skips">
+          <span class="menu-nav-item-label">C&amp;P+</span>
+          <span class="menu-nav-item-desc">Enhanced key with Cannot-determine skips</span>
+        </a>
+        <a href="species.html" class="menu-nav-item" id="nav-species" aria-label="Species Search — browse all covered taxa">
+          <span class="menu-nav-item-label">Species Search</span>
+          <span class="menu-nav-item-desc">Browse all covered taxa</span>
+        </a>
+        <a href="guide.html" class="menu-nav-item" id="nav-guide" aria-label="Visual Guide — wing diagrams and terminology">
+          <span class="menu-nav-item-label">Visual Guide</span>
+          <span class="menu-nav-item-desc">Wing diagrams &amp; terminology</span>
+        </a>
+        <a href="about.html" class="menu-nav-item" id="nav-about" aria-label="About — how to use this app">
+          <span class="menu-nav-item-label">About</span>
+          <span class="menu-nav-item-desc">How to use this app</span>
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const overlay  = document.getElementById('menu-overlay');
+      const openBtn  = document.getElementById('menu-btn');
+      const closeBtn = document.getElementById('menu-close');
+      function open()  { overlay.classList.add('open');    document.body.style.overflow = 'hidden'; }
+      function close() { overlay.classList.remove('open'); document.body.style.overflow = ''; }
+      openBtn.addEventListener('click', open);
+      closeBtn.addEventListener('click', close);
+      overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape' && overlay.classList.contains('open')) close(); });
+    })();
+  </script>
+
+</body>
+</html>
