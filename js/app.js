@@ -1004,7 +1004,7 @@ function buildCPPlusUndersidePath(speciesName) {
     if (!choice) break;
     const inverted = cp.invert === true;
     const statement = inverted && cp.statement ? cp.statement : cp.a_text;
-    if (cp.cd_type) {
+    if (cp.cd_type || cp.upperside || cp.skippable) {
       const cdLabel = cp.cd_type === 'fw_spaces'
         ? 'Cannot determine — FW spaces 2–3 not assessable'
         : cp.cd_type === 'genital'
