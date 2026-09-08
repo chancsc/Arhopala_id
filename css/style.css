@@ -1068,6 +1068,16 @@ details[open] .path-summary::before { content: '▼ '; }
   :root:not([data-theme="light"]) .cpkey-copy--done { color: #5ec45e; border-color: #5ec45e; }
 }
 
+/* Inline guide reference link inside a C&P couplet statement */
+.ks-guide-link {
+  color: var(--primary);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
+  white-space: nowrap;
+}
+.ks-guide-link:hover { text-decoration-style: solid; }
+
 .path-details--cpkey-cd .path-summary {
   background: var(--surface-blue);
   color: var(--blue-text);
