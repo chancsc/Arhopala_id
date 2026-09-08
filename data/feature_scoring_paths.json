@@ -1495,52 +1495,16 @@
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
-    },
-    {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
-      "choice": "Cannot determine — FW space 1b obscured by hindwing"
+      "choice": "Yes — HW postdiscal band fully separated at vein 2 (two distinct portions with a clear gap)"
     },
     {
       "question": "On the forewing underside, is the basal cell spot absent?",
       "choice": "No — basal cell spot present on FW underside"
     },
     {
-      "question": "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?",
-      "choice": "No — no white patch just above the tornal lobe"
-    },
-    {
-      "question": "Is the specimen from Borneo (not the Malay Peninsula)?",
-      "choice": "No — Malay Peninsula specimen"
-    },
-    {
-      "question": "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?",
-      "choice": "Cannot determine — upperside not visible"
-    },
-    {
-      "question": "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?",
-      "choice": "No — HW band not strongly dislocated at vein 2"
-    },
-    {
-      "question": "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?",
-      "choice": "No — no weak tooth at vein 2 (underside like A. major/A. moolaiana, separated by upperside)"
-    },
-    {
-      "question": "Is the male's black border broad, 1.5 mm or wider?",
-      "choice": "Cannot determine — upperside not visible"
-    },
-    {
-      "question": "Is the male distinctly blue above, with the border widening from ~2.0 mm at the tornus to ~3.0 mm at the apex?",
-      "choice": "Cannot determine — upperside not visible"
-    },
-    {
-      "question": "What is the male's overall upperside colour?",
-      "choice": "Cannot determine — upperside not visible"
+      "question": "Do HW postdiscal spots 4 and 5 precisely align in a straight vertical line — distinct from the broader 5-6-7 echelon?",
+      "choice": "Yes — HW spots 4 and 5 precisely aligned in a straight vertical line (A. kurzi)"
     }
   ],
   "Arhopala delta": [
@@ -1663,10 +1627,6 @@
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
       "choice": "Yes — HW postdiscal band fully separated at vein 2 (two distinct portions with a clear gap)"
     },
@@ -1713,20 +1673,20 @@
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
-      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
-      "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
-    },
-    {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
       "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "No — no dark patch present in FW space 1b"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+    },
+    {
+      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
+      "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
     },
     {
       "question": "On the forewing underside, is the basal cell spot absent?",
@@ -1795,20 +1755,20 @@
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
-      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
-      "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
-    },
-    {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
       "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "No — no dark patch present in FW space 1b"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+    },
+    {
+      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
+      "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
     },
     {
       "question": "On the forewing underside, is the basal cell spot absent?",
@@ -1885,20 +1845,20 @@
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
-      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
-      "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
-    },
-    {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
       "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "No — no dark patch present in FW space 1b"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+    },
+    {
+      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
+      "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
     },
     {
       "question": "On the forewing underside, is the basal cell spot absent?",
@@ -1971,20 +1931,20 @@
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
-      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
-      "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
-    },
-    {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
       "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "No — no dark patch present in FW space 1b"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+    },
+    {
+      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
+      "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
     },
     {
       "question": "On the forewing underside, is the basal cell spot absent?",
@@ -2055,10 +2015,6 @@
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
       "choice": "Yes — HW postdiscal band fully separated at vein 2 (two distinct portions with a clear gap)"
     },
@@ -2105,20 +2061,20 @@
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
-      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
-      "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
-    },
-    {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
       "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "No — no dark patch present in FW space 1b"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+    },
+    {
+      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
+      "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
     },
     {
       "question": "On the forewing underside, is the basal cell spot absent?",
@@ -2187,20 +2143,20 @@
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
-      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
-      "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
-    },
-    {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
       "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "No — no dark patch present in FW space 1b"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+    },
+    {
+      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
+      "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
     },
     {
       "question": "On the forewing underside, is the basal cell spot absent?",
@@ -2281,20 +2237,20 @@
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
-      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
-      "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
-    },
-    {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
       "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "No — no dark patch present in FW space 1b"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+    },
+    {
+      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
+      "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
     },
     {
       "question": "On the forewing underside, is the basal cell spot absent?",
@@ -2355,20 +2311,20 @@
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
-      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
-      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
-    },
-    {
-      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
-      "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
-    },
-    {
       "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
       "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
     },
     {
       "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
       "choice": "No — no dark patch present in FW space 1b"
+    },
+    {
+      "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
+      "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
+    },
+    {
+      "question": "Within the amphimuta group (echelon HW spots 5–7), which subgroup best fits the specimen?",
+      "choice": "Spots rounded; tailless — cilia may be prolonged but no distinct tail at vein 2"
     },
     {
       "question": "On the forewing underside, is the basal cell spot absent?",
@@ -2429,6 +2385,14 @@
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
+    },
+    {
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
+      "choice": "No — no dark patch present in FW space 1b"
+    },
+    {
       "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
       "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
@@ -2479,6 +2443,14 @@
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
+    },
+    {
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
+      "choice": "No — no dark patch present in FW space 1b"
+    },
+    {
       "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
       "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
@@ -2493,30 +2465,6 @@
     {
       "question": "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?",
       "choice": "Completely dislocated — band splits into two entirely separate portions at vein 2"
-    },
-    {
-      "question": "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?",
-      "choice": "Normal — spots normal-sized, with a clear gap from the end-cell bar"
-    },
-    {
-      "question": "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?",
-      "choice": "No — spot 6 not sinuous/concave, or no FW costal spot in space 10"
-    },
-    {
-      "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
-      "choice": "Yes — FW postdiscal band continuous and unbroken"
-    },
-    {
-      "question": "Are the hindwing underside postdiscal spots more quadrate (squarish or banded) rather than rounded, with the forewing postdiscal spot in space 2 stepped outward toward the termen?",
-      "choice": "Yes — HW spots more quadrate/banded; FW space 2 stepped outward toward the termen"
-    },
-    {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
-      "choice": "No — no dark patch present in FW space 1b"
-    },
-    {
-      "question": "On the male upperside, are both the forewing and hindwing exactly the same shade of blue in all lights?",
-      "choice": "Yes — both wings same shade of blue in all lights; female more purple (FW 16.0–18.0 mm)"
     }
   ],
   "Arhopala muta maranda": [
@@ -2557,6 +2505,14 @@
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
+    },
+    {
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
+      "choice": "No — no dark patch present in FW space 1b"
+    },
+    {
       "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
       "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
@@ -2571,30 +2527,6 @@
     {
       "question": "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?",
       "choice": "Completely dislocated — band splits into two entirely separate portions at vein 2"
-    },
-    {
-      "question": "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?",
-      "choice": "Normal — spots normal-sized, with a clear gap from the end-cell bar"
-    },
-    {
-      "question": "Is hindwing postdiscal spot 6 outwardly sinuous or concave, with a costal spot present in forewing underside space 10, above the end-cell bar?",
-      "choice": "No — spot 6 not sinuous/concave, or no FW costal spot in space 10"
-    },
-    {
-      "question": "Is the forewing underside postdiscal band continuous and unbroken, often with a small spot at the base of space 3?",
-      "choice": "Yes — FW postdiscal band continuous and unbroken"
-    },
-    {
-      "question": "Are the hindwing underside postdiscal spots more quadrate (squarish or banded) rather than rounded, with the forewing postdiscal spot in space 2 stepped outward toward the termen?",
-      "choice": "Yes — HW spots more quadrate/banded; FW space 2 stepped outward toward the termen"
-    },
-    {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
-      "choice": "No — no dark patch present in FW space 1b"
-    },
-    {
-      "question": "On the male upperside, are both the forewing and hindwing exactly the same shade of blue in all lights?",
-      "choice": "No — FW dark bright blue; HW slightly paler and more glistening; border expands toward apex (FW 17.0–19.0 mm)"
     }
   ],
   "Arhopala perimuta regina": [
@@ -6443,6 +6375,14 @@
       "choice": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)"
     },
     {
+      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
+      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
+    },
+    {
+      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
+      "choice": "No — no dark patch present in FW space 1b"
+    },
+    {
       "question": "Is the forewing postdiscal band incomplete, ending at vein 7 (no spot 9)?",
       "choice": "No — FW postdiscal band complete (or only partially dislocated at vein 4)"
     },
@@ -6457,18 +6397,6 @@
     {
       "question": "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?",
       "choice": "Completely dislocated — band splits into two entirely separate portions at vein 2"
-    },
-    {
-      "question": "On the hindwing underside, how large are the sub-discal spots, and how close is the row to the end-cell bar?",
-      "choice": "Large — spots large, almost touching the end-cell bar"
-    },
-    {
-      "question": "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?",
-      "choice": "No — HW postdiscal band continuous or not clearly separated at vein 2"
-    },
-    {
-      "question": "Is there a restricted dark patch in FW space 1b (under the forewing cell), bounded outwardly by a pale line?",
-      "choice": "No — no dark patch present in FW space 1b"
     }
   ],
   "Alea subgroup — phaenops / normani / sublustris (unresolved)": [
