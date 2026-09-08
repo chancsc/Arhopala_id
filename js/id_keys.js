@@ -37,20 +37,25 @@ const ks = {
   expandedName: null,
 };
 
-const ANSWERS_KEY = 'arhopala-ks-answers-v1';
 const GENUS_MARKER = 'Arhopala';
 
+function ksAnswersKey() {
+  return (typeof window !== 'undefined' && window.cpPlusMode)
+    ? 'arhopala-ks-answers-cpplus-v1'
+    : 'arhopala-ks-answers-v1';
+}
+
 function ksSaveAnswers() {
-  try { localStorage.setItem(ANSWERS_KEY, JSON.stringify({ answers: ks.answers })); } catch (e) {}
+  try { localStorage.setItem(ksAnswersKey(), JSON.stringify({ answers: ks.answers })); } catch (e) {}
 }
 
 function ksClearAnswers() {
-  try { localStorage.removeItem(ANSWERS_KEY); } catch (e) {}
+  try { localStorage.removeItem(ksAnswersKey()); } catch (e) {}
 }
 
 function ksLoadAnswers() {
   try {
-    const raw = localStorage.getItem(ANSWERS_KEY);
+    const raw = localStorage.getItem(ksAnswersKey());
     if (!raw) return [];
     const data = JSON.parse(raw);
     if (!data || !Array.isArray(data.answers)) return [];
