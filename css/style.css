@@ -1074,7 +1074,6 @@ details[open] .path-summary::before { content: '▼ '; }
   text-decoration: underline;
   text-decoration-style: dotted;
   text-underline-offset: 2px;
-  white-space: nowrap;
 }
 .ks-guide-link:hover { text-decoration-style: solid; }
 
