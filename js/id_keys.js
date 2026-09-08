@@ -138,7 +138,9 @@ function ksSkipNext(cp) {
   if (a.couplet) return a.couplet;
   const b = ksChoose(cp, 'B');
   if (b.couplet) return b.couplet;
-  return null; // both branches terminal — skip not possible
+  // Both branches terminal — if upperside/cd_type couplet, allow skip to show unresolved pair
+  if (cp.upperside || cp.cd_type) return { unresolved: true, numA: cp.num_a, numB: cp.num_b };
+  return null;
 }
 
 function ksReplayHistory() {
@@ -158,6 +160,16 @@ function ksReplayHistory() {
     if (a.choice === 'skip') {
       const next = ksSkipNext(cp);
       if (!next) { ks.answers = ks.answers.slice(0, i); break; }
+      if (next.unresolved) {
+        const textA = ks.leads[String(next.numA)] || '';
+        const textB = ks.leads[String(next.numB)] || '';
+        ks.result = { unresolved: true, items: [
+          { leadNum: next.numA, text: textA, speciesName: ksExtractSpecies(textA) },
+          { leadNum: next.numB, text: textB, speciesName: ksExtractSpecies(textB) }
+        ]};
+        ks.currentCouplet = null;
+        break;
+      }
       ks.currentCouplet = next;
       continue;
     }
@@ -360,6 +372,20 @@ function ksRenderCouplet() {
   if (!el) return;
 
   if (ks.result) {
+    if (ks.result.unresolved) {
+      const cards = ks.result.items.map(it => {
+        const info = ks.speciesInfo.get(it.speciesName) || {};
+        const inatHref = info.inat_url ? ksEscAttr(info.inat_url) : '';
+        return `<div class="ks-result-pair-item">
+          <p class="ks-result-species">Key ${ksEsc(String(it.leadNum))}: <em>${ksEsc(sciDisplay(it.speciesName))}</em></p>
+          ${info.common_name ? `<p class="ks-result-common">${ksEsc(info.common_name)}</p>` : ''}
+          <p class="ks-result-text">${ksEsc(it.text)}</p>
+          ${inatHref ? `<a class="ks-inat-link" href="${inatHref}" target="_blank" rel="noopener">View on iNaturalist &#8594;</a>` : ''}
+        </div>`;
+      }).join('');
+      el.innerHTML = `<div class="ks-result-card"><p class="ks-result-label">&#9658; Unresolved — upperside required to distinguish</p>${cards}</div>`;
+      return;
+    }
     const info = ks.speciesInfo.get(ks.result.speciesName) || {};
     const inatHref = info.inat_url ? ksEscAttr(info.inat_url) : '';
     el.innerHTML = `
@@ -489,6 +515,18 @@ function ksOnCoupletClick(e) {
     const next = ksSkipNext(cp);
     if (!next) return;
     ks.answers.push({ coupletId: id, choice: 'skip' });
+    if (next.unresolved) {
+      const textA = ks.leads[String(next.numA)] || '';
+      const textB = ks.leads[String(next.numB)] || '';
+      ks.result = { unresolved: true, items: [
+        { leadNum: next.numA, text: textA, speciesName: ksExtractSpecies(textA) },
+        { leadNum: next.numB, text: textB, speciesName: ksExtractSpecies(textB) }
+      ]};
+      ks.currentCouplet = null;
+      ksSaveAnswers();
+      ksRender();
+      return;
+    }
     ks.currentCouplet = next;
     ksSaveAnswers();
     ksRender();
