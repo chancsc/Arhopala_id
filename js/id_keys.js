@@ -60,7 +60,7 @@ function ksLoadAnswers() {
     const data = JSON.parse(raw);
     if (!data || !Array.isArray(data.answers)) return [];
     const valid = new Set((ks.couplets || []).map(c => c.id));
-    return data.answers.filter(a => valid.has(a.coupletId) && ['A', 'B', 'skip'].includes(a.choice));
+    return data.answers.filter(a => valid.has(a.coupletId) && ['A', 'B', 'skip', 'skip-a', 'skip-b'].includes(a.choice));
   } catch (e) { return []; }
 }
 
@@ -142,10 +142,11 @@ function ksChoose(cp, choice) {
 }
 
 function ksSkipNext(cp) {
-  // For skip (upperside couplets): advance via whichever branch continues to a couplet
   const a = ksChoose(cp, 'A');
-  if (a.couplet) return a.couplet;
   const b = ksChoose(cp, 'B');
+  // Both branches lead to further couplets → fork: user must choose a branch
+  if (a.couplet && b.couplet) return { fork: true, a: a.couplet, b: b.couplet };
+  if (a.couplet) return a.couplet;
   if (b.couplet) return b.couplet;
   // Both branches terminal — if upperside/cd_type couplet, allow skip to show unresolved pair
   if (cp.upperside || cp.cd_type) return { unresolved: true, numA: cp.num_a, numB: cp.num_b };
@@ -166,6 +167,13 @@ function ksReplayHistory() {
       break;
     }
 
+    if (a.choice === 'skip-a' || a.choice === 'skip-b') {
+      const branch = a.choice === 'skip-a' ? 'A' : 'B';
+      const r = ksChoose(cp, branch);
+      if (!r.couplet) { ks.answers = ks.answers.slice(0, i); break; }
+      ks.currentCouplet = r.couplet;
+      continue;
+    }
     if (a.choice === 'skip') {
       const next = ksSkipNext(cp);
       if (!next) { ks.answers = ks.answers.slice(0, i); break; }
@@ -179,7 +187,8 @@ function ksReplayHistory() {
         ks.currentCouplet = null;
         break;
       }
-      ks.currentCouplet = next;
+      // Legacy single-branch skip: route to A branch (or B if A is terminal)
+      ks.currentCouplet = next.fork ? next.a : next;
       continue;
     }
 
@@ -209,7 +218,7 @@ function ksScoreAll() {
     for (const n of cp.species_b) allNames.add(n);
   }
 
-  const answered = ks.answers.filter(a => a.choice !== 'skip');
+  const answered = ks.answers.filter(a => a.choice !== 'skip' && a.choice !== 'skip-a' && a.choice !== 'skip-b');
 
   ks.scores = [...allNames].map(name => {
     let score = 0, max = 0;
@@ -368,6 +377,10 @@ function ksRenderHistory() {
     const dispTag = `Key ${dispNum}`;
     if (a.choice === 'skip') {
       label = `${dispTag}: Skip`;
+    } else if (a.choice === 'skip-a') {
+      label = `${dispTag}: Skip → A`;
+    } else if (a.choice === 'skip-b') {
+      label = `${dispTag}: Skip → B`;
     } else {
       // Yes = choice A, unless the couplet is display-inverted (then Yes = B).
       const displayYes = cp.invert === true ? a.choice === 'B' : a.choice === 'A';
@@ -460,15 +473,29 @@ function ksRenderCouplet() {
   // couplets. The original C&P Key has no skip option — every couplet must
   // be answered, faithful to the published key.
   const cpPlus = typeof window !== 'undefined' && window.cpPlusMode;
-  const canSkip = cpPlus && (cp.upperside || cp.skippable || cp.cd_type) && ksSkipNext(cp) !== null;
-  const skipLabel = cp.cd_type === 'fw_spaces'
+  const skipNext = (cpPlus && (cp.upperside || cp.skippable || cp.cd_type)) ? ksSkipNext(cp) : null;
+  const canSkip = skipNext !== null;
+  const skipBaseLabel = cp.cd_type === 'fw_spaces'
     ? 'Cannot determine — FW spaces 2–3 hard to assess in resting photos'
     : cp.cd_type === 'genital'
       ? 'Cannot determine — genital character, not assessable from photos'
       : 'Cannot determine — upperside not visible in photo';
-  const skipRow = canSkip
-    ? `<div class="ks-btn-row"><button class="ks-btn ks-btn-skip" data-id="${ksEscAttr(cp.id)}" data-v="skip">${skipLabel}</button></div>`
-    : '';
+  let skipRow = '';
+  if (canSkip) {
+    if (skipNext.fork) {
+      // Both branches continue → show two "try each group" buttons so the user
+      // can follow either path rather than being silently sent down one branch.
+      const destA = cpPlus ? skipNext.a.num_a + 1 : skipNext.a.num_a;
+      const destB = cpPlus ? skipNext.b.num_a + 1 : skipNext.b.num_a;
+      const truncA = (cp.a_text || '').replace(/\.\s*$/, '').substring(0, 65);
+      const truncB = (cp.b_text || '').replace(/\.\s*$/, '').substring(0, 65);
+      skipRow = `<p class="ks-fork-label">${ksEsc(skipBaseLabel)} — try each group:</p>
+        <div class="ks-btn-row"><button class="ks-btn ks-btn-skip ks-btn-skip-branch" data-id="${ksEscAttr(cp.id)}" data-v="skip-a">&#8594; Key ${destA}: ${ksEsc(truncA)}…</button></div>
+        <div class="ks-btn-row"><button class="ks-btn ks-btn-skip ks-btn-skip-branch" data-id="${ksEscAttr(cp.id)}" data-v="skip-b">&#8594; Key ${destB}: ${ksEsc(truncB)}…</button></div>`;
+    } else {
+      skipRow = `<div class="ks-btn-row"><button class="ks-btn ks-btn-skip" data-id="${ksEscAttr(cp.id)}" data-v="skip">${ksEsc(skipBaseLabel)}</button></div>`;
+    }
+  }
 
   el.innerHTML = `
     <div class="ks-cp" id="ks-cp-current">
@@ -523,9 +550,20 @@ function ksOnCoupletClick(e) {
   if (!ks.currentCouplet || ks.currentCouplet.id !== id) return;
   const cp = ks.currentCouplet;
 
-  if (choice === 'skip') {
+  if (choice === 'skip' || choice === 'skip-a' || choice === 'skip-b') {
     const next = ksSkipNext(cp);
     if (!next) return;
+    // For fork skips (skip-a / skip-b), route to the chosen branch directly.
+    if (choice === 'skip-a' || choice === 'skip-b') {
+      const branch = choice === 'skip-a' ? 'A' : 'B';
+      const r = ksChoose(cp, branch);
+      if (!r.couplet) return;
+      ks.answers.push({ coupletId: id, choice });
+      ks.currentCouplet = r.couplet;
+      ksSaveAnswers();
+      ksRender();
+      return;
+    }
     ks.answers.push({ coupletId: id, choice: 'skip' });
     if (next.unresolved) {
       const textA = ks.leads[String(next.numA)] || '';
