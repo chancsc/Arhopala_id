@@ -1000,15 +1000,13 @@ function buildCPPlusUndersidePath(speciesName) {
   const steps = []; let cp = couplets.find(c => !c.cpplus_only) || couplets[0]; let terminalLead = null; let skippedCount = 0;
 
   // Prepend the gate couplet (cpplus_only) as Key 1 in C&P+ numbering. The gate
-  // leads (0 / 9) are not in species_paths, so derive the gate choice from
-  // whether the species' path passes through cp_1_212 (tailed branch = A)
-  // or not (tailless branch = B).
+  // leads (0 / 9) are not in species_paths; use the gate's own species_b list
+  // (tailless) to determine the gate choice for this species.
   const gateCp = couplets.find(c => c.cpplus_only);
   if (gateCp) {
-    const cp1_212 = couplets.find(c => c.id === 'cp_1_212');
-    const gateIsA = cp1_212 && (leadNums.includes(cp1_212.num_a) || leadNums.includes(cp1_212.num_b));
+    const tailless = (gateCp.species_b || []).some(s => s.split(' ').slice(0, 2).join(' ') === sp2);
     const gateStatement = gateCp.a_text;
-    steps.push({ num_a: gateCp.num_a, statement: gateStatement, yes: gateIsA });
+    steps.push({ num_a: gateCp.num_a, statement: gateStatement, yes: !tailless });
   }
 
   for (const lead of leadNums) {
