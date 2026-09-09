@@ -363,7 +363,9 @@ function ksRenderHistory() {
     const cp = ks.couplets.find(c => c.id === a.coupletId);
     if (!cp) return '';
     let label;
-    const dispTag = cp.display_label || `Key ${cp.num_a}`;
+    const cpPlus = typeof window !== 'undefined' && window.cpPlusMode;
+    const dispNum = cpPlus ? cp.num_a + 1 : cp.num_a;
+    const dispTag = `Key ${dispNum}`;
     if (a.choice === 'skip') {
       label = `${dispTag}: Skip`;
     } else {
@@ -371,7 +373,7 @@ function ksRenderHistory() {
       const displayYes = cp.invert === true ? a.choice === 'B' : a.choice === 'A';
       label = `${dispTag}: ${displayYes ? 'Yes' : 'No'}`;
     }
-    return `<span class="ks-hist-item" data-step="${i}" role="button" tabindex="0" title="Back to Key ${ksEscAttr(String(cp.num_a))}">${ksEsc(label)}</span>`;
+    return `<span class="ks-hist-item" data-step="${i}" role="button" tabindex="0" title="Back to Key ${ksEscAttr(String(dispNum))}">${ksEsc(label)}</span>`;
   }).filter(Boolean).join('<span class="ks-hist-sep">&#8250;</span>');
 
   el.innerHTML = `<div class="ks-hist">${items}</div>`;
@@ -470,7 +472,7 @@ function ksRenderCouplet() {
 
   el.innerHTML = `
     <div class="ks-cp" id="ks-cp-current">
-      <p class="ks-cp-label"><span class="ks-label-tag">${ksEsc(cp.display_label || `Key ${cp.num_a}`)}</span></p>
+      <p class="ks-cp-label"><span class="ks-label-tag">${ksEsc(`Key ${cpPlus ? cp.num_a + 1 : cp.num_a}`)}</span></p>
       ${hintHTML}
       <p class="ks-cp-statement">${stmtHTML}</p>
       <div class="ks-btn-row ks-btn-row--yesno">
