@@ -881,7 +881,7 @@ function buildCPKeyPath(speciesName) {
     .trim();
 
   const steps = [];
-  let cp = couplets[0];
+  let cp = couplets.find(c => !c.cpplus_only) || couplets[0];
   let terminalLead = null;
   for (const lead of leadNums) {
     if (!cp) break;
@@ -997,7 +997,7 @@ function buildCPPlusUndersidePath(speciesName) {
     .replace(/\s*\.*\s*\bArhopala\s+\w+(?:\s+\w+)?\s*$/, '')
     .replace(/\s{2,}/g, ' ').trim();
 
-  const steps = []; let cp = couplets[0]; let terminalLead = null; let skippedCount = 0;
+  const steps = []; let cp = couplets.find(c => !c.cpplus_only) || couplets[0]; let terminalLead = null; let skippedCount = 0;
   for (const lead of leadNums) {
     if (!cp) break;
     const choice = lead === cp.num_a ? 'A' : lead === cp.num_b ? 'B' : null;
