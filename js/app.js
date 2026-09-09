@@ -998,6 +998,19 @@ function buildCPPlusUndersidePath(speciesName) {
     .replace(/\s{2,}/g, ' ').trim();
 
   const steps = []; let cp = couplets.find(c => !c.cpplus_only) || couplets[0]; let terminalLead = null; let skippedCount = 0;
+
+  // Prepend the gate couplet (cpplus_only) as Key 1 in C&P+ numbering. The gate
+  // leads (0 / 9) are not in species_paths, so derive the gate choice from
+  // whether the species' path passes through cp_1_212 (tailed branch = A)
+  // or not (tailless branch = B).
+  const gateCp = couplets.find(c => c.cpplus_only);
+  if (gateCp) {
+    const cp1_212 = couplets.find(c => c.id === 'cp_1_212');
+    const gateIsA = cp1_212 && (leadNums.includes(cp1_212.num_a) || leadNums.includes(cp1_212.num_b));
+    const gateStatement = gateCp.a_text;
+    steps.push({ num_a: gateCp.num_a, statement: gateStatement, yes: gateIsA });
+  }
+
   for (const lead of leadNums) {
     if (!cp) break;
     const choice = lead === cp.num_a ? 'A' : lead === cp.num_b ? 'B' : null;
@@ -1039,19 +1052,21 @@ function buildCPPlusUndersidePath(speciesName) {
   }
 
   const totalSteps = steps.length + (terminalStep ? 1 : 0);
+  // C&P+ key numbers are offset by +1 (gate num_a=0 → Key 1, etc.)
+  const cpPlusNum = n => n + 1;
   let stepsHTML = steps.map(s => {
     if (s.connector) return `<li class="path-step path-step--connector">
-      <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(s.num))}</span> ${escapeHtml(s.text)}</span>
+      <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(cpPlusNum(s.num)))}</span> ${escapeHtml(s.text)}</span>
       <span class="path-a path-a--connector">↓</span></li>`;
     if (s.skipped) return `<li class="path-step path-step--skip">
-      <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(s.num_a))}</span> ${escapeHtml(s.statement)}</span>
+      <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(cpPlusNum(s.num_a)))}</span> ${escapeHtml(s.statement)}</span>
       <span class="path-a">↳ ${escapeHtml(s.cdLabel)}</span></li>`;
     return `<li class="path-step">
-      <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(s.num_a))}</span> ${escapeHtml(s.statement)}</span>
+      <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(cpPlusNum(s.num_a)))}</span> ${escapeHtml(s.statement)}</span>
       <span class="path-a">↳ ${s.yes ? 'Yes' : 'No'}</span></li>`;
   }).join('');
   if (terminalStep) stepsHTML += `<li class="path-step path-step--final">
-      <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(terminalStep.num))}</span> ${escapeHtml(terminalStep.text)}</span>
+      <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(cpPlusNum(terminalStep.num)))}</span> ${escapeHtml(terminalStep.text)}</span>
       <span class="path-a path-a--id">↳ <em>${escapeHtml(terminalStep.species)}</em></span></li>`;
 
   return `
