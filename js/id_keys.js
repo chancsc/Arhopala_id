@@ -68,6 +68,10 @@ function ksLoadAnswers() {
 
 function ksInitData(keyData, speciesData) {
   ks.couplets = keyData.couplets;
+  const cpPlus = typeof window !== 'undefined' && window.cpPlusMode;
+  if (!cpPlus) {
+    ks.couplets = ks.couplets.filter(c => !c.cpplus_only);
+  }
   ks.leads = keyData.leads;
 
   const sp2Map = new Map();
