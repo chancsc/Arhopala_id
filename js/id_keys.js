@@ -39,6 +39,13 @@ const ks = {
 
 const GENUS_MARKER = 'Arhopala';
 
+// Gate-redundant auto-advance: couplets that purely re-ask tailed vs tailless
+// (all species on one side tailed, all on the other tailless) are auto-answered
+// from Key 1 so the user never has to answer the same question twice.
+let ksGateRedundantIds = null; // Set<couplet.id>
+let ksTailedSet   = null;      // from gate.species_a
+let ksTaillessSet = null;      // from gate.species_b
+
 function ksAnswersKey() {
   return (typeof window !== 'undefined' && window.cpPlusMode)
     ? 'arhopala-ks-answers-cpplus-v1'
@@ -93,6 +100,24 @@ function ksInitData(keyData, speciesData) {
       inat_url: sp ? sp.inat_url : `https://www.inaturalist.org/search?q=${encodeURIComponent(sp2)}`,
     });
   }
+
+  // Identify couplets that purely re-ask tailed vs tailless (C&P+ only).
+  // Any such couplet can be auto-answered from Key 1 without user input.
+  const gate = ks.couplets.find(c => c.cpplus_only);
+  if (gate) {
+    ksTailedSet   = new Set(gate.species_a);
+    ksTaillessSet = new Set(gate.species_b);
+    ksGateRedundantIds = new Set();
+    for (const c of ks.couplets) {
+      if (c.cpplus_only || !c.species_a?.length || !c.species_b?.length) continue;
+      const aAllTailed   = c.species_a.every(s => ksTailedSet.has(s));
+      const aAllTailless = c.species_a.every(s => ksTaillessSet.has(s));
+      const bAllTailed   = c.species_b.every(s => ksTailedSet.has(s));
+      const bAllTailless = c.species_b.every(s => ksTaillessSet.has(s));
+      if ((aAllTailed && bAllTailless) || (aAllTailless && bAllTailed))
+        ksGateRedundantIds.add(c.id);
+    }
+  }
 }
 
 // ── Navigation (serial decision-node model) ──────────────────────────────────
@@ -139,6 +164,19 @@ function ksChoose(cp, choice) {
     return ksIsTerminal(cp.num_a) ? { terminal: cp.num_a } : ksResolve(cp.num_a + 1);
   }
   return ksResolve(cp.num_b); // B
+}
+
+// Returns 'A' or 'B' for a gate-redundant couplet, inferred from Key 1's answer.
+// Returns null if Key 1 hasn't been answered yet.
+function ksInferGateChoice(cp) {
+  const gateAns = ks.answers.find(a => {
+    const ac = ks.couplets.find(c => c.id === a.coupletId);
+    return ac && ac.cpplus_only;
+  });
+  if (!gateAns || (gateAns.choice !== 'A' && gateAns.choice !== 'B')) return null;
+  const isTailed = gateAns.choice === 'A'; // gate A = tailed, B = tailless
+  const aHasTailed = (cp.species_a || []).some(s => ksTailedSet && ksTailedSet.has(s));
+  return (isTailed === aHasTailed) ? 'A' : 'B';
 }
 
 function ksSkipNext(cp) {
@@ -320,7 +358,7 @@ function ksLinkifyHint(text) {
 
 function ksRenderCandidates() {
   const listEl = document.getElementById('ks-candidates');
-  const nonSkip = ks.answers.filter(a => a.choice !== 'skip').length;
+  const nonSkip = ks.answers.filter(a => a.choice !== 'skip' && !a.auto).length;
   if (nonSkip === 0) {
     listEl.innerHTML = '<p class="ks-empty">Answer key questions above to rank candidates.</p>';
     return;
@@ -381,6 +419,9 @@ function ksRenderHistory() {
       label = `${dispTag}: Skip → A`;
     } else if (a.choice === 'skip-b') {
       label = `${dispTag}: Skip → B`;
+    } else if (a.auto && ksGateRedundantIds && ksGateRedundantIds.has(cp.id)) {
+      const displayYes = cp.invert === true ? a.choice === 'B' : a.choice === 'A';
+      label = `${dispTag}: ${displayYes ? 'Yes' : 'No'} (auto)`;
     } else {
       // Yes = choice A, unless the couplet is display-inverted (then Yes = B).
       const displayYes = cp.invert === true ? a.choice === 'B' : a.choice === 'A';
@@ -512,15 +553,37 @@ function ksRenderCouplet() {
 
 function ksRender() {
   ksScoreAll();
+
+  // Auto-advance past couplets that purely re-ask tailed/tailless (Key 1 already
+  // answered this). Infer the correct branch and record it silently in history.
+  if (ksGateRedundantIds && ks.currentCouplet && !ks.result) {
+    while (ks.currentCouplet && !ks.result && ksGateRedundantIds.has(ks.currentCouplet.id)) {
+      const inferredChoice = ksInferGateChoice(ks.currentCouplet);
+      if (!inferredChoice) break;
+      const r = ksChoose(ks.currentCouplet, inferredChoice);
+      ks.answers.push({ coupletId: ks.currentCouplet.id, choice: inferredChoice, auto: true });
+      if (r.terminal != null) {
+        const text = ks.leads[String(r.terminal)] || '';
+        ks.result = { leadNum: r.terminal, text, speciesName: ksExtractSpecies(text) };
+        ks.currentCouplet = null;
+      } else if (r.couplet) {
+        ks.currentCouplet = r.couplet;
+      } else {
+        ks.answers.pop(); break;
+      }
+      ksSaveAnswers();
+    }
+    ksScoreAll();
+  }
+
   ksRenderHistory();
   ksRenderCouplet();
   ksRenderCandidates();
 
   const badge = document.getElementById('ks-answered-count');
-  const n = ks.answers.filter(a => a.choice !== 'skip').length;
+  const n = ks.answers.filter(a => a.choice !== 'skip' && !a.auto).length;
   if (badge) {
-    // Match the Feature Scoring counter: count meaningful answers (Yes/No),
-    // excluding Skips (the C&P equivalent of "Cannot determine").
+    // Count meaningful user answers (Yes/No), excluding Skips and auto-inferred steps.
     badge.textContent = n > 0 ? `${n} key${n !== 1 ? 's' : ''} answered` : '';
   }
 
