@@ -114,7 +114,8 @@ function ksInitData(keyData, speciesData) {
       const aAllTailless = c.species_a.every(s => ksTaillessSet.has(s));
       const bAllTailed   = c.species_b.every(s => ksTailedSet.has(s));
       const bAllTailless = c.species_b.every(s => ksTaillessSet.has(s));
-      if ((aAllTailed && bAllTailless) || (aAllTailless && bAllTailed))
+      const textMentionsTail = /tail/i.test(c.a_text || '') || /tail/i.test(c.b_text || '');
+      if (((aAllTailed && bAllTailless) || (aAllTailless && bAllTailed)) && textMentionsTail)
         ksGateRedundantIds.add(c.id);
     }
   }
