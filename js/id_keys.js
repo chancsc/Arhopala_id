@@ -41,7 +41,7 @@ const GENUS_MARKER = 'Arhopala';
 
 // Gate-redundant auto-advance: couplets that purely re-ask tailed vs tailless
 // (all species on one side tailed, all on the other tailless) are auto-answered
-// from Key 1 so the user never has to answer the same question twice.
+// from Key 0 so the user never has to answer the same question twice.
 let ksGateRedundantIds = null; // Set<couplet.id>
 let ksTailedSet   = null;      // from gate.species_a
 let ksTaillessSet = null;      // from gate.species_b
@@ -102,7 +102,7 @@ function ksInitData(keyData, speciesData) {
   }
 
   // Identify couplets that purely re-ask tailed vs tailless (C&P+ only).
-  // Any such couplet can be auto-answered from Key 1 without user input.
+  // Any such couplet can be auto-answered from Key 0 without user input.
   const gate = ks.couplets.find(c => c.cpplus_only);
   if (gate) {
     ksTailedSet   = new Set(gate.species_a);
@@ -167,8 +167,8 @@ function ksChoose(cp, choice) {
   return ksResolve(cp.num_b); // B
 }
 
-// Returns 'A' or 'B' for a gate-redundant couplet, inferred from Key 1's answer.
-// Returns null if Key 1 hasn't been answered yet.
+// Returns 'A' or 'B' for a gate-redundant couplet, inferred from Key 0's answer.
+// Returns null if Key 0 hasn't been answered yet.
 function ksInferGateChoice(cp) {
   const gateAns = ks.answers.find(a => {
     const ac = ks.couplets.find(c => c.id === a.coupletId);
@@ -412,7 +412,7 @@ function ksRenderHistory() {
     if (!cp) return '';
     let label;
     const cpPlus = typeof window !== 'undefined' && window.cpPlusMode;
-    const dispNum = cpPlus ? cp.num_a + 1 : cp.num_a;
+    const dispNum = cp.num_a;
     const dispTag = `Key ${dispNum}`;
     if (a.choice === 'skip') {
       label = `${dispTag}: Skip`;
@@ -527,8 +527,8 @@ function ksRenderCouplet() {
     if (skipNext.fork) {
       // Both branches continue → show two "try each group" buttons so the user
       // can follow either path rather than being silently sent down one branch.
-      const destA = cpPlus ? skipNext.a.num_a + 1 : skipNext.a.num_a;
-      const destB = cpPlus ? skipNext.b.num_a + 1 : skipNext.b.num_a;
+      const destA = skipNext.a.num_a;
+      const destB = skipNext.b.num_a;
       const truncA = (cp.a_text || '').replace(/\.\s*$/, '').substring(0, 65);
       const truncB = (cp.b_text || '').replace(/\.\s*$/, '').substring(0, 65);
       skipRow = `<p class="ks-fork-label">${ksEsc(skipBaseLabel)} — try each group:</p>
@@ -541,7 +541,7 @@ function ksRenderCouplet() {
 
   el.innerHTML = `
     <div class="ks-cp" id="ks-cp-current">
-      <p class="ks-cp-label"><span class="ks-label-tag">${ksEsc(`Key ${cpPlus ? cp.num_a + 1 : cp.num_a}`)}</span></p>
+      <p class="ks-cp-label"><span class="ks-label-tag">${ksEsc(`Key ${cp.num_a}`)}</span></p>
       ${hintHTML}
       <p class="ks-cp-statement">${stmtHTML}</p>
       <div class="ks-btn-row ks-btn-row--yesno">
@@ -555,7 +555,7 @@ function ksRenderCouplet() {
 function ksRender() {
   ksScoreAll();
 
-  // Auto-advance past couplets that purely re-ask tailed/tailless (Key 1 already
+  // Auto-advance past couplets that purely re-ask tailed/tailless (Key 0 already
   // answered this). Infer the correct branch and record it silently in history.
   if (ksGateRedundantIds && ks.currentCouplet && !ks.result) {
     while (ks.currentCouplet && !ks.result && ksGateRedundantIds.has(ks.currentCouplet.id)) {
