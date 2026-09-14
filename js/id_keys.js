@@ -366,8 +366,8 @@ function ksRenderCandidates() {
     return;
   }
 
-  const positive = ks.scores.filter(s => s.score > 0).length;
-  const cap = positive > 0 && positive < 8 ? positive : 8;
+  const consistent = ks.scores.filter(s => s.score === s.max).length;
+  const cap = consistent > 0 && consistent < 8 ? consistent : 8;
   const top = ks.scores.slice(0, cap);
   const medals = ['🥇', '🥈', '🥉'];
   // Bar length is relative to the leader's raw score, so it tracks the ranking
