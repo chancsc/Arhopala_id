@@ -521,7 +521,9 @@ function ksRenderCouplet() {
     ? 'Cannot determine — FW spaces 2–3 hard to assess in resting photos'
     : cp.cd_type === 'genital'
       ? 'Cannot determine — genital character, not assessable from photos'
-      : 'Cannot determine — upperside not visible in photo';
+      : cp.cd_type === 'morphology'
+        ? 'Cannot determine — character hard to assess from photo'
+        : 'Cannot determine — upperside not visible in photo';
   let skipRow = '';
   if (canSkip) {
     if (skipNext.fork) {
