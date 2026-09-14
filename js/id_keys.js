@@ -366,7 +366,9 @@ function ksRenderCandidates() {
     return;
   }
 
-  const top = ks.scores.slice(0, 8);
+  const positive = ks.scores.filter(s => s.score > 0).length;
+  const cap = positive > 0 && positive < 8 ? positive : 8;
+  const top = ks.scores.slice(0, cap);
   const medals = ['🥇', '🥈', '🥉'];
   // Bar length is relative to the leader's raw score, so it tracks the ranking
   // (score-primary) — the top candidate always shows the fullest bar.
