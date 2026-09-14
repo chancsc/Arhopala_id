@@ -257,7 +257,7 @@ function ksScoreAll() {
     for (const n of cp.species_b) allNames.add(n);
   }
 
-  const answered = ks.answers.filter(a => a.choice !== 'skip' && a.choice !== 'skip-a' && a.choice !== 'skip-b');
+  const answered = ks.answers.filter(a => a.choice !== 'skip');
 
   ks.scores = [...allNames].map(name => {
     let score = 0, max = 0;
@@ -267,11 +267,12 @@ function ksScoreAll() {
       const inA = cp.species_a.includes(name);
       const inB = cp.species_b.includes(name);
       if (!inA && !inB) continue; // couplet neutral for this taxon
+      const choice = a.choice === 'skip-a' ? 'A' : a.choice === 'skip-b' ? 'B' : a.choice;
       max++;
-      if (inA && a.choice === 'A') score++;
-      else if (inA && a.choice === 'B') score--;
-      else if (inB && a.choice === 'B') score++;
-      else if (inB && a.choice === 'A') score--;
+      if (inA && choice === 'A') score++;
+      else if (inA && choice === 'B') score--;
+      else if (inB && choice === 'B') score++;
+      else if (inB && choice === 'A') score--;
     }
     return { name, score, max };
   }).sort((a, b) => {
