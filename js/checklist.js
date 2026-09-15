@@ -332,6 +332,8 @@ const CHOICE_LINKS = new Map([
   ['A. zylda', 'https://www.inaturalist.org/observations?verifiable=true&taxon_id=1340244&preferred_place_id=6734'],
   ['A. sceva', 'https://www.inaturalist.org/observations?verifiable=true&taxon_id=888422&preferred_place_id=6734'],
   ['A. baluensis', 'https://www.inaturalist.org/observations?verifiable=true&taxon_id=888417&preferred_place_id=6734'],
+  ['spot in space 9', 'guide.html#fw-space9-costal-spot10'],
+  ['costal spot in FW space 10', 'guide.html#fw-space9-costal-spot10'],
   ['central cell spot is band-like, stretching entirely across the cell', 'guide.html#hw-central-cell-spot'],
   ["spot 6 is displaced above spot 5's level toward the end-cell bar", 'guide.html#spot6-upward-endcell'],
   ['postdiscal spots more quadrate/banded', 'guide.html#hw-spots-quadrate-banded'],
