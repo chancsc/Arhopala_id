@@ -308,8 +308,16 @@ function ksLinkify(text, phrase, url, cls) {
     + ksEsc(text.slice(idx + phrase.length));
 }
 
-function ksRenderText(text, phrase, url) {
-  return phrase ? ksLinkify(text, phrase, url) : ksEsc(text);
+function ksRenderText(text, phrase, url, extraLinks) {
+  let html = phrase ? ksLinkify(text, phrase, url) : ksEsc(text);
+  if (extraLinks) {
+    for (const lk of extraLinks) {
+      if (!lk.phrase || !lk.url) continue;
+      html = html.replace(ksEsc(lk.phrase),
+        `<a href="${ksEscAttr(lk.url)}" class="ks-guide-link" target="_blank" rel="noopener">${ksEsc(lk.phrase)}</a>`);
+    }
+  }
+  return html;
 }
 
 // epithet (lowercase second word) → iNaturalist URL, built once from speciesInfo.
@@ -528,7 +536,7 @@ function ksRenderCouplet() {
   // display-only flip (navigation/scoring read the data-v, so are unchanged).
   const inverted = cp.invert === true;
   const stmtText = inverted && cp.statement ? cp.statement : cp.a_text;
-  const stmtHTML = ksRenderText(stmtText, cp.guide_phrase, cp.guide_link);
+  const stmtHTML = ksRenderText(stmtText, cp.guide_phrase, cp.guide_link, cp.guide_links);
   const yesV = inverted ? 'B' : 'A';
   const noV = inverted ? 'A' : 'B';
 

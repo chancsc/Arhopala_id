@@ -2516,8 +2516,8 @@
       "upperside": false,
       "skippable": false,
       "hint": "",
-      "guide_phrase": "spot in space 6",
-      "guide_link": "guide.html#hw-spot6-position",
+      "guide_phrase": "",
+      "guide_link": "",
       "question_phrase": "",
       "question_link": "",
       "invert": false,
@@ -2540,6 +2540,16 @@
         "Arhopala silhetensis",
         "Arhopala sublustris",
         "Arhopala zambra"
+      ],
+      "guide_links": [
+        {
+          "phrase": "spot in space 9",
+          "url": "guide.html#fw-space9-costal-spot10"
+        },
+        {
+          "phrase": "costal spot in space 10",
+          "url": "guide.html#fw-space9-costal-spot10"
+        }
       ]
     },
     {
