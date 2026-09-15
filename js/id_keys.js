@@ -544,9 +544,21 @@ function ksRenderCouplet() {
     }
   }
 
+  // When there is exactly one tested-consistent candidate and it does not appear
+  // in this couplet's species lists, the key has routed into a branch that was
+  // already passed — show a notice so the user is not misled.
+  const testedConsistent = ks.scores ? ks.scores.filter(s => s.score === s.max && s.max > 0) : [];
+  const soleSp = testedConsistent.length === 1 ? testedConsistent[0].name : null;
+  const cpSpecies = new Set([...(cp.species_a || []), ...(cp.species_b || [])]);
+  const offBranch = soleSp && !cpSpecies.has(soleSp);
+  const offBranchBanner = offBranch
+    ? `<p class="ks-off-branch-notice">&#9432; Your best match (<em>${ksEsc(sciDisplay(soleSp))}</em>) is not directly separated here — this couplet is from a parallel branch of the key. Continue only to verify.</p>`
+    : '';
+
   el.innerHTML = `
     <div class="ks-cp" id="ks-cp-current">
       <p class="ks-cp-label"><span class="ks-label-tag">${ksEsc(`Key ${cp.num_a}`)}</span></p>
+      ${offBranchBanner}
       ${hintHTML}
       <p class="ks-cp-statement">${stmtHTML}</p>
       <div class="ks-btn-row ks-btn-row--yesno">
