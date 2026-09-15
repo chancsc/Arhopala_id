@@ -475,6 +475,24 @@ function ksRenderCouplet() {
   }
 
   const cp = ks.currentCouplet;
+
+  // b_dead_end: serial-key artifact — species_a[0] is the definitive result.
+  // Render a result card directly; no button interaction needed.
+  if (cp.b_dead_end && (cp.species_a || []).length === 1) {
+    const speciesName = cp.species_a[0];
+    const info = ks.speciesInfo.get(speciesName) || {};
+    const inatHref = info.inat_url ? ksEscAttr(info.inat_url) : '';
+    el.innerHTML = `
+      <div class="ks-result-card">
+        <p class="ks-result-label">&#9658; Identification</p>
+        <p class="ks-result-species">Key ${ksEsc(String(cp.num_a))}: <em>${ksEsc(sciDisplay(speciesName))}</em></p>
+        ${info.common_name ? `<p class="ks-result-common">${ksEsc(info.common_name)}</p>` : ''}
+        <p class="ks-result-text">${ksEsc(cp.a_text || '')}</p>
+        ${inatHref ? `<a class="ks-inat-link" href="${inatHref}" target="_blank" rel="noopener">View on iNaturalist &#8594;</a>` : ''}
+      </div>`;
+    return;
+  }
+
   // Optional group species list (cp.hint_group = {side, label}): show every
   // species reachable on that side of the couplet, each linked to iNaturalist.
   let groupHTML = '';
