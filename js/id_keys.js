@@ -538,13 +538,14 @@ function ksRenderCouplet() {
   const cpPlus = typeof window !== 'undefined' && window.cpPlusMode;
   const skipNext = (cpPlus && (cp.upperside || cp.skippable || cp.cd_type)) ? ksSkipNext(cp) : null;
   const canSkip = skipNext !== null;
-  const skipBaseLabel = cp.cd_type === 'fw_spaces'
-    ? 'Cannot determine — FW spaces 2–3 hard to assess in resting photos'
-    : cp.cd_type === 'genital'
-      ? 'Cannot determine — genital character, not assessable from photos'
-      : cp.cd_type === 'morphology'
-        ? 'Cannot determine — character hard to assess from photo'
-        : 'Cannot determine — upperside not visible in photo';
+  const skipBaseLabel = cp.cd_label
+    || (cp.cd_type === 'fw_spaces'
+      ? 'Cannot determine — FW spaces 2–3 hard to assess in resting photos'
+      : cp.cd_type === 'genital'
+        ? 'Cannot determine — genital character, not assessable from photos'
+        : cp.cd_type === 'morphology'
+          ? 'Cannot determine — character hard to assess from photo'
+          : 'Cannot determine — upperside not visible in photo');
   let skipRow = '';
   if (canSkip) {
     if (skipNext.fork) {
