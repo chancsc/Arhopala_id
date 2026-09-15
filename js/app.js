@@ -906,34 +906,39 @@ function buildCPKeyPath(speciesName) {
   if (!steps.length) return '';
 
   // Final identifying lead — the terminal couplet-half that names the species.
-  // Showing it makes the path read as complete (it ends on the key that pins the
-  // ID, e.g. Key 214 → A. abseus, not the last branch decision). Strip the
-  // trailing "… Arhopala <sp>" and the Fwl clause so it matches the other
-  // statements; the species is shown in the answer slot instead. Skip it when the
-  // terminal is the same lead we just displayed (a self-naming fall-through) to
-  // avoid repeating that key number.
+  // Showing it makes the path read as complete. When the terminal IS the last
+  // decision step's own lead (A-side self-terminal, e.g. aurea at Key 196),
+  // tag that step to show the species name in place of "Yes".
   let terminalStep = null;
-  if (terminalLead != null && !(steps.length && steps[steps.length - 1].num_a === terminalLead)) {
+  if (terminalLead != null) {
     const raw = leads[String(terminalLead)] || '';
     const sm = raw.match(/\bArhopala\s+\w+(?:\s+\w+)?/);
-    const text = raw
-      .replace(/\s*\.*\s*\bArhopala\s+\w+(?:\s+\w+)?\s*$/, '')
-      .replace(/\s*Fwl\s+[\d.]+(?:\s*[-–]\s*[\d.]+)?\s*mm\.?/i, '')
-      .replace(/\s{2,}/g, ' ')
-      .trim();
-    if (text) terminalStep = { num: terminalLead, text, species: sm ? sm[0] : speciesName };
+    const species = sm ? sm[0] : speciesName;
+    if (steps.length && steps[steps.length - 1].num_a === terminalLead) {
+      steps[steps.length - 1].selfTerminal = true;
+      steps[steps.length - 1].species = species;
+    } else {
+      const text = raw
+        .replace(/\s*\.*\s*\bArhopala\s+\w+(?:\s+\w+)?\s*$/, '')
+        .replace(/\s*Fwl\s+[\d.]+(?:\s*[-–]\s*[\d.]+)?\s*mm\.?/i, '')
+        .replace(/\s{2,}/g, ' ')
+        .trim();
+      if (text) terminalStep = { num: terminalLead, text, species };
+    }
   }
 
   const totalSteps = steps.length + (terminalStep ? 1 : 0);
   let stepsHTML = steps.map(s => {
     if (s.connector) {
-      // Context step: the group-entry lead the previous branch lands on. No
-      // Yes/No — it is a description, not a decision.
       return `<li class="path-step path-step--connector">
       <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(s.num))}</span> ${escapeHtml(s.text)}</span>
       <span class="path-a path-a--connector">↓</span>
     </li>`;
     }
+    if (s.selfTerminal) return `<li class="path-step path-step--final">
+      <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(s.num_a))}</span> ${escapeHtml(s.statement)}</span>
+      <span class="path-a path-a--id">↳ <em>${escapeHtml(s.species)}</em></span>
+    </li>`;
     return `<li class="path-step">
       <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(s.num_a))}</span> ${escapeHtml(s.statement)}</span>
       <span class="path-a">↳ ${s.yes ? 'Yes' : 'No'}</span>
@@ -1039,14 +1044,20 @@ function buildCPPlusUndersidePath(speciesName) {
   if (!steps.length || skippedCount === 0) return '';
 
   let terminalStep = null;
-  if (terminalLead != null && !(steps.length && steps[steps.length - 1].num_a === terminalLead)) {
+  if (terminalLead != null) {
     const raw = leads[String(terminalLead)] || '';
     const sm = raw.match(/\bArhopala\s+\w+(?:\s+\w+)?/);
-    const text = raw
-      .replace(/\s*\.*\s*\bArhopala\s+\w+(?:\s+\w+)?\s*$/, '')
-      .replace(/\s*Fwl\s+[\d.]+(?:\s*[-–]\s*[\d.]+)?\s*mm\.?/i, '')
-      .replace(/\s{2,}/g, ' ').trim();
-    if (text) terminalStep = { num: terminalLead, text, species: sm ? sm[0] : speciesName };
+    const species = sm ? sm[0] : speciesName;
+    if (steps.length && steps[steps.length - 1].num_a === terminalLead) {
+      steps[steps.length - 1].selfTerminal = true;
+      steps[steps.length - 1].species = species;
+    } else {
+      const text = raw
+        .replace(/\s*\.*\s*\bArhopala\s+\w+(?:\s+\w+)?\s*$/, '')
+        .replace(/\s*Fwl\s+[\d.]+(?:\s*[-–]\s*[\d.]+)?\s*mm\.?/i, '')
+        .replace(/\s{2,}/g, ' ').trim();
+      if (text) terminalStep = { num: terminalLead, text, species };
+    }
   }
 
   const totalSteps = steps.length + (terminalStep ? 1 : 0);
@@ -1055,6 +1066,9 @@ function buildCPPlusUndersidePath(speciesName) {
     if (s.connector) return `<li class="path-step path-step--connector">
       <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(cpPlusNum(s.num)))}</span> ${escapeHtml(s.text)}</span>
       <span class="path-a path-a--connector">↓</span></li>`;
+    if (s.selfTerminal) return `<li class="path-step path-step--final">
+      <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(cpPlusNum(s.num_a)))}</span> ${escapeHtml(s.statement)}</span>
+      <span class="path-a path-a--id">↳ <em>${escapeHtml(s.species)}</em></span></li>`;
     if (s.skipped) return `<li class="path-step path-step--skip">
       <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(cpPlusNum(s.num_a)))}</span> ${escapeHtml(s.statement)}</span>
       <span class="path-a">↳ ${escapeHtml(s.cdLabel)}</span></li>`;
