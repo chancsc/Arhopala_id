@@ -1050,8 +1050,7 @@ function buildCPPlusUndersidePath(speciesName) {
   }
 
   const totalSteps = steps.length + (terminalStep ? 1 : 0);
-  // C&P+ key numbers are offset by +1 (gate num_a=0 → Key 1, etc.)
-  const cpPlusNum = n => n + 1;
+  const cpPlusNum = n => n;
   let stepsHTML = steps.map(s => {
     if (s.connector) return `<li class="path-step path-step--connector">
       <span class="path-q"><span class="path-qnum">Key ${escapeHtml(String(cpPlusNum(s.num)))}</span> ${escapeHtml(s.text)}</span>
