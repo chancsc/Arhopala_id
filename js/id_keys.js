@@ -563,7 +563,7 @@ function ksRenderCouplet() {
       <p class="ks-cp-statement">${stmtHTML}</p>
       <div class="ks-btn-row ks-btn-row--yesno">
         <button class="ks-btn ks-btn-yes" data-id="${ksEscAttr(cp.id)}" data-v="${yesV}">Yes</button>
-        <button class="ks-btn ks-btn-no" data-id="${ksEscAttr(cp.id)}" data-v="${noV}">No</button>
+        ${!cp.b_dead_end ? `<button class="ks-btn ks-btn-no" data-id="${ksEscAttr(cp.id)}" data-v="${noV}">No</button>` : ''}
       </div>
       ${skipRow}
     </div>`;

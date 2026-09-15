@@ -1736,7 +1736,8 @@
       ],
       "species_b": [
         "Arhopala amphimuta"
-      ]
+      ],
+      "b_dead_end": true
     },
     {
       "id": "cp_78_82",
@@ -1839,7 +1840,8 @@
         "Arhopala stubbsi"
       ],
       "species_b": [],
-      "cd_type": "upperside"
+      "cd_type": "upperside",
+      "b_dead_end": true
     },
     {
       "id": "cp_83_84",
