@@ -67,8 +67,6 @@ The optional `features` map lets you manually correct the feature-scoring matrix
 
 ## Scripts
 
-Both scripts require Python 3.9+ and the `requests` library (`pip install requests`).
-
 ### `scripts/fetch_species.py` — Regenerate species metadata
 
 Fetches *Arhopala* species observed in Malaysia from the iNaturalist API and writes `data/species.json`.
@@ -77,13 +75,13 @@ Fetches *Arhopala* species observed in Malaysia from the iNaturalist API and wri
 python scripts/fetch_species.py
 ```
 
-Re-run whenever you want to refresh photo URLs, observation counts, or add newly recorded species. The script paginates the iNaturalist species-counts endpoint, collects up to five photos per taxon (resized from square to medium), and rate-limits itself with a 0.5 s delay between pages.
+Requires Python 3.9+ and the `requests` library (`pip install requests`). Re-run whenever you want to refresh photo URLs, observation counts, or add newly recorded species. The script paginates the iNaturalist species-counts endpoint, collects up to five photos per taxon (resized from square to medium), and rate-limits itself with a 0.5 s delay between pages.
 
 ---
 
 ### `scripts/audit_paths.py` — Audit canonical paths
 
-Checks that every species in `data/tree.json` has a clean, consistent canonical path — the route that both the ID Key (direct path display) and Feature Scoring (feature matrix) use.
+Checks that every species in `data/tree.json` has a clean, consistent canonical path — the route used for the Species Search result display and the Feature Scoring engine that powers the species pages.
 
 ```
 python scripts/audit_paths.py              # uses data/tree.json
@@ -92,7 +90,7 @@ python scripts/audit_paths.py path/to/tree.json
 
 **What it checks**
 
-The ID Key and Feature Scoring share a single path-scoring algorithm:
+The path-scoring algorithm:
 
 | Penalty | Meaning |
 |---------|---------|

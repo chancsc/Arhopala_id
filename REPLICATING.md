@@ -1,6 +1,6 @@
 # Replicating for another genus
 
-The app is genus-agnostic at the data layer: `index.html`, `checklist.html`, `species.html`, `guide.html`, `id_keys.html`, and the shared scoring engine in `js/path-utils.js` work entirely from `data/tree.json`, `data/species.json`, and (for the C&P Key) `data/id_key.json`. To adapt the project for a different genus (or a different region):
+The app is genus-agnostic at the data layer: `index.html`, `id_keys.html`, `cpplus.html`, `species.html`, `guide.html`, and the shared scoring engine in `js/path-utils.js` work entirely from `data/tree.json`, `data/species.json`, and (for the C&P Key) `data/id_key.json`. To adapt the project for a different genus (or a different region):
 
 ## 1. Get the project into your own repo
 
@@ -27,11 +27,10 @@ The app is genus-agnostic at the data layer: `index.html`, `checklist.html`, `sp
 
 ## 2. Rebrand
 
-"Arhopala" / "Arhopala ID" are hardcoded as page titles, headings, and menu labels in `index.html`, `about.html`, `checklist.html`, `guide.html`, `species.html`, `id_keys.html`, `key.html`. Search-and-replace:
+"Arhopala" / "Arhopala ID" are hardcoded as page titles, headings, and menu labels in `index.html`, `about.html`, `guide.html`, `species.html`, `id_keys.html`, `cpplus.html`. Search-and-replace:
 
 - `Arhopala ID` → your app name
 - `Arhopala` → your genus name (also used as the default iNaturalist search term in `js/app.js`)
-- `js/checklist.js`'s `ANSWERS_KEY` localStorage key (`'arhopala-cl-answers'`) — rename so saved answers don't collide if both apps share a domain
 - `js/id_keys.js`'s `ANSWERS_KEY` (`'arhopala-ks-answers-v1'`) and `GENUS_MARKER` (`'Arhopala'`) — see section 6
 
 ## 3. Regenerate `data/species.json`
@@ -50,8 +49,8 @@ This is the bulk of the work — transcribe your morphological key into the flat
 
 Tips:
 
-- Keep each question scoped to a single observable character, so Feature Scoring can score it independently of the others.
-- Give any question whose feature is hard to see in typical photos (e.g. upperside-only characters) a "Cannot determine — ..." choice, so the ID Key can offer a fallback path and Feature Scoring can skip it without penalising candidates.
+- Keep each question scoped to a single observable character, so each answer independently narrows the candidate pool.
+- Give any question whose feature is hard to see in typical photos (e.g. upperside-only characters) a "Cannot determine — ..." choice, so C&P+ can offer a skip without penalising candidates.
 - For species pairs the key can't separate from photographs alone, route both into a `group` node with a descriptive `group_name`.
 
 ## 5. Validate the tree
@@ -96,7 +95,7 @@ If you have a numbered-lead (Corbet & Pendlebury–style) dichotomous key for yo
 
 4. **Guide links:** `scripts/enrich_id_key_guidelinks.js` maps character phrases → `guide.html#anchor`. Edit its `PHRASE_MAP` for your key's characters (same anchors as section 7). Re-run it after any `build_id_key.js` run, since the build step resets the links (the two together are idempotent).
 
-5. **Hints:** each couplet shows a collapsible "Hint" that helps the user decide Yes/No. The hint text lives in `data/id_key_hints.json` (a flat map couplet-id → hint string) and is applied by `scripts/apply_id_key_hints.js` (the build always emits an empty `hint`, so re-run this after any `build_id_key.js` run). Author hints by synthesising the lead texts with the per-species notes in `notebook_data/arhopala_<epithet>.txt` — a good hint clarifies the character, says which species/group each answer heads toward, and adds one distinguishing detail where a couplet separates named species. Then `scripts/move_fwl_to_hint.js` strips the forewing-length clause ("Fwl … mm") out of each couplet's displayed statement and appends it to the hint, since length can't be judged from a field photo — run it LAST (after the hint text is in place).
+5. **Hints:** each couplet shows a collapsible "Hint" that helps the user decide Yes/No. The hint text lives in `data/id_key_hints.json` (a flat map couplet-id → hint string) and is applied by `scripts/apply_id_key_hints.js` (the build always emits an empty `hint`, so re-run this after any `build_id_key.js` run). A good hint clarifies the character, says which species/group each answer heads toward, and adds one distinguishing detail where a couplet separates named species. Then `scripts/move_fwl_to_hint.js` strips the forewing-length clause ("Fwl … mm") out of each couplet's displayed statement and appends it to the hint, since length can't be judged from a field photo — run it LAST (after the hint text is in place).
 
 6. **Upperside Skip:** set `upperside: true` on any couplet whose character needs the specimen's upperside. `id_keys.js` then offers a *Skip* button (when at least one branch continues) so underside-only photos can proceed; a skipped couplet is neutral in scoring.
 
@@ -104,7 +103,7 @@ Notes on the parser: `scripts/build_id_key.js` handles numbered-lead quirks — 
 
 ## 7. Build the Visual Guide
 
-`guide.html` is a series of self-contained `<section class="guide-section" id="...">` blocks, each pairing an annotated photo with a `guide-terms` definition list. Add one section per diagnostic character your key relies on, then link to it from the relevant question in `data/tree.json` via `question_link` (inline text link) or `guide_link` (standalone button), and add a matching entry to the `GUIDE_LINKS` map in `js/checklist.js` so Feature Scoring's question text links to the same section. The C&P Key couplets link to these same anchors via the `PHRASE_MAP` in `scripts/enrich_id_key_guidelinks.js` (section 6).
+`guide.html` is a series of self-contained `<section class="guide-section" id="...">` blocks, each pairing an annotated photo with a `guide-terms` definition list. Add one section per diagnostic character your key relies on, then link to it from the relevant couplet in `data/id_key.json` via `guide_phrase`/`guide_link` (the C&P Key couplets link via the `PHRASE_MAP` in `scripts/enrich_id_key_guidelinks.js`, section 6) or from a question in `data/tree.json` via `question_link` (inline text link) or `guide_link` (standalone button).
 
 ## 8. Deploy
 
