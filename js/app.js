@@ -1005,11 +1005,22 @@ function buildCPPlusUndersidePath(speciesName) {
   const steps = []; let cp = couplets.find(c => !c.cpplus_only) || couplets[0]; let terminalLead = null; let skippedCount = 0;
 
   // Prepend the gate couplet (cpplus_only) as Key 1 in C&P+ numbering. The gate
-  // leads (0 / 9) are not in species_paths; use the gate's own species_b list
-  // (tailless) to determine the gate choice for this species.
+  // leads (0 / 9) are not in species_paths; derive tailed/tailless by checking
+  // species_a first with subsequence word-matching (so "alaconia f. kempi" matches
+  // "alaconia media f. kempi" across the intervening subspecies word), then fall
+  // back to 2-word prefix matching against species_b.
   const gateCp = couplets.find(c => c.cpplus_only);
   if (gateCp) {
-    const tailless = (gateCp.species_b || []).some(s => s.split(' ').slice(0, 2).join(' ') === sp2);
+    const subseqMatch = (entry, name) => {
+      if (entry === name) return true;
+      const ew = entry.split(' '), nw = name.split(' ');
+      if (ew.length <= 2) return ew.slice(0, 2).join(' ') === sp2;
+      let ni = 0;
+      for (const w of ew) { while (ni < nw.length && nw[ni] !== w) ni++; if (ni >= nw.length) return false; ni++; }
+      return true;
+    };
+    const isTailed = (gateCp.species_a || []).some(s => subseqMatch(s, speciesName));
+    const tailless = !isTailed && (gateCp.species_b || []).some(s => s.split(' ').slice(0, 2).join(' ') === sp2);
     const gateStatement = gateCp.a_text;
     steps.push({ num_a: gateCp.num_a, statement: gateStatement, yes: !tailless });
   }
