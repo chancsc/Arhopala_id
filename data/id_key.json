@@ -28,6 +28,7 @@
         "Arhopala agaba",
         "Arhopala agrata",
         "Arhopala aida",
+        "Arhopala alaconia f. kempi",
         "Arhopala alitaeus",
         "Arhopala allata",
         "Arhopala amantes",
@@ -162,6 +163,7 @@
         "Arhopala agrata",
         "Arhopala aida",
         "Arhopala alaconia",
+        "Arhopala alaconia f. kempi",
         "Arhopala alica",
         "Arhopala alitaeus",
         "Arhopala allata",
@@ -298,6 +300,7 @@
         "Arhopala agrata",
         "Arhopala aida",
         "Arhopala alaconia",
+        "Arhopala alaconia f. kempi",
         "Arhopala alica",
         "Arhopala alitaeus",
         "Arhopala allata",
@@ -471,6 +474,7 @@
         "Arhopala agrata",
         "Arhopala aida",
         "Arhopala alaconia",
+        "Arhopala alaconia f. kempi",
         "Arhopala alica",
         "Arhopala alitaeus",
         "Arhopala allata",
@@ -639,6 +643,7 @@
         "Arhopala agrata",
         "Arhopala aida",
         "Arhopala alaconia",
+        "Arhopala alaconia f. kempi",
         "Arhopala alitaeus",
         "Arhopala ammon",
         "Arhopala ammonides",
@@ -2053,6 +2058,7 @@
         "Arhopala agaba",
         "Arhopala agelastus",
         "Arhopala alaconia",
+        "Arhopala alaconia f. kempi",
         "Arhopala ammon",
         "Arhopala ammonides",
         "Arhopala ariel",
@@ -2928,6 +2934,7 @@
         "Arhopala agaba",
         "Arhopala agelastus",
         "Arhopala alaconia",
+        "Arhopala alaconia f. kempi",
         "Arhopala arvina",
         "Arhopala aurea",
         "Arhopala barami",
@@ -2979,6 +2986,7 @@
         "Arhopala agaba",
         "Arhopala agelastus",
         "Arhopala alaconia",
+        "Arhopala alaconia f. kempi",
         "Arhopala arvina",
         "Arhopala barami",
         "Arhopala bazalus",
@@ -3026,6 +3034,7 @@
         "Arhopala agaba",
         "Arhopala agelastus",
         "Arhopala alaconia",
+        "Arhopala alaconia f. kempi",
         "Arhopala arvina",
         "Arhopala barami",
         "Arhopala buddha",
@@ -3069,6 +3078,7 @@
       "species_b": [
         "Arhopala agelastus",
         "Arhopala alaconia",
+        "Arhopala alaconia f. kempi",
         "Arhopala arvina",
         "Arhopala barami",
         "Arhopala buddha",
@@ -3103,6 +3113,7 @@
       "species_b": [
         "Arhopala agelastus",
         "Arhopala alaconia",
+        "Arhopala alaconia f. kempi",
         "Arhopala arvina",
         "Arhopala barami",
         "Arhopala buddha",
@@ -3132,6 +3143,7 @@
       "species_a": [
         "Arhopala agelastus",
         "Arhopala alaconia",
+        "Arhopala alaconia f. kempi",
         "Arhopala arvina",
         "Arhopala barami",
         "Arhopala buddha",
@@ -3170,6 +3182,7 @@
       "species_b": [
         "Arhopala agelastus",
         "Arhopala alaconia",
+        "Arhopala alaconia f. kempi",
         "Arhopala barami",
         "Arhopala cardoni",
         "Arhopala labuana",
@@ -3243,7 +3256,8 @@
       "invert": false,
       "statement": "",
       "species_a": [
-        "Arhopala alaconia"
+        "Arhopala alaconia",
+        "Arhopala alaconia f. kempi"
       ],
       "species_b": [
         "Arhopala agelastus",
@@ -5399,6 +5413,21 @@
       77,
       78,
       79
+    ],
+    "Arhopala alaconia f. kempi": [
+      1,
+      7,
+      8,
+      95,
+      153,
+      154,
+      155,
+      156,
+      158,
+      160,
+      161,
+      167,
+      168
     ]
   }
 }
