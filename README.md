@@ -10,8 +10,8 @@ Live: [chancsc.github.io/Arhopala_id](https://chancsc.github.io/Arhopala_id)
 
 | Page | Description |
 |------|-------------|
-| **ID Key** (`index.html`) | Step-by-step decision tree. Answer one question at a time to reach a species identification. Each result shows a direct path and, where useful, an alternative "Cannot determine" path for features that are hidden in the photo. |
-| **Feature Scoring** (`checklist.html`) | Score multiple visible features at once. Candidate species are ranked in real time; unanswered features do not penalise any candidate. |
+| **C&P** (`id_keys.html`) | The original Corbet & Pendlebury dichotomous key, presented one couplet at a time. Best suited to spread specimens or photos where every character — including the upperside and forewing base — is clearly visible. |
+| **C&P+** (`cpplus.html`) | Enhanced walk through the C&P key. Couplets requiring the upperside, forewing spaces 2–3, or genital characters offer a *Cannot determine* option so the key can still progress from an underside-only photograph. At branching points where a skip would conceal one group entirely, *Cannot determine* opens into two labelled paths. Candidates are ranked in real time. |
 | **Species Search** (`species.html`) | Browse all covered taxa with iNaturalist links and identification notes. |
 | **Visual Guide** (`guide.html`) | Wing diagrams and terminology reference. |
 
@@ -135,4 +135,4 @@ Run the script after any edit to `data/tree.json` to catch regressions before de
 
 ## Replicating for another genus
 
-The app is genus-agnostic at the data layer: `index.html`, `checklist.html`, `species.html`, `guide.html`, and the shared scoring engine in `js/path-utils.js` work entirely from `data/tree.json` and `data/species.json`. See [REPLICATING.md](REPLICATING.md) for a step-by-step guide to adapting this project for a different genus or region.
+The app is genus-agnostic at the data layer: `id_keys.html`, `cpplus.html`, `species.html`, `guide.html`, and the shared scoring engine in `js/path-utils.js` work entirely from `data/tree.json` and `data/species.json`. See [REPLICATING.md](REPLICATING.md) for a step-by-step guide to adapting this project for a different genus or region.
