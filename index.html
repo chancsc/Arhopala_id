@@ -20,6 +20,8 @@
   <meta name="twitter:title" content="Arhopala ID — Malaysian Oakblue Butterfly Identifier">
   <meta name="twitter:description" content="Interactive identification key for Arhopala butterflies of Peninsular Malaysia. Work through the C&amp;P key from resting photos — skip what you can't see, get ranked candidates in real time.">
   <meta name="twitter:image" content="https://chancsc.github.io/Arhopala_id/preview.png">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="apple-touch-icon" href="img/logo.png">
   <link rel="stylesheet" href="css/style.css?v=20260908a">
   <script src="js/theme.js?v=20260717a"></script>
   <style>
@@ -36,10 +38,11 @@
       gap: 0.9rem;
       margin-bottom: 1.4rem;
     }
-    .landing-hero-logo svg {
+    .landing-hero-logo img {
       width: 52px;
       height: 52px;
       flex-shrink: 0;
+      border-radius: 12px;
     }
     .landing-hero-text h1 {
       font-size: 1.25rem;
@@ -173,19 +176,8 @@
 
     <!-- Hero -->
     <div class="landing-hero">
-      <div class="landing-hero-logo" aria-hidden="true">
-        <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <ellipse cx="28" cy="32" rx="9" ry="13" fill="#2d5a27" opacity="0.18"/>
-          <path d="M28 20 C18 10 4 14 6 26 C8 35 18 36 28 32" fill="#2d5a27" opacity="0.72"/>
-          <path d="M28 20 C38 10 52 14 50 26 C48 35 38 36 28 32" fill="#2d5a27" opacity="0.72"/>
-          <path d="M28 32 C22 36 18 44 22 48 C25 51 28 46 28 40" fill="#2d5a27" opacity="0.55"/>
-          <path d="M28 32 C34 36 38 44 34 48 C31 51 28 46 28 40" fill="#2d5a27" opacity="0.55"/>
-          <ellipse cx="28" cy="29" rx="2.2" ry="10" fill="#1a3818" opacity="0.6"/>
-          <path d="M28 19 Q25 12 22 8" stroke="#1a3818" stroke-width="1.3" stroke-linecap="round" fill="none"/>
-          <path d="M28 19 Q31 12 34 8" stroke="#1a3818" stroke-width="1.3" stroke-linecap="round" fill="none"/>
-          <path d="M23 23 Q20 21 18 23" stroke="#6b9e65" stroke-width="1.1" stroke-linecap="round" fill="none"/>
-          <path d="M33 23 Q36 21 38 23" stroke="#6b9e65" stroke-width="1.1" stroke-linecap="round" fill="none"/>
-        </svg>
+      <div class="landing-hero-logo">
+        <img src="img/logo.png" alt="Arhopala ID logo">
       </div>
       <div class="landing-hero-text">
         <h1>Arhopala ID</h1>
