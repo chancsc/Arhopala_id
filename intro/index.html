@@ -1,7 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Arhopala ID — App Guide</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Source+Sans+3:wght@400;500;600;700&display=swap">
 
+</head>
+<body>
 <style>
   :root {
     --green: #2d5a27;
@@ -79,7 +86,10 @@
   .section-body { font-size: 0.95rem; color: var(--text-mid); max-width: 520px; margin: 0; }
   .section-body strong { color: var(--text); }
 
-  .pair { display: flex; flex-direction: column; gap: 18px; }
+  .pair { display: flex; flex-direction: column; gap: 18px; align-items: center; }
+  @media (min-width: 400px) {
+    .pair { align-items: flex-start; }
+  }
   @media (min-width: 560px) {
     .pair { flex-direction: row; align-items: flex-start; gap: 28px; }
     .pair-text { flex: 1; }
@@ -93,7 +103,10 @@
     box-shadow: 0 4px 24px rgba(0,0,0,0.10), 0 1px 5px rgba(0,0,0,0.06);
     max-width: 100%;
   }
-  .screen img { display: block; width: 220px; max-width: 100%; height: auto; }
+  .screen img { display: block; width: min(280px, 100%); height: auto; }
+  @media (min-width: 560px) {
+    .screen img { width: 220px; }
+  }
 
   .tip {
     background: var(--green-pale);
@@ -311,3 +324,5 @@
   </div>
 
 </div>
+</body>
+</html>
