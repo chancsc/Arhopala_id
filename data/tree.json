@@ -1023,7 +1023,7 @@
     "g_camdeo_camdeo": {
       "type": "group",
       "id": "g_camdeo_camdeo",
-      "group_name": "camdeo subgroup",
+      "group_name": "camdeo group — camdeo subgroup",
       "description": "The largest camdeo subgroup (9 species). Often features a small spot at the extreme base of FW space 3. Includes both tailed and tailless species and a wide range of upperside colours from pale silvery-blue to deep bluish-purple.",
       "key_features": [
         "Dark area under FW cell (space 1b) bounded by pale line",
@@ -1035,7 +1035,7 @@
     "g_camdeo_myrzala": {
       "type": "group",
       "id": "g_camdeo_myrzala",
-      "group_name": "myrzala subgroup",
+      "group_name": "camdeo group — myrzala subgroup",
       "description": "Easily recognized by the crimson-brown underside with markings outlined by prominent white striae, and a spot always present at the base of HW space 6. Two species separated by tail presence and border width.",
       "key_features": [
         "Crimson-brown underside with markings outlined by white striae",
@@ -1047,7 +1047,7 @@
     "g_camdeo_bazaloides": {
       "type": "group",
       "id": "g_camdeo_bazaloides",
-      "group_name": "bazaloides subgroup",
+      "group_name": "camdeo group — bazaloides subgroup",
       "description": "Unique within the camdeo group for having an extra spot in mid-space 8 on the HW underside. Underside is purple-brown with white striae but LACKS the HW space 6 basal spot that defines the myrzala subgroup. One species.",
       "key_features": [
         "Extra spot mid-space 8 on HW underside",
@@ -1332,7 +1332,7 @@
     "g_cleander": {
       "type": "group",
       "id": "g_cleander",
-      "group_name": "cleander subgroup",
+      "group_name": "cleander group — cleander subgroup",
       "description": "Large species (FW > 21 mm) with a conspicuously projecting HW tornal lobe. HW postdiscal band completely dislocated at vein 2. Four species separated by FW band dislocation at vein 4 and by HW spot 6 position relative to spots 5 and the end-cell bar.",
       "key_features": [
         "FW > 21 mm; conspicuously projecting HW tornal lobe",
@@ -1344,7 +1344,7 @@
     "g_cleander_alea": {
       "type": "group",
       "id": "g_cleander_alea",
-      "group_name": "alea subgroup",
+      "group_name": "cleander group — alea subgroup",
       "description": "Smaller species (FW < 21 mm) within the cleander group with a less conspicuous HW tornal lobe. Nine species with diverse underside colours from slatey purple to slatey pink; genitalia often needed for certain identification.",
       "key_features": [
         "FW < 21 mm; HW tornal lobe less conspicuous",
@@ -2244,7 +2244,7 @@
         "Do hindwing postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon arrangement)?": "Yes — HW spots 5, 6, and 7 in echelon (centres in straight line)",
         "Is the HW postdiscal band at vein 2 fully separated into two distinct portions — a clear gap visible between them?": "Yes — HW postdiscal band fully separated at vein 2 (two distinct portions with a clear gap)"
       },
-      "group": "amphimuta group"
+      "group": "amphimuta group — kurzi subgroup"
     },
     "q_amph_s2": {
       "type": "question",
@@ -2518,7 +2518,7 @@
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 in echelon, and with their centres more or less in line; the spot in space 6 nearer the spot in space 5 than the end-cell bar",
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)"
       },
-      "group": "amphimuta group"
+      "group": "amphimuta group — amphimuta subgroup"
     },
     "r_avathina_avathina": {
       "type": "result",
@@ -2545,7 +2545,7 @@
         "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes — weak tooth at vein 2 present; postdiscal spots less rounded (more angular), similar to A. norda",
         "Is the male's black border reduced to a thread (very narrow, well under 0.5 mm)?": "No — border regular ~0.5 mm"
       },
-      "group": "amphimuta group"
+      "group": "amphimuta group — amphimuta subgroup"
     },
     "r_major_major": {
       "type": "result",
@@ -2560,7 +2560,7 @@
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
         "On the hindwing underside, is there a very weak tooth at vein 2 (hindwing postdiscal band only partially dislocated at vein 2), and are the postdiscal spots more rounded or less rounded (more angular, like [A. norda](https://www.inaturalist.org/observations?verifiable=true&taxon_id=887831&preferred_place_id=6734))?": "Yes — weak tooth at vein 2 present; postdiscal spots more rounded, similar to A. amphimuta/A. major"
       },
-      "group": "amphimuta group"
+      "group": "amphimuta group — amphimuta subgroup"
     },
     "r_stubbsi": {
       "type": "result",
@@ -2587,7 +2587,7 @@
         "Is the hindwing underside postdiscal series dislocated at vein 2, and is the species noticeably smaller than its allies?": "No — HW band not strongly dislocated at vein 2",
         "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded"
       },
-      "group": "amphimuta group"
+      "group": "amphimuta group — amphimuta subgroup"
     },
     "r_alica": {
       "type": "result",
@@ -2600,7 +2600,7 @@
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Not displaced / Slightly displaced — spot 6 roughly level with spot 5, or only minimally shifted inward; spots 5, 6 and 7 broadly in line",
         "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated — band is shifted but the two portions remain connected at vein 2"
       },
-      "group": "amphimuta group"
+      "group": "amphimuta group — kurzi subgroup"
     },
     "r_sceva_indra": {
       "type": "result",
@@ -2613,7 +2613,7 @@
         "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded",
         "Do HW postdiscal spots 4 and 5 precisely align in a straight vertical line — distinct from the broader 5-6-7 echelon?": "No — spots 4 and 5 not in tight vertical alignment (A. metamuta)"
       },
-      "group": "amphimuta group"
+      "group": "amphimuta group — amphimuta subgroup"
     },
     "r_amphimuta_amphimuta": {
       "type": "result",
@@ -2629,7 +2629,7 @@
         "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated — band is shifted but the two portions remain connected at vein 2",
         "Do HW postdiscal spots 4 and 5 precisely align in a straight vertical line — distinct from the broader 5-6-7 echelon?": "No — spots 4 and 5 not in tight vertical alignment (A. metamuta)"
       },
-      "group": "amphimuta group"
+      "group": "amphimuta group — amphimuta subgroup"
     },
     "r_zylda_elioti": {
       "type": "result",
@@ -2655,7 +2655,7 @@
       "features": {
         "Is there a distinct white patch on the hindwing cilia just above the tornal lobe?": "Yes — white patch on HW cilia above tornal lobe; postdiscal spots less rounded"
       },
-      "group": "amphimuta group"
+      "group": "amphimuta group — amphimuta subgroup"
     },
     "r_baluensis": {
       "type": "result",
@@ -2668,7 +2668,7 @@
         "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Partially dislocated — band is shifted but the two portions remain connected at vein 2",
         "Do HW postdiscal spots 4 and 5 precisely align in a straight vertical line — distinct from the broader 5-6-7 echelon?": "No — spots 4 and 5 not in tight vertical alignment (A. metamuta)"
       },
-      "group": "amphimuta group"
+      "group": "amphimuta group — kurzi subgroup"
     },
     "q_muta_size": {
       "type": "question",
@@ -3396,7 +3396,7 @@
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)",
         "What does the hindwing underside look like?": "Crimson-brown ground colour with markings outlined in white striae; spot at the base of HW space 6"
       },
-      "group": "myrzala subgroup"
+      "group": "camdeo group — myrzala subgroup"
     },
     "r_myrzalina": {
       "type": "result",
@@ -3409,7 +3409,7 @@
         "Is the specimen tailed?": "Cannot determine",
         "Is there a small spot at the extreme base of hindwing space 6 on the underside?": "Yes — small spot at extreme base of HW space 6"
       },
-      "group": "myrzala subgroup"
+      "group": "camdeo group — myrzala subgroup"
     },
     "r_bazaloides_bazaloides": {
       "type": "result",
@@ -3424,7 +3424,7 @@
         "What best describes the forewing postdiscal spot 4 and the hindwing postdiscal spot 6?": "HW postdiscal spots 5, 6, and 7 overlap with their centres forming a straight line (echelon)",
         "Is the underside ground colour purplish-brown, with the forewing apex dusted with pale violet scales?": "Yes — purplish-brown underside; FW apex with pale violet powder"
       },
-      "group": "bazaloides subgroup"
+      "group": "camdeo group — bazaloides subgroup"
     },
     "q_centaurus_amantes": {
       "type": "question",
@@ -3614,7 +3614,7 @@
         "Is hindwing postdiscal spot 6 considerably wider than spot 7?": "No — HW spot 6 similar in width to spot 7 (cleander group)",
         "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated — band splits into two entirely separate portions at vein 2"
       },
-      "group": "cleander subgroup"
+      "group": "cleander group — cleander subgroup"
     },
     "r_zambra_zambra": {
       "type": "result",
@@ -3631,7 +3631,7 @@
         "Is hindwing postdiscal spot 6 considerably wider than spot 7?": "No — HW spot 6 similar in width to spot 7 (cleander group)",
         "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated — band splits into two entirely separate portions at vein 2"
       },
-      "group": "cleander subgroup"
+      "group": "cleander group — cleander subgroup"
     },
     "r_athada_athada": {
       "type": "result",
@@ -3649,7 +3649,7 @@
         "Is hindwing postdiscal spot 6 considerably wider than spot 7?": "No — HW spot 6 similar in width to spot 7 (cleander group)",
         "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated — band splits into two entirely separate portions at vein 2"
       },
-      "group": "cleander subgroup"
+      "group": "cleander group — cleander subgroup"
     },
     "r_silhetensis_adorea": {
       "type": "result",
@@ -3667,7 +3667,7 @@
         "Is hindwing postdiscal spot 6 considerably wider than spot 7?": "No — HW spot 6 similar in width to spot 7 (cleander group)",
         "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated — band splits into two entirely separate portions at vein 2"
       },
-      "group": "cleander subgroup"
+      "group": "cleander group — cleander subgroup"
     },
     "q_alea_s1": {
       "type": "question",
@@ -3869,7 +3869,7 @@
         "Underside: is the forewing postdiscal spot 9 well-marked, forewing spot 4 in line with spots 5 and 6 (not shifted distad), and hindwing postdiscal spot 6 fairly regular (roughly quadrate, in the postdiscal row, not strongly displaced or concave)?": "Yes",
         "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated — band splits into two entirely separate portions at vein 2"
       },
-      "group": "alea subgroup"
+      "group": "cleander group — alea subgroup"
     },
     "r_evansi": {
       "type": "result",
@@ -3889,7 +3889,7 @@
         "Is hindwing postdiscal spot 6 considerably wider than spot 7?": "No — HW spot 6 similar in width to spot 7 (cleander group)",
         "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated — band splits into two entirely separate portions at vein 2"
       },
-      "group": "alea subgroup"
+      "group": "cleander group — alea subgroup"
     },
     "r_aroa_aroa": {
       "type": "result",
@@ -3905,7 +3905,7 @@
         "Is hindwing postdiscal spot 6 considerably narrower at the bottom than the top (tapering or wedge-shaped, not uniformly wide)?": "Yes — HW spot 6 considerably narrower at bottom than top (aroa group; barely overlapping bar)",
         "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated — band splits into two entirely separate portions at vein 2"
       },
-      "group": "alea subgroup"
+      "group": "cleander group — alea subgroup"
     },
     "r_phanda_phanda": {
       "type": "result",
@@ -3923,7 +3923,7 @@
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced",
         "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated — band splits into two entirely separate portions at vein 2"
       },
-      "group": "alea subgroup"
+      "group": "cleander group — alea subgroup"
     },
     "r_selta_selta": {
       "type": "result",
@@ -3941,7 +3941,7 @@
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced",
         "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated — band splits into two entirely separate portions at vein 2"
       },
-      "group": "alea subgroup"
+      "group": "cleander group — alea subgroup"
     },
     "r_phaenops_sandakani": {
       "type": "result",
@@ -3959,7 +3959,7 @@
         "On the hindwing underside, what best describes the position of postdiscal spot 6 relative to the postdiscal row and the end-cell bar?": "Spot 6 touching or overlapping the end-cell bar; or spots 5, 6 and 7 widely out of line / displaced",
         "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated — band splits into two entirely separate portions at vein 2"
       },
-      "group": "alea subgroup"
+      "group": "cleander group — alea subgroup"
     },
     "r_milleri": {
       "type": "result",
@@ -3976,7 +3976,7 @@
         "Is hindwing postdiscal spot 6 considerably wider than spot 7?": "No — HW spot 6 similar in width to spot 7 (cleander group)",
         "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated — band splits into two entirely separate portions at vein 2"
       },
-      "group": "alea subgroup"
+      "group": "cleander group — alea subgroup"
     },
     "r_normani": {
       "type": "result",
@@ -3994,7 +3994,7 @@
         "Is hindwing postdiscal spot 6 considerably wider than spot 7?": "No — HW spot 6 similar in width to spot 7 (cleander group)",
         "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated — band splits into two entirely separate portions at vein 2"
       },
-      "group": "alea subgroup"
+      "group": "cleander group — alea subgroup"
     },
     "r_sublustris_ridleyi": {
       "type": "result",
@@ -4011,7 +4011,7 @@
         "Is hindwing postdiscal spot 6 considerably narrower at the bottom than the top (tapering or wedge-shaped, not uniformly wide)?": "No — HW spot 6 similar in width from top to bottom; widely overlapping bar (normani / cleander group)",
         "Is the hindwing postdiscal band completely or only partially dislocated at vein 2?": "Completely dislocated — band splits into two entirely separate portions at vein 2"
       },
-      "group": "alea subgroup"
+      "group": "cleander group — alea subgroup"
     },
     "r_corinda_acestes": {
       "type": "result",
@@ -4764,7 +4764,7 @@
       "features": {
         "On the hindwing underside, how are postdiscal spots 5, 6 and 7 arranged?": "Postdiscal spots in spaces 7, 6 and 5 with their centres widely out of line; the spot in space 6 with its inner edge in line with, or inside, the inner edge of the spot in space 7, and usually touching or overlapping the end-cell bar (except A. ace and A. azinis)"
       },
-      "group": "alea subgroup"
+      "group": "cleander group — alea subgroup"
     },
     "q_tailed_corinda_apex": {
       "type": "question",
