@@ -30,6 +30,7 @@ const ks = {
   couplets: null,       // array from id_key.json
   leads: null,          // object {leadNum(str): text}
   speciesInfo: null,    // Map<name, {common_name, inat_url}>
+  resultGroups: null,   // Map<name, group_name>
   answers: [],          // [{coupletId, choice}] — history in order
   currentCouplet: null, // couplet currently shown (null when done)
   result: null,         // {leadNum, text, speciesName} when terminal, else null
@@ -73,7 +74,7 @@ function ksLoadAnswers() {
 
 // ── Data init ────────────────────────────────────────────────────────────────
 
-function ksInitData(keyData, speciesData) {
+function ksInitData(keyData, speciesData, treeData) {
   ks.couplets = keyData.couplets;
   const cpPlus = typeof window !== 'undefined' && window.cpPlusMode;
   if (!cpPlus) {
@@ -84,6 +85,14 @@ function ksInitData(keyData, speciesData) {
   const sp2Map = new Map();
   for (const s of speciesData.species)
     sp2Map.set(s.name.split(' ').slice(0, 2).join(' '), s);
+
+  ks.resultGroups = new Map();
+  if (treeData && treeData.nodes) {
+    for (const node of Object.values(treeData.nodes)) {
+      if (node.type === 'result' && node.name && node.group)
+        ks.resultGroups.set(node.name, node.group);
+    }
+  }
 
   ks.speciesInfo = new Map();
   const allNames = new Set();
@@ -394,6 +403,7 @@ function ksRenderCandidates() {
           <span class="ks-cname">
             <em class="ks-sci">${ksEsc(sciDisplay(s.name))}</em>
             ${info.common_name ? `<span class="ks-common">${ksEsc(info.common_name)}</span>` : ''}
+            ${ks.resultGroups && ks.resultGroups.get(s.name) ? `<span class="ks-group">${ksEsc(ks.resultGroups.get(s.name))}</span>` : ''}
           </span>
           <span class="ks-bar-wrap">
             <span class="ks-bar-bg">
@@ -739,12 +749,13 @@ function ksOnCandidateClick(e) {
 
 async function ksInit() {
   try {
-    const [keyData, speciesData] = await Promise.all([
+    const [keyData, speciesData, treeData] = await Promise.all([
       fetch('data/id_key.json', { cache: 'no-cache' }).then(r => { if (!r.ok) throw new Error('id_key.json'); return r.json(); }),
       fetch('data/species.json', { cache: 'no-cache' }).then(r => { if (!r.ok) throw new Error('species.json'); return r.json(); }),
+      fetch('data/tree.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null),
     ]);
 
-    ksInitData(keyData, speciesData);
+    ksInitData(keyData, speciesData, treeData);
     ks.currentCouplet = ks.couplets[0];
     ks.answers = ksLoadAnswers();
     ksReplayHistory();

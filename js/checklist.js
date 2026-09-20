@@ -28,6 +28,7 @@ const cs = {
   questionCoverage: null, // Map<questionText, number> — species count using it
   questionNumbers: null,  // Map<questionText, number> — stable Q-numbers by DFS order
   resultNotes: null,      // Map<name, string>
+  resultGroups: null,     // Map<name, string>
   speciesInfo: null,      // Map<name, {common_name, inat_url}>
   treeNodes: null,        // raw nodes map from tree.json — used for CD-followup lookup
   answers: new Map(),     // Map<questionText, choiceLabel>
@@ -92,6 +93,7 @@ function initData(treeData, speciesData) {
   const qMeta = new Map();
   const qCov = new Map();
   const resultNotes = new Map();
+  const resultGroups = new Map();
 
   // Collect question metadata; merge choices when the same question text appears
   // in multiple subtrees
@@ -106,8 +108,10 @@ function initData(treeData, speciesData) {
           if (!existing.choices.includes(l)) existing.choices.push(l);
       }
     }
-    if (node.type === 'result' && node.name)
+    if (node.type === 'result' && node.name) {
       resultNotes.set(node.name, node.note || '');
+      if (node.group) resultGroups.set(node.name, node.group);
+    }
   }
 
   // Some questions exist ONLY as result-node feature overrides — with no question
@@ -190,6 +194,7 @@ function initData(treeData, speciesData) {
   cs.questionCoverage = qCov;
   cs.questionNumbers = buildQuestionNumbers(treeData);
   cs.resultNotes = resultNotes;
+  cs.resultGroups = resultGroups;
   cs.speciesInfo = spInfo;
 }
 
@@ -391,6 +396,7 @@ function renderCandidates() {
           <span class="cl-cname">
             <em class="cl-sci">${esc(sciDisplay(s.name))}</em>
             ${info.common_name ? `<span class="cl-common">${esc(info.common_name)}</span>` : ''}
+            ${cs.resultGroups && cs.resultGroups.get(s.name) ? `<span class="cl-group">${esc(cs.resultGroups.get(s.name))}</span>` : ''}
           </span>
           <span class="cl-bar-wrap">
             <span class="cl-bar-bg">

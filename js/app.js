@@ -112,6 +112,7 @@ function buildSpeciesIndex(treeData, speciesData) {
     index.push({
       name,
       common_name: node.common_name || (spData && spData.common_name) || '',
+      group: node.group || '',
       note: node.note || '',
       taxon_photos: (spData && spData.taxon_photos) || [],
       inat_url: (spData && spData.inat_url)
@@ -362,6 +363,7 @@ function renderSearchList(query) {
     <button class="search-item" role="listitem" data-name="${escapeAttr(s.name)}">
       <span class="search-item-sci">${escapeHtml(sciDisplay(s.name))}</span>
       ${s.common_name ? `<span class="search-item-common">${escapeHtml(s.common_name)}</span>` : ''}
+      ${s.group ? `<span class="search-item-group">${escapeHtml(s.group)}</span>` : ''}
     </button>
   `).join('');
 }
@@ -385,6 +387,7 @@ function showSpeciesDetail(sp) {
     <span class="result-badge">Species Info</span>
     <h2 class="species-common">${escapeHtml(sp.common_name || sciDisplay(sp.name))}</h2>
     ${sp.common_name ? `<p class="species-name">${escapeHtml(sciDisplay(sp.name))}</p>` : ''}
+    ${sp.group ? `<p class="species-group">${escapeHtml(sp.group)}</p>` : ''}
     ${noteHTML}
     ${pathHTML}
     ${galleryHTML}
@@ -1149,6 +1152,7 @@ function showSpeciesDetailInline(sp) {
     <span class="result-badge">Species Info</span>
     <h2 class="species-common">${escapeHtml(sp.common_name || sciDisplay(sp.name))}</h2>
     ${sp.common_name ? `<p class="species-name">${escapeHtml(sciDisplay(sp.name))}</p>` : ''}
+    ${sp.group ? `<p class="species-group">${escapeHtml(sp.group)}</p>` : ''}
     ${noteHTML}
     ${buildPathDisplay(sp.paths, sp.note, sp.resultFeatures, sp.name)}
     ${buildCPKeyPath(sp.name)}
