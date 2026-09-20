@@ -407,7 +407,7 @@ function ksRenderCandidates() {
           <span class="ks-cname">
             <em class="ks-sci">${ksEsc(sciDisplay(s.name))}</em>
             ${info.common_name ? `<span class="ks-common">${ksEsc(info.common_name)}</span>` : ''}
-            ${ks.resultGroups && ks.resultGroups.get(s.name) ? `<span class="ks-group">${ksEsc(ks.resultGroups.get(s.name))}</span>` : ''}
+            ${ks.resultGroups ? (() => { const g = ks.resultGroups.get(s.name) || ks.resultGroups.get(s.name.split(' ').slice(0,2).join(' ')); return g ? `<span class="ks-group">${ksEsc(g)}</span>` : ''; })() : ''}
           </span>
           <span class="ks-bar-wrap">
             <span class="ks-bar-bg">
