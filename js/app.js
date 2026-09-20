@@ -347,6 +347,7 @@ function renderSearchList(query) {
     ? state.speciesIndex.filter(s =>
         s.name.toLowerCase().includes(q) ||
         (s.common_name && s.common_name.toLowerCase().includes(q)) ||
+        (s.group && s.group.toLowerCase().includes(q)) ||
         (s.note && s.note.toLowerCase().includes(q)))
     : state.speciesIndex;
 

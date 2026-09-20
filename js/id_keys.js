@@ -89,8 +89,12 @@ function ksInitData(keyData, speciesData, treeData) {
   ks.resultGroups = new Map();
   if (treeData && treeData.nodes) {
     for (const node of Object.values(treeData.nodes)) {
-      if (node.type === 'result' && node.name && node.group)
+      if (node.type === 'result' && node.name && node.group) {
         ks.resultGroups.set(node.name, node.group);
+        // Also index by 2-word prefix (genus + species) to match id_key.json names
+        const sp2 = node.name.split(' ').slice(0, 2).join(' ');
+        if (!ks.resultGroups.has(sp2)) ks.resultGroups.set(sp2, node.group);
+      }
     }
   }
 
