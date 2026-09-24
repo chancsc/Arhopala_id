@@ -2,7 +2,9 @@
 
 A mobile-friendly web app for identifying common Malaysian *Arhopala* butterfly species from field photographs.
 
-Live: [chancsc.github.io/Arhopala_id](https://chancsc.github.io/Arhopala_id)
+Staging: [chancsc.github.io/Arhopala_id](https://chancsc.github.io/Arhopala_id)
+
+Live: [taxonomic-tools.github.io/Arhopala_id](https://taxonomic-tools.github.io/Arhopala_id)
 
 ---
 
